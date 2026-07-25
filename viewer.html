@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Boletim ACATMAR — Leitor</title>
+<meta name="description" content="Folheie o Boletim ACATMAR — Associação Náutica Brasileira.">
+<meta property="og:title" content="Boletim ACATMAR — Associação Náutica Brasileira">
+<meta property="og:description" content="Folheie a edição digital do Boletim ACATMAR.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0a2540;--navy-deep:#061726;--teal:#00a9b7;--teal-bright:#25c6d8}
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+  html,body{height:100%;overflow:hidden}
+  body{font-family:'Barlow Condensed',system-ui,sans-serif;
+    background:radial-gradient(120% 120% at 50% 0%,#12466b 0,#0a2540 42%,#061726 100%);
+    color:#fff;display:flex;flex-direction:column;user-select:none}
+
+  /* top bar */
+  .topbar{display:flex;align-items:center;gap:.75rem;padding:.7rem 1rem;z-index:10;
+    background:linear-gradient(180deg,rgba(6,23,38,.85),rgba(6,23,38,0));position:relative}
+  .topbar a.back{color:#fff;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;
+    font-size:1rem;font-weight:600;opacity:.9}
+  .topbar a.back:hover{opacity:1}
+  .topbar .title{flex:1;text-align:center;font-weight:700;letter-spacing:.03em;font-size:1.05rem;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .topbar .title small{display:block;font-size:.72rem;font-weight:600;color:var(--teal-bright);letter-spacing:.14em;text-transform:uppercase}
+  .topbar .tools{display:flex;gap:.35rem}
+  .iconbtn{background:rgba(255,255,255,.10);border:none;color:#fff;width:38px;height:38px;border-radius:10px;
+    font-size:1.1rem;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:background .2s;text-decoration:none}
+  .iconbtn:hover{background:rgba(255,255,255,.22)}
+
+  /* stage */
+  .stage{flex:1;display:flex;align-items:center;justify-content:center;position:relative;padding:.5rem;min-height:0}
+  #flipbook{margin:0 auto}
+  #flipbook .page{background:#fff;overflow:hidden}
+  #flipbook .page img{width:100%;height:100%;display:block;object-fit:contain;background:#fff}
+  .page-shadow{}
+
+  /* nav arrows */
+  .nav{position:absolute;top:50%;transform:translateY(-50%);z-index:8;background:rgba(6,23,38,.5);
+    border:none;color:#fff;width:46px;height:64px;border-radius:12px;font-size:1.6rem;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;transition:background .2s,opacity .2s}
+  .nav:hover{background:var(--teal)}
+  .nav.prev{left:.6rem}.nav.next{right:.6rem}
+  .nav[disabled]{opacity:.25;cursor:default}
+
+  /* bottom bar */
+  .bottombar{display:flex;align-items:center;justify-content:center;gap:1rem;padding:.7rem 1rem 1rem;z-index:10}
+  .counter{font-weight:600;font-size:1rem;letter-spacing:.05em;min-width:88px;text-align:center}
+  .progress{flex:1;max-width:340px;height:5px;border-radius:999px;background:rgba(255,255,255,.16);overflow:hidden}
+  .progress > i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--teal),var(--teal-bright));transition:width .3s}
+
+  .hint{position:absolute;bottom:74px;left:50%;transform:translateX(-50%);z-index:9;
+    background:rgba(6,23,38,.8);padding:.5rem 1rem;border-radius:999px;font-size:.85rem;
+    display:flex;align-items:center;gap:.5rem;pointer-events:none;transition:opacity .5s}
+  .loader{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;z-index:20;background:#061726}
+  .spinner{width:44px;height:44px;border:4px solid rgba(255,255,255,.2);border-top-color:var(--teal-bright);border-radius:50%;animation:spin 1s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .loader p{color:#cfe0ea;font-size:1rem;letter-spacing:.05em}
+
+  @media (max-width:640px){
+    .topbar .title{font-size:.95rem}
+    .nav{width:38px;height:54px;font-size:1.3rem}
+    .topbar .tools .label{display:none}
+  }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <a class="back" href="index.html">‹ <span class="label">Edições</span></a>
+    <div class="title" id="title">Boletim ACATMAR<small id="subtitle">Carregando…</small></div>
+    <div class="tools">
+      <a class="iconbtn" id="dl" title="Baixar PDF" href="#" target="_blank" rel="noopener">⤓</a>
+      <button class="iconbtn" id="share" title="Compartilhar">↗</button>
+      <button class="iconbtn" id="fs" title="Tela cheia">⛶</button>
+    </div>
+  </div>
+
+  <div class="stage" id="stage">
+    <button class="nav prev" id="prev" aria-label="Página anterior">‹</button>
+    <button class="nav next" id="next" aria-label="Próxima página">›</button>
+    <div class="hint" id="hint">👆 Arraste a página para virar</div>
+  </div>
+
+  <div class="bottombar">
+    <span class="counter" id="counter">– / –</span>
+    <div class="progress"><i id="bar"></i></div>
+  </div>
+
+  <div class="loader" id="loader"><div class="spinner"></div><p id="loadtxt">Preparando o boletim…</p></div>
+
+<script src="assets/lib/page-flip.browser.js"></script>
+<script>
+(function(){
+  var params = new URLSearchParams(location.search);
+  var edId = params.get('ed') || '2025-1';
+  var loader = document.getElementById('loader');
+  var loadtxt = document.getElementById('loadtxt');
+
+  function fail(msg){ loadtxt.textContent = msg; document.querySelector('.spinner').style.display='none'; }
+
+  fetch('editions.json?v='+Date.now()).then(function(r){return r.json();}).then(function(data){
+    var ed = (data.editions||[]).filter(function(e){return e.id===edId;})[0];
+    if(!ed){ fail('Edição não encontrada.'); return; }
+    document.title = 'Boletim ACATMAR — '+ed.title;
+    document.getElementById('subtitle').textContent = ed.title;
+    document.getElementById('dl').href = 'editions/'+ed.id+'/boletim.pdf';
+    buildBook(ed);
+  }).catch(function(e){ fail('Erro ao carregar: '+e.message); });
+
+  function buildBook(ed){
+    var stage = document.getElementById('stage');
+    var flipEl = null;                    // criado (e recriado) a cada render
+    var total = ed.pages;
+    var RATIO = 545/771; // largura/altura de uma página A4 (~0.707)
+    var loaded = 0;
+
+    var urls = [];
+    for(var i=1;i<=total;i++){ urls.push('editions/'+ed.id+'/pages/p-'+i+'.jpg'); }
+
+    function buildPages(target){
+      urls.forEach(function(u,idx){
+        var d = document.createElement('div');
+        d.className = 'page';
+        if(idx===0 || idx===total-1) d.setAttribute('data-density','hard');
+        var img = document.createElement('img');
+        img.src = u; img.alt = 'Página '+(idx+1); img.draggable = false;
+        d.appendChild(img);
+        target.appendChild(d);
+      });
+    }
+
+    // pré-carrega as imagens; inicia quando todas terminarem (ou erro)
+    urls.forEach(function(u){
+      var im = new Image();
+      im.onload = im.onerror = function(){ loaded++; if(loaded>=total) start(); };
+      im.src = u;
+    });
+
+    var counter = document.getElementById('counter');
+    var bar = document.getElementById('bar');
+    var prev = document.getElementById('prev');
+    var next = document.getElementById('next');
+    var hint = document.getElementById('hint');
+    var pageFlip = null, portraitMode = null, started = false;
+
+    function computeSize(){
+      var pad = 16;
+      // fallbacks: o pane às vezes reporta 0 antes do layout; nunca deixar dimensão inválida
+      var iw = window.innerWidth || document.documentElement.clientWidth || stage.clientWidth || 800;
+      var ih = document.documentElement.clientHeight || window.innerHeight || 900;
+      var portrait = iw < 860;
+      var availH = stage.clientHeight - pad;
+      if(availH < 160) availH = ih - 150;
+      // no celular as setas flutuam sobre a página; no desktop ficam ao lado
+      var availW = stage.clientWidth - (portrait ? 20 : 120);
+      if(availW < 160) availW = iw - (portrait ? 24 : 130);
+      var h = availH, w = h * RATIO;
+      if(portrait){
+        if(w > availW){ w = availW; h = w / RATIO; }
+      } else {
+        if(w*2 > availW){ w = availW/2; h = w / RATIO; }
+      }
+      w = Math.max(140, Math.floor(w));
+      h = Math.max(200, Math.floor(h));
+      return { w: w, h: h, portrait: portrait };
+    }
+
+    function update(){
+      if(!pageFlip) return;
+      var current = pageFlip.getCurrentPageIndex();
+      counter.textContent = (current+1) + ' / ' + total;
+      bar.style.width = ((current+1)/total*100) + '%';
+      prev.disabled = current<=0;
+      next.disabled = current>=total-1;
+    }
+
+    function render(keepIndex){
+      var s = computeSize();
+      // StPageFlip.destroy() remove o elemento raiz do DOM — então recriamos um novo a cada render
+      if(pageFlip){ try{ pageFlip.destroy(); }catch(_){ } }
+      if(flipEl && flipEl.parentNode){ flipEl.parentNode.removeChild(flipEl); }
+      flipEl = document.createElement('div');
+      flipEl.id = 'flipbook';
+      // fixa o tamanho do livro para centralizar (evita esticar na largura do palco)
+      flipEl.style.width = (s.portrait ? s.w : s.w*2) + 'px';
+      flipEl.style.height = s.h + 'px';
+      stage.appendChild(flipEl);
+      buildPages(flipEl);
+      pageFlip = new St.PageFlip(flipEl, {
+        width: s.w, height: s.h, size: 'fixed',
+        minWidth: s.w, maxWidth: s.w, minHeight: s.h, maxHeight: s.h,
+        drawShadow: true, maxShadowOpacity: 0.5,
+        showCover: true, usePortrait: s.portrait,
+        mobileScrollSupport: false, flippingTime: 650, swipeDistance: 20
+      });
+      pageFlip.loadFromHTML(flipEl.querySelectorAll('.page'));
+      portraitMode = s.portrait;
+      pageFlip.on('flip', update);
+      pageFlip.on('changeState', update);
+      if(typeof keepIndex === 'number' && keepIndex > 0){
+        try{ pageFlip.turnToPage(keepIndex); }catch(_){ }
+      }
+      update();
+    }
+
+    function start(){
+      if(started) return; started = true;
+      render();
+
+      prev.addEventListener('click', function(){ pageFlip.flipPrev(); });
+      next.addEventListener('click', function(){ pageFlip.flipNext(); });
+      document.addEventListener('keydown', function(e){
+        if(e.key==='ArrowLeft') pageFlip.flipPrev();
+        if(e.key==='ArrowRight') pageFlip.flipNext();
+      });
+
+      var rt;
+      window.addEventListener('resize', function(){
+        clearTimeout(rt);
+        rt = setTimeout(function(){
+          var idx = pageFlip ? pageFlip.getCurrentPageIndex() : 0;
+          render(idx);
+        }, 200);
+      });
+
+      loader.style.opacity='0';
+      setTimeout(function(){ loader.style.display='none'; }, 400);
+      setTimeout(function(){ hint.style.opacity='0'; }, 3500);
+    }
+  }
+
+  // Compartilhar
+  document.getElementById('share').addEventListener('click', function(){
+    var url = location.href;
+    if(navigator.share){
+      navigator.share({title:'Boletim ACATMAR', text:'Confira o Boletim da ACATMAR', url:url}).catch(function(){});
+    } else {
+      navigator.clipboard.writeText(url).then(function(){
+        var b=this; alert('Link copiado! Cole no WhatsApp ou e-mail.');
+      }.bind(this)).catch(function(){ prompt('Copie o link:', url); });
+    }
+  });
+
+  // Tela cheia
+  document.getElementById('fs').addEventListener('click', function(){
+    if(!document.fullscreenElement){ (document.documentElement.requestFullscreen||function(){})(); }
+    else if(document.exitFullscreen){ document.exitFullscreen(); }
+  });
+})();
+</script>
+</body>
+</html>

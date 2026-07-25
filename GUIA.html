@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guia — Como atualizar o Boletim ACATMAR</title>
+<style>
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:760px;margin:0 auto;
+    padding:2rem 1.4rem 4rem;color:#12212f;line-height:1.65;background:#f5f2ea}
+  h1{font-size:1.9rem;color:#0a2540;margin-bottom:.2rem}
+  h2{color:#00838f;margin-top:2.2rem;border-bottom:2px solid #cfe7ea;padding-bottom:.3rem}
+  .lead{color:#5b6b78}
+  code{background:#e8eef2;padding:.15rem .4rem;border-radius:5px;font-size:.9em}
+  pre{background:#0a2540;color:#e8f4f6;padding:1rem;border-radius:10px;overflow:auto;font-size:.85rem}
+  ol li,ul li{margin:.5rem 0}
+  .box{background:#fff;border:1px solid #dde6ec;border-radius:12px;padding:1.1rem 1.3rem;margin:1rem 0}
+  .tip{background:#eaf6f7;border-left:4px solid #00a9b7;padding:.8rem 1rem;border-radius:6px;margin:1rem 0}
+  .warn{background:#fff4e5;border-left:4px solid #e08a00;padding:.8rem 1rem;border-radius:6px;margin:1rem 0}
+  kbd{background:#eee;border:1px solid #ccc;border-bottom-width:2px;border-radius:4px;padding:0 .35rem;font-size:.85em}
+</style>
+</head>
+<body>
+  <h1>📖 Boletim ACATMAR — Guia de atualização</h1>
+  <p class="lead">Como funciona o folheador digital e como publicar um novo boletim a cada 6 meses.</p>
+
+  <h2>Como está organizado</h2>
+  <div class="box">
+    <p>A pasta <code>boletim acatmar</code> contém tudo o que é publicado:</p>
+    <pre>boletim acatmar/
+├── index.html          → página com todas as edições (capa do site)
+├── viewer.html         → o folheador (efeito de virar página)
+├── editions.json       → LISTA das edições (é aqui que você adiciona uma nova)
+├── assets/lib/…        → biblioteca do efeito de folhear
+└── editions/
+    ├── 2025-1/
+    │   ├── pages/p-1.jpg … p-8.jpg   → cada página do boletim, em imagem
+    │   ├── cover.jpg                 → miniatura da capa
+    │   └── boletim.pdf               → PDF original (botão "Baixar PDF")
+    ├── 2024-2/…
+    └── 2024-1/…</pre>
+  </div>
+
+  <h2>Publicar um novo boletim (a cada 6 meses)</h2>
+  <p>Quando o novo PDF estiver pronto (ex.: 1º semestre de 2026):</p>
+  <ol>
+    <li>Crie a pasta <code>editions/2026-1/pages/</code>.</li>
+    <li>Converta as páginas do PDF em imagens JPG dentro de <code>pages/</code> (nomeadas <code>p-1.jpg</code>, <code>p-2.jpg</code>…). Veja o comando abaixo.</li>
+    <li>Coloque o PDF original como <code>editions/2026-1/boletim.pdf</code>.</li>
+    <li>Gere a miniatura <code>editions/2026-1/cover.jpg</code> (uma cópia menor da página 1).</li>
+    <li>Adicione a edição no topo da lista em <code>editions.json</code>.</li>
+    <li>Publique (arraste a pasta no Netlify — veja a última seção).</li>
+  </ol>
+
+  <div class="tip">
+    <strong>Jeito mais fácil:</strong> me mande o PDF novo e eu faço os passos 1 a 5 em segundos.
+    Você só publica no Netlife no final.
+  </div>
+
+  <h2>Comando para converter o PDF (no Terminal do Mac)</h2>
+  <p>Precisa do <code>poppler</code> instalado (<code>brew install poppler</code>). Com o PDF em <code>~/Downloads/boletim-2026-1.pdf</code>:</p>
+  <pre>cd "/Users/leandroferrari/boletim acatmar"
+mkdir -p editions/2026-1/pages
+pdftoppm -jpeg -jpegopt quality=82 -r 150 \
+  ~/Downloads/boletim-2026-1.pdf editions/2026-1/pages/p
+cp ~/Downloads/boletim-2026-1.pdf editions/2026-1/boletim.pdf
+sips -Z 600 editions/2026-1/pages/p-1.jpg --out editions/2026-1/cover.jpg</pre>
+
+  <h2>Adicionar a edição em <code>editions.json</code></h2>
+  <p>Abra <code>editions.json</code> e cole um bloco novo <strong>no topo</strong> da lista <code>editions</code> (a mais recente aparece primeiro):</p>
+  <pre>{
+  "id": "2026-1",
+  "title": "1º Semestre de 2026",
+  "period": "I Semestre de 2026",
+  "volume": "Vol. 4 · Ed. 1/26",
+  "year": 2026,
+  "semester": 1,
+  "pages": 8,
+  "highlights": ["Destaque 1", "Destaque 2", "Destaque 3"]
+},</pre>
+  <div class="warn">
+    Não esqueça a <strong>vírgula</strong> no fim do bloco (separando do próximo).
+    Se o site parar de carregar as edições, quase sempre é uma vírgula faltando ou sobrando aqui.
+  </div>
+  <ul>
+    <li><code>id</code> — precisa ser igual ao nome da pasta em <code>editions/</code>.</li>
+    <li><code>pages</code> — quantas páginas o boletim tem (pode ser diferente de 8).</li>
+    <li><code>highlights</code> — as chamadas que aparecem no cartão da capa (opcional).</li>
+  </ul>
+
+  <h2>Testar antes de publicar</h2>
+  <p>No Terminal, dentro da pasta do boletim:</p>
+  <pre>cd "/Users/leandroferrari/boletim acatmar"
+python3 -m http.server 8791</pre>
+  <p>Depois abra <code>http://localhost:8791</code> no navegador. Pare o servidor com <kbd>Ctrl</kbd>+<kbd>C</kbd>.</p>
+
+  <h2>Publicar no Netlify</h2>
+  <ol>
+    <li>Entre em <a href="https://app.netlify.com">app.netlify.com</a>.</li>
+    <li>Arraste a pasta <code>boletim acatmar</code> inteira para a área de deploy (ou atualize o site existente).</li>
+    <li>Pronto — o link é o mesmo para mandar aos associados por WhatsApp/e-mail.</li>
+  </ol>
+  <div class="tip">
+    <strong>Cache:</strong> se você trocar uma imagem <em>mantendo o mesmo nome</em>, o navegador pode mostrar a versão antiga.
+    Para páginas de uma <em>nova</em> edição isso não acontece, porque o nome da pasta muda.
+  </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "association": "ACATMAR — Associação Náutica Brasileira",
+  "editions": [
+    {
+      "id": "2025-2",
+      "title": "2º Semestre de 2025",
+      "period": "II Semestre de 2025",
+      "volume": "Vol. 4 · Ed. 2/25",
+      "year": 2025,
+      "semester": 2,
+      "pages": 10,
+      "highlights": ["Frente Parlamentar no Senado", "V Fórum de Capacitação", "Marinheiro vira Lei"]
+    },
+    {
+      "id": "2025-1",
+      "title": "1º Semestre de 2025",
+      "period": "I Semestre de 2025",
+      "volume": "Vol. 3 · Ed. 1/25",
+      "year": 2025,
+      "semester": 1,
+      "pages": 8,
+      "highlights": ["Frente Parlamentar", "Missões Internacionais", "Sebrae e ACATMAR"]
+    },
+    {
+      "id": "2024-2",
+      "title": "2º Semestre de 2024",
+      "period": "II Semestre de 2024",
+      "volume": "Vol. 2 · Ed. 2/24",
+      "year": 2024,
+      "semester": 2,
+      "pages": 8,
+      "highlights": ["IPVA para Barcos", "Missões Internacionais", "Burocracia Impede o Crescimento"]
+    },
+    {
+      "id": "2024-1",
+      "title": "1º Semestre de 2024",
+      "period": "I Semestre de 2024",
+      "volume": "Vol. 1 · Ed. 1/24",
+      "year": 2024,
+      "semester": 1,
+      "pages": 8,
+      "highlights": ["Navegando com os ODS", "Ações por Todo o País", "Apoio em Crises"]
+    }
+  ]
+}
