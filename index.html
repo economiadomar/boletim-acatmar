@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ACATMAR — Boletim & Associação Náutica Brasileira</title>
-<meta name="description" content="Boletim digital da ACATMAR — Associação Náutica Brasileira. Folheie as edições e conheça por que fazer parte da entidade que representa a Economia do Mar no Brasil desde 2008.">
-<meta property="og:title" content="ACATMAR — Boletim & Associação Náutica Brasileira">
-<meta property="og:description" content="Folheie os boletins digitais da ACATMAR e navegue em um mar de possibilidades.">
+<title>ACATMAR — Associação Náutica Brasileira</title>
+<meta name="description" content="A ACATMAR representa a Economia do Mar no Brasil desde 2008: indústria, comércio, serviços e turismo náutico. Notícias, boletins digitais, projetos e como se associar.">
+<meta property="og:title" content="ACATMAR — Associação Náutica Brasileira">
+<meta property="og:description" content="Representamos a Economia do Mar. Notícias, boletins digitais e projetos do setor náutico brasileiro.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,273 +16,260 @@
     --ink:#0c2230; --navy:#0a2540; --navy2:#0e3557; --deep:#061726;
     --teal:#00a3b4; --teal-b:#35c9da; --teal-d:#00727e;
     --paper:#f3f6f7; --sand:#e9eff1; --card:#ffffff;
-    --muted:#5b6f7a; --line:#d6e0e4;
-    --wrap:1140px;
+    --muted:#5b6f7a; --line:#d6e0e4; --wrap:1160px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{font-family:'PT Serif',Georgia,serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.6}
-  .disp{font-family:'Oswald',sans-serif}
-  .cond{font-family:'Barlow Condensed',sans-serif}
+  .disp{font-family:'Oswald',sans-serif}.cond{font-family:'Barlow Condensed',sans-serif}
   h1,h2,h3{font-family:'Oswald',sans-serif;font-weight:700;line-height:1.02;text-wrap:balance}
   a{color:inherit}
+  img{max-width:100%}
   .wrap{max-width:var(--wrap);margin:0 auto;padding:0 1.4rem}
   .eyebrow{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.26em;text-transform:uppercase;font-size:.82rem;color:var(--teal-d)}
   .btn{display:inline-flex;align-items:center;gap:.5rem;font-family:'Barlow Condensed';font-weight:600;
-    letter-spacing:.05em;text-transform:uppercase;font-size:1rem;padding:.75rem 1.5rem;border-radius:999px;
-    text-decoration:none;transition:transform .15s,background .2s,color .2s,box-shadow .2s;border:2px solid transparent;cursor:pointer}
-  .btn-teal{background:var(--teal);color:#fff}
-  .btn-teal:hover{background:var(--teal-d);transform:translateY(-2px)}
-  .btn-ghost{border-color:rgba(255,255,255,.5);color:#fff}
-  .btn-ghost:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}
-  .btn-navy{background:var(--navy);color:#fff}
-  .btn-navy:hover{background:var(--navy2);transform:translateY(-2px)}
+    letter-spacing:.05em;text-transform:uppercase;font-size:1rem;padding:.72rem 1.5rem;border-radius:999px;
+    text-decoration:none;transition:transform .15s,background .2s,color .2s;border:2px solid transparent;cursor:pointer}
+  .btn-teal{background:var(--teal);color:#fff}.btn-teal:hover{background:var(--teal-d);transform:translateY(-2px)}
+  .btn-ghost{border-color:rgba(255,255,255,.5);color:#fff}.btn-ghost:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}
+  .btn-navy{background:var(--navy);color:#fff}.btn-navy:hover{background:var(--navy2);transform:translateY(-2px)}
 
-  /* ---------- topbar ---------- */
-  .nav{position:sticky;top:0;z-index:50;background:rgba(6,23,38,.86);backdrop-filter:blur(10px);
-    border-bottom:1px solid rgba(255,255,255,.08)}
-  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-  .brand{font-family:'Oswald';font-weight:700;color:#fff;font-size:1.25rem;letter-spacing:.04em;text-decoration:none;display:flex;align-items:center;gap:.55rem}
-  .brand .em{color:var(--teal-b)}
-  .brand svg{width:24px;height:24px;flex:none}
-  .nav .links{display:flex;align-items:center;gap:1.6rem}
-  .nav .links a{color:#cfe0ea;text-decoration:none;font-family:'Barlow Condensed';font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:.92rem;transition:color .2s}
-  .nav .links a:hover{color:#fff}
-  .nav .links .btn{padding:.5rem 1.1rem;font-size:.9rem}
-  @media(max-width:720px){.nav .links a.hidem{display:none}}
+  /* nav (branca) */
+  .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .nav .logo{display:flex;align-items:center;height:44px}
+  .nav .logo img{height:42px;width:auto;display:block}
+  .nav .links{display:flex;align-items:center;gap:1.5rem}
+  .nav .links a{color:var(--navy);text-decoration:none;font-family:'Barlow Condensed';font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:.95rem;transition:color .2s}
+  .nav .links a:hover{color:var(--teal-d)}
+  .nav .links .btn{padding:.5rem 1.15rem;font-size:.9rem}
+  @media(max-width:820px){.nav .links a.hidem{display:none}}
 
-  /* ---------- hero ---------- */
-  .hero{position:relative;overflow:hidden;color:#fff;
-    background:radial-gradient(130% 120% at 78% -20%,#155a86 0%,var(--navy) 45%,var(--deep) 100%);
-    padding:clamp(3.5rem,9vw,7rem) 0 0}
+  .hero{position:relative;overflow:hidden;color:#fff;background:radial-gradient(130% 120% at 78% -20%,#155a86 0%,var(--navy) 45%,var(--deep) 100%);padding:clamp(3.2rem,8vw,6rem) 0}
   .hero .wrap{position:relative;z-index:2}
   .hero .eyebrow{color:var(--teal-b)}
-  .hero h1{font-size:clamp(2.6rem,7vw,5rem);text-transform:uppercase;margin:.7rem 0 0}
+  .hero h1{font-size:clamp(2.4rem,6.5vw,4.6rem);text-transform:uppercase;margin:.7rem 0 0}
   .hero h1 span{color:var(--teal-b)}
-  .hero .lead{max-width:640px;font-size:clamp(1.05rem,2.4vw,1.3rem);color:#d3e4ee;margin-top:1.2rem}
-  .hero .cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
-  .hero .stats{display:flex;flex-wrap:wrap;gap:2.4rem;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.14)}
-  .hero .stats .s .n{font-family:'Oswald';font-weight:700;font-size:2.1rem;color:#fff;line-height:1}
-  .hero .stats .s .l{font-family:'Barlow Condensed';font-weight:500;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem;color:#9fc0d0;margin-top:.2rem}
-  .waves{display:block;width:100%;height:70px;margin-top:2.5rem;position:relative;z-index:2}
-  .waves path{fill:var(--paper)}
+  .hero .lead{max-width:600px;font-size:clamp(1.05rem,2.4vw,1.28rem);color:#d3e4ee;margin-top:1.1rem}
+  .hero .tagline{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.06em;color:#9fc0d0;margin-top:.6rem;text-transform:uppercase;font-size:1rem}
+  .hero .cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.9rem}
   .sea{position:absolute;inset:0;opacity:.5;pointer-events:none;z-index:1}
 
-  /* ---------- section base ---------- */
-  section{padding:clamp(3rem,7vw,5.5rem) 0}
-  .sec-head{max-width:720px;margin-bottom:2.4rem}
-  .sec-head h2{font-size:clamp(1.9rem,4.5vw,2.9rem);text-transform:uppercase;color:var(--navy);margin-top:.5rem}
-  .sec-head p{color:var(--muted);margin-top:.7rem;font-size:1.08rem}
+  /* números band */
+  .nums{background:var(--navy2);color:#fff;padding:1.8rem 0}
+  .nums .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;text-align:center}
+  .nums .n{font-family:'Oswald';font-weight:700;font-size:clamp(1.9rem,4vw,2.8rem);line-height:1;color:var(--teal-b)}
+  .nums .l{font-family:'Barlow Condensed';font-weight:500;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem;color:#c7dbe6;margin-top:.25rem}
+  @media(max-width:620px){.nums .grid{grid-template-columns:repeat(2,1fr);gap:1.4rem}}
 
-  /* ---------- edições ---------- */
-  #edicoes{background:var(--paper)}
-  .grid-ed{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1.6rem}
-  .ed{background:var(--card);border-radius:16px;overflow:hidden;border:1px solid var(--line);
-    box-shadow:0 10px 30px rgba(10,37,64,.10);display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
-  .ed:hover{transform:translateY(-6px);box-shadow:0 22px 46px rgba(10,37,64,.20)}
+  section{padding:clamp(3rem,7vw,5.2rem) 0}
+  .sec-head{max-width:760px;margin-bottom:2.2rem}
+  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .sec-head h2{font-size:clamp(1.9rem,4.5vw,2.9rem);text-transform:uppercase;color:var(--navy);margin-top:.4rem}
+  .sec-head p{color:var(--muted);margin-top:.6rem;font-size:1.08rem}
+  .sec-top{display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;flex-wrap:wrap;margin-bottom:2rem}
+  .sec-top .link{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--teal-d);text-decoration:none;white-space:nowrap}
+  .sec-top .link:hover{color:var(--navy)}
+
+  /* notícias */
+  #noticias{background:var(--paper)}
+  .news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+  .news{background:var(--card);border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 8px 24px rgba(10,37,64,.08);
+    display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s;text-decoration:none;color:inherit}
+  .news:hover{transform:translateY(-5px);box-shadow:0 20px 40px rgba(10,37,64,.16)}
+  .news .ph{aspect-ratio:16/10;overflow:hidden;background:var(--navy);position:relative}
+  .news .ph img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+  .news:hover .ph img{transform:scale(1.05)}
+  .news .cat{position:absolute;top:.7rem;left:.7rem;background:var(--teal);color:#fff;font-family:'Barlow Condensed';font-weight:600;
+    letter-spacing:.05em;text-transform:uppercase;font-size:.72rem;padding:.22rem .6rem;border-radius:999px}
+  .news .bd{padding:1.1rem 1.2rem 1.3rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
+  .news .date{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:.76rem;color:var(--muted)}
+  .news h3{font-size:1.28rem;color:var(--navy);text-transform:none;line-height:1.12}
+  .news p{color:var(--muted);font-size:.96rem}
+  .news .more{margin-top:auto;font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--teal-d);font-size:.9rem}
+  @media(max-width:900px){.news-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:600px){.news-grid{grid-template-columns:1fr}}
+
+  /* boletins */
+  #boletins{background:var(--sand)}
+  .grid-ed{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.5rem}
+  .ed{background:var(--card);border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 8px 24px rgba(10,37,64,.09);display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+  .ed:hover{transform:translateY(-5px);box-shadow:0 20px 42px rgba(10,37,64,.18)}
   .ed .cov{position:relative;aspect-ratio:1/1.414;background:var(--navy);overflow:hidden}
   .ed .cov img{width:100%;height:100%;object-fit:cover;display:block}
-  .ed .cov .vol{position:absolute;top:0;left:0;background:var(--teal);color:#fff;font-family:'Barlow Condensed';
-    font-weight:600;letter-spacing:.04em;font-size:.78rem;padding:.28rem .7rem;border-bottom-right-radius:10px}
-  .ed .cov .new{position:absolute;top:.55rem;right:.55rem;background:#ff5c39;color:#fff;font-family:'Barlow Condensed';
-    font-weight:700;letter-spacing:.08em;font-size:.68rem;text-transform:uppercase;padding:.2rem .55rem;border-radius:999px}
-  .ed .cov .go{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(6,23,38,.55);
-    color:#fff;opacity:0;transition:opacity .25s;font-family:'Barlow Condensed';font-weight:600;font-size:1.1rem;letter-spacing:.05em}
-  .ed:hover .cov .go{opacity:1}
-  .ed .bd{padding:1rem 1.1rem 1.2rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
-  .ed .per{font-family:'Oswald';font-weight:700;font-size:1.45rem;color:var(--navy);line-height:1}
-  .ed .tags{display:flex;flex-wrap:wrap;gap:.32rem}
-  .ed .tags span{font-size:.72rem;background:#e7f5f6;color:#0a6b74;padding:.2rem .55rem;border-radius:999px}
+  .ed .cov .vol{position:absolute;top:0;left:0;background:var(--teal);color:#fff;font-family:'Barlow Condensed';font-weight:600;font-size:.76rem;padding:.26rem .68rem;border-bottom-right-radius:10px}
+  .ed .cov .new{position:absolute;top:.5rem;right:.5rem;background:#ff5c39;color:#fff;font-family:'Barlow Condensed';font-weight:700;letter-spacing:.08em;font-size:.66rem;text-transform:uppercase;padding:.18rem .55rem;border-radius:999px}
+  .ed .bd{padding:.9rem 1rem 1.1rem;display:flex;flex-direction:column;gap:.45rem;flex:1}
+  .ed .per{font-family:'Oswald';font-weight:700;font-size:1.35rem;color:var(--navy);line-height:1}
   .ed .act{display:flex;gap:.5rem;margin-top:auto;padding-top:.5rem}
-  .ed .act a{flex:1;text-align:center;text-decoration:none;font-family:'Barlow Condensed';font-weight:600;
-    text-transform:uppercase;letter-spacing:.04em;font-size:.9rem;padding:.55rem;border-radius:10px}
-  .ed .act .f{background:var(--teal);color:#fff}
-  .ed .act .f:hover{background:var(--teal-d)}
-  .ed .act .p{border:1.5px solid var(--line);color:var(--navy)}
-  .ed .act .p:hover{background:var(--sand)}
+  .ed .act a{flex:1;text-align:center;text-decoration:none;font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.04em;font-size:.88rem;padding:.5rem;border-radius:9px}
+  .ed .act .f{background:var(--teal);color:#fff}.ed .act .f:hover{background:var(--teal-d)}
+  .ed .act .p{border:1.5px solid var(--line);color:var(--navy)}.ed .act .p:hover{background:var(--sand)}
 
-  /* ---------- sobre / pilares ---------- */
+  /* projetos */
+  #projetos{background:var(--paper)}
+  .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+  .proj{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.3rem 1.4rem;display:flex;flex-direction:column;gap:.4rem;transition:transform .2s,box-shadow .2s;text-decoration:none;color:inherit}
+  .proj:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(10,37,64,.12)}
+  .proj .t{font-family:'Oswald';font-weight:600;text-transform:uppercase;font-size:1.18rem;color:var(--navy);display:flex;align-items:center;gap:.5rem}
+  .proj .d{color:var(--muted);font-size:.95rem}
+  .proj .ext{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:.82rem;color:var(--teal-d);margin-top:.3rem}
+  .proj .ext svg{width:13px;height:13px;vertical-align:-1px}
+  @media(max-width:900px){.proj-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.proj-grid{grid-template-columns:1fr}}
+
+  /* quem somos */
   #sobre{background:var(--navy);color:#fff;position:relative;overflow:hidden}
-  #sobre .eyebrow{color:var(--teal-b)}
-  #sobre h2{color:#fff}
-  #sobre .intro{max-width:760px;font-size:clamp(1.1rem,2.6vw,1.4rem);color:#dbe9f0;line-height:1.55}
+  #sobre .eyebrow{color:var(--teal-b)}#sobre h2{color:#fff}
+  #sobre .intro{max-width:780px;font-size:clamp(1.1rem,2.5vw,1.35rem);color:#dbe9f0;line-height:1.55}
   #sobre .intro b{color:#fff}
-  .pilares{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2.4rem}
-  .pilar{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:1.1rem 1.1rem 1.2rem}
+  .pilares{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2.2rem}
+  .pilar{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:1.1rem}
   .pilar svg{width:30px;height:30px;color:var(--teal-b)}
-  .pilar .t{font-family:'Oswald';font-weight:600;text-transform:uppercase;font-size:1.1rem;margin-top:.5rem}
-  .pilar .d{color:#a9c6d4;font-size:.92rem;margin-top:.2rem}
+  .pilar .t{font-family:'Oswald';font-weight:600;text-transform:uppercase;font-size:1.08rem;margin-top:.5rem}
+  .pilar .d{color:#a9c6d4;font-size:.9rem;margin-top:.2rem}
   @media(max-width:720px){.pilares{grid-template-columns:repeat(2,1fr)}}
 
-  /* ---------- por que ser sócio ---------- */
+  /* sócio */
   #socio{background:var(--sand)}
-  .ben-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
-  .ben{background:var(--card);border-radius:16px;padding:1.6rem 1.5rem;border:1px solid var(--line);transition:transform .2s,box-shadow .2s}
-  .ben:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(10,37,64,.12)}
-  .ben .ic{width:46px;height:46px;border-radius:12px;background:#e7f5f6;display:flex;align-items:center;justify-content:center;color:var(--teal-d)}
-  .ben .ic svg{width:26px;height:26px}
-  .ben h3{font-size:1.3rem;text-transform:uppercase;color:var(--navy);margin:.9rem 0 .4rem}
-  .ben p{color:var(--muted);font-size:.98rem}
+  .ben-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+  .ben{background:var(--card);border-radius:16px;padding:1.5rem 1.4rem;border:1px solid var(--line);transition:transform .2s,box-shadow .2s}
+  .ben:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(10,37,64,.12)}
+  .ben .ic{width:44px;height:44px;border-radius:12px;background:#e7f5f6;display:flex;align-items:center;justify-content:center;color:var(--teal-d)}
+  .ben .ic svg{width:25px;height:25px}
+  .ben h3{font-size:1.24rem;text-transform:uppercase;color:var(--navy);margin:.8rem 0 .35rem}
+  .ben p{color:var(--muted);font-size:.96rem}
   @media(max-width:860px){.ben-grid{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:560px){.ben-grid{grid-template-columns:1fr}}
 
-  /* ---------- projetos ---------- */
-  #projetos{background:var(--paper)}
-  .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-  .proj{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:12px;padding:1.2rem 1.3rem}
-  .proj .t{font-family:'Oswald';font-weight:600;text-transform:uppercase;font-size:1.15rem;color:var(--navy)}
-  .proj .d{color:var(--muted);font-size:.94rem;margin-top:.35rem}
-  @media(max-width:860px){.proj-grid{grid-template-columns:repeat(2,1fr)}}
-  @media(max-width:560px){.proj-grid{grid-template-columns:1fr}}
-
-  /* ---------- CTA ---------- */
   #cta{background:radial-gradient(120% 130% at 20% 0%,#155a86 0%,var(--navy) 50%,var(--deep) 100%);color:#fff;text-align:center}
-  #cta h2{font-size:clamp(2rem,5vw,3.4rem);text-transform:uppercase}
-  #cta h2 span{color:var(--teal-b)}
+  #cta h2{font-size:clamp(2rem,5vw,3.3rem);text-transform:uppercase}#cta h2 span{color:var(--teal-b)}
   #cta p{max-width:620px;margin:1rem auto 0;color:#d3e4ee;font-size:1.1rem}
-  #cta .cta{display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap;margin-top:2rem}
-  .quad{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:3rem;text-align:left}
-  .quad .q .t{font-family:'Oswald';font-weight:600;text-transform:uppercase;color:var(--teal-b);font-size:1.05rem}
-  .quad .q .d{color:#bcd4e0;font-size:.9rem;margin-top:.2rem}
-  @media(max-width:720px){.quad{grid-template-columns:repeat(2,1fr)}}
+  #cta .cta{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-top:1.9rem}
 
-  /* ---------- footer ---------- */
-  footer{background:var(--deep);color:#9fb4c2;padding:2.6rem 0;font-size:.92rem}
-  footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center}
-  footer strong{color:#fff;font-family:'Oswald';letter-spacing:.03em}
-  footer a{color:var(--teal-b);text-decoration:none}
+  footer{background:var(--deep);color:#9fb4c2;padding:2.8rem 0 2rem;font-size:.92rem}
+  footer .top{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:space-between;align-items:center;padding-bottom:1.4rem;border-bottom:1px solid rgba(255,255,255,.1)}
+  footer .top img{height:52px;background:#fff;padding:.4rem .6rem;border-radius:10px}
+  footer .fl{display:flex;gap:1.3rem;flex-wrap:wrap}
+  footer .fl a{color:#cfe0ea;text-decoration:none;font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+  footer .fl a:hover{color:#fff}
+  footer .bot{padding-top:1.2rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem}
+  footer a.il{color:var(--teal-b);text-decoration:none}
   .loading{grid-column:1/-1;text-align:center;color:var(--muted);padding:2rem}
-
-  /* reveal */
   .rev{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
   .rev.in{opacity:1;transform:none}
-  @media(prefers-reduced-motion:reduce){.rev{opacity:1;transform:none;transition:none}.btn:hover,.ed:hover,.ben:hover{transform:none}}
+  @media(prefers-reduced-motion:reduce){.rev{opacity:1;transform:none;transition:none}.btn:hover,.ed:hover,.news:hover,.ben:hover,.proj:hover{transform:none}}
 </style>
 </head>
-<body>
+<body id="top">
 
 <nav class="nav">
   <div class="wrap">
-    <a class="brand" href="#top">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><path d="M12 7v14M5 13a7 7 0 0 0 14 0M5 13H3m16 0h2M8 10H5"/></svg>
-      <span>ACAT<span class="em">MAR</span></span>
-    </a>
+    <a class="logo" href="#top" aria-label="ACATMAR"><img src="media/logos/horiz-branco.png" alt="ACATMAR — Associação Náutica Brasileira"></a>
     <div class="links">
-      <a href="#edicoes" class="hidem">Boletins</a>
-      <a href="#socio" class="hidem">Ser sócio</a>
+      <a href="#noticias" class="hidem">Notícias</a>
+      <a href="#boletins" class="hidem">Boletins</a>
+      <a href="#projetos" class="hidem">Projetos</a>
+      <a href="#sobre" class="hidem">Quem somos</a>
       <a href="https://acatmar.org" target="_blank" rel="noopener" class="btn btn-teal">Associe-se</a>
     </div>
   </div>
 </nav>
 
-<header class="hero" id="top">
+<header class="hero">
   <svg class="sea" viewBox="0 0 1440 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
     <g fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1.5">
-      <path d="M-50 120 Q 360 60 720 120 T 1490 120"/><path d="M-50 200 Q 360 140 720 200 T 1490 200"/>
-      <path d="M-50 300 Q 360 240 720 300 T 1490 300"/><path d="M-50 400 Q 360 340 720 400 T 1490 400"/>
+      <path d="M-50 120 Q 360 60 720 120 T 1490 120"/><path d="M-50 220 Q 360 160 720 220 T 1490 220"/>
+      <path d="M-50 330 Q 360 270 720 330 T 1490 330"/><path d="M-50 440 Q 360 380 720 440 T 1490 440"/>
     </g>
   </svg>
   <div class="wrap">
     <div class="eyebrow">Associação Náutica Brasileira · desde 2008</div>
-    <h1>Boletim <span>ACATMAR</span><br>o jornal da Economia do Mar</h1>
-    <p class="lead">Folheie as edições como uma revista de verdade, no celular ou no computador, e acompanhe o que a ACATMAR faz para fortalecer a indústria, o comércio, os serviços e o turismo náutico no Brasil.</p>
+    <h1>Representamos a<br><span>Economia do Mar</span></h1>
+    <div class="tagline">Indústria · Comércio · Serviços · Turismo Náutico</div>
+    <p class="lead">A ACATMAR é a referência da cadeia produtiva náutica no Brasil. Promovemos a cultura do uso das águas e o desenvolvimento sustentável do setor, do litoral aos rios, do Sul ao Norte.</p>
     <div class="cta">
-      <a href="#edicoes" class="btn btn-teal">Folhear os boletins</a>
-      <a href="#socio" class="btn btn-ghost">Por que ser sócio</a>
-    </div>
-    <div class="stats">
-      <div class="s"><div class="n">2008</div><div class="l">Referência do setor desde</div></div>
-      <div class="s"><div class="n">4</div><div class="l">Pilares · Indústria, Comércio, Serviço e Turismo</div></div>
-      <div class="s"><div class="n">Nacional</div><div class="l">Do litoral aos rios, do Sul ao Norte</div></div>
+      <a href="#noticias" class="btn btn-teal">Últimas notícias</a>
+      <a href="#boletins" class="btn btn-ghost">Folhear os boletins</a>
     </div>
   </div>
-  <svg class="waves" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C240,70 480,10 720,30 C960,50 1200,70 1440,35 L1440,70 L0,70 Z"/></svg>
 </header>
 
+<div class="nums">
+  <div class="wrap"><div class="grid">
+    <div><div class="n">350</div><div class="l">Associados</div></div>
+    <div><div class="n">50</div><div class="l">Parceiros diretos</div></div>
+    <div><div class="n">11</div><div class="l">Projetos recorrentes</div></div>
+    <div><div class="n">200</div><div class="l">Eventos realizados</div></div>
+  </div></div>
+</div>
+
 <main>
-  <section id="edicoes">
+  <section id="noticias">
     <div class="wrap">
-      <div class="sec-head rev">
-        <div class="eyebrow">Edições digitais</div>
-        <h2>Os boletins da ACATMAR</h2>
-        <p>Cada edição reúne as principais ações do semestre. Clique em <b>Folhear</b> para abrir o efeito de virar página, ou baixe o PDF.</p>
+      <div class="sec-top">
+        <div class="sec-head" style="margin-bottom:0">
+          <div class="eyebrow">Notícias do setor</div>
+          <h2>O que a ACATMAR está fazendo</h2>
+        </div>
+        <a class="link" href="https://www.instagram.com/acatmarassociacao/" target="_blank" rel="noopener">Seguir no Instagram →</a>
+      </div>
+      <div class="news-grid" id="newsGrid"><div class="loading">Carregando notícias…</div></div>
+    </div>
+  </section>
+
+  <section id="boletins">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Boletim digital</div>
+        <h2>Folheie as edições da ACATMAR</h2>
+        <p>Cada boletim reúne as principais ações do semestre. Clique em <b>Folhear</b> para o efeito de virar página, ou baixe o PDF.</p>
       </div>
       <div class="grid-ed" id="grid"><div class="loading">Carregando edições…</div></div>
     </div>
   </section>
 
+  <section id="projetos">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Projetos transformadores</div>
+        <h2>Ações que movem a Economia do Mar</h2>
+        <p>Muitos realizados em conjunto com parceiros. Alguns têm site próprio, é só clicar.</p>
+      </div>
+      <div class="proj-grid">
+        <a class="proj rev" href="https://www.limpezadosmares.com/" target="_blank" rel="noopener"><div class="t">Limpeza dos Mares</div><div class="d">Mutirões de voluntários e parceiros em ações de limpeza de praias, costões e do fundo do mar, com forte pilar de educação ambiental.</div><div class="ext">Visitar o site <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></div></a>
+        <a class="proj rev" href="https://www.bluenauticalhubbrasil.com/" target="_blank" rel="noopener"><div class="t">Blue Nautical HUB Brasil</div><div class="d">Plataforma que une conhecimento, negócios e cooperação internacional da Economia do Mar: simpósio, visitas técnicas e encontros B2B.</div><div class="ext">Visitar o site <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></div></a>
+        <div class="proj rev"><div class="t">Projeto Marina Legal</div><div class="d">Apoio à regularização documental e à obtenção de licenças ambientais, garantindo conformidade e segurança das estruturas náuticas.</div></div>
+        <div class="proj rev"><div class="t">Fórum Técnico ACATMAR</div><div class="d">Capacitação do setor com profissionais qualificados, numa imersão de conhecimento sobre as novas tendências do mercado.</div></div>
+        <div class="proj rev"><div class="t">Seminário Economia Azul</div><div class="d">Debates sobre as tendências globais da Economia do Mar, impulsionando a inovação e o desenvolvimento do setor.</div></div>
+        <div class="proj rev"><div class="t">Escola do Mar · Circo Náutico</div><div class="d">Leva desenvolvimento náutico a municípios com rios, lagos e represas, e forma profissionais com cursos de qualificação.</div></div>
+      </div>
+    </div>
+  </section>
+
   <section id="sobre">
     <div class="wrap">
-      <div class="sec-head rev">
-        <div class="eyebrow">Quem somos</div>
-        <h2>A referência do setor náutico brasileiro</h2>
-      </div>
+      <div class="sec-head"><div class="eyebrow">Quem somos</div><h2>A referência do setor náutico brasileiro</h2></div>
       <p class="intro rev">Desde 2008, a <b>ACATMAR, Associação Náutica Brasileira</b>, é a referência para a cadeia produtiva do setor náutico no país. Como entidade sem fins lucrativos, a missão é promover a cultura do uso das águas e impulsionar o <b>desenvolvimento sustentável da Economia do Mar</b>.</p>
       <div class="pilares">
         <div class="pilar rev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21V9l6-4 6 4v12M10 21v-5h4v5"/></svg><div class="t">Indústria</div><div class="d">Estaleiros, fabricantes e a produção náutica nacional.</div></div>
-        <div class="pilar rev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18l-2 12H5L3 7zM8 7V5a4 4 0 0 1 8 0v2"/></svg><div class="t">Comércio</div><div class="d">Distribuição, revenda e toda a rede de negócios do setor.</div></div>
-        <div class="pilar rev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 7l-2-3-2 3M12 4v6M4 14l8 5 8-5M4 14l3-2m13 2l-3-2M4 14v3l8 5 8-5v-3"/></svg><div class="t">Serviço</div><div class="d">Marinas, manutenção, despacho e apoio à navegação.</div></div>
-        <div class="pilar rev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18c2 0 2-1.5 4-1.5S10 18 12 18s2-1.5 4-1.5S18 18 20 18M4 14l1-5 6 2 3-4 6 3"/></svg><div class="t">Turismo</div><div class="d">Turismo náutico e a cultura de viver as águas do Brasil.</div></div>
+        <div class="pilar rev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18l-2 12H5L3 7zM8 7V5a4 4 0 0 1 8 0v2"/></svg><div class="t">Comércio</div><div class="d">Distribuição, revenda e a rede de negócios do setor.</div></div>
+        <div class="pilar rev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 7l-2-3-2 3M12 4v6M4 14l8 5 8-5M4 14v3l8 5 8-5v-3"/></svg><div class="t">Serviços</div><div class="d">Marinas, manutenção, despacho e apoio à navegação.</div></div>
+        <div class="pilar rev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18c2 0 2-1.5 4-1.5S10 18 12 18s2-1.5 4-1.5S18 18 20 18M4 14l1-5 6 2 3-4 6 3"/></svg><div class="t">Turismo Náutico</div><div class="d">Turismo náutico e a cultura de viver as águas do Brasil.</div></div>
       </div>
     </div>
   </section>
 
   <section id="socio">
     <div class="wrap">
-      <div class="sec-head rev">
-        <div class="eyebrow">Por que ser sócio</div>
-        <h2>Fazer parte é ganhar voz e oportunidades</h2>
-        <p>Quem recebe este boletim também pode se associar. Veja o que a ACATMAR oferece a cada membro.</p>
-      </div>
+      <div class="sec-head"><div class="eyebrow">Por que ser sócio</div><h2>Fazer parte é ganhar voz e oportunidades</h2><p>Como membro da ACATMAR, você fortalece o setor e ganha vantagens exclusivas.</p></div>
       <div class="ben-grid">
-        <div class="ben rev">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-7-7 18-3-7-8-4z"/></svg></div>
-          <h3>Representatividade e defesa setorial</h3>
-          <p>Voz ativa junto aos poderes legislativos e institucionais. Participe de conselhos, fóruns e comissões técnicas e ajude a moldar as políticas que afetam a sua empresa.</p>
-        </div>
-        <div class="ben rev">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8M21 7h-4m4 0v4"/></svg></div>
-          <h3>Crescimento e visibilidade</h3>
-          <p>Conecte-se a uma rede de líderes do setor. Sua empresa é promovida em nosso site e você usa o selo <b>“Sócio ACATMAR”</b> para agregar valor e credibilidade à marca.</p>
-        </div>
-        <div class="ben rev">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4zM9.5 12l2 2 3.5-4"/></svg></div>
-          <h3>Assistência especializada</h3>
-          <p>Apoio de especialistas jurídicos e técnicos sobre legislação e processos regulatórios, além de acesso a dados técnicos e estatísticos para embasar suas decisões.</p>
-        </div>
-        <div class="ben rev">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.6 3.8 9S14.5 18.5 12 21c-2.5-2.5-3.8-5.6-3.8-9S9.5 5.5 12 3z"/></svg></div>
-          <h3>Expansão de mercado</h3>
-          <p>Visitas técnicas e encontros B2B ampliam sua rede em nível global. Acesso a fóruns, seminários e congressos para ganhar visibilidade e fechar novos negócios.</p>
-        </div>
-        <div class="ben rev">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7L9 18l-5-5M14 7l6 0m0 0v6"/></svg></div>
-          <h3>Incentivos e descontos</h3>
-          <p>Condições especiais para a legalização de estruturas náuticas e outros serviços essenciais. Mais economia e agilidade na sua operação.</p>
-        </div>
-        <div class="ben rev" style="background:var(--navy);color:#fff;display:flex;flex-direction:column;justify-content:center">
-          <div class="eyebrow" style="color:var(--teal-b)">Selo Sócio ACATMAR</div>
-          <h3 style="color:#fff;margin-top:.5rem">Sua marca navega com credibilidade</h3>
-          <p style="color:#bcd4e0">Ser sócio é somar sua empresa a quem defende, de fato, os interesses de todo o setor náutico brasileiro.</p>
-          <a href="https://acatmar.org" target="_blank" rel="noopener" class="btn btn-teal" style="margin-top:1rem;align-self:flex-start">Quero me associar</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projetos">
-    <div class="wrap">
-      <div class="sec-head rev">
-        <div class="eyebrow">Projetos transformadores</div>
-        <h2>Ações que movem a Economia do Mar</h2>
-      </div>
-      <div class="proj-grid">
-        <div class="proj rev"><div class="t">Projeto Marina Legal</div><div class="d">Apoio à regularização documental e à obtenção de licenças ambientais, garantindo conformidade e segurança das estruturas náuticas.</div></div>
-        <div class="proj rev"><div class="t">Limpeza dos Mares</div><div class="d">Mobilização de voluntários e parceiros em ações de limpeza de praias e do fundo do mar, preservando o ecossistema marinho.</div></div>
-        <div class="proj rev"><div class="t">Seminário Internacional Economia Azul</div><div class="d">Debates sobre as tendências globais da Economia do Mar, impulsionando a inovação e o desenvolvimento do setor.</div></div>
-        <div class="proj rev"><div class="t">Fórum Técnico ACATMAR</div><div class="d">Capacitação do setor com profissionais qualificados, numa imersão de conhecimento sobre as novas tendências do mercado.</div></div>
-        <div class="proj rev"><div class="t">Circo Náutico · Escola do Mar</div><div class="d">Leva desenvolvimento náutico a municípios com potencial em rios, lagos e represas, e forma profissionais com cursos de qualificação.</div></div>
-        <div class="proj rev"><div class="t">Visitas Técnicas e Acordos Internacionais</div><div class="d">Parcerias e tendências globais que aumentam a competitividade, com presença nas principais feiras nacionais e internacionais.</div></div>
+        <div class="ben rev"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-7-7 18-3-7-8-4z"/></svg></div><h3>Representatividade e defesa setorial</h3><p>Voz ativa junto aos poderes legislativos e institucionais. Participe de conselhos, fóruns e comissões técnicas e ajude a moldar as políticas do setor.</p></div>
+        <div class="ben rev"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8M21 7h-4m4 0v4"/></svg></div><h3>Crescimento e visibilidade</h3><p>Conecte-se a uma rede de líderes. Sua empresa é promovida no nosso site e você usa o selo <b>“Sócio ACATMAR”</b> para agregar credibilidade à marca.</p></div>
+        <div class="ben rev"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4zM9.5 12l2 2 3.5-4"/></svg></div><h3>Assistência especializada</h3><p>Apoio de especialistas jurídicos e técnicos e acesso a dados estratégicos para embasar as decisões do seu negócio.</p></div>
+        <div class="ben rev"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.6 3.8 9S14.5 18.5 12 21c-2.5-2.5-3.8-5.6-3.8-9S9.5 5.5 12 3z"/></svg></div><h3>Expansão de mercado</h3><p>Visitas técnicas e encontros B2B ampliam sua rede em nível global, com acesso a fóruns, seminários e congressos.</p></div>
+        <div class="ben rev"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7L9 18l-5-5M14 7l6 0m0 0v6"/></svg></div><h3>Incentivos e descontos</h3><p>Condições especiais para a legalização de estruturas náuticas e outros serviços essenciais. Mais economia e agilidade.</p></div>
+        <div class="ben rev" style="background:var(--navy);color:#fff;display:flex;flex-direction:column;justify-content:center"><div class="eyebrow" style="color:var(--teal-b)">Selo Sócio ACATMAR</div><h3 style="color:#fff;margin-top:.5rem">Sua marca navega com credibilidade</h3><p style="color:#bcd4e0">Some sua empresa a quem defende, de fato, os interesses de todo o setor náutico brasileiro.</p><a href="https://acatmar.org" target="_blank" rel="noopener" class="btn btn-teal" style="margin-top:1rem;align-self:flex-start">Quero me associar</a></div>
       </div>
     </div>
   </section>
@@ -292,14 +279,8 @@
       <h2 class="rev">Junte-se a nós e navegue<br>em um <span>mar de possibilidades</span></h2>
       <p class="rev">Torne-se membro da ACATMAR e impulsione o seu negócio, contribuindo para o desenvolvimento sustentável do setor náutico brasileiro.</p>
       <div class="cta rev">
-        <a href="https://acatmar.org" target="_blank" rel="noopener" class="btn btn-teal">Inscrever-se no site · ACATMAR.org</a>
+        <a href="https://acatmar.org" target="_blank" rel="noopener" class="btn btn-teal">Inscrever-se · ACATMAR.org</a>
         <a href="https://www.instagram.com/acatmarassociacao/" target="_blank" rel="noopener" class="btn btn-ghost">@acatmarassociacao</a>
-      </div>
-      <div class="quad">
-        <div class="q rev"><div class="t">Oportunidades</div><div class="d">Networking e parcerias com líderes do setor.</div></div>
-        <div class="q rev"><div class="t">Sustentabilidade</div><div class="d">Desenvolvimento responsável da Economia do Mar.</div></div>
-        <div class="q rev"><div class="t">Conectividade</div><div class="d">Uma rede nacional e internacional ao seu alcance.</div></div>
-        <div class="q rev"><div class="t">Crescimento</div><div class="d">Visibilidade, dados estratégicos e vantagens exclusivas.</div></div>
       </div>
     </div>
   </section>
@@ -307,57 +288,60 @@
 
 <footer>
   <div class="wrap">
-    <div><strong>ACATMAR</strong> · Associação Náutica Brasileira<br>Economia do Mar · desde 2008</div>
-    <div style="text-align:right">
-      <a href="https://acatmar.org" target="_blank" rel="noopener">acatmar.org</a> &nbsp;·&nbsp;
-      <a href="https://www.instagram.com/acatmarassociacao/" target="_blank" rel="noopener">@acatmarassociacao</a>
+    <div class="top">
+      <img src="media/logos/horiz-branco.png" alt="ACATMAR">
+      <div class="fl">
+        <a href="#noticias">Notícias</a><a href="#boletins">Boletins</a><a href="#projetos">Projetos</a><a href="#sobre">Quem somos</a><a href="https://acatmar.org" target="_blank" rel="noopener">Associe-se</a>
+      </div>
+    </div>
+    <div class="bot">
+      <div>ACATMAR · Associação Náutica Brasileira · Representamos a Economia do Mar desde 2008</div>
+      <div><a class="il" href="https://acatmar.org" target="_blank" rel="noopener">acatmar.org</a> · <a class="il" href="https://www.instagram.com/acatmarassociacao/" target="_blank" rel="noopener">@acatmarassociacao</a></div>
     </div>
   </div>
 </footer>
 
 <script>
+function fmtData(iso){
+  var m=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
+  var p=iso.split('-'); return p[2]+' '+m[parseInt(p[1],10)-1]+' '+p[0];
+}
 (async function(){
-  var grid = document.getElementById('grid');
+  // NOTÍCIAS
+  var ng=document.getElementById('newsGrid');
   try{
-    var res = await fetch('editions.json?v=' + Date.now());
-    var data = await res.json();
-    var eds = data.editions || [];
-    grid.innerHTML = '';
-    eds.forEach(function(ed, i){
-      var tags = (ed.highlights||[]).slice(0,3).map(function(h){return '<span>'+h+'</span>';}).join('');
-      var isNew = i===0;
-      var el = document.createElement('div');
-      el.className = 'ed rev';
-      el.innerHTML =
-        '<a class="cov" href="viewer.html?ed='+ed.id+'" aria-label="Folhear '+ed.title+'">'+
-          '<span class="vol">'+ed.volume+'</span>'+
-          (isNew?'<span class="new">Novo</span>':'')+
-          '<img loading="lazy" src="editions/'+ed.id+'/cover.jpg" alt="Capa '+ed.title+'">'+
-          '<span class="go">📖 Folhear</span>'+
-        '</a>'+
-        '<div class="bd">'+
-          '<div class="per">'+ed.title+'</div>'+
-          '<div class="tags">'+tags+'</div>'+
-          '<div class="act">'+
-            '<a class="f" href="viewer.html?ed='+ed.id+'">Folhear</a>'+
-            '<a class="p" href="editions/'+ed.id+'/boletim.pdf" target="_blank" rel="noopener">PDF</a>'+
-          '</div>'+
-        '</div>';
+    var r=await fetch('noticias.json?v='+Date.now()); var d=await r.json();
+    var list=(d.noticias||[]).slice().sort(function(a,b){return a.data<b.data?1:-1;}).slice(0,6);
+    ng.innerHTML='';
+    list.forEach(function(n){
+      var a=document.createElement('a'); a.className='news rev'; a.href='noticia.html?id='+n.id;
+      a.innerHTML='<div class="ph"><span class="cat">'+n.categoria+'</span><img loading="lazy" src="'+n.imagem+'" alt="'+n.titulo+'"></div>'+
+        '<div class="bd"><div class="date">'+fmtData(n.data)+'</div><h3>'+n.titulo+'</h3><p>'+n.resumo+'</p><div class="more">Leia mais →</div></div>';
+      ng.appendChild(a);
+    });
+  }catch(e){ ng.innerHTML='<div class="loading">Não foi possível carregar as notícias.</div>'; }
+
+  // BOLETINS
+  var grid=document.getElementById('grid');
+  try{
+    var res=await fetch('editions.json?v='+Date.now()); var data=await res.json();
+    var eds=data.editions||[]; grid.innerHTML='';
+    eds.forEach(function(ed,i){
+      var el=document.createElement('div'); el.className='ed rev';
+      el.innerHTML='<a class="cov" href="viewer.html?ed='+ed.id+'"><span class="vol">'+ed.volume+'</span>'+(i===0?'<span class="new">Novo</span>':'')+
+        '<img loading="lazy" src="editions/'+ed.id+'/cover.jpg" alt="Capa '+ed.title+'"></a>'+
+        '<div class="bd"><div class="per">'+ed.title+'</div>'+
+        '<div class="act"><a class="f" href="viewer.html?ed='+ed.id+'">Folhear</a><a class="p" href="editions/'+ed.id+'/boletim.pdf" target="_blank" rel="noopener">PDF</a></div></div>';
       grid.appendChild(el);
     });
-    initReveal();
-  }catch(e){
-    grid.innerHTML = '<div class="loading">Não foi possível carregar as edições.<br><small>'+e.message+'</small></div>';
-  }
+  }catch(e){ grid.innerHTML='<div class="loading">Não foi possível carregar as edições.</div>'; }
+  initReveal();
 })();
-
 function initReveal(){
-  var els = document.querySelectorAll('.rev');
-  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in');}); return; }
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
-  }, {threshold:.12});
-  els.forEach(function(e){ io.observe(e); });
+  var els=document.querySelectorAll('.rev');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.1});
+  els.forEach(function(e){io.observe(e);});
 }
 initReveal();
 </script>

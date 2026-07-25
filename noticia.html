@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notícia — ACATMAR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow+Condensed:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0c2230;--navy:#0a2540;--deep:#061726;--teal:#00a3b4;--teal-b:#35c9da;--teal-d:#00727e;
+    --paper:#f3f6f7;--sand:#e9eff1;--card:#fff;--muted:#5b6f7a;--line:#d6e0e4}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'PT Serif',Georgia,serif;color:var(--ink);background:var(--paper);line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  h1,h2{font-family:'Oswald',sans-serif;font-weight:700;line-height:1.05;text-wrap:balance}
+  .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav .wr{max-width:1160px;margin:0 auto;padding:0 1.4rem;height:66px;display:flex;align-items:center;justify-content:space-between}
+  .nav img{height:42px}
+  .nav a.assoc{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#fff;background:var(--teal);padding:.5rem 1.15rem;border-radius:999px;text-decoration:none;font-size:.9rem}
+  .art{max-width:760px;margin:0 auto;padding:0 1.4rem}
+  .back{display:inline-flex;align-items:center;gap:.4rem;margin:1.8rem 0 .4rem;font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--teal-d);text-decoration:none;font-size:.92rem}
+  .cat{display:inline-block;background:var(--teal);color:#fff;font-family:'Barlow Condensed';font-weight:600;letter-spacing:.05em;text-transform:uppercase;font-size:.76rem;padding:.24rem .7rem;border-radius:999px;margin-bottom:.6rem}
+  h1.title{font-size:clamp(1.8rem,4.5vw,2.8rem);color:var(--navy);text-transform:uppercase;margin-top:.2rem}
+  .meta{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem;color:var(--muted);margin-top:.7rem}
+  .hero-img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px;margin:1.4rem 0 .4rem;display:block;background:var(--navy)}
+  .credito{font-family:'Barlow Condensed';font-weight:500;letter-spacing:.06em;text-transform:uppercase;font-size:.72rem;color:var(--muted);margin-bottom:1.6rem}
+  .body p{font-size:1.12rem;margin-bottom:1.1rem}
+  .body p:first-of-type{font-size:1.22rem;color:var(--navy)}
+  .share{display:flex;gap:.6rem;align-items:center;margin:2rem 0;padding:1.1rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .share span{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-size:.85rem}
+  .share a,.share button{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.04em;font-size:.85rem;
+    padding:.45rem .9rem;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--navy);text-decoration:none;cursor:pointer}
+  .share a:hover,.share button:hover{background:var(--sand)}
+  .related{max-width:1160px;margin:0 auto;padding:1rem 1.4rem 3.5rem}
+  .related h2{font-size:1.4rem;color:var(--navy);text-transform:uppercase;margin-bottom:1.1rem}
+  .rg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+  .rc{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+  .rc:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(10,37,64,.12)}
+  .rc img{width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--navy)}
+  .rc .b{padding:.9rem 1rem 1.1rem}
+  .rc .d{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:.72rem;color:var(--muted)}
+  .rc h3{font-family:'Oswald';font-weight:600;color:var(--navy);font-size:1.05rem;line-height:1.15;margin-top:.25rem}
+  @media(max-width:760px){.rg{grid-template-columns:1fr}}
+  footer{background:var(--deep);color:#9fb4c2;padding:1.8rem 0;font-size:.9rem;text-align:center}
+  footer a{color:var(--teal-b);text-decoration:none}
+  .load{max-width:760px;margin:4rem auto;text-align:center;color:var(--muted);padding:0 1.4rem}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="wr">
+  <a href="index.html" aria-label="ACATMAR"><img src="media/logos/horiz-branco.png" alt="ACATMAR"></a>
+  <a class="assoc" href="https://acatmar.org" target="_blank" rel="noopener">Associe-se</a>
+</div></nav>
+
+<article class="art" id="art"><div class="load">Carregando…</div></article>
+<section class="related" id="related" style="display:none"><h2>Mais notícias</h2><div class="rg" id="rg"></div></section>
+
+<footer><div>ACATMAR · Associação Náutica Brasileira · <a href="https://www.instagram.com/acatmarassociacao/" target="_blank" rel="noopener">@acatmarassociacao</a></div></footer>
+
+<script>
+function fmtData(iso){var m=['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];var p=iso.split('-');return p[2]+' de '+m[parseInt(p[1],10)-1]+' de '+p[0];}
+(async function(){
+  var id=new URLSearchParams(location.search).get('id');
+  var art=document.getElementById('art');
+  try{
+    var d=await (await fetch('noticias.json?v='+Date.now())).json();
+    var all=d.noticias||[]; var n=all.filter(function(x){return x.id===id;})[0]||all[0];
+    if(!n){ art.innerHTML='<div class="load">Notícia não encontrada. <a href="index.html">Voltar</a></div>'; return; }
+    document.title=n.titulo+' — ACATMAR';
+    var body=n.corpo.map(function(p){return '<p>'+p+'</p>';}).join('');
+    art.innerHTML=
+      '<a class="back" href="index.html#noticias">← Todas as notícias</a>'+
+      '<div><span class="cat">'+n.categoria+'</span></div>'+
+      '<h1 class="title">'+n.titulo+'</h1>'+
+      '<div class="meta">'+fmtData(n.data)+'</div>'+
+      '<img class="hero-img" src="'+n.imagem+'" alt="'+n.titulo+'">'+
+      (n.credito?'<div class="credito">Foto: '+n.credito+'</div>':'')+
+      '<div class="body">'+body+'</div>'+
+      '<div class="share"><span>Compartilhar</span>'+
+        '<a target="_blank" rel="noopener" href="https://wa.me/?text='+encodeURIComponent(n.titulo+' '+location.href)+'">WhatsApp</a>'+
+        '<button id="copy">Copiar link</button></div>';
+    document.getElementById('copy').addEventListener('click',function(){
+      (navigator.clipboard?navigator.clipboard.writeText(location.href):Promise.reject()).then(function(){this.textContent='Copiado!';}.bind(this)).catch(function(){prompt('Link:',location.href);});
+    });
+    // relacionadas
+    var rel=all.filter(function(x){return x.id!==n.id;}).slice(0,3);
+    var rg=document.getElementById('rg');
+    rel.forEach(function(x){var a=document.createElement('a');a.className='rc';a.href='noticia.html?id='+x.id;
+      a.innerHTML='<img loading="lazy" src="'+x.imagem+'" alt="'+x.titulo+'"><div class="b"><div class="d">'+fmtData(x.data)+'</div><h3>'+x.titulo+'</h3></div>';rg.appendChild(a);});
+    document.getElementById('related').style.display='';
+    window.scrollTo(0,0);
+  }catch(e){ art.innerHTML='<div class="load">Erro ao carregar. <a href="index.html">Voltar</a></div>'; }
+})();
+</script>
+</body>
+</html>
