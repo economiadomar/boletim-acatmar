@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notícias — ACATMAR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow+Condensed:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0c2230;--navy:#0a2540;--navy2:#0e3557;--deep:#061726;--teal:#00a3b4;--teal-b:#35c9da;--teal-d:#00727e;
+    --paper:#f3f6f7;--sand:#e9eff1;--card:#fff;--muted:#5b6f7a;--line:#d6e0e4}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'PT Serif',Georgia,serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  h1,h3{font-family:'Oswald',sans-serif;font-weight:700;line-height:1.05}
+  .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav .wr{max-width:1160px;margin:0 auto;padding:0 1.4rem;height:74px;display:flex;align-items:center;justify-content:space-between}
+  .nav img{height:54px}
+  .nav .assoc{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#fff;background:var(--teal);padding:.5rem 1.15rem;border-radius:999px;text-decoration:none;font-size:.9rem}
+  .head{background:radial-gradient(130% 130% at 80% -20%,#155a86 0%,var(--navy) 45%,var(--deep) 100%);color:#fff}
+  .head .wr{max-width:1160px;margin:0 auto;padding:3rem 1.4rem}
+  .head .eyebrow{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--teal-b);font-size:.85rem}
+  .head h1{font-size:clamp(2.2rem,5vw,3.4rem);text-transform:uppercase;margin-top:.4rem}
+  .head p{color:#d3e4ee;margin-top:.5rem;max-width:620px}
+  .wrap{max-width:1160px;margin:0 auto;padding:2.5rem 1.4rem 4rem}
+  .filters{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.8rem}
+  .filters button{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.04em;font-size:.85rem;
+    padding:.4rem .9rem;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--navy);cursor:pointer;transition:all .2s}
+  .filters button.on,.filters button:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+  .news{background:var(--card);border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 8px 24px rgba(10,37,64,.08);display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:transform .25s,box-shadow .25s}
+  .news:hover{transform:translateY(-5px);box-shadow:0 20px 40px rgba(10,37,64,.16)}
+  .news .ph{aspect-ratio:16/10;overflow:hidden;background:var(--navy);position:relative}
+  .news .ph img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+  .news:hover .ph img{transform:scale(1.05)}
+  .news .cat{position:absolute;top:.7rem;left:.7rem;background:var(--teal);color:#fff;font-family:'Barlow Condensed';font-weight:600;letter-spacing:.05em;text-transform:uppercase;font-size:.72rem;padding:.22rem .6rem;border-radius:999px}
+  .news .bd{padding:1.1rem 1.2rem 1.3rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
+  .news .date{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:.76rem;color:var(--muted)}
+  .news h3{font-size:1.24rem;color:var(--navy);line-height:1.13}
+  .news p{color:var(--muted);font-size:.95rem}
+  .news .more{margin-top:auto;font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--teal-d);font-size:.9rem}
+  @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:600px){.grid{grid-template-columns:1fr}}
+  footer{background:var(--deep);color:#9fb4c2;padding:1.8rem 0;font-size:.9rem;text-align:center}
+  footer a{color:var(--teal-b);text-decoration:none}
+  .load{grid-column:1/-1;text-align:center;color:var(--muted);padding:2rem}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="wr">
+  <a href="index.html" aria-label="ACATMAR"><img src="media/logos/horiz-branco.png" alt="ACATMAR"></a>
+  <a class="assoc" href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener">Associe-se</a>
+</div></nav>
+
+<header class="head"><div class="wr">
+  <div class="eyebrow">Notícias do setor</div>
+  <h1>O que a ACATMAR está fazendo</h1>
+  <p>Acompanhe as ações, conquistas e eventos da Associação Náutica Brasileira.</p>
+</div></header>
+
+<div class="wrap">
+  <div class="grid" id="grid"><div class="load">Carregando notícias…</div></div>
+</div>
+
+<footer><div>ACATMAR · Associação Náutica Brasileira · <a href="https://www.instagram.com/acatmarassociacao/" target="_blank" rel="noopener">@acatmarassociacao</a></div></footer>
+
+<script>
+function fmtData(iso){var m=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];var p=iso.split('-');return p[2]+' '+m[parseInt(p[1],10)-1]+' '+p[0];}
+var ALL=[];
+function render(cat){
+  var grid=document.getElementById('grid'); grid.innerHTML='';
+  var list=ALL.filter(function(n){return !cat||cat==='Todas'||n.categoria===cat;});
+  list.forEach(function(n){
+    var a=document.createElement('a'); a.className='news'; a.href='noticia.html?id='+n.id;
+    a.innerHTML='<div class="ph"><span class="cat">'+n.categoria+'</span><img loading="lazy" src="'+n.imagem+'" alt="'+n.titulo+'"></div>'+
+      '<div class="bd"><div class="date">'+fmtData(n.data)+'</div><h3>'+n.titulo+'</h3><p>'+n.resumo+'</p><div class="more">Leia mais →</div></div>';
+    grid.appendChild(a);
+  });
+}
+(async function(){
+  try{
+    var d=await (await fetch('noticias.json?v='+Date.now())).json();
+    ALL=(d.noticias||[]).slice().sort(function(a,b){return a.data<b.data?1:-1;});
+    render('Todas');
+  }catch(e){ document.getElementById('grid').innerHTML='<div class="load">Não foi possível carregar as notícias.</div>'; }
+})();
+</script>
+</body>
+</html>

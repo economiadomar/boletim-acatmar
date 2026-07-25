@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projeto — ACATMAR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow+Condensed:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0c2230;--navy:#0a2540;--navy2:#0e3557;--deep:#061726;--teal:#00a3b4;--teal-b:#35c9da;--teal-d:#00727e;
+    --paper:#f3f6f7;--sand:#e9eff1;--card:#fff;--muted:#5b6f7a;--line:#d6e0e4}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'PT Serif',Georgia,serif;color:var(--ink);background:var(--paper);line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  h1,h2{font-family:'Oswald',sans-serif;font-weight:700;line-height:1.05;text-wrap:balance}
+  .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav .wr{max-width:1160px;margin:0 auto;padding:0 1.4rem;height:74px;display:flex;align-items:center;justify-content:space-between}
+  .nav img{height:54px}
+  .nav a.assoc{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#fff;background:var(--teal);padding:.5rem 1.15rem;border-radius:999px;text-decoration:none;font-size:.9rem}
+  .hero{position:relative;color:#fff;overflow:hidden;background:radial-gradient(130% 120% at 78% -20%,#155a86 0%,var(--navy) 45%,var(--deep) 100%)}
+  .hero.haspic{background:var(--navy)}
+  .hero .pic{position:absolute;inset:0;opacity:.32;object-fit:cover;width:100%;height:100%}
+  .hero .wr{position:relative;z-index:2;max-width:1160px;margin:0 auto;padding:3.2rem 1.4rem}
+  .hero .eyebrow{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--teal-b);font-size:.85rem}
+  .hero h1{font-size:clamp(2rem,5vw,3.3rem);text-transform:uppercase;margin-top:.5rem}
+  .hero .tag{font-family:'PT Serif';font-style:italic;color:#d3e4ee;font-size:clamp(1.05rem,2.4vw,1.3rem);margin-top:.6rem;max-width:640px}
+  .back{display:inline-flex;gap:.4rem;color:#cfe0ea;text-decoration:none;font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:.9rem;margin-bottom:1rem}
+  .back:hover{color:#fff}
+  .art{max-width:760px;margin:0 auto;padding:2.6rem 1.4rem}
+  .art p{font-size:1.12rem;margin-bottom:1.1rem}
+  .art p:first-of-type{font-size:1.22rem;color:var(--navy)}
+  .cta{background:var(--sand);border-radius:16px;padding:1.6rem;margin-top:1rem;text-align:center}
+  .cta h2{font-size:1.4rem;color:var(--navy);text-transform:uppercase}
+  .cta p{color:var(--muted);margin:.5rem 0 1rem}
+  .btn{display:inline-flex;gap:.5rem;font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;
+    padding:.7rem 1.5rem;border-radius:999px;text-decoration:none;background:var(--teal);color:#fff}
+  .btn:hover{background:var(--teal-d)}
+  .others{max-width:1160px;margin:0 auto;padding:1rem 1.4rem 3.5rem}
+  .others h2{font-size:1.3rem;color:var(--navy);text-transform:uppercase;margin-bottom:1rem}
+  .og{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+  .oc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.2rem;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s}
+  .oc:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(10,37,64,.12)}
+  .oc .t{font-family:'Oswald';font-weight:600;text-transform:uppercase;color:var(--navy);font-size:1.05rem}
+  .oc .d{color:var(--muted);font-size:.9rem;margin-top:.2rem}
+  @media(max-width:760px){.og{grid-template-columns:1fr}}
+  footer{background:var(--deep);color:#9fb4c2;padding:1.8rem 0;font-size:.9rem;text-align:center}
+  footer a{color:var(--teal-b);text-decoration:none}
+  .load{max-width:760px;margin:4rem auto;text-align:center;color:var(--muted)}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="wr">
+  <a href="index.html" aria-label="ACATMAR"><img src="media/logos/horiz-branco.png" alt="ACATMAR"></a>
+  <a class="assoc" href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener">Associe-se</a>
+</div></nav>
+
+<header class="hero" id="hero">
+  <div class="wr" id="herowr"><div class="load" style="color:#cfe0ea">Carregando…</div></div>
+</header>
+<article class="art" id="art"></article>
+<section class="others" id="others" style="display:none"><h2>Outros projetos</h2><div class="og" id="og"></div></section>
+
+<footer><div>ACATMAR · Associação Náutica Brasileira · <a href="https://www.instagram.com/acatmarassociacao/" target="_blank" rel="noopener">@acatmarassociacao</a></div></footer>
+
+<script>
+(async function(){
+  var id=new URLSearchParams(location.search).get('id');
+  try{
+    var d=await (await fetch('projetos.json?v='+Date.now())).json();
+    var all=d.projetos||[]; var p=all.filter(function(x){return x.id===id;})[0]||all[0];
+    if(!p){ document.getElementById('herowr').innerHTML='<div class="load" style="color:#fff">Projeto não encontrado. <a href="index.html">Voltar</a></div>'; return; }
+    document.title=p.nome+' — ACATMAR';
+    var hero=document.getElementById('hero');
+    if(p.imagem){ hero.classList.add('haspic'); var im=document.createElement('img'); im.className='pic'; im.src=p.imagem; im.alt=''; hero.insertBefore(im,hero.firstChild); }
+    document.getElementById('herowr').innerHTML=
+      '<a class="back" href="index.html#projetos">← Todos os projetos</a>'+
+      '<div class="eyebrow">Projeto ACATMAR</div><h1>'+p.nome+'</h1>'+
+      (p.tagline?'<div class="tag">'+p.tagline+'</div>':'');
+    document.getElementById('art').innerHTML=
+      p.corpo.map(function(x){return '<p>'+x+'</p>';}).join('')+
+      '<div class="cta"><h2>Faça parte da ACATMAR</h2><p>Some sua empresa a quem constrói o futuro do setor náutico brasileiro.</p>'+
+      '<a class="btn" href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener">Quero me associar</a></div>';
+    // outros projetos
+    var og=document.getElementById('og');
+    all.filter(function(x){return x.id!==p.id;}).slice(0,3).forEach(function(x){
+      var a=document.createElement('a'); a.className='oc'; a.href='projeto.html?id='+x.id;
+      a.innerHTML='<div class="t">'+x.nome+'</div><div class="d">'+(x.tagline||'')+'</div>'; og.appendChild(a);
+    });
+    document.getElementById('others').style.display='';
+    window.scrollTo(0,0);
+  }catch(e){ document.getElementById('herowr').innerHTML='<div class="load" style="color:#fff">Erro ao carregar. <a href="index.html">Voltar</a></div>'; }
+})();
+</script>
+</body>
+</html>
