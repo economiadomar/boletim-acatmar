@@ -1,6 +1,77 @@
 {
   "noticias": [
     {
+      "id": "blue-nautical-hub",
+      "titulo": "Blue Nautical HUB Brasil se consolida como plataforma da Economia do Mar",
+      "categoria": "Economia do Mar",
+      "data": "2026-05-01",
+      "imagem": "media/noticias/blue-nautical-hub.jpg",
+      "credito": "Mundo Mar",
+      "resumo": "Cinco eventos em uma semana reuniram visitas técnicas, simpósio internacional, negócios a bordo e cooperação internacional em Santa Catarina.",
+      "corpo": [
+        "O Blue Nautical HUB Brasil 2026 encerrou sua programação deixando como principal legado a consolidação de uma plataforma estratégica de conexão para a Economia do Mar. Foram cinco eventos em uma semana: visitas técnicas, o III Simpósio Internacional Economia Azul, o Encontro de Negócios B2B, o encontro institucional com a Frente Parlamentar e a programação da Cofradía Europea de la Vela.",
+        "Realizado pela ACATMAR e pelo Sebrae/SC entre 26 de abril e 1º de maio, o HUB conectou empresários, especialistas, poder público, estaleiros, marinas, fornecedores e entidades nacionais e internacionais em um ambiente de construção coletiva.",
+        "\"O Blue Nautical HUB Brasil nasceu para ser uma plataforma de conexão para a Economia do Mar. Vimos empresas conversando, negócios sendo iniciados, especialistas compartilhando conhecimento e entidades internacionais criando pontes com o Brasil. Esse é o verdadeiro papel do HUB: conectar para construir\", destaca Leandro Mané Ferrari, presidente da ACATMAR e do Blue Nautical HUB Brasil.",
+        "Uma construção coletiva realizada por Mundo Mar Consulting, ACATMAR, Cofradía Europea de la Vela e Sebrae/SC, com patrocínio de Schaefer Yachts e Marine Telematics."
+      ]
+    },
+    {
+      "id": "visitas-tecnicas-bnh",
+      "titulo": "Visitas técnicas revelam a força da cadeia náutica catarinense",
+      "categoria": "Visitas técnicas",
+      "data": "2026-04-27",
+      "imagem": "media/noticias/visitas-tecnicas-bnh.jpg",
+      "credito": "Mundo Mar",
+      "resumo": "A comitiva do Blue Nautical HUB conheceu estaleiros, marinas e a maricultura, de Itajaí à Grande Florianópolis.",
+      "corpo": [
+        "A programação do Blue Nautical HUB começou em Itajaí, com visitas à Azimut Yachts, ao Estaleiro OKEAN, à operação da Ferretti Yachts no Brasil, à Fibrafort e à Marina Itajaí, encerrando no novo Píer Oporto, em Itapema.",
+        "No segundo dia, os empresários conheceram a Fazenda Marinha Freguesia, em Florianópolis, que apresentou a vertente da maricultura, do turismo de experiência e do uso sustentável dos recursos marinhos, e uma das unidades da Schaefer Yachts, com sua exclusiva máquina CNC de 5 eixos.",
+        "A agenda passou ainda pela Marina Pier 33, às margens do Rio Biguaçu, pelo segundo parque fabril da Schaefer Yachts, em Palhoça, e pelo estaleiro Sessa Marine Brasil / Intech Boating."
+      ]
+    },
+    {
+      "id": "simposio-economia-azul",
+      "titulo": "III Simpósio Internacional amplia o debate sobre o futuro da Economia Azul",
+      "categoria": "Economia Azul",
+      "data": "2026-04-29",
+      "imagem": "media/noticias/simposio-economia-azul.jpg",
+      "credito": "Mundo Mar",
+      "resumo": "Especialistas e gestores debateram infraestrutura e sustentabilidade, e os dados apontam 240 mil empregos no setor em SC.",
+      "corpo": [
+        "Um dos momentos centrais da semana foi o III Simpósio Internacional Economia Azul, que reuniu especialistas, empresários, lideranças institucionais e poder público. A programação abordou infraestrutura náutica, marinas, indústria naval de recreio, turismo, sustentabilidade, governança, Reforma Tributária, Mercosul, internacionalização e formação profissional.",
+        "A parceria com o Sebrae/SC focou na competitividade das micro e pequenas empresas. \"O Sebrae investiu mais de R$ 2 milhões nesta iniciativa. As empresas atendidas já registram aumento médio de 38% na produtividade e 15% no faturamento\", destacou Roberto Tavares, gerente de Competitividade do Sebrae/SC.",
+        "O simpósio também apresentou os dados da Economia do Mar em Santa Catarina: cerca de 240 mil trabalhadores formais, mais de 23 mil estabelecimentos e uma massa salarial mensal de R$ 1,158 bilhão. Como desdobramento, foi firmado um acordo de cooperação entre o Governo de Santa Catarina e a ACATMAR para o compartilhamento de dados do setor."
+      ]
+    },
+    {
+      "id": "b2b-catamara",
+      "titulo": "Negócios a bordo: encontro B2B inédito reúne 70 empresas em um catamarã",
+      "categoria": "Negócios a bordo",
+      "data": "2026-04-30",
+      "imagem": "media/noticias/b2b-catamara.jpg",
+      "credito": "Mundo Mar",
+      "resumo": "Na Beira-Mar de Florianópolis, a ACATMAR e o Sebrae/SC conectaram estaleiros, marinas e fornecedores em reuniões diretas.",
+      "corpo": [
+        "Um dos grandes destaques do Blue Nautical HUB foi o Encontro de Negócios B2B, realizado de forma inédita a bordo de um catamarã, na Beira-Mar de Florianópolis.",
+        "A ACATMAR mobilizou empresas âncoras, estaleiros, marinas e lideranças com poder de decisão, enquanto o Sebrae/SC aplicou sua metodologia de encontros B2B, estruturando uma dinâmica objetiva e voltada a resultados.",
+        "O encontro reuniu cerca de 70 empresas, conectando fornecedores, estaleiros, marinas, prestadores de serviço e potenciais parceiros comerciais em reuniões diretas e qualificadas."
+      ]
+    },
+    {
+      "id": "tributario",
+      "titulo": "ACATMAR mobiliza lideranças contra novas ameaças tributárias",
+      "categoria": "Tributário",
+      "data": "2025-09-15",
+      "imagem": "media/noticias/tributario.jpg",
+      "credito": "Divulgação",
+      "resumo": "Em reunião estratégica, a associação discutiu o IPVA para embarcações, o Imposto Seletivo e a defesa do setor.",
+      "corpo": [
+        "A ACATMAR promoveu uma reunião estratégica para discutir propostas que poderiam impactar proprietários de embarcações, empresas e profissionais: a possibilidade de cobrança de IPVA sobre barcos, a inclusão das embarcações no Imposto Seletivo e os efeitos das tarifas sobre o comércio exterior.",
+        "Mais do que reagir depois de uma decisão tomada, a associação trabalha para antecipar riscos e mostrar às autoridades o impacto econômico e social de cada medida.",
+        "Punir a náutica significa comprometer empregos, reduzir investimentos e enfraquecer o turismo. O caminho defendido pela ACATMAR é o do incentivo, da formalização e da criação de condições para o crescimento."
+      ]
+    },
+    {
       "id": "marina-beira-mar-norte",
       "titulo": "Justiça Federal autoriza a continuidade do licenciamento da Marina Beira-Mar Norte",
       "categoria": "Infraestrutura náutica",
