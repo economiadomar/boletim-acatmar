@@ -172,6 +172,13 @@
   footer .fl a:hover{color:#fff}
   footer .bot{padding-top:1.2rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem}
   footer a.il{color:var(--teal-b);text-decoration:none}
+  footer .info{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;padding:1.4rem 0;border-bottom:1px solid rgba(255,255,255,.1)}
+  footer .info .it{line-height:1.55;color:#bcd0dc;font-size:.9rem}
+  footer .info .it .k{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--teal-b);font-size:.74rem;margin-bottom:.25rem}
+  footer .info a{color:#bcd0dc;text-decoration:none}
+  footer .info a:hover{color:#fff}
+  footer .util{padding-top:1.1rem;color:#8fa6b4;font-size:.85rem}
+  @media(max-width:760px){footer .info{grid-template-columns:repeat(2,1fr)}}
   .loading{grid-column:1/-1;text-align:center;color:var(--muted);padding:2rem}
   .rev{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
   .rev.in{opacity:1;transform:none}
@@ -319,6 +326,13 @@
         <a href="#noticias">Notícias</a><a href="#boletins">Boletins</a><a href="#projetos">Projetos</a><a href="sobre.html">Quem somos</a><a href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener">Associe-se</a>
       </div>
     </div>
+    <div class="info">
+      <div class="it"><div class="k">CNPJ</div>10.713.590/0001-53</div>
+      <div class="it"><div class="k">Endereço</div>Servidão Miguel José Vieira, 264, sala 01<br>Rio Tavares · Florianópolis/SC · 88048-378</div>
+      <div class="it"><div class="k">Telefone</div><a href="tel:+5548991475761">(48) 99147-5761</a><br><a href="tel:+5548991448836">(48) 99144-8836</a></div>
+      <div class="it"><div class="k">E-mail</div><a href="mailto:atendimento@acatmar.com.br">atendimento@acatmar.com.br</a></div>
+    </div>
+    <div class="util">Entidade de Utilidade Pública Municipal de Florianópolis · Associação sem fins lucrativos</div>
     <div class="bot">
       <div>ACATMAR · Associação Náutica Brasileira · Representamos a Economia do Mar desde 2008</div>
       <div><a class="il" href="https://acatmar.org" target="_blank" rel="noopener">acatmar.org</a> · <a class="il" href="https://www.instagram.com/acatmarassociacao/" target="_blank" rel="noopener">@acatmarassociacao</a></div>
@@ -381,6 +395,7 @@ var DICT={
   "Últimas notícias":"Latest news","Folhear os boletins":"Read the bulletins",
   "Ano de fundação":"Founded in","Pilares da Economia do Mar":"Sea Economy pillars","Anos de história":"Years of history",
   "O grande encontro da Economia do Mar":"The great gathering of the Sea Economy","Conheça o evento →":"Discover the event →",
+  "Endereço":"Address","Telefone":"Phone","E-mail":"Email","Entidade de Utilidade Pública Municipal de Florianópolis · Associação sem fins lucrativos":"Entity of Municipal Public Utility of Florianópolis · Non-profit association",
   "Notícias do setor":"Industry news","O que a ACATMAR está fazendo":"What ACATMAR is doing","Ver todas as notícias →":"See all news →",
   "Boletim digital":"Digital bulletin","Folheie as edições da ACATMAR":"Flip through ACATMAR's editions",
   "Projetos transformadores":"Transformative projects","Ações que movem a Economia do Mar":"Actions that move the Sea Economy",

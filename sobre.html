@@ -103,6 +103,11 @@
   .btn:hover{background:var(--teal-d)}
   .back{display:inline-flex;gap:.4rem;color:#cfe0ea;text-decoration:none;font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:.9rem;margin-bottom:1rem}
   .back:hover{color:#fff}
+  footer .foot-legal{max-width:1000px;margin:0 auto;padding:0 1.4rem;line-height:1.7}
+  footer .foot-legal .fl-org{color:#cfe0ea;font-weight:700}
+  footer .foot-legal .fl-info{font-size:.85rem;color:#9fb4c2}
+  footer .foot-legal a{color:var(--teal-b);text-decoration:none}
+
 
   footer{background:var(--deep);color:#9fb4c2;padding:1.8rem 0;font-size:.9rem;text-align:center}
   footer a{color:var(--teal-b);text-decoration:none}
@@ -241,7 +246,13 @@
   <a class="btn" href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener" data-en="I want to join">Quero me associar</a>
 </section></div>
 
-<footer><div>ACATMAR · Associação Náutica Brasileira · <a href="https://www.instagram.com/acatmarassociacao/" target="_blank" rel="noopener">@acatmarassociacao</a></div></footer>
+<footer>
+  <div class="foot-legal">
+    <div class="fl-org">ACATMAR · Associação Náutica Brasileira · Entidade de Utilidade Pública Municipal de Florianópolis</div>
+    <div class="fl-info">CNPJ 10.713.590/0001-53 · Servidão Miguel José Vieira, 264, sala 01 · Rio Tavares · Florianópolis/SC · 88048-378</div>
+    <div class="fl-info"><a href="tel:+5548991475761">(48) 99147-5761</a> · <a href="mailto:atendimento@acatmar.com.br">atendimento@acatmar.com.br</a> · <a href="https://www.instagram.com/acatmarassociacao/" target="_blank" rel="noopener">@acatmarassociacao</a></div>
+  </div>
+</footer>
 
 <script>
 var LANG=localStorage.getItem('acatmar_lang')||'pt', EN=LANG==='en';
