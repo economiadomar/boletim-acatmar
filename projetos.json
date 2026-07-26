@@ -66,7 +66,8 @@
       "nome_en": "Marina Legal Project",
       "tagline": "Segurança jurídica para as estruturas náuticas",
       "tagline_en": "Legal certainty for nautical facilities",
-      "imagem": "",
+      "imagem": "media/projetos/marina-legal.jpg",
+      "galeria": ["media/projetos/marina-legal.jpg"],
       "resumo": "Apoio à regularização documental e à obtenção de licenças ambientais para marinas e estruturas de apoio náutico.",
       "resumo_en": "Support for documentation and environmental licensing of marinas and nautical support facilities.",
       "corpo": [
@@ -86,7 +87,8 @@
       "nome_en": "School of the Sea",
       "tagline": "Qualificação para toda a cadeia produtiva",
       "tagline_en": "Training for the entire production chain",
-      "imagem": "",
+      "imagem": "media/projetos/escola-do-mar.jpg",
+      "galeria": ["media/projetos/escola-do-mar.jpg", "media/projetos/escola-do-mar-2.jpg", "media/projetos/escola-do-mar-3.jpg"],
       "resumo": "Cursos de qualificação que promovem excelência e geram novas oportunidades no setor náutico.",
       "resumo_en": "Training courses that promote excellence and create new opportunities in the nautical sector.",
       "corpo": [
@@ -106,7 +108,8 @@
       "nome_en": "Nautical Circus",
       "tagline": "Desenvolvimento náutico onde há água",
       "tagline_en": "Nautical development wherever there is water",
-      "imagem": "",
+      "imagem": "media/projetos/circo-nautico.jpg",
+      "galeria": ["media/projetos/circo-nautico.jpg", "media/projetos/circo-nautico-2.jpg", "media/projetos/circo-nautico-3.jpg"],
       "resumo": "Leva o desenvolvimento náutico a municípios com potencial em rios, lagos e represas.",
       "resumo_en": "Brings nautical development to towns with potential on rivers, lakes and reservoirs.",
       "corpo": [
@@ -124,20 +127,21 @@
       "id": "projeto-cambusa",
       "nome": "Projeto Cambusa",
       "nome_en": "Cambusa Project",
-      "tagline": "Fortalecendo a cadeia produtiva náutica",
-      "tagline_en": "Strengthening the nautical production chain",
-      "imagem": "",
-      "resumo": "Mais uma frente da ACATMAR para conectar e fortalecer os elos da Economia do Mar.",
-      "resumo_en": "Another ACATMAR initiative to connect and strengthen the links of the Sea Economy.",
+      "tagline": "O melhor da excelência italiana no mercado náutico",
+      "tagline_en": "The best of Italian excellence in the nautical market",
+      "imagem": "media/projetos/projeto-cambusa.jpg",
+      "galeria": ["media/projetos/projeto-cambusa.jpg", "media/projetos/projeto-cambusa-2.jpg", "media/projetos/projeto-cambusa-3.jpg"],
+      "resumo": "Parceria da ACATMAR com a Assonautica Italiana que traz ao setor a Cambusa Store, com o melhor da gastronomia e dos produtos italianos.",
+      "resumo_en": "An ACATMAR partnership with Assonautica Italiana bringing the Cambusa Store, with the best of Italian cuisine and products, to the sector.",
       "corpo": [
-        "O Projeto Cambusa integra a rede de iniciativas da ACATMAR voltadas a conectar e fortalecer os elos da cadeia produtiva náutica.",
-        "Assim como acontece a bordo, onde a cambusa é o ponto que abastece e mantém a tripulação, o projeto trabalha para dar suporte e novas oportunidades a quem vive do setor.",
-        "Em breve, mais detalhes sobre as ações e resultados do Projeto Cambusa."
+        "O Projeto Cambusa nasceu de uma parceria da ACATMAR com a Assonautica Italiana para trazer ao mercado náutico brasileiro o melhor da gastronomia e dos produtos italianos, reunidos na Cambusa Store, a marca da excelência italiana.",
+        "A cambusa é o espaço a bordo que abastece e cuida da tripulação. Levando esse conceito para terra, o projeto apresenta em feiras e eventos do setor uma seleção de vinhos, azeites, conservas, chocolates e iguarias que unem a cultura náutica ao prazer da boa mesa.",
+        "Mais do que sabor, o Cambusa fortalece os laços comerciais entre Brasil e Itália e abre novas oportunidades de negócio para os associados, conectando os elos da Economia do Mar dos dois lados do Atlântico."
       ],
       "corpo_en": [
-        "The Cambusa Project is part of ACATMAR's network of initiatives aimed at connecting and strengthening the links of the nautical production chain.",
-        "Just as on board, where the galley (cambusa) is the point that supplies and sustains the crew, the project works to provide support and new opportunities to those who make a living from the sector.",
-        "More details about the Cambusa Project's actions and results coming soon."
+        "The Cambusa Project was born from a partnership between ACATMAR and Assonautica Italiana to bring the best of Italian cuisine and products to the Brazilian nautical market, gathered in the Cambusa Store, the brand of Italian excellence.",
+        "The cambusa (galley) is the space on board that supplies and cares for the crew. Bringing that concept ashore, the project presents at trade fairs and industry events a selection of wines, olive oils, preserves, chocolates and delicacies that combine nautical culture with the pleasure of fine dining.",
+        "More than flavor, Cambusa strengthens commercial ties between Brazil and Italy and opens new business opportunities for members, connecting the links of the Sea Economy on both sides of the Atlantic."
       ]
     }
   ]

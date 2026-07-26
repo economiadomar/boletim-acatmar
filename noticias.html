@@ -21,6 +21,9 @@
   .nav .r{display:flex;align-items:center;gap:.8rem}
   .langbtn{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.08em;font-size:.9rem;background:transparent;border:1.5px solid var(--line);color:var(--navy);border-radius:999px;padding:.35rem .7rem;cursor:pointer}
   .langbtn:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .nav .r a.nl{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--navy);text-decoration:none;font-size:.98rem}
+  .nav .r a.nl:hover{color:var(--teal-d)}
+  @media(max-width:820px){.nav .r a.nl{display:none}}
   .head{background:radial-gradient(130% 130% at 80% -20%,#155a86 0%,var(--navy) 45%,var(--deep) 100%);color:#fff}
   .head .wr{max-width:1160px;margin:0 auto;padding:3rem 1.4rem}
   .head .eyebrow{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--teal-b);font-size:.85rem}
@@ -53,7 +56,12 @@
 <body>
 <nav class="nav"><div class="wr">
   <a href="index.html" aria-label="ACATMAR"><img src="media/logos/horiz-branco.png" alt="ACATMAR"></a>
-  <div class="r"><button id="lb" class="langbtn" type="button">EN</button>
+  <div class="r">
+  <a class="nl" href="noticias.html" data-en="News">Notícias</a>
+  <a class="nl" href="index.html#boletins" data-en="Newsletters">Boletins</a>
+  <a class="nl" href="index.html#projetos" data-en="Projects">Projetos</a>
+  <a class="nl" href="index.html#sobre" data-en="About">Quem somos</a>
+  <button id="lb" class="langbtn" type="button">EN</button>
   <a class="assoc" id="assoc" href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener">Associe-se</a></div>
 </div></nav>
 
@@ -75,7 +83,8 @@ function fld(o,f){return (EN&&o[f+'_en'])?o[f+'_en']:o[f];}
 function fmtData(iso){var pt=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];var en=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];var p=iso.split('-');return p[2]+' '+(EN?en:pt)[parseInt(p[1],10)-1]+' '+p[0];}
 (function(){document.documentElement.lang=EN?'en':'pt-BR';
   var b=document.getElementById('lb');if(b){b.textContent=EN?'PT':'EN';b.onclick=function(){localStorage.setItem('acatmar_lang',EN?'pt':'en');location.reload();};}
-  if(EN){document.getElementById('assoc').textContent='Join us';document.getElementById('hEye').textContent='Industry news';
+  if(EN){document.querySelectorAll('.nl').forEach(function(x){x.textContent=x.getAttribute('data-en');});
+    document.getElementById('assoc').textContent='Join us';document.getElementById('hEye').textContent='Industry news';
     document.getElementById('hTit').textContent='What ACATMAR is doing';document.getElementById('hSub').textContent="Follow the actions, achievements and events of the Brazilian Nautical Association.";document.title='News — ACATMAR';}})();
 var ALL=[];
 function render(){
