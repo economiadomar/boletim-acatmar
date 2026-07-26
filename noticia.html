@@ -14,6 +14,13 @@
   body{font-family:'PT Serif',Georgia,serif;color:var(--ink);background:var(--paper);line-height:1.7;-webkit-font-smoothing:antialiased}
   a{color:inherit}
   h1,h2{font-family:'Oswald',sans-serif;font-weight:700;line-height:1.05;text-wrap:balance}
+  .promobar{display:flex;align-items:center;justify-content:center;gap:.7rem;flex-wrap:wrap;background:linear-gradient(90deg,#061726,#0e3d63 60%,#155a86);color:#fff;text-decoration:none;padding:.6rem 1rem;font-family:'Barlow Condensed',sans-serif;font-size:1rem;letter-spacing:.02em}
+  .promobar:hover{filter:brightness(1.12)}
+  .promobar .pb-logo{height:26px;width:auto;display:block}
+  .promobar .pb-txt{color:#cfe0ea}
+  .promobar .pb-cta{font-weight:700;text-transform:uppercase;letter-spacing:.05em;background:#00a3b4;color:#fff;padding:.22rem .85rem;border-radius:999px;font-size:.86rem;white-space:nowrap}
+  .promobar:hover .pb-cta{background:#35c9da;color:#06263c}
+  @media(max-width:680px){.promobar{font-size:.9rem;gap:.5rem}.promobar .pb-txt{display:none}}
   .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
   .nav .wr{max-width:1160px;margin:0 auto;padding:0 1.4rem;height:74px;display:flex;align-items:center;justify-content:space-between}
   .nav img{height:54px}
@@ -72,6 +79,12 @@
 </style>
 </head>
 <body>
+<a class="promobar" href="https://www.bluenauticalhubbrasil.com/" target="_blank" rel="noopener">
+  <img class="pb-logo" src="media/logos/bnh-horizontal-branco.png" alt="Blue Nautical HUB Brasil">
+  <span class="pb-txt" data-en="The great gathering of the Sea Economy">O grande encontro da Economia do Mar</span>
+  <span class="pb-cta" data-en="Discover the event →">Conheça o evento →</span>
+</a>
+
 <nav class="nav"><div class="wr">
   <a href="index.html" aria-label="ACATMAR"><img src="media/logos/horiz-branco.png" alt="ACATMAR"></a>
   <div class="r">
@@ -94,7 +107,7 @@ function fld(o,f){return (EN&&o[f+'_en'])?o[f+'_en']:o[f];}
 function fmtData(iso){var pt=['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];var en=['January','February','March','April','May','June','July','August','September','October','November','December'];var p=iso.split('-');var mi=parseInt(p[1],10)-1;return EN?(en[mi]+' '+p[2]+', '+p[0]):(p[2]+' de '+pt[mi]+' de '+p[0]);}
 (function(){document.documentElement.lang=EN?'en':'pt-BR';var b=document.getElementById('lb');if(b){b.textContent=EN?'PT':'EN';b.onclick=function(){localStorage.setItem('acatmar_lang',EN?'pt':'en');location.reload();};}
   var a=document.getElementById('assoc');if(a)a.textContent=EN?'Join us':'Associe-se';
-  if(EN)document.querySelectorAll('.nl').forEach(function(x){x.textContent=x.getAttribute('data-en');});})();
+  if(EN)document.querySelectorAll('.nl,.promobar [data-en]').forEach(function(x){x.textContent=x.getAttribute('data-en');});})();
 (async function(){
   var id=new URLSearchParams(location.search).get('id');
   var art=document.getElementById('art');

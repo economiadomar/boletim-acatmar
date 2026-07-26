@@ -35,6 +35,13 @@
   .btn-navy{background:var(--navy);color:#fff}.btn-navy:hover{background:var(--navy2);transform:translateY(-2px)}
 
   /* nav (branca) */
+  .promobar{display:flex;align-items:center;justify-content:center;gap:.7rem;flex-wrap:wrap;background:linear-gradient(90deg,#061726,#0e3d63 60%,#155a86);color:#fff;text-decoration:none;padding:.6rem 1rem;font-family:'Barlow Condensed',sans-serif;font-size:1rem;letter-spacing:.02em}
+  .promobar:hover{filter:brightness(1.12)}
+  .promobar .pb-logo{height:26px;width:auto;display:block}
+  .promobar .pb-txt{color:#cfe0ea}
+  .promobar .pb-cta{font-weight:700;text-transform:uppercase;letter-spacing:.05em;background:#00a3b4;color:#fff;padding:.22rem .85rem;border-radius:999px;font-size:.86rem;white-space:nowrap}
+  .promobar:hover .pb-cta{background:#35c9da;color:#06263c}
+  @media(max-width:680px){.promobar{font-size:.9rem;gap:.5rem}.promobar .pb-txt{display:none}}
   .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
   .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
   .nav .logo{display:flex;align-items:center;height:56px}
@@ -172,6 +179,12 @@
 </style>
 </head>
 <body id="top">
+
+<a class="promobar" href="https://www.bluenauticalhubbrasil.com/" target="_blank" rel="noopener">
+  <img class="pb-logo" src="media/logos/bnh-horizontal-branco.png" alt="Blue Nautical HUB Brasil">
+  <span class="pb-txt">O grande encontro da Economia do Mar</span>
+  <span class="pb-cta">Conheça o evento →</span>
+</a>
 
 <nav class="nav">
   <div class="wrap">
@@ -367,6 +380,7 @@ var DICT={
   "A ACATMAR é a referência da Economia do Mar no Brasil. Da náutica à pesca, da maricultura ao turismo, promovemos a cultura do uso das águas e o desenvolvimento sustentável do setor, do litoral aos rios, do Sul ao Norte.":"ACATMAR is the reference of the Sea Economy in Brazil. From boating to fishing, from mariculture to tourism, we promote the culture of the use of waters and the sustainable development of the sector, from the coast to the rivers, from South to North.",
   "Últimas notícias":"Latest news","Folhear os boletins":"Read the bulletins",
   "Ano de fundação":"Founded in","Pilares da Economia do Mar":"Sea Economy pillars","Anos de história":"Years of history",
+  "O grande encontro da Economia do Mar":"The great gathering of the Sea Economy","Conheça o evento →":"Discover the event →",
   "Notícias do setor":"Industry news","O que a ACATMAR está fazendo":"What ACATMAR is doing","Ver todas as notícias →":"See all news →",
   "Boletim digital":"Digital bulletin","Folheie as edições da ACATMAR":"Flip through ACATMAR's editions",
   "Projetos transformadores":"Transformative projects","Ações que movem a Economia do Mar":"Actions that move the Sea Economy",
