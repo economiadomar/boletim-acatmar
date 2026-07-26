@@ -2,6 +2,16 @@
   "association": "ACATMAR — Associação Náutica Brasileira",
   "editions": [
     {
+      "id": "2026-1",
+      "title": "1º Semestre de 2026",
+      "period": "I Semestre de 2026",
+      "volume": "Vol. 5 · Ed. 1/26",
+      "year": 2026,
+      "semester": 1,
+      "pages": 14,
+      "highlights": ["Blue Nautical HUB Brasil", "240 mil empregos em SC", "Limpeza dos Mares"]
+    },
+    {
       "id": "2025-2",
       "title": "2º Semestre de 2025",
       "period": "II Semestre de 2025",
