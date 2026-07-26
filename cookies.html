@@ -18,6 +18,9 @@
   .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
   .nav .wr{max-width:1160px;margin:0 auto;padding:0 1.4rem;height:74px;display:flex;align-items:center;justify-content:space-between}
   .nav img{height:54px}
+  .nav .r{display:flex;align-items:center;gap:.8rem}
+  .langbtn{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.08em;font-size:.9rem;background:transparent;border:1.5px solid var(--line);color:var(--navy);border-radius:999px;padding:.35rem .7rem;cursor:pointer}
+  .langbtn:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
   .nav a.assoc{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#fff;background:var(--teal);padding:.5rem 1.15rem;border-radius:999px;text-decoration:none;font-size:.9rem}
   .head{background:radial-gradient(130% 130% at 80% -20%,#155a86 0%,var(--navy) 45%,var(--deep) 100%);color:#fff}
   .head .wr{max-width:820px;margin:0 auto;padding:3rem 1.4rem}
@@ -30,8 +33,6 @@
   main h2{font-size:1.25rem;color:var(--navy);text-transform:uppercase;margin:2rem 0 .6rem}
   main h2:first-child{margin-top:0}
   main p{margin-bottom:1rem}
-  main ul{margin:0 0 1rem 1.2rem}
-  main li{margin-bottom:.4rem}
   table{width:100%;border-collapse:collapse;margin:.4rem 0 1.4rem;font-size:.98rem;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
   th,td{text-align:left;padding:.8rem 1rem;border-bottom:1px solid var(--line);vertical-align:top}
   th{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--teal-d);font-size:.82rem;background:var(--sand)}
@@ -45,40 +46,73 @@
 <body>
 <nav class="nav"><div class="wr">
   <a href="index.html" aria-label="ACATMAR"><img src="media/logos/horiz-branco.png" alt="ACATMAR"></a>
-  <a class="assoc" href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener">Associe-se</a>
+  <div class="r">
+    <button id="lb" class="langbtn" type="button">EN</button>
+    <a class="assoc" id="assoc" href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener">Associe-se</a>
+  </div>
 </div></nav>
 
 <header class="head"><div class="wr">
-  <a class="back" href="index.html">← Início</a>
-  <div class="eyebrow">Cookies e armazenamento</div>
-  <h1>Política de Cookies</h1>
-  <p>Como o site da ACATMAR usa cookies e armazenamento local. Atualizada em julho de 2026.</p>
+  <a class="back" href="index.html" data-en="← Home">← Início</a>
+  <div class="eyebrow" data-en="Cookies and storage">Cookies e armazenamento</div>
+  <h1 data-en="Cookie Policy">Política de Cookies</h1>
+  <p data-en="How ACATMAR's website uses cookies and local storage. Updated in July 2026.">Como o site da ACATMAR usa cookies e armazenamento local. Atualizada em julho de 2026.</p>
 </div></header>
 
 <main>
-  <h2>O que são cookies</h2>
-  <p>Cookies e tecnologias semelhantes (como o armazenamento local do navegador) são pequenos arquivos que um site guarda no seu dispositivo para lembrar preferências e fazer as páginas funcionarem corretamente.</p>
+  <h2 data-en="What are cookies">O que são cookies</h2>
+  <p data-en="Cookies and similar technologies (such as browser local storage) are small files that a website stores on your device to remember preferences and make the pages work properly.">Cookies e tecnologias semelhantes (como o armazenamento local do navegador) são pequenos arquivos que um site guarda no seu dispositivo para lembrar preferências e fazer as páginas funcionarem corretamente.</p>
 
-  <h2>Como a ACATMAR usa</h2>
-  <p>Prezamos pela sua privacidade. Este site usa <b>apenas armazenamento essencial</b>: guardamos localmente a sua <b>preferência de idioma</b> (português ou inglês) e, se você aceitar, o registro de que já viu nosso aviso de cookies. <b>Não usamos cookies de análise, marketing, publicidade ou de terceiros</b>, e não rastreamos a sua navegação.</p>
+  <h2 data-en="How ACATMAR uses them">Como a ACATMAR usa</h2>
+  <p data-en="We value your privacy. This website uses <b>essential storage only</b>: we store your <b>language preference</b> (Portuguese or English) locally and, if you accept, the record that you have already seen our cookie notice. <b>We do not use analytics, marketing, advertising or third-party cookies</b>, and we do not track your browsing.">Prezamos pela sua privacidade. Este site usa <b>apenas armazenamento essencial</b>: guardamos localmente a sua <b>preferência de idioma</b> (português ou inglês) e, se você aceitar, o registro de que já viu nosso aviso de cookies. <b>Não usamos cookies de análise, marketing, publicidade ou de terceiros</b>, e não rastreamos a sua navegação.</p>
 
   <div class="tbwrap"><table>
-    <tr><th>Item</th><th>Finalidade</th><th>Tipo</th><th>Duração</th></tr>
-    <tr><td>acatmar_lang</td><td>Lembrar o idioma escolhido (PT/EN).</td><td>Essencial · armazenamento local</td><td>Até você limpar o navegador</td></tr>
-    <tr><td>acatmar_cookie_consent</td><td>Registrar que o aviso de cookies já foi exibido.</td><td>Essencial · armazenamento local</td><td>Até você limpar o navegador</td></tr>
+    <tr>
+      <th data-en="Item">Item</th>
+      <th data-en="Purpose">Finalidade</th>
+      <th data-en="Type">Tipo</th>
+      <th data-en="Duration">Duração</th>
+    </tr>
+    <tr>
+      <td>acatmar_lang</td>
+      <td data-en="Remember the chosen language (PT/EN).">Lembrar o idioma escolhido (PT/EN).</td>
+      <td data-en="Essential · local storage">Essencial · armazenamento local</td>
+      <td data-en="Until you clear your browser">Até você limpar o navegador</td>
+    </tr>
+    <tr>
+      <td>acatmar_cookie_consent</td>
+      <td data-en="Record that the cookie notice has been shown.">Registrar que o aviso de cookies já foi exibido.</td>
+      <td data-en="Essential · local storage">Essencial · armazenamento local</td>
+      <td data-en="Until you clear your browser">Até você limpar o navegador</td>
+    </tr>
   </table></div>
 
-  <h2>Como gerenciar</h2>
-  <p>Por serem essenciais e não coletarem dados pessoais, esses itens não exigem consentimento prévio. Ainda assim, você pode, a qualquer momento, apagar o armazenamento local e os cookies pelas configurações do seu navegador. Ao fazer isso, o site voltará ao idioma padrão e o aviso de cookies poderá aparecer novamente.</p>
+  <h2 data-en="How to manage">Como gerenciar</h2>
+  <p data-en="Because they are essential and do not collect personal data, these items do not require prior consent. Even so, you can delete local storage and cookies at any time through your browser settings. If you do this, the site will return to the default language and the cookie notice may appear again.">Por serem essenciais e não coletarem dados pessoais, esses itens não exigem consentimento prévio. Ainda assim, você pode, a qualquer momento, apagar o armazenamento local e os cookies pelas configurações do seu navegador. Ao fazer isso, o site voltará ao idioma padrão e o aviso de cookies poderá aparecer novamente.</p>
 
-  <h2>Alterações</h2>
-  <p>Caso passemos a usar novas ferramentas (por exemplo, medição de acessos), atualizaremos esta página e o aviso de cookies passará a pedir o seu consentimento antes de ativá-las. Consulte também a nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
+  <h2 data-en="Changes">Alterações</h2>
+  <p data-en="If we start using new tools (for example, traffic measurement), we will update this page and the cookie notice will begin to request your consent before activating them. See also our <a href='privacidade.html'>Privacy Policy</a>.">Caso passemos a usar novas ferramentas (por exemplo, medição de acessos), atualizaremos esta página e o aviso de cookies passará a pedir o seu consentimento antes de ativá-las. Consulte também a nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
 </main>
 
 <footer><div>
-  ACATMAR · Associação Náutica Brasileira · Entidade de Utilidade Pública Municipal de Florianópolis (Lei Municipal nº 10.711/2020)
-  <div class="fl"><a href="privacidade.html">Política de Privacidade</a><a href="cookies.html">Política de Cookies</a><a href="https://www.instagram.com/acatmarassociacao/" target="_blank" rel="noopener">@acatmarassociacao</a></div>
+  ACATMAR · Associação Náutica Brasileira · <span data-en="Entity of Municipal Public Utility of Florianópolis (Municipal Law No. 10,711/2020)">Entidade de Utilidade Pública Municipal de Florianópolis (Lei Municipal nº 10.711/2020)</span>
+  <div class="fl"><a href="privacidade.html" data-en="Privacy Policy">Política de Privacidade</a><a href="cookies.html" data-en="Cookie Policy">Política de Cookies</a><a href="https://www.instagram.com/acatmarassociacao/" target="_blank" rel="noopener">@acatmarassociacao</a></div>
 </div></footer>
+<script>
+var EN=(function(){try{return localStorage.getItem('acatmar_lang')==='en';}catch(e){return false;}})();
+function applyLang(){
+  document.documentElement.lang=EN?'en':'pt-BR';
+  document.querySelectorAll('[data-en]').forEach(function(el){
+    if(el.dataset.pt===undefined) el.dataset.pt=el.innerHTML;
+    el.innerHTML = EN ? el.getAttribute('data-en') : el.dataset.pt;
+  });
+  var lb=document.getElementById('lb'); if(lb) lb.textContent=EN?'PT':'EN';
+  var a=document.getElementById('assoc'); if(a) a.textContent=EN?'Join us':'Associe-se';
+  document.title=(EN?'Cookie Policy':'Política de Cookies')+' — ACATMAR';
+}
+document.getElementById('lb').onclick=function(){EN=!EN;try{localStorage.setItem('acatmar_lang',EN?'en':'pt');}catch(e){}applyLang();};
+applyLang();
+</script>
 <script src="assets/cookie-consent.js" defer></script>
 </body>
 </html>

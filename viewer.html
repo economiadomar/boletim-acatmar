@@ -94,6 +94,21 @@
 <script src="assets/lib/page-flip.browser.js"></script>
 <script>
 (function(){
+  var EN=(function(){try{return localStorage.getItem('acatmar_lang')==='en';}catch(e){return false;}})();
+  document.documentElement.lang=EN?'en':'pt-BR';
+  function edTitle(t){ if(!EN||!t) return t; return String(t).replace('1º Semestre de','1st Half of').replace('2º Semestre de','2nd Half of').replace('Semestre de','Half of'); }
+  if(EN){
+    var tEl=document.getElementById('title'); if(tEl&&tEl.childNodes[0]) tEl.childNodes[0].textContent='ACATMAR Bulletin';
+    var bk=document.querySelector('.back .label'); if(bk) bk.textContent='Bulletins';
+    var sub=document.getElementById('subtitle'); if(sub) sub.textContent='Loading…';
+    var dl0=document.getElementById('dl'); if(dl0) dl0.title='Download PDF';
+    var sh0=document.getElementById('share'); if(sh0) sh0.title='Share';
+    var fs0=document.getElementById('fs'); if(fs0) fs0.title='Fullscreen';
+    var pv=document.getElementById('prev'); if(pv) pv.setAttribute('aria-label','Previous page');
+    var nx=document.getElementById('next'); if(nx) nx.setAttribute('aria-label','Next page');
+    var hn=document.getElementById('hint'); if(hn) hn.textContent='👆 Drag the page to flip';
+    var lt0=document.getElementById('loadtxt'); if(lt0) lt0.textContent='Preparing the bulletin…';
+  }
   var params = new URLSearchParams(location.search);
   var edId = params.get('ed') || '2025-1';
   var loader = document.getElementById('loader');
@@ -103,12 +118,12 @@
 
   fetch('editions.json?v='+Date.now()).then(function(r){return r.json();}).then(function(data){
     var ed = (data.editions||[]).filter(function(e){return e.id===edId;})[0];
-    if(!ed){ fail('Edição não encontrada.'); return; }
-    document.title = 'Boletim ACATMAR — '+ed.title;
-    document.getElementById('subtitle').textContent = ed.title;
+    if(!ed){ fail(EN?'Edition not found.':'Edição não encontrada.'); return; }
+    document.title = (EN?'ACATMAR Bulletin — ':'Boletim ACATMAR — ')+edTitle(ed.title);
+    document.getElementById('subtitle').textContent = edTitle(ed.title);
     document.getElementById('dl').href = 'editions/'+ed.id+'/boletim.pdf';
     buildBook(ed);
-  }).catch(function(e){ fail('Erro ao carregar: '+e.message); });
+  }).catch(function(e){ fail((EN?'Loading error: ':'Erro ao carregar: ')+e.message); });
 
   function buildBook(ed){
     var stage = document.getElementById('stage');
@@ -236,11 +251,11 @@
   document.getElementById('share').addEventListener('click', function(){
     var url = location.href;
     if(navigator.share){
-      navigator.share({title:'Boletim ACATMAR', text:'Confira o Boletim da ACATMAR', url:url}).catch(function(){});
+      navigator.share({title:(EN?'ACATMAR Bulletin':'Boletim ACATMAR'), text:(EN?'Check out the ACATMAR Bulletin':'Confira o Boletim da ACATMAR'), url:url}).catch(function(){});
     } else {
       navigator.clipboard.writeText(url).then(function(){
-        var b=this; alert('Link copiado! Cole no WhatsApp ou e-mail.');
-      }.bind(this)).catch(function(){ prompt('Copie o link:', url); });
+        var b=this; alert(EN?'Link copied! Paste it into WhatsApp or e-mail.':'Link copiado! Cole no WhatsApp ou e-mail.');
+      }.bind(this)).catch(function(){ prompt(EN?'Copy the link:':'Copie o link:', url); });
     }
   });
 

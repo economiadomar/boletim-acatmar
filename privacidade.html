@@ -18,6 +18,9 @@
   .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
   .nav .wr{max-width:1160px;margin:0 auto;padding:0 1.4rem;height:74px;display:flex;align-items:center;justify-content:space-between}
   .nav img{height:54px}
+  .nav .r{display:flex;align-items:center;gap:.8rem}
+  .langbtn{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.08em;font-size:.9rem;background:transparent;border:1.5px solid var(--line);color:var(--navy);border-radius:999px;padding:.35rem .7rem;cursor:pointer}
+  .langbtn:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
   .nav a.assoc{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#fff;background:var(--teal);padding:.5rem 1.15rem;border-radius:999px;text-decoration:none;font-size:.9rem}
   .head{background:radial-gradient(130% 130% at 80% -20%,#155a86 0%,var(--navy) 45%,var(--deep) 100%);color:#fff}
   .head .wr{max-width:820px;margin:0 auto;padding:3rem 1.4rem}
@@ -42,32 +45,35 @@
 <body>
 <nav class="nav"><div class="wr">
   <a href="index.html" aria-label="ACATMAR"><img src="media/logos/horiz-branco.png" alt="ACATMAR"></a>
-  <a class="assoc" href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener">Associe-se</a>
+  <div class="r">
+    <button id="lb" class="langbtn" type="button">EN</button>
+    <a class="assoc" id="assoc" href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener">Associe-se</a>
+  </div>
 </div></nav>
 
 <header class="head"><div class="wr">
-  <a class="back" href="index.html">← Início</a>
-  <div class="eyebrow">Privacidade e proteção de dados</div>
-  <h1>Política de Privacidade</h1>
-  <p>Em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD). Atualizada em julho de 2026.</p>
+  <a class="back" href="index.html" data-en="← Home">← Início</a>
+  <div class="eyebrow" data-en="Privacy and data protection">Privacidade e proteção de dados</div>
+  <h1 data-en="Privacy Policy">Política de Privacidade</h1>
+  <p data-en="In accordance with the Brazilian General Data Protection Law (Law No. 13,709/2018 — LGPD). Updated in July 2026.">Em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD). Atualizada em julho de 2026.</p>
 </div></header>
 
 <main>
-  <div class="box">
+  <div class="box" data-en="<b>Data controller</b><br>ACATMAR — Brazilian Nautical Association · CNPJ 10.713.590/0001-53<br>Servidão Miguel José Vieira, 264, room 01 · Rio Tavares · Florianópolis/SC · ZIP 88048-378<br>E-mail: <a href='mailto:atendimento@acatmar.com.br'>atendimento@acatmar.com.br</a>">
     <b>Controlador dos dados</b><br>
     ACATMAR — Associação Náutica Brasileira · CNPJ 10.713.590/0001-53<br>
     Servidão Miguel José Vieira, 264, sala 01 · Rio Tavares · Florianópolis/SC · CEP 88048-378<br>
     E-mail: <a href="mailto:atendimento@acatmar.com.br">atendimento@acatmar.com.br</a>
   </div>
 
-  <p>A sua privacidade é importante para a ACATMAR. Esta Política explica como tratamos os dados pessoais de quem visita nosso site e se relaciona com a associação, e quais são os seus direitos.</p>
+  <p data-en="Your privacy matters to ACATMAR. This Policy explains how we handle the personal data of those who visit our website and interact with the association, and what your rights are.">A sua privacidade é importante para a ACATMAR. Esta Política explica como tratamos os dados pessoais de quem visita nosso site e se relaciona com a associação, e quais são os seus direitos.</p>
 
-  <h2>1. Quais dados tratamos</h2>
-  <p><b>Dados que você nos fornece.</b> Quando você entra em contato conosco, se inscreve em nossas ações ou se associa, podemos coletar informações como nome, e-mail, telefone, empresa e o conteúdo das mensagens enviadas.</p>
-  <p><b>Dados de navegação.</b> Este site guarda, no seu próprio navegador, apenas a sua preferência de idioma (português ou inglês), para que a navegação funcione. <b>Não utilizamos cookies de rastreamento, análise ou publicidade</b> e não construímos perfis de navegação. Veja mais na nossa <a href="cookies.html">Política de Cookies</a>.</p>
+  <h2 data-en="1. What data we process">1. Quais dados tratamos</h2>
+  <p data-en="<b>Data you provide.</b> When you contact us, sign up for our activities or become a member, we may collect information such as name, e-mail, phone, company and the content of the messages sent."><b>Dados que você nos fornece.</b> Quando você entra em contato conosco, se inscreve em nossas ações ou se associa, podemos coletar informações como nome, e-mail, telefone, empresa e o conteúdo das mensagens enviadas.</p>
+  <p data-en="<b>Browsing data.</b> This website stores, in your own browser, only your language preference (Portuguese or English), so that navigation works. <b>We do not use tracking, analytics or advertising cookies</b> and we do not build browsing profiles. Learn more in our <a href='cookies.html'>Cookie Policy</a>."><b>Dados de navegação.</b> Este site guarda, no seu próprio navegador, apenas a sua preferência de idioma (português ou inglês), para que a navegação funcione. <b>Não utilizamos cookies de rastreamento, análise ou publicidade</b> e não construímos perfis de navegação. Veja mais na nossa <a href="cookies.html">Política de Cookies</a>.</p>
 
-  <h2>2. Para que usamos os dados</h2>
-  <ul>
+  <h2 data-en="2. Why we use the data">2. Para que usamos os dados</h2>
+  <ul data-en="<li>Respond to contacts, questions and requests;</li><li>Enable and manage the membership of companies and professionals;</li><li>Send industry information and news, when you authorize it;</li><li>Keep the website working and secure;</li><li>Comply with legal and regulatory obligations.</li>">
     <li>Responder a contatos, dúvidas e solicitações;</li>
     <li>Viabilizar e administrar a associação de empresas e profissionais;</li>
     <li>Enviar informações e novidades do setor, quando você autorizar;</li>
@@ -75,29 +81,44 @@
     <li>Cumprir obrigações legais e regulatórias.</li>
   </ul>
 
-  <h2>3. Base legal</h2>
-  <p>Tratamos dados com fundamento nas hipóteses da LGPD, especialmente: o seu <b>consentimento</b>, a <b>execução de contrato</b> ou de procedimentos preliminares, o <b>cumprimento de obrigação legal</b> e o <b>legítimo interesse</b> da associação, sempre respeitando os seus direitos.</p>
+  <h2 data-en="3. Legal basis">3. Base legal</h2>
+  <p data-en="We process data based on the grounds of the LGPD, especially: your <b>consent</b>, the <b>performance of a contract</b> or preliminary procedures, <b>compliance with a legal obligation</b> and the <b>legitimate interest</b> of the association, always respecting your rights.">Tratamos dados com fundamento nas hipóteses da LGPD, especialmente: o seu <b>consentimento</b>, a <b>execução de contrato</b> ou de procedimentos preliminares, o <b>cumprimento de obrigação legal</b> e o <b>legítimo interesse</b> da associação, sempre respeitando os seus direitos.</p>
 
-  <h2>4. Compartilhamento</h2>
-  <p>A ACATMAR <b>não vende</b> dados pessoais. Podemos compartilhá-los apenas quando necessário: com prestadores de serviço que nos apoiam (por exemplo, a plataforma de gestão de associados), estritamente para as finalidades acima; e com autoridades públicas, quando exigido por lei.</p>
+  <h2 data-en="4. Sharing">4. Compartilhamento</h2>
+  <p data-en="ACATMAR <b>does not sell</b> personal data. We may share it only when necessary: with service providers that support us (for example, the membership management platform), strictly for the purposes above; and with public authorities, when required by law.">A ACATMAR <b>não vende</b> dados pessoais. Podemos compartilhá-los apenas quando necessário: com prestadores de serviço que nos apoiam (por exemplo, a plataforma de gestão de associados), estritamente para as finalidades acima; e com autoridades públicas, quando exigido por lei.</p>
 
-  <h2>5. Armazenamento e segurança</h2>
-  <p>Adotamos medidas técnicas e organizacionais razoáveis para proteger os dados contra acessos não autorizados, perda ou uso indevido. Os dados são mantidos apenas pelo tempo necessário às finalidades ou às obrigações legais.</p>
+  <h2 data-en="5. Storage and security">5. Armazenamento e segurança</h2>
+  <p data-en="We adopt reasonable technical and organizational measures to protect data against unauthorized access, loss or misuse. Data is kept only for as long as necessary for the purposes or legal obligations.">Adotamos medidas técnicas e organizacionais razoáveis para proteger os dados contra acessos não autorizados, perda ou uso indevido. Os dados são mantidos apenas pelo tempo necessário às finalidades ou às obrigações legais.</p>
 
-  <h2>6. Seus direitos</h2>
-  <p>A LGPD garante a você, a qualquer momento, o direito de: confirmar a existência de tratamento; acessar seus dados; corrigir dados incompletos ou desatualizados; solicitar anonimização, bloqueio ou eliminação; obter portabilidade; ser informado sobre compartilhamentos; e revogar o consentimento.</p>
+  <h2 data-en="6. Your rights">6. Seus direitos</h2>
+  <p data-en="The LGPD guarantees you, at any time, the right to: confirm the existence of processing; access your data; correct incomplete or outdated data; request anonymization, blocking or deletion; obtain portability; be informed about sharing; and withdraw consent.">A LGPD garante a você, a qualquer momento, o direito de: confirmar a existência de tratamento; acessar seus dados; corrigir dados incompletos ou desatualizados; solicitar anonimização, bloqueio ou eliminação; obter portabilidade; ser informado sobre compartilhamentos; e revogar o consentimento.</p>
 
-  <h2>7. Como exercer seus direitos</h2>
-  <p>Basta escrever para <a href="mailto:atendimento@acatmar.com.br">atendimento@acatmar.com.br</a>. Nosso Encarregado pelo Tratamento de Dados (DPO) pode ser contatado pelo mesmo e-mail, que responderá às suas solicitações nos prazos da lei.</p>
+  <h2 data-en="7. How to exercise your rights">7. Como exercer seus direitos</h2>
+  <p data-en="Just write to <a href='mailto:atendimento@acatmar.com.br'>atendimento@acatmar.com.br</a>. Our Data Protection Officer (DPO) can be contacted at the same e-mail, and will respond to your requests within the deadlines set by law.">Basta escrever para <a href="mailto:atendimento@acatmar.com.br">atendimento@acatmar.com.br</a>. Nosso Encarregado pelo Tratamento de Dados (DPO) pode ser contatado pelo mesmo e-mail, que responderá às suas solicitações nos prazos da lei.</p>
 
-  <h2>8. Alterações desta Política</h2>
-  <p>Podemos atualizar esta Política para refletir mudanças legais ou em nossos processos. A versão vigente estará sempre disponível nesta página, com a data de atualização.</p>
+  <h2 data-en="8. Changes to this Policy">8. Alterações desta Política</h2>
+  <p data-en="We may update this Policy to reflect legal changes or changes in our processes. The current version will always be available on this page, with the update date.">Podemos atualizar esta Política para refletir mudanças legais ou em nossos processos. A versão vigente estará sempre disponível nesta página, com a data de atualização.</p>
 </main>
 
 <footer><div>
-  ACATMAR · Associação Náutica Brasileira · Entidade de Utilidade Pública Municipal de Florianópolis (Lei Municipal nº 10.711/2020)
-  <div class="fl"><a href="privacidade.html">Política de Privacidade</a><a href="cookies.html">Política de Cookies</a><a href="https://www.instagram.com/acatmarassociacao/" target="_blank" rel="noopener">@acatmarassociacao</a></div>
+  ACATMAR · Associação Náutica Brasileira · <span data-en="Entity of Municipal Public Utility of Florianópolis (Municipal Law No. 10,711/2020)">Entidade de Utilidade Pública Municipal de Florianópolis (Lei Municipal nº 10.711/2020)</span>
+  <div class="fl"><a href="privacidade.html" data-en="Privacy Policy">Política de Privacidade</a><a href="cookies.html" data-en="Cookie Policy">Política de Cookies</a><a href="https://www.instagram.com/acatmarassociacao/" target="_blank" rel="noopener">@acatmarassociacao</a></div>
 </div></footer>
+<script>
+var EN=(function(){try{return localStorage.getItem('acatmar_lang')==='en';}catch(e){return false;}})();
+function applyLang(){
+  document.documentElement.lang=EN?'en':'pt-BR';
+  document.querySelectorAll('[data-en]').forEach(function(el){
+    if(el.dataset.pt===undefined) el.dataset.pt=el.innerHTML;
+    el.innerHTML = EN ? el.getAttribute('data-en') : el.dataset.pt;
+  });
+  var lb=document.getElementById('lb'); if(lb) lb.textContent=EN?'PT':'EN';
+  var a=document.getElementById('assoc'); if(a) a.textContent=EN?'Join us':'Associe-se';
+  document.title=(EN?'Privacy Policy':'Política de Privacidade')+' — ACATMAR';
+}
+document.getElementById('lb').onclick=function(){EN=!EN;try{localStorage.setItem('acatmar_lang',EN?'en':'pt');}catch(e){}applyLang();};
+applyLang();
+</script>
 <script src="assets/cookie-consent.js" defer></script>
 </body>
 </html>
