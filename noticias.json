@@ -3,240 +3,355 @@
     {
       "id": "blue-nautical-hub",
       "titulo": "Blue Nautical HUB Brasil se consolida como plataforma da Economia do Mar",
+      "titulo_en": "Blue Nautical HUB Brasil establishes itself as a platform for the Sea Economy",
       "categoria": "Economia do Mar",
+      "categoria_en": "Sea Economy",
       "data": "2026-05-01",
       "imagem": "media/noticias/blue-nautical-hub.jpg",
       "credito": "Mundo Mar",
       "resumo": "Cinco eventos em uma semana reuniram visitas técnicas, simpósio internacional, negócios a bordo e cooperação internacional em Santa Catarina.",
+      "resumo_en": "Five events in one week combined technical visits, an international symposium, business on board and international cooperation in Santa Catarina.",
       "corpo": [
         "O Blue Nautical HUB Brasil 2026 encerrou sua programação deixando como principal legado a consolidação de uma plataforma estratégica de conexão para a Economia do Mar. Foram cinco eventos em uma semana: visitas técnicas, o III Simpósio Internacional Economia Azul, o Encontro de Negócios B2B, o encontro institucional com a Frente Parlamentar e a programação da Cofradía Europea de la Vela.",
         "Realizado pela ACATMAR e pelo Sebrae/SC entre 26 de abril e 1º de maio, o HUB conectou empresários, especialistas, poder público, estaleiros, marinas, fornecedores e entidades nacionais e internacionais em um ambiente de construção coletiva.",
         "\"O Blue Nautical HUB Brasil nasceu para ser uma plataforma de conexão para a Economia do Mar. Vimos empresas conversando, negócios sendo iniciados, especialistas compartilhando conhecimento e entidades internacionais criando pontes com o Brasil. Esse é o verdadeiro papel do HUB: conectar para construir\", destaca Leandro Mané Ferrari, presidente da ACATMAR e do Blue Nautical HUB Brasil.",
         "Uma construção coletiva realizada por Mundo Mar Consulting, ACATMAR, Cofradía Europea de la Vela e Sebrae/SC, com patrocínio de Schaefer Yachts e Marine Telematics."
-      ]
-    },
-    {
-      "id": "visitas-tecnicas-bnh",
-      "titulo": "Visitas técnicas revelam a força da cadeia náutica catarinense",
-      "categoria": "Visitas técnicas",
-      "data": "2026-04-27",
-      "imagem": "media/noticias/visitas-tecnicas-bnh.jpg",
-      "credito": "Mundo Mar",
-      "resumo": "A comitiva do Blue Nautical HUB conheceu estaleiros, marinas e a maricultura, de Itajaí à Grande Florianópolis.",
-      "corpo": [
-        "A programação do Blue Nautical HUB começou em Itajaí, com visitas à Azimut Yachts, ao Estaleiro OKEAN, à operação da Ferretti Yachts no Brasil, à Fibrafort e à Marina Itajaí, encerrando no novo Píer Oporto, em Itapema.",
-        "No segundo dia, os empresários conheceram a Fazenda Marinha Freguesia, em Florianópolis, que apresentou a vertente da maricultura, do turismo de experiência e do uso sustentável dos recursos marinhos, e uma das unidades da Schaefer Yachts, com sua exclusiva máquina CNC de 5 eixos.",
-        "A agenda passou ainda pela Marina Pier 33, às margens do Rio Biguaçu, pelo segundo parque fabril da Schaefer Yachts, em Palhoça, e pelo estaleiro Sessa Marine Brasil / Intech Boating."
-      ]
-    },
-    {
-      "id": "simposio-economia-azul",
-      "titulo": "III Simpósio Internacional amplia o debate sobre o futuro da Economia Azul",
-      "categoria": "Economia Azul",
-      "data": "2026-04-29",
-      "imagem": "media/noticias/simposio-economia-azul.jpg",
-      "credito": "Mundo Mar",
-      "resumo": "Especialistas e gestores debateram infraestrutura e sustentabilidade, e os dados apontam 240 mil empregos no setor em SC.",
-      "corpo": [
-        "Um dos momentos centrais da semana foi o III Simpósio Internacional Economia Azul, que reuniu especialistas, empresários, lideranças institucionais e poder público. A programação abordou infraestrutura náutica, marinas, indústria naval de recreio, turismo, sustentabilidade, governança, Reforma Tributária, Mercosul, internacionalização e formação profissional.",
-        "A parceria com o Sebrae/SC focou na competitividade das micro e pequenas empresas. \"O Sebrae investiu mais de R$ 2 milhões nesta iniciativa. As empresas atendidas já registram aumento médio de 38% na produtividade e 15% no faturamento\", destacou Roberto Tavares, gerente de Competitividade do Sebrae/SC.",
-        "O simpósio também apresentou os dados da Economia do Mar em Santa Catarina: cerca de 240 mil trabalhadores formais, mais de 23 mil estabelecimentos e uma massa salarial mensal de R$ 1,158 bilhão. Como desdobramento, foi firmado um acordo de cooperação entre o Governo de Santa Catarina e a ACATMAR para o compartilhamento de dados do setor."
+      ],
+      "corpo_en": [
+        "Blue Nautical HUB Brasil 2026 wrapped up its program leaving as its main legacy the consolidation of a strategic connection platform for the Sea Economy. There were five events in one week: technical visits, the 3rd International Blue Economy Symposium, the B2B Business Meeting, the institutional meeting with the Parliamentary Front and the program of the Cofradía Europea de la Vela.",
+        "Held by ACATMAR and Sebrae/SC between April 26 and May 1, the HUB connected entrepreneurs, experts, public authorities, shipyards, marinas, suppliers and national and international organizations in a space of collective building.",
+        "\"Blue Nautical HUB Brasil was created to be a connection platform for the Sea Economy. We saw companies talking, deals being started, experts sharing knowledge and international bodies building bridges with Brazil. That is the true role of the HUB: to connect in order to build,\" says Leandro Mané Ferrari, president of ACATMAR and of Blue Nautical HUB Brasil.",
+        "A collective effort by Mundo Mar Consulting, ACATMAR, Cofradía Europea de la Vela and Sebrae/SC, sponsored by Schaefer Yachts and Marine Telematics."
       ]
     },
     {
       "id": "b2b-catamara",
       "titulo": "Negócios a bordo: encontro B2B inédito reúne 70 empresas em um catamarã",
+      "titulo_en": "Business on board: a first-of-its-kind B2B meeting brings 70 companies together on a catamaran",
       "categoria": "Negócios a bordo",
+      "categoria_en": "Business on board",
       "data": "2026-04-30",
       "imagem": "media/noticias/b2b-catamara.jpg",
       "credito": "Mundo Mar",
       "resumo": "Na Beira-Mar de Florianópolis, a ACATMAR e o Sebrae/SC conectaram estaleiros, marinas e fornecedores em reuniões diretas.",
+      "resumo_en": "On the Florianópolis waterfront, ACATMAR and Sebrae/SC connected shipyards, marinas and suppliers in direct meetings.",
       "corpo": [
         "Um dos grandes destaques do Blue Nautical HUB foi o Encontro de Negócios B2B, realizado de forma inédita a bordo de um catamarã, na Beira-Mar de Florianópolis.",
         "A ACATMAR mobilizou empresas âncoras, estaleiros, marinas e lideranças com poder de decisão, enquanto o Sebrae/SC aplicou sua metodologia de encontros B2B, estruturando uma dinâmica objetiva e voltada a resultados.",
         "O encontro reuniu cerca de 70 empresas, conectando fornecedores, estaleiros, marinas, prestadores de serviço e potenciais parceiros comerciais em reuniões diretas e qualificadas."
+      ],
+      "corpo_en": [
+        "One of the highlights of the Blue Nautical HUB was the B2B Business Meeting, held for the first time on board a catamaran on the Florianópolis waterfront.",
+        "ACATMAR mobilized anchor companies, shipyards, marinas and decision-makers, while Sebrae/SC applied its B2B meeting methodology, creating an objective, results-driven format.",
+        "The meeting brought together around 70 companies, connecting suppliers, shipyards, marinas, service providers and potential business partners in direct, qualified meetings."
+      ]
+    },
+    {
+      "id": "simposio-economia-azul",
+      "titulo": "III Simpósio Internacional amplia o debate sobre o futuro da Economia Azul",
+      "titulo_en": "3rd International Symposium broadens the debate on the future of the Blue Economy",
+      "categoria": "Economia Azul",
+      "categoria_en": "Blue Economy",
+      "data": "2026-04-29",
+      "imagem": "media/noticias/simposio-economia-azul.jpg",
+      "credito": "Mundo Mar",
+      "resumo": "Especialistas e gestores debateram infraestrutura e sustentabilidade, e os dados apontam 240 mil empregos no setor em SC.",
+      "resumo_en": "Experts and officials debated infrastructure and sustainability, and the data points to 240,000 jobs in the sector in Santa Catarina.",
+      "corpo": [
+        "Um dos momentos centrais da semana foi o III Simpósio Internacional Economia Azul, que reuniu especialistas, empresários, lideranças institucionais e poder público. A programação abordou infraestrutura náutica, marinas, indústria naval de recreio, turismo, sustentabilidade, governança, Reforma Tributária, Mercosul, internacionalização e formação profissional.",
+        "A parceria com o Sebrae/SC focou na competitividade das micro e pequenas empresas. \"O Sebrae investiu mais de R$ 2 milhões nesta iniciativa. As empresas atendidas já registram aumento médio de 38% na produtividade e 15% no faturamento\", destacou Roberto Tavares, gerente de Competitividade do Sebrae/SC.",
+        "O simpósio também apresentou os dados da Economia do Mar em Santa Catarina: cerca de 240 mil trabalhadores formais, mais de 23 mil estabelecimentos e uma massa salarial mensal de R$ 1,158 bilhão. Como desdobramento, foi firmado um acordo de cooperação entre o Governo de Santa Catarina e a ACATMAR para o compartilhamento de dados do setor."
+      ],
+      "corpo_en": [
+        "One of the central moments of the week was the 3rd International Blue Economy Symposium, which gathered experts, entrepreneurs, institutional leaders and public authorities. The program covered nautical infrastructure, marinas, the recreational boatbuilding industry, tourism, sustainability, governance, tax reform, Mercosur, internationalization and professional training.",
+        "The partnership with Sebrae/SC focused on the competitiveness of micro and small businesses. \"Sebrae invested more than R$ 2 million in this initiative. The companies supported already show an average 38% increase in productivity and 15% in revenue,\" said Roberto Tavares, Competitiveness manager at Sebrae/SC.",
+        "The symposium also presented data on the Sea Economy in Santa Catarina: around 240,000 formal workers, more than 23,000 establishments and a monthly payroll of R$ 1.158 billion. As a result, a cooperation agreement was signed between the Santa Catarina State Government and ACATMAR to share sector data."
+      ]
+    },
+    {
+      "id": "visitas-tecnicas-bnh",
+      "titulo": "Visitas técnicas revelam a força da cadeia náutica catarinense",
+      "titulo_en": "Technical visits reveal the strength of Santa Catarina's nautical chain",
+      "categoria": "Visitas técnicas",
+      "categoria_en": "Technical visits",
+      "data": "2026-04-27",
+      "imagem": "media/noticias/visitas-tecnicas-bnh.jpg",
+      "credito": "Mundo Mar",
+      "resumo": "A comitiva do Blue Nautical HUB conheceu estaleiros, marinas e a maricultura, de Itajaí à Grande Florianópolis.",
+      "resumo_en": "The Blue Nautical HUB delegation visited shipyards, marinas and mariculture, from Itajaí to Greater Florianópolis.",
+      "corpo": [
+        "A programação do Blue Nautical HUB começou em Itajaí, com visitas à Azimut Yachts, ao Estaleiro OKEAN, à operação da Ferretti Yachts no Brasil, à Fibrafort e à Marina Itajaí, encerrando no novo Píer Oporto, em Itapema.",
+        "No segundo dia, os empresários conheceram a Fazenda Marinha Freguesia, em Florianópolis, que apresentou a vertente da maricultura, do turismo de experiência e do uso sustentável dos recursos marinhos, e uma das unidades da Schaefer Yachts, com sua exclusiva máquina CNC de 5 eixos.",
+        "A agenda passou ainda pela Marina Pier 33, às margens do Rio Biguaçu, pelo segundo parque fabril da Schaefer Yachts, em Palhoça, e pelo estaleiro Sessa Marine Brasil / Intech Boating."
+      ],
+      "corpo_en": [
+        "The Blue Nautical HUB program began in Itajaí, with visits to Azimut Yachts, the OKEAN Shipyard, Ferretti Yachts' operation in Brazil, Fibrafort and Marina Itajaí, ending at the new Píer Oporto in Itapema.",
+        "On the second day, the entrepreneurs visited the Freguesia Marine Farm in Florianópolis, which showcased mariculture, experience tourism and the sustainable use of marine resources, as well as one of Schaefer Yachts' units, with its exclusive 5-axis CNC machine.",
+        "The agenda also included Marina Pier 33, on the banks of the Biguaçu River, Schaefer Yachts' second manufacturing plant in Palhoça, and the Sessa Marine Brasil / Intech Boating shipyard."
       ]
     },
     {
       "id": "cofradia-europea",
       "titulo": "Cofradía Europea de la Vela fortalece a dimensão cultural e internacional do HUB",
+      "titulo_en": "Cofradía Europea de la Vela strengthens the HUB's cultural and international dimension",
       "categoria": "Cooperação internacional",
+      "categoria_en": "International cooperation",
       "data": "2026-04-28",
       "imagem": "media/noticias/cofradia.jpg",
       "credito": "Mundo Mar",
       "resumo": "O encontro da entidade europeia aproximou Brasil e Europa em torno da cultura marítima e da tradição náutica.",
+      "resumo_en": "The European body's gathering brought Brazil and Europe closer around maritime culture and nautical tradition.",
       "corpo": [
         "A programação do Blue Nautical HUB contou com o encontro da Cofradía Europea de la Vela, entidade internacional ligada à cultura marítima, à vela, à tradição náutica e ao fortalecimento dos laços entre países conectados pelo mar.",
         "O encontro reuniu cofrades, convidados, autoridades e representantes do setor em um momento simbólico de aproximação entre Brasil e Europa, fortalecendo a cooperação internacional, a diplomacia náutica, a cultura marítima e a construção de novas conexões institucionais."
-      ]
-    },
-    {
-      "id": "tributario",
-      "titulo": "ACATMAR mobiliza lideranças contra novas ameaças tributárias",
-      "categoria": "Tributário",
-      "data": "2025-09-15",
-      "imagem": "media/noticias/tributario.jpg",
-      "credito": "Divulgação",
-      "resumo": "Em reunião estratégica, a associação discutiu o IPVA para embarcações, o Imposto Seletivo e a defesa do setor.",
-      "corpo": [
-        "A ACATMAR promoveu uma reunião estratégica para discutir propostas que poderiam impactar proprietários de embarcações, empresas e profissionais: a possibilidade de cobrança de IPVA sobre barcos, a inclusão das embarcações no Imposto Seletivo e os efeitos das tarifas sobre o comércio exterior.",
-        "Mais do que reagir depois de uma decisão tomada, a associação trabalha para antecipar riscos e mostrar às autoridades o impacto econômico e social de cada medida.",
-        "Punir a náutica significa comprometer empregos, reduzir investimentos e enfraquecer o turismo. O caminho defendido pela ACATMAR é o do incentivo, da formalização e da criação de condições para o crescimento."
+      ],
+      "corpo_en": [
+        "The Blue Nautical HUB program included the gathering of the Cofradía Europea de la Vela, an international body devoted to maritime culture, sailing, nautical tradition and strengthening ties among countries connected by the sea.",
+        "The meeting brought together confreres, guests, authorities and sector representatives in a symbolic moment of rapprochement between Brazil and Europe, strengthening international cooperation, nautical diplomacy, maritime culture and the building of new institutional connections."
       ]
     },
     {
       "id": "marina-beira-mar-norte",
       "titulo": "Justiça Federal autoriza a continuidade do licenciamento da Marina Beira-Mar Norte",
+      "titulo_en": "Federal Court authorizes the continuation of the Beira-Mar Norte Marina licensing",
       "categoria": "Infraestrutura náutica",
+      "categoria_en": "Nautical infrastructure",
       "data": "2025-12-13",
       "imagem": "media/noticias/marina-beira-mar.jpg",
       "credito": "Divulgação",
       "resumo": "A ACATMAR participou da audiência que autorizou a sequência do licenciamento ambiental da marina, projeto estratégico para Florianópolis.",
+      "resumo_en": "ACATMAR took part in the hearing that authorized the continuation of the marina's environmental licensing, a strategic project for Florianópolis.",
       "corpo": [
         "A ACATMAR esteve presente na audiência na Justiça Federal que autorizou a continuidade do processo de licenciamento ambiental da Marina Beira-Mar Norte, projeto considerado estratégico para o desenvolvimento náutico, turístico e econômico de Florianópolis (SC).",
         "Com participação ativa desde o início das discussões técnicas, a associação atua na defesa de uma Economia do Mar qualificada e participa de perto de todos os novos empreendimentos que possam gerar oportunidades para o setor. Durante a audiência, as falas técnicas do presidente Leandro \"Mané\" Ferrari foram decisivas para o andamento do processo.",
         "\"Marina não é lazer, é economia. Gera empregos diretos e indiretos, fomenta a inclusão e pode, sim, conviver com a preservação ambiental. Hoje, Florianópolis tem sua Economia do Mar reprimida, e mudar essa realidade exige coragem, técnica e visão de futuro\", destacou o presidente.",
         "O projeto, que tramita há mais de uma década, seguirá para as próximas etapas junto ao Instituto do Meio Ambiente de Santa Catarina (IMA), com acompanhamento do Ministério Público Federal."
-      ]
-    },
-    {
-      "id": "marinheiro-esporte-recreio",
-      "titulo": "Marinheiro de Esporte e Recreio: uma conquista histórica",
-      "categoria": "Vitória do setor",
-      "data": "2025-11-25",
-      "imagem": "media/noticias/marinheiro.jpg",
-      "credito": "Divulgação",
-      "resumo": "O Senado aprovou o PLC 25/2018, que regulamenta a profissão, sancionada pelo Presidente da República no fim do ano.",
-      "corpo": [
-        "O Plenário do Senado aprovou o PLC 25/2018, que regulamenta a profissão de Marinheiro Profissional de Esporte e Recreio, sancionada pelo Presidente da República no fim de 2025.",
-        "Foi uma articulação rápida e certeira: durante o V Fórum de Capacitação Técnica ACATMAR, em Florianópolis, o setor dos marinheiros e o presidente da Frente Parlamentar sentaram à mesa, e um tema parado havia anos foi retirado das gavetas do Senado, levado ao plenário e aprovado.",
-        "A ACATMAR consolidou demandas, dados e argumentos técnicos que subsidiaram o trabalho do senador Esperidião Amin e de sua equipe. Mais do que corrigir uma lacuna legal, a conquista significa reconhecimento profissional, segurança jurídica para marinas e clubes, e mais emprego e renda na cadeia náutica."
+      ],
+      "corpo_en": [
+        "ACATMAR attended the Federal Court hearing that authorized the continuation of the environmental licensing process for the Beira-Mar Norte Marina, a project considered strategic for the nautical, tourism and economic development of Florianópolis (SC).",
+        "Actively involved since the start of the technical discussions, the association works to defend a qualified Sea Economy and closely follows every new venture that can generate opportunities for the sector. During the hearing, the technical remarks of president Leandro \"Mané\" Ferrari were decisive for the progress of the case.",
+        "\"A marina is not leisure, it is economy. It generates direct and indirect jobs, fosters inclusion and can indeed coexist with environmental preservation. Today, Florianópolis has its Sea Economy held back, and changing that reality takes courage, technical work and vision for the future,\" the president stressed.",
+        "The project, under way for more than a decade, will move to the next stages with the Santa Catarina Environmental Institute (IMA), monitored by the Federal Public Prosecutor's Office."
       ]
     },
     {
       "id": "marinha-acatmar-soamar",
       "titulo": "Marinha, ACATMAR e SOAMAR-SC celebram uma trajetória conjunta pela Economia do Mar",
+      "titulo_en": "Navy, ACATMAR and SOAMAR-SC celebrate a shared journey for the Sea Economy",
       "categoria": "Institucional",
+      "categoria_en": "Institutional",
       "data": "2025-12-10",
       "imagem": "media/noticias/marinha-soamar.jpg",
       "credito": "Divulgação",
       "resumo": "Ato solene marcou 15 anos da ACATMAR como entidade soamariana e 13 anos da SOAMAR-SC como sócia honorária.",
+      "resumo_en": "A formal ceremony marked ACATMAR's 15 years as a SOAMAR entity and SOAMAR-SC's 13 years as an honorary member.",
       "corpo": [
         "Em ato solene com a Marinha do Brasil, por meio do 5º Distrito Naval e da Capitania dos Portos de Santa Catarina, a ACATMAR e a SOAMAR-SC celebraram uma trajetória conjunta: 15 anos da ACATMAR como entidade soamariana (desde 2010) e 13 anos da SOAMAR-SC como sócia honorária da ACATMAR (desde 2012).",
         "O encontro reforçou o compromisso comum com o fortalecimento da cadeia produtiva náutica, a geração de emprego e renda, a segurança da navegação e a difusão da cultura oceânica, sempre alinhado às normas da Autoridade Marítima.",
         "Mais que uma celebração, o ato mostrou um setor organizado e pronto para atuar lado a lado com a Marinha e seus parceiros na construção de um ambiente mais seguro, competitivo e sustentável."
+      ],
+      "corpo_en": [
+        "In a formal ceremony with the Brazilian Navy, through the 5th Naval District and the Santa Catarina Port Authority, ACATMAR and SOAMAR-SC celebrated a shared journey: 15 years of ACATMAR as a SOAMAR entity (since 2010) and 13 years of SOAMAR-SC as an honorary member of ACATMAR (since 2012).",
+        "The meeting reinforced the common commitment to strengthening the nautical production chain, generating jobs and income, ensuring navigation safety and spreading ocean culture, always aligned with the rules of the Maritime Authority.",
+        "More than a celebration, the ceremony showed an organized sector ready to work side by side with the Navy and its partners to build a safer, more competitive and more sustainable environment."
       ]
     },
     {
       "id": "acatmar-amazonia",
       "titulo": "ACATMAR chega à Amazônia e reforça sua atuação em todo o Brasil",
+      "titulo_en": "ACATMAR reaches the Amazon and strengthens its work across Brazil",
       "categoria": "Presença nacional",
+      "categoria_en": "National presence",
       "data": "2025-11-20",
       "imagem": "media/noticias/amazonia.jpg",
       "credito": "Divulgação",
       "resumo": "Em Manaus, a associação participou do I Workshop Amazonáutica e a Amazonáutica passou a integrar o quadro associativo da ACATMAR.",
+      "resumo_en": "In Manaus, the association took part in the 1st Amazonáutica Workshop, and Amazonáutica joined ACATMAR's membership.",
       "corpo": [
         "Como parte da estratégia de fortalecer a instituição em todas as regiões do país, a ACATMAR marcou presença na Amazônia. A convite da diretoria do evento, participou, em Manaus (AM), do I Workshop Amazonáutica.",
         "Na oportunidade, a ACATMAR reuniu-se com a Associação Comercial do Amazonas (ACA) e ministrou palestra sobre as ações que vem desenvolvendo para fortalecer o setor náutico em todo o território nacional. A agenda incluiu visitas técnicas e conversas com empresários do setor.",
         "Como resultado, a Amazonáutica passou a integrar o quadro associativo da ACATMAR. É o símbolo de que a Economia do Mar, e das águas, é nacional: do litoral aos rios, do Sul ao Norte."
+      ],
+      "corpo_en": [
+        "As part of its strategy to strengthen the institution in all regions of the country, ACATMAR was present in the Amazon. Invited by the event's board, it took part in the 1st Amazonáutica Workshop in Manaus (AM).",
+        "On the occasion, ACATMAR met with the Amazonas Commercial Association (ACA) and gave a talk on the actions it has been developing to strengthen the nautical sector across the country. The agenda included technical visits and conversations with sector entrepreneurs.",
+        "As a result, Amazonáutica joined ACATMAR's membership. It is a symbol that the economy of the sea, and of the waters, is national: from the coast to the rivers, from South to North."
       ]
     },
     {
       "id": "comitiva-italia-sc",
       "titulo": "Comitiva italiana visita Santa Catarina e fortalece a cooperação na Economia do Mar",
+      "titulo_en": "Italian delegation visits Santa Catarina and strengthens cooperation in the Sea Economy",
       "categoria": "Cooperação internacional",
+      "categoria_en": "International cooperation",
       "data": "2025-10-28",
       "imagem": "media/noticias/comitiva-italia.jpg",
       "credito": "Divulgação",
       "resumo": "Brasil e Itália somam 15 anos de cooperação. Uma comitiva dos setores de pesca, aquicultura e algicultura cumpriu agenda no estado.",
+      "resumo_en": "Brazil and Italy mark 15 years of cooperation. A delegation from the fishing, aquaculture and seaweed sectors carried out an agenda in the state.",
       "corpo": [
         "Brasil e Itália somam 15 anos de cooperação na Economia do Mar, e Santa Catarina foi o palco do capítulo mais recente. Uma comitiva internacional dos setores de pesca, aquicultura e algicultura desembarcou no estado para uma agenda de visitas técnicas e negócios.",
         "A missão foi promovida pela ITA (Italian Trade Agency) e pela ACATMAR, com apoio do Sindipi (Sindicato dos Armadores e das Indústrias da Pesca de Itajaí e Região) e da Maricultura de Florianópolis, reunindo autoridades e empresários.",
         "A comitiva foi recebida pelo Governo do Estado, participou de um seminário no Sindipi, em Itajaí, e cumpriu agenda de visitas a indústrias, portos e fazendas de maricultura em Florianópolis e Itajaí. Vida longa à parceria."
+      ],
+      "corpo_en": [
+        "Brazil and Italy mark 15 years of cooperation in the Sea Economy, and Santa Catarina was the stage for the latest chapter. An international delegation from the fishing, aquaculture and seaweed sectors landed in the state for an agenda of technical visits and business.",
+        "The mission was promoted by the ITA (Italian Trade Agency) and ACATMAR, with the support of Sindipi (the Union of Shipowners and Fishing Industries of Itajaí and Region) and the Florianópolis Mariculture association, bringing together authorities and entrepreneurs.",
+        "The delegation was received by the State Government, took part in a seminar at Sindipi in Itajaí, and carried out an agenda of visits to industries, ports and mariculture farms in Florianópolis and Itajaí. Long live the partnership."
       ]
     },
     {
       "id": "limpeza-dos-mares-2025",
       "titulo": "Limpeza dos Mares: educação ambiental que não parou no segundo semestre",
+      "titulo_en": "Sea Cleanup: environmental education that never stopped in the second half of the year",
       "categoria": "Sustentabilidade",
+      "categoria_en": "Sustainability",
       "data": "2025-11-27",
       "imagem": "media/noticias/limpeza-mares.jpg",
       "credito": "Divulgação",
       "resumo": "Das II Olimpíadas Escolares ao Arvoredo, mais de mil pessoas participaram das ações, além do lançamento da 2ª revistinha da Turma.",
+      "resumo_en": "From the 2nd School Olympics to Arvoredo, over a thousand people took part, plus the launch of the crew's 2nd comic book.",
       "corpo": [
         "Mais de 250 participantes transformaram a Praia de Canasvieiras em um espaço de educação ambiental durante as II Olimpíadas Escolares Limpeza dos Mares, com coleta, separação, pesagem, arte com resíduos e provas recreativas.",
         "E o projeto não parou por aí: no segundo semestre de 2025 foram palestras em ginásios e nas escolas municipais de Paulo Lopes, uma ação na Reserva Biológica Marinha do Arvoredo (retirando resíduos dos costões e do fundo do mar) e o lançamento da 2ª revistinha da Turma do Limpeza dos Mares. Ao todo, mais de mil crianças e adultos participaram diretamente.",
         "O projeto é uma realização da ACATMAR, Aquanauta e Mundo Mar, com o Fort Atacadista como patrocinador mantenedor, e apoio de empresas e instituições comprometidas com a preservação do ecossistema marinho."
+      ],
+      "corpo_en": [
+        "More than 250 participants turned Canasvieiras Beach into a space for environmental education during the 2nd Sea Cleanup School Olympics, with collection, sorting, weighing, art from waste and recreational challenges.",
+        "And the project did not stop there: in the second half of 2025 there were talks in gyms and municipal schools in Paulo Lopes, an action at the Arvoredo Marine Biological Reserve (removing waste from the rocky shores and the seabed) and the launch of the 2nd comic book of the Sea Cleanup crew. In all, more than a thousand children and adults took part directly.",
+        "The project is carried out by ACATMAR, Aquanauta and Mundo Mar, with Fort Atacadista as maintaining sponsor and the support of companies and institutions committed to preserving the marine ecosystem."
       ]
     },
     {
       "id": "frente-parlamentar-senado",
       "titulo": "A voz do setor náutico chega ao Senado com a Frente Parlamentar",
+      "titulo_en": "The nautical sector's voice reaches the Senate with the Parliamentary Front",
       "categoria": "Representação",
+      "categoria_en": "Representation",
       "data": "2025-10-08",
       "imagem": "media/noticias/frente-parlamentar.jpg",
       "credito": "Divulgação",
       "resumo": "Instalada com apoio técnico da ACATMAR, a Frente Parlamentar da Economia do Mar cria um canal permanente com o Congresso.",
+      "resumo_en": "Established with ACATMAR's technical support, the Sea Economy Parliamentary Front creates a permanent channel with Congress.",
       "corpo": [
         "O setor náutico brasileiro conquistou um marco com a instalação da Frente Parlamentar da Economia do Mar (Setor Náutico) no Senado Federal.",
         "Com apoio técnico da ACATMAR, a Frente foi criada para estabelecer uma interlocução permanente entre o Congresso Nacional e uma cadeia produtiva formada por indústria, comércio, serviços, turismo, infraestrutura, tecnologia e sustentabilidade.",
         "Entre as primeiras pautas estão a defesa contra o IPVA para embarcações, o acompanhamento do Imposto Seletivo, a qualificação profissional, a infraestrutura náutica e a segurança jurídica. Quando o setor se organiza e fala com uma única voz, passa a ocupar o espaço que merece na agenda econômica do país."
+      ],
+      "corpo_en": [
+        "The Brazilian nautical sector reached a milestone with the establishment of the Sea Economy Parliamentary Front (Nautical Sector) in the Federal Senate.",
+        "With technical support from ACATMAR, the Front was created to establish a permanent dialogue between the National Congress and a production chain made up of industry, commerce, services, tourism, infrastructure, technology and sustainability.",
+        "Among the first priorities are the defense against a vehicle tax on boats, monitoring the Selective Tax, professional training, nautical infrastructure and legal certainty. When the sector organizes itself and speaks with one voice, it takes the place it deserves on the country's economic agenda."
       ]
     },
     {
       "id": "v-forum-2025",
       "titulo": "V Fórum reúne 227 profissionais e transforma capacitação em ação política",
+      "titulo_en": "5th Forum gathers 227 professionals and turns training into political action",
       "categoria": "Capacitação",
+      "categoria_en": "Training",
       "data": "2025-11-18",
       "imagem": "media/noticias/v-forum.jpg",
       "credito": "Divulgação",
       "resumo": "Realizado no IFSC Continente, o Fórum foi o primeiro ato externo da Frente Parlamentar da Economia do Mar.",
+      "resumo_en": "Held at IFSC Continente, the Forum was the first external act of the Sea Economy Parliamentary Front.",
       "corpo": [
         "O V Fórum de Capacitação Técnica ACATMAR reuniu 227 participantes e 14 especialistas em um dia de conhecimento e integração, com temas de segurança da navegação, tecnologia embarcada, manutenção, legislação e formação.",
         "Pela primeira vez, o Fórum foi realizado como ato externo da Frente Parlamentar, levando as demandas do setor diretamente ao ambiente político. Durante o evento, a ACATMAR também apoiou a formação de policiais do 4º Batalhão de Polícia Militar, que receberam suas carteiras de Arrais Amador.",
         "O Fórum mostrou que capacitação e representatividade caminham juntas: o conhecimento melhora a segurança, e a articulação cria condições para regras mais claras e políticas adequadas ao setor."
+      ],
+      "corpo_en": [
+        "The 5th ACATMAR Technical Training Forum gathered 227 participants and 14 experts in a day of knowledge and networking, covering navigation safety, onboard technology, maintenance, legislation and training.",
+        "For the first time, the Forum was held as an external act of the Parliamentary Front, taking the sector's demands directly to the political arena. During the event, ACATMAR also supported the training of officers from the 4th Military Police Battalion, who received their Amateur Skipper licenses.",
+        "The Forum showed that training and representation go hand in hand: knowledge improves safety, and coordination creates the conditions for clearer rules and policies suited to the sector."
       ]
     },
     {
       "id": "seguranca-4bpm",
       "titulo": "Segurança pública e Economia do Mar navegando juntas",
+      "titulo_en": "Public safety and the Sea Economy sailing together",
       "categoria": "Segurança pública",
+      "categoria_en": "Public safety",
       "data": "2025-11-18",
       "imagem": "media/noticias/seguranca-4bpm.jpg",
       "credito": "Divulgação",
-      "resumo": "Durante o V Fórum, a ACATMAR apoiou a formação de policiais do 4º BPM, que receberam a carteira de Arrais Amador e passam a atuar embarcados.",
+      "resumo": "Durante o V Fórum, a ACATMAR apoiou a formação de policiais do 4º BPM, que receberam a carteira de Arrais Amador.",
+      "resumo_en": "During the 5th Forum, ACATMAR supported the training of 4th Battalion officers, who received their Amateur Skipper licenses.",
       "corpo": [
         "Durante o V Fórum de Capacitação Técnica ACATMAR 2025, a associação apoiou a formação de policiais do 4º Batalhão de Polícia Militar (4º BPM), que receberam suas carteiras de Arrais Amador e passam a integrar guarnições aptas a atuar embarcadas.",
         "O curso teórico e prático foi conduzido de forma voluntária pelo Capitão Jhonata, da Atlântico Despachante Náutico, mostrando como o setor privado pode colaborar diretamente com as forças de segurança.",
         "Em reconhecimento, o 4º BPM concedeu à ACATMAR o título de \"Amigo do 4º BPM\", com troféu entregue ao presidente Leandro \"Mané\" Ferrari. Afinal, a Economia do Mar também é segurança pública e proteção de vidas."
+      ],
+      "corpo_en": [
+        "During the 2025 ACATMAR Technical Training Forum, the association supported the training of officers from the 4th Military Police Battalion (4th BPM), who received their Amateur Skipper licenses and can now serve in waterborne crews.",
+        "The theoretical and practical course was run on a voluntary basis by Captain Jhonata, from Atlântico Despachante Náutico, showing how the private sector can collaborate directly with the security forces.",
+        "In recognition, the 4th BPM granted ACATMAR the title of \"Friend of the 4th BPM,\" with a trophy handed to president Leandro \"Mané\" Ferrari. After all, the Sea Economy is also about public safety and protecting lives."
       ]
     },
     {
       "id": "missao-genova",
       "titulo": "Missão à Itália conecta associados ao mercado náutico global",
+      "titulo_en": "Mission to Italy connects members to the global nautical market",
       "categoria": "Internacionalização",
+      "categoria_en": "Internationalization",
       "data": "2025-10-06",
       "imagem": "media/noticias/genova.jpg",
       "credito": "Divulgação",
       "resumo": "Mantida desde 2012, a parceria leva a ACATMAR ao Salão Náutico de Gênova para encontros de negócios B2B.",
+      "resumo_en": "Ongoing since 2012, the partnership takes ACATMAR to the Genoa Boat Show for B2B business meetings.",
       "corpo": [
         "Mantida desde 2012, a parceria leva a ACATMAR ao Salão Náutico de Gênova. São as empresas italianas, junto com o ITA (Italian Trade Agency), que escolhem os associados da ACATMAR convidados para os encontros B2B, reforçando a estratégia de internacionalização e a geração de oportunidades para o setor.",
         "Durante a missão, os empresários brasileiros acompanharam lançamentos, conheceram novas soluções tecnológicas, conversaram com fabricantes e ampliaram sua rede de contatos internacionais.",
         "Conduzidas pela ACATMAR, as missões técnicas aproximam o setor náutico brasileiro dos mercados mais desenvolvidos e transformam o conhecimento adquirido no exterior em inovação, produtividade e novos negócios."
+      ],
+      "corpo_en": [
+        "Ongoing since 2012, the partnership takes ACATMAR to the Genoa Boat Show. It is the Italian companies, together with the ITA (Italian Trade Agency), who select the ACATMAR members invited to the B2B meetings, reinforcing the internationalization strategy and the generation of opportunities for the sector.",
+        "During the mission, the Brazilian entrepreneurs followed launches, discovered new technological solutions, spoke with manufacturers and expanded their international network.",
+        "Led by ACATMAR, the technical missions bring the Brazilian nautical sector closer to the most developed markets and turn the knowledge gained abroad into innovation, productivity and new business."
       ]
     },
     {
       "id": "marina-itajai-boat-show",
       "titulo": "ACATMAR apoia o Marina Itajaí Boat Show e leva rodadas de negócios aos associados",
+      "titulo_en": "ACATMAR supports the Marina Itajaí Boat Show and brings business rounds to members",
       "categoria": "Eventos",
+      "categoria_en": "Events",
       "data": "2025-07-05",
       "imagem": "media/noticias/boat-show.jpg",
       "credito": "Divulgação",
       "resumo": "Como apoiadora oficial, a ACATMAR promoveu encontros de negócios B2B com a Apex-Brasil durante o evento em Itajaí.",
+      "resumo_en": "As an official supporter, ACATMAR held B2B business meetings with Apex-Brasil during the event in Itajaí.",
       "corpo": [
         "A ACATMAR marcou presença como apoiadora oficial do Marina Itajaí Boat Show, um dos maiores eventos náuticos do país, realizado em Itajaí (SC).",
         "Em mais uma parceria estratégica, a associação promoveu, em conjunto com a Apex-Brasil (Agência Brasileira de Promoção de Exportações e Investimentos), encontros de negócios B2B durante o evento, aproximando empresas, gerando oportunidades comerciais e fortalecendo seus associados.",
         "A ação reforçou o papel da ACATMAR como articuladora de negócios e o boat show como um dos principais ambientes de conexão da náutica brasileira."
+      ],
+      "corpo_en": [
+        "ACATMAR took part as an official supporter of the Marina Itajaí Boat Show, one of the country's largest nautical events, held in Itajaí (SC).",
+        "In another strategic partnership, the association held B2B business meetings during the event together with Apex-Brasil (the Brazilian Trade and Investment Promotion Agency), bringing companies together, generating commercial opportunities and strengthening its members.",
+        "The initiative reinforced ACATMAR's role as a business facilitator and the boat show as one of the main connection hubs of Brazilian boating."
+      ]
+    },
+    {
+      "id": "tributario",
+      "titulo": "ACATMAR mobiliza lideranças contra novas ameaças tributárias",
+      "titulo_en": "ACATMAR mobilizes leaders against new tax threats",
+      "categoria": "Tributário",
+      "categoria_en": "Taxation",
+      "data": "2025-09-15",
+      "imagem": "media/noticias/tributario.jpg",
+      "credito": "Divulgação",
+      "resumo": "Em reunião estratégica, a associação discutiu o IPVA para embarcações, o Imposto Seletivo e a defesa do setor.",
+      "resumo_en": "In a strategic meeting, the association discussed a vehicle tax on boats, the Selective Tax and the defense of the sector.",
+      "corpo": [
+        "A ACATMAR promoveu uma reunião estratégica para discutir propostas que poderiam impactar proprietários de embarcações, empresas e profissionais: a possibilidade de cobrança de IPVA sobre barcos, a inclusão das embarcações no Imposto Seletivo e os efeitos das tarifas sobre o comércio exterior.",
+        "Mais do que reagir depois de uma decisão tomada, a associação trabalha para antecipar riscos e mostrar às autoridades o impacto econômico e social de cada medida.",
+        "Punir a náutica significa comprometer empregos, reduzir investimentos e enfraquecer o turismo. O caminho defendido pela ACATMAR é o do incentivo, da formalização e da criação de condições para o crescimento."
+      ],
+      "corpo_en": [
+        "ACATMAR held a strategic meeting to discuss proposals that could affect boat owners, companies and professionals: the possibility of a vehicle tax on boats, the inclusion of vessels in the Selective Tax and the effects of foreign trade tariffs.",
+        "Rather than reacting after a decision is made, the association works to anticipate risks and show the authorities the economic and social impact of each measure.",
+        "Punishing boating means undermining jobs, reducing investment and weakening tourism. The path defended by ACATMAR is one of incentives, formalization and creating conditions for growth."
       ]
     }
   ]

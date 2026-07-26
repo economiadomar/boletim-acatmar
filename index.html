@@ -43,6 +43,9 @@
   .nav .links a{color:var(--navy);text-decoration:none;font-family:'Barlow Condensed';font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:.95rem;transition:color .2s}
   .nav .links a:hover{color:var(--teal-d)}
   .nav .links .btn{padding:.5rem 1.15rem;font-size:.9rem}
+  .langbtn{font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.08em;font-size:.9rem;
+    background:transparent;border:1.5px solid var(--line);color:var(--navy);border-radius:999px;padding:.35rem .7rem;cursor:pointer;transition:all .2s}
+  .langbtn:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
   @media(max-width:820px){.nav .links a.hidem{display:none}}
 
   .hero{position:relative;overflow:hidden;color:#fff;
@@ -178,6 +181,7 @@
       <a href="#boletins" class="hidem">Boletins</a>
       <a href="#projetos" class="hidem">Projetos</a>
       <a href="#sobre" class="hidem">Quem somos</a>
+      <button id="langBtn" class="langbtn" type="button" aria-label="Trocar idioma / Switch language">EN</button>
       <a href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener" class="btn btn-teal">Associe-se</a>
     </div>
   </div>
@@ -228,7 +232,7 @@
       <div class="sec-head">
         <div class="eyebrow">Boletim digital</div>
         <h2>Folheie as edições da ACATMAR</h2>
-        <p>Cada boletim reúne as principais ações do semestre. Clique em <b>Folhear</b> para o efeito de virar página, ou baixe o PDF.</p>
+        <p data-en="Each bulletin gathers the main actions of the semester. Click <b>Read</b> for the page-flip effect, or download the PDF.">Cada boletim reúne as principais ações do semestre. Clique em <b>Folhear</b> para o efeito de virar página, ou baixe o PDF.</p>
       </div>
       <div class="grid-ed" id="grid"><div class="loading">Carregando edições…</div></div>
     </div>
@@ -258,7 +262,7 @@
   <section id="sobre">
     <div class="wrap">
       <div class="sec-head"><div class="eyebrow">Quem somos</div><h2>A referência do setor náutico brasileiro</h2></div>
-      <p class="intro rev">Desde 2008, a <b>ACATMAR, Associação Náutica Brasileira</b>, é a referência para a cadeia produtiva do setor náutico no país. Como entidade sem fins lucrativos, a missão é promover a cultura do uso das águas e impulsionar o <b>desenvolvimento sustentável da Economia do Mar</b>.</p>
+      <p class="intro rev" data-en="Since 2008, <b>ACATMAR, the Brazilian Nautical Association</b>, has been the reference for the nautical production chain in the country. As a non-profit organization, its mission is to promote the culture of the use of waters and to drive the <b>sustainable development of the Sea Economy</b>.">Desde 2008, a <b>ACATMAR, Associação Náutica Brasileira</b>, é a referência para a cadeia produtiva do setor náutico no país. Como entidade sem fins lucrativos, a missão é promover a cultura do uso das águas e impulsionar o <b>desenvolvimento sustentável da Economia do Mar</b>.</p>
       <div class="pilares">
         <div class="pilar rev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21V9l6-4 6 4v12M10 21v-5h4v5"/></svg><div class="t">Indústria</div><div class="d">Estaleiros, fabricantes e a produção náutica nacional.</div></div>
         <div class="pilar rev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18l-2 12H5L3 7zM8 7V5a4 4 0 0 1 8 0v2"/></svg><div class="t">Comércio</div><div class="d">Distribuição, revenda e a rede de negócios do setor.</div></div>
@@ -273,7 +277,7 @@
       <div class="sec-head"><div class="eyebrow">Por que ser sócio</div><h2>Fazer parte é ganhar voz e oportunidades</h2><p>Como membro da ACATMAR, você fortalece o setor e ganha vantagens exclusivas.</p></div>
       <div class="ben-grid">
         <div class="ben rev"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-7-7 18-3-7-8-4z"/></svg></div><h3>Representatividade e defesa setorial</h3><p>Voz ativa junto aos poderes legislativos e institucionais. Participe de conselhos, fóruns e comissões técnicas e ajude a moldar as políticas do setor.</p></div>
-        <div class="ben rev"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8M21 7h-4m4 0v4"/></svg></div><h3>Crescimento e visibilidade</h3><p>Conecte-se a uma rede de líderes. Sua empresa é promovida no nosso site e você usa o selo <b>“Sócio ACATMAR”</b> para agregar credibilidade à marca.</p></div>
+        <div class="ben rev"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8M21 7h-4m4 0v4"/></svg></div><h3>Crescimento e visibilidade</h3><p data-en="Connect with a network of leaders. Your company is promoted on our site and you use the <b>&ldquo;ACATMAR Member&rdquo;</b> seal to add credibility to your brand.">Conecte-se a uma rede de líderes. Sua empresa é promovida no nosso site e você usa o selo <b>“Sócio ACATMAR”</b> para agregar credibilidade à marca.</p></div>
         <div class="ben rev"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4zM9.5 12l2 2 3.5-4"/></svg></div><h3>Assistência especializada</h3><p>Apoio de especialistas jurídicos e técnicos e acesso a dados estratégicos para embasar as decisões do seu negócio.</p></div>
         <div class="ben rev"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.6 3.8 9S14.5 18.5 12 21c-2.5-2.5-3.8-5.6-3.8-9S9.5 5.5 12 3z"/></svg></div><h3>Expansão de mercado</h3><p>Visitas técnicas e encontros B2B ampliam sua rede em nível global, com acesso a fóruns, seminários e congressos.</p></div>
         <div class="ben rev"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7L9 18l-5-5M14 7l6 0m0 0v6"/></svg></div><h3>Incentivos e descontos</h3><p>Condições especiais para a legalização de estruturas náuticas e outros serviços essenciais. Mais economia e agilidade.</p></div>
@@ -344,48 +348,130 @@
   var rt; window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){resize();if(reduce)draw();},150);});
   resize(); draw();
 })();
-function fmtData(iso){
-  var m=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
-  var p=iso.split('-'); return p[2]+' '+m[parseInt(p[1],10)-1]+' '+p[0];
+/* ===== i18n PT/EN ===== */
+var LANG=localStorage.getItem('acatmar_lang')||'pt';
+var NEWS=[], EDS=[], NODES=null;
+var T={
+  "leiaMais":{pt:"Leia mais →",en:"Read more →"},
+  "verTodas":{pt:"Ver todas as notícias →",en:"See all news →"},
+  "novo":{pt:"Novo",en:"New"},
+  "folhear":{pt:"Folhear",en:"Read"},
+  "carregando":{pt:"Carregando…",en:"Loading…"},
+  "erro":{pt:"Não foi possível carregar.",en:"Could not load."}
+};
+var DICT={
+  "Notícias":"News","Boletins":"Bulletins","Projetos":"Projects","Quem somos":"About us","Associe-se":"Join us",
+  "Associação Náutica Brasileira · desde 2008":"Brazilian Nautical Association · since 2008",
+  "Representamos a":"We represent","Economia do Mar":"the Sea Economy",
+  "Indústria · Comércio · Serviços · Turismo Náutico":"Industry · Commerce · Services · Nautical Tourism",
+  "A ACATMAR é a referência da cadeia produtiva náutica no Brasil. Promovemos a cultura do uso das águas e o desenvolvimento sustentável do setor, do litoral aos rios, do Sul ao Norte.":"ACATMAR is the reference of the nautical production chain in Brazil. We promote the culture of the use of waters and the sustainable development of the sector, from the coast to the rivers, from South to North.",
+  "Últimas notícias":"Latest news","Folhear os boletins":"Read the bulletins",
+  "Associados":"Members","Parceiros diretos":"Direct partners","Projetos recorrentes":"Ongoing projects","Eventos realizados":"Events held",
+  "Notícias do setor":"Industry news","O que a ACATMAR está fazendo":"What ACATMAR is doing","Ver todas as notícias →":"See all news →",
+  "Boletim digital":"Digital bulletin","Folheie as edições da ACATMAR":"Flip through ACATMAR's editions",
+  "Projetos transformadores":"Transformative projects","Ações que movem a Economia do Mar":"Actions that move the Sea Economy",
+  "Muitos realizados em conjunto com parceiros. Alguns têm site próprio, é só clicar.":"Many carried out together with partners. Some have their own site, just click.",
+  "Fórum ACATMAR":"ACATMAR Forum","Seminário Economia Azul":"Blue Economy Symposium","Visitas Técnicas":"Technical Visits",
+  "Projeto Marina Legal":"Marina Legal Project","Escola do Mar":"School of the Sea","Circo Náutico":"Nautical Circus",
+  "Projeto Cambusa":"Cambusa Project","Limpeza dos Mares":"Sea Cleanup","Blue Nautical HUB Brasil":"Blue Nautical HUB Brasil",
+  "Capacitação técnica do setor numa imersão de conhecimento que já virou palco de conquistas políticas.":"Technical training for the sector in a knowledge immersion that has become a stage for political achievements.",
+  "Debates sobre as tendências globais da Economia do Mar, impulsionando inovação e desenvolvimento.":"Debates on the global trends of the Sea Economy, driving innovation and development.",
+  "Missões e feiras nacionais e internacionais que aumentam a competitividade dos associados.":"National and international missions and trade shows that boost members' competitiveness.",
+  "Regularização documental e licenças ambientais, com segurança jurídica para as estruturas náuticas.":"Documentation and environmental licensing, with legal certainty for nautical facilities.",
+  "Cursos de qualificação que promovem excelência e geram novas oportunidades no setor.":"Training courses that promote excellence and create new opportunities in the sector.",
+  "Leva o desenvolvimento náutico a municípios com rios, lagos e represas, do litoral ao interior.":"Brings nautical development to towns with rivers, lakes and reservoirs, from the coast to the interior.",
+  "Mais uma frente da ACATMAR para conectar e fortalecer os elos da Economia do Mar.":"Another ACATMAR initiative to connect and strengthen the links of the Sea Economy.",
+  "Mutirões de limpeza de praias, costões e fundo do mar, com forte pilar de educação ambiental.":"Cleanup drives on beaches, rocky shores and the seabed, with a strong pillar of environmental education.",
+  "Plataforma que une conhecimento, negócios e cooperação internacional da Economia do Mar.":"A platform uniting knowledge, business and international cooperation of the Sea Economy.",
+  "Saiba mais":"Learn more","Visitar o site":"Visit the site",
+  "A referência do setor náutico brasileiro":"The reference of the Brazilian nautical sector",
+  "Indústria":"Industry","Comércio":"Commerce","Serviços":"Services","Turismo Náutico":"Nautical Tourism",
+  "Estaleiros, fabricantes e a produção náutica nacional.":"Shipyards, manufacturers and national nautical production.",
+  "Distribuição, revenda e a rede de negócios do setor.":"Distribution, resale and the sector's business network.",
+  "Marinas, manutenção, despacho e apoio à navegação.":"Marinas, maintenance, clearance and navigation support.",
+  "Turismo náutico e a cultura de viver as águas do Brasil.":"Nautical tourism and the culture of enjoying Brazil's waters.",
+  "Por que ser sócio":"Why become a member","Fazer parte é ganhar voz e oportunidades":"Being a member means gaining voice and opportunities",
+  "Como membro da ACATMAR, você fortalece o setor e ganha vantagens exclusivas.":"As an ACATMAR member, you strengthen the sector and gain exclusive benefits.",
+  "Representatividade e defesa setorial":"Representation and sector defense",
+  "Voz ativa junto aos poderes legislativos e institucionais. Participe de conselhos, fóruns e comissões técnicas e ajude a moldar as políticas do setor.":"An active voice before the legislative and institutional powers. Take part in councils, forums and technical committees and help shape the sector's policies.",
+  "Crescimento e visibilidade":"Growth and visibility",
+  "Assistência especializada":"Specialized assistance",
+  "Apoio de especialistas jurídicos e técnicos e acesso a dados estratégicos para embasar as decisões do seu negócio.":"Support from legal and technical experts and access to strategic data to inform your business decisions.",
+  "Expansão de mercado":"Market expansion",
+  "Visitas técnicas e encontros B2B ampliam sua rede em nível global, com acesso a fóruns, seminários e congressos.":"Technical visits and B2B meetings expand your network globally, with access to forums, seminars and congresses.",
+  "Incentivos e descontos":"Incentives and discounts",
+  "Condições especiais para a legalização de estruturas náuticas e outros serviços essenciais. Mais economia e agilidade.":"Special conditions for licensing nautical facilities and other essential services. More savings and agility.",
+  "Selo Sócio ACATMAR":"ACATMAR Member Seal","Sua marca navega com credibilidade":"Your brand sails with credibility",
+  "Some sua empresa a quem defende, de fato, os interesses de todo o setor náutico brasileiro.":"Add your company to those who truly defend the interests of the entire Brazilian nautical sector.",
+  "Quero me associar":"I want to join",
+  "Junte-se a nós e navegue":"Join us and sail","em um":"in a","mar de possibilidades":"sea of possibilities",
+  "Torne-se membro da ACATMAR e impulsione o seu negócio, contribuindo para o desenvolvimento sustentável do setor náutico brasileiro.":"Become an ACATMAR member and boost your business, contributing to the sustainable development of the Brazilian nautical sector.",
+  "Inscrever-se · ACATMAR.org":"Sign up · ACATMAR.org",
+  "ACATMAR · Associação Náutica Brasileira · Representamos a Economia do Mar desde 2008":"ACATMAR · Brazilian Nautical Association · Representing the Sea Economy since 2008"
+};
+function collectNodes(){
+  NODES=[];
+  var walk=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:function(n){
+    if(!n.nodeValue.trim())return NodeFilter.FILTER_REJECT;
+    var p=n.parentNode,tag=p.nodeName.toLowerCase();
+    if(tag==='script'||tag==='style')return NodeFilter.FILTER_REJECT;
+    if(p.closest('#newsGrid')||p.closest('#grid')||p.closest('[data-en]')||(p.id==='langBtn'))return NodeFilter.FILTER_REJECT;
+    return NodeFilter.FILTER_ACCEPT;
+  }});
+  var n; while(n=walk.nextNode()) NODES.push({node:n,pt:n.nodeValue});
 }
+function applyStatic(lang){
+  if(!NODES)collectNodes();
+  NODES.forEach(function(o){var k=o.pt.trim();
+    o.node.nodeValue=(lang==='en'&&DICT[k]!==undefined)?o.pt.replace(k,DICT[k]):o.pt;});
+  document.querySelectorAll('[data-en]').forEach(function(el){
+    if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.innerHTML);
+    el.innerHTML=(lang==='en')?el.getAttribute('data-en'):el.getAttribute('data-pt');});
+}
+function tl(k){return T[k]?T[k][LANG]:k;}
+function fld(o,f){return (LANG==='en'&&o[f+'_en'])?o[f+'_en']:o[f];}
+function fmtData(iso){var pt=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
+  var en=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];var p=iso.split('-');
+  return p[2]+' '+(LANG==='en'?en:pt)[parseInt(p[1],10)-1]+' '+p[0];}
+function edTitle(t){return LANG==='en'?t.replace('1º Semestre de','1st Half of').replace('2º Semestre de','2nd Half of'):t;}
+function renderNews(){
+  var ng=document.getElementById('newsGrid'); if(!NEWS.length){return;} ng.innerHTML='';
+  NEWS.slice(0,6).forEach(function(n){
+    var a=document.createElement('a'); a.className='news rev'; a.href='noticia.html?id='+n.id;
+    a.innerHTML='<div class="ph"><span class="cat">'+fld(n,'categoria')+'</span><img loading="lazy" src="'+n.imagem+'" alt="'+fld(n,'titulo')+'"></div>'+
+      '<div class="bd"><div class="date">'+fmtData(n.data)+'</div><h3>'+fld(n,'titulo')+'</h3><p>'+fld(n,'resumo')+'</p><div class="more">'+tl('leiaMais')+'</div></div>';
+    ng.appendChild(a);
+  });
+}
+function renderBoletins(){
+  var grid=document.getElementById('grid'); if(!EDS.length){return;} grid.innerHTML='';
+  EDS.forEach(function(ed,i){
+    var el=document.createElement('div'); el.className='ed rev';
+    el.innerHTML='<a class="cov" href="viewer.html?ed='+ed.id+'"><span class="vol">'+ed.volume+'</span>'+(i===0?'<span class="new">'+tl('novo')+'</span>':'')+
+      '<img loading="lazy" src="editions/'+ed.id+'/cover.jpg" alt="'+ed.title+'"></a>'+
+      '<div class="bd"><div class="per">'+edTitle(ed.title)+'</div>'+
+      '<div class="act"><a class="f" href="viewer.html?ed='+ed.id+'">'+tl('folhear')+'</a><a class="p" href="editions/'+ed.id+'/boletim.pdf" target="_blank" rel="noopener">PDF</a></div></div>';
+    grid.appendChild(el);
+  });
+}
+function applyLang(lang){
+  LANG=lang; localStorage.setItem('acatmar_lang',lang);
+  document.documentElement.lang=(lang==='en'?'en':'pt-BR');
+  var b=document.getElementById('langBtn'); if(b)b.textContent=(lang==='en'?'PT':'EN');
+  applyStatic(lang); renderNews(); renderBoletins(); initReveal();
+}
+(function(){var b=document.getElementById('langBtn'); if(b)b.addEventListener('click',function(){applyLang(LANG==='en'?'pt':'en');});})();
 (async function(){
-  // NOTÍCIAS
-  var ng=document.getElementById('newsGrid');
-  try{
-    var r=await fetch('noticias.json?v='+Date.now()); var d=await r.json();
-    var list=(d.noticias||[]).slice().sort(function(a,b){return a.data<b.data?1:-1;}).slice(0,6);
-    ng.innerHTML='';
-    list.forEach(function(n){
-      var a=document.createElement('a'); a.className='news rev'; a.href='noticia.html?id='+n.id;
-      a.innerHTML='<div class="ph"><span class="cat">'+n.categoria+'</span><img loading="lazy" src="'+n.imagem+'" alt="'+n.titulo+'"></div>'+
-        '<div class="bd"><div class="date">'+fmtData(n.data)+'</div><h3>'+n.titulo+'</h3><p>'+n.resumo+'</p><div class="more">Leia mais →</div></div>';
-      ng.appendChild(a);
-    });
-  }catch(e){ ng.innerHTML='<div class="loading">Não foi possível carregar as notícias.</div>'; }
-
-  // BOLETINS
-  var grid=document.getElementById('grid');
-  try{
-    var res=await fetch('editions.json?v='+Date.now()); var data=await res.json();
-    var eds=data.editions||[]; grid.innerHTML='';
-    eds.forEach(function(ed,i){
-      var el=document.createElement('div'); el.className='ed rev';
-      el.innerHTML='<a class="cov" href="viewer.html?ed='+ed.id+'"><span class="vol">'+ed.volume+'</span>'+(i===0?'<span class="new">Novo</span>':'')+
-        '<img loading="lazy" src="editions/'+ed.id+'/cover.jpg" alt="Capa '+ed.title+'"></a>'+
-        '<div class="bd"><div class="per">'+ed.title+'</div>'+
-        '<div class="act"><a class="f" href="viewer.html?ed='+ed.id+'">Folhear</a><a class="p" href="editions/'+ed.id+'/boletim.pdf" target="_blank" rel="noopener">PDF</a></div></div>';
-      grid.appendChild(el);
-    });
-  }catch(e){ grid.innerHTML='<div class="loading">Não foi possível carregar as edições.</div>'; }
-  initReveal();
+  try{ NEWS=((await (await fetch('noticias.json?v='+Date.now())).json()).noticias||[]).slice().sort(function(a,b){return a.data<b.data?1:-1;}); }catch(e){}
+  try{ EDS=(await (await fetch('editions.json?v='+Date.now())).json()).editions||[]; }catch(e){}
+  applyLang(LANG);
 })();
 function initReveal(){
-  var els=document.querySelectorAll('.rev');
+  var els=document.querySelectorAll('.rev:not(.in)');
   if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
   var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.1});
   els.forEach(function(e){io.observe(e);});
 }
-initReveal();
 </script>
 </body>
 </html>

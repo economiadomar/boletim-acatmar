@@ -3,85 +3,141 @@
     {
       "id": "forum-acatmar",
       "nome": "Fórum ACATMAR",
+      "nome_en": "ACATMAR Forum",
       "tagline": "Capacitação técnica que vira ação política",
+      "tagline_en": "Technical training that turns into political action",
       "imagem": "media/noticias/v-forum.jpg",
       "resumo": "Uma imersão de conhecimento que reúne empresários, marinheiros, técnicos, gestores e estudantes do setor náutico.",
+      "resumo_en": "A knowledge immersion bringing together entrepreneurs, sailors, technicians, managers and students of the nautical sector.",
       "corpo": [
         "O Fórum de Capacitação Técnica ACATMAR é uma imersão de conhecimento que reúne empresários, marinheiros, técnicos, gestores de marinas e estudantes em torno de temas como segurança da navegação, tecnologia embarcada, manutenção, legislação e as novas tendências do mercado.",
         "Mais do que um evento de capacitação, o Fórum se consolidou como uma ferramenta de governança e formação para toda a cadeia náutica. Em sua 5ª edição, foi realizado como o primeiro ato externo da Frente Parlamentar da Economia do Mar, levando as demandas do setor diretamente ao ambiente político.",
         "Foi também no Fórum que nasceu a articulação que resultou na regulamentação da profissão de Marinheiro de Esporte e Recreio, prova de que capacitação e representatividade caminham juntas."
+      ],
+      "corpo_en": [
+        "The ACATMAR Technical Training Forum is a knowledge immersion that brings together entrepreneurs, sailors, technicians, marina managers and students around topics such as navigation safety, onboard technology, maintenance, legislation and new market trends.",
+        "More than a training event, the Forum has established itself as a governance and education tool for the entire nautical chain. In its 5th edition, it was held as the first external act of the Parliamentary Front for the Sea Economy, taking the sector's demands directly to the political arena.",
+        "It was also at the Forum that the articulation began which led to the regulation of the Sport and Recreational Sailor profession, proof that training and representation go hand in hand."
       ]
     },
     {
       "id": "seminario-economia-azul",
       "nome": "Seminário Internacional Economia Azul",
+      "nome_en": "International Blue Economy Symposium",
       "tagline": "O futuro do setor em debate",
+      "tagline_en": "The future of the sector under debate",
       "imagem": "media/noticias/simposio-economia-azul.jpg",
       "resumo": "Debates sobre as tendências globais da Economia do Mar, reunindo especialistas, empresários e poder público.",
+      "resumo_en": "Debates on the global trends of the Sea Economy, bringing together experts, entrepreneurs and public authorities.",
       "corpo": [
         "O Seminário Internacional Economia Azul promove debates sobre as tendências globais da Economia do Mar, impulsionando a inovação e o desenvolvimento do setor náutico brasileiro.",
         "Em sua edição mais recente, integrada ao Blue Nautical HUB Brasil, o Seminário reuniu especialistas, empresários, lideranças institucionais e poder público para discutir infraestrutura náutica, marinas, indústria naval de recreio, turismo, sustentabilidade, Reforma Tributária, Mercosul, internacionalização e formação profissional.",
         "O encontro também apresentou dados que dimensionam a força da Economia do Mar em Santa Catarina, transformando conhecimento em base para políticas públicas e novos negócios."
+      ],
+      "corpo_en": [
+        "The International Blue Economy Symposium promotes debates on the global trends of the Sea Economy, driving innovation and the development of the Brazilian nautical sector.",
+        "In its most recent edition, part of the Blue Nautical HUB Brasil, the Symposium gathered experts, entrepreneurs, institutional leaders and public authorities to discuss nautical infrastructure, marinas, the recreational boatbuilding industry, tourism, sustainability, tax reform, Mercosur, internationalization and professional training.",
+        "The event also presented data that measures the strength of the Sea Economy in Santa Catarina, turning knowledge into a foundation for public policy and new business."
       ]
     },
     {
       "id": "visitas-tecnicas",
       "nome": "Visitas Técnicas e Acordos Internacionais",
+      "nome_en": "Technical Visits and International Agreements",
       "tagline": "Conexões que aumentam a competitividade",
+      "tagline_en": "Connections that boost competitiveness",
       "imagem": "media/noticias/visitas-tecnicas-bnh.jpg",
       "resumo": "Levamos os associados a visitas técnicas e às principais feiras nacionais e internacionais do setor.",
+      "resumo_en": "We take members on technical visits and to the leading national and international trade shows in the sector.",
       "corpo": [
         "As Visitas Técnicas da ACATMAR aproximam os associados das operações mais estratégicas da indústria náutica, promovendo troca de experiências, conexões e novas parcerias.",
         "A ACATMAR também conduz missões internacionais e firma acordos que aproximam o Brasil das tendências globais, com presença nas principais feiras nacionais e internacionais e rodadas de negócios que geram oportunidades reais para o setor.",
         "Na programação do Blue Nautical HUB Brasil, por exemplo, a comitiva conheceu estaleiros, marinas e a maricultura catarinense, de Itajaí à Grande Florianópolis, revelando a força da cadeia produtiva do estado."
+      ],
+      "corpo_en": [
+        "ACATMAR's Technical Visits bring members closer to the most strategic operations of the nautical industry, fostering the exchange of experiences, connections and new partnerships.",
+        "ACATMAR also leads international missions and signs agreements that connect Brazil to global trends, with a presence at the main national and international trade shows and business rounds that generate real opportunities for the sector.",
+        "During the Blue Nautical HUB Brasil, for example, the delegation visited shipyards, marinas and Santa Catarina's mariculture, from Itajaí to Greater Florianópolis, revealing the strength of the state's production chain."
       ]
     },
     {
       "id": "marina-legal",
       "nome": "Projeto Marina Legal",
+      "nome_en": "Marina Legal Project",
       "tagline": "Segurança jurídica para as estruturas náuticas",
+      "tagline_en": "Legal certainty for nautical facilities",
       "imagem": "",
       "resumo": "Apoio à regularização documental e à obtenção de licenças ambientais para marinas e estruturas de apoio náutico.",
+      "resumo_en": "Support for documentation and environmental licensing of marinas and nautical support facilities.",
       "corpo": [
         "O Projeto Marina Legal apoia a regularização documental e a obtenção de licenças ambientais, garantindo conformidade e segurança para marinas, garagens náuticas, marinas secas e demais estruturas de apoio à navegação.",
         "Com previsibilidade e segurança jurídica, o setor ganha condições para investir, crescer e gerar emprego, sempre em harmonia com a preservação ambiental.",
         "A iniciativa reforça a atuação da ACATMAR na defesa de uma Economia do Mar organizada, técnica e sustentável."
+      ],
+      "corpo_en": [
+        "The Marina Legal Project supports documentation and environmental licensing, ensuring compliance and safety for marinas, boat garages, dry marinas and other navigation support facilities.",
+        "With predictability and legal certainty, the sector gains the conditions to invest, grow and generate jobs, always in harmony with environmental preservation.",
+        "The initiative reinforces ACATMAR's work in defense of an organized, technical and sustainable Sea Economy."
       ]
     },
     {
       "id": "escola-do-mar",
       "nome": "Escola do Mar",
+      "nome_en": "School of the Sea",
       "tagline": "Qualificação para toda a cadeia produtiva",
+      "tagline_en": "Training for the entire production chain",
       "imagem": "",
       "resumo": "Cursos de qualificação que promovem excelência e geram novas oportunidades no setor náutico.",
+      "resumo_en": "Training courses that promote excellence and create new opportunities in the nautical sector.",
       "corpo": [
         "A Escola do Mar promove cursos de qualificação para profissionais do setor náutico, elevando a excelência em toda a cadeia produtiva e gerando mais oportunidades de trabalho e renda.",
         "A formação de mão de obra qualificada é essencial para o crescimento do setor: novas marinas, estaleiros e empreendimentos só alcançam seu potencial quando acompanhados por profissionais bem preparados.",
         "A iniciativa dialoga com o Projeto Âncora — Marina-Escola, aproximando ensino, extensão, pesquisa e a realidade das empresas."
+      ],
+      "corpo_en": [
+        "The School of the Sea offers training courses for nautical professionals, raising excellence across the entire production chain and creating more opportunities for work and income.",
+        "Training a skilled workforce is essential for the sector's growth: new marinas, shipyards and ventures only reach their potential when supported by well-prepared professionals.",
+        "The initiative connects with the Anchor Project — Marina-School, bringing together teaching, outreach, research and the reality of businesses."
       ]
     },
     {
       "id": "circo-nautico",
       "nome": "Circo Náutico",
+      "nome_en": "Nautical Circus",
       "tagline": "Desenvolvimento náutico onde há água",
+      "tagline_en": "Nautical development wherever there is water",
       "imagem": "",
       "resumo": "Leva o desenvolvimento náutico a municípios com potencial em rios, lagos e represas.",
+      "resumo_en": "Brings nautical development to towns with potential on rivers, lakes and reservoirs.",
       "corpo": [
         "O Circo Náutico é uma iniciativa que leva o desenvolvimento náutico a municípios com potencial em rios, lagos e represas, mostrando que a Economia do Mar, e das águas, não se limita ao litoral.",
         "O projeto democratiza o acesso à náutica, levando várias possibilidades de \"estar ao mar\" a comunidades do interior e despertando vocações, esporte, turismo e oportunidades onde antes a água era pouco aproveitada.",
         "É a ACATMAR levando a cultura do uso das águas a todo o país, do litoral aos rios, do Sul ao Norte."
+      ],
+      "corpo_en": [
+        "The Nautical Circus is an initiative that brings nautical development to towns with potential on rivers, lakes and reservoirs, showing that the economy of the sea, and of the waters, is not limited to the coast.",
+        "The project democratizes access to boating, bringing many ways to \"be at sea\" to inland communities and awakening vocations, sports, tourism and opportunities where water was once underused.",
+        "It is ACATMAR taking the culture of the use of waters to the whole country, from the coast to the rivers, from South to North."
       ]
     },
     {
       "id": "projeto-cambusa",
       "nome": "Projeto Cambusa",
+      "nome_en": "Cambusa Project",
       "tagline": "Fortalecendo a cadeia produtiva náutica",
+      "tagline_en": "Strengthening the nautical production chain",
       "imagem": "",
       "resumo": "Mais uma frente da ACATMAR para conectar e fortalecer os elos da Economia do Mar.",
+      "resumo_en": "Another ACATMAR initiative to connect and strengthen the links of the Sea Economy.",
       "corpo": [
         "O Projeto Cambusa integra a rede de iniciativas da ACATMAR voltadas a conectar e fortalecer os elos da cadeia produtiva náutica.",
         "Assim como acontece a bordo, onde a cambusa é o ponto que abastece e mantém a tripulação, o projeto trabalha para dar suporte e novas oportunidades a quem vive do setor.",
         "Em breve, mais detalhes sobre as ações e resultados do Projeto Cambusa."
+      ],
+      "corpo_en": [
+        "The Cambusa Project is part of ACATMAR's network of initiatives aimed at connecting and strengthening the links of the nautical production chain.",
+        "Just as on board, where the galley (cambusa) is the point that supplies and sustains the crew, the project works to provide support and new opportunities to those who make a living from the sector.",
+        "More details about the Cambusa Project's actions and results coming soon."
       ]
     }
   ]
