@@ -67,7 +67,7 @@
       "tagline": "Segurança jurídica para as estruturas náuticas",
       "tagline_en": "Legal certainty for nautical facilities",
       "imagem": "media/projetos/marina-legal.jpg",
-      "galeria": ["media/projetos/marina-legal.jpg"],
+      "galeria": ["media/projetos/marina-legal.jpg", "media/projetos/marina-legal-2.jpg", "media/projetos/marina-legal-3.jpg", "media/projetos/marina-legal-4.jpg"],
       "resumo": "Apoio à regularização documental e à obtenção de licenças ambientais para marinas e estruturas de apoio náutico.",
       "resumo_en": "Support for documentation and environmental licensing of marinas and nautical support facilities.",
       "corpo": [
@@ -88,7 +88,7 @@
       "tagline": "Qualificação para toda a cadeia produtiva",
       "tagline_en": "Training for the entire production chain",
       "imagem": "media/projetos/escola-do-mar.jpg",
-      "galeria": ["media/projetos/escola-do-mar.jpg", "media/projetos/escola-do-mar-2.jpg", "media/projetos/escola-do-mar-3.jpg"],
+      "galeria": ["media/projetos/escola-do-mar.jpg", "media/projetos/escola-do-mar-2.jpg", "media/projetos/escola-do-mar-3.jpg", "media/projetos/escola-do-mar-4.jpg", "media/projetos/escola-do-mar-5.jpg", "media/projetos/escola-do-mar-6.jpg", "media/projetos/escola-do-mar-7.jpg"],
       "resumo": "Cursos de qualificação que promovem excelência e geram novas oportunidades no setor náutico.",
       "resumo_en": "Training courses that promote excellence and create new opportunities in the nautical sector.",
       "corpo": [
@@ -109,7 +109,7 @@
       "tagline": "Desenvolvimento náutico onde há água",
       "tagline_en": "Nautical development wherever there is water",
       "imagem": "media/projetos/circo-nautico.jpg",
-      "galeria": ["media/projetos/circo-nautico.jpg", "media/projetos/circo-nautico-3.jpg"],
+      "galeria": ["media/projetos/circo-nautico.jpg", "media/projetos/circo-nautico-2.jpg", "media/projetos/circo-nautico-3.jpg", "media/projetos/circo-nautico-4.jpg", "media/projetos/circo-nautico-5.jpg"],
       "resumo": "Leva o desenvolvimento náutico a municípios com potencial em rios, lagos e represas.",
       "resumo_en": "Brings nautical development to towns with potential on rivers, lakes and reservoirs.",
       "corpo": [
@@ -130,7 +130,7 @@
       "tagline": "O melhor da excelência italiana no mercado náutico",
       "tagline_en": "The best of Italian excellence in the nautical market",
       "imagem": "media/projetos/projeto-cambusa.jpg",
-      "galeria": ["media/projetos/projeto-cambusa.jpg", "media/projetos/projeto-cambusa-2.jpg", "media/projetos/projeto-cambusa-3.jpg"],
+      "galeria": ["media/projetos/projeto-cambusa.jpg", "media/projetos/projeto-cambusa-2.jpg", "media/projetos/projeto-cambusa-3.jpg", "media/projetos/projeto-cambusa-4.jpg", "media/projetos/projeto-cambusa-5.jpg", "media/projetos/projeto-cambusa-6.jpg", "media/projetos/projeto-cambusa-7.jpg"],
       "resumo": "Parceria da ACATMAR com a Assonautica Italiana que traz ao setor a Cambusa Store, com o melhor da gastronomia e dos produtos italianos.",
       "resumo_en": "An ACATMAR partnership with Assonautica Italiana bringing the Cambusa Store, with the best of Italian cuisine and products, to the sector.",
       "corpo": [
