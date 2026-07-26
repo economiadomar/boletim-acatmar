@@ -26,7 +26,8 @@
       "nome_en": "International Blue Economy Symposium",
       "tagline": "O futuro do setor em debate",
       "tagline_en": "The future of the sector under debate",
-      "imagem": "media/noticias/simposio-economia-azul.jpg",
+      "imagem": "media/projetos/seminario.jpg",
+      "galeria": ["media/projetos/seminario.jpg", "media/projetos/seminario-2.jpg", "media/projetos/seminario-3.jpg", "media/projetos/seminario-4.jpg", "media/projetos/seminario-5.jpg", "media/projetos/seminario-6.jpg", "media/projetos/seminario-7.jpg", "media/projetos/seminario-8.jpg"],
       "resumo": "Debates sobre as tendências globais da Economia do Mar, reunindo especialistas, empresários e poder público.",
       "resumo_en": "Debates on the global trends of the Sea Economy, bringing together experts, entrepreneurs and public authorities.",
       "corpo": [
@@ -46,7 +47,8 @@
       "nome_en": "Technical Visits and International Agreements",
       "tagline": "Conexões que aumentam a competitividade",
       "tagline_en": "Connections that boost competitiveness",
-      "imagem": "media/noticias/visitas-tecnicas-bnh.jpg",
+      "imagem": "media/projetos/visitas.jpg",
+      "galeria": ["media/projetos/visitas.jpg", "media/projetos/visitas-2.jpg", "media/projetos/visitas-3.jpg", "media/projetos/visitas-4.jpg", "media/projetos/visitas-5.jpg", "media/projetos/visitas-6.jpg", "media/projetos/visitas-7.jpg", "media/projetos/visitas-8.jpg", "media/projetos/visitas-9.jpg", "media/projetos/visitas-10.jpg"],
       "resumo": "Levamos os associados a visitas técnicas e às principais feiras nacionais e internacionais do setor.",
       "resumo_en": "We take members on technical visits and to the leading national and international trade shows in the sector.",
       "corpo": [
