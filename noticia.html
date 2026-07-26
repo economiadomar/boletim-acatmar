@@ -18,6 +18,9 @@
   .nav .wr{max-width:1160px;margin:0 auto;padding:0 1.4rem;height:74px;display:flex;align-items:center;justify-content:space-between}
   .nav img{height:54px}
   .nav a.assoc{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#fff;background:var(--teal);padding:.5rem 1.15rem;border-radius:999px;text-decoration:none;font-size:.9rem}
+  .nav .r{display:flex;align-items:center;gap:.8rem}
+  .langbtn{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.08em;font-size:.9rem;background:transparent;border:1.5px solid var(--line);color:var(--navy);border-radius:999px;padding:.35rem .7rem;cursor:pointer}
+  .langbtn:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
   .art{max-width:760px;margin:0 auto;padding:0 1.4rem}
   .back{display:inline-flex;align-items:center;gap:.4rem;margin:1.8rem 0 .4rem;font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--teal-d);text-decoration:none;font-size:.92rem}
   .cat{display:inline-block;background:var(--teal);color:#fff;font-family:'Barlow Condensed';font-weight:600;letter-spacing:.05em;text-transform:uppercase;font-size:.76rem;padding:.24rem .7rem;border-radius:999px;margin-bottom:.6rem}
@@ -50,7 +53,8 @@
 <body>
 <nav class="nav"><div class="wr">
   <a href="index.html" aria-label="ACATMAR"><img src="media/logos/horiz-branco.png" alt="ACATMAR"></a>
-  <a class="assoc" href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener">Associe-se</a>
+  <div class="r"><button id="lb" class="langbtn" type="button">EN</button>
+  <a class="assoc" id="assoc" href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener">Associe-se</a></div>
 </div></nav>
 
 <article class="art" id="art"><div class="load">Carregando…</div></article>
@@ -59,38 +63,42 @@
 <footer><div>ACATMAR · Associação Náutica Brasileira · <a href="https://www.instagram.com/acatmarassociacao/" target="_blank" rel="noopener">@acatmarassociacao</a></div></footer>
 
 <script>
-function fmtData(iso){var m=['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];var p=iso.split('-');return p[2]+' de '+m[parseInt(p[1],10)-1]+' de '+p[0];}
+var LANG=localStorage.getItem('acatmar_lang')||'pt', EN=LANG==='en';
+function fld(o,f){return (EN&&o[f+'_en'])?o[f+'_en']:o[f];}
+function fmtData(iso){var pt=['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];var en=['January','February','March','April','May','June','July','August','September','October','November','December'];var p=iso.split('-');var mi=parseInt(p[1],10)-1;return EN?(en[mi]+' '+p[2]+', '+p[0]):(p[2]+' de '+pt[mi]+' de '+p[0]);}
+(function(){document.documentElement.lang=EN?'en':'pt-BR';var b=document.getElementById('lb');if(b){b.textContent=EN?'PT':'EN';b.onclick=function(){localStorage.setItem('acatmar_lang',EN?'pt':'en');location.reload();};}
+  var a=document.getElementById('assoc');if(a)a.textContent=EN?'Join us':'Associe-se';})();
 (async function(){
   var id=new URLSearchParams(location.search).get('id');
   var art=document.getElementById('art');
   try{
     var d=await (await fetch('noticias.json?v='+Date.now())).json();
     var all=d.noticias||[]; var n=all.filter(function(x){return x.id===id;})[0]||all[0];
-    if(!n){ art.innerHTML='<div class="load">Notícia não encontrada. <a href="index.html">Voltar</a></div>'; return; }
-    document.title=n.titulo+' — ACATMAR';
-    var body=n.corpo.map(function(p){return '<p>'+p+'</p>';}).join('');
+    if(!n){ art.innerHTML='<div class="load">'+(EN?'News not found.':'Notícia não encontrada.')+' <a href="index.html">'+(EN?'Back':'Voltar')+'</a></div>'; return; }
+    document.title=fld(n,'titulo')+' — ACATMAR';
+    var body=fld(n,'corpo').map(function(p){return '<p>'+p+'</p>';}).join('');
     art.innerHTML=
-      '<a class="back" href="index.html#noticias">← Todas as notícias</a>'+
-      '<div><span class="cat">'+n.categoria+'</span></div>'+
-      '<h1 class="title">'+n.titulo+'</h1>'+
+      '<a class="back" href="noticias.html">'+(EN?'← All news':'← Todas as notícias')+'</a>'+
+      '<div><span class="cat">'+fld(n,'categoria')+'</span></div>'+
+      '<h1 class="title">'+fld(n,'titulo')+'</h1>'+
       '<div class="meta">'+fmtData(n.data)+'</div>'+
-      '<img class="hero-img" src="'+n.imagem+'" alt="'+n.titulo+'">'+
-      (n.credito?'<div class="credito">Foto: '+n.credito+'</div>':'')+
+      '<img class="hero-img" src="'+n.imagem+'" alt="'+fld(n,'titulo')+'">'+
+      (n.credito?'<div class="credito">'+(EN?'Photo: ':'Foto: ')+n.credito+'</div>':'')+
       '<div class="body">'+body+'</div>'+
-      '<div class="share"><span>Compartilhar</span>'+
-        '<a target="_blank" rel="noopener" href="https://wa.me/?text='+encodeURIComponent(n.titulo+' '+location.href)+'">WhatsApp</a>'+
-        '<button id="copy">Copiar link</button></div>';
+      '<div class="share"><span>'+(EN?'Share':'Compartilhar')+'</span>'+
+        '<a target="_blank" rel="noopener" href="https://wa.me/?text='+encodeURIComponent(fld(n,'titulo')+' '+location.href)+'">WhatsApp</a>'+
+        '<button id="copy">'+(EN?'Copy link':'Copiar link')+'</button></div>';
     document.getElementById('copy').addEventListener('click',function(){
-      (navigator.clipboard?navigator.clipboard.writeText(location.href):Promise.reject()).then(function(){this.textContent='Copiado!';}.bind(this)).catch(function(){prompt('Link:',location.href);});
+      (navigator.clipboard?navigator.clipboard.writeText(location.href):Promise.reject()).then(function(){this.textContent=EN?'Copied!':'Copiado!';}.bind(this)).catch(function(){prompt('Link:',location.href);});
     });
-    // relacionadas
+    document.querySelector('#related h2').textContent=EN?'More news':'Mais notícias';
     var rel=all.filter(function(x){return x.id!==n.id;}).slice(0,3);
     var rg=document.getElementById('rg');
     rel.forEach(function(x){var a=document.createElement('a');a.className='rc';a.href='noticia.html?id='+x.id;
-      a.innerHTML='<img loading="lazy" src="'+x.imagem+'" alt="'+x.titulo+'"><div class="b"><div class="d">'+fmtData(x.data)+'</div><h3>'+x.titulo+'</h3></div>';rg.appendChild(a);});
+      a.innerHTML='<img loading="lazy" src="'+x.imagem+'" alt="'+fld(x,'titulo')+'"><div class="b"><div class="d">'+fmtData(x.data)+'</div><h3>'+fld(x,'titulo')+'</h3></div>';rg.appendChild(a);});
     document.getElementById('related').style.display='';
     window.scrollTo(0,0);
-  }catch(e){ art.innerHTML='<div class="load">Erro ao carregar. <a href="index.html">Voltar</a></div>'; }
+  }catch(e){ art.innerHTML='<div class="load">'+(EN?'Error loading.':'Erro ao carregar.')+' <a href="index.html">'+(EN?'Back':'Voltar')+'</a></div>'; }
 })();
 </script>
 </body>

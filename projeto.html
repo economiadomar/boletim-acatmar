@@ -18,6 +18,9 @@
   .nav .wr{max-width:1160px;margin:0 auto;padding:0 1.4rem;height:74px;display:flex;align-items:center;justify-content:space-between}
   .nav img{height:54px}
   .nav a.assoc{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#fff;background:var(--teal);padding:.5rem 1.15rem;border-radius:999px;text-decoration:none;font-size:.9rem}
+  .nav .r{display:flex;align-items:center;gap:.8rem}
+  .langbtn{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.08em;font-size:.9rem;background:transparent;border:1.5px solid var(--line);color:var(--navy);border-radius:999px;padding:.35rem .7rem;cursor:pointer}
+  .langbtn:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
   .hero{position:relative;color:#fff;overflow:hidden;background:radial-gradient(130% 120% at 78% -20%,#155a86 0%,var(--navy) 45%,var(--deep) 100%)}
   .hero.haspic{background:var(--navy)}
   .hero .pic{position:absolute;inset:0;opacity:.32;object-fit:cover;width:100%;height:100%}
@@ -52,7 +55,8 @@
 <body>
 <nav class="nav"><div class="wr">
   <a href="index.html" aria-label="ACATMAR"><img src="media/logos/horiz-branco.png" alt="ACATMAR"></a>
-  <a class="assoc" href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener">Associe-se</a>
+  <div class="r"><button id="lb" class="langbtn" type="button">EN</button>
+  <a class="assoc" id="assoc" href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener">Associe-se</a></div>
 </div></nav>
 
 <header class="hero" id="hero">
@@ -64,28 +68,37 @@
 <footer><div>ACATMAR · Associação Náutica Brasileira · <a href="https://www.instagram.com/acatmarassociacao/" target="_blank" rel="noopener">@acatmarassociacao</a></div></footer>
 
 <script>
+var LANG=localStorage.getItem('acatmar_lang')||'pt';
+var EN=LANG==='en';
+function fld(o,f){return (EN&&o[f+'_en'])?o[f+'_en']:o[f];}
+var TX={back:{pt:'← Todos os projetos',en:'← All projects'},eyebrow:{pt:'Projeto ACATMAR',en:'ACATMAR Project'},
+  ctaH:{pt:'Faça parte da ACATMAR',en:'Join ACATMAR'},ctaP:{pt:'Some sua empresa a quem constrói o futuro do setor náutico brasileiro.',en:'Add your company to those building the future of Brazil’s nautical sector.'},
+  join:{pt:'Quero me associar',en:'I want to join'},others:{pt:'Outros projetos',en:'Other projects'},assoc:{pt:'Associe-se',en:'Join us'}};
+function tx(k){return TX[k][EN?'en':'pt'];}
+(function(){document.documentElement.lang=EN?'en':'pt-BR';var b=document.getElementById('lb');if(b){b.textContent=EN?'PT':'EN';b.onclick=function(){localStorage.setItem('acatmar_lang',EN?'pt':'en');location.reload();};}
+  var a=document.getElementById('assoc');if(a)a.textContent=tx('assoc');})();
 (async function(){
   var id=new URLSearchParams(location.search).get('id');
   try{
     var d=await (await fetch('projetos.json?v='+Date.now())).json();
     var all=d.projetos||[]; var p=all.filter(function(x){return x.id===id;})[0]||all[0];
     if(!p){ document.getElementById('herowr').innerHTML='<div class="load" style="color:#fff">Projeto não encontrado. <a href="index.html">Voltar</a></div>'; return; }
-    document.title=p.nome+' — ACATMAR';
+    document.title=fld(p,'nome')+' — ACATMAR';
     var hero=document.getElementById('hero');
     if(p.imagem){ hero.classList.add('haspic'); var im=document.createElement('img'); im.className='pic'; im.src=p.imagem; im.alt=''; hero.insertBefore(im,hero.firstChild); }
     document.getElementById('herowr').innerHTML=
-      '<a class="back" href="index.html#projetos">← Todos os projetos</a>'+
-      '<div class="eyebrow">Projeto ACATMAR</div><h1>'+p.nome+'</h1>'+
-      (p.tagline?'<div class="tag">'+p.tagline+'</div>':'');
+      '<a class="back" href="index.html#projetos">'+tx('back')+'</a>'+
+      '<div class="eyebrow">'+tx('eyebrow')+'</div><h1>'+fld(p,'nome')+'</h1>'+
+      (fld(p,'tagline')?'<div class="tag">'+fld(p,'tagline')+'</div>':'');
     document.getElementById('art').innerHTML=
-      p.corpo.map(function(x){return '<p>'+x+'</p>';}).join('')+
-      '<div class="cta"><h2>Faça parte da ACATMAR</h2><p>Some sua empresa a quem constrói o futuro do setor náutico brasileiro.</p>'+
-      '<a class="btn" href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener">Quero me associar</a></div>';
-    // outros projetos
+      fld(p,'corpo').map(function(x){return '<p>'+x+'</p>';}).join('')+
+      '<div class="cta"><h2>'+tx('ctaH')+'</h2><p>'+tx('ctaP')+'</p>'+
+      '<a class="btn" href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener">'+tx('join')+'</a></div>';
+    document.querySelector('#others h2').textContent=tx('others');
     var og=document.getElementById('og');
     all.filter(function(x){return x.id!==p.id;}).slice(0,3).forEach(function(x){
       var a=document.createElement('a'); a.className='oc'; a.href='projeto.html?id='+x.id;
-      a.innerHTML='<div class="t">'+x.nome+'</div><div class="d">'+(x.tagline||'')+'</div>'; og.appendChild(a);
+      a.innerHTML='<div class="t">'+fld(x,'nome')+'</div><div class="d">'+(fld(x,'tagline')||'')+'</div>'; og.appendChild(a);
     });
     document.getElementById('others').style.display='';
     window.scrollTo(0,0);

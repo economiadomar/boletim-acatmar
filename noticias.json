@@ -135,6 +135,28 @@
       ]
     },
     {
+      "id": "marinheiro-esporte-recreio",
+      "titulo": "Marinheiro de Esporte e Recreio: uma conquista histórica",
+      "titulo_en": "Sport and Recreational Sailor: a historic achievement",
+      "categoria": "Vitória do setor",
+      "categoria_en": "Sector victory",
+      "data": "2025-11-25",
+      "imagem": "media/noticias/marinheiro.jpg",
+      "credito": "Divulgação",
+      "resumo": "O Senado aprovou o PLC 25/2018, que regulamenta a profissão, sancionada pelo Presidente da República no fim do ano.",
+      "resumo_en": "The Senate approved Bill 25/2018, which regulates the profession, later signed into law by the President at year's end.",
+      "corpo": [
+        "O Plenário do Senado aprovou o PLC 25/2018, que regulamenta a profissão de Marinheiro Profissional de Esporte e Recreio, sancionada pelo Presidente da República no fim de 2025.",
+        "Foi uma articulação rápida e certeira: durante o V Fórum de Capacitação Técnica ACATMAR, em Florianópolis, o setor dos marinheiros e o presidente da Frente Parlamentar sentaram à mesa, e um tema parado havia anos foi retirado das gavetas do Senado, levado ao plenário e aprovado.",
+        "A ACATMAR consolidou demandas, dados e argumentos técnicos que subsidiaram o trabalho do senador Esperidião Amin e de sua equipe. Mais do que corrigir uma lacuna legal, a conquista significa reconhecimento profissional, segurança jurídica para marinas e clubes, e mais emprego e renda na cadeia náutica."
+      ],
+      "corpo_en": [
+        "The Federal Senate approved Bill 25/2018, which regulates the profession of Professional Sport and Recreational Sailor, signed into law by the President of the Republic at the end of 2025.",
+        "It was a quick and precise effort: during the 5th ACATMAR Technical Training Forum in Florianópolis, the sailors' sector and the president of the Parliamentary Front sat down together, and a matter stalled for years was pulled from the Senate's drawers, taken to the floor and approved.",
+        "ACATMAR consolidated the demands, data and technical arguments that supported the work of Senator Esperidião Amin and his team. More than fixing a legal gap, the achievement means professional recognition, legal certainty for marinas and clubs, and more jobs and income in the nautical chain."
+      ]
+    },
+    {
       "id": "marinha-acatmar-soamar",
       "titulo": "Marinha, ACATMAR e SOAMAR-SC celebram uma trajetória conjunta pela Economia do Mar",
       "titulo_en": "Navy, ACATMAR and SOAMAR-SC celebrate a shared journey for the Sea Economy",
