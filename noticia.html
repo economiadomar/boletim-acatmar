@@ -28,6 +28,10 @@
   .gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;background:var(--navy);display:block}
   .gallery img:first-child{grid-column:1/-1;aspect-ratio:16/9}
   @media(max-width:600px){.gallery{grid-template-columns:1fr}.gallery img:first-child{aspect-ratio:4/3}}
+  .more-link{display:inline-flex;align-items:center;gap:.5rem;margin:.4rem 0 1.6rem;font-family:'Barlow Condensed';font-weight:600;
+    text-transform:uppercase;letter-spacing:.05em;font-size:.98rem;padding:.75rem 1.5rem;border-radius:999px;text-decoration:none;
+    background:var(--teal);color:#fff;transition:background .2s}
+  .more-link:hover{background:var(--teal-d)}
   .art{max-width:760px;margin:0 auto;padding:0 1.4rem}
   .back{display:inline-flex;align-items:center;gap:.4rem;margin:1.8rem 0 .4rem;font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--teal-d);text-decoration:none;font-size:.92rem}
   .cat{display:inline-block;background:var(--teal);color:#fff;font-family:'Barlow Condensed';font-weight:600;letter-spacing:.05em;text-transform:uppercase;font-size:.76rem;padding:.24rem .7rem;border-radius:999px;margin-bottom:.6rem}
@@ -99,6 +103,7 @@ function fmtData(iso){var pt=['janeiro','fevereiro','março','abril','maio','jun
       (n.credito?'<div class="credito">'+(EN?'Photo: ':'Foto: ')+n.credito+'</div>':'')+
       '<div class="body">'+body+'</div>'+
       ((n.galeria&&n.galeria.length)?'<div class="gallery">'+n.galeria.map(function(s){return '<img loading="lazy" src="'+s+'" alt="'+fld(n,'titulo')+'">';}).join('')+'</div>':'')+
+      (n.link?'<a class="more-link" href="'+n.link+'" target="_blank" rel="noopener">'+(fld(n,'link_label')||(EN?'Learn more':'Saiba mais'))+' →</a>':'')+
       '<div class="share"><span>'+(EN?'Share':'Compartilhar')+'</span>'+
         '<a target="_blank" rel="noopener" href="https://wa.me/?text='+encodeURIComponent(fld(n,'titulo')+' '+location.href)+'">WhatsApp</a>'+
         '<button id="copy">'+(EN?'Copy link':'Copiar link')+'</button></div>';
