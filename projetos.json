@@ -27,7 +27,16 @@
       "tagline": "O futuro do setor em debate",
       "tagline_en": "The future of the sector under debate",
       "imagem": "media/projetos/seminario.jpg",
-      "galeria": ["media/projetos/seminario.jpg", "media/projetos/seminario-2.jpg", "media/projetos/seminario-3.jpg", "media/projetos/seminario-4.jpg", "media/projetos/seminario-5.jpg", "media/projetos/seminario-6.jpg", "media/projetos/seminario-7.jpg", "media/projetos/seminario-8.jpg"],
+      "galeria": [
+        "media/projetos/seminario.jpg",
+        "media/projetos/seminario-2.jpg",
+        "media/projetos/seminario-3.jpg",
+        "media/projetos/seminario-4.jpg",
+        "media/projetos/seminario-5.jpg",
+        "media/projetos/seminario-6.jpg",
+        "media/projetos/seminario-7.jpg",
+        "media/projetos/seminario-8.jpg"
+      ],
       "resumo": "Debates sobre as tendências globais da Economia do Mar, reunindo especialistas, empresários e poder público.",
       "resumo_en": "Debates on the global trends of the Sea Economy, bringing together experts, entrepreneurs and public authorities.",
       "corpo": [
@@ -45,21 +54,29 @@
       "id": "visitas-tecnicas",
       "nome": "Visitas Técnicas e Acordos Internacionais",
       "nome_en": "Technical Visits and International Agreements",
-      "tagline": "Conexões que aumentam a competitividade",
-      "tagline_en": "Connections that boost competitiveness",
-      "imagem": "media/projetos/visitas.jpg",
-      "galeria": ["media/projetos/visitas.jpg", "media/projetos/visitas-2.jpg", "media/projetos/visitas-3.jpg", "media/projetos/visitas-4.jpg", "media/projetos/visitas-5.jpg", "media/projetos/visitas-6.jpg", "media/projetos/visitas-7.jpg", "media/projetos/visitas-8.jpg", "media/projetos/visitas-9.jpg", "media/projetos/visitas-10.jpg"],
-      "resumo": "Levamos os associados a visitas técnicas e às principais feiras nacionais e internacionais do setor.",
-      "resumo_en": "We take members on technical visits and to the leading national and international trade shows in the sector.",
+      "tagline": "Visitas técnicas que geram conhecimento e oportunidades",
+      "tagline_en": "Technical visits that generate knowledge and opportunities",
+      "imagem": "media/projetos/vt-1.jpg",
+      "galeria": [
+        "media/projetos/vt-1.jpg",
+        "media/projetos/vt-2.jpg",
+        "media/projetos/vt-3.jpg",
+        "media/projetos/vt-4.jpg",
+        "media/projetos/vt-5.jpg",
+        "media/projetos/vt-6.jpg",
+        "media/projetos/vt-7.jpg"
+      ],
+      "resumo": "Visitas e missões nacionais e internacionais que geram conhecimento, networking e oportunidades reais de negócio para os associados.",
+      "resumo_en": "National and international visits and missions that generate knowledge, networking and real business opportunities for members.",
       "corpo": [
-        "As Visitas Técnicas da ACATMAR aproximam os associados das operações mais estratégicas da indústria náutica, promovendo troca de experiências, conexões e novas parcerias.",
-        "A ACATMAR também conduz missões internacionais e firma acordos que aproximam o Brasil das tendências globais, com presença nas principais feiras nacionais e internacionais e rodadas de negócios que geram oportunidades reais para o setor.",
-        "Na programação do Blue Nautical HUB Brasil, por exemplo, a comitiva conheceu estaleiros, marinas e a maricultura catarinense, de Itajaí à Grande Florianópolis, revelando a força da cadeia produtiva do estado."
+        "A ACATMAR realiza visitas técnicas nacionais e internacionais que aproximam os associados das operações mais estratégicas da indústria náutica, das marinas, dos estaleiros e dos principais centros de inovação do setor.",
+        "Em parceria com instituições brasileiras e estrangeiras, a associação também organiza missões empresariais, participa de feiras e promove rodadas de negócios com condições subsidiadas por meio de acordos institucionais. Ao longo dos últimos anos, mais de 150 associados já participaram dessas agendas.",
+        "Essas experiências permitem sair da rotina, conhecer novas tecnologias, compreender outros modelos de operação, ampliar o networking e criar oportunidades reais de negócios. Mais do que viagens, as missões da ACATMAR são ferramentas de aprendizado, conexão e crescimento para as empresas e para toda a Economia do Mar."
       ],
       "corpo_en": [
-        "ACATMAR's Technical Visits bring members closer to the most strategic operations of the nautical industry, fostering the exchange of experiences, connections and new partnerships.",
-        "ACATMAR also leads international missions and signs agreements that connect Brazil to global trends, with a presence at the main national and international trade shows and business rounds that generate real opportunities for the sector.",
-        "During the Blue Nautical HUB Brasil, for example, the delegation visited shipyards, marinas and Santa Catarina's mariculture, from Itajaí to Greater Florianópolis, revealing the strength of the state's production chain."
+        "ACATMAR carries out national and international technical visits that bring members closer to the most strategic operations of the nautical industry, to marinas, shipyards and the sector's leading innovation centers.",
+        "In partnership with Brazilian and foreign institutions, the association also organizes business missions, takes part in trade fairs and promotes business rounds with subsidized conditions through institutional agreements. Over the past few years, more than 150 members have already taken part in these agendas.",
+        "These experiences make it possible to step out of the routine, discover new technologies, understand other operating models, expand networking and create real business opportunities. More than trips, ACATMAR's missions are tools for learning, connection and growth for companies and for the entire Sea Economy."
       ]
     },
     {
@@ -69,7 +86,12 @@
       "tagline": "Segurança jurídica para as estruturas náuticas",
       "tagline_en": "Legal certainty for nautical facilities",
       "imagem": "media/projetos/marina-legal.jpg",
-      "galeria": ["media/projetos/marina-legal.jpg", "media/projetos/marina-legal-2.jpg", "media/projetos/marina-legal-3.jpg", "media/projetos/marina-legal-4.jpg"],
+      "galeria": [
+        "media/projetos/marina-legal.jpg",
+        "media/projetos/marina-legal-2.jpg",
+        "media/projetos/marina-legal-3.jpg",
+        "media/projetos/marina-legal-4.jpg"
+      ],
       "resumo": "Apoio à regularização documental e à obtenção de licenças ambientais para marinas e estruturas de apoio náutico.",
       "resumo_en": "Support for documentation and environmental licensing of marinas and nautical support facilities.",
       "corpo": [
@@ -90,7 +112,15 @@
       "tagline": "Qualificação para toda a cadeia produtiva",
       "tagline_en": "Training for the entire production chain",
       "imagem": "media/projetos/escola-do-mar.jpg",
-      "galeria": ["media/projetos/escola-do-mar.jpg", "media/projetos/escola-do-mar-2.jpg", "media/projetos/escola-do-mar-3.jpg", "media/projetos/escola-do-mar-4.jpg", "media/projetos/escola-do-mar-5.jpg", "media/projetos/escola-do-mar-6.jpg", "media/projetos/escola-do-mar-7.jpg"],
+      "galeria": [
+        "media/projetos/escola-do-mar.jpg",
+        "media/projetos/escola-do-mar-2.jpg",
+        "media/projetos/escola-do-mar-3.jpg",
+        "media/projetos/escola-do-mar-4.jpg",
+        "media/projetos/escola-do-mar-5.jpg",
+        "media/projetos/escola-do-mar-6.jpg",
+        "media/projetos/escola-do-mar-7.jpg"
+      ],
       "resumo": "Cursos de qualificação que promovem excelência e geram novas oportunidades no setor náutico.",
       "resumo_en": "Training courses that promote excellence and create new opportunities in the nautical sector.",
       "corpo": [
@@ -111,7 +141,13 @@
       "tagline": "Desenvolvimento náutico onde há água",
       "tagline_en": "Nautical development wherever there is water",
       "imagem": "media/projetos/circo-nautico.jpg",
-      "galeria": ["media/projetos/circo-nautico.jpg", "media/projetos/circo-nautico-2.jpg", "media/projetos/circo-nautico-3.jpg", "media/projetos/circo-nautico-4.jpg", "media/projetos/circo-nautico-5.jpg"],
+      "galeria": [
+        "media/projetos/circo-nautico.jpg",
+        "media/projetos/circo-nautico-2.jpg",
+        "media/projetos/circo-nautico-3.jpg",
+        "media/projetos/circo-nautico-4.jpg",
+        "media/projetos/circo-nautico-5.jpg"
+      ],
       "resumo": "Leva o desenvolvimento náutico a municípios com potencial em rios, lagos e represas.",
       "resumo_en": "Brings nautical development to towns with potential on rivers, lakes and reservoirs.",
       "corpo": [
@@ -132,7 +168,15 @@
       "tagline": "O melhor da excelência italiana no mercado náutico",
       "tagline_en": "The best of Italian excellence in the nautical market",
       "imagem": "media/projetos/projeto-cambusa.jpg",
-      "galeria": ["media/projetos/projeto-cambusa.jpg", "media/projetos/projeto-cambusa-2.jpg", "media/projetos/projeto-cambusa-3.jpg", "media/projetos/projeto-cambusa-4.jpg", "media/projetos/projeto-cambusa-5.jpg", "media/projetos/projeto-cambusa-6.jpg", "media/projetos/projeto-cambusa-7.jpg"],
+      "galeria": [
+        "media/projetos/projeto-cambusa.jpg",
+        "media/projetos/projeto-cambusa-2.jpg",
+        "media/projetos/projeto-cambusa-3.jpg",
+        "media/projetos/projeto-cambusa-4.jpg",
+        "media/projetos/projeto-cambusa-5.jpg",
+        "media/projetos/projeto-cambusa-6.jpg",
+        "media/projetos/projeto-cambusa-7.jpg"
+      ],
       "resumo": "Parceria da ACATMAR com a Assonautica Italiana que traz ao setor a Cambusa Store, com o melhor da gastronomia e dos produtos italianos.",
       "resumo_en": "An ACATMAR partnership with Assonautica Italiana bringing the Cambusa Store, with the best of Italian cuisine and products, to the sector.",
       "corpo": [
