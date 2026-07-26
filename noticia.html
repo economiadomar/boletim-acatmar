@@ -159,7 +159,7 @@ function fmtData(iso){var pt=['janeiro','fevereiro','março','abril','maio','jun
       (n.credito?'<div class="credito">'+(EN?'Photo: ':'Foto: ')+n.credito+'</div>':'')+
       '<div class="body">'+body+'</div>'+
       ((n.galeria&&n.galeria.length)?'<div class="gallery">'+n.galeria.map(function(s){return '<img loading="lazy" src="'+s+'" alt="'+fld(n,'titulo')+'">';}).join('')+'</div>':'')+
-      (n.apoiadores?'<div class="apoiadores"><h2>'+(EN?'Organizers and supporters':'Realização e apoiadores')+'</h2>'+n.apoiadores.map(function(g){return '<div class="grp"><b>'+((EN&&g.grupo_en)?g.grupo_en:g.grupo)+'</b>'+g.itens.join(' · ')+'</div>';}).join('')+'</div>':'')+
+      (n.apoiadores?'<div class="apoiadores"><h2>'+((EN&&n.apoiadores_titulo_en)?n.apoiadores_titulo_en:(n.apoiadores_titulo||(EN?'Organizers and supporters':'Realização e apoiadores')))+'</h2>'+n.apoiadores.map(function(g){return '<div class="grp"><b>'+((EN&&g.grupo_en)?g.grupo_en:g.grupo)+'</b>'+g.itens.join(' · ')+'</div>';}).join('')+'</div>':'')+
       (n.link?'<a class="more-link" href="'+n.link+'" target="_blank" rel="noopener">'+(fld(n,'link_label')||(EN?'Learn more':'Saiba mais'))+' →</a>':'')+
       (n.cadastro?'<a class="cadastro-cta" href="'+n.cadastro+'" target="_blank" rel="noopener">'+(EN?'I want to take part in the Blue Nautical HUB 2027':'Quero participar do Blue Nautical HUB 2027')+' →<small>'+(EN?'Sign up for the 2027 edition':'Faça seu cadastro para a edição 2027')+'</small></a>':'')+
       '<div class="share"><span>'+(EN?'Share':'Compartilhar')+'</span>'+

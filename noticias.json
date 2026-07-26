@@ -13,13 +13,13 @@
       "resumo_en": "Five events in one week combined technical visits, an international symposium, business on board and international cooperation in Santa Catarina.",
       "corpo": [
         "O Blue Nautical HUB Brasil 2026 encerrou sua programação deixando como principal legado a consolidação de uma plataforma estratégica de conexão para a Economia do Mar. Foram cinco eventos em uma semana: visitas técnicas, o III Simpósio Internacional Economia Azul, o Encontro de Negócios B2B, o encontro institucional com a Frente Parlamentar e a programação da Cofradía Europea de la Vela.",
-        "Realizado pela ACATMAR e pelo Sebrae/SC entre 26 de abril e 1º de maio, o HUB conectou empresários, especialistas, poder público, estaleiros, marinas, fornecedores e entidades nacionais e internacionais em um ambiente de construção coletiva.",
+        "O HUB conectou empresários, especialistas, poder público, estaleiros, marinas, fornecedores e entidades nacionais e internacionais em um ambiente de construção coletiva.",
         "\"O Blue Nautical HUB Brasil nasceu para ser uma plataforma de conexão para a Economia do Mar. Vimos empresas conversando, negócios sendo iniciados, especialistas compartilhando conhecimento e entidades internacionais criando pontes com o Brasil. Esse é o verdadeiro papel do HUB: conectar para construir\", destaca Leandro Mané Ferrari, presidente da ACATMAR e do Blue Nautical HUB Brasil.",
         "Uma construção coletiva realizada por Mundo Mar Consulting, ACATMAR, Cofradía Europea de la Vela e Sebrae/SC, com patrocínio de Schaefer Yachts e Marine Telematics."
       ],
       "corpo_en": [
         "Blue Nautical HUB Brasil 2026 wrapped up its program leaving as its main legacy the consolidation of a strategic connection platform for the Sea Economy. There were five events in one week: technical visits, the 3rd International Blue Economy Symposium, the B2B Business Meeting, the institutional meeting with the Parliamentary Front and the program of the Cofradía Europea de la Vela.",
-        "Held by ACATMAR and Sebrae/SC between April 26 and May 1, the HUB connected entrepreneurs, experts, public authorities, shipyards, marinas, suppliers and national and international organizations in a space of collective building.",
+        "The HUB connected entrepreneurs, experts, public authorities, shipyards, marinas, suppliers and national and international entities in an environment of collective construction.",
         "\"Blue Nautical HUB Brasil was created to be a connection platform for the Sea Economy. We saw companies talking, deals being started, experts sharing knowledge and international bodies building bridges with Brazil. That is the true role of the HUB: to connect in order to build,\" says Leandro Mané Ferrari, president of ACATMAR and of Blue Nautical HUB Brasil.",
         "A collective effort by Mundo Mar Consulting, ACATMAR, Cofradía Europea de la Vela and Sebrae/SC, sponsored by Schaefer Yachts and Marine Telematics."
       ],
@@ -70,7 +70,9 @@
             "Amazonáutica"
           ]
         }
-      ]
+      ],
+      "apoiadores_titulo": "Organizadores e apoiadores · 2026",
+      "apoiadores_titulo_en": "Organizers and supporters · 2026"
     },
     {
       "id": "b2b-catamara",
