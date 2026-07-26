@@ -20,6 +20,7 @@
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
+  #noticias,#boletins,#projetos,#sobre{scroll-margin-top:88px}
   body{font-family:'PT Serif',Georgia,serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.6}
   .disp{font-family:'Oswald',sans-serif}.cond{font-family:'Barlow Condensed',sans-serif}
   h1,h2,h3{font-family:'Oswald',sans-serif;font-weight:700;line-height:1.02;text-wrap:balance}
@@ -205,10 +206,10 @@
   <div class="wrap">
     <a class="logo" href="#top" aria-label="ACATMAR"><img src="media/logos/horiz-branco.png" alt="ACATMAR — Associação Náutica Brasileira"></a>
     <div class="links">
+      <a href="sobre.html" class="hidem">Quem somos</a>
       <a href="#noticias" class="hidem">Notícias</a>
       <a href="#boletins" class="hidem">Boletins</a>
       <a href="#projetos" class="hidem">Projetos</a>
-      <a href="sobre.html" class="hidem">Quem somos</a>
       <button id="langBtn" class="langbtn" type="button" aria-label="Trocar idioma / Switch language">EN</button>
       <a href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener" class="btn btn-teal">Associe-se</a>
     </div>
@@ -510,6 +511,26 @@ function initReveal(){
   var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.1});
   els.forEach(function(e){io.observe(e);});
 }
+
+/* rolagem confiavel para ancoras internas (#secao), com offset da nav fixa */
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var id=a.getAttribute('href').slice(1);
+    if(!id) return;
+    var el=document.getElementById(id);
+    if(!el) return;
+    e.preventDefault();
+    el.scrollIntoView({behavior:'smooth',block:'start'});
+    if(history.pushState) history.pushState(null,'','#'+id);
+  });
+});
+/* se chegar com #hash (ex.: vindo de outra pagina), reposiciona apos o conteudo carregar */
+(function(){
+  var h=location.hash.slice(1);
+  if(!h) return;
+  var reposiciona=function(){var el=document.getElementById(h);if(el)el.scrollIntoView({block:'start'});};
+  window.addEventListener('load',function(){setTimeout(reposiciona,250);setTimeout(reposiciona,700);});
+})();
 </script>
 </body>
 </html>
