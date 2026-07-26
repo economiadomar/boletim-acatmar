@@ -69,6 +69,16 @@
   .partners span{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.04em;font-size:.95rem;
     background:#fff;border:1px solid var(--line);color:var(--navy);border-radius:999px;padding:.5rem 1.05rem}
 
+  .grp-t{font-family:'Oswald';font-weight:600;text-transform:uppercase;color:var(--navy);font-size:1.05rem;margin:1.8rem 0 .8rem;letter-spacing:.02em}
+  .grp-t:first-of-type{margin-top:1.2rem}
+  .board{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem}
+  .bm{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.9rem 1.1rem}
+  .bm .role{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--teal-d);font-size:.78rem}
+  .bm .nm{font-family:'Oswald';font-weight:600;color:var(--navy);font-size:1.05rem;line-height:1.15;margin-top:.15rem}
+  .council{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1rem 1.2rem;color:var(--ink);font-size:1.02rem;line-height:1.75}
+  @media(max-width:760px){.board{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:460px){.board{grid-template-columns:1fr}}
+
   .docs{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;margin-top:1.4rem}
   .doc{display:flex;gap:1rem;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.3rem 1.4rem;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s}
   .doc:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(10,37,64,.12)}
@@ -108,14 +118,14 @@
   <a class="back" href="index.html" data-en="← Home">← Início</a>
   <div class="eyebrow" data-en="About us">Quem somos</div>
   <h1 data-en="The Brazilian Nautical Association">A Associação Náutica Brasileira</h1>
-  <p data-en="A non-profit organization that has represented the production chain of Brazil's nautical sector since 2008, promoting the culture of the use of waters and the sustainable development of the Sea Economy.">Uma entidade sem fins lucrativos que representa, desde 2008, a cadeia produtiva do setor náutico brasileiro, promovendo a cultura do uso das águas e o desenvolvimento sustentável da Economia do Mar.</p>
+  <p data-en="A non-profit organization that has represented Brazil's Sea Economy since 2008, promoting the culture of the use of waters and the sustainable development of the sector.">Uma entidade sem fins lucrativos que representa, desde 2008, a Economia do Mar no Brasil, promovendo a cultura do uso das águas e o desenvolvimento sustentável do setor.</p>
 </div></header>
 
 <div class="nums"><div class="wr">
-  <div><div class="n">2008</div><div class="l" data-en="Founded">Ano de fundação</div></div>
-  <div><div class="n">350</div><div class="l" data-en="Members">Associados</div></div>
-  <div><div class="n">4</div><div class="l" data-en="Sectors represented">Setores representados</div></div>
-  <div><div class="n">200</div><div class="l" data-en="Events held">Eventos realizados</div></div>
+  <div><div class="n">2008</div><div class="l" data-en="Founded in">Ano de fundação</div></div>
+  <div><div class="n">4</div><div class="l" data-en="Sea Economy pillars">Pilares da Economia do Mar</div></div>
+  <div><div class="n" data-en="Brazil">Brasil</div><div class="l" data-en="Nationwide presence">Atuação nacional</div></div>
+  <div><div class="n" data-en="Europe">Europa</div><div class="l" data-en="International partners">Parcerias internacionais</div></div>
 </div></div>
 
 <section>
@@ -124,7 +134,7 @@
     <h2 data-en="Representing the Sea Economy">Representando a Economia do Mar</h2>
   </div>
   <div class="prose">
-    <p data-en="Headquartered on the Island of Santa Catarina, in Florianópolis, the Brazilian Nautical Association (ACATMAR) is a non-profit organization that has represented, since 2008, the members of the production chain of the nautical sector.">Com sede na Ilha de Santa Catarina, em Florianópolis, a Associação Náutica Brasileira (ACATMAR) é uma entidade sem fins lucrativos que representa, desde 2008, os associados da cadeia produtiva do setor náutico.</p>
+    <p data-en="Headquartered on the Island of Santa Catarina, in Florianópolis, the Brazilian Nautical Association (ACATMAR) is a non-profit organization that has represented, since 2008, the many links of the Sea Economy. Beyond boating, our work embraces fishing, mariculture, tourism in its various sea-oriented forms and all the activities connected to the waters.">Com sede na Ilha de Santa Catarina, em Florianópolis, a Associação Náutica Brasileira (ACATMAR) é uma entidade sem fins lucrativos que representa, desde 2008, os diversos elos da Economia do Mar. Mais do que a náutica, nossa atuação abraça a pesca, a maricultura, o turismo em suas várias formas voltadas ao mar e as demais atividades ligadas às águas.</p>
     <p data-en="We promote and foster the culture of the use of waters and the sustainable development of the Sea Economy. We act effectively in councils, forums, committees and technical groups, both governmental and private, broadening the understanding of the sector's dimensions and its impact on society.">Promovemos e fomentamos a cultura do uso das águas e o desenvolvimento sustentável da Economia do Mar. Atuamos de forma efetiva em conselhos, fóruns, comissões e grupos técnicos, governamentais e privados, ampliando a compreensão sobre as dimensões e o impacto do setor na sociedade.</p>
     <p data-en="We maintain a constant institutional dialogue with political and social forces, with concrete actions to ensure more infrastructure, economic development and environmental preservation. And we follow the sector globally, forming partnerships with international associations in search of new market relations and the application of navigation safety and standardization norms.">Mantemos uma interação institucional constante com as forças políticas e sociais, com ações concretas para garantir mais infraestrutura, desenvolvimento econômico e conservação do meio ambiente. E acompanhamos o setor de forma global, firmando parcerias com associações internacionais em busca de novas relações de mercado e da aplicação de normas de padronização e segurança da navegação.</p>
   </div>
@@ -135,12 +145,12 @@
     <div class="eyebrow" data-en="Our mission">Nossa missão</div>
     <h2 data-en="Four pillars, one sector">Quatro pilares, um só setor</h2>
   </div>
-  <div class="prose"><p data-en="To promote the culture of the use of waters and drive the sustainable development of the Sea Economy, based on four pillars that structure the entire nautical production chain.">Promover a cultura do uso das águas e impulsionar o desenvolvimento sustentável da Economia do Mar, com base em quatro pilares que estruturam toda a cadeia produtiva náutica.</p></div>
+  <div class="prose"><p data-en="To promote the culture of the use of waters and drive the sustainable development of the Sea Economy, based on four pillars that structure the entire sector.">Promover a cultura do uso das águas e impulsionar o desenvolvimento sustentável da Economia do Mar, com base em quatro pilares que estruturam todo o setor.</p></div>
   <div class="pillars">
     <div class="pillar"><div class="ic">🏭</div><h3 data-en="Industry">Indústria</h3><p data-en="Shipyards, boatbuilders and suppliers that drive the production chain.">Estaleiros, construtores e fornecedores que movimentam a cadeia produtiva.</p></div>
     <div class="pillar"><div class="ic">🛒</div><h3 data-en="Trade">Comércio</h3><p data-en="Brands, importers, dealers and sales representatives.">Marcas, importadores, lojistas e representantes comerciais.</p></div>
     <div class="pillar"><div class="ic">🛠️</div><h3 data-en="Services">Serviço</h3><p data-en="Marinas, maintenance, technical support and specialized services.">Marinas, manutenção, suporte técnico e serviços especializados.</p></div>
-    <div class="pillar"><div class="ic">⛵</div><h3 data-en="Tourism">Turismo</h3><p data-en="Nautical tourism, experiences and the culture of the sea.">Turismo náutico, experiências e a cultura do mar.</p></div>
+    <div class="pillar"><div class="ic">⛵</div><h3 data-en="Tourism">Turismo</h3><p data-en="Nautical tourism and the many forms of sea-oriented tourism.">Turismo náutico e as diversas formas de turismo voltadas ao mar.</p></div>
   </div>
 </section></div>
 
@@ -153,23 +163,53 @@
     <div class="tl"><div class="yr">2008</div><h3 data-en="ACATMAR is born">Nasce a ACATMAR</h3><p data-en="Founded as the Santa Catarina Nautical Association of Marinas, Boat Garages and Related, with a statewide focus.">Fundada como Associação Náutica Catarinense de Marinas, Garagens Náuticas e Afins, com atuação estadual.</p></div>
     <div class="tl"><div class="yr">2012</div><h3 data-en="Going national">Nacionalização</h3><p data-en="Becomes the Santa Catarina Nautical Association for Brazil, expanding its reach across the country.">Passa a ser a Associação Náutica Catarinense para o Brasil, ampliando o alcance por todo o país.</p></div>
     <div class="tl"><div class="yr">2013</div><h3 data-en="Going international">Internacionalização</h3><p data-en="Becomes the Brazilian Nautical Association (ACATMAR), consolidating its national representation.">Torna-se a Associação Náutica Brasileira (ACATMAR), consolidando a representação nacional.</p></div>
-    <div class="tl"><div class="yr">2015</div><h3 data-en="Italian partnerships">Parcerias italianas</h3><p data-en="Partnerships with Assonautica Italiana and UCINA, opening doors to the European market.">Parcerias com a Assonáutica Italiana e a UCINA, abrindo portas para o mercado europeu.</p></div>
-    <div class="tl"><div class="yr">2019</div><h3 data-en="New partnerships in Europe">Novas parcerias na Europa</h3><p data-en="Partnerships with Agan Plus (Spain) and the Cofradía Náutica Europea, strengthening internationalization.">Parcerias com a Agan Plus (Espanha) e a Cofradía Náutica Europea, reforçando a internacionalização.</p></div>
+    <div class="tl"><div class="yr">2015</div><h3 data-en="International partnerships">Parcerias internacionais</h3><p data-en="ACATMAR signs its first international partnerships and agreements, opening doors to the European market.">A ACATMAR firma suas primeiras parcerias e acordos internacionais, abrindo portas para o mercado europeu.</p></div>
+    <div class="tl"><div class="yr">2019</div><h3 data-en="International representation">Representatividade internacional</h3><p data-en="New international agreements consolidate ACATMAR with representation of the sector abroad.">Novos acordos internacionais consolidam a ACATMAR com representatividade do setor no exterior.</p></div>
   </div>
 </section>
 
 <div class="band"><section>
   <div class="sec-head">
     <div class="eyebrow" data-en="Global presence">Presença global</div>
-    <h2 data-en="International partners">Parceiros internacionais</h2>
+    <h2 data-en="International representation">Representatividade internacional</h2>
   </div>
-  <div class="prose"><p data-en="ACATMAR keeps up with the sector worldwide and builds bridges with leading international associations, generating new business opportunities for its members.">A ACATMAR acompanha o setor de forma global e constrói pontes com as principais associações internacionais, gerando novas oportunidades de negócio para os associados.</p></div>
+  <div class="prose"><p data-en="International partnerships and agreements established ACATMAR with international representation of the sector, bringing Brazil closer to global trends and opening new business opportunities for its members.">Parcerias e acordos internacionais firmaram a ACATMAR com representatividade internacional do setor, aproximando o Brasil das tendências globais e abrindo novas oportunidades de negócio para os associados.</p></div>
   <div class="partners">
-    <span>Assonáutica Italiana</span><span>UCINA · Confindustria Nautica</span><span>Agan Plus (Espanha)</span><span>Cofradía Náutica Europea</span>
+    <span data-en="Europe">Europa</span><span data-en="International missions">Missões internacionais</span><span data-en="Fairs and business rounds">Feiras e rodadas de negócios</span><span data-en="Institutional agreements">Acordos institucionais</span>
   </div>
 </section></div>
 
 <section>
+  <div class="sec-head">
+    <div class="eyebrow" data-en="Leadership · 2022–2026">Gestão · 2022–2026</div>
+    <h2 data-en="Board of directors">Corpo diretivo</h2>
+  </div>
+  <h3 class="grp-t" data-en="Executive Board">Diretoria Executiva</h3>
+  <div class="board">
+    <div class="bm"><div class="role" data-en="President">Presidente</div><div class="nm">Mané Ferrari</div></div>
+    <div class="bm"><div class="role" data-en="Vice-President">Vice-Presidente</div><div class="nm">Márcio Evangelista</div></div>
+    <div class="bm"><div class="role" data-en="1st Secretary">1º Secretário</div><div class="nm">Moacir de Andrade</div></div>
+    <div class="bm"><div class="role" data-en="2nd Secretary">2º Secretário</div><div class="nm">Roberto Deschamps Vieira</div></div>
+    <div class="bm"><div class="role" data-en="1st Treasurer">1º Tesoureiro</div><div class="nm">Maurício Ventura</div></div>
+    <div class="bm"><div class="role" data-en="2nd Treasurer">2º Tesoureiro</div><div class="nm">Hamilton F. dos Santos</div></div>
+  </div>
+  <h3 class="grp-t" data-en="Sector Directors">Diretoria Setorial</h3>
+  <div class="board">
+    <div class="bm"><div class="role" data-en="Tourism & Events">Turismo e Eventos</div><div class="nm">Michele Castilho</div></div>
+    <div class="bm"><div class="role" data-en="Legal Department">Departamento Jurídico</div><div class="nm">Grupo de Advogados Associados</div></div>
+    <div class="bm"><div class="role" data-en="Institutional Relations">Relacionamento Institucional</div><div class="nm">Fabricio Ardigó</div></div>
+    <div class="bm"><div class="role" data-en="Diving">Mergulho</div><div class="nm">Álvaro Almeida</div></div>
+    <div class="bm"><div class="role" data-en="Marina Legal Coordination">Coordenação Marina Legal</div><div class="nm">Alex Juk · Michele Castilho</div></div>
+  </div>
+  <h3 class="grp-t" data-en="Deliberative & Audit Council">Conselho Deliberativo e Fiscal</h3>
+  <div class="council">Hamilton F. dos Santos · Michele Castilho Henrique · Márcio Evangelista · Itala Maisto Ventre · Marcelo Brandão · Rogério Vasconcellos</div>
+  <h3 class="grp-t" data-en="Active Council">Conselho Efetivo</h3>
+  <div class="council">Álvaro Almeida · Alex Juk · Itala Maisto Ventre</div>
+  <h3 class="grp-t" data-en="Alternate Council">Conselho Suplente</h3>
+  <div class="council">Jackson Feubak · Marcelo Brandão · Nerivaldo da Silva</div>
+</section>
+
+<div class="band"><section>
   <div class="sec-head">
     <div class="eyebrow" data-en="Institutional documents">Documentos institucionais</div>
     <h2 data-en="Transparency">Transparência</h2>
@@ -184,7 +224,7 @@
       <div><div class="t" data-en="Institutional presentation">Apresentação institucional</div><div class="d" data-en="Get to know ACATMAR and the benefits of membership · PDF">Conheça a ACATMAR e os benefícios de ser sócio · PDF</div></div>
     </a>
   </div>
-</section>
+</section></div>
 
 <div class="cta-band"><section>
   <h2 data-en="Be part of the Sea Economy">Faça parte da Economia do Mar</h2>
