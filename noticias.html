@@ -30,7 +30,13 @@
   .langbtn:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
   .nav .r a.nl{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--navy);text-decoration:none;font-size:.98rem}
   .nav .r a.nl:hover{color:var(--teal-d)}
-  @media(max-width:820px){.nav .r a.nl{display:none}}
+  .hamb{display:none;background:transparent;border:1.5px solid var(--line);color:var(--navy);border-radius:9px;font-size:1.35rem;line-height:1;padding:.28rem .55rem;cursor:pointer}
+  .mobmenu{display:none;position:sticky;top:74px;z-index:49;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;padding:.3rem 1.4rem .8rem;box-shadow:0 12px 24px rgba(10,37,64,.1)}
+  .mobmenu a{padding:.85rem .2rem;border-bottom:1px solid var(--line);color:var(--navy);text-decoration:none;font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:1rem}
+  .mobmenu a:last-child{border-bottom:none;color:var(--teal-d)}
+  .mobmenu.open{display:flex}
+  @media(min-width:821px){.mobmenu{display:none !important}}
+  @media(max-width:820px){.nav .r a.nl{display:none;} .nav .r a.assoc{display:none} .hamb{display:inline-flex;align-items:center}}
   .head{background:radial-gradient(130% 130% at 80% -20%,#155a86 0%,var(--navy) 45%,var(--deep) 100%);color:#fff}
   .head .wr{max-width:1160px;margin:0 auto;padding:3rem 1.4rem}
   .head .eyebrow{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--teal-b);font-size:.85rem}
@@ -85,8 +91,15 @@
   <a class="nl" href="index.html#boletins" data-en="Newsletters">Boletins</a>
   <a class="nl" href="index.html#projetos" data-en="Projects">Projetos</a>
   <button id="lb" class="langbtn" type="button">EN</button>
-  <a class="assoc" id="assoc" href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener">Associe-se</a></div>
+  <a class="assoc" id="assoc" href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener">Associe-se</a><button class="hamb" id="hambBtn" type="button" aria-label="Abrir menu">☰</button></div>
 </div></nav>
+<div class="mobmenu" id="mobmenu">
+  <a href="sobre.html" data-en="About us">Quem somos</a>
+  <a href="noticias.html" data-en="News">Notícias</a>
+  <a href="index.html#boletins" data-en="Newsletters">Boletins</a>
+  <a href="index.html#projetos" data-en="Projects">Projetos</a>
+  <a href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener" data-en="Join us">Associe-se</a>
+</div>
 
 <header class="head"><div class="wr">
   <div class="eyebrow" id="hEye">Notícias do setor</div>
@@ -116,7 +129,7 @@ function fld(o,f){return (EN&&o[f+'_en'])?o[f+'_en']:o[f];}
 function fmtData(iso){var pt=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];var en=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];var p=iso.split('-');return p[2]+' '+(EN?en:pt)[parseInt(p[1],10)-1]+' '+p[0];}
 (function(){document.documentElement.lang=EN?'en':'pt-BR';
   var b=document.getElementById('lb');if(b){b.textContent=EN?'PT':'EN';b.onclick=function(){localStorage.setItem('acatmar_lang',EN?'pt':'en');location.reload();};}
-  if(EN){document.querySelectorAll('.nl,.promobar [data-en],footer [data-en]').forEach(function(x){x.textContent=x.getAttribute('data-en');});
+  if(EN){document.querySelectorAll('.nl,.promobar [data-en],footer [data-en],.mobmenu [data-en]').forEach(function(x){x.textContent=x.getAttribute('data-en');});
     document.getElementById('assoc').textContent='Join us';document.getElementById('hEye').textContent='Industry news';
     document.getElementById('hTit').textContent='What ACATMAR is doing';document.getElementById('hSub').textContent="Follow the actions, achievements and events of the Brazilian Nautical Association.";document.title='News — ACATMAR';}})();
 var ALL=[];
@@ -138,5 +151,6 @@ function render(){
 })();
 </script>
 <script src="assets/cookie-consent.js" defer></script>
+<script>(function(){var hb=document.getElementById('hambBtn'),mm=document.getElementById('mobmenu');if(!hb||!mm)return;hb.addEventListener('click',function(){var o=mm.classList.toggle('open');hb.textContent=o?'\u2715':'\u2630';});mm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mm.classList.remove('open');hb.textContent='\u2630';});});})();</script>
 </body>
 </html>

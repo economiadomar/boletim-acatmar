@@ -54,7 +54,13 @@
   .langbtn{font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.08em;font-size:.9rem;
     background:transparent;border:1.5px solid var(--line);color:var(--navy);border-radius:999px;padding:.35rem .7rem;cursor:pointer;transition:all .2s}
   .langbtn:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
-  @media(max-width:820px){.nav .links a.hidem{display:none}}
+  .hamb{display:none;background:transparent;border:1.5px solid var(--line);color:var(--navy);border-radius:9px;font-size:1.35rem;line-height:1;padding:.28rem .55rem;cursor:pointer}
+  .mobmenu{display:none;position:sticky;top:74px;z-index:49;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;padding:.3rem 1.4rem .8rem;box-shadow:0 12px 24px rgba(10,37,64,.1)}
+  .mobmenu a{padding:.85rem .2rem;border-bottom:1px solid var(--line);color:var(--navy);text-decoration:none;font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:1rem}
+  .mobmenu a:last-child{border-bottom:none;color:var(--teal-d)}
+  .mobmenu.open{display:flex}
+  @media(max-width:820px){.nav .links a.hidem{display:none}.hamb{display:inline-flex;align-items:center}}
+  @media(min-width:821px){.mobmenu{display:none !important}}
 
   .hero{position:relative;overflow:hidden;color:#fff;
     background:linear-gradient(180deg,#1b6a94 0%,#0c3a5e 38%,var(--navy) 68%,var(--deep) 100%);
@@ -211,10 +217,18 @@
       <a href="#boletins" class="hidem">Boletins</a>
       <a href="#projetos" class="hidem">Projetos</a>
       <button id="langBtn" class="langbtn" type="button" aria-label="Trocar idioma / Switch language">EN</button>
-      <a href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener" class="btn btn-teal">Associe-se</a>
+      <a href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener" class="btn btn-teal hidem">Associe-se</a>
+      <button class="hamb" id="hambBtn" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
     </div>
   </div>
 </nav>
+<div class="mobmenu" id="mobmenu">
+  <a href="sobre.html">Quem somos</a>
+  <a href="#noticias">Notícias</a>
+  <a href="#boletins">Boletins</a>
+  <a href="#projetos">Projetos</a>
+  <a href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener">Associe-se</a>
+</div>
 
 <header class="hero">
   <canvas id="sea" aria-hidden="true"></canvas>
@@ -274,8 +288,8 @@
         <p>Muitos realizados em conjunto com parceiros. Alguns têm site próprio, é só clicar.</p>
       </div>
       <div class="proj-grid">
-        <a class="proj rev" href="projeto.html?id=forum-acatmar"><div class="ph"><img loading="lazy" src="media/noticias/v-forum.jpg" alt=""></div><div class="bd"><div class="t">Fórum ACATMAR</div><div class="d">Capacitação técnica do setor numa imersão de conhecimento que já virou palco de conquistas políticas.</div><div class="ext">Saiba mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div></a>
-        <a class="proj rev" href="projeto.html?id=seminario-economia-azul"><div class="ph"><img loading="lazy" src="media/projetos/seminario.jpg" alt=""></div><div class="bd"><div class="t">Seminário Economia Azul</div><div class="d">Debates sobre as tendências globais da Economia do Mar, impulsionando inovação e desenvolvimento.</div><div class="ext">Saiba mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div></a>
+        <a class="proj rev" href="projeto.html?id=forum-acatmar"><div class="ph"><img loading="lazy" src="media/noticias/v-forum.jpg" alt=""></div><div class="bd"><div class="t">Fórum de Capacitação Técnica ACATMAR</div><div class="d">Capacitação técnica do setor numa imersão de conhecimento que já virou palco de conquistas políticas.</div><div class="ext">Saiba mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div></a>
+        <a class="proj rev" href="projeto.html?id=seminario-economia-azul"><div class="ph"><img loading="lazy" src="media/projetos/seminario.jpg" alt=""></div><div class="bd"><div class="t">Simpósio Internacional Economia Azul</div><div class="d">Debates sobre as tendências globais da Economia do Mar, impulsionando inovação e desenvolvimento.</div><div class="ext">Saiba mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div></a>
         <a class="proj rev" href="projeto.html?id=visitas-tecnicas"><div class="ph"><img loading="lazy" src="media/projetos/vt-1.jpg" alt=""></div><div class="bd"><div class="t">Visitas Técnicas</div><div class="d">Missões e feiras nacionais e internacionais que aumentam a competitividade dos associados.</div><div class="ext">Saiba mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div></a>
         <a class="proj rev" href="projeto.html?id=marina-legal"><div class="ph"><img loading="lazy" src="media/projetos/marina-legal.jpg" alt=""></div><div class="bd"><div class="t">Projeto Marina Legal</div><div class="d">Regularização documental e licenças ambientais, com segurança jurídica para as estruturas náuticas.</div><div class="ext">Saiba mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div></a>
         <a class="proj rev" href="projeto.html?id=escola-do-mar"><div class="ph"><img loading="lazy" src="media/projetos/escola-do-mar.jpg" alt=""></div><div class="bd"><div class="t">Escola do Mar</div><div class="d">Cursos de qualificação que promovem excelência e geram novas oportunidades no setor.</div><div class="ext">Saiba mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div></a>
@@ -414,7 +428,7 @@ var DICT={
   "Muitos realizados em conjunto com parceiros. Alguns têm site próprio, é só clicar.":"Many carried out together with partners. Some have their own site, just click.",
   "Fórum ACATMAR":"ACATMAR Forum","Seminário Economia Azul":"Blue Economy Symposium","Visitas Técnicas":"Technical Visits",
   "Projeto Marina Legal":"Marina Legal Project","Escola do Mar":"School of the Sea","Circo Náutico":"Nautical Circus",
-  "Projeto Cambusa":"Cambusa Project","Projetos Estruturantes":"Structuring Projects","Limpeza dos Mares":"Sea Cleanup","Blue Nautical HUB Brasil":"Blue Nautical HUB Brasil",
+  "Projeto Cambusa":"Cambusa Project","Simpósio Internacional Economia Azul":"International Blue Economy Symposium","Fórum de Capacitação Técnica ACATMAR":"ACATMAR Technical Training Forum","Projetos Estruturantes":"Structuring Projects","Limpeza dos Mares":"Sea Cleanup","Blue Nautical HUB Brasil":"Blue Nautical HUB Brasil",
   "Capacitação técnica do setor numa imersão de conhecimento que já virou palco de conquistas políticas.":"Technical training for the sector in a knowledge immersion that has become a stage for political achievements.",
   "Debates sobre as tendências globais da Economia do Mar, impulsionando inovação e desenvolvimento.":"Debates on the global trends of the Sea Economy, driving innovation and development.",
   "Missões e feiras nacionais e internacionais que aumentam a competitividade dos associados.":"National and international missions and trade shows that boost members' competitiveness.",
@@ -527,6 +541,18 @@ document.querySelectorAll('a[href^="#"]').forEach(function(a){
     if(history.pushState) history.pushState(null,'','#'+id);
   });
 });
+/* menu hamburguer (mobile) */
+(function(){
+  var hb=document.getElementById('hambBtn'), mm=document.getElementById('mobmenu');
+  if(!hb||!mm) return;
+  hb.addEventListener('click',function(){
+    var open=mm.classList.toggle('open');
+    hb.setAttribute('aria-expanded',open); hb.textContent=open?'✕':'☰';
+  });
+  mm.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){ mm.classList.remove('open'); hb.textContent='☰'; hb.setAttribute('aria-expanded','false'); });
+  });
+})();
 /* se chegar com #hash (ex.: vindo de outra pagina), reposiciona apos o conteudo carregar */
 (function(){
   var h=location.hash.slice(1);

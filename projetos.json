@@ -2,8 +2,8 @@
   "projetos": [
     {
       "id": "forum-acatmar",
-      "nome": "Fórum ACATMAR",
-      "nome_en": "ACATMAR Forum",
+      "nome": "Fórum de Capacitação Técnica ACATMAR",
+      "nome_en": "ACATMAR Technical Training Forum",
       "tagline": "Imersão em conhecimento para toda a cadeia produtiva do mar",
       "tagline_en": "Immersion in knowledge for the entire sea production chain",
       "imagem": "media/noticias/v-forum.jpg",
@@ -38,7 +38,7 @@
     },
     {
       "id": "seminario-economia-azul",
-      "nome": "Seminário Internacional Economia Azul",
+      "nome": "Simpósio Internacional Economia Azul",
       "nome_en": "International Blue Economy Symposium",
       "tagline": "O futuro do setor em debate",
       "tagline_en": "The future of the sector under debate",
@@ -56,14 +56,14 @@
       "resumo": "Debates sobre as tendências globais da Economia do Mar, reunindo especialistas, empresários e poder público.",
       "resumo_en": "Debates on the global trends of the Sea Economy, bringing together experts, entrepreneurs and public authorities.",
       "corpo": [
-        "O Seminário Internacional Economia Azul promove debates sobre as tendências globais da Economia do Mar, impulsionando a inovação e o desenvolvimento do setor náutico brasileiro.",
-        "Em sua edição mais recente, integrada ao Blue Nautical HUB Brasil, o Seminário reuniu especialistas, empresários, lideranças institucionais e poder público para discutir infraestrutura náutica, marinas, indústria naval de recreio, turismo, sustentabilidade, Reforma Tributária, Mercosul, internacionalização e formação profissional.",
-        "O encontro também apresentou dados que dimensionam a força da Economia do Mar em Santa Catarina, transformando conhecimento em base para políticas públicas e novos negócios."
+        "O Simpósio Internacional Economia Azul promove debates sobre as tendências globais da Economia do Mar, impulsionando a inovação e o desenvolvimento do setor.",
+        "Integrado ao Blue Nautical HUB Brasil, o Simpósio reúne especialistas, empresários, lideranças institucionais e poder público para discutir infraestrutura náutica, marinas, indústria de recreio, turismo, sustentabilidade, internacionalização e formação profissional.",
+        "Consolidado como um dos principais encontros do setor, o Simpósio caminha para a sua 4ª edição, transformando conhecimento em base para políticas públicas e novos negócios."
       ],
       "corpo_en": [
-        "The International Blue Economy Symposium promotes debates on the global trends of the Sea Economy, driving innovation and the development of the Brazilian nautical sector.",
-        "In its most recent edition, part of the Blue Nautical HUB Brasil, the Symposium gathered experts, entrepreneurs, institutional leaders and public authorities to discuss nautical infrastructure, marinas, the recreational boatbuilding industry, tourism, sustainability, tax reform, Mercosur, internationalization and professional training.",
-        "The event also presented data that measures the strength of the Sea Economy in Santa Catarina, turning knowledge into a foundation for public policy and new business."
+        "The International Blue Economy Symposium promotes debates on the global trends of the Sea Economy, driving innovation and the development of the sector.",
+        "Part of the Blue Nautical HUB Brasil, the Symposium brings together experts, entrepreneurs, institutional leaders and public authorities to discuss nautical infrastructure, marinas, the recreational boating industry, tourism, sustainability, internationalization and professional training.",
+        "Established as one of the sector's main gatherings, the Symposium is heading toward its 4th edition, turning knowledge into a foundation for public policy and new business."
       ]
     },
     {
