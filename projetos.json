@@ -4,20 +4,31 @@
       "id": "forum-acatmar",
       "nome": "Fórum ACATMAR",
       "nome_en": "ACATMAR Forum",
-      "tagline": "Capacitação técnica que vira ação política",
-      "tagline_en": "Technical training that turns into political action",
-      "imagem": "media/noticias/v-forum.jpg",
-      "resumo": "Uma imersão de conhecimento que reúne empresários, marinheiros, técnicos, gestores e estudantes do setor náutico.",
-      "resumo_en": "A knowledge immersion bringing together entrepreneurs, sailors, technicians, managers and students of the nautical sector.",
+      "tagline": "Imersão em conhecimento para toda a cadeia produtiva do mar",
+      "tagline_en": "Immersion in knowledge for the entire sea production chain",
+      "imagem": "media/projetos/forum-4.jpg",
+      "resumo": "Um dia de imersão em conhecimento técnico que reúne empresários, técnicos e autoridades de toda a cadeia produtiva do setor náutico.",
+      "resumo_en": "A full day of immersion in technical knowledge bringing together entrepreneurs, technicians and authorities from across the nautical sector's production chain.",
       "corpo": [
-        "O Fórum de Capacitação Técnica ACATMAR é uma imersão de conhecimento que reúne empresários, marinheiros, técnicos, gestores de marinas e estudantes em torno de temas como segurança da navegação, tecnologia embarcada, manutenção, legislação e as novas tendências do mercado.",
-        "Mais do que um evento de capacitação, o Fórum se consolidou como uma ferramenta de governança e formação para toda a cadeia náutica. Em sua 5ª edição, foi realizado como o primeiro ato externo da Frente Parlamentar da Economia do Mar, levando as demandas do setor diretamente ao ambiente político.",
-        "Foi também no Fórum que nasceu a articulação que resultou na regulamentação da profissão de Marinheiro de Esporte e Recreio, prova de que capacitação e representatividade caminham juntas."
+        "O Fórum de Capacitação Técnica ACATMAR é um dia de imersão total em conhecimento aplicado às diversas áreas da cadeia produtiva do setor náutico. Reúne empresários, técnicos, autoridades e instituições públicas e privadas em um evento gratuito de troca de conhecimento, debate técnico e apresentação de boas práticas para a indústria, o comércio, os serviços e o turismo náutico.",
+        "Em uma programação intensa e dinâmica, com palestrantes especialistas, os participantes mergulham em temas estratégicos com foco em desafios reais, soluções práticas e oportunidades de mercado. Entre os assuntos em destaque estão as tendências e projeções para o setor, as inovações tecnológicas e soluções embarcadas, o turismo náutico e as políticas públicas, a segurança na navegação e as regulamentações, além de casos de sucesso e boas práticas sustentáveis.",
+        "Em 2026, o Fórum chega à sua 6ª edição, consolidado como um dos principais encontros técnicos do setor náutico nacional. Mais do que capacitação, ele se firmou como uma ferramenta de articulação e governança para toda a cadeia da Economia do Mar, aproximando conhecimento, representatividade e novas oportunidades de negócio."
       ],
       "corpo_en": [
-        "The ACATMAR Technical Training Forum is a knowledge immersion that brings together entrepreneurs, sailors, technicians, marina managers and students around topics such as navigation safety, onboard technology, maintenance, legislation and new market trends.",
-        "More than a training event, the Forum has established itself as a governance and education tool for the entire nautical chain. In its 5th edition, it was held as the first external act of the Parliamentary Front for the Sea Economy, taking the sector's demands directly to the political arena.",
-        "It was also at the Forum that the articulation began which led to the regulation of the Sport and Recreational Sailor profession, proof that training and representation go hand in hand."
+        "The ACATMAR Technical Training Forum is a full day of immersion in knowledge applied to the various areas of the nautical sector's production chain. It brings together entrepreneurs, technicians, authorities and public and private institutions in a free event of knowledge exchange, technical debate and the presentation of best practices for industry, trade, services and nautical tourism.",
+        "In an intense and dynamic program, with specialist speakers, participants dive into strategic topics focused on real challenges, practical solutions and market opportunities. Highlighted subjects include trends and projections for the sector, technological innovations and onboard solutions, nautical tourism and public policy, navigation safety and regulations, as well as success stories and sustainable best practices.",
+        "In 2026, the Forum reaches its 6th edition, established as one of the main technical gatherings of the national nautical sector. More than training, it has become a tool for coordination and governance for the entire Sea Economy chain, bringing together knowledge, representation and new business opportunities."
+      ],
+      "galeria": [
+        "media/projetos/forum-4.jpg",
+        "media/projetos/forum-2.jpg",
+        "media/projetos/forum-9.jpg",
+        "media/projetos/forum-1.jpg",
+        "media/projetos/forum-3.jpg",
+        "media/projetos/forum-5.jpg",
+        "media/projetos/forum-6.jpg",
+        "media/projetos/forum-7.jpg",
+        "media/projetos/forum-8.jpg"
       ]
     },
     {
