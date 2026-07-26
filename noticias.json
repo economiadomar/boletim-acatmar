@@ -7,7 +7,7 @@
       "categoria": "Economia do Mar",
       "categoria_en": "Sea Economy",
       "data": "2026-05-01",
-      "imagem": "media/noticias/blue-nautical-hub.jpg",
+      "imagem": "media/noticias/bnh-palco.jpg",
       "credito": "Mundo Mar",
       "resumo": "Cinco eventos em uma semana reuniram visitas técnicas, simpósio internacional, negócios a bordo e cooperação internacional em Santa Catarina.",
       "resumo_en": "Five events in one week combined technical visits, an international symposium, business on board and international cooperation in Santa Catarina.",
@@ -22,6 +22,54 @@
         "Held by ACATMAR and Sebrae/SC between April 26 and May 1, the HUB connected entrepreneurs, experts, public authorities, shipyards, marinas, suppliers and national and international organizations in a space of collective building.",
         "\"Blue Nautical HUB Brasil was created to be a connection platform for the Sea Economy. We saw companies talking, deals being started, experts sharing knowledge and international bodies building bridges with Brazil. That is the true role of the HUB: to connect in order to build,\" says Leandro Mané Ferrari, president of ACATMAR and of Blue Nautical HUB Brasil.",
         "A collective effort by Mundo Mar Consulting, ACATMAR, Cofradía Europea de la Vela and Sebrae/SC, sponsored by Schaefer Yachts and Marine Telematics."
+      ],
+      "cadastro": "https://docs.google.com/forms/d/e/1FAIpQLSeQX3mcpg9dA1SDw8iwkb1JVhIh5HmdCfE7vcO6jv0KXGqRBg/viewform",
+      "apoiadores": [
+        {
+          "grupo": "Realização",
+          "grupo_en": "Organized by",
+          "itens": [
+            "Mundo Mar Consulting",
+            "ACATMAR",
+            "Cofradía Europea de la Vela",
+            "Sebrae"
+          ]
+        },
+        {
+          "grupo": "Patrocínio",
+          "grupo_en": "Sponsors",
+          "itens": [
+            "Schaefer Yachts",
+            "Marine Telematics"
+          ]
+        },
+        {
+          "grupo": "Apoios oficiais",
+          "grupo_en": "Official supporters",
+          "itens": [
+            "ARB.Legal",
+            "Fibrafort",
+            "Navalcare",
+            "Personal Boat",
+            "Castelmar Hotel & Eventos",
+            "Escunas Pirata"
+          ]
+        },
+        {
+          "grupo": "Apoios institucionais",
+          "grupo_en": "Institutional supporters",
+          "itens": [
+            "CACEL",
+            "Salon Náutico Argentino",
+            "ANB (Associação Náutica da Bahia)",
+            "agan+",
+            "ADAN",
+            "Instituto Federal de Santa Catarina",
+            "Iate Clube de Santa Catarina / Veleiros da Ilha",
+            "ACOBAR",
+            "Amazonáutica"
+          ]
+        }
       ]
     },
     {
@@ -44,7 +92,8 @@
         "One of the highlights of the Blue Nautical HUB was the B2B Business Meeting, held for the first time on board a catamaran on the Florianópolis waterfront.",
         "ACATMAR mobilized anchor companies, shipyards, marinas and decision-makers, while Sebrae/SC applied its B2B meeting methodology, creating an objective, results-driven format.",
         "The meeting brought together around 70 companies, connecting suppliers, shipyards, marinas, service providers and potential business partners in direct, qualified meetings."
-      ]
+      ],
+      "cadastro": "https://docs.google.com/forms/d/e/1FAIpQLSeQX3mcpg9dA1SDw8iwkb1JVhIh5HmdCfE7vcO6jv0KXGqRBg/viewform"
     },
     {
       "id": "simposio-economia-azul",
@@ -66,7 +115,8 @@
         "The 3rd International Blue Economy Symposium was one of the central moments of the Blue Nautical HUB Brasil, bringing together experts, entrepreneurs, institutional leaders and public authorities, with international participation, around the future of the Sea Economy.",
         "Built around three pillars, infrastructure, governance and nautical mobility, the event discussed marinas and support facilities, the recreational boating industry, tourism, sustainability, internationalization and professional training, the themes that shape the sector's competitiveness in Brazil and worldwide.",
         "More than a debate, the Symposium established itself as a space to turn knowledge into action, bringing the nautical sector closer to more developed markets and helping to build the public policy and new business agenda of the Blue Economy."
-      ]
+      ],
+      "cadastro": "https://docs.google.com/forms/d/e/1FAIpQLSeQX3mcpg9dA1SDw8iwkb1JVhIh5HmdCfE7vcO6jv0KXGqRBg/viewform"
     },
     {
       "id": "visitas-tecnicas-bnh",
@@ -91,7 +141,8 @@
       ],
       "link": "https://www.bluenauticalhubbrasil.com/visitast%C3%A9cnicas",
       "link_label": "Veja mais sobre as Visitas Técnicas",
-      "link_label_en": "See more about the Technical Visits"
+      "link_label_en": "See more about the Technical Visits",
+      "cadastro": "https://docs.google.com/forms/d/e/1FAIpQLSeQX3mcpg9dA1SDw8iwkb1JVhIh5HmdCfE7vcO6jv0KXGqRBg/viewform"
     },
     {
       "id": "cofradia-europea",
@@ -111,7 +162,8 @@
       "corpo_en": [
         "The Blue Nautical HUB program included the gathering of the Cofradía Europea de la Vela, an international body devoted to maritime culture, sailing, nautical tradition and strengthening ties among countries connected by the sea.",
         "The meeting brought together confreres, guests, authorities and sector representatives in a symbolic moment of rapprochement between Brazil and Europe, strengthening international cooperation, nautical diplomacy, maritime culture and the building of new institutional connections."
-      ]
+      ],
+      "cadastro": "https://docs.google.com/forms/d/e/1FAIpQLSeQX3mcpg9dA1SDw8iwkb1JVhIh5HmdCfE7vcO6jv0KXGqRBg/viewform"
     },
     {
       "id": "marina-beira-mar-norte",
