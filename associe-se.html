@@ -222,17 +222,23 @@
         <div class="fld"><label for="fantasia" data-en="Trade name">Nome Fantasia</label><input id="fantasia" name="Nome Fantasia"></div>
         <div class="fld"><label for="site" data-en="Website">Site da empresa</label><input id="site" name="Site" placeholder="www."></div>
       </div>
-      <div class="row">
-        <div class="fld"><label for="endereco" data-en="Address <span class='req'>*</span>">Endereço <span class="req">*</span></label><input id="endereco" name="Endereço" required></div>
+      <div class="row three">
+        <div class="fld"><label for="cep" data-en="ZIP code <span class='req'>*</span>">CEP <span class="req">*</span></label>
+          <input id="cep" name="CEP" required inputmode="numeric" placeholder="00000-000" maxlength="9">
+          <div class="hint" id="cepMsg" data-en="Type the ZIP code and we fill in the address.">Digite o CEP que preenchemos o endereço.</div></div>
+        <div class="fld"><label for="endereco" data-en="Street <span class='req'>*</span>">Endereço <span class="req">*</span></label><input id="endereco" name="Endereço" required></div>
+        <div class="fld"><label for="numero" data-en="Number <span class='req'>*</span>">Número <span class="req">*</span></label><input id="numero" name="Número" required></div>
+      </div>
+      <div class="row three">
         <div class="fld"><label for="compl" data-en="Address line 2">Complemento</label><input id="compl" name="Complemento"></div>
-      </div>
-      <div class="row three">
+        <div class="fld"><label for="bairro" data-en="District <span class='req'>*</span>">Bairro <span class="req">*</span></label><input id="bairro" name="Bairro" required></div>
         <div class="fld"><label for="cidade" data-en="City <span class='req'>*</span>">Cidade <span class="req">*</span></label><input id="cidade" name="Cidade" required></div>
-        <div class="fld"><label for="uf" data-en="State <span class='req'>*</span>">Estado <span class="req">*</span></label><input id="uf" name="Estado" required></div>
-        <div class="fld"><label for="cep" data-en="ZIP code <span class='req'>*</span>">CEP <span class="req">*</span></label><input id="cep" name="CEP" required></div>
       </div>
-      <div class="row three">
+      <div class="row">
+        <div class="fld"><label for="uf" data-en="State <span class='req'>*</span>">Estado <span class="req">*</span></label><input id="uf" name="Estado" required maxlength="2" placeholder="SC"></div>
         <div class="fld"><label for="tel" data-en="Phone">Telefone</label><input id="tel" name="Telefone" type="tel"></div>
+      </div>
+      <div class="row">
         <div class="fld"><label for="zap" data-en="WhatsApp <span class='req'>*</span>">WhatsApp <span class="req">*</span></label><input id="zap" name="WhatsApp" type="tel" required></div>
         <div class="fld"><label for="email" data-en="E-mail <span class='req'>*</span>">E-mail <span class="req">*</span></label><input id="email" name="E-mail" type="email" required></div>
       </div>
@@ -244,22 +250,24 @@
     <fieldset>
       <legend data-en="3. Finance contact">3. Responsável financeiro</legend>
       <div class="row">
-        <div class="fld"><label for="finNome" data-en="Name">Nome</label><input id="finNome" name="Financeiro — Nome"></div>
-        <div class="fld"><label for="finEmail" data-en="E-mail">E-mail financeiro</label><input id="finEmail" name="Financeiro — E-mail" type="email"></div>
+        <div class="fld"><label for="finNome" data-en="Name <span class='req'>*</span>">Nome <span class="req">*</span></label><input id="finNome" name="Financeiro — Nome" required></div>
+        <div class="fld"><label for="finEmail" data-en="E-mail <span class='req'>*</span>">E-mail financeiro <span class="req">*</span></label><input id="finEmail" name="Financeiro — E-mail" type="email" required></div>
       </div>
       <div class="row">
-        <div class="fld"><label for="finTel" data-en="Phone">Telefone</label><input id="finTel" name="Financeiro — Telefone" type="tel"></div>
-        <div class="fld"><label for="finZap" data-en="WhatsApp">WhatsApp</label><input id="finZap" name="Financeiro — WhatsApp" type="tel"></div>
+        <div class="fld"><label for="finTel" data-en="Phone <span class='req'>*</span>">Telefone <span class="req">*</span></label><input id="finTel" name="Financeiro — Telefone" type="tel" required></div>
+        <div class="fld"><label for="finZap" data-en="WhatsApp <span class='req'>*</span>">WhatsApp <span class="req">*</span></label><input id="finZap" name="Financeiro — WhatsApp" type="tel" required></div>
       </div>
     </fieldset>
 
     <fieldset>
       <legend data-en="4. Company representatives (network)">4. Responsáveis pela empresa (network)</legend>
+      <div class="sub-t" data-en="Main representative (required)">Responsável principal (obrigatório)</div>
       <div class="row three">
-        <div class="fld"><label for="r1n" data-en="Name">Nome</label><input id="r1n" name="Responsável 1 — Nome"></div>
-        <div class="fld"><label for="r1t" data-en="Phone / WhatsApp">Tel/WhatsApp</label><input id="r1t" name="Responsável 1 — Tel/WhatsApp" type="tel"></div>
-        <div class="fld"><label for="r1e" data-en="E-mail">E-mail</label><input id="r1e" name="Responsável 1 — E-mail" type="email"></div>
+        <div class="fld"><label for="r1n" data-en="Name <span class='req'>*</span>">Nome <span class="req">*</span></label><input id="r1n" name="Responsável 1 — Nome" required></div>
+        <div class="fld"><label for="r1t" data-en="Phone / WhatsApp <span class='req'>*</span>">Tel/WhatsApp <span class="req">*</span></label><input id="r1t" name="Responsável 1 — Tel/WhatsApp" type="tel" required></div>
+        <div class="fld"><label for="r1e" data-en="E-mail <span class='req'>*</span>">E-mail <span class="req">*</span></label><input id="r1e" name="Responsável 1 — E-mail" type="email" required></div>
       </div>
+      <div class="sub-t" style="margin-top:1.1rem" data-en="Second representative (optional)">Segundo responsável (opcional)</div>
       <div class="row three">
         <div class="fld"><label for="r2n" data-en="Name">Nome</label><input id="r2n" name="Responsável 2 — Nome"></div>
         <div class="fld"><label for="r2t" data-en="Phone / WhatsApp">Tel/WhatsApp</label><input id="r2t" name="Responsável 2 — Tel/WhatsApp" type="tel"></div>
@@ -272,6 +280,24 @@
         </div>
       </div>
     </fieldset>
+
+
+    <fieldset>
+      <legend data-en="5. Person completing this form">5. Responsável pelo preenchimento</legend>
+      <div class="row three">
+        <div class="fld"><label for="assNome" data-en="Full name <span class='req'>*</span>">Nome completo <span class="req">*</span></label><input id="assNome" name="Preenchido por — Nome" required></div>
+        <div class="fld"><label for="assCpf" data-en="Individual tax ID (CPF) <span class='req'>*</span>">CPF <span class="req">*</span></label><input id="assCpf" name="Preenchido por — CPF" required inputmode="numeric" placeholder="000.000.000-00" maxlength="14"></div>
+        <div class="fld"><label for="assCargo" data-en="Role in the company <span class='req'>*</span>">Cargo na empresa <span class="req">*</span></label><input id="assCargo" name="Preenchido por — Cargo" required></div>
+      </div>
+      <input type="hidden" name="Assinatura eletrônica" id="assinatura">
+    </fieldset>
+
+    <div class="lgpd" style="background:#eef7f9;border:1.5px solid var(--teal-b)" data-en="<b>Declaration of responsibility (electronic signature).</b> By submitting this form, I declare that I am duly authorized to represent the company/entity indicated above, that all the information provided is true and complete, and that I am aware of and agree with the terms of membership of ACATMAR — Brazilian Nautical Association. I acknowledge that this electronic submission, identified by my full name, my individual tax ID (CPF) and the date and time of transmission, has the same value as my handwritten signature on the membership form, under the terms of art. 10, § 2 of Provisional Measure 2.200-2/2001."><b>Declaração de responsabilidade (assinatura eletrônica).</b> Ao enviar esta ficha, declaro que estou devidamente autorizado(a) a representar a empresa/entidade indicada acima, que todas as informações prestadas são verdadeiras e completas, e que estou ciente e de acordo com as condições de associação à ACATMAR — Associação Náutica Brasileira. Reconheço que este envio eletrônico, identificado pelo meu nome completo, meu CPF e a data e hora da transmissão, possui a mesma validade da minha assinatura de próprio punho na ficha de inscrição, nos termos do art. 10, § 2º da Medida Provisória nº 2.200-2/2001.</div>
+
+    <div class="consent">
+      <input type="checkbox" id="assinar" name="Assinatura — Declaração" value="Sim, assino eletronicamente e declaro que as informações são verdadeiras." required>
+      <label for="assinar" data-en="I electronically sign this membership form and declare that the information provided is true. <span class='req'>*</span>">Assino eletronicamente esta ficha de inscrição e declaro que as informações prestadas são verdadeiras. <span class="req">*</span></label>
+    </div>
 
     <div class="lgpd" data-en="<b>Consent for Personal Data Processing — LGPD.</b> By submitting this form, you agree to voluntarily provide your personal data to ACATMAR — Brazilian Nautical Association, for the purposes of membership registration, institutional communication, sending information, event invitations, issuing invoices and other activities related to your participation in the association. All data provided will be processed securely and confidentially, in accordance with Law No. 13,709/2018 (LGPD), and used exclusively for the purposes mentioned above and for as long as necessary to meet legal and contractual obligations. Your data will not be shared with third parties, except when necessary to comply with legal obligations or to perform services directly linked to ACATMAR's activities. You may, at any time, request the update, correction or deletion of your personal data, as well as withdraw your consent, by sending an e-mail to the contact address. See our <a href='privacidade.html'>Privacy Policy</a>."><b>Termo de Consentimento para Tratamento de Dados Pessoais — LGPD.</b> Ao preencher esta ficha de inscrição, você concorda em fornecer voluntariamente seus dados pessoais à ACATMAR — Associação Náutica Brasileira, para fins de cadastro como associado(a), comunicação institucional, envio de informações, convites para eventos, emissão de boletos e demais atividades relacionadas à sua participação na associação. Informamos que todos os dados fornecidos serão tratados de forma segura e confidencial, em conformidade com a Lei nº 13.709/2018 — Lei Geral de Proteção de Dados (LGPD), sendo utilizados exclusivamente para os fins mencionados acima e pelo tempo necessário para cumprir obrigações legais e contratuais. Seus dados não serão compartilhados com terceiros, exceto quando necessário para cumprir obrigações legais ou para a execução de serviços diretamente ligados às atividades da ACATMAR. Você pode, a qualquer momento, solicitar a atualização, correção ou exclusão dos seus dados pessoais, bem como revogar seu consentimento, enviando um e-mail para o endereço de contato. Consulte a nossa <a href="privacidade.html">Política de Privacidade</a>.</div>
 
@@ -349,11 +375,126 @@ function applyLang(){
 document.getElementById('lb').onclick=function(){EN=!EN;try{localStorage.setItem('acatmar_lang',EN?'en':'pt');}catch(e){}applyLang();};
 applyLang();
 
+
+/* ===== CEP: busca automatica do endereco (ViaCEP) ===== */
+(function(){
+  var cep=document.getElementById('cep'), msg=document.getElementById('cepMsg');
+  var mapa={logradouro:'endereco',bairro:'bairro',localidade:'cidade',uf:'uf'};
+  function setMsg(txt,cor){ msg.textContent=txt; msg.style.color=cor||''; }
+  cep.addEventListener('input',function(){
+    var v=cep.value.replace(/\D/g,'').slice(0,8);
+    cep.value = v.length>5 ? v.slice(0,5)+'-'+v.slice(5) : v;
+    if(v.length===8) buscar(v);
+  });
+  function buscar(v){
+    setMsg(EN?'Looking up the address…':'Buscando o endereço…');
+    fetch('https://viacep.com.br/ws/'+v+'/json/')
+      .then(function(r){return r.json();})
+      .then(function(d){
+        if(d.erro){ setMsg(EN?'ZIP code not found. Please fill in manually.':'CEP não encontrado. Preencha manualmente.','#c0392b'); return; }
+        Object.keys(mapa).forEach(function(k){
+          var el=document.getElementById(mapa[k]);
+          if(el && d[k]) el.value=d[k];
+        });
+        setMsg(EN?'Address filled in. Just add the number.':'Endereço preenchido. Falta só o número.','#00727e');
+        var num=document.getElementById('numero'); if(num) num.focus();
+      })
+      .catch(function(){ setMsg(EN?'Could not look up. Please fill in manually.':'Não foi possível buscar. Preencha manualmente.','#c0392b'); });
+  }
+})();
+
+/* ===== Mascara de CPF ===== */
+(function(){
+  var c=document.getElementById('assCpf');
+  c.addEventListener('input',function(){
+    var v=c.value.replace(/\D/g,'').slice(0,11);
+    v=v.replace(/(\d{3})(\d)/,'$1.$2').replace(/(\d{3})(\d)/,'$1.$2').replace(/(\d{3})(\d{1,2})$/,'$1-$2');
+    c.value=v;
+  });
+})();
+
+/* ===== Envio: gera o PDF da ficha e manda junto por e-mail ===== */
+(function(){
+  var form=document.getElementById('form'), btn=form.querySelector('.btn-send');
+  var ENDPOINT=form.getAttribute('action');
+
+  function dados(){
+    var fd=new FormData(form), out=[];
+    fd.forEach(function(v,k){ if(k.charAt(0)!=='_' && String(v).trim()!=='') out.push([k,String(v)]); });
+    return out;
+  }
+
+  function gerarPDF(pares,carimbo){
+    var jsPDF=window.jspdf.jsPDF, doc=new jsPDF({unit:'pt',format:'a4'});
+    var L=48, y=64, W=595-L*2;
+    doc.setFillColor(10,37,64); doc.rect(0,0,595,42,'F');
+    doc.setTextColor(255); doc.setFont('helvetica','bold'); doc.setFontSize(13);
+    doc.text('ACATMAR — Associação Náutica Brasileira',L,26);
+    doc.setTextColor(12,34,48); doc.setFontSize(15);
+    doc.text('Ficha de Cadastro de Associado',L,y); y+=16;
+    doc.setFont('helvetica','normal'); doc.setFontSize(9); doc.setTextColor(90,110,122);
+    doc.text('Enviada pelo site www.acatmar.org em '+carimbo,L,y); y+=20;
+    doc.setDrawColor(0,163,180); doc.setLineWidth(1.2); doc.line(L,y,595-L,y); y+=20;
+    pares.forEach(function(p){
+      if(y>770){ doc.addPage(); y=64; }
+      doc.setFont('helvetica','bold'); doc.setFontSize(8); doc.setTextColor(0,114,126);
+      doc.text(String(p[0]).toUpperCase(),L,y); y+=12;
+      doc.setFont('helvetica','normal'); doc.setFontSize(10); doc.setTextColor(12,34,48);
+      var linhas=doc.splitTextToSize(p[1],W);
+      linhas.forEach(function(ln){ if(y>780){doc.addPage();y=64;} doc.text(ln,L,y); y+=13; });
+      y+=6;
+    });
+    if(y>700){ doc.addPage(); y=64; }
+    y+=10; doc.setDrawColor(214,224,228); doc.setLineWidth(.8); doc.line(L,y,595-L,y); y+=18;
+    doc.setFont('helvetica','bold'); doc.setFontSize(9); doc.setTextColor(12,34,48);
+    doc.text('ASSINATURA ELETRÔNICA',L,y); y+=14;
+    doc.setFont('helvetica','normal'); doc.setFontSize(8.5); doc.setTextColor(70,90,100);
+    var nome=(document.getElementById('assNome')||{}).value||'';
+    var cpf=(document.getElementById('assCpf')||{}).value||'';
+    var txt='Ficha assinada eletronicamente por '+nome+', CPF '+cpf+', em '+carimbo+
+            '. O declarante confirmou estar autorizado a representar a empresa e que as informações são verdadeiras, '+
+            'nos termos do art. 10, § 2º da MP 2.200-2/2001.';
+    doc.splitTextToSize(txt,W).forEach(function(ln){ doc.text(ln,L,y); y+=12; });
+    return doc.output('blob');
+  }
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!form.reportValidity()) return;
+    var agora=new Date();
+    var carimbo=agora.toLocaleString('pt-BR',{dateStyle:'short',timeStyle:'medium'});
+    var ass=document.getElementById('assinatura');
+    var nome=(document.getElementById('assNome')||{}).value||'';
+    var cpf=(document.getElementById('assCpf')||{}).value||'';
+    ass.value=nome+' — CPF '+cpf+' — assinado em '+carimbo+' (fuso: '+Intl.DateTimeFormat().resolvedOptions().timeZone+')';
+
+    btn.disabled=true;
+    var txtOrig=btn.textContent;
+    btn.textContent = EN?'Sending…':'Enviando…';
+
+    var fd=new FormData(form);
+    try{
+      var blob=gerarPDF(dados(),carimbo);
+      var emp=((document.getElementById('razao')||{}).value||'ficha').replace(/[^\w\s-]/g,'').trim().replace(/\s+/g,'-').slice(0,40);
+      fd.append('attachment', new File([blob], 'ficha-acatmar-'+emp+'.pdf', {type:'application/pdf'}));
+    }catch(err){ /* se o PDF falhar, envia mesmo assim */ }
+
+    fetch(ENDPOINT,{method:'POST',body:fd})
+      .then(function(r){ window.location.href = document.getElementById('_next').value; })
+      .catch(function(){
+        btn.disabled=false; btn.textContent=txtOrig;
+        alert(EN?'We could not send your form. Please check your connection and try again.'
+                :'Não conseguimos enviar sua ficha. Verifique sua conexão e tente novamente.');
+      });
+  });
+})();
+
 /* menu mobile */
 (function(){var hb=document.getElementById('hambBtn'),mm=document.getElementById('mobmenu');if(!hb||!mm)return;
   hb.addEventListener('click',function(){var o=mm.classList.toggle('open');hb.textContent=o?'✕':'☰';});
   mm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mm.classList.remove('open');hb.textContent='☰';});});})();
 </script>
+<script src="assets/lib/jspdf.umd.min.js"></script>
 <script src="assets/cookie-consent.js" defer></script>
 </body>
 </html>
