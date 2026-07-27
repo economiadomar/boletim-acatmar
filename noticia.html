@@ -3,7 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Notícia — ACATMAR</title>
+<title>Notícias | ACATMAR — Associação Náutica Brasileira</title>
+<meta name="description" content="Notícias da ACATMAR sobre o setor náutico brasileiro e a Economia do Mar.">
+<meta name="keywords" content="notícia setor náutico, economia do mar, acatmar">
+<meta name="author" content="ACATMAR — Associação Náutica Brasileira">
+<link rel="canonical" href="https://www.acatmar.org/noticia.html">
+<meta property="og:site_name" content="ACATMAR — Associação Náutica Brasileira">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:url" content="https://www.acatmar.org/noticia.html">
+<meta property="og:title" content="Notícias | ACATMAR — Associação Náutica Brasileira">
+<meta property="og:description" content="Notícias da ACATMAR sobre o setor náutico brasileiro e a Economia do Mar.">
+<meta property="og:image" content="https://www.acatmar.org/media/og-acatmar.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Notícias | ACATMAR — Associação Náutica Brasileira">
+<meta name="twitter:description" content="Notícias da ACATMAR sobre o setor náutico brasileiro e a Economia do Mar.">
+<meta name="twitter:image" content="https://www.acatmar.org/media/og-acatmar.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow+Condensed:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -173,7 +191,39 @@ function fmtData(iso){var pt=['janeiro','fevereiro','março','abril','maio','jun
     var d=await (await fetch('noticias.json?v='+Date.now())).json();
     var all=d.noticias||[]; var n=all.filter(function(x){return x.id===id;})[0]||all[0];
     if(!n){ art.innerHTML='<div class="load">'+(EN?'News not found.':'Notícia não encontrada.')+' <a href="index.html">'+(EN?'Back':'Voltar')+'</a></div>'; return; }
-    document.title=fld(n,'titulo')+' — ACATMAR';
+
+    /* SEO dinamico: title, description, canonical, OG e dados estruturados */
+    (function setSEO(){
+      var BASE='https://www.acatmar.org';
+      var url=BASE+'/noticia.html?id='+n.id;
+      var titulo=fld(n,'titulo'), desc=fld(n,'resumo')||'';
+      var img=BASE+'/'+n.imagem;
+      document.title=titulo+' — ACATMAR';
+      function meta(sel,attr,val){var e=document.head.querySelector(sel);if(!e){e=document.createElement('meta');
+        var p=sel.match(/\[(.+?)="(.+?)"\]/); if(p) e.setAttribute(p[1],p[2]); document.head.appendChild(e);}
+        e.setAttribute(attr,val);}
+      meta('meta[name="description"]','content',desc);
+      meta('meta[property="og:title"]','content',titulo);
+      meta('meta[property="og:description"]','content',desc);
+      meta('meta[property="og:image"]','content',img);
+      meta('meta[property="og:url"]','content',url);
+      meta('meta[property="og:type"]','content','article');
+      meta('meta[name="twitter:title"]','content',titulo);
+      meta('meta[name="twitter:description"]','content',desc);
+      meta('meta[name="twitter:image"]','content',img);
+      var c=document.head.querySelector('link[rel="canonical"]');
+      if(!c){c=document.createElement('link');c.rel='canonical';document.head.appendChild(c);} c.href=url;
+      var ld={"@context":"https://schema.org","@type":"NewsArticle","headline":titulo,
+        "description":desc,"image":[img],"datePublished":n.data,"dateModified":n.data,
+        "inLanguage":EN?'en':'pt-BR',"mainEntityOfPage":{"@type":"WebPage","@id":url},
+        "author":{"@type":"Organization","name":"ACATMAR — Associação Náutica Brasileira","url":BASE+'/'},
+        "publisher":{"@type":"Organization","name":"ACATMAR — Associação Náutica Brasileira",
+          "logo":{"@type":"ImageObject","url":BASE+"/media/logos/acatmar-vertical-02.png"}},
+        "articleSection":fld(n,'categoria')};
+      var s=document.createElement('script');s.type='application/ld+json';
+      s.textContent=JSON.stringify(ld);document.head.appendChild(s);
+    })();
+
     var body=fld(n,'corpo').map(function(p){return '<p>'+p+'</p>';}).join('');
     art.innerHTML=
       '<a class="back" href="noticias.html">'+(EN?'← All news':'← Todas as notícias')+'</a>'+

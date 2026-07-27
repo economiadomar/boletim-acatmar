@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Buscadores e IAs podem indexar livremente
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: GPTBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://www.acatmar.org/sitemap.xml

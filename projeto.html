@@ -3,7 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projeto — ACATMAR</title>
+<title>Projetos | ACATMAR — Associação Náutica Brasileira</title>
+<meta name="description" content="Projetos da ACATMAR que movem a Economia do Mar: capacitação, marinas, escola do mar, missões internacionais e desenvolvimento do setor náutico.">
+<meta name="keywords" content="projetos náuticos, economia do mar, capacitação náutica, marina legal, escola do mar">
+<meta name="author" content="ACATMAR — Associação Náutica Brasileira">
+<link rel="canonical" href="https://www.acatmar.org/projeto.html">
+<meta property="og:site_name" content="ACATMAR — Associação Náutica Brasileira">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:url" content="https://www.acatmar.org/projeto.html">
+<meta property="og:title" content="Projetos | ACATMAR — Associação Náutica Brasileira">
+<meta property="og:description" content="Projetos da ACATMAR que movem a Economia do Mar: capacitação, marinas, escola do mar, missões internacionais e desenvolvimento do setor náutico.">
+<meta property="og:image" content="https://www.acatmar.org/media/og-acatmar.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Projetos | ACATMAR — Associação Náutica Brasileira">
+<meta name="twitter:description" content="Projetos da ACATMAR que movem a Economia do Mar: capacitação, marinas, escola do mar, missões internacionais e desenvolvimento do setor náutico.">
+<meta name="twitter:image" content="https://www.acatmar.org/media/og-acatmar.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow+Condensed:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -164,7 +182,33 @@ function tx(k){return TX[k][EN?'en':'pt'];}
     var d=await (await fetch('projetos.json?v='+Date.now())).json();
     var all=d.projetos||[]; var p=all.filter(function(x){return x.id===id;})[0]||all[0];
     if(!p){ document.getElementById('herowr').innerHTML='<div class="load" style="color:#fff">Projeto não encontrado. <a href="index.html">Voltar</a></div>'; return; }
-    document.title=fld(p,'nome')+' — ACATMAR';
+
+    (function setSEOp(){
+      var BASE='https://www.acatmar.org';
+      var url=BASE+'/projeto.html?id='+p.id;
+      var titulo=fld(p,'nome'), desc=fld(p,'resumo')||fld(p,'tagline')||'';
+      var img=BASE+'/'+(p.imagem||'media/og-acatmar.jpg');
+      document.title=titulo+' — ACATMAR';
+      function meta(sel,attr,val){var e=document.head.querySelector(sel);if(!e){e=document.createElement('meta');
+        var m=sel.match(/\[(.+?)="(.+?)"\]/); if(m) e.setAttribute(m[1],m[2]); document.head.appendChild(e);}
+        e.setAttribute(attr,val);}
+      meta('meta[name="description"]','content',desc);
+      meta('meta[property="og:title"]','content',titulo);
+      meta('meta[property="og:description"]','content',desc);
+      meta('meta[property="og:image"]','content',img);
+      meta('meta[property="og:url"]','content',url);
+      meta('meta[name="twitter:title"]','content',titulo);
+      meta('meta[name="twitter:description"]','content',desc);
+      meta('meta[name="twitter:image"]','content',img);
+      var c=document.head.querySelector('link[rel="canonical"]');
+      if(!c){c=document.createElement('link');c.rel='canonical';document.head.appendChild(c);} c.href=url;
+      var ld={"@context":"https://schema.org","@type":"Project","name":titulo,"description":desc,"image":img,
+        "url":url,"inLanguage":EN?'en':'pt-BR',
+        "parentOrganization":{"@type":"Organization","name":"ACATMAR — Associação Náutica Brasileira","url":BASE+'/'}};
+      var s=document.createElement('script');s.type='application/ld+json';
+      s.textContent=JSON.stringify(ld);document.head.appendChild(s);
+    })();
+
     var hero=document.getElementById('hero');
     if(p.imagem){ hero.classList.add('haspic'); var im=document.createElement('img'); im.className='pic'; im.src=p.imagem; im.alt=''; hero.insertBefore(im,hero.firstChild); }
     document.getElementById('herowr').innerHTML=
