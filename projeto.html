@@ -97,14 +97,14 @@
   <a class="nl" href="index.html#boletins" data-en="Newsletters">Boletins</a>
   <a class="nl" href="index.html#projetos" data-en="Projects">Projetos</a>
   <button id="lb" class="langbtn" type="button">EN</button>
-  <a class="assoc" id="assoc" href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener">Associe-se</a><button class="hamb" id="hambBtn" type="button" aria-label="Abrir menu">☰</button></div>
+  <a class="assoc" id="assoc" href="associe-se.html">Associe-se</a><button class="hamb" id="hambBtn" type="button" aria-label="Abrir menu">☰</button></div>
 </div></nav>
 <div class="mobmenu" id="mobmenu">
   <a href="sobre.html" data-en="About us">Quem somos</a>
   <a href="noticias.html" data-en="News">Notícias</a>
   <a href="index.html#boletins" data-en="Newsletters">Boletins</a>
   <a href="index.html#projetos" data-en="Projects">Projetos</a>
-  <a href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener" data-en="Join us">Associe-se</a>
+  <a href="associe-se.html" data-en="Join us">Associe-se</a>
 </div>
 
 <header class="hero" id="hero">
@@ -153,7 +153,7 @@ function tx(k){return TX[k][EN?'en':'pt'];}
     document.getElementById('art').innerHTML=
       fld(p,'corpo').map(function(x){return '<p>'+x+'</p>';}).join('')+gal+
       '<div class="cta"><h2>'+tx('ctaH')+'</h2><p>'+tx('ctaP')+'</p>'+
-      '<a class="btn" href="http://app.associatec.com.br/AreaAssociados/Acatmar" target="_blank" rel="noopener">'+tx('join')+'</a></div>';
+      '<a class="btn" href="associe-se.html">'+tx('join')+'</a></div>';
     document.querySelector('#others h2').textContent=tx('others');
     var og=document.getElementById('og');
     all.filter(function(x){return x.id!==p.id;}).slice(0,3).forEach(function(x){

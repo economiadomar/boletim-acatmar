@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro enviado — ACATMAR</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow+Condensed:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0c2230;--navy:#0a2540;--deep:#061726;--teal:#00a3b4;--teal-b:#35c9da;--teal-d:#00727e;
+    --paper:#f3f6f7;--card:#fff;--muted:#5b6f7a;--line:#d6e0e4}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'PT Serif',Georgia,serif;color:var(--ink);background:var(--paper);line-height:1.7;min-height:100vh;display:flex;flex-direction:column}
+  a{color:inherit}
+  h1{font-family:'Oswald',sans-serif;font-weight:700;line-height:1.06}
+  .nav{background:#fff;border-bottom:1px solid var(--line)}
+  .nav .wr{max-width:1160px;margin:0 auto;padding:0 1.4rem;height:74px;display:flex;align-items:center;justify-content:space-between}
+  .nav img{height:54px}
+  .nav a.assoc{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#fff;background:var(--teal);padding:.5rem 1.15rem;border-radius:999px;text-decoration:none;font-size:.9rem}
+  main{flex:1;display:flex;align-items:center;justify-content:center;padding:3rem 1.4rem}
+  .box{max-width:640px;text-align:center;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:3rem 2.4rem;box-shadow:0 16px 40px rgba(10,37,64,.08)}
+  .ic{width:76px;height:76px;margin:0 auto 1.2rem;border-radius:50%;background:#e6f8fa;display:flex;align-items:center;justify-content:center;font-size:2.2rem}
+  .eyebrow{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--teal-d);font-size:.85rem}
+  h1{font-size:clamp(1.8rem,4.5vw,2.5rem);color:var(--navy);text-transform:uppercase;margin:.5rem 0 .8rem}
+  .box p{color:var(--muted);font-size:1.08rem;margin-bottom:1rem}
+  .steps{text-align:left;background:var(--paper);border-radius:14px;padding:1.2rem 1.4rem;margin:1.4rem 0;color:var(--ink);font-size:.98rem}
+  .steps li{margin-bottom:.5rem;margin-left:1rem}
+  .steps li:last-child{margin-bottom:0}
+  .btns{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-top:1.6rem}
+  .btn{display:inline-flex;font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;
+    padding:.8rem 1.6rem;border-radius:999px;text-decoration:none;background:var(--teal);color:#fff}
+  .btn:hover{background:var(--teal-d)}
+  .btn.ghost{background:transparent;color:var(--navy);border:2px solid var(--line)}
+  .btn.ghost:hover{background:var(--paper);color:var(--navy)}
+  footer{background:var(--deep);color:#9fb4c2;padding:1.6rem 0;font-size:.9rem;text-align:center}
+  footer a{color:var(--teal-b);text-decoration:none}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="wr">
+  <a href="index.html" aria-label="ACATMAR"><img src="media/logos/horiz-branco.png" alt="ACATMAR"></a>
+  <a class="assoc" href="index.html" id="btnHome">Voltar ao site</a>
+</div></nav>
+
+<main>
+  <div class="box">
+    <div class="ic">⚓</div>
+    <div class="eyebrow" data-en="Registration sent">Cadastro enviado</div>
+    <h1 data-en="Welcome aboard!">Recebemos o seu cadastro!</h1>
+    <p data-en="Thank you for your interest in joining ACATMAR. Your registration has been sent to our team.">Obrigado pelo interesse em fazer parte da ACATMAR. Sua ficha foi enviada para a nossa equipe.</p>
+    <ul class="steps" data-en="<li>Our team will review the information provided.</li><li>We will get in touch by e-mail or WhatsApp to complete your membership.</li><li>If you need to talk to us in the meantime, write to atendimento@acatmar.com.br.</li>">
+      <li>Nossa equipe vai analisar as informações enviadas.</li>
+      <li>Entraremos em contato por e-mail ou WhatsApp para dar sequência à associação.</li>
+      <li>Se precisar falar conosco antes, escreva para atendimento@acatmar.com.br.</li>
+    </ul>
+    <div class="btns">
+      <a class="btn" href="index.html" data-en="Back to the site">Voltar ao site</a>
+      <a class="btn ghost" href="noticias.html" data-en="Read the news">Ver as notícias</a>
+    </div>
+  </div>
+</main>
+
+<footer><div>ACATMAR · Associação Náutica Brasileira · <a href="https://www.instagram.com/acatmarassociacao/" target="_blank" rel="noopener">@acatmarassociacao</a></div></footer>
+<script>
+var EN=(function(){try{return localStorage.getItem('acatmar_lang')==='en';}catch(e){return false;}})();
+document.documentElement.lang=EN?'en':'pt-BR';
+document.querySelectorAll('[data-en]').forEach(function(el){ if(EN) el.innerHTML=el.getAttribute('data-en'); });
+if(EN){document.getElementById('btnHome').textContent='Back to the site';document.title='Registration sent — ACATMAR';}
+</script>
+<script src="assets/cookie-consent.js" defer></script>
+</body>
+</html>
