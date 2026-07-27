@@ -19,6 +19,9 @@
   .nav .wr{max-width:1160px;margin:0 auto;padding:0 1.4rem;height:74px;display:flex;align-items:center;justify-content:space-between}
   .nav img{height:54px}
   .nav .r{display:flex;align-items:center;gap:.8rem}
+  .nav .r a.nl{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--navy);text-decoration:none;font-size:.98rem}
+  .nav .r a.nl:hover{color:var(--teal-d)}
+  @media(max-width:760px){.nav .r a.nl{display:none}}
   .langbtn{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.08em;font-size:.9rem;background:transparent;border:1.5px solid var(--line);color:var(--navy);border-radius:999px;padding:.35rem .7rem;cursor:pointer}
   .langbtn:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
   .nav a.assoc{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#fff;background:var(--teal);padding:.5rem 1.15rem;border-radius:999px;text-decoration:none;font-size:.9rem}
@@ -70,6 +73,9 @@
 <nav class="nav"><div class="wr">
   <a href="index.html" aria-label="ACATMAR"><img src="media/logos/horiz-branco.png" alt="ACATMAR"></a>
   <div class="r">
+    <a class="nl" href="index.html" data-en="Home">Início</a>
+    <a class="nl" href="sobre.html" data-en="About us">Quem somos</a>
+    <a class="nl" href="noticias.html" data-en="News">Notícias</a>
     <button id="lb" class="langbtn" type="button">EN</button>
     <a class="assoc" id="assoc" href="associe-se.html">Associe-se</a>
   </div>
