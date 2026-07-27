@@ -56,6 +56,18 @@
   .mod .v{font-family:'Oswald';font-weight:700;color:var(--teal-d);font-size:1.45rem;margin-top:.3rem}
   .mod .m{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-size:.76rem}
   @media(max-width:720px){.modal-grid{grid-template-columns:1fr}}
+  #planoPJ{margin:-.6rem 0 2rem}
+  .sub-t{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--navy);font-size:.9rem;margin-bottom:.7rem}
+  .plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem}
+  .plan label{display:block;background:var(--card);border:2px solid var(--line);border-radius:12px;padding:.9rem 1rem;cursor:pointer;transition:all .2s;height:100%;position:relative}
+  .plan label:hover{border-color:var(--teal-b)}
+  .plan input:checked + label{border-color:var(--teal);background:#f0fbfc;box-shadow:0 6px 16px rgba(0,163,180,.14)}
+  .plan .t{font-family:'Oswald';font-weight:600;text-transform:uppercase;color:var(--navy);font-size:.95rem}
+  .plan .v{font-family:'Oswald';font-weight:700;color:var(--teal-d);font-size:1.25rem;margin-top:.2rem}
+  .plan .m{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-size:.74rem}
+  .plan .tag{display:inline-block;background:var(--teal);color:#fff;font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;
+    letter-spacing:.05em;font-size:.68rem;padding:.14rem .5rem;border-radius:999px;margin-top:.4rem}
+  @media(max-width:720px){.plan-grid{grid-template-columns:1fr}}
 
   fieldset{border:none;margin-bottom:1.8rem}
   legend{font-family:'Oswald';font-weight:600;text-transform:uppercase;color:var(--navy);font-size:1.12rem;margin-bottom:.9rem;
@@ -121,7 +133,7 @@
   <a class="back" href="index.html" data-en="← Home">← Início</a>
   <div class="eyebrow" data-en="Become a member">Associe-se</div>
   <h1 data-en="Join ACATMAR">Faça parte da ACATMAR</h1>
-  <p data-en="Fill in the registration form below. Our team will review the information and get in touch to complete your membership.">Preencha a ficha de cadastro abaixo. Nossa equipe vai analisar as informações e entrar em contato para dar sequência à sua associação.</p>
+  <p data-en="Fill in the registration form below and become part of ACATMAR now. Our team will review the information and get in touch to complete your membership.">Preencha a ficha de cadastro abaixo e faça parte agora da ACATMAR. Nossa equipe vai analisar as informações e entrar em contato para dar sequência à sua associação.</p>
 </div></header>
 
 <main>
@@ -145,6 +157,23 @@
         <div class="mod">
           <input type="radio" id="m3" name="Modalidade" value="Entidades, Associações, Clubes e Outros — R$ 250,00/mês">
           <label for="m3"><div class="t" data-en="Entities, associations and clubs">Entidades, Associações e Clubes</div><div class="v">R$ 250,00</div><div class="m" data-en="per month">por mês</div></label>
+        </div>
+      </div>
+      <div id="planoPJ">
+        <div class="sub-t" data-en="Payment plan (companies only)">Plano de pagamento (somente Pessoa Jurídica)</div>
+        <div class="plan-grid">
+          <div class="mod plan">
+            <input type="radio" id="p1" name="Plano" value="Mensal — R$ 120,00 por mês" checked>
+            <label for="p1"><div class="t" data-en="Monthly">Mensal</div><div class="v">R$ 120,00</div><div class="m" data-en="per month">por mês</div></label>
+          </div>
+          <div class="mod plan">
+            <input type="radio" id="p2" name="Plano" value="Semestral — R$ 680,00 (6 meses)">
+            <label for="p2"><div class="t" data-en="Six months">Semestral</div><div class="v">R$ 680,00</div><div class="m" data-en="6 months">6 meses</div></label>
+          </div>
+          <div class="mod plan">
+            <input type="radio" id="p3" name="Plano" value="Anual — R$ 1.320,00 (12 meses, com 1 mês de desconto)">
+            <label for="p3"><div class="t" data-en="Annual">Anual</div><div class="v">R$ 1.320,00</div><div class="m" data-en="12 months">12 meses</div><span class="tag" data-en="1 month off">1 mês de desconto</span></label>
+          </div>
         </div>
       </div>
     </fieldset>
@@ -235,9 +264,15 @@ document.getElementById('_next').value = location.origin + location.pathname.rep
 
 /* rótulos mudam conforme a modalidade */
 (function(){
-  var m2=document.getElementById('m2'), lbR=document.getElementById('lbRazao'), lbD=document.getElementById('lbDoc');
+  var m1=document.getElementById('m1'), m2=document.getElementById('m2'),
+      lbR=document.getElementById('lbRazao'), lbD=document.getElementById('lbDoc'),
+      planoPJ=document.getElementById('planoPJ');
   function upd(){
-    var pf=m2.checked;
+    var pj=m1.checked, pf=m2.checked;
+    /* planos (semestral/anual) valem apenas para Pessoa Jurídica */
+    planoPJ.style.display = pj ? '' : 'none';
+    planoPJ.querySelectorAll('input').forEach(function(i){ i.disabled = !pj; });
+    if(!pj) document.getElementById('p1').checked = true;
     lbR.dataset.ptTxt = pf ? 'Nome completo <span class="req">*</span>' : 'Razão Social <span class="req">*</span>';
     lbR.dataset.enTxt = pf ? 'Full name <span class="req">*</span>' : 'Company name <span class="req">*</span>';
     lbD.dataset.ptTxt = pf ? 'CPF <span class="req">*</span>' : 'CNPJ <span class="req">*</span>';
