@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Boletim Digital | ACATMAR — Associação Náutica Brasileira</title>
-<meta name="description" content="Folheie os boletins digitais da ACATMAR com as principais ações e conquistas do setor náutico brasileiro.">
-<meta name="keywords" content="boletim náutico, informativo, economia do mar, acatmar">
+<title>Digital Bulletin | ACATMAR — Brazilian Nautical Association</title>
+<meta name="description" content="Browse ACATMAR's digital bulletins with the main actions and achievements of Brazil's nautical sector.">
+<meta name="keywords" content="nautical bulletin, brazil marine industry report, sea economy">
 <meta name="author" content="ACATMAR — Associação Náutica Brasileira">
-<link rel="canonical" href="https://www.acatmar.org/viewer.html">
+<link rel="canonical" href="https://www.acatmar.org/en/bulletin.html">
 <meta property="og:site_name" content="ACATMAR — Associação Náutica Brasileira">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="pt_BR">
-<meta property="og:locale:alternate" content="en_US">
-<meta property="og:url" content="https://www.acatmar.org/viewer.html">
-<meta property="og:title" content="Boletim Digital | ACATMAR — Associação Náutica Brasileira">
-<meta property="og:description" content="Folheie os boletins digitais da ACATMAR com as principais ações e conquistas do setor náutico brasileiro.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:url" content="https://www.acatmar.org/en/bulletin.html">
+<meta property="og:title" content="Digital Bulletin | ACATMAR — Brazilian Nautical Association">
+<meta property="og:description" content="Browse ACATMAR's digital bulletins with the main actions and achievements of Brazil's nautical sector.">
 <meta property="og:image" content="https://www.acatmar.org/media/og-acatmar.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Boletim Digital | ACATMAR — Associação Náutica Brasileira">
-<meta name="twitter:description" content="Folheie os boletins digitais da ACATMAR com as principais ações e conquistas do setor náutico brasileiro.">
+<meta name="twitter:title" content="Digital Bulletin | ACATMAR — Brazilian Nautical Association">
+<meta name="twitter:description" content="Browse ACATMAR's digital bulletins with the main actions and achievements of Brazil's nautical sector.">
 <meta name="twitter:image" content="https://www.acatmar.org/media/og-acatmar.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
@@ -83,6 +83,9 @@
 </style>
 
 
+<link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/viewer.html">
+<link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/bulletin.html">
+<link rel="alternate" hreflang="x-default" href="https://www.acatmar.org/viewer.html">
 
 <link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/viewer.html">
 <link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/bulletin.html">
@@ -112,10 +115,10 @@
 
   <div class="loader" id="loader"><div class="spinner"></div><p id="loadtxt">Preparando o boletim…</p></div>
 
-<script src="assets/lib/page-flip.browser.js"></script>
+<script src="../assets/lib/page-flip.browser.js"></script>
 <script>
 (function(){
-  var EN=(function(){try{return localStorage.getItem('acatmar_lang')==='en';}catch(e){return false;}})();
+  var EN=(function(){try{return true;}catch(e){return false;}})();
   document.documentElement.lang=EN?'en':'pt-BR';
   function edTitle(t){ if(!EN||!t) return t; return String(t).replace('1º Semestre de','1st Half of').replace('2º Semestre de','2nd Half of').replace('Semestre de','Half of'); }
   if(EN){
@@ -137,12 +140,12 @@
 
   function fail(msg){ loadtxt.textContent = msg; document.querySelector('.spinner').style.display='none'; }
 
-  fetch('editions.json?v='+Date.now()).then(function(r){return r.json();}).then(function(data){
+  fetch('../editions.json?v='+Date.now()).then(function(r){return r.json();}).then(function(data){
     var ed = (data.editions||[]).filter(function(e){return e.id===edId;})[0];
     if(!ed){ fail(EN?'Edition not found.':'Edição não encontrada.'); return; }
     document.title = (EN?'ACATMAR Bulletin — ':'Boletim ACATMAR — ')+edTitle(ed.title);
     document.getElementById('subtitle').textContent = edTitle(ed.title);
-    document.getElementById('dl').href = 'editions/'+ed.id+'/boletim.pdf';
+    document.getElementById('dl').href = '../editions/'+ed.id+'/boletim.pdf';
     buildBook(ed);
   }).catch(function(e){ fail((EN?'Loading error: ':'Erro ao carregar: ')+e.message); });
 
@@ -154,7 +157,7 @@
     var loaded = 0;
 
     var urls = [];
-    for(var i=1;i<=total;i++){ urls.push('editions/'+ed.id+'/pages/p-'+i+'.jpg'); }
+    for(var i=1;i<=total;i++){ urls.push('../editions/'+ed.id+'/pages/p-'+i+'.jpg'); }
 
     function buildPages(target){
       urls.forEach(function(u,idx){
@@ -287,6 +290,33 @@
   });
 })();
 </script>
-<script src="assets/cookie-consent.js" defer></script>
+<script src="../assets/cookie-consent.js" defer></script>
+
+<script>
+/* /en/ fica um nivel abaixo: ajusta caminhos de midia e links vindos do JSON */
+(function(){
+  function ajustar(raiz){
+    (raiz.querySelectorAll?raiz.querySelectorAll('img'):[]).forEach(function(i){
+      var s=i.getAttribute('src')||'';
+      if(/^(media|editions)\//.test(s)) i.setAttribute('src','../'+s);
+    });
+    (raiz.querySelectorAll?raiz.querySelectorAll('a[href^="noticia.html"],a[href^="projeto.html"],a[href^="viewer.html"],a[href^="associe-se.html"],a[href^="noticias.html"],a[href^="sobre.html"]'):[]).forEach(function(a){
+      var h=a.getAttribute('href');
+      a.setAttribute('href', h.replace(/^noticia\.html/,'article.html')
+                              .replace(/^noticias\.html/,'news.html')
+                              .replace(/^projeto\.html/,'project.html')
+                              .replace(/^viewer\.html/,'bulletin.html')
+                              .replace(/^associe-se\.html/,'join.html')
+                              .replace(/^sobre\.html/,'about.html'));
+    });
+  }
+  ajustar(document);
+  new MutationObserver(function(muts){
+    muts.forEach(function(m){ m.addedNodes.forEach(function(n){ if(n.nodeType===1){ ajustar(n);
+      if(n.tagName==='IMG'&&/^media\//.test(n.getAttribute('src')||'')) n.setAttribute('src','../'+n.getAttribute('src'));
+    }});});
+  }).observe(document.documentElement,{childList:true,subtree:true});
+})();
+</script>
 </body>
 </html>

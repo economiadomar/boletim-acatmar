@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cadastro enviado — ACATMAR</title>
+<title>Registration sent | ACATMAR</title>
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,6 +40,9 @@
 </style>
 
 
+<link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/obrigado.html">
+<link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/thank-you.html">
+<link rel="alternate" hreflang="x-default" href="https://www.acatmar.org/obrigado.html">
 
 <link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/obrigado.html">
 <link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/thank-you.html">
@@ -47,13 +50,13 @@
 </head>
 <body>
 <nav class="nav"><div class="wr">
-  <a href="index.html" aria-label="ACATMAR"><img src="media/logos/horiz-branco.png" alt="ACATMAR"></a>
+  <a href="index.html" aria-label="ACATMAR"><img src="../media/logos/horiz-branco.png" alt="ACATMAR"></a>
   <a class="assoc" href="index.html" id="btnHome">Voltar ao site</a>
 </div></nav>
 
 <main>
   <div class="box">
-    <img class="ic-logo" src="media/logos/acatmar-vertical-02.png" alt="ACATMAR">
+    <img class="ic-logo" src="../media/logos/acatmar-vertical-02.png" alt="ACATMAR">
     <div class="eyebrow" data-en="Registration sent">Cadastro enviado</div>
     <h1 data-en="Welcome aboard!">Recebemos o seu cadastro!</h1>
     <p data-en="Thank you for your interest in joining ACATMAR. Your registration has been sent to our team.">Obrigado pelo interesse em fazer parte da ACATMAR. Sua ficha foi enviada para a nossa equipe.</p>
@@ -64,18 +67,45 @@
     </ul>
     <div class="btns">
       <a class="btn" href="index.html" data-en="Back to the site">Voltar ao site</a>
-      <a class="btn ghost" href="noticias.html" data-en="Read the news">Ver as notícias</a>
+      <a class="btn ghost" href="news.html" data-en="Read the news">Ver as notícias</a>
     </div>
   </div>
 </main>
 
 <footer><div>ACATMAR · Associação Náutica Brasileira · <a href="https://www.instagram.com/acatmarassociacao/" target="_blank" rel="noopener">@acatmarassociacao</a></div></footer>
 <script>
-var EN=(function(){try{return localStorage.getItem('acatmar_lang')==='en';}catch(e){return false;}})();
+var EN=(function(){try{return true;}catch(e){return false;}})();
 document.documentElement.lang=EN?'en':'pt-BR';
 document.querySelectorAll('[data-en]').forEach(function(el){ if(EN) el.innerHTML=el.getAttribute('data-en'); });
 if(EN){document.getElementById('btnHome').textContent='Back to the site';document.title='Registration sent — ACATMAR';}
 </script>
-<script src="assets/cookie-consent.js" defer></script>
+<script src="../assets/cookie-consent.js" defer></script>
+
+<script>
+/* /en/ fica um nivel abaixo: ajusta caminhos de midia e links vindos do JSON */
+(function(){
+  function ajustar(raiz){
+    (raiz.querySelectorAll?raiz.querySelectorAll('img'):[]).forEach(function(i){
+      var s=i.getAttribute('src')||'';
+      if(/^(media|editions)\//.test(s)) i.setAttribute('src','../'+s);
+    });
+    (raiz.querySelectorAll?raiz.querySelectorAll('a[href^="noticia.html"],a[href^="projeto.html"],a[href^="viewer.html"],a[href^="associe-se.html"],a[href^="noticias.html"],a[href^="sobre.html"]'):[]).forEach(function(a){
+      var h=a.getAttribute('href');
+      a.setAttribute('href', h.replace(/^noticia\.html/,'article.html')
+                              .replace(/^noticias\.html/,'news.html')
+                              .replace(/^projeto\.html/,'project.html')
+                              .replace(/^viewer\.html/,'bulletin.html')
+                              .replace(/^associe-se\.html/,'join.html')
+                              .replace(/^sobre\.html/,'about.html'));
+    });
+  }
+  ajustar(document);
+  new MutationObserver(function(muts){
+    muts.forEach(function(m){ m.addedNodes.forEach(function(n){ if(n.nodeType===1){ ajustar(n);
+      if(n.tagName==='IMG'&&/^media\//.test(n.getAttribute('src')||'')) n.setAttribute('src','../'+n.getAttribute('src'));
+    }});});
+  }).observe(document.documentElement,{childList:true,subtree:true});
+})();
+</script>
 </body>
 </html>
