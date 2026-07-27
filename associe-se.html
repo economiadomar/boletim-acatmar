@@ -171,7 +171,8 @@
 </div></header>
 
 <main>
-  <form id="form" action="https://formsubmit.co/3b311d217ad39875c594589e5313741a" method="POST">
+  <form id="form" action="https://formsubmit.co/3b311d217ad39875c594589e5313741a" method="POST" enctype="multipart/form-data">
+    <input type="file" name="attachment" id="pdfFile" class="hp" tabindex="-1" aria-hidden="true">
     <input type="hidden" name="_subject" value="Novo cadastro de associado — site ACATMAR">
     <input type="hidden" name="_template" value="table">
     <input type="hidden" name="_next" id="_next" value="https://www.acatmar.org/obrigado.html">
@@ -459,33 +460,29 @@ applyLang();
   }
 
   form.addEventListener('submit',function(e){
+    if(form.dataset.pronto==='1') return;          // ja tem o PDF: deixa enviar normalmente
     e.preventDefault();
     if(!form.reportValidity()) return;
+
     var agora=new Date();
     var carimbo=agora.toLocaleString('pt-BR',{dateStyle:'short',timeStyle:'medium'});
-    var ass=document.getElementById('assinatura');
     var nome=(document.getElementById('assNome')||{}).value||'';
     var cpf=(document.getElementById('assCpf')||{}).value||'';
-    ass.value=nome+' — CPF '+cpf+' — assinado em '+carimbo+' (fuso: '+Intl.DateTimeFormat().resolvedOptions().timeZone+')';
+    document.getElementById('assinatura').value =
+      nome+' — CPF '+cpf+' — assinado em '+carimbo+' (fuso: '+Intl.DateTimeFormat().resolvedOptions().timeZone+')';
 
-    btn.disabled=true;
-    var txtOrig=btn.textContent;
-    btn.textContent = EN?'Sending…':'Enviando…';
+    btn.disabled=true; btn.textContent = EN?'Sending…':'Enviando…';
 
-    var fd=new FormData(form);
     try{
       var blob=gerarPDF(dados(),carimbo);
       var emp=((document.getElementById('razao')||{}).value||'ficha').replace(/[^\w\s-]/g,'').trim().replace(/\s+/g,'-').slice(0,40);
-      fd.append('attachment', new File([blob], 'ficha-acatmar-'+emp+'.pdf', {type:'application/pdf'}));
-    }catch(err){ /* se o PDF falhar, envia mesmo assim */ }
+      var arquivo=new File([blob],'ficha-acatmar-'+emp+'.pdf',{type:'application/pdf'});
+      var dt=new DataTransfer(); dt.items.add(arquivo);
+      document.getElementById('pdfFile').files=dt.files;
+    }catch(err){ /* sem PDF, envia mesmo assim */ }
 
-    fetch(ENDPOINT,{method:'POST',body:fd})
-      .then(function(r){ window.location.href = document.getElementById('_next').value; })
-      .catch(function(){
-        btn.disabled=false; btn.textContent=txtOrig;
-        alert(EN?'We could not send your form. Please check your connection and try again.'
-                :'Não conseguimos enviar sua ficha. Verifique sua conexão e tente novamente.');
-      });
+    form.dataset.pronto='1';
+    form.submit();                                  // envio nativo: mostra a resposta do servico
   });
 })();
 
