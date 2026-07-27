@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Reunião ACATMAR — 27 de julho de 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow+Condensed:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0a2540;--navy2:#0e3557;--deep:#061726;--teal:#00a3b4;--teal-b:#35c9da;--sand:#e9eff1}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%;overflow:hidden;background:#050f1a}
+  body{font-family:'PT Serif',Georgia,serif;color:#fff;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.disp{font-family:'Oswald',sans-serif;font-weight:700;line-height:1.03;text-transform:uppercase}
+  .cond{font-family:'Barlow Condensed',sans-serif}
+
+  /* palco 16:9 que escala conforme a tela */
+  #palco{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+  #deck{width:1600px;height:900px;position:relative;transform-origin:center center}
+  .s{position:absolute;inset:0;padding:80px 96px;display:none;flex-direction:column;justify-content:center;
+     background:radial-gradient(130% 120% at 82% -12%,#1b6a94 0%,var(--navy) 46%,var(--deep) 100%);overflow:hidden}
+  .s.on{display:flex;animation:entra .45s ease}
+  @keyframes entra{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+  .eyebrow{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--teal-b);font-size:22px}
+  .s h2{font-size:76px;margin:14px 0 8px}
+  .s h2 span{color:var(--teal-b)}
+  .lead{font-size:30px;color:#d3e4ee;max-width:1100px;line-height:1.45;margin-top:10px}
+  .num{position:absolute;top:64px;right:96px;font-family:'Oswald';font-weight:700;font-size:150px;color:rgba(53,201,218,.13);line-height:1}
+
+  /* capa */
+  .capa{align-items:center;text-align:center;justify-content:center}
+  .capa img{width:330px;margin-bottom:26px;filter:drop-shadow(0 14px 34px rgba(0,0,0,.5))}
+  .capa h1{font-size:96px}
+  .capa .sub{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-b);font-size:30px;margin-top:16px}
+  .capa .local{font-size:26px;color:#cfe0ea;margin-top:26px;line-height:1.5}
+
+  /* pauta */
+  .pauta{display:grid;grid-template-columns:1fr 1fr;gap:14px 46px;margin-top:26px}
+  .it{display:flex;gap:16px;align-items:flex-start;font-size:25px;color:#e6eef4;line-height:1.3}
+  .it b{font-family:'Oswald';color:var(--teal-b);min-width:44px;font-size:26px}
+
+  /* listas */
+  ul.big{margin-top:28px;list-style:none;display:grid;gap:18px}
+  ul.big li{font-size:31px;color:#e6eef4;line-height:1.4;padding-left:44px;position:relative}
+  ul.big li::before{content:'';position:absolute;left:0;top:16px;width:20px;height:4px;border-radius:2px;background:var(--teal-b)}
+  ul.big li b{color:#fff}
+
+  /* cartões */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px}
+  .card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:20px;padding:30px 28px}
+  .card .k{font-family:'Oswald';font-weight:700;color:var(--teal-b);font-size:52px;line-height:1}
+  .card .t{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.07em;font-size:21px;color:#fff;margin-top:10px}
+  .card p{font-size:20px;color:#c8dbe6;margin-top:8px;line-height:1.4}
+
+  .shot{margin-top:30px;border-radius:16px;overflow:hidden;border:3px solid rgba(255,255,255,.2);box-shadow:0 26px 60px rgba(0,0,0,.5);max-height:470px}
+  .shot img{width:100%;display:block}
+  .split{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+
+  .url{display:inline-block;margin-top:26px;background:var(--teal);color:#fff;font-family:'Barlow Condensed';font-weight:700;
+       text-transform:uppercase;letter-spacing:.06em;font-size:27px;padding:14px 34px;border-radius:999px}
+
+  /* palestra */
+  .quote{font-size:52px;line-height:1.25;font-style:italic;color:#fff;max-width:1250px;margin-top:20px}
+  .quem{margin-top:34px;font-family:'Barlow Condensed';font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-b);font-size:26px}
+
+  /* rodapé fixo */
+  .rod{position:absolute;left:96px;bottom:52px;display:flex;align-items:center;gap:18px;opacity:.85}
+  .rod img{height:40px}
+  .rod span{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#9fc0d0;font-size:17px}
+  .pg{position:absolute;right:96px;bottom:52px;font-family:'Barlow Condensed';font-weight:600;color:#7f9dae;font-size:19px;letter-spacing:.1em}
+
+  /* controles */
+  .ctrl{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:99;
+        background:rgba(6,23,38,.75);padding:7px 12px;border-radius:999px;opacity:0;transition:opacity .3s}
+  body:hover .ctrl{opacity:1}
+  .ctrl button{background:rgba(255,255,255,.12);border:none;color:#fff;width:38px;height:34px;border-radius:8px;cursor:pointer;font-size:16px}
+  .ctrl button:hover{background:var(--teal)}
+  .dica{position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:99;background:rgba(6,23,38,.8);
+        color:#cfe0ea;padding:9px 18px;border-radius:999px;font-family:'Barlow Condensed';font-size:17px;letter-spacing:.05em;transition:opacity .6s}
+</style>
+</head>
+<body>
+<div id="palco"><div id="deck">
+
+  <!-- 1 CAPA -->
+  <section class="s capa on">
+    <img src="../media/logos/acatmar-vertical-02.png" alt="ACATMAR">
+    <h1>Reunião <span style="color:var(--teal-b)">ACATMAR</span></h1>
+    <div class="sub">Associação Náutica Brasileira</div>
+    <div class="local">27 de julho de 2026 · 19h<br>Iate Clube Veleiros da Ilha — Sede Centro · Florianópolis/SC</div>
+  </section>
+
+  <!-- 2 PAUTA -->
+  <section class="s">
+    <div class="eyebrow">Ordem do dia</div>
+    <h2>Pauta da <span>reunião</span></h2>
+    <div class="pauta">
+      <div class="it"><b>01</b><span>Abertura e apresentação dos novos associados</span></div>
+      <div class="it"><b>08</b><span>Agenda de visitas técnicas do 2º semestre</span></div>
+      <div class="it"><b>02</b><span>Apresentação do novo site da ACATMAR</span></div>
+      <div class="it"><b>09</b><span>VI Fórum Técnico ACATMAR 2026</span></div>
+      <div class="it"><b>03</b><span>Nova plataforma de cadastro de associados</span></div>
+      <div class="it"><b>10</b><span>Blue Nautical HUB Brasil 2026 e 2027</span></div>
+      <div class="it"><b>04</b><span>Boletim Informativo — 1º Semestre de 2026</span></div>
+      <div class="it"><b>11</b><span>Molhes do Rio Biguaçu</span></div>
+      <div class="it"><b>05</b><span>Utilidade Pública Federal</span></div>
+      <div class="it"><b>12</b><span>Espaço dos associados e assuntos gerais</span></div>
+      <div class="it"><b>06</b><span>Documento Institucional da Economia do Mar</span></div>
+      <div class="it"><b>13</b><span>Palestra com Ronaldo Taranto</span></div>
+      <div class="it"><b>07</b><span>Ações da ACATMAR para o 2º semestre</span></div>
+      <div class="it"><b>14</b><span>Encerramento e jantar de confraternização</span></div>
+    </div>
+  </section>
+
+  <!-- 3 NOVOS ASSOCIADOS -->
+  <section class="s">
+    <div class="num">01</div>
+    <div class="eyebrow">Abertura</div>
+    <h2>Bem-vindos, <span>novos associados</span></h2>
+    <p class="lead">Apresentação e integração das empresas que passam a fazer parte da ACATMAR, fortalecendo a rede de relacionamento e as oportunidades de negócios do setor.</p>
+    <ul class="big">
+      <li>Cada associado se apresenta: <b>empresa, atuação e o que busca na associação</b></li>
+      <li>Conexões diretas com quem já está na rede</li>
+    </ul>
+  </section>
+
+  <!-- 4 NOVO SITE -->
+  <section class="s">
+    <div class="num">02</div>
+    <div class="split">
+      <div>
+        <div class="eyebrow">Novidade</div>
+        <h2>O novo site da <span>ACATMAR</span></h2>
+        <ul class="big" style="margin-top:22px">
+          <li>Notícias do setor, projetos e boletins digitais</li>
+          <li>Versão em <b>inglês</b> para alcance internacional</li>
+          <li>Pronto para <b>celular</b> e otimizado para o Google</li>
+        </ul>
+        <div class="url">www.acatmar.org</div>
+      </div>
+      <div class="shot"><img src="site.jpg" alt="Novo site da ACATMAR"></div>
+    </div>
+  </section>
+
+  <!-- 5 PLATAFORMA DE CADASTRO -->
+  <section class="s">
+    <div class="num">03</div>
+    <div class="eyebrow">Novidade</div>
+    <h2>Nova plataforma de <span>cadastro</span></h2>
+    <p class="lead">A ficha de associação agora é preenchida online, no próprio site, com muito mais agilidade e segurança.</p>
+    <div class="cards">
+      <div class="card"><div class="k">CEP</div><div class="t">Endereço automático</div><p>Basta digitar o CEP e o endereço é preenchido sozinho.</p></div>
+      <div class="card"><div class="k">✓</div><div class="t">Assinatura eletrônica</div><p>Registro de quem preencheu, com nome, CPF, data e hora.</p></div>
+      <div class="card"><div class="k">PDF</div><div class="t">Ficha arquivada</div><p>Cada cadastro chega em PDF, pronto para o nosso arquivo.</p></div>
+    </div>
+    <div class="url">www.acatmar.org/associe-se</div>
+  </section>
+
+  <!-- 6 BOLETIM -->
+  <section class="s">
+    <div class="num">04</div>
+    <div class="eyebrow">Comunicação</div>
+    <h2>Boletim Informativo<br><span>1º Semestre de 2026</span></h2>
+    <p class="lead">Ações, conquistas e resultados institucionais do semestre, agora em formato digital folheável, acessível de qualquer aparelho.</p>
+    <ul class="big">
+      <li>Blue Nautical HUB Brasil · 240 mil empregos em SC · Limpeza dos Mares</li>
+      <li>Todas as edições desde 2024 disponíveis no site</li>
+    </ul>
+  </section>
+
+  <!-- 7 UTILIDADE PUBLICA FEDERAL -->
+  <section class="s">
+    <div class="num">05</div>
+    <div class="eyebrow">Pauta institucional</div>
+    <h2>Utilidade Pública <span>Federal</span></h2>
+    <p class="lead">A ACATMAR já é Entidade de Utilidade Pública Municipal de Florianópolis (Lei nº 10.711/2020). O próximo passo é o reconhecimento federal.</p>
+    <ul class="big">
+      <li>Apresentação da pauta e dos <b>objetivos</b></li>
+      <li>Encaminhamentos e responsáveis</li>
+    </ul>
+  </section>
+
+  <!-- 8 DOCUMENTO INSTITUCIONAL -->
+  <section class="s">
+    <div class="num">06</div>
+    <div class="eyebrow">Representatividade</div>
+    <h2>Documento da <span>Economia do Mar</span></h2>
+    <p class="lead">Elaboração de um documento técnico com as principais demandas do setor náutico, para entregar a candidatos a deputado, ao Senado, ao Governo e às lideranças políticas que têm procurado a ACATMAR.</p>
+    <ul class="big">
+      <li>O setor falando com <b>uma só voz</b></li>
+      <li>Contribuição de todos os associados</li>
+    </ul>
+  </section>
+
+  <!-- 9 ACOES 2 SEMESTRE -->
+  <section class="s">
+    <div class="num">07</div>
+    <div class="eyebrow">Planejamento</div>
+    <h2>Ações do <span>2º semestre de 2026</span></h2>
+    <div class="cards">
+      <div class="card"><div class="t" style="font-size:24px">Fórum Técnico</div><p>VI edição, com programação ampliada.</p></div>
+      <div class="card"><div class="t" style="font-size:24px">Visitas técnicas</div><p>Agenda nacional e internacional.</p></div>
+      <div class="card"><div class="t" style="font-size:24px">Blue Nautical HUB</div><p>Resultados de 2026 e preparação de 2027.</p></div>
+    </div>
+    <ul class="big" style="margin-top:26px">
+      <li>Articulação política e Documento da Economia do Mar</li>
+      <li>Projetos estruturantes e novos associados</li>
+    </ul>
+  </section>
+
+  <!-- 10 VISITAS TECNICAS -->
+  <section class="s">
+    <div class="num">08</div>
+    <div class="eyebrow">Oportunidades</div>
+    <h2>Agenda de <span>visitas técnicas</span></h2>
+    <p class="lead">Programação do segundo semestre, oportunidades de participação e critérios de adesão.</p>
+    <ul class="big">
+      <li>Missões que aproximam os associados dos <b>mercados mais desenvolvidos</b></li>
+      <li>Condições subsidiadas por meio de acordos institucionais</li>
+      <li>Mais de <b>150 associados</b> já participaram dessas agendas</li>
+    </ul>
+  </section>
+
+  <!-- 11 FORUM -->
+  <section class="s">
+    <div class="num">09</div>
+    <div class="eyebrow">Capacitação</div>
+    <h2>VI Fórum Técnico <span>ACATMAR 2026</span></h2>
+    <p class="lead">Um dia de imersão total em conhecimento aplicado às diversas áreas da cadeia produtiva do setor náutico.</p>
+    <div class="cards">
+      <div class="card"><div class="k">6ª</div><div class="t">Edição</div><p>Cinco edições já realizadas.</p></div>
+      <div class="card"><div class="k">9</div><div class="t">Palestrantes</div><p>Especialistas do setor.</p></div>
+      <div class="card"><div class="k">Livre</div><div class="t">Evento gratuito</div><p>Aberto a todo o setor.</p></div>
+    </div>
+    <ul class="big" style="margin-top:24px"><li>Formato, programação inicial, local, parcerias e oportunidades para os associados</li></ul>
+  </section>
+
+  <!-- 12 BNH -->
+  <section class="s">
+    <div class="num">10</div>
+    <div class="eyebrow">Plataforma de negócios</div>
+    <h2>Blue Nautical HUB <span>2026 e 2027</span></h2>
+    <div class="cards">
+      <div class="card"><div class="k">25</div><div class="t">Palestrantes</div><p>Nacionais e internacionais.</p></div>
+      <div class="card"><div class="k">171</div><div class="t">Reuniões B2B</div><p>Em apenas 6 horas.</p></div>
+      <div class="card"><div class="k">20 MI</div><div class="t">Negócios gerados</div><p>Resultado da 1ª edição.</p></div>
+    </div>
+    <ul class="big" style="margin-top:26px">
+      <li>Novo formato e programação preliminar para <b>2027</b></li>
+      <li>Oportunidades e formas de adesão para os associados</li>
+    </ul>
+  </section>
+
+  <!-- 13 BIGUACU -->
+  <section class="s">
+    <div class="num">11</div>
+    <div class="eyebrow">Infraestrutura</div>
+    <h2>Molhes do <span>Rio Biguaçu</span></h2>
+    <p class="lead">Envio de ofício ao Município de Biguaçu solicitando informações sobre o andamento do projeto apresentado na última reunião da ACATMAR.</p>
+    <ul class="big">
+      <li>Navegabilidade, combate ao assoreamento e <b>resiliência climática</b></li>
+      <li>Potencial para um grande polo de refit, manutenção e marinas</li>
+    </ul>
+  </section>
+
+  <!-- 14 ESPACO DOS ASSOCIADOS -->
+  <section class="s">
+    <div class="num">12</div>
+    <div class="eyebrow">A palavra é sua</div>
+    <h2>Espaço dos <span>associados</span></h2>
+    <p class="lead">Manifestações, sugestões e assuntos gerais. É o momento de ouvir quem faz o setor acontecer todos os dias.</p>
+  </section>
+
+  <!-- 15 PALESTRA -->
+  <section class="s">
+    <div class="num">13</div>
+    <div class="eyebrow">Palestra</div>
+    <div class="quote">“Vender não é sobre convencer.<br>É sobre <span style="color:var(--teal-b)">conectar soluções e oportunidades</span>.”</div>
+    <div class="quem">Ronaldo Taranto · Chief Business Development Officer · SAAR Global GmbH</div>
+    <p class="lead" style="margin-top:22px">Mais de 10 anos conectando mercados, pessoas e oportunidades nos segmentos náutico, offshore e industrial.</p>
+  </section>
+
+  <!-- 16 ENCERRAMENTO -->
+  <section class="s">
+    <div class="num">14</div>
+    <div class="eyebrow">Encerramento</div>
+    <h2>Jantar e <span>networking</span></h2>
+    <p class="lead">Ao final da programação, jantar de confraternização e momento de networking entre os associados.</p>
+    <ul class="big"><li>Obrigado pela presença e pela construção coletiva do setor</li></ul>
+  </section>
+
+  <!-- 17 FINAL -->
+  <section class="s capa">
+    <img src="../media/logos/acatmar-vertical-02.png" alt="ACATMAR" style="width:260px">
+    <h1 style="font-size:72px">Juntos, somos <span style="color:var(--teal-b)">mais fortes</span></h1>
+    <div class="local" style="margin-top:34px;font-size:24px">
+      www.acatmar.org · @acatmarassociacao<br>
+      +55 48 99971-5761 · acatmarpresidencia@gmail.com
+    </div>
+  </section>
+
+</div></div>
+
+<div class="dica" id="dica">Use as setas ← → para navegar · <b>F</b> para tela cheia</div>
+<div class="ctrl">
+  <button id="ant" title="Anterior">‹</button>
+  <button id="prox" title="Próximo">›</button>
+  <button id="tela" title="Tela cheia">⛶</button>
+</div>
+
+<script>
+var slides=[].slice.call(document.querySelectorAll('.s')), i=0;
+var deck=document.getElementById('deck');
+
+/* rodapé e numeração automáticos */
+slides.forEach(function(s,idx){
+  if(idx===0 || idx===slides.length-1) return;
+  var r=document.createElement('div'); r.className='rod';
+  r.innerHTML='<img src="../media/logos/acatmar-completa-branca.png" alt=""><span>Reunião ACATMAR · 27 · 07 · 2026</span>';
+  s.appendChild(r);
+  var p=document.createElement('div'); p.className='pg'; p.textContent=(idx+1)+' / '+slides.length;
+  s.appendChild(p);
+});
+
+function ir(n){
+  if(n<0||n>=slides.length) return;
+  slides[i].classList.remove('on'); i=n; slides[i].classList.add('on');
+  location.hash=i+1;
+}
+function escalar(){
+  var e=Math.min(window.innerWidth/1600, window.innerHeight/900);
+  deck.style.transform='scale('+e+')';
+}
+window.addEventListener('resize',escalar); escalar();
+
+document.addEventListener('keydown',function(e){
+  if(['ArrowRight','ArrowDown',' ','PageDown','Enter'].indexOf(e.key)>=0){ e.preventDefault(); ir(i+1); }
+  if(['ArrowLeft','ArrowUp','PageUp'].indexOf(e.key)>=0){ e.preventDefault(); ir(i-1); }
+  if(e.key==='Home') ir(0);
+  if(e.key==='End') ir(slides.length-1);
+  if(e.key==='f'||e.key==='F') telaCheia();
+});
+document.getElementById('prox').onclick=function(){ir(i+1)};
+document.getElementById('ant').onclick=function(){ir(i-1)};
+function telaCheia(){ if(!document.fullscreenElement){document.documentElement.requestFullscreen();} else {document.exitFullscreen();} }
+document.getElementById('tela').onclick=telaCheia;
+
+/* clique/toque avança */
+document.getElementById('palco').addEventListener('click',function(e){
+  if(e.clientX < window.innerWidth*0.18) ir(i-1); else ir(i+1);
+});
+var x0=null;
+document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;});
+document.addEventListener('touchend',function(e){
+  if(x0===null) return; var d=e.changedTouches[0].clientX-x0;
+  if(Math.abs(d)>60){ ir(d<0? i+1 : i-1); } x0=null;
+});
+
+/* abre no slide da URL, se houver */
+var h=parseInt(location.hash.replace('#',''),10);
+if(h>0 && h<=slides.length) ir(h-1);
+
+setTimeout(function(){var d=document.getElementById('dica'); d.style.opacity='0';},5000);
+</script>
+</body>
+</html>
