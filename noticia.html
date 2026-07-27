@@ -79,19 +79,28 @@
   .rc .d{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:.72rem;color:var(--muted)}
   .rc h3{font-family:'Oswald';font-weight:600;color:var(--navy);font-size:1.05rem;line-height:1.15;margin-top:.25rem}
   @media(max-width:760px){.rg{grid-template-columns:1fr}}
-  footer .social{display:flex;gap:.55rem;align-items:center}
-  footer .social a{display:inline-flex;width:36px;height:36px;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.18);border-radius:50%;color:#cfe0ea;transition:background .2s,color .2s,border-color .2s}
-  footer .social a:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
-  footer .social svg{width:18px;height:18px;fill:currentColor}
-  footer .foot-legal{max-width:1000px;margin:0 auto;padding:0 1.4rem;line-height:1.7}
-  footer .foot-legal .fl-org{color:#cfe0ea;font-weight:700}
-  footer .foot-legal .fl-info{font-size:.85rem;color:#9fb4c2}
-  footer .foot-legal .social{margin-top:.7rem}
-  footer .foot-legal a{color:var(--teal-b);text-decoration:none}
-
-  footer{background:var(--deep);color:#9fb4c2;padding:1.8rem 0;font-size:.9rem;text-align:center}
-  footer a{color:var(--teal-b);text-decoration:none}
   .load{max-width:760px;margin:4rem auto;text-align:center;color:var(--muted);padding:0 1.4rem}
+  footer{background:var(--deep);color:#9fb4c2;padding:2.8rem 0 2rem;font-size:.92rem}
+  footer .fwrap{max-width:1160px;margin:0 auto;padding:0 1.4rem}
+  footer .top{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:space-between;align-items:center;padding-bottom:1.4rem;border-bottom:1px solid rgba(255,255,255,.1)}
+  footer .top img{height:52px;background:#fff;padding:.4rem .6rem;border-radius:10px}
+  footer .fl{display:flex;gap:1.3rem;flex-wrap:wrap}
+  footer .fl a{color:#cfe0ea;text-decoration:none;font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+  footer .fl a:hover{color:#fff}
+  footer .info{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;padding:1.4rem 0;border-bottom:1px solid rgba(255,255,255,.1)}
+  footer .info .it{line-height:1.55;color:#bcd0dc;font-size:.9rem}
+  footer .info .it .k{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--teal-b);font-size:.74rem;margin-bottom:.25rem}
+  footer .info a{color:#bcd0dc;text-decoration:none}
+  footer .info a:hover{color:#fff}
+  footer .util{padding-top:1.1rem;color:#8fa6b4;font-size:.85rem}
+  footer .bot{padding-top:1.2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.8rem}
+  footer .social{display:flex;gap:.6rem}
+  footer .social a{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.08);color:#cfe0ea;transition:background .2s,color .2s}
+  footer .social a:hover{background:var(--teal);color:#fff}
+  footer .social svg{width:19px;height:19px;fill:currentColor}
+  footer .pol{padding-top:1rem;font-size:.85rem;opacity:.92}
+  footer .pol a{color:var(--teal-b);text-decoration:none}
+  @media(max-width:760px){footer .info{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
 <body>
@@ -123,15 +132,26 @@
 <section class="related" id="related" style="display:none"><h2>Mais notícias</h2><div class="rg" id="rg"></div></section>
 
 <footer>
-  <div class="foot-legal">
-    <div class="fl-org">ACATMAR · Associação Náutica Brasileira · Entidade de Utilidade Pública Municipal de Florianópolis</div>
-    <div class="fl-info">CNPJ 10.713.590/0001-53 · Servidão Miguel José Vieira, 264, sala 01 · Rio Tavares · Florianópolis/SC · 88048-378</div>
-    <div class="fl-info"><a href="tel:+5548991475761">(48) 99147-5761</a> · <a href="tel:+5548991448836">(48) 99144-8836</a> · <a href="mailto:atendimento@acatmar.com.br">atendimento@acatmar.com.br</a> · <a href="https://www.instagram.com/acatmarassociacao/" target="_blank" rel="noopener">@acatmarassociacao</a></div>
-  <div class="fl-info">Entidade de Utilidade Pública Municipal de Florianópolis (Lei Municipal nº 10.711/2020), título concedido a associações sem fins lucrativos que prestam serviços de interesse à comunidade.</div>
-    <div class="social"><a href="https://www.linkedin.com/in/braziliannauticalassociation-acatmar/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.75-1.95 4 0 4.4 2.6 4.4 6V21h-4v-5.3c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.03 1.38-2.03 2.8V21H9z"/></svg></a><a href="https://www.facebook.com/Acatmar" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0022 12z"/></svg></a><a href="https://www.instagram.com/acatmarassociacao/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 01-1.38-.9 3.7 3.7 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.21 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.52.01-4.76.07-.9.04-1.38.19-1.7.32-.43.17-.74.37-1.06.69-.32.32-.52.63-.69 1.06-.13.32-.28.8-.32 1.7C3.21 8.48 3.2 8.85 3.2 12s.01 3.52.07 4.76c.04.9.19 1.38.32 1.7.17.43.37.74.69 1.06.32.32.63.52 1.06.69.32.13.8.28 1.7.32 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.9-.04 1.38-.19 1.7-.32.43-.17.74-.37 1.06-.69.32-.32.52-.63.69-1.06.13-.32.28-.8.32-1.7.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.9-.19-1.38-.32-1.7a2.86 2.86 0 00-.69-1.06 2.86 2.86 0 00-1.06-.69c-.32-.13-.8-.28-1.7-.32C15.52 4.01 15.15 4 12 4zm0 3.06A4.94 4.94 0 1112 17a4.94 4.94 0 010-9.88zm0 1.8a3.14 3.14 0 100 6.28 3.14 3.14 0 000-6.28zM17.34 6.4a1.15 1.15 0 110 2.3 1.15 1.15 0 010-2.3z"/></svg></a></div>
+  <div class="fwrap">
+    <div class="top">
+      <img src="media/logos/horiz-branco.png" alt="ACATMAR">
+      <div class="fl">
+        <a href="sobre.html" data-en="About us">Quem somos</a><a href="noticias.html" data-en="News">Notícias</a><a href="index.html#boletins" data-en="Newsletters">Boletins</a><a href="index.html#projetos" data-en="Projects">Projetos</a><a href="associe-se.html" data-en="Join us">Associe-se</a>
+      </div>
+    </div>
+    <div class="info">
+      <div class="it"><div class="k">CNPJ</div>10.713.590/0001-53</div>
+      <div class="it"><div class="k" data-en="Address">Endereço</div>Servidão Miguel José Vieira, 264, sala 01<br>Rio Tavares · Florianópolis/SC · 88048-378</div>
+      <div class="it"><div class="k" data-en="Phone">Telefone</div><a href="tel:+5548991475761">(48) 99147-5761</a><br><a href="tel:+5548991448836">(48) 99144-8836</a></div>
+      <div class="it"><div class="k" data-en="E-mail">E-mail</div><a href="mailto:atendimento@acatmar.com.br">atendimento@acatmar.com.br</a></div>
+    </div>
+    <div class="util" data-en="Entity of Municipal Public Utility of Florianópolis (Municipal Law No. 10,711/2020), a title granted to non-profit associations that provide services of interest to the community.">Entidade de Utilidade Pública Municipal de Florianópolis (Lei Municipal nº 10.711/2020), título concedido a associações sem fins lucrativos que prestam serviços de interesse à comunidade.</div>
+    <div class="bot">
+      <div data-en="ACATMAR · Brazilian Nautical Association · Representing the Sea Economy since 2008">ACATMAR · Associação Náutica Brasileira · Representamos a Economia do Mar desde 2008</div>
+      <div class="social"><a href="https://www.linkedin.com/in/braziliannauticalassociation-acatmar/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.75-1.95 4 0 4.4 2.6 4.4 6V21h-4v-5.3c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.03 1.38-2.03 2.8V21H9z"/></svg></a><a href="https://www.facebook.com/Acatmar" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0022 12z"/></svg></a><a href="https://www.instagram.com/acatmarassociacao/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 01-1.38-.9 3.7 3.7 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.21 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.52.01-4.76.07-.9.04-1.38.19-1.7.32-.43.17-.74.37-1.06.69-.32.32-.52.63-.69 1.06-.13.32-.28.8-.32 1.7C3.21 8.48 3.2 8.85 3.2 12s.01 3.52.07 4.76c.04.9.19 1.38.32 1.7.17.43.37.74.69 1.06.32.32.63.52 1.06.69.32.13.8.28 1.7.32 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.9-.04 1.38-.19 1.7-.32.43-.17.74-.37 1.06-.69.32-.32.52-.63.69-1.06.13-.32.28-.8.32-1.7.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.9-.19-1.38-.32-1.7a2.86 2.86 0 00-.69-1.06 2.86 2.86 0 00-1.06-.69c-.32-.13-.8-.28-1.7-.32C15.52 4.01 15.15 4 12 4zm0 3.06A4.94 4.94 0 1112 17a4.94 4.94 0 010-9.88zm0 1.8a3.14 3.14 0 100 6.28 3.14 3.14 0 000-6.28zM17.34 6.4a1.15 1.15 0 110 2.3 1.15 1.15 0 010-2.3z"/></svg></a></div>
+    </div>
+    <div class="pol"><a href="privacidade.html" data-en="Privacy Policy">Política de Privacidade</a> · <a href="cookies.html" data-en="Cookie Policy">Política de Cookies</a></div>
   </div>
-
-  <div style="margin-top:.7rem;font-size:.85rem;opacity:.92"><a href="privacidade.html" data-en="Privacy Policy">Política de Privacidade</a> · <a href="cookies.html" data-en="Cookie Policy">Política de Cookies</a></div>
 </footer>
 
 <script>
