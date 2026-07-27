@@ -7,11 +7,8 @@
       "categoria": "Institucional",
       "categoria_en": "Institutional",
       "data": "2026-07-26",
-      "imagem": "media/noticias/reuniao-julho-2026.jpg",
+      "imagem": "media/noticias/reuniao-julho-2026-feed.jpg",
       "credito": "Divulgação ACATMAR",
-      "galeria": [
-        "media/noticias/reuniao-julho-2026-convite.jpg"
-      ],
       "resumo": "Encontro exclusivo para associados acontece às 19h, no Iate Clube Veleiros da Ilha, com apresentação do novo site, integração de novos associados e palestra de Ronaldo Taranto.",
       "resumo_en": "The members-only meeting takes place at 7 pm at Iate Clube Veleiros da Ilha, with the launch of the new website, the welcoming of new members and a talk by Ronaldo Taranto.",
       "corpo": [
@@ -30,7 +27,11 @@
       ],
       "link": "associe-se.html",
       "link_label": "Quero me associar",
-      "link_label_en": "I want to join"
+      "link_label_en": "I want to join",
+      "imagem_inteira": true,
+      "galeria": [
+        "media/noticias/reuniao-julho-2026.jpg"
+      ]
     },
     {
       "id": "blue-nautical-hub",

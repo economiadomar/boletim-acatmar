@@ -41,6 +41,9 @@
   .gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;background:var(--navy);display:block}
   .gallery img:first-child{grid-column:1/-1;aspect-ratio:16/9}
   @media(max-width:600px){.gallery{grid-template-columns:1fr}.gallery img:first-child{aspect-ratio:4/3}}
+  .gallery.solo{grid-template-columns:1fr}
+  .gallery.solo img,.gallery.solo img:first-child{aspect-ratio:auto;width:auto;max-width:100%;max-height:860px;margin:0 auto;object-fit:contain;background:transparent}
+  .hero-img.inteira{aspect-ratio:auto;width:auto;max-width:100%;max-height:780px;margin:1.4rem auto .4rem;object-fit:contain;background:transparent;border-radius:16px}
   .more-link{display:inline-flex;align-items:center;gap:.5rem;margin:.4rem 0 1.6rem;font-family:'Barlow Condensed';font-weight:600;
     text-transform:uppercase;letter-spacing:.05em;font-size:.98rem;padding:.75rem 1.5rem;border-radius:999px;text-decoration:none;
     background:var(--teal);color:#fff;transition:background .2s}
@@ -177,10 +180,10 @@ function fmtData(iso){var pt=['janeiro','fevereiro','março','abril','maio','jun
       '<div><span class="cat">'+fld(n,'categoria')+'</span></div>'+
       '<h1 class="title">'+fld(n,'titulo')+'</h1>'+
       '<div class="meta">'+fmtData(n.data)+'</div>'+
-      '<img class="hero-img" src="'+n.imagem+'" alt="'+fld(n,'titulo')+'">'+
+      '<img class="hero-img'+(n.imagem_inteira?' inteira':'')+'" src="'+n.imagem+'" alt="'+fld(n,'titulo')+'">'+
       (n.credito?'<div class="credito">'+(EN?'Photo: ':'Foto: ')+n.credito+'</div>':'')+
       '<div class="body">'+body+'</div>'+
-      ((n.galeria&&n.galeria.length)?'<div class="gallery">'+n.galeria.map(function(s){return '<img loading="lazy" src="'+s+'" alt="'+fld(n,'titulo')+'">';}).join('')+'</div>':'')+
+      ((n.galeria&&n.galeria.length)?'<div class="gallery'+(n.galeria.length===1?' solo':'')+'">'+n.galeria.map(function(s){return '<img loading="lazy" src="'+s+'" alt="'+fld(n,'titulo')+'">';}).join('')+'</div>':'')+
       (n.apoiadores?'<div class="apoiadores"><h2>'+((EN&&n.apoiadores_titulo_en)?n.apoiadores_titulo_en:(n.apoiadores_titulo||(EN?'Organizers and supporters':'Realização e apoiadores')))+'</h2>'+n.apoiadores.map(function(g){return '<div class="grp"><b>'+((EN&&g.grupo_en)?g.grupo_en:g.grupo)+'</b>'+g.itens.join(' · ')+'</div>';}).join('')+'</div>':'')+
       (n.link?'<a class="more-link" href="'+n.link+'" target="_blank" rel="noopener">'+(fld(n,'link_label')||(EN?'Learn more':'Saiba mais'))+' →</a>':'')+
       (n.cadastro?'<a class="cadastro-cta" href="'+n.cadastro+'" target="_blank" rel="noopener">'+(EN?'I want to take part in the Blue Nautical HUB 2027':'Quero participar do Blue Nautical HUB 2027')+' →<small>'+(EN?'Sign up for the 2027 edition':'Faça seu cadastro para a edição 2027')+'</small></a>':'')+
