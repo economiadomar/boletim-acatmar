@@ -1,6 +1,38 @@
 {
   "noticias": [
     {
+      "id": "reuniao-associados-julho-2026",
+      "titulo": "Reunião da ACATMAR reúne associados na próxima segunda-feira (27/07)",
+      "titulo_en": "ACATMAR meeting brings members together next Monday (July 27)",
+      "categoria": "Institucional",
+      "categoria_en": "Institutional",
+      "data": "2026-07-26",
+      "imagem": "media/noticias/reuniao-julho-2026.jpg",
+      "credito": "Divulgação ACATMAR",
+      "galeria": [
+        "media/noticias/reuniao-julho-2026-convite.jpg"
+      ],
+      "resumo": "Encontro exclusivo para associados acontece às 19h, no Iate Clube Veleiros da Ilha, com apresentação do novo site, integração de novos associados e palestra de Ronaldo Taranto.",
+      "resumo_en": "The members-only meeting takes place at 7 pm at Iate Clube Veleiros da Ilha, with the launch of the new website, the welcoming of new members and a talk by Ronaldo Taranto.",
+      "corpo": [
+        "Na próxima segunda-feira, 27 de julho, a ACATMAR, Associação Náutica Brasileira, realiza mais uma Reunião Exclusiva para Associados, um dos principais momentos de integração, alinhamento estratégico e fortalecimento da entidade.",
+        "O encontro acontecerá às 19h, no Iate Clube Veleiros da Ilha, Sede Centro, em Florianópolis, reunindo empresários, profissionais e lideranças do setor náutico para discutir as principais ações em andamento e os próximos passos da associação.",
+        "Além das pautas institucionais e estratégicas, a programação contará com importantes novidades: a apresentação do novo site oficial da ACATMAR, com uma plataforma mais moderna, dinâmica e voltada à valorização dos associados e do setor; a apresentação e integração dos novos associados, fortalecendo a rede de relacionamento e as oportunidades de negócios; a atualização das ações da entidade e das principais iniciativas em defesa da Economia do Mar; e uma palestra especial com Ronaldo Taranto, que abordará o tema \"Vendas não é sobre convencer. É sobre conectar soluções e oportunidades\", trazendo uma visão prática sobre relacionamento, geração de valor e desenvolvimento de negócios.",
+        "Mais do que uma reunião, este será um momento para compartilhar experiências, ampliar conexões e contribuir para o fortalecimento de um setor que cresce a cada ano e conquista cada vez mais espaço nas políticas públicas e no desenvolvimento econômico do país. A atuação da ACATMAR tem consolidado importantes avanços para a cadeia produtiva náutica, reforçando o associativismo como ferramenta de transformação do setor.",
+        "<b>Ainda não é associado?</b> Se você atua na indústria, comércio, serviços ou turismo náutico e deseja fazer parte de uma entidade que representa os interesses do setor em âmbito nacional, este é o momento. Conheça os benefícios de integrar uma associação que trabalha diariamente pela defesa do setor, pela geração de oportunidades de negócios, pela qualificação profissional e pelo fortalecimento da Economia do Mar. Juntos, somos mais fortes."
+      ],
+      "corpo_en": [
+        "Next Monday, July 27, ACATMAR, the Brazilian Nautical Association, holds another Members-Only Meeting, one of the key moments for integration, strategic alignment and the strengthening of the association.",
+        "The meeting takes place at 7 pm at Iate Clube Veleiros da Ilha, Downtown Branch, in Florianópolis, bringing together entrepreneurs, professionals and leaders of the nautical sector to discuss the main ongoing actions and the association's next steps.",
+        "In addition to the institutional and strategic agenda, the program features important news: the launch of ACATMAR's new official website, a more modern and dynamic platform focused on adding value to members and to the sector; the presentation and welcoming of new members, strengthening the network of relationships and business opportunities; an update on the association's actions and main initiatives in defense of the Sea Economy; and a special talk by Ronaldo Taranto on the theme \"Sales is not about convincing. It is about connecting solutions and opportunities\", offering a practical view on relationships, value creation and business development.",
+        "More than a meeting, this will be a moment to share experiences, expand connections and contribute to strengthening a sector that grows every year and gains more and more space in public policy and in the country's economic development. ACATMAR's work has consolidated important advances for the nautical production chain, reinforcing associativism as a tool to transform the sector.",
+        "<b>Not a member yet?</b> If you work in the nautical industry, trade, services or tourism and want to be part of an organization that represents the sector's interests nationwide, this is the moment. Discover the benefits of joining an association that works daily to defend the sector, generate business opportunities, promote professional training and strengthen the Sea Economy. Together, we are stronger."
+      ],
+      "link": "associe-se.html",
+      "link_label": "Quero me associar",
+      "link_label_en": "I want to join"
+    },
+    {
       "id": "blue-nautical-hub",
       "titulo": "Blue Nautical HUB Brasil se consolida como plataforma da Economia do Mar",
       "titulo_en": "Blue Nautical HUB Brasil establishes itself as a platform for the Sea Economy",
