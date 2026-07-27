@@ -59,8 +59,11 @@
   .shot img{width:100%;display:block}
   .split{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
 
-  .url{display:inline-block;margin-top:26px;background:var(--teal);color:#fff;font-family:'Barlow Condensed';font-weight:700;
-       text-transform:uppercase;letter-spacing:.06em;font-size:27px;padding:14px 34px;border-radius:999px}
+  .url{display:inline-flex;align-items:center;gap:12px;margin-top:26px;background:var(--teal);color:#fff;font-family:'Barlow Condensed';font-weight:700;
+       text-transform:uppercase;letter-spacing:.06em;font-size:27px;padding:14px 34px;border-radius:999px;text-decoration:none;
+       transition:background .2s,transform .15s;box-shadow:0 10px 26px rgba(0,163,180,.35)}
+  a.url:hover{background:var(--teal-b);color:#06263c;transform:translateY(-3px)}
+  .url::after{content:'↗';font-size:24px}
 
   /* palestra */
   .quote{font-size:52px;line-height:1.25;font-style:italic;color:#fff;max-width:1250px;margin-top:20px}
@@ -139,7 +142,7 @@
           <li>Versão em <b>inglês</b> para alcance internacional</li>
           <li>Pronto para <b>celular</b> e otimizado para o Google</li>
         </ul>
-        <div class="url">www.acatmar.org</div>
+        <a class="url" href="https://www.acatmar.org/" target="_blank" rel="noopener">www.acatmar.org</a>
       </div>
       <div class="shot"><img src="site.jpg" alt="Novo site da ACATMAR"></div>
     </div>
@@ -156,7 +159,7 @@
       <div class="card"><div class="k">✓</div><div class="t">Assinatura eletrônica</div><p>Registro de quem preencheu, com nome, CPF, data e hora.</p></div>
       <div class="card"><div class="k">PDF</div><div class="t">Ficha arquivada</div><p>Cada cadastro chega em PDF, pronto para o nosso arquivo.</p></div>
     </div>
-    <div class="url">www.acatmar.org/associe-se</div>
+    <a class="url" href="https://www.acatmar.org/associe-se.html" target="_blank" rel="noopener">Abrir a ficha de cadastro</a>
   </section>
 
   <!-- 6 BOLETIM -->
@@ -169,6 +172,7 @@
       <li>Blue Nautical HUB Brasil · 240 mil empregos em SC · Limpeza dos Mares</li>
       <li>Todas as edições desde 2024 disponíveis no site</li>
     </ul>
+    <a class="url" href="https://www.acatmar.org/viewer.html?ed=2026-1" target="_blank" rel="noopener">Folhear o boletim 1º Sem. 2026</a>
   </section>
 
   <!-- 7 UTILIDADE PUBLICA FEDERAL -->
@@ -252,6 +256,7 @@
       <li>Novo formato e programação preliminar para <b>2027</b></li>
       <li>Oportunidades e formas de adesão para os associados</li>
     </ul>
+    <a class="url" href="https://www.bluenauticalhubbrasil.com/" target="_blank" rel="noopener">www.bluenauticalhubbrasil.com</a>
   </section>
 
   <!-- 13 BIGUACU -->
@@ -350,6 +355,7 @@ document.getElementById('tela').onclick=telaCheia;
 
 /* clique/toque avança */
 document.getElementById('palco').addEventListener('click',function(e){
+  if(e.target.closest('a')) return;              /* clique em link: abre e mantem o slide */
   if(e.clientX < window.innerWidth*0.18) ir(i-1); else ir(i+1);
 });
 var x0=null;
