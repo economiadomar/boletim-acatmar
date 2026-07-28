@@ -11,6 +11,7 @@ estaticas, a foto de cada materia aparece no compartilhamento e o Google le o te
 Rode:  python3 build-noticias.py   (o publicar.sh ja chama automaticamente)
 """
 import re, os, json, html
+from PIL import Image
 
 BASE = "https://www.acatmar.org"
 LOGO = BASE + "/media/logos/acatmar-vertical-02.png"
@@ -21,6 +22,11 @@ MESES_EN = ['January','February','March','April','May','June','July','August','S
 def data_fmt(iso, en):
     a,m,d = iso.split('-'); mi=int(m)-1
     return f"{MESES_EN[mi]} {int(d)}, {a}" if en else f"{int(d)} de {MESES_PT[mi]} de {a}"
+
+def dimensoes(caminho):
+    try:
+        with Image.open(caminho) as im: return im.size
+    except Exception: return (1200, 630)
 
 def sem_html(s):
     return re.sub(r'\s+',' ', re.sub(r'<[^>]+>','', s)).strip()
@@ -90,6 +96,7 @@ def pagina(n, todas, en):
     url_pt = f"{BASE}/n/{n['id']}.html"
     url_en = f"{BASE}/en/n/{n['id']}.html"
     img    = f"{BASE}/{n['imagem']}"
+    iw, ih = dimensoes(n['imagem'])
     lang   = 'en' if en else 'pt-BR'
     tit_tab = html.escape(titulo) + " — ACATMAR"
     dsc = html.escape(desc)
@@ -118,8 +125,8 @@ def pagina(n, todas, en):
 <meta property="og:title" content="{html.escape(titulo)}">
 <meta property="og:description" content="{dsc}">
 <meta property="og:image" content="{img}">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image:width" content="{iw}">
+<meta property="og:image:height" content="{ih}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{html.escape(titulo)}">
 <meta name="twitter:description" content="{dsc}">
