@@ -95,8 +95,11 @@ def pagina(n, todas, en):
     url    = f"{BASE}/en/n/{n['id']}.html" if en else f"{BASE}/n/{n['id']}.html"
     url_pt = f"{BASE}/n/{n['id']}.html"
     url_en = f"{BASE}/en/n/{n['id']}.html"
-    img    = f"{BASE}/{n['imagem']}"
-    iw, ih = dimensoes(n['imagem'])
+    card_rel = f"media/share/{n['id']}.jpg"
+    if os.path.exists(card_rel):
+        img = f"{BASE}/{card_rel}"; iw, ih = 1200, 630
+    else:
+        img = f"{BASE}/{n['imagem']}"; iw, ih = dimensoes(n['imagem'])
     lang   = 'en' if en else 'pt-BR'
     tit_tab = html.escape(titulo) + " — ACATMAR"
     dsc = html.escape(desc)

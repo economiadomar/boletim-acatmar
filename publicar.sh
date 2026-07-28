@@ -21,6 +21,7 @@ echo "────────────────────────�
 
 # 1 e 2 — versão em inglês + sitemap ---------------------------------
 echo "1/4  Gerando páginas de notícias, versão em inglês e sitemap…"
+python3 build-cards.py | sed 's/^/     /'
 python3 build-noticias.py | sed 's/^/     /'
 python3 build-en.py | sed 's/^/     /'
 
