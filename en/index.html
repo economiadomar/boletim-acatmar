@@ -221,6 +221,8 @@
 
 
 
+
+
 <link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/">
 <link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/">
 <link rel="alternate" hreflang="x-default" href="https://www.acatmar.org/">
@@ -524,7 +526,7 @@ function edTitle(t){return LANG==='en'?t.replace('1º Semestre de','1st Half of'
 function renderNews(){
   var ng=document.getElementById('newsGrid'); if(!NEWS.length){return;} ng.innerHTML='';
   NEWS.slice(0,6).forEach(function(n){
-    var a=document.createElement('a'); a.className='news rev'; a.href='article.html?id='+n.id;
+    var a=document.createElement('a'); a.className='news rev'; a.href='/n/'+n.id+'.html';
     a.innerHTML='<div class="ph"><span class="cat">'+fld(n,'categoria')+'</span><img loading="lazy" src="'+n.imagem+'" alt="'+fld(n,'titulo')+'"></div>'+
       '<div class="bd"><div class="date">'+fmtData(n.data)+'</div><h3>'+fld(n,'titulo')+'</h3><p>'+fld(n,'resumo')+'</p><div class="more">'+tl('leiaMais')+'</div></div>';
     ng.appendChild(a);

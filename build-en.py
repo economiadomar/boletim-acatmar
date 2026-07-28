@@ -102,6 +102,7 @@ def para_en(t, pt_file, en_file):
            f'\n<link rel="alternate" hreflang="en" href="{canon_en}">'
            f'\n<link rel="alternate" hreflang="x-default" href="{canon_pt}">')
     t = t.replace('</head>', hre + '\n</head>', 1)
+    t = t.replace("'/n/'+id+'.html'", "'/en/n/'+id+'.html'")
     t = t.replace('<html lang="pt-BR">', '<html lang="en">', 1)
 
     # 6) conteudo carregado por JavaScript: corrige caminhos de media e links
@@ -175,7 +176,7 @@ for p, e, prio, freq in pares:
     add(f"{BASE}/{e}", prio, freq, alts=[("pt-BR", f"{BASE}/{p}"), ("en", f"{BASE}/{e}")])
 
 for n in sorted(json.load(open("noticias.json"))["noticias"], key=lambda a: a["data"], reverse=True):
-    pt_u = f"{BASE}/noticia.html?id={n['id']}"; en_u = f"{BASE}/en/article.html?id={n['id']}"
+    pt_u = f"{BASE}/n/{n['id']}.html"; en_u = f"{BASE}/en/n/{n['id']}.html"
     add(pt_u, "0.8", "monthly", n["data"], [("pt-BR", pt_u), ("en", en_u)])
     add(en_u, "0.8", "monthly", n["data"], [("pt-BR", pt_u), ("en", en_u)])
 for p in json.load(open("projetos.json"))["projetos"]:

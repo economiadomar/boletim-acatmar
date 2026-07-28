@@ -108,6 +108,8 @@
 
 
 
+
+
 <link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/noticias.html">
 <link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/news.html">
 <link rel="alternate" hreflang="x-default" href="https://www.acatmar.org/noticias.html">
@@ -185,7 +187,7 @@ var ALL=[];
 function render(){
   var grid=document.getElementById('grid'); grid.innerHTML='';
   ALL.forEach(function(n){
-    var a=document.createElement('a'); a.className='news'; a.href='noticia.html?id='+n.id;
+    var a=document.createElement('a'); a.className='news'; a.href='/n/'+n.id+'.html';
     a.innerHTML='<div class="ph"><span class="cat">'+fld(n,'categoria')+'</span><img loading="lazy" src="'+n.imagem+'" alt="'+fld(n,'titulo')+'"></div>'+
       '<div class="bd"><div class="date">'+fmtData(n.data)+'</div><h3>'+fld(n,'titulo')+'</h3><p>'+fld(n,'resumo')+'</p><div class="more">'+(EN?'Read more →':'Leia mais →')+'</div></div>';
     grid.appendChild(a);

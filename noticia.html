@@ -129,6 +129,8 @@
 
 
 
+
+
 <link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/noticia.html">
 <link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/article.html">
 <link rel="alternate" hreflang="x-default" href="https://www.acatmar.org/noticia.html">
@@ -195,6 +197,7 @@ function fmtData(iso){var pt=['janeiro','fevereiro','março','abril','maio','jun
   if(EN)document.querySelectorAll('.nl,.promobar [data-en],footer [data-en],.mobmenu [data-en]').forEach(function(x){x.textContent=x.getAttribute('data-en');});})();
 (async function(){
   var id=new URLSearchParams(location.search).get('id');
+  if(id){ location.replace('/n/'+id+'.html'); return; }   /* pagina estatica (foto no compartilhamento + SEO) */
   var art=document.getElementById('art');
   try{
     var d=await (await fetch('noticias.json?v='+Date.now())).json();

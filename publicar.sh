@@ -20,7 +20,8 @@ echo "🚢  PUBLICANDO O SITE DA ACATMAR"
 echo "───────────────────────────────────────────────"
 
 # 1 e 2 — versão em inglês + sitemap ---------------------------------
-echo "1/4  Gerando a versão em inglês e o sitemap…"
+echo "1/4  Gerando páginas de notícias, versão em inglês e sitemap…"
+python3 build-noticias.py | sed 's/^/     /'
 python3 build-en.py | sed 's/^/     /'
 
 # valida os arquivos de conteúdo antes de subir
