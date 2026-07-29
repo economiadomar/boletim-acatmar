@@ -171,7 +171,8 @@ def add(loc, prio, freq, last=None, alts=None):
     urls.append((loc, prio, freq, last or hoje, alts or []))
 
 pares = [("", "en/", "1.0", "weekly"), ("sobre.html", "en/about.html", "0.9", "monthly"),
-         ("noticias.html", "en/news.html", "0.9", "weekly"), ("associe-se.html", "en/join.html", "0.9", "monthly"),
+         ("noticias.html", "en/news.html", "0.9", "weekly"),
+         ("projetos.html", "en/projects.html", "0.9", "weekly"), ("associe-se.html", "en/join.html", "0.9", "monthly"),
          ("lei.html", "en/public-utility-law.html", "0.4", "yearly"),
          ("privacidade.html", "en/privacy-policy.html", "0.3", "yearly"),
          ("cookies.html", "en/cookie-policy.html", "0.3", "yearly")]
