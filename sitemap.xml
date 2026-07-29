@@ -129,6 +129,22 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://www.acatmar.org/n/gasolina-e10-mobilizacao-nautica.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/n/gasolina-e10-mobilizacao-nautica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/n/gasolina-e10-mobilizacao-nautica.html"/>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.acatmar.org/en/n/gasolina-e10-mobilizacao-nautica.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/n/gasolina-e10-mobilizacao-nautica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/n/gasolina-e10-mobilizacao-nautica.html"/>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.acatmar.org/n/coaf-evento-riscos-ldftp-2026.html</loc>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/n/coaf-evento-riscos-ldftp-2026.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/n/coaf-evento-riscos-ldftp-2026.html"/>
