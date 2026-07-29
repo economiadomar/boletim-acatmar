@@ -318,7 +318,9 @@
         "<b>Event:</b> 1st ACATMAR Forum · <b>Theme:</b> Nautical Infrastructure and Management · <b>Date:</b> March 28, 2014 · <b>Venue:</b> CentroSul, Florianópolis – Santa Catarina.",
         "<b>Held by:</b> ACATMAR – Brazilian Nautical Association and Sebrae/SC. <b>Organized by:</b> Jo Cintra Consultoria & Eventos and CentroSul – Florianópolis Convention Center.",
         "<b>Support:</b> Sebrae no Pódio, New Economy @ SC Program, Government of the State of Santa Catarina (State Secretariat for Sustainable Economic Development), Portinho França SC – Port of Porto Belo, Floripa Convention & Visitors Bureau, São Francisco do Sul Convention & Visitors Bureau, ABAV-SC, City of Florianópolis, Municipality of Itajaí, City of São José, Santa Catarina Convention & Visitors Bureau and Joinville & Region Convention & Visitors Bureau."
-      ]
+      ],
+      "parent": "forum-acatmar",
+      "ordem": 1
     }
   ]
 }
