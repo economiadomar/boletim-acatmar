@@ -56,6 +56,10 @@ def artigo_html(n, en):
     out += f'<div class="meta">{data_fmt(n["data"], en)}</div>'
     out += f'<img class="{hero_cls}" src="/{n["imagem"]}" alt="{html.escape(titulo)}">'
     if n.get('credito'): out += f'<div class="credito">{"Photo: " if en else "Foto: "}{html.escape(n["credito"])}</div>'
+    # CTA no topo (opcional): botao logo abaixo da capa
+    if n.get('link') and n.get('link_topo'):
+        label = (n.get('link_label_en') if en else n.get('link_label')) or ('Learn more' if en else 'Saiba mais')
+        out += f'<a class="more-link" href="{n["link"]}" target="_blank" rel="noopener">{html.escape(label)} →</a>'
     out += f'<div class="body">{body}</div>'
     g = n.get('galeria') or []
     if g:

@@ -58,7 +58,8 @@
       ],
       "link": "https://www12.senado.leg.br/ecidadania/visualizacaoideia?id=227319&voto=favor",
       "link_label": "Apoiar a proposta no Senado",
-      "link_label_en": "Support the proposal in the Senate"
+      "link_label_en": "Support the proposal in the Senate",
+      "link_topo": true
     },
     {
       "id": "coaf-evento-riscos-ldftp-2026",
