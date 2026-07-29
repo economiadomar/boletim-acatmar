@@ -1,6 +1,46 @@
 {
   "noticias": [
     {
+      "id": "coaf-evento-riscos-ldftp-2026",
+      "titulo": "Coaf promove evento sobre prevenção à lavagem de dinheiro em setores de alto valor; associados da ACATMAR podem participar",
+      "titulo_en": "Coaf holds event on money laundering prevention in high-value sectors; ACATMAR members can take part",
+      "categoria": "Institucional",
+      "categoria_en": "Institutional",
+      "data": "2026-07-29",
+      "imagem": "media/noticias/coaf-ldftp.jpg",
+      "sem_card": true,
+      "credito": "Divulgação ACATMAR / Coaf",
+      "galeria": [
+        "media/noticias/coaf-ldftp-info.jpg"
+      ],
+      "resumo": "O Conselho de Controle de Atividades Financeiras (Coaf) realiza, em setembro, duas edições presenciais de um evento sobre os riscos de lavagem de dinheiro nos setores de bens de luxo e de alto valor. As sessões acontecem em São Paulo e no Rio de Janeiro, são gratuitas e têm vagas limitadas.",
+      "resumo_en": "Brazil's Financial Activities Control Council (Coaf) holds two in-person editions of an event on money laundering risks in the luxury and high-value goods sectors this September, in São Paulo and Rio de Janeiro. They are free and have limited seats.",
+      "corpo": [
+        "O Conselho de Controle de Atividades Financeiras (Coaf), por meio de sua Diretoria de Supervisão, promove em setembro o evento <b>\"Riscos de LD/FTP nos setores de bens de luxo e de alto valor, joias, pedras e metais preciosos\"</b>. Serão duas edições presenciais e gratuitas, em São Paulo e no Rio de Janeiro, com vagas limitadas.",
+        "A iniciativa reúne órgãos públicos, entidades representativas e agentes dos setores regulados para discutir os riscos de lavagem de dinheiro, financiamento do terrorismo e financiamento da proliferação de armas de destruição em massa (LD/FTP), além de debater as perspectivas para o aprimoramento da regulamentação aplicável a esses setores.",
+        "O tema é de interesse direto da cadeia náutica: embarcações e outros ativos de alto valor integram os segmentos alcançados pelas políticas de prevenção, e as empresas que atuam com esses bens podem estar sujeitas a deveres de compliance. Acompanhar de perto a construção da nova regulação é uma oportunidade de qualificação e de segurança jurídica para o setor.",
+        "<b>São Paulo — Evento I</b>",
+        "Dias 3 e 4 de setembro de 2026 (dia 3, das 8h30 às 18h; dia 4, das 9h às 12h30). Auditório do Banco Central do Brasil — Avenida Paulista, 1.804, Bela Vista, São Paulo/SP. 15 vagas. Inscrições até <b>20 de agosto de 2026</b>, pelo formulário: https://forms.cloud.microsoft/r/EQkb7uZT0j",
+        "<b>Rio de Janeiro — Evento II</b>",
+        "Dias 23 e 24 de setembro de 2026 (dia 23, das 8h30 às 18h; dia 24, das 9h às 12h30). Auditório do Banco Central do Brasil — Avenida Presidente Vargas, 730, Centro, Rio de Janeiro/RJ. 15 vagas. Inscrições até <b>18 de setembro de 2026</b>, pelo formulário: https://forms.cloud.microsoft/r/CRW3sBB5rV",
+        "A programação inclui, entre outros temas: histórico e conceitos de PLD/FTP; o Sistema Brasileiro de PLD/FTP e os deveres dos sujeitos obrigados; a evolução da prevenção no setor financeiro (com Banco Central, Febraban e ABBC); a visão do Coaf e dos órgãos de investigação e persecução (Polícia Federal, Ministério Público e Polícia Civil) sobre os setores de bens de luxo e alto valor; e as perspectivas para a nova regulação, com debate e encerramento no segundo dia.",
+        "As inscrições devem ser feitas diretamente pelos formulários de cada edição, respeitados os prazos. As vagas são limitadas.",
+        "A ACATMAR mantém seus associados informados sobre as discussões que moldam o futuro do setor, aproximando o segmento náutico das instâncias públicas responsáveis pela regulação e pela integridade do ambiente de negócios."
+      ],
+      "corpo_en": [
+        "Brazil's Financial Activities Control Council (Coaf), through its Supervision Directorate, is holding the event <b>\"LD/FTP risks in the luxury and high-value goods, jewelry, gems and precious metals sectors\"</b> in September. There will be two free in-person editions, in São Paulo and Rio de Janeiro, with limited seats.",
+        "The initiative brings together public bodies, representative organizations and players from the regulated sectors to discuss the risks of money laundering, terrorism financing and financing of the proliferation of weapons of mass destruction (LD/FTP), as well as the prospects for improving the applicable regulation.",
+        "The topic is of direct interest to the nautical chain: vessels and other high-value assets are among the segments covered by prevention policies, and companies dealing with such goods may be subject to compliance duties. Following the shaping of the new regulation closely is an opportunity for qualification and legal certainty for the sector.",
+        "<b>São Paulo — Event I</b>",
+        "September 3 and 4, 2026 (Sept 3, 8:30 am to 6 pm; Sept 4, 9 am to 12:30 pm). Central Bank of Brazil Auditorium — Avenida Paulista, 1,804, Bela Vista, São Paulo/SP. 15 seats. Registration until <b>August 20, 2026</b>: https://forms.cloud.microsoft/r/EQkb7uZT0j",
+        "<b>Rio de Janeiro — Event II</b>",
+        "September 23 and 24, 2026 (Sept 23, 8:30 am to 6 pm; Sept 24, 9 am to 12:30 pm). Central Bank of Brazil Auditorium — Avenida Presidente Vargas, 730, Centro, Rio de Janeiro/RJ. 15 seats. Registration until <b>September 18, 2026</b>: https://forms.cloud.microsoft/r/CRW3sBB5rV",
+        "The program includes, among other topics: the history and concepts of AML/CFT; the Brazilian AML/CFT system and the duties of obligated persons; the evolution of prevention in the financial sector (with the Central Bank, Febraban and ABBC); the view of Coaf and of the investigation and prosecution bodies (Federal Police, Public Prosecutor's Office and Civil Police) on the luxury and high-value sectors; and the prospects for the new regulation, with debate and closing on the second day.",
+        "Registration must be made directly through each edition's form, within the deadlines. Seats are limited.",
+        "ACATMAR keeps its members informed about the discussions shaping the future of the sector, bringing the nautical segment closer to the public bodies responsible for regulation and for the integrity of the business environment."
+      ]
+    },
+    {
       "id": "palestra-ronaldo-taranto-vendas",
       "titulo": "Palestra de Ronaldo Taranto propõe um novo olhar sobre vendas e gera oportunidade de mentoria para associados da ACATMAR",
       "titulo_en": "Ronaldo Taranto's talk offers a new view on sales and creates a mentoring opportunity for ACATMAR members",

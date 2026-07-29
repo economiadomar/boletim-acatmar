@@ -86,6 +86,11 @@ def make_card(foto, titulo, saida):
 def main():
     todas = json.load(open("noticias.json", encoding="utf-8"))["noticias"]
     for n in todas:
+        if n.get("sem_card"):            # a imagem ja e um card pronto de compartilhamento
+            import os
+            p=f"media/share/{n['id']}.jpg"
+            if os.path.exists(p): os.remove(p)
+            continue
         make_card(n["imagem"], n["titulo"], f"media/share/{n['id']}.jpg")
     print(f"{len(todas)} cards de compartilhamento gerados em media/share/")
 
