@@ -561,6 +561,22 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.acatmar.org/projeto.html?id=i-forum-acatmar-2014</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/projeto.html?id=i-forum-acatmar-2014"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/project.html?id=i-forum-acatmar-2014"/>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.acatmar.org/en/project.html?id=i-forum-acatmar-2014</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/projeto.html?id=i-forum-acatmar-2014"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/project.html?id=i-forum-acatmar-2014"/>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.acatmar.org/viewer.html?ed=2026-1</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>yearly</changefreq>
