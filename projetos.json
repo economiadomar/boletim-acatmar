@@ -395,6 +395,60 @@
       "galeria_inteira": [
         "media/projetos/ii-forum-flyer.jpg"
       ]
+    },
+    {
+      "id": "iii-forum-acatmar-2023",
+      "nome": "III Fórum de Capacitação Técnica ACATMAR (2023)",
+      "nome_en": "3rd ACATMAR Technical Training Forum (2023)",
+      "tagline": "Os 15 anos da ACATMAR marcados por uma grande imersão em capacitação náutica",
+      "tagline_en": "ACATMAR's 15th anniversary marked by a major immersion in nautical training",
+      "imagem": "media/projetos/iii-forum-hero.jpg",
+      "parent": "forum-acatmar",
+      "ordem": 3,
+      "resumo": "Realizado durante a Fenaostra, no CentroSul, em Florianópolis, o encontro reuniu estudantes, empresários, profissionais e interessados em ingressar no setor para um dia inteiro de conhecimento prático, atualização e relacionamento.",
+      "resumo_en": "Held during Fenaostra, at CentroSul in Florianópolis, the event brought together students, entrepreneurs, professionals and people interested in entering the sector for a full day of practical knowledge, updating and networking.",
+      "galeria_inteira": [
+        "media/projetos/iii-forum-grupo.jpg"
+      ],
+      "corpo": [
+        "No dia 31 de outubro de 2023, a ACATMAR realizou o III Fórum Técnico ACATMAR – 15 anos, durante a Fenaostra, no CentroSul, em Florianópolis. Das 8h às 19h, o evento proporcionou uma experiência intensa de capacitação para estudantes, empreendedores, marinheiros, prestadores de serviços, profissionais da área e pessoas interessadas em iniciar uma nova trajetória dentro da cadeia produtiva náutica.",
+        "A terceira edição representou uma nova etapa na história dos Fóruns ACATMAR. Depois de discutir infraestrutura, gestão, políticas públicas, incentivos e novas oportunidades de mercado nas edições anteriores, o encontro de 2023 teve como foco principal a formação técnica e prática das pessoas que fazem o setor acontecer.",
+        "A programação reuniu conteúdos sobre navegação, segurança, comunicação, manutenção, tecnologia, energia a bordo, sustentabilidade e experiências relacionadas ao turismo náutico, condensando diferentes áreas de aprendizado em um único dia de imersão.",
+        "<i>\"A meta é capacitar aqueles envolvidos com o setor, renovando suas habilidades e o foco no que há de mais moderno neste segmento\", afirmou Leandro \"Mané\" Ferrari, presidente da ACATMAR.</i>",
+        "<b>Capacitação para as novas oportunidades do setor</b>",
+        "O III Fórum foi realizado em um momento de crescimento da atividade náutica e de preparação para novos projetos de infraestrutura em Santa Catarina. Entre essas perspectivas estava o futuro Parque Urbano e Marina Beira-Mar Norte, em Florianópolis, apontado pela ACATMAR como um empreendimento com capacidade para movimentar a economia, gerar empregos e ampliar a procura por profissionais qualificados.",
+        "A proposta do evento foi aproximar a formação das necessidades reais encontradas nas embarcações, nas marinas, nas empresas e nas operações náuticas.",
+        "<i>\"Será a oportunidade de um relacionamento com especialistas e profissionais do setor em todas as suas áreas. A chance de formar alianças para o impulsionamento das trajetórias profissionais\", destacou Ferrari.</i>",
+        "Mais do que oferecer conteúdo teórico, o Fórum foi estruturado para apresentar experiências aplicáveis à rotina dos participantes, permitindo que os conhecimentos adquiridos pudessem ser utilizados no trabalho, na navegação e na prestação de serviços. <i>\"Queremos que os participantes vivenciem situações reais, aplicando soluções inovadoras\", reforçou o presidente da ACATMAR.</i>",
+        "<b>Navegação e uso da carta náutica</b>",
+        "Entre os conteúdos apresentados esteve \"O melhor uso da carta náutica – Curso Navionics\". A atividade demonstrou a importância do correto uso das ferramentas de navegação para o planejamento de rotas, a identificação de riscos e a tomada de decisões mais seguras durante a condução das embarcações. O conteúdo reforçou que os equipamentos eletrônicos ampliam a capacidade do navegador, mas precisam ser acompanhados de conhecimento, preparo e responsabilidade.",
+        "<b>Comunicação pelo rádio VHF</b>",
+        "A utilização correta do rádio VHF também integrou a programação. A atividade apresentou orientações para uma comunicação mais clara, objetiva e eficiente entre embarcações, marinas, autoridades e equipes de apoio. Em situações de emergência, o domínio dos procedimentos de comunicação pode ser decisivo para acelerar o atendimento e preservar vidas.",
+        "<b>Atualização das regras de navegação</b>",
+        "O Fórum também promoveu a atualização dos participantes sobre as normas e os procedimentos aplicáveis à atividade náutica. O conteúdo foi direcionado a condutores, marinheiros, proprietários de embarcações, gestores de marinas e empresas prestadoras de serviços, reforçando a necessidade de acompanhar permanentemente as determinações da Autoridade Marítima. Além de evitar irregularidades, o conhecimento das normas contribui para uma navegação mais organizada e segura.",
+        "<b>Segurança da vida humana no mar</b>",
+        "Um dos temas centrais da programação foi \"Manutenção da vida humana no mar: o que fazer em caso de naufrágio?\". A atividade apresentou orientações relacionadas à prevenção de acidentes, à preparação da tripulação, à utilização dos equipamentos de segurança e às primeiras providências adotadas em uma emergência. O conteúdo demonstrou que a segurança começa antes da embarcação deixar o local de partida, por meio do planejamento, da manutenção preventiva e da organização dos equipamentos de salvatagem.",
+        "<b>Manutenção e falhas no motor</b>",
+        "As orientações práticas sobre o que fazer quando o motor falhar também integraram a programação. O conteúdo ajudou os participantes a reconhecer sinais de problemas, adotar os primeiros procedimentos de forma segura e compreender a importância da manutenção preventiva. Para quem trabalha diretamente com embarcações, saber identificar uma falha e reagir corretamente pode evitar danos maiores e reduzir riscos para passageiros e tripulantes.",
+        "<b>Tecnologia e sistemas integrados a bordo</b>",
+        "As tecnologias embarcadas tiveram espaço de destaque no III Fórum. A apresentação sobre sistemas integrados mostrou como diferentes equipamentos eletrônicos podem compartilhar informações e funcionar de maneira coordenada, ampliando a segurança, o controle e a eficiência da navegação. A modernização das embarcações também reforça a necessidade de profissionais qualificados para instalar, operar e realizar a manutenção dos equipamentos.",
+        "<b>Geradores e energia nas embarcações</b>",
+        "A programação incluiu orientações para o bom funcionamento dos geradores e dos sistemas responsáveis pelo fornecimento de energia a bordo. A atividade apresentou cuidados importantes de operação e manutenção, contribuindo para prevenir falhas e garantir o funcionamento adequado dos equipamentos elétricos e eletrônicos.",
+        "<b>Gastronomia e experiências a bordo</b>",
+        "O Fórum também abordou a harmonização de drinks com a gastronomia a bordo. O conteúdo ampliou a visão sobre a cadeia produtiva ao demonstrar que a experiência náutica envolve hospitalidade, turismo, alimentação e qualidade no atendimento aos passageiros. A integração desses serviços cria novas possibilidades profissionais e comerciais, especialmente em embarcações destinadas a passeios, eventos e turismo.",
+        "<b>Sustentabilidade aplicada à atividade náutica</b>",
+        "A proteção ambiental esteve presente no tema \"Como cuidar das embarcações protegendo o meio ambiente\". A atividade apresentou práticas capazes de reduzir impactos, melhorar a gestão dos resíduos e estimular uma relação mais responsável com os mares, rios e áreas costeiras. A sustentabilidade foi abordada como parte da rotina do setor e como responsabilidade compartilhada entre empresas, proprietários, tripulações e usuários.",
+        "<b>Relacionamento e novas trajetórias profissionais</b>",
+        "Além da capacitação, o III Fórum criou um ambiente de aproximação entre estudantes, especialistas, profissionais, empresas e instituições. O relacionamento durante o evento possibilitou a troca de experiências, a formação de parcerias, o conhecimento de novas áreas de atuação e a construção de caminhos profissionais dentro da Economia do Mar. O encontro também abriu espaço para pessoas interessadas em conhecer melhor o setor e avaliar novas possibilidades de formação e trabalho.",
+        "<b>Um Fórum voltado a quem faz o setor acontecer</b>",
+        "O III Fórum Técnico ACATMAR consolidou a evolução do projeto iniciado em 2014. A primeira edição colocou a infraestrutura e a gestão náutica no centro do debate. A segunda apresentou novas oportunidades, tecnologias, incentivos e modelos de negócios. Já a terceira avançou para uma grande imersão voltada à prática, à atualização e à qualificação das pessoas responsáveis pelo funcionamento diário da cadeia náutica.",
+        "Realizado no ano em que a ACATMAR completou 15 anos de atuação, o encontro reforçou que o crescimento da Economia do Mar depende de investimentos e infraestrutura, mas também de profissionais preparados, formação contínua, segurança operacional e conhecimento técnico.",
+        "<b>Programação temática</b>",
+        "O melhor uso da carta náutica — Curso Navionics<br>Comunicação eficaz pelo rádio VHF<br>Novas regras de navegação<br>Manutenção da vida humana no mar: o que fazer em caso de naufrágio<br>Dicas de manutenção: o que fazer quando o motor falhar<br>Tecnologia a bordo: os novos sistemas integrados<br>Harmonização de drinks com a gastronomia a bordo<br>Dicas para o bom funcionamento do gerador<br>Como cuidar das embarcações protegendo o meio ambiente",
+        "<b>Ficha técnica</b>",
+        "<b>Evento:</b> III Fórum Técnico ACATMAR – 15 anos · <b>Data:</b> 31 de outubro de 2023 · <b>Horário:</b> das 8h às 19h · <b>Local:</b> Fenaostra — CentroSul, Sala Joaquina, Florianópolis – Santa Catarina · <b>Formato:</b> imersão técnica e prática de capacitação do setor náutico.",
+        "<b>Realização:</b> ACATMAR – Associação Náutica Brasileira. <b>Patrocínio:</b> Electra Service. <b>Apoio:</b> Prefeitura de Florianópolis, Movimento Floripa Sustentável, Projeto Limpeza dos Mares e Mundo Mar."
+      ]
     }
   ]
 }
