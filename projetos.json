@@ -334,11 +334,22 @@
       "resumo": "Realizado em 14 de junho de 2022, no Majestic Palace Hotel, em Florianópolis, o II Fórum reuniu empresários, especialistas e poder público para debater tecnologia, incentivos, sustentabilidade e infraestrutura para a Economia do Mar.",
       "resumo_en": "Held on June 14, 2022, at the Majestic Palace Hotel in Florianópolis, the 2nd Forum brought together entrepreneurs, specialists and public authorities to debate technology, incentives, sustainability and infrastructure for the Sea Economy.",
       "galeria": [
-        "media/projetos/ii-forum-flyer.jpg",
         "media/projetos/ii-forum-2.jpg",
         "media/projetos/ii-forum-3.jpg",
         "media/projetos/ii-forum-4.jpg",
-        "media/projetos/ii-forum-5.jpg"
+        "media/projetos/ii-forum-5.jpg",
+        "media/projetos/ii-forum-6.jpg",
+        "media/projetos/ii-forum-7.jpg",
+        "media/projetos/ii-forum-8.jpg",
+        "media/projetos/ii-forum-9.jpg",
+        "media/projetos/ii-forum-10.jpg",
+        "media/projetos/ii-forum-11.jpg",
+        "media/projetos/ii-forum-12.jpg",
+        "media/projetos/ii-forum-13.jpg",
+        "media/projetos/ii-forum-14.jpg",
+        "media/projetos/ii-forum-15.jpg",
+        "media/projetos/ii-forum-16.jpg",
+        "media/projetos/ii-forum-17.jpg"
       ],
       "corpo": [
         "No dia 14 de junho de 2022, a ACATMAR realizou o II Fórum ACATMAR, no Majestic Palace Hotel, em Florianópolis. Com o conceito \"Um mar de possibilidades\", o encontro promoveu um dia de conhecimento, atualização e integração entre diferentes representantes da cadeia produtiva náutica.",
@@ -377,11 +388,12 @@
         "<b>Uma nova etapa dos Fóruns ACATMAR</b>",
         "O II Fórum ACATMAR demonstrou o amadurecimento da cadeia produtiva e a ampliação dos debates relacionados ao setor náutico. Enquanto a edição de 2014 foi marcada pela necessidade de apresentar o potencial da atividade e defender investimentos básicos em infraestrutura, o segundo encontro mostrou um mercado que já discutia energia limpa, compartilhamento de embarcações, certificações ambientais, incentivos econômicos, integração tecnológica e novos projetos urbanos.",
         "A realização consolidou os Fóruns ACATMAR como espaços de capacitação, relacionamento, atualização e construção de soluções para a indústria, o comércio, os serviços e o turismo náutico.",
-        "<b>Programação</b>",
-        "9h — Abertura · 9h15 — Marina, Gestão e Meio Ambiente (eng. Alex Juk) · 10h — Desenvolvimento de Sistema Fotovoltaico para Embarcações e a Cultura Náutica da Europa (Vanir Tiscoski Junior) · 10h45 — Proteção de embarcações com tintas náuticas abaixo e acima da linha d'água (Roberto Deschamps) · 11h30 — Conceito inovador de compra compartilhada de embarcações (Moacir Andrade e Miguel Barreto) · 12h15 — Intervalo para almoço.",
-        "13h — Bandeira Azul para marinas, clubes e embarcações de turismo (Michele Castilho) · 13h45 — Medidas de incentivo e fomento à indústria náutica no estado: Programa Pró-Náutica e Invest SC (Mozart de Leon) · 14h30 — Conhecendo melhor o tão sonhado Parque Urbano e Marina Beira-Mar (Juliana Castro e Silvana Carlevaro Jobim) · 15h15 — ACATMAR: o valor do associativismo e os projetos (Leandro \"Mané\" Ferrari) · 16h — Integração dos eletrônicos a bordo (Márcio Evangelista) · 16h45 — Sorteio de brindes · 17h — Encerramento.",
+        "<b>Programação</b><br>9h — Abertura<br>9h15 — Marina, Gestão e Meio Ambiente · eng. Alex Juk<br>10h — Desenvolvimento de Sistema Fotovoltaico para Embarcações e a Cultura Náutica da Europa · Vanir Tiscoski Junior<br>10h45 — Proteção de embarcações com tintas náuticas abaixo e acima da linha d'água · Roberto Deschamps<br>11h30 — Conceito inovador de compra compartilhada de embarcações · Moacir Andrade e Miguel Barreto<br>12h15 — Intervalo para almoço<br>13h — Bandeira Azul para marinas, clubes e embarcações de turismo · Michele Castilho<br>13h45 — Medidas de incentivo e fomento à indústria náutica no estado: Programa Pró-Náutica e Invest SC · Mozart de Leon<br>14h30 — Conhecendo melhor o tão sonhado Parque Urbano e Marina Beira-Mar · Juliana Castro e Silvana Carlevaro Jobim<br>15h15 — ACATMAR: o valor do associativismo e os projetos · Leandro \"Mané\" Ferrari<br>16h — Integração dos eletrônicos a bordo · Márcio Evangelista<br>16h45 — Sorteio de brindes<br>17h — Encerramento",
         "<b>Ficha técnica</b>",
         "<b>Evento:</b> II Fórum ACATMAR · <b>Conceito:</b> Um mar de possibilidades · <b>Data:</b> 14 de junho de 2022 · <b>Horário:</b> das 9h às 17h · <b>Local:</b> Majestic Palace Hotel, Florianópolis – Santa Catarina · <b>Realização:</b> ACATMAR – Associação Náutica Brasileira."
+      ],
+      "galeria_inteira": [
+        "media/projetos/ii-forum-flyer.jpg"
       ]
     }
   ]

@@ -59,6 +59,13 @@
   .gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;background:var(--navy);display:block}
   .gallery img:first-child{grid-column:1/-1;aspect-ratio:16/9}
   @media(max-width:600px){.gallery{grid-template-columns:1fr}.gallery img:first-child{aspect-ratio:4/3}}
+  .gallery-full{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin:.4rem 0 1rem}
+  .gallery-full img{max-width:100%;width:auto;max-height:640px;border-radius:14px;display:block;box-shadow:0 12px 30px rgba(10,37,64,.14)}
+  .edicoes{margin:1.6rem 0 .4rem}
+  .edicoes h2{font-family:'Oswald';font-weight:600;text-transform:uppercase;color:var(--navy);font-size:1.3rem;margin-bottom:.8rem}
+  .edicoes a{display:flex;align-items:center;justify-content:space-between;gap:1rem;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:12px;padding:1rem 1.2rem;margin-bottom:.6rem;text-decoration:none;color:var(--navy);font-family:'Oswald';font-weight:600;transition:transform .15s,box-shadow .15s}
+  .edicoes a:hover{transform:translateX(4px);box-shadow:0 8px 20px rgba(10,37,64,.12)}
+  .edicoes a svg{width:18px;height:18px;color:var(--teal-d);flex-shrink:0}
   .hero{position:relative;color:#fff;overflow:hidden;background:radial-gradient(130% 120% at 78% -20%,#155a86 0%,var(--navy) 45%,var(--deep) 100%)}
   .hero.haspic{background:var(--navy)}
   .hero .pic{position:absolute;inset:0;opacity:.32;object-fit:cover;object-position:center 28%;width:100%;height:100%}
@@ -108,6 +115,7 @@
   footer .pol a{color:var(--teal-b);text-decoration:none}
   @media(max-width:760px){footer .info{grid-template-columns:repeat(2,1fr)}}
 </style>
+
 
 
 
@@ -238,8 +246,11 @@ function tx(k){return TX[k][EN?'en':'pt'];}
       '<div class="eyebrow">'+tx('eyebrow')+'</div><h1>'+fld(p,'nome')+'</h1>'+
       (fld(p,'tagline')?'<div class="tag">'+fld(p,'tagline')+'</div>':'');
     var gal=(p.galeria&&p.galeria.length)?'<div class="gallery">'+p.galeria.map(function(s){return '<img loading="lazy" src="'+s+'" alt="'+fld(p,'nome')+'">';}).join('')+'</div>':'';
+    var galf=(p.galeria_inteira&&p.galeria_inteira.length)?'<div class="gallery-full">'+p.galeria_inteira.map(function(s){return '<img loading="lazy" src="'+s+'" alt="'+fld(p,'nome')+'">';}).join('')+'</div>':'';
+    var filhos=all.filter(function(x){return x.parent===p.id;}).sort(function(a,b){return (a.ordem||0)-(b.ordem||0);});
+    var edic=filhos.length?'<div class="edicoes"><h2>'+(EN?'Editions':'Edições')+'</h2>'+filhos.map(function(f){return '<a href="project.html?id='+f.id+'"><span>'+fld(f,'nome')+'</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>';}).join('')+'</div>':'';
     document.getElementById('art').innerHTML=
-      fld(p,'corpo').map(function(x){return '<p>'+x+'</p>';}).join('')+gal+
+      fld(p,'corpo').map(function(x){return '<p>'+x+'</p>';}).join('')+galf+gal+edic+
       '<div class="cta"><h2>'+tx('ctaH')+'</h2><p>'+tx('ctaP')+'</p>'+
       '<a class="btn" href="join.html">'+tx('join')+'</a></div>';
     document.querySelector('#others h2').textContent=tx('others');
@@ -255,6 +266,7 @@ function tx(k){return TX[k][EN?'en':'pt'];}
 </script>
 <script src="../assets/cookie-consent.js" defer></script>
 <script>(function(){var hb=document.getElementById('hambBtn'),mm=document.getElementById('mobmenu');if(!hb||!mm)return;hb.addEventListener('click',function(){var o=mm.classList.toggle('open');hb.textContent=o?'\u2715':'\u2630';});mm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mm.classList.remove('open');hb.textContent='\u2630';});});})();</script>
+<script src="/assets/nav-projetos.js" defer></script>
 
 <script>
 /* /en/ fica um nivel abaixo: ajusta caminhos de midia e links vindos do JSON */
