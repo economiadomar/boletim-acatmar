@@ -144,6 +144,7 @@
 
 
 
+
 <link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/projeto.html">
 <link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/project.html">
 <link rel="alternate" hreflang="x-default" href="https://www.acatmar.org/projeto.html">
@@ -249,7 +250,7 @@ function tx(k){return TX[k][EN?'en':'pt'];}
     })();
 
     var hero=document.getElementById('hero');
-    if(p.imagem && !p.hero_sem_foto){ hero.classList.add('haspic'); var im=document.createElement('img'); im.className='pic'; im.src=p.imagem; im.alt=''; hero.insertBefore(im,hero.firstChild); }
+    if(p.imagem && !p.hero_sem_foto){ hero.classList.add('haspic'); var im=document.createElement('img'); im.className='pic'; im.src=p.imagem; im.alt=''; if(p.hero_pos) im.style.objectPosition=p.hero_pos; hero.insertBefore(im,hero.firstChild); }
     document.getElementById('herowr').innerHTML=
       '<a class="back" href="index.html#projetos">'+tx('back')+'</a>'+
       '<div class="eyebrow">'+tx('eyebrow')+'</div><h1>'+fld(p,'nome')+'</h1>'+
