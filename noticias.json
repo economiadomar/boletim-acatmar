@@ -1,6 +1,48 @@
 {
   "noticias": [
     {
+      "id": "economia-do-mar-emprego-renda-sc",
+      "titulo": "Economia do Mar em expansão gera emprego e renda em Santa Catarina",
+      "titulo_en": "Sea Economy on the rise generates jobs and income in Santa Catarina",
+      "categoria": "Economia do Mar",
+      "categoria_en": "Sea Economy",
+      "data": "2026-08-04",
+      "imagem": "media/noticias/economia-do-mar-setor.jpg",
+      "credito": "Divulgação ACATMAR",
+      "resumo": "De novas fábricas a grandes marinas e projetos de infraestrutura, o setor náutico catarinense vive um ciclo de crescimento que se traduz em vagas de trabalho, qualificação e desenvolvimento. Boa parte dessas empresas é associada da ACATMAR.",
+      "resumo_en": "From new factories to large marinas and infrastructure projects, Santa Catarina's nautical sector is going through a growth cycle that translates into jobs, training and development. Many of these companies are ACATMAR members.",
+      "corpo": [
+        "A Economia do Mar tem mostrado, na prática, sua força como geradora de emprego e renda. Santa Catarina vive um ciclo de expansão que vai das fábricas de embarcações às marinas e aos projetos de infraestrutura, movimentando toda a cadeia produtiva: indústria, comércio, serviços, turismo e formação profissional. Muitas das empresas à frente desse movimento são associadas da ACATMAR.",
+        "<b>Fábricas ampliando e contratando</b>",
+        "A Fibrafort, maior fabricante de barcos da América Latina, dobrou a área de sua planta em Itajaí, de cerca de 10 mil para 20 mil metros quadrados. Em 2025, superou 600 barcos produzidos, com meta de chegar a mil embarcações por ano até 2032, e hoje emprega mais de 400 profissionais na fabricação de modelos de 18 a 42 pés, voltados a um público amplo.",
+        "O movimento se repete pelo polo de Itajaí. A Azimut ampliou sua unidade e projeta crescer o quadro de cerca de 600 para 800 trabalhadores, tendo aberto recentemente 100 vagas para funções como marceneiros, montadores, mecânicos, eletricistas, acabadores e pintores. Já o estaleiro Okean gera cerca de 500 empregos diretos e exporta 70% da produção. Juntas, essas empresas ajudam a explicar por que Itajaí responde por cerca de 35% da produção nacional de embarcações e por 70% da fabricação catarinense.",
+        "<b>Marinas e novos complexos de serviços</b>",
+        "O crescimento também aparece na infraestrutura. A Marina Itajaí, maior complexo náutico do Sul do país e associada da ACATMAR, constrói o Boulevard Marina Itajaí, apontado como o primeiro shopping náutico do Brasil: são cerca de R$ 100 milhões de investimento, aproximadamente 38 mil metros quadrados e perto de 78 operações comerciais, entre restaurantes, supermercado, áreas de eventos e coworking, com entrega prevista para o fim de 2026. Só no primeiro trimestre de 2026, a movimentação da marina cresceu 15%.",
+        "Em Florianópolis, o projeto do Parque Urbano e Marina da Beira-Mar Norte, estimado em R$ 350 milhões, entrou em nova fase, com licença ambiental e obras iniciadas. O empreendimento prevê um parque público de convivência e lazer integrado a uma marina com vagas molhadas de uso público, reconectando a cidade ao mar e ampliando o acesso da população à orla.",
+        "<b>O setor náutico brasileiro em números</b>",
+        "Segundo a Acobar, o setor náutico responde por cerca de 150 mil postos de trabalho diretos e indiretos no país. A produção de embarcações recreativas praticamente dobrou entre 2019 e 2025, saltando de 4,5 mil para 8,6 mil unidades por ano. Ainda assim, o Brasil convive com um déficit estimado em 60 mil vagas náuticas, o que revela o tamanho do potencial ainda por explorar, e cada nova marina, fábrica ou estrutura de apoio significa mais emprego e renda.",
+        "<b>Gente qualificada para sustentar o crescimento</b>",
+        "Todo esse avanço depende de mão de obra preparada. Por isso, a ACATMAR e o Instituto Federal de Santa Catarina (IFSC) desenvolvem o projeto Marina-Escola, voltado a formar profissionais para a manutenção, a operação e os serviços náuticos, além da hospitalidade e da gastronomia ligadas ao turismo náutico. A proposta é criar um modelo inovador de marina-escola no Brasil, unindo capacitação, geração de emprego e desenvolvimento da Economia do Mar.",
+        "<b>Uma economia que move o presente e o futuro</b>",
+        "Os números confirmam o que a ACATMAR defende há anos: a Economia do Mar é uma potência de desenvolvimento para Santa Catarina e para o Brasil. Não se trata apenas de barcos, mas de uma cadeia que gera empregos, forma profissionais, atrai investimentos e sustenta comunidades inteiras. Cuidar desse setor, qualificar pessoas e defender políticas públicas adequadas é investir no futuro do país."
+      ],
+      "corpo_en": [
+        "The Sea Economy has been showing, in practice, its strength as a generator of jobs and income. Santa Catarina is experiencing a cycle of expansion that ranges from boatbuilding factories to marinas and infrastructure projects, driving the entire production chain: industry, trade, services, tourism and professional training. Many of the companies leading this movement are ACATMAR members.",
+        "<b>Factories expanding and hiring</b>",
+        "Fibrafort, the largest boat manufacturer in Latin America, doubled the area of its plant in Itajaí, from about 10,000 to 20,000 square meters. In 2025, it surpassed 600 boats produced, aiming to reach a thousand boats per year by 2032, and today employs more than 400 professionals building models from 18 to 42 feet, aimed at a broad public.",
+        "The movement repeats across the Itajaí hub. Azimut expanded its unit and expects to grow its workforce from around 600 to 800 workers, having recently opened 100 positions for roles such as carpenters, assemblers, mechanics, electricians, finishers and painters. The Okean shipyard generates about 500 direct jobs and exports 70% of its production. Together, these companies help explain why Itajaí accounts for about 35% of national boat production and 70% of Santa Catarina's output.",
+        "<b>Marinas and new service complexes</b>",
+        "Growth also appears in infrastructure. Marina Itajaí, the largest nautical complex in southern Brazil and an ACATMAR member, is building the Boulevard Marina Itajaí, described as Brazil's first nautical shopping mall: around R$ 100 million in investment, roughly 38,000 square meters and close to 78 commercial operations, including restaurants, a supermarket, event areas and coworking, with delivery expected by the end of 2026. In the first quarter of 2026 alone, the marina's activity grew 15%.",
+        "In Florianópolis, the Beira-Mar Norte Urban Park and Marina project, estimated at R$ 350 million, entered a new phase, with environmental licensing and works underway. The development foresees a public park for leisure and gathering integrated with a marina offering public wet slips, reconnecting the city to the sea and expanding public access to the waterfront.",
+        "<b>Brazil's nautical sector in numbers</b>",
+        "According to Acobar, the nautical sector accounts for about 150,000 direct and indirect jobs in the country. Production of recreational boats nearly doubled between 2019 and 2025, jumping from 4,500 to 8,600 units per year. Even so, Brazil faces an estimated shortage of 60,000 nautical berths, which reveals the size of the potential still to be explored, and each new marina, factory or support structure means more jobs and income.",
+        "<b>Qualified people to sustain the growth</b>",
+        "All this progress depends on a prepared workforce. That is why ACATMAR and the Federal Institute of Santa Catarina (IFSC) are developing the Marina-School project, aimed at training professionals for the maintenance, operation and services of boats, as well as the hospitality and gastronomy linked to nautical tourism. The goal is to create an innovative marina-school model in Brazil, uniting training, job creation and the development of the Sea Economy.",
+        "<b>An economy that moves the present and the future</b>",
+        "The numbers confirm what ACATMAR has defended for years: the Sea Economy is a development powerhouse for Santa Catarina and for Brazil. It is not only about boats, but about a chain that generates jobs, trains professionals, attracts investment and sustains entire communities. Caring for this sector, qualifying people and defending adequate public policies is investing in the country's future."
+      ]
+    },
+    {
       "id": "cofradia-europea-vela-roma-2026",
       "titulo": "Cofradía Europea de la Vela prepara solene investidura em Roma, com participação ligada ao Brasil",
       "titulo_en": "Cofradía Europea de la Vela prepares solemn investiture in Rome, with ties to Brazil",
