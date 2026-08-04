@@ -1,6 +1,46 @@
 {
   "noticias": [
     {
+      "id": "cofradia-europea-vela-roma-2026",
+      "titulo": "Cofradía Europea de la Vela prepara solene investidura em Roma, com participação ligada ao Brasil",
+      "titulo_en": "Cofradía Europea de la Vela prepares solemn investiture in Rome, with ties to Brazil",
+      "categoria": "Internacional",
+      "categoria_en": "International",
+      "data": "2026-08-03",
+      "imagem": "media/noticias/cofradia-roma.jpg",
+      "credito": "Mundo Mar",
+      "galeria": [
+        "media/noticias/cofradia-sc-bnh.jpg"
+      ],
+      "resumo": "Depois de estar em Florianópolis, em abril, durante o Blue Nautical HUB Brasil, a Cofradía Europea de la Vela prepara para novembro de 2026 uma grande solenidade de investidura em Roma, na Itália, com passagem pelo Vaticano.",
+      "resumo_en": "After visiting Florianópolis in April during Blue Nautical HUB Brasil, the Cofradía Europea de la Vela is preparing a major investiture ceremony in Rome, Italy, in November 2026, including the Vatican.",
+      "corpo": [
+        "A Cofradía Europea de la Vela, entidade internacional ligada à cultura marítima, à vela e à tradição náutica, prepara para novembro de 2026 uma grande solenidade de investidura em Roma, na Itália. O encontro reunirá os membros da Cofradía na Cidade Eterna, num programa que também inclui o Vaticano.",
+        "Segundo a organização, a Investidura CEV Roma 2026 foi pensada como uma experiência imersiva, que leva os participantes a mergulhar na essência histórica, cultural e espiritual de Roma. Ao longo de vários dias, estão previstas duas visitas guiadas a pé pela Roma Imperial, percorrendo lugares fundamentais do mundo ocidental, além de momentos de convivência e reflexão entre os cofrades.",
+        "Um dos pontos altos do encontro será a participação em uma audiência pública com o Papa, no Vaticano, reforçando a dimensão cultural, histórica e simbólica da cerimônia.",
+        "A ligação com o Brasil vem de perto. Em abril, membros da Cofradía estiveram em Florianópolis para o Blue Nautical HUB Brasil, aproximando ainda mais a entidade do setor náutico brasileiro e abrindo caminho para novas conexões entre os dois lados do Atlântico.",
+        "<b>A Cofradía no Blue Nautical HUB Brasil</b>",
+        "A programação do HUB contou com o encontro da Cofradía Europea de la Vela, entidade internacional ligada à cultura marítima, à vela, à tradição náutica e ao fortalecimento dos laços entre países conectados pelo mar.",
+        "O encontro reuniu cofrades, convidados, autoridades e representantes do setor em um momento simbólico de aproximação entre Brasil e Europa, fortalecendo a cooperação internacional, a diplomacia náutica, a cultura marítima e a construção de novas conexões institucionais.",
+        "Para a ACATMAR, a presença da Cofradía no Brasil e a preparação da investidura em Roma confirmam o valor da diplomacia náutica: unir países, culturas e gerações em torno do respeito ao mar e da valorização da Economia do Mar.",
+        "Mais informações sobre a Investidura CEV Roma 2026 estão disponíveis no site oficial do evento."
+      ],
+      "corpo_en": [
+        "The Cofradía Europea de la Vela, an international organization devoted to maritime culture, sailing and nautical tradition, is preparing a major investiture ceremony in Rome, Italy, for November 2026. The gathering will bring the Cofradía's members together in the Eternal City, in a program that also includes the Vatican.",
+        "According to the organizers, the CEV Rome 2026 Investiture was designed as an immersive experience, leading participants into the historical, cultural and spiritual essence of Rome. Over several days, two guided walking tours of Imperial Rome are planned, visiting landmarks central to the Western world, along with moments of fellowship and reflection among members.",
+        "One of the highlights will be taking part in a public audience with the Pope, at the Vatican, reinforcing the cultural, historical and symbolic dimension of the ceremony.",
+        "The connection with Brazil is close. In April, members of the Cofradía visited Florianópolis for Blue Nautical HUB Brasil, bringing the organization even closer to the Brazilian nautical sector and opening the way for new connections between the two sides of the Atlantic.",
+        "<b>The Cofradía at Blue Nautical HUB Brasil</b>",
+        "The HUB program featured the gathering of the Cofradía Europea de la Vela, an international organization tied to maritime culture, sailing, nautical tradition and the strengthening of bonds among countries connected by the sea.",
+        "The meeting brought together members, guests, authorities and sector representatives in a symbolic moment of rapprochement between Brazil and Europe, strengthening international cooperation, nautical diplomacy, maritime culture and the building of new institutional connections.",
+        "For ACATMAR, the Cofradía's presence in Brazil and the preparation of the investiture in Rome confirm the value of nautical diplomacy: uniting countries, cultures and generations around respect for the sea and the appreciation of the Sea Economy.",
+        "More information about the CEV Rome 2026 Investiture is available on the event's official website."
+      ],
+      "link": "https://cevroma2026.site/",
+      "link_label": "Site oficial da Investidura CEV Roma 2026",
+      "link_label_en": "Official CEV Rome 2026 Investiture website"
+    },
+    {
       "id": "limpeza-mares-palestras-escolas-2026",
       "titulo": "Projeto Limpeza dos Mares leva educação ambiental às escolas neste mês",
       "titulo_en": "Limpeza dos Mares project brings environmental education to schools this month",
