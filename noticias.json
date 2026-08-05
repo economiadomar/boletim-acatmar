@@ -1,6 +1,35 @@
 {
   "noticias": [
     {
+      "id": "podcast-um-caminho-para-o-mar-cbn",
+      "titulo": "Podcast: nova marina de Florianópolis e a força da indústria náutica de Santa Catarina",
+      "titulo_en": "Podcast: Florianópolis's new marina and the strength of Santa Catarina's nautical industry",
+      "categoria": "Podcast",
+      "categoria_en": "Podcast",
+      "data": "2026-08-05",
+      "imagem": "media/noticias/podcast-caminho-para-o-mar.jpg",
+      "sem_card": true,
+      "credito": "CBN Floripa",
+      "audio": "https://creators.spotify.com/pod/profile/cbn-floripa-903-fm/embed/episodes/Um-Caminho-Para-o-Mar-nova-marina-de-Florianpolis-promete-impulsionar-a-forte-indstria-nutica-de-Santa-Catarina-e3n0rks",
+      "resumo": "Na reportagem \"Um Caminho Para o Mar\", da CBN Floripa, o jornalista Zé Maia ouve empresários do setor náutico sobre a nova marina da capital e o momento da Economia do Mar em Santa Catarina. Ouça no player abaixo.",
+      "resumo_en": "In the report \"Um Caminho Para o Mar\", by CBN Floripa, journalist Zé Maia interviews nautical sector entrepreneurs about the capital's new marina and the moment of the Sea Economy in Santa Catarina. Listen in the player below.",
+      "corpo": [
+        "A reportagem \"Um Caminho Para o Mar: nova marina de Florianópolis promete impulsionar a forte indústria náutica de Santa Catarina\", da CBN Floripa, coloca em pauta um dos temas mais importantes para a Economia do Mar catarinense: o crescimento do setor náutico e a chegada de novas estruturas na capital.",
+        "Com reportagem de Zé Maia, produção de Cristian Delosantos e edição de Gilberto Pereira, o episódio ouve diversos empresários do setor, que falam sobre investimentos, geração de emprego, infraestrutura e as oportunidades abertas pelo avanço da atividade náutica no estado.",
+        "A ACATMAR compartilha o conteúdo por entender que o debate qualificado, na imprensa, é fundamental para dar visibilidade à cadeia produtiva do mar e ao seu papel como geradora de trabalho, renda e desenvolvimento.",
+        "Aperte o play e ouça a reportagem completa no player acima."
+      ],
+      "corpo_en": [
+        "The report \"Um Caminho Para o Mar: Florianópolis's new marina promises to boost Santa Catarina's strong nautical industry\", by CBN Floripa, puts on the agenda one of the most important topics for Santa Catarina's Sea Economy: the growth of the nautical sector and the arrival of new facilities in the capital.",
+        "Reported by Zé Maia, produced by Cristian Delosantos and edited by Gilberto Pereira, the episode interviews several sector entrepreneurs, who talk about investments, job creation, infrastructure and the opportunities opened by the advance of nautical activity in the state.",
+        "ACATMAR shares this content because it believes that qualified debate in the press is essential to give visibility to the Sea Economy's production chain and its role as a generator of work, income and development.",
+        "Press play and listen to the full report in the player above."
+      ],
+      "link": "https://creators.spotify.com/pod/profile/cbn-floripa-903-fm/episodes/Um-Caminho-Para-o-Mar-nova-marina-de-Florianpolis-promete-impulsionar-a-forte-indstria-nutica-de-Santa-Catarina-e3n0rks",
+      "link_label": "Ouvir no Spotify",
+      "link_label_en": "Listen on Spotify"
+    },
+    {
       "id": "economia-do-mar-emprego-renda-sc",
       "titulo": "Economia do Mar em expansão gera emprego e renda em Santa Catarina",
       "titulo_en": "Sea Economy on the rise generates jobs and income in Santa Catarina",

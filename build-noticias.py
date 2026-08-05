@@ -56,6 +56,10 @@ def artigo_html(n, en):
     out += f'<div class="meta">{data_fmt(n["data"], en)}</div>'
     out += f'<img class="{hero_cls}" src="/{n["imagem"]}" alt="{html.escape(titulo)}">'
     if n.get('credito'): out += f'<div class="credito">{"Photo: " if en else "Foto: "}{html.escape(n["credito"])}</div>'
+    if n.get('audio'):
+        out += (f'<div class="audio-embed"><iframe src="{n["audio"]}" width="100%" height="152" frameborder="0" '
+                f'scrolling="no" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" '
+                f'loading="lazy" style="border:0;border-radius:14px;margin:1rem 0 1.4rem"></iframe></div>')
     # CTA no topo (opcional): botao logo abaixo da capa
     if n.get('link') and n.get('link_topo'):
         label = (n.get('link_label_en') if en else n.get('link_label')) or ('Learn more' if en else 'Saiba mais')
