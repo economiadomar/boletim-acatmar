@@ -56,6 +56,10 @@ def artigo_html(n, en):
     out += f'<div class="meta">{data_fmt(n["data"], en)}</div>'
     out += f'<img class="{hero_cls}" src="/{n["imagem"]}" alt="{html.escape(titulo)}">'
     if n.get('credito'): out += f'<div class="credito">{"Photo: " if en else "Foto: "}{html.escape(n["credito"])}</div>'
+    if n.get('video'):
+        out += (f'<div class="video-embed"><iframe src="https://www.youtube.com/embed/{n["video"]}" '
+                f'title="{html.escape(titulo)}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; '
+                f'encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>')
     if n.get('audio'):
         out += (f'<div class="audio-embed"><iframe src="{n["audio"]}" width="100%" height="152" frameborder="0" '
                 f'scrolling="no" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" '

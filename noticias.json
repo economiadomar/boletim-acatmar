@@ -1,6 +1,37 @@
 {
   "noticias": [
     {
+      "id": "video-embarcacao-resgate-penha",
+      "titulo": "Vídeo: embarcação desenvolvida em SC para resgates e enfrentamento de enchentes",
+      "titulo_en": "Video: a vessel developed in Santa Catarina for rescues and flood response",
+      "categoria": "Vídeo",
+      "categoria_en": "Video",
+      "data": "2026-08-05",
+      "imagem": "media/noticias/video-embarcacao-resgate.jpg",
+      "sem_card": true,
+      "credito": "Balanço Geral Itajaí (RecordTV)",
+      "video": "fXPKCoqkWn0",
+      "resumo": "Reportagem do Balanço Geral Itajaí mostra o desenvolvimento, em Penha, de uma embarcação preparada para operações de resgate e para o enfrentamento de enchentes, com a participação do associado Black Marine e do presidente da ACATMAR. Assista no player abaixo.",
+      "resumo_en": "A report by Balanço Geral Itajaí shows the development, in Penha, of a vessel prepared for rescue operations and flood response, with the participation of ACATMAR member Black Marine and the president of ACATMAR. Watch in the player below.",
+      "corpo": [
+        "A reportagem \"Penha desenvolve embarcação para resgates e enfrentar enchentes\", exibida pelo Balanço Geral Itajaí, mostra como a tecnologia náutica catarinense pode salvar vidas. O vídeo apresenta o desenvolvimento de uma embarcação preparada para operações de resgate e para atuar em situações de enchente, um tema cada vez mais urgente diante dos eventos climáticos extremos.",
+        "O projeto conta com a participação da Black Marine, empresa associada à ACATMAR, que coloca sua experiência na construção náutica a serviço da segurança e do socorro à população. A iniciativa mostra como o setor produtivo náutico vai muito além do lazer e do turismo, oferecendo soluções concretas para a proteção de comunidades.",
+        "O presidente da ACATMAR também participa da reportagem, reforçando o papel da Economia do Mar no desenvolvimento de tecnologias úteis à sociedade e a importância de unir o conhecimento das empresas do setor às necessidades da defesa civil e das operações de resgate.",
+        "A ACATMAR compartilha o conteúdo para dar visibilidade a esse tipo de iniciativa, que une inovação, responsabilidade social e a força da indústria náutica de Santa Catarina.",
+        "Assista à reportagem completa no player acima. Créditos do vídeo: Balanço Geral Itajaí (RecordTV)."
+      ],
+      "corpo_en": [
+        "The report \"Penha develops a vessel for rescues and to face floods\", aired by Balanço Geral Itajaí, shows how Santa Catarina's nautical technology can save lives. The video presents the development of a vessel prepared for rescue operations and to act in flood situations, an increasingly urgent topic given extreme weather events.",
+        "The project features the participation of Black Marine, a company affiliated with ACATMAR, which puts its experience in boatbuilding at the service of safety and public rescue. The initiative shows how the nautical production sector goes far beyond leisure and tourism, offering concrete solutions to protect communities.",
+        "The president of ACATMAR also takes part in the report, reinforcing the role of the Sea Economy in developing technologies useful to society and the importance of uniting the knowledge of the sector's companies with the needs of civil defense and rescue operations.",
+        "ACATMAR shares this content to give visibility to this kind of initiative, which combines innovation, social responsibility and the strength of Santa Catarina's nautical industry.",
+        "Watch the full report in the player above. Video credits: Balanço Geral Itajaí (RecordTV)."
+      ],
+      "link": "https://youtu.be/fXPKCoqkWn0",
+      "link_label": "Assistir no YouTube",
+      "link_label_en": "Watch on YouTube"
+    },
+    {
       "id": "podcast-um-caminho-para-o-mar-cbn",
       "titulo": "Podcast: nova marina de Florianópolis e a força da indústria náutica de Santa Catarina",
       "titulo_en": "Podcast: Florianópolis's new marina and the strength of Santa Catarina's nautical industry",
