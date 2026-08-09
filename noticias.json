@@ -1,6 +1,55 @@
 {
   "noticias": [
     {
+      "id": "nd-industria-nautica-catarinense-cadeia-produtiva",
+      "titulo": "Indústria náutica catarinense: uma cadeia produtiva que gera emprego e renda",
+      "titulo_en": "Santa Catarina's boatbuilding industry: a supply chain that generates jobs and income",
+      "categoria": "Economia do Mar",
+      "categoria_en": "Blue Economy",
+      "data": "2026-08-09",
+      "imagem": "media/noticias/nd-nautica-catarinense-p6.jpg",
+      "imagem_inteira": true,
+      "credito": "Alan Plumdno / Jornal ND — edição de 8 e 9 de agosto de 2026",
+      "galeria": [
+        "media/noticias/nd-nautica-catarinense-p7.jpg"
+      ],
+      "resumo": "Reportagem do Jornal ND mostrou os números do setor náutico em Santa Catarina. Para o presidente da ACATMAR, Mané Ferrari, a liderança do Estado vem da cadeia produtiva, da mão de obra especializada e da capacitação, e não de um único nome.",
+      "resumo_en": "A report by Jornal ND highlighted the figures of Santa Catarina's nautical sector. For ACATMAR's president, Mané Ferrari, the state's leadership comes from its supply chain, skilled workforce and training, not from a single name.",
+      "corpo": [
+        "Santa Catarina se consolidou como o principal polo náutico do Brasil, e os números ajudam a entender o tamanho desse trabalho. O Estado concentra 68% das exportações brasileiras de embarcações de lazer e reúne uma cadeia produtiva madura, que envolve mais de mil empresas ligadas à Economia do Mar. O tema foi destaque em reportagem do Jornal ND, na edição de 8 e 9 de agosto, que ouviu o presidente da ACATMAR (Associação Náutica Brasileira), Mané Ferrari.",
+        "Para Ferrari, a liderança catarinense não é obra de uma empresa só. Ela nasce do empreendedorismo, de políticas públicas acertadas e, principalmente, da formação de uma cadeia produtiva altamente especializada. \"Precisamos mostrar que não estamos falando apenas de um bem de luxo, mas de uma cadeia econômica que gera emprego, renda, turismo e desenvolvimento\", resume.",
+        "<b>Os números do setor</b>",
+        "Segundo os dados reunidos na reportagem, 1.028 empresas integram a Economia do Mar em Santa Catarina. O Estado tem cerca de 50 mil embarcações de esporte e recreio registradas e responde por mais de dois terços de tudo o que o Brasil exporta em barcos de lazer. Cada embarcação de médio e grande porte gera, em média, 4 empregos diretos e outros 8 indiretos, o que mostra como a atividade se espalha por toda a economia.",
+        "<b>Muitas mãos em cada barco</b>",
+        "Um barco pronto é a soma do trabalho de dezenas de empresas e profissionais. Há quem cuide da estrutura e do casco, com fibra de vidro, resinas e compósitos. Há os fornecedores de motores, transmissão e sistemas de direção. Vem o acabamento interno, com marcenaria, móveis planejados e revestimentos. Somam-se o convés e o design, em inox e madeira; os sistemas elétricos e eletrônicos, da navegação à iluminação; os itens de conforto, como climatização e geradores; e, por fim, a pintura e a proteção. Cada uma dessas etapas é uma empresa, um ofício, um posto de trabalho. É a cadeia produtiva funcionando junta.",
+        "<b>A mão de obra e a capacitação</b>",
+        "Boa parte desses profissionais aprendeu o ofício dentro das próprias fábricas e foi crescendo na carreira. É comum encontrar quem entrou como auxiliar e hoje lidera equipes, e cada vez mais mulheres ocupam funções na produção. Para manter esse ritmo, a formação é decisiva. O curso de Engenharia Naval da UFSC, criado em 2009, forma mão de obra qualificada e desenvolve pesquisas em novos materiais e automação. A ACATMAR mantém programas de capacitação e trabalha, em parceria com o IFSC, na implantação da Escola do Mar, voltada a formar profissionais para o setor.",
+        "<b>Um mercado aquecido, com desafios</b>",
+        "Ferrari avalia que o mercado segue aquecido, especialmente depois da pandemia. \"Mesmo num ambiente de incertezas econômicas, vemos estaleiros investindo, ampliando fábricas e contratando funcionários\", afirma. Entre os desafios dos próximos anos, ele aponta a necessidade de preservar a competitividade diante da reforma tributária e de ampliar a oferta de mão de obra qualificada. O presidente da ACATMAR estima que a Economia Azul catarinense pode crescer cerca de 10% ao ano, desde que o Estado siga investindo em infraestrutura, qualificação e incentivo ao setor.",
+        "<b>O marco de 2009</b>",
+        "Um ponto de virada para o setor foi 2009, ano de criação do Programa de Incentivo à Indústria Náutica e também do curso de Engenharia Naval da UFSC. A medida estimulou a instalação de novas empresas, atraiu fabricantes e fornecedores e ajudou a consolidar os polos industriais da Grande Florianópolis e do Vale do Itajaí. De lá para cá, o setor cresceu e se organizou em torno de uma cadeia que hoje é referência no país.",
+        "A reportagem do Jornal ND reforça uma mensagem que a ACATMAR repete: a força da náutica catarinense está nas pessoas e nas empresas que constroem, todos os dias, cada embarcação. É uma economia do mar que gera emprego, renda e futuro para Santa Catarina.",
+        "<b>Créditos:</b> reportagem de Paulo Rolemberg e Nícolas Horácio, com fotos de Alan Plumdno, publicada no Jornal ND, editoria de Economia, edição de sábado e domingo, 8 e 9 de agosto de 2026. As imagens reproduzidas nesta página correspondem às páginas 6 e 7 dessa edição e pertencem ao Jornal ND."
+      ],
+      "corpo_en": [
+        "Santa Catarina has established itself as Brazil's leading nautical hub, and the numbers help to grasp the scale of this work. The state accounts for 68% of Brazil's exports of leisure boats and brings together a mature supply chain involving more than a thousand companies linked to the Blue Economy. The subject was featured in a report by Jornal ND, in the 8-9 August edition, which interviewed ACATMAR's president, Mané Ferrari.",
+        "For Ferrari, Santa Catarina's leadership is not the work of a single company. It stems from entrepreneurship, sound public policy and, above all, from a highly specialized supply chain. \"We need to show that we are not talking only about a luxury good, but about an economic chain that generates jobs, income, tourism and development,\" he says.",
+        "<b>The sector in numbers</b>",
+        "According to the data gathered in the report, 1,028 companies make up the Blue Economy in Santa Catarina. The state has around 50,000 registered sport and recreational vessels and accounts for more than two thirds of all leisure boats Brazil exports. Each medium and large vessel generates, on average, 4 direct jobs and another 8 indirect ones, showing how the activity spreads across the whole economy.",
+        "<b>Many hands in every boat</b>",
+        "A finished boat is the sum of the work of dozens of companies and professionals. Some handle the structure and hull, with fiberglass, resins and composites. There are the suppliers of engines, transmission and steering systems. Then comes the interior finishing, with joinery, built-in furniture and coverings. Add to that the deck and design, in stainless steel and wood; the electrical and electronic systems, from navigation to lighting; comfort items such as air conditioning and generators; and, finally, painting and protection. Each of these stages is a company, a craft, a job. It is the supply chain working together.",
+        "<b>Workforce and training</b>",
+        "Many of these professionals learned the trade inside the factories themselves and grew in their careers. It is common to find someone who started as an assistant and now leads teams, and more and more women hold production roles. To keep up this pace, training is decisive. The Naval Engineering course at UFSC, created in 2009, trains skilled labor and develops research into new materials and automation. ACATMAR runs training programs and works, in partnership with IFSC, on setting up the Escola do Mar (School of the Sea) to train professionals for the sector.",
+        "<b>A heated market, with challenges</b>",
+        "Ferrari believes the market remains heated, especially after the pandemic. \"Even in an environment of economic uncertainty, we see shipyards investing, expanding factories and hiring,\" he says. Among the challenges of the coming years, he points to the need to preserve the industry's competitiveness in the face of tax reform and to expand the supply of skilled labor. ACATMAR's president estimates that Santa Catarina's Blue Economy could grow around 10% a year, as long as the state keeps investing in infrastructure, training and incentives for the sector.",
+        "<b>The 2009 milestone</b>",
+        "A turning point for the sector was 2009, the year the Nautical Industry Incentive Program and the UFSC Naval Engineering course were created. The measure encouraged new companies to set up, attracted manufacturers and suppliers, and helped consolidate the industrial hubs of Greater Florianópolis and the Itajaí Valley. Since then, the sector has grown and organized itself around a chain that is now a national benchmark.",
+        "The Jornal ND report reinforces a message ACATMAR keeps repeating: the strength of Santa Catarina's nautical industry lies in the people and companies that build, every day, each vessel. It is an economy of the sea that generates jobs, income and a future for Santa Catarina.",
+        "<b>Credits:</b> report by Paulo Rolemberg and Nícolas Horácio, with photos by Alan Plumdno, published in Jornal ND, Economy section, weekend edition of 8-9 August 2026. The images reproduced on this page correspond to pages 6 and 7 of that edition and belong to Jornal ND."
+      ],
+      "card_pronto": true
+    },
+    {
       "id": "video-embarcacao-resgate-penha",
       "titulo": "Vídeo: embarcação desenvolvida em SC para resgates e enfrentamento de enchentes",
       "titulo_en": "Video: a vessel developed in Santa Catarina for rescues and flood response",
