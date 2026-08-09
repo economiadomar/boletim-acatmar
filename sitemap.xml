@@ -129,6 +129,22 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://www.acatmar.org/n/bnh-brasil-2027-feira-economia-do-mar.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/n/bnh-brasil-2027-feira-economia-do-mar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/n/bnh-brasil-2027-feira-economia-do-mar.html"/>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.acatmar.org/en/n/bnh-brasil-2027-feira-economia-do-mar.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/n/bnh-brasil-2027-feira-economia-do-mar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/n/bnh-brasil-2027-feira-economia-do-mar.html"/>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.acatmar.org/n/nd-industria-nautica-catarinense-cadeia-produtiva.html</loc>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/n/nd-industria-nautica-catarinense-cadeia-produtiva.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/n/nd-industria-nautica-catarinense-cadeia-produtiva.html"/>
