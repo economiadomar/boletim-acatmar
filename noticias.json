@@ -1,6 +1,61 @@
 {
   "noticias": [
     {
+      "id": "rio-innovation-week-2026-economia-do-mar",
+      "titulo": "Inovação, descarbonização e biossegurança ganham espaço na Rio Innovation Week 2026",
+      "titulo_en": "Innovation, decarbonization and biosecurity take the stage at Rio Innovation Week 2026",
+      "categoria": "Inovação",
+      "categoria_en": "Innovation",
+      "data": "2026-08-10",
+      "imagem": "media/noticias/rio-innovation-week-2026.jpg",
+      "credito": "Divulgação / JRG Corp",
+      "galeria": [
+        "media/noticias/rio-innovation-2026-1.jpg",
+        "media/noticias/rio-innovation-2026-2.jpg",
+        "media/noticias/rio-innovation-2026-3.jpg"
+      ],
+      "resumo": "No painel 'Economia do Mar', durante a Rio Innovation Week 2026, no Rio de Janeiro, empresas associadas à ACATMAR levaram ao debate tecnologias de eficiência energética, proteção ambiental e inteligência de dados no setor náutico e naval.",
+      "resumo_en": "At the 'Blue Economy' panel during Rio Innovation Week 2026, in Rio de Janeiro, companies affiliated with ACATMAR brought to the debate technologies for energy efficiency, environmental protection and data intelligence in the nautical and naval sector.",
+      "corpo": [
+        "A inovação aplicada à Economia do Mar esteve entre os temas debatidos durante a Rio Innovation Week 2026, realizada de 4 a 7 de agosto, no Píer Mauá, no Rio de Janeiro. Entre os participantes do painel 'Economia do Mar: Meio Ambiente e Indústria Naval' esteve Januário R. Gagliardi, fundador e CEO da JRG Corp e CSO da Marine Telematics, empresas associadas da ACATMAR.",
+        "Durante o encontro, Gagliardi abordou diferentes caminhos para tornar as atividades náutica e naval mais eficientes e sustentáveis, com destaque para descarbonização, biossegurança marinha, digitalização das embarcações e fortalecimento da indústria brasileira.",
+        "<b>Eficiência energética começa também abaixo da linha d'água</b>",
+        "Um dos principais pontos apresentados foi a importância de ampliar a eficiência das embarcações antes mesmo de se discutir exclusivamente a substituição das matrizes de propulsão.",
+        "Entre as soluções abordadas estão as tecnologias foul-release, utilizadas em hélices, eixos e outras superfícies submersas para dificultar a aderência da bioincrustação. A redução desse acúmulo contribui para diminuir o arrasto da embarcação e, consequentemente, melhorar sua eficiência operacional e reduzir consumo de combustível e emissões.",
+        "A discussão avançou também sobre a biossegurança marinha. A bioincrustação pode funcionar como vetor para a dispersão de espécies exóticas invasoras entre diferentes regiões, fazendo com que seu controle seja também uma questão relacionada à proteção da biodiversidade aquática.",
+        "A JRG Corp atua nas áreas de comércio exterior, consultoria fiscal, planejamento aduaneiro, viabilidade de investimentos industriais e estruturação de operações entre o Brasil, a América Latina e os Estados Unidos.",
+        "A presença de seu fundador em um dos maiores ambientes de tecnologia e inovação da América Latina reforça justamente uma das frentes que a ACATMAR busca estimular entre seus associados: conexão com novas tecnologias, internacionalização, geração de negócios e aumento da competitividade da cadeia produtiva da Economia do Mar.",
+        "A atuação da associação envolve os diferentes pilares do setor, reunindo indústria, comércio, serviços e turismo, além de promover relações de mercado, visitas técnicas, encontros B2B e conexões nacionais e internacionais.",
+        "<b>Dados e tecnologia também transformam a navegação</b>",
+        "Outra frente apresentada durante o painel foi o uso da telemetria e da inteligência de dados nas embarcações.",
+        "Como CSO da Marine Telematics, Gagliardi trabalha com soluções que transformam informações operacionais das embarcações em ferramentas para eficiência, segurança e apoio à tomada de decisão, acompanhando a crescente digitalização do setor náutico e naval.",
+        "<b>Mais competitividade para a indústria brasileira</b>",
+        "O debate também abordou a necessidade de ampliar a competitividade da cadeia náutica e naval nacional, incluindo nacionalização de soluções, transferência de tecnologia e internacionalização das empresas brasileiras.",
+        "Gagliardi defendeu ainda o fortalecimento de operações de exportação de embarcações brasileiras para mercados internacionais, incluindo o norte-americano.",
+        "Para a ACATMAR, ter empresas associadas ocupando espaços estratégicos de discussão sobre inovação, sustentabilidade e futuro da Economia do Mar é também uma demonstração da força de uma cadeia produtiva que está cada vez mais conectada à tecnologia e aos mercados globais.",
+        "<b>Fonte:</b> JRG Corp. <b>Redação:</b> ACATMAR, Associação Náutica Brasileira."
+      ],
+      "corpo_en": [
+        "Innovation applied to the Blue Economy was among the topics discussed during Rio Innovation Week 2026, held from 4 to 7 August at Píer Mauá, in Rio de Janeiro. Among the participants of the panel 'Blue Economy: Environment and Naval Industry' was Januário R. Gagliardi, founder and CEO of JRG Corp and CSO of Marine Telematics, companies affiliated with ACATMAR.",
+        "During the meeting, Gagliardi discussed different paths to make nautical and naval activities more efficient and sustainable, highlighting decarbonization, marine biosecurity, vessel digitalization and the strengthening of Brazilian industry.",
+        "<b>Energy efficiency also begins below the waterline</b>",
+        "One of the main points presented was the importance of increasing the efficiency of vessels even before discussing the replacement of propulsion sources alone.",
+        "Among the solutions discussed are foul-release technologies, used on propellers, shafts and other submerged surfaces to hinder the adhesion of biofouling. Reducing this build-up helps to lower the vessel's drag and, consequently, improve its operational efficiency and reduce fuel consumption and emissions.",
+        "The discussion also moved on to marine biosecurity. Biofouling can act as a vector for the spread of invasive alien species between different regions, making its control also a matter related to the protection of aquatic biodiversity.",
+        "JRG Corp operates in the areas of foreign trade, tax consulting, customs planning, feasibility of industrial investments and structuring of operations between Brazil, Latin America and the United States.",
+        "The presence of its founder in one of the largest technology and innovation environments in Latin America reinforces exactly one of the fronts that ACATMAR seeks to encourage among its members: connection with new technologies, internationalization, business generation and increased competitiveness of the Blue Economy supply chain.",
+        "The association's work involves the different pillars of the sector, bringing together industry, trade, services and tourism, as well as promoting market relations, technical visits, B2B meetings and national and international connections.",
+        "<b>Data and technology also transform navigation</b>",
+        "Another front presented during the panel was the use of telemetry and data intelligence on vessels.",
+        "As CSO of Marine Telematics, Gagliardi works with solutions that turn vessels' operational information into tools for efficiency, safety and decision support, keeping pace with the growing digitalization of the nautical and naval sector.",
+        "<b>More competitiveness for Brazilian industry</b>",
+        "The debate also addressed the need to increase the competitiveness of the national nautical and naval chain, including the localization of solutions, technology transfer and the internationalization of Brazilian companies.",
+        "Gagliardi also defended strengthening the export of Brazilian vessels to international markets, including the North American market.",
+        "For ACATMAR, having affiliated companies occupying strategic spaces of discussion about innovation, sustainability and the future of the Blue Economy is also a demonstration of the strength of a supply chain that is increasingly connected to technology and global markets.",
+        "<b>Source:</b> JRG Corp. <b>Editing:</b> ACATMAR, Brazilian Nautical Association."
+      ]
+    },
+    {
       "id": "bnh-brasil-2027-feira-economia-do-mar",
       "titulo": "Blue Nautical Hub Brasil 2027: no ar o site do grande encontro da Economia do Mar",
       "titulo_en": "Blue Nautical Hub Brasil 2027: the website is live for the great meeting of the Blue Economy",
