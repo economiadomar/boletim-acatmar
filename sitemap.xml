@@ -129,6 +129,22 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://www.acatmar.org/n/vi-forum-2026.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/n/vi-forum-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/n/vi-forum-2026.html"/>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.acatmar.org/en/n/vi-forum-2026.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/n/vi-forum-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/n/vi-forum-2026.html"/>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.acatmar.org/n/oceano-escola-silverio-formacao-nautica.html</loc>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/n/oceano-escola-silverio-formacao-nautica.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/n/oceano-escola-silverio-formacao-nautica.html"/>
