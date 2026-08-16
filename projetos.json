@@ -508,6 +508,32 @@
         "media/projetos/v-forum-7.jpg",
         "media/projetos/v-forum-8.jpg"
       ]
+    },
+    {
+      "id": "vi-forum-acatmar-2026",
+      "nome": "VI Fórum de Capacitação Técnica ACATMAR (2026)",
+      "nome_en": "VI ACATMAR Technical Training Forum (2026)",
+      "tagline": "Outubro de 2026 · inscrições abertas",
+      "tagline_en": "October 2026 · registration open",
+      "imagem": "media/noticias/vi-forum-2026.jpg",
+      "parent": "forum-acatmar",
+      "ordem": 6,
+      "resumo": "A próxima edição do Fórum acontece em outubro de 2026, com um dia de imersão em conhecimento náutico, inovação e novas tecnologias. As inscrições já estão abertas.",
+      "resumo_en": "The next edition of the Forum takes place in October 2026, with a day of immersion in nautical knowledge, innovation and new technologies. Registration is now open.",
+      "corpo": [
+        "O Fórum de Capacitação Técnica ACATMAR chega à sua sexta edição em outubro de 2026. Será mais um dia inteiro de imersão em conhecimento náutico, com palestras técnicas que trazem inovação e as novas tecnologias do setor.",
+        "É um encontro pensado tanto para quem já trabalha e vive a náutica quanto, principalmente, para quem ainda não é do setor e quer entrar nele. Vários palestrantes da cadeia produtiva, técnicos e especialistas se reúnem para requalificar mão de obra, passar conhecimento e acelerar o aprendizado.",
+        "Se você quer vir trabalhar no setor, já trabalha ou vive o setor, este é o grande momento. A inscrição é gratuita e as vagas são limitadas.",
+        "<div style=\"margin:1.5rem 0\"><a href=\"/vi-forum-2026.html\" style=\"display:inline-flex;align-items:center;gap:.5rem;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:1.1rem;color:#fff;background:#00a3b4;padding:.85rem 1.8rem;border-radius:999px;text-decoration:none\">Quero me inscrever →</a></div>",
+        "A programação, a data e os detalhes serão divulgados em primeira mão para quem se inscrever."
+      ],
+      "corpo_en": [
+        "The ACATMAR Technical Training Forum reaches its sixth edition in October 2026. It will be another full day of immersion in nautical knowledge, with technical talks bringing innovation and the sector's new technologies.",
+        "It is a gathering designed both for those who already work in and live boating and, above all, for those who are not yet in the sector and want to get in. Several speakers from the production chain, technicians and specialists come together to requalify the workforce, share knowledge and speed up learning.",
+        "Whether you want to work in the sector, already work in it or live it, this is the moment. Registration is free and spots are limited.",
+        "<div style=\"margin:1.5rem 0\"><a href=\"/vi-forum-2026.html\" style=\"display:inline-flex;align-items:center;gap:.5rem;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:1.1rem;color:#fff;background:#00a3b4;padding:.85rem 1.8rem;border-radius:999px;text-decoration:none\">I want to register →</a></div>",
+        "The program, date and details will be announced first-hand to those who register."
+      ]
     }
   ]
 }
