@@ -1,6 +1,44 @@
 {
   "noticias": [
     {
+      "id": "arthur-rocha-baptista-consul-noruega-itajai",
+      "titulo": "ACATMAR celebra: associado Arthur Rocha Baptista assume como Cônsul Honorário da Noruega em Itajaí",
+      "titulo_en": "ACATMAR celebrates: member Arthur Rocha Baptista becomes Honorary Consul of Norway in Itajaí",
+      "categoria": "Cooperação internacional",
+      "categoria_en": "International cooperation",
+      "data": "2026-08-16",
+      "imagem": "media/noticias/arthur-rocha-baptista-consul.jpg",
+      "imagem_inteira": true,
+      "credito": "Divulgação",
+      "galeria": [
+        "media/noticias/arthur-consul-noruega-cerimonia.jpg"
+      ],
+      "resumo": "O advogado Arthur Rocha Baptista, da ARB.Legal e associado da ACATMAR, assumiu o cargo de Cônsul Honorário da Noruega em Itajaí. Uma conquista que aproxima o Brasil de um dos maiores países marítimos do mundo e fortalece a Economia do Mar da região.",
+      "resumo_en": "Attorney Arthur Rocha Baptista, of ARB.Legal and an ACATMAR member, has become Honorary Consul of Norway in Itajaí. An achievement that brings Brazil closer to one of the world's leading maritime nations and strengthens the region's Blue Economy.",
+      "corpo": [
+        "A ACATMAR tem orgulho de celebrar uma conquista de um dos seus associados. O advogado Arthur Rocha Baptista, à frente da ARB.Legal (Advocacia Rocha Baptista), assumiu o cargo de Cônsul Honorário da Noruega em Itajaí, em Santa Catarina.",
+        "A posse aconteceu em 23 de julho, com a inauguração do Consulado Honorário da Noruega na cidade, em cerimônia que contou com a presença da Cônsul-Geral da Noruega no Rio de Janeiro, Mette Tangen. Um marco significativo para Itajaí e para toda a região.",
+        "<b>Uma ponte entre o Brasil e um gigante marítimo</b>",
+        "A Noruega é uma das maiores referências mundiais quando o assunto é mar: economia azul, pesca, tecnologia naval, energia, pesquisa oceânica e sustentabilidade. Ter um representante consular em Itajaí, um dos principais polos portuários e náuticos do país, abre um canal direto de cooperação entre os dois países, justamente nas áreas que movem a Economia do Mar.",
+        "Ainda na agenda em Itajaí, foram apresentados projetos desenvolvidos na Univali em parceria com universidades norueguesas, nas áreas de saúde e de meio ambiente, reforçando o papel da universidade como ponte entre a pesquisa aplicada e a cooperação internacional. Iniciativas assim ampliam as oportunidades de colaboração acadêmica e ambiental em Santa Catarina.",
+        "<b>Um nome que conhece o setor náutico</b>",
+        "A escolha tem tudo a ver com a pauta da ACATMAR. Arthur Rocha Baptista é advogado com atuação ligada ao setor náutico e, no V Fórum de Capacitação Técnica ACATMAR, foi um dos palestrantes, falando sobre segurança e conformidade às leis e normas como valor no setor náutico. É alguém que entende, na prática, os desafios e as oportunidades de quem vive o mar.",
+        "<b>Orgulho de ter como associado</b>",
+        "Para a ACATMAR, ver um associado assumir uma missão diplomática como essa é motivo de orgulho e a certeza de que as relações da Economia do Mar da região vão se estreitar ainda mais. Parabéns, Arthur Rocha Baptista. Que essa nova função abra muitas portas para o Brasil, para a Noruega e para toda a cadeia produtiva do mar."
+      ],
+      "corpo_en": [
+        "ACATMAR is proud to celebrate an achievement by one of its members. Attorney Arthur Rocha Baptista, who leads ARB.Legal (Advocacia Rocha Baptista), has taken office as Honorary Consul of Norway in Itajaí, Santa Catarina.",
+        "The inauguration took place on July 23, with the opening of the Honorary Consulate of Norway in the city, in a ceremony attended by the Consul-General of Norway in Rio de Janeiro, Mette Tangen. A significant milestone for Itajaí and the entire region.",
+        "<b>A bridge between Brazil and a maritime giant</b>",
+        "Norway is one of the world's leading references when it comes to the sea: blue economy, fisheries, naval technology, energy, ocean research and sustainability. Having a consular representative in Itajaí, one of the country's main port and nautical hubs, opens a direct channel of cooperation between the two countries, precisely in the areas that drive the Blue Economy.",
+        "Also on the agenda in Itajaí, projects developed at Univali in partnership with Norwegian universities were presented, in the areas of health and the environment, reinforcing the university's role as a bridge between applied research and international cooperation. Initiatives like these expand the opportunities for academic and environmental collaboration in Santa Catarina.",
+        "<b>Someone who knows the nautical sector</b>",
+        "The choice is fully aligned with ACATMAR's agenda. Arthur Rocha Baptista is an attorney whose work is linked to the nautical sector and, at the V ACATMAR Technical Training Forum, he was one of the speakers, addressing safety and compliance with laws and standards as a value in the nautical sector. He is someone who understands, in practice, the challenges and opportunities of those who live the sea.",
+        "<b>Proud to have him as a member</b>",
+        "For ACATMAR, seeing a member take on a diplomatic mission like this is a source of pride and the certainty that the region's Blue Economy relationships will grow even closer. Congratulations, Arthur Rocha Baptista. May this new role open many doors for Brazil, for Norway and for the entire maritime production chain."
+      ]
+    },
+    {
       "id": "mane-ferrari-presidencia-fortur-2026",
       "titulo": "Presidente da ACATMAR, Mané Ferrari é reconduzido à presidência do FORTUR, o Fórum de Turismo da Grande Florianópolis",
       "titulo_en": "ACATMAR president Mané Ferrari is reappointed to lead FORTUR, the Greater Florianópolis Tourism Forum",
