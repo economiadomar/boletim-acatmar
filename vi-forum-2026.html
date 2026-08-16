@@ -34,7 +34,7 @@
   .nav a.assoc:hover{background:var(--teal-d)}
   main{flex:1}
   .hero{position:relative;background:var(--deep)}
-  .hero img{display:block;width:100%;max-height:520px;object-fit:cover}
+  .hero img{display:block;width:100%;height:auto}
   .wrap{max-width:1100px;margin:0 auto;padding:0 1.4rem}
   .intro{padding:2.2rem 0 1rem}
   .intro .eyebrow{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--teal-d);font-size:.86rem}
@@ -78,7 +78,7 @@
 </div></nav>
 
 <main>
-  <div class="hero"><img src="media/noticias/vi-forum-2026.jpg" alt="VI Fórum de Capacitação Técnica ACATMAR — Outubro de 2026"></div>
+  <div class="hero"><img src="media/noticias/vi-forum-2026-wide.jpg" alt="VI Fórum de Capacitação Técnica ACATMAR — Outubro de 2026"></div>
   <div class="wrap">
     <div class="intro">
       <div class="eyebrow" data-en="Registration open · October 2026">Inscrições abertas · Outubro de 2026</div>
@@ -148,7 +148,7 @@ form.addEventListener('submit',function(e){
   if(document.getElementById('_honey')&&document.getElementById('_honey').value) return;
   btn.disabled=true; btn.textContent=EN?'Sending…':'Enviando…';
   var data=new FormData(form);
-  fetch('https://formsubmit.co/ajax/acatmarpresidencia@gmail.com',{
+  fetch('https://formsubmit.co/ajax/dbf5453c958f231720ec8976f1e606ec',{
     method:'POST',headers:{'Accept':'application/json'},body:data
   }).then(function(r){return r.json();}).then(function(j){
     if(j&&(j.success==='true'||j.success===true)){
