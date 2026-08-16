@@ -1,6 +1,50 @@
 {
   "noticias": [
     {
+      "id": "mane-ferrari-presidencia-fortur-2026",
+      "titulo": "Presidente da ACATMAR, Mané Ferrari é reconduzido à presidência do FORTUR, o Fórum de Turismo da Grande Florianópolis",
+      "titulo_en": "ACATMAR president Mané Ferrari is reappointed to lead FORTUR, the Greater Florianópolis Tourism Forum",
+      "categoria": "Representação",
+      "categoria_en": "Representation",
+      "data": "2026-08-14",
+      "imagem": "media/noticias/fortur-mane-ferrari.jpg",
+      "credito": "FORTUR / Divulgação",
+      "resumo": "Reconduzido à presidência do FORTUR, o Fórum de Turismo da Grande Florianópolis, o presidente da ACATMAR, Mané Ferrari, aproxima ainda mais o turismo regional e a Economia do Mar.",
+      "resumo_en": "Reappointed to lead FORTUR, the Greater Florianópolis Tourism Forum, ACATMAR president Mané Ferrari brings regional tourism and the Blue Economy even closer together.",
+      "corpo": [
+        "O turismo da Grande Florianópolis inicia um novo movimento de articulação, e ele passa por um nome ligado diretamente à Economia do Mar. Reunido na quinta-feira, 13 de agosto, no CentroSul, durante o 37º Encatho & Exprotel, o FORTUR (Fórum de Turismo da Grande Florianópolis) reconduziu, por decisão unânime, Mané Ferrari à presidência e Hamilton Peluso à vice-presidência, até dezembro de 2026.",
+        "À atual direção cabe a missão de conduzir a reorganização do Fórum, ampliar o envolvimento das entidades e preparar a transição para uma nova gestão em 2027, com foco na união do trade, na participação nas decisões estratégicas e no fortalecimento do turismo regional.",
+        "\"O turismo da Grande Florianópolis precisa voltar a falar com uma voz forte e articulada. Temos entidades extremamente representativas, mas, quando cada uma atua isoladamente, perdemos capacidade de influência. Não queremos apenas ser comunicados sobre o futuro do turismo. Queremos ajudar a construí-lo\", afirma Mané Ferrari, presidente do FORTUR e da ACATMAR.",
+        "<b>O que isso significa para a ACATMAR e a Economia do Mar</b>",
+        "O turismo náutico é um dos quatro pilares da Economia do Mar, ao lado da indústria, do comércio e dos serviços. Ter o presidente da ACATMAR também à frente do principal fórum de turismo da região aproxima duas agendas que já caminham juntas e coloca o mar no centro da conversa sobre o desenvolvimento turístico. Na prática, a Economia do Mar ganha assento e voz nas decisões que definem o futuro do turismo da Grande Florianópolis.",
+        "Para a ACATMAR, é o reconhecimento do peso do setor náutico e da Economia do Mar no desenvolvimento da região, e mais um espaço para defender uma pauta que a associação repete: o mar como uma economia que gera emprego, renda e turismo.",
+        "<b>Turismo de eventos no radar</b>",
+        "Entre os temas que mobilizaram o encontro está a competitividade de Florianópolis no mercado de eventos, especialmente diante do período de transição envolvendo o CentroSul. O setor alerta que a captação de congressos e grandes eventos é definida com dois, três ou até quatro anos de antecedência. A intenção do Fórum é acompanhar o tema para que a promoção e a captação não percam ritmo, preservando um segmento que movimenta hotelaria, gastronomia, transporte, comércio e uma ampla cadeia de serviços.",
+        "<b>O trade quer participar das decisões</b>",
+        "Outro ponto central da retomada é ampliar a participação das entidades na construção das políticas e estratégias de turismo. O entendimento é que o setor privado, por estar diretamente conectado ao mercado, aos visitantes e aos investimentos, precisa participar das discussões desde a origem, e não apenas receber projetos já estruturados. Destinos como Balneário Camboriú e Joinville foram citados como referências de integração entre iniciativa privada e poder público.",
+        "<b>Financiamento do turismo e agenda para 2027</b>",
+        "A construção de fontes permanentes de recursos para o turismo também deve ganhar espaço, com temas como o Fundo Municipal de Turismo, a Room Tax e os impactos da Reforma Tributária para os municípios turísticos. Como primeiro movimento desta nova fase, o FORTUR vai atualizar a representação das entidades e iniciar a construção de uma agenda conjunta de prioridades, com o objetivo de chegar a 2027 mais representativo e preparado para atuar como uma voz coletiva do turismo da Grande Florianópolis.",
+        "\"A continuidade do FORTUR precisa vir acompanhada de uma nova dinâmica. O turismo tem um peso enorme na economia da Grande Florianópolis e precisa ter uma representação à altura dessa importância\", destaca Hamilton Peluso, vice-presidente do FORTUR.",
+        "<b>Com informações do release do FORTUR, de 13 de agosto de 2026.</b>"
+      ],
+      "corpo_en": [
+        "Tourism in Greater Florianópolis is starting a new phase of coordination, and it runs through a name directly linked to the Blue Economy. Meeting on Thursday, August 13, at CentroSul, during the 37th Encatho & Exprotel, FORTUR (the Greater Florianópolis Tourism Forum) unanimously reappointed Mané Ferrari as president and Hamilton Peluso as vice-president, through December 2026.",
+        "The current leadership is tasked with reorganizing the Forum, broadening the involvement of member entities and preparing the transition to a new administration in 2027, focused on uniting the trade, taking part in strategic decisions and strengthening regional tourism.",
+        "\"Tourism in Greater Florianópolis needs to speak again with a strong, coordinated voice. We have highly representative entities, but when each one acts on its own, we lose influence. We do not just want to be informed about the future of tourism. We want to help build it,\" says Mané Ferrari, president of FORTUR and of ACATMAR.",
+        "<b>What this means for ACATMAR and the Blue Economy</b>",
+        "Nautical tourism is one of the four pillars of the Blue Economy, alongside industry, trade and services. Having ACATMAR's president also leading the region's main tourism forum brings together two agendas that already move side by side and puts the sea at the center of the conversation about tourism development. In practice, the Blue Economy gains a seat and a voice in the decisions that shape the future of tourism in Greater Florianópolis.",
+        "For ACATMAR, it is recognition of the weight of the nautical sector and the Blue Economy in the region's development, and one more space to defend an agenda the association keeps repeating: the sea as an economy that generates jobs, income and tourism.",
+        "<b>Events tourism on the radar</b>",
+        "Among the topics that drove the meeting is the competitiveness of Florianópolis in the events market, especially given the transition period involving CentroSul. The sector warns that attracting congresses and major events is decided two, three or even four years in advance. The Forum intends to follow the issue so that promotion and attraction do not lose momentum, preserving a segment that drives hospitality, dining, transport, retail and a broad chain of services.",
+        "<b>The trade wants to take part in decisions</b>",
+        "Another central point of this revival is broadening the participation of entities in building tourism policies and strategies. The understanding is that the private sector, being directly connected to the market, visitors and investments, needs to take part in discussions from the start, not just receive ready-made projects. Destinations such as Balneário Camboriú and Joinville were cited as references for integration between the private sector and government.",
+        "<b>Funding tourism and a 2027 agenda</b>",
+        "Building permanent funding sources for tourism should also gain space, with topics such as the Municipal Tourism Fund, the Room Tax and the impacts of the Tax Reform on tourism municipalities. As the first move of this new phase, FORTUR will update the representation of its entities and begin building a joint agenda of priorities, aiming to reach 2027 more representative and ready to act as a collective voice for tourism in Greater Florianópolis.",
+        "\"The continuity of FORTUR must come with a new dynamic. Tourism has an enormous weight in the economy of Greater Florianópolis and needs representation that matches that importance,\" highlights Hamilton Peluso, vice-president of FORTUR.",
+        "<b>With information from the FORTUR press release, dated August 13, 2026.</b>"
+      ]
+    },
+    {
       "id": "vi-forum-2026",
       "titulo": "VI Fórum de Capacitação Técnica ACATMAR: inscrições abertas para a imersão de outubro de 2026",
       "titulo_en": "VI ACATMAR Technical Training Forum: registration open for the October 2026 immersion",
