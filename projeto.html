@@ -171,6 +171,7 @@
 
 
 
+
 <link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/projeto.html">
 <link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/project.html">
 <link rel="alternate" hreflang="x-default" href="https://www.acatmar.org/projeto.html">
@@ -286,7 +287,7 @@ function tx(k){return TX[k][EN?'en':'pt'];}
     var filhos=all.filter(function(x){return x.parent===p.id;}).sort(function(a,b){return (a.ordem||0)-(b.ordem||0);});
     var edic=filhos.length?'<div class="edicoes"><h2>'+(EN?'Editions':'Edições')+'</h2>'+filhos.map(function(f){return '<a class="ed-card" href="projeto.html?id='+f.id+'"><div class="ph"><img loading="lazy" src="'+f.imagem+'" alt="'+fld(f,'nome')+'"></div><div class="bd"><div class="t">'+fld(f,'nome')+'</div><div class="d">'+(fld(f,'resumo')||fld(f,'tagline')||'')+'</div><div class="more">'+(EN?'Learn more':'Saiba mais')+' →</div></div></a>';}).join('')+'</div>':'';
     document.getElementById('art').innerHTML=
-      fld(p,'corpo').map(function(x){return '<p>'+x+'</p>';}).join('')+galf+gal+edic+
+      fld(p,'corpo').map(function(x){return /^\s*<(div|table|ul|ol|figure|section)/i.test(x)?x:'<p>'+x+'</p>';}).join('')+galf+gal+edic+
       '<div class="cta"><h2>'+tx('ctaH')+'</h2><p>'+tx('ctaP')+'</p>'+
       '<a class="btn" href="associe-se.html">'+tx('join')+'</a></div>';
     document.querySelector('#others h2').textContent=tx('others');
