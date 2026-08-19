@@ -40,6 +40,13 @@
   .intro .eyebrow{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--teal-d);font-size:.86rem}
   .intro h1{font-size:clamp(1.8rem,4.5vw,2.7rem);text-transform:uppercase;color:var(--navy);margin:.35rem 0 .7rem}
   .intro p{font-size:1.1rem;max-width:760px}
+  .eventinfo{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.4rem 0 .4rem}
+  @media(max-width:640px){.eventinfo{grid-template-columns:1fr}}
+  .eventinfo .ei{display:flex;gap:.8rem;align-items:flex-start;background:#fff;border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:12px;padding:.9rem 1.1rem}
+  .eventinfo .ei-ic{font-size:1.5rem;line-height:1}
+  .eventinfo .ei b{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.05em;color:var(--navy);font-size:.9rem;display:block;margin-bottom:.15rem}
+  .eventinfo .ei span.t{font-family:system-ui,sans-serif;font-size:.98rem;color:var(--ink);line-height:1.45}
+  .eventinfo a{color:var(--teal-d);font-family:system-ui,sans-serif;font-size:.9rem;text-decoration:none;display:inline-block;margin-top:.3rem}
   .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:2rem;align-items:start;padding:1rem 0 3rem}
   @media(max-width:840px){.grid{grid-template-columns:1fr}}
   .pitch h2{font-family:'Oswald';font-weight:600;text-transform:uppercase;color:var(--navy);font-size:1.25rem;margin:1.4rem 0 .6rem}
@@ -81,9 +88,13 @@
   <div class="hero"><img src="media/noticias/vi-forum-2026-wide.jpg" alt="VI Fórum de Capacitação Técnica ACATMAR — Outubro de 2026"></div>
   <div class="wrap">
     <div class="intro">
-      <div class="eyebrow" data-en="Registration open · October 2026">Inscrições abertas · Outubro de 2026</div>
+      <div class="eyebrow" data-en="Registration open · October 20, 2026">Inscrições abertas · 20 de outubro de 2026</div>
       <h1 data-en="VI ACATMAR Technical Training Forum">VI Fórum de Capacitação Técnica ACATMAR</h1>
       <p data-en="A full day of immersion in nautical knowledge. Technical talks bringing innovation and new technologies for those who already live the sector and, above all, for those who want to get in.">Um dia inteiro de imersão em conhecimento náutico. Palestras técnicas trazendo inovação e novas tecnologias para quem já vive o setor e, principalmente, para quem ainda quer entrar nele.</p>
+      <div class="eventinfo">
+        <div class="ei"><span class="ei-ic">🗓️</span><div><b data-en="Date and time">Data e horário</b><span class="t" data-en="Tuesday, October 20, 2026 · 8am to 7pm">Terça-feira, 20 de outubro de 2026 · das 8h às 19h</span></div></div>
+        <div class="ei"><span class="ei-ic">📍</span><div><b data-en="Venue">Local</b><span class="t">IFSC — Câmpus Florianópolis-Continente<br>R. Quatorze de Julho, 150 — Coqueiros, Florianópolis/SC</span><a href="https://www.google.com/maps/search/?api=1&query=IFSC+C%C3%A2mpus+Florian%C3%B3polis-Continente+R.+Quatorze+de+Julho+150+Coqueiros" target="_blank" rel="noopener" data-en="View on the map">Ver no mapa →</a></div></div>
+      </div>
     </div>
 
     <div class="grid">
