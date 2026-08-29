@@ -1,6 +1,53 @@
 {
   "noticias": [
     {
+      "id": "lei-20050-2026-zenas-economia-do-mar",
+      "titulo": "Lei 20.050/2026: o que são as ZENAs, as novas Zonas Especiais Náuticas de Desenvolvimento de Santa Catarina",
+      "titulo_en": "Law 20,050/2026: what the ZENAs, Santa Catarina's new Special Nautical Development Zones, really are",
+      "categoria": "Economia do Mar",
+      "categoria_en": "Blue Economy",
+      "data": "2026-08-16",
+      "imagem": "media/noticias/lei-zenas-20050-2026.jpg",
+      "sem_card": true,
+      "imagem_inteira": true,
+      "resumo": "Sancionada em julho, a Lei 20.050/2026 cria a Política Estadual de Zonas Especiais Náuticas de Desenvolvimento (ZENAs) e estabelece diretrizes para a economia do mar em Santa Catarina. A ACATMAR explica, sem juridiquês, o que muda e o que não muda.",
+      "resumo_en": "Sanctioned in July, Law 20,050/2026 creates the State Policy for Special Nautical Development Zones (ZENAs) and sets guidelines for the blue economy in Santa Catarina. ACATMAR explains, in plain language, what changes and what does not.",
+      "corpo": [
+        "Santa Catarina deu mais um passo para organizar o crescimento da economia do mar. Em 29 de julho de 2026 foi sancionada a Lei 20.050/2026, que institui a Política Estadual de Zonas Especiais Náuticas de Desenvolvimento, as ZENAs, e estabelece diretrizes para o desenvolvimento do setor no Estado. Como é um tema novo e cheio de sigla, a ACATMAR reuniu o essencial para explicar, sem juridiquês, o que a lei é e o que ela não é.",
+        "<b>O que é uma ZENA</b>",
+        "Uma ZENA é uma área organizada, sob governança privada, pensada para reunir num mesmo lugar a infraestrutura de atividades ligadas ao mar. Na prática, é um espaço planejado para concentrar coisas como construção e reparo de embarcações, fabricação de equipamentos náuticos, centros de pesquisa e inovação, marinas e infraestrutura portuária privada. A ideia é que, juntas e bem organizadas, essas atividades se fortaleçam e atraiam mais investimento.",
+        "<b>Para que serve</b>",
+        "O objetivo da política é fortalecer a economia do mar, incentivar investimentos e a inovação tecnológica e integrar as atividades náutica, portuária, industrial, logística e turística. Em vez de cada empreendimento crescer de forma isolada, a lei cria um caminho para que o setor se desenvolva de maneira planejada e com diretrizes de sustentabilidade.",
+        "<b>O que a lei NÃO faz (desmistificando)</b>",
+        "É aqui que costuma aparecer confusão. A lei deixa claros dois pontos importantes:",
+        "<b>Não dispensa o licenciamento ambiental.</b> Nenhum empreendimento em uma ZENA fica liberado das exigências ambientais. O licenciamento continua obrigatório, do mesmo jeito.",
+        "<b>Não cria regime tributário nem portuário especial.</b> A ZENA não é uma \"zona franca\". A lei não concede isenção de impostos nem cria um regime portuário próprio.",
+        "<b>O que muda na prática</b>",
+        "O principal benefício é a prioridade. Os empreendimentos instalados em ZENAs passam a ter preferência no acesso aos programas estaduais de fomento. Ou seja, a lei não distribui dinheiro nem isenção automática, mas coloca o setor náutico na frente da fila quando o Estado oferece apoio ao desenvolvimento.",
+        "<b>Por que isso importa para a ACATMAR e para a economia do mar</b>",
+        "Para a ACATMAR, a Lei 20.050/2026 é um sinal de reconhecimento: o Estado passa a tratar a economia do mar como uma política de desenvolvimento, e não como um assunto isolado. Uma cadeia produtiva que envolve indústria, comércio, serviços e turismo ganha um instrumento para crescer de forma organizada, gerando emprego, renda e mais competitividade para Santa Catarina.",
+        "A ACATMAR vai acompanhar de perto a regulamentação e a aplicação da lei, e seguirá levando informação de qualidade para toda a cadeia do setor náutico.",
+        "<b>Com informações da Assembleia Legislativa de Santa Catarina (ALESC). A Lei 20.050/2026 foi sancionada em 29 de julho de 2026.</b>"
+      ],
+      "corpo_en": [
+        "Santa Catarina has taken another step to organize the growth of its blue economy. On July 29, 2026, Law 20,050/2026 was sanctioned, creating the State Policy for Special Nautical Development Zones, the ZENAs, and setting guidelines for the sector's development in the state. As this is a new, acronym-heavy topic, ACATMAR has gathered the essentials to explain, in plain language, what the law is and what it is not.",
+        "<b>What a ZENA is</b>",
+        "A ZENA is an organized area, under private governance, designed to bring together in one place the infrastructure of sea-related activities. In practice, it is a planned space to concentrate things such as vessel construction and repair, nautical equipment manufacturing, research and innovation centers, marinas and private port infrastructure. The idea is that, together and well organized, these activities strengthen one another and attract more investment.",
+        "<b>What it is for</b>",
+        "The policy aims to strengthen the blue economy, encourage investment and technological innovation, and integrate nautical, port, industrial, logistics and tourism activities. Instead of each enterprise growing in isolation, the law creates a path for the sector to develop in a planned way and with sustainability guidelines.",
+        "<b>What the law does NOT do (demystifying)</b>",
+        "This is where confusion usually appears. The law makes two important points clear:",
+        "<b>It does not waive environmental licensing.</b> No enterprise in a ZENA is exempt from environmental requirements. Licensing remains mandatory, just the same.",
+        "<b>It does not create a special tax or port regime.</b> A ZENA is not a \"free-trade zone\". The law grants no tax exemption and creates no port regime of its own.",
+        "<b>What changes in practice</b>",
+        "The main benefit is priority. Enterprises located in ZENAs gain preference in accessing state development-support programs. In other words, the law does not hand out money or automatic exemptions, but it puts the nautical sector at the front of the line when the state offers development support.",
+        "<b>Why it matters for ACATMAR and the blue economy</b>",
+        "For ACATMAR, Law 20,050/2026 is a sign of recognition: the state begins to treat the blue economy as a development policy, not as an isolated matter. A production chain involving industry, trade, services and tourism gains a tool to grow in an organized way, generating jobs, income and greater competitiveness for Santa Catarina.",
+        "ACATMAR will closely follow the regulation and application of the law, and will keep bringing quality information to the entire nautical sector chain.",
+        "<b>With information from the Legislative Assembly of Santa Catarina (ALESC). Law 20,050/2026 was sanctioned on July 29, 2026.</b>"
+      ]
+    },
+    {
       "id": "arthur-rocha-baptista-consul-noruega-itajai",
       "titulo": "ACATMAR celebra: associado Arthur Rocha Baptista assume como Cônsul Honorário da Noruega em Itajaí",
       "titulo_en": "ACATMAR celebrates: member Arthur Rocha Baptista becomes Honorary Consul of Norway in Itajaí",

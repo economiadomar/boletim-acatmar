@@ -180,6 +180,11 @@ for p, e, prio, freq in pares:
     add(f"{BASE}/{p}", prio, freq, alts=[("pt-BR", f"{BASE}/{p}"), ("en", f"{BASE}/{e}")])
     add(f"{BASE}/{e}", prio, freq, alts=[("pt-BR", f"{BASE}/{p}"), ("en", f"{BASE}/{e}")])
 
+# URL limpa do Forum — usada nos e-mails e materiais (o Gmail bloqueia links com "?")
+add(f"{BASE}/forum-acatmar.html", "0.9", "monthly",
+    alts=[("pt-BR", f"{BASE}/forum-acatmar.html"),
+          ("en", f"{BASE}/en/project.html?id=forum-acatmar")])
+
 for n in sorted(json.load(open("noticias.json"))["noticias"], key=lambda a: a["data"], reverse=True):
     pt_u = f"{BASE}/n/{n['id']}.html"; en_u = f"{BASE}/en/n/{n['id']}.html"
     add(pt_u, "0.8", "monthly", n["data"], [("pt-BR", pt_u), ("en", en_u)])

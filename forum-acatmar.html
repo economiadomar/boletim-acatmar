@@ -1,32 +1,36 @@
 <!DOCTYPE html>
+<!-- forum-acatmar.html — mesma pagina de projeto.html?id=forum-acatmar, com URL limpa.
+     Motivo: o Gmail exibe tela de "Aviso de redirecionamento" em links com "?" e ninguem clica.
+     Use SEMPRE https://www.acatmar.org/forum-acatmar.html em e-mails e materiais impressos.
+     O conteudo continua vindo de projetos.json (id: forum-acatmar) — nao ha texto duplicado aqui. -->
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Notícias | ACATMAR — Associação Náutica Brasileira</title>
-<meta name="description" content="Notícias da ACATMAR sobre o setor náutico brasileiro e a Economia do Mar.">
-<meta name="keywords" content="notícia setor náutico, economia do mar, acatmar">
+<title>Fórum de Capacitação Técnica ACATMAR | Edições e histórico — ACATMAR</title>
+<meta name="description" content="Um dia de imersão em conhecimento técnico para toda a cadeia produtiva do mar. Conheça o Fórum de Capacitação Técnica ACATMAR, suas edições anteriores e a VI edição, em 20 de outubro de 2026, em Florianópolis.">
+<meta name="keywords" content="fórum acatmar, capacitação técnica náutica, economia do mar, fórum náutico Florianópolis, VI Fórum ACATMAR 2026">
 <meta name="author" content="ACATMAR — Associação Náutica Brasileira">
-<link rel="canonical" href="https://www.acatmar.org/noticia.html">
+<link rel="canonical" href="https://www.acatmar.org/forum-acatmar.html">
 <meta property="og:site_name" content="ACATMAR — Associação Náutica Brasileira">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:locale:alternate" content="en_US">
-<meta property="og:url" content="https://www.acatmar.org/noticia.html">
-<meta property="og:title" content="Notícias | ACATMAR — Associação Náutica Brasileira">
-<meta property="og:description" content="Notícias da ACATMAR sobre o setor náutico brasileiro e a Economia do Mar.">
-<meta property="og:image" content="https://www.acatmar.org/media/og-acatmar.jpg">
+<meta property="og:url" content="https://www.acatmar.org/forum-acatmar.html">
+<meta property="og:title" content="Fórum de Capacitação Técnica ACATMAR | Edições e histórico">
+<meta property="og:description" content="Um dia de imersão em conhecimento técnico para toda a cadeia produtiva do mar. Conheça o Fórum de Capacitação Técnica ACATMAR, suas edições anteriores e a VI edição, em 20 de outubro de 2026, em Florianópolis.">
+<meta property="og:image" content="https://www.acatmar.org/media/noticias/vi-forum-2026-wide.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Notícias | ACATMAR — Associação Náutica Brasileira">
-<meta name="twitter:description" content="Notícias da ACATMAR sobre o setor náutico brasileiro e a Economia do Mar.">
-<meta name="twitter:image" content="https://www.acatmar.org/media/og-acatmar.jpg">
+<meta name="twitter:title" content="Fórum de Capacitação Técnica ACATMAR | Edições e histórico">
+<meta name="twitter:description" content="Um dia de imersão em conhecimento técnico para toda a cadeia produtiva do mar. Conheça o Fórum de Capacitação Técnica ACATMAR, suas edições anteriores e a VI edição, em 20 de outubro de 2026, em Florianópolis.">
+<meta name="twitter:image" content="https://www.acatmar.org/media/noticias/vi-forum-2026-wide.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow+Condensed:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
-  :root{--ink:#0c2230;--navy:#0a2540;--deep:#061726;--teal:#00a3b4;--teal-b:#35c9da;--teal-d:#00727e;
+  :root{--ink:#0c2230;--navy:#0a2540;--navy2:#0e3557;--deep:#061726;--teal:#00a3b4;--teal-b:#35c9da;--teal-d:#00727e;
     --paper:#f3f6f7;--sand:#e9eff1;--card:#fff;--muted:#5b6f7a;--line:#d6e0e4}
   *{box-sizing:border-box;margin:0;padding:0}
   body{font-family:'PT Serif',Georgia,serif;color:var(--ink);background:var(--paper);line-height:1.7;-webkit-font-smoothing:antialiased}
@@ -55,54 +59,51 @@
   .mobmenu.open{display:flex}
   @media(min-width:821px){.mobmenu{display:none !important}}
   @media(max-width:820px){.nav .r a.nl{display:none;} .nav .r a.assoc{display:none} .hamb{display:inline-flex;align-items:center}}
-  .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem;margin:.2rem 0 1.8rem}
-  .gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;background:var(--navy);display:block}
+  .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem;margin:.4rem 0 .6rem}
+  .gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;background:var(--navy);display:block}
   .gallery img:first-child{grid-column:1/-1;aspect-ratio:16/9}
   @media(max-width:600px){.gallery{grid-template-columns:1fr}.gallery img:first-child{aspect-ratio:4/3}}
-  .gallery.solo{grid-template-columns:1fr}
-  .gallery.solo img,.gallery.solo img:first-child{aspect-ratio:auto;width:auto;max-width:100%;max-height:860px;margin:0 auto;object-fit:contain;background:transparent}
-  .hero-img.inteira{aspect-ratio:auto;width:auto;max-width:100%;max-height:780px;margin:1.4rem auto .4rem;object-fit:contain;background:transparent;border-radius:16px}
-  .video-embed{position:relative;aspect-ratio:16/9;margin:1rem 0 1.4rem;border-radius:14px;overflow:hidden;background:#000}
-  .video-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-  .more-link{display:inline-flex;align-items:center;gap:.5rem;margin:.4rem 0 1.6rem;font-family:'Barlow Condensed';font-weight:600;
-    text-transform:uppercase;letter-spacing:.05em;font-size:.98rem;padding:.75rem 1.5rem;border-radius:999px;text-decoration:none;
-    background:var(--teal);color:#fff;transition:background .2s}
-  .more-link:hover{background:var(--teal-d)}
-  .cadastro-cta{display:block;margin:.2rem 0 1.8rem;text-align:center;font-family:'Barlow Condensed';font-weight:600;
-    text-transform:uppercase;letter-spacing:.05em;font-size:1.05rem;padding:1rem 1.6rem;border-radius:14px;text-decoration:none;
-    background:var(--navy);color:#fff;transition:background .2s}
-  .cadastro-cta:hover{background:var(--deep)}
-  .cadastro-cta small{display:block;font-weight:500;font-size:.82rem;letter-spacing:.03em;opacity:.85;margin-top:.15rem;text-transform:none}
-  .apoiadores{background:var(--sand);border-radius:16px;padding:1.3rem 1.5rem;margin:.4rem 0 1.8rem}
-  .apoiadores h2{font-family:'Oswald';font-size:1.1rem;color:var(--navy);text-transform:uppercase;margin-bottom:.9rem}
-  .apoiadores .grp{margin-bottom:.7rem;font-size:1rem;line-height:1.5}
-  .apoiadores .grp:last-child{margin-bottom:0}
-  .apoiadores .grp b{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--teal-d);display:block;font-size:.82rem;margin-bottom:.15rem}
-  .art{max-width:760px;margin:0 auto;padding:0 1.4rem}
-  .back{display:inline-flex;align-items:center;gap:.4rem;margin:1.8rem 0 .4rem;font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--teal-d);text-decoration:none;font-size:.92rem}
-  .cat{display:inline-block;background:var(--teal);color:#fff;font-family:'Barlow Condensed';font-weight:600;letter-spacing:.05em;text-transform:uppercase;font-size:.76rem;padding:.24rem .7rem;border-radius:999px;margin-bottom:.6rem}
-  h1.title{font-size:clamp(1.8rem,4.5vw,2.8rem);color:var(--navy);text-transform:uppercase;margin-top:.2rem}
-  .meta{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem;color:var(--muted);margin-top:.7rem}
-  .hero-img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px;margin:1.4rem 0 .4rem;display:block;background:var(--navy)}
-  .credito{font-family:'Barlow Condensed';font-weight:500;letter-spacing:.06em;text-transform:uppercase;font-size:.72rem;color:var(--muted);margin-bottom:1.6rem}
-  .body p{font-size:1.12rem;margin-bottom:1.1rem}
-  .body p:first-of-type{font-size:1.22rem;color:var(--navy)}
-  .share{display:flex;gap:.6rem;align-items:center;margin:2rem 0;padding:1.1rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .share span{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-size:.85rem}
-  .share a,.share button{font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.04em;font-size:.85rem;
-    padding:.45rem .9rem;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--navy);text-decoration:none;cursor:pointer}
-  .share a:hover,.share button:hover{background:var(--sand)}
-  .related{max-width:1160px;margin:0 auto;padding:1rem 1.4rem 3.5rem}
-  .related h2{font-size:1.4rem;color:var(--navy);text-transform:uppercase;margin-bottom:1.1rem}
-  .rg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
-  .rc{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
-  .rc:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(10,37,64,.12)}
-  .rc img{width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--navy)}
-  .rc .b{padding:.9rem 1rem 1.1rem}
-  .rc .d{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:.72rem;color:var(--muted)}
-  .rc h3{font-family:'Oswald';font-weight:600;color:var(--navy);font-size:1.05rem;line-height:1.15;margin-top:.25rem}
-  @media(max-width:760px){.rg{grid-template-columns:1fr}}
-  .load{max-width:760px;margin:4rem auto;text-align:center;color:var(--muted);padding:0 1.4rem}
+  .gallery-full{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin:.4rem 0 1rem}
+  .gallery-full img{max-width:100%;width:auto;max-height:640px;border-radius:14px;display:block;box-shadow:0 12px 30px rgba(10,37,64,.14)}
+  .edicoes{margin:2.2rem 0 .4rem}
+  .edicoes h2{font-family:'Oswald';font-weight:600;text-transform:uppercase;color:var(--navy);font-size:1.4rem;margin-bottom:1rem;padding-bottom:.5rem;border-bottom:2px solid var(--teal)}
+  .ed-card{display:grid;grid-template-columns:300px 1fr;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:1.3rem;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s}
+  .ed-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(10,37,64,.14)}
+  .ed-card .ph{background:var(--navy);overflow:hidden}
+  .ed-card .ph img{width:100%;height:100%;min-height:190px;object-fit:cover;display:block;transition:transform .4s}
+  .ed-card:hover .ph img{transform:scale(1.05)}
+  .ed-card .bd{padding:1.3rem 1.5rem;display:flex;flex-direction:column;gap:.5rem}
+  .ed-card .t{font-family:'Oswald';font-weight:600;text-transform:uppercase;color:var(--navy);font-size:1.22rem;line-height:1.12}
+  .ed-card .d{color:var(--muted);font-size:.98rem;line-height:1.5}
+  .ed-card .more{margin-top:auto;font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--teal-d);font-size:.92rem}
+  @media(max-width:600px){.ed-card{grid-template-columns:1fr}.ed-card .ph img{aspect-ratio:16/9;min-height:0}}
+  .hero{position:relative;color:#fff;overflow:hidden;background:radial-gradient(130% 120% at 78% -20%,#155a86 0%,var(--navy) 45%,var(--deep) 100%)}
+  .hero.haspic{background:var(--navy)}
+  .hero .pic{position:absolute;inset:0;opacity:.32;object-fit:cover;object-position:center 28%;width:100%;height:100%}
+  .hero .wr{position:relative;z-index:2;max-width:1160px;margin:0 auto;padding:3.2rem 1.4rem}
+  .hero .eyebrow{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--teal-b);font-size:.85rem}
+  .hero h1{font-size:clamp(2rem,5vw,3.3rem);text-transform:uppercase;margin-top:.5rem}
+  .hero .tag{font-family:'PT Serif';font-style:italic;color:#d3e4ee;font-size:clamp(1.05rem,2.4vw,1.3rem);margin-top:.6rem;max-width:640px}
+  .back{display:inline-flex;gap:.4rem;color:#cfe0ea;text-decoration:none;font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:.9rem;margin-bottom:1rem}
+  .back:hover{color:#fff}
+  .art{max-width:760px;margin:0 auto;padding:2.6rem 1.4rem}
+  .art p{font-size:1.12rem;margin-bottom:1.1rem}
+  .art p:first-of-type{font-size:1.22rem;color:var(--navy)}
+  .cta{background:var(--sand);border-radius:16px;padding:1.6rem;margin-top:1rem;text-align:center}
+  .cta h2{font-size:1.4rem;color:var(--navy);text-transform:uppercase}
+  .cta p{color:var(--muted);margin:.5rem 0 1rem}
+  .btn{display:inline-flex;gap:.5rem;font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;letter-spacing:.05em;
+    padding:.7rem 1.5rem;border-radius:999px;text-decoration:none;background:var(--teal);color:#fff}
+  .btn:hover{background:var(--teal-d)}
+  .others{max-width:1160px;margin:0 auto;padding:1rem 1.4rem 3.5rem}
+  .others h2{font-size:1.3rem;color:var(--navy);text-transform:uppercase;margin-bottom:1rem}
+  .og{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+  .oc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.2rem;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s}
+  .oc:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(10,37,64,.12)}
+  .oc .t{font-family:'Oswald';font-weight:600;text-transform:uppercase;color:var(--navy);font-size:1.05rem}
+  .oc .d{color:var(--muted);font-size:.9rem;margin-top:.2rem}
+  @media(max-width:760px){.og{grid-template-columns:1fr}}
+  .load{max-width:760px;margin:4rem auto;text-align:center;color:var(--muted)}
   footer{background:var(--deep);color:#9fb4c2;padding:2.8rem 0 2rem;font-size:.92rem}
   footer .fwrap{max-width:1160px;margin:0 auto;padding:0 1.4rem}
   footer .top{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:space-between;align-items:center;padding-bottom:1.4rem;border-bottom:1px solid rgba(255,255,255,.1)}
@@ -186,10 +187,9 @@
 
 
 
-
-<link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/noticia.html">
-<link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/article.html">
-<link rel="alternate" hreflang="x-default" href="https://www.acatmar.org/noticia.html">
+<link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/projeto.html">
+<link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/project.html">
+<link rel="alternate" hreflang="x-default" href="https://www.acatmar.org/projeto.html">
 </head>
 <body>
 <a class="promobar" href="https://www.bluenauticalhubbrasil.com/" target="_blank" rel="noopener">
@@ -218,8 +218,11 @@
   <a href="associe-se.html" data-en="Join us">Associe-se</a>
 </div>
 
-<article class="art" id="art"><div class="load">Carregando…</div></article>
-<section class="related" id="related" style="display:none"><h2>Mais notícias</h2><div class="rg" id="rg"></div></section>
+<header class="hero" id="hero">
+  <div class="wr" id="herowr"><div class="load" style="color:#cfe0ea">Carregando…</div></div>
+</header>
+<article class="art" id="art"></article>
+<section class="others" id="others" style="display:none"><h2>Outros projetos</h2><div class="og" id="og"></div></section>
 
 <footer>
   <div class="fwrap">
@@ -245,82 +248,72 @@
 </footer>
 
 <script>
-var LANG=localStorage.getItem('acatmar_lang')||'pt', EN=LANG==='en';
+var LANG=localStorage.getItem('acatmar_lang')||'pt';
+var EN=LANG==='en';
 function fld(o,f){return (EN&&o[f+'_en'])?o[f+'_en']:o[f];}
-function fmtData(iso){var pt=['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];var en=['January','February','March','April','May','June','July','August','September','October','November','December'];var p=iso.split('-');var mi=parseInt(p[1],10)-1;return EN?(en[mi]+' '+p[2]+', '+p[0]):(p[2]+' de '+pt[mi]+' de '+p[0]);}
+var TX={back:{pt:'← Todos os projetos',en:'← All projects'},eyebrow:{pt:'Projeto ACATMAR',en:'ACATMAR Project'},
+  ctaH:{pt:'Faça parte da ACATMAR',en:'Join ACATMAR'},ctaP:{pt:'Some sua empresa a quem constrói o futuro do setor náutico brasileiro.',en:'Add your company to those building the future of Brazil’s nautical sector.'},
+  join:{pt:'Quero me associar',en:'I want to join'},others:{pt:'Outros projetos',en:'Other projects'},assoc:{pt:'Associe-se',en:'Join us'}};
+function tx(k){return TX[k][EN?'en':'pt'];}
 (function(){document.documentElement.lang=EN?'en':'pt-BR';var b=document.getElementById('lb');if(b){b.textContent=EN?'PT':'EN';b.onclick=function(){localStorage.setItem('acatmar_lang',EN?'pt':'en');location.reload();};}
-  var a=document.getElementById('assoc');if(a)a.textContent=EN?'Join us':'Associe-se';
+  var a=document.getElementById('assoc');if(a)a.textContent=tx('assoc');
   if(EN)document.querySelectorAll('.nl,.promobar [data-en],footer [data-en],.mobmenu [data-en]').forEach(function(x){x.textContent=x.getAttribute('data-en');});})();
 (async function(){
-  var id=new URLSearchParams(location.search).get('id');
-  if(id){ location.replace('/n/'+id+'.html'); return; }   /* pagina estatica (foto no compartilhamento + SEO) */
-  var art=document.getElementById('art');
+  var id='forum-acatmar';   // pagina de URL limpa: nao depende de ?id=
   try{
-    var d=await (await fetch('noticias.json?v='+Date.now())).json();
-    var all=d.noticias||[]; var n=all.filter(function(x){return x.id===id;})[0]||all[0];
-    if(!n){ art.innerHTML='<div class="load">'+(EN?'News not found.':'Notícia não encontrada.')+' <a href="index.html">'+(EN?'Back':'Voltar')+'</a></div>'; return; }
+    var d=await (await fetch('projetos.json?v='+Date.now())).json();
+    var all=d.projetos||[]; var p=all.filter(function(x){return x.id===id;})[0]||all[0];
+    if(!p){ document.getElementById('herowr').innerHTML='<div class="load" style="color:#fff">Projeto não encontrado. <a href="index.html">Voltar</a></div>'; return; }
 
-    /* SEO dinamico: title, description, canonical, OG e dados estruturados */
-    (function setSEO(){
+    (function setSEOp(){
       var BASE='https://www.acatmar.org';
-      var url=BASE+'/noticia.html?id='+n.id;
-      var titulo=fld(n,'titulo'), desc=fld(n,'resumo')||'';
-      var img=BASE+'/'+n.imagem;
+      var url=BASE+'/forum-acatmar.html';
+      var titulo=fld(p,'nome'), desc=fld(p,'resumo')||fld(p,'tagline')||'';
+      var img=BASE+'/media/noticias/vi-forum-2026-wide.jpg';
       document.title=titulo+' — ACATMAR';
       function meta(sel,attr,val){var e=document.head.querySelector(sel);if(!e){e=document.createElement('meta');
-        var p=sel.match(/\[(.+?)="(.+?)"\]/); if(p) e.setAttribute(p[1],p[2]); document.head.appendChild(e);}
+        var m=sel.match(/\[(.+?)="(.+?)"\]/); if(m) e.setAttribute(m[1],m[2]); document.head.appendChild(e);}
         e.setAttribute(attr,val);}
       meta('meta[name="description"]','content',desc);
       meta('meta[property="og:title"]','content',titulo);
       meta('meta[property="og:description"]','content',desc);
       meta('meta[property="og:image"]','content',img);
       meta('meta[property="og:url"]','content',url);
-      meta('meta[property="og:type"]','content','article');
       meta('meta[name="twitter:title"]','content',titulo);
       meta('meta[name="twitter:description"]','content',desc);
       meta('meta[name="twitter:image"]','content',img);
       var c=document.head.querySelector('link[rel="canonical"]');
       if(!c){c=document.createElement('link');c.rel='canonical';document.head.appendChild(c);} c.href=url;
-      var ld={"@context":"https://schema.org","@type":"NewsArticle","headline":titulo,
-        "description":desc,"image":[img],"datePublished":n.data,"dateModified":n.data,
-        "inLanguage":EN?'en':'pt-BR',"mainEntityOfPage":{"@type":"WebPage","@id":url},
-        "author":{"@type":"Organization","name":"ACATMAR — Associação Náutica Brasileira","url":BASE+'/'},
-        "publisher":{"@type":"Organization","name":"ACATMAR — Associação Náutica Brasileira",
-          "logo":{"@type":"ImageObject","url":BASE+"/media/logos/acatmar-vertical-02.png"}},
-        "articleSection":fld(n,'categoria')};
+      var ld={"@context":"https://schema.org","@type":"Project","name":titulo,"description":desc,"image":img,
+        "url":url,"inLanguage":EN?'en':'pt-BR',
+        "parentOrganization":{"@type":"Organization","name":"ACATMAR — Associação Náutica Brasileira","url":BASE+'/'}};
       var s=document.createElement('script');s.type='application/ld+json';
       s.textContent=JSON.stringify(ld);document.head.appendChild(s);
     })();
 
-    var body=fld(n,'corpo').map(function(p){return '<p>'+p+'</p>';}).join('');
-    art.innerHTML=
-      '<a class="back" href="noticias.html">'+(EN?'← All news':'← Todas as notícias')+'</a>'+
-      '<div><span class="cat">'+fld(n,'categoria')+'</span></div>'+
-      '<h1 class="title">'+fld(n,'titulo')+'</h1>'+
-      '<div class="meta">'+fmtData(n.data)+'</div>'+
-      '<img class="hero-img'+(n.imagem_inteira?' inteira':'')+'" src="'+n.imagem+'" alt="'+fld(n,'titulo')+'">'+
-      (n.credito?'<div class="credito">'+(EN?'Photo: ':'Foto: ')+n.credito+'</div>':'')+
-      (n.video?'<div class="video-embed"><iframe src="https://www.youtube.com/embed/'+n.video+'" title="'+fld(n,'titulo')+'" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>':'')+
-      (n.audio?'<div class="audio-embed"><iframe src="'+n.audio+'" width="100%" height="152" frameborder="0" scrolling="no" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" style="border:0;border-radius:14px;margin:1rem 0 1.4rem"></iframe></div>':'')+
-      '<div class="body">'+body+'</div>'+
-      ((n.galeria&&n.galeria.length)?'<div class="gallery'+(n.galeria.length===1?' solo':'')+'">'+n.galeria.map(function(s){return '<img loading="lazy" src="'+s+'" alt="'+fld(n,'titulo')+'">';}).join('')+'</div>':'')+
-      (n.apoiadores?'<div class="apoiadores"><h2>'+((EN&&n.apoiadores_titulo_en)?n.apoiadores_titulo_en:(n.apoiadores_titulo||(EN?'Organizers and supporters':'Realização e apoiadores')))+'</h2>'+n.apoiadores.map(function(g){return '<div class="grp"><b>'+((EN&&g.grupo_en)?g.grupo_en:g.grupo)+'</b>'+g.itens.join(' · ')+'</div>';}).join('')+'</div>':'')+
-      (n.link?'<a class="more-link" href="'+n.link+'" target="_blank" rel="noopener">'+(fld(n,'link_label')||(EN?'Learn more':'Saiba mais'))+' →</a>':'')+
-      (n.cadastro?'<a class="cadastro-cta" href="'+n.cadastro+'" target="_blank" rel="noopener">'+(EN?'I want to take part in the Blue Nautical HUB 2027':'Quero participar do Blue Nautical HUB 2027')+' →<small>'+(EN?'Sign up for the 2027 edition':'Faça seu cadastro para a edição 2027')+'</small></a>':'')+
-      '<div class="share"><span>'+(EN?'Share':'Compartilhar')+'</span>'+
-        '<a target="_blank" rel="noopener" href="https://wa.me/?text='+encodeURIComponent(fld(n,'titulo')+' '+location.href)+'">WhatsApp</a>'+
-        '<button id="copy">'+(EN?'Copy link':'Copiar link')+'</button></div>';
-    document.getElementById('copy').addEventListener('click',function(){
-      (navigator.clipboard?navigator.clipboard.writeText(location.href):Promise.reject()).then(function(){this.textContent=EN?'Copied!':'Copiado!';}.bind(this)).catch(function(){prompt('Link:',location.href);});
+    var hero=document.getElementById('hero');
+    if(p.imagem && !p.hero_sem_foto){ hero.classList.add('haspic'); var im=document.createElement('img'); im.className='pic'; im.src=p.imagem; im.alt=''; if(p.hero_pos) im.style.objectPosition=p.hero_pos; hero.insertBefore(im,hero.firstChild); }
+    document.getElementById('herowr').innerHTML=
+      '<a class="back" href="index.html#projetos">'+tx('back')+'</a>'+
+      '<div class="eyebrow">'+tx('eyebrow')+'</div><h1>'+fld(p,'nome')+'</h1>'+
+      (fld(p,'tagline')?'<div class="tag">'+fld(p,'tagline')+'</div>':'');
+    var gal=(p.galeria&&p.galeria.length)?'<div class="gallery">'+p.galeria.map(function(s){return '<img loading="lazy" src="'+s+'" alt="'+fld(p,'nome')+'">';}).join('')+'</div>':'';
+    var galf=(p.galeria_inteira&&p.galeria_inteira.length)?'<div class="gallery-full">'+p.galeria_inteira.map(function(s){return '<img loading="lazy" src="'+s+'" alt="'+fld(p,'nome')+'">';}).join('')+'</div>':'';
+    var filhos=all.filter(function(x){return x.parent===p.id;}).sort(function(a,b){return (a.ordem||0)-(b.ordem||0);});
+    var edic=filhos.length?'<div class="edicoes"><h2>'+(EN?'Editions':'Edições')+'</h2>'+filhos.map(function(f){return '<a class="ed-card" href="projeto.html?id='+f.id+'"><div class="ph"><img loading="lazy" src="'+f.imagem+'" alt="'+fld(f,'nome')+'"></div><div class="bd"><div class="t">'+fld(f,'nome')+'</div><div class="d">'+(fld(f,'resumo')||fld(f,'tagline')||'')+'</div><div class="more">'+(EN?'Learn more':'Saiba mais')+' →</div></div></a>';}).join('')+'</div>':'';
+    document.getElementById('art').innerHTML=
+      fld(p,'corpo').map(function(x){return /^\s*<(div|table|ul|ol|figure|section)/i.test(x)?x:'<p>'+x+'</p>';}).join('')+galf+gal+edic+
+      '<div class="cta"><h2>'+tx('ctaH')+'</h2><p>'+tx('ctaP')+'</p>'+
+      '<a class="btn" href="associe-se.html">'+tx('join')+'</a></div>';
+    document.querySelector('#others h2').textContent=tx('others');
+    var og=document.getElementById('og');
+    all.filter(function(x){return x.id!==p.id;}).slice(0,3).forEach(function(x){
+      var a=document.createElement('a'); a.className='oc'; a.href='projeto.html?id='+x.id;
+      a.innerHTML='<div class="t">'+fld(x,'nome')+'</div><div class="d">'+(fld(x,'tagline')||'')+'</div>'; og.appendChild(a);
     });
-    document.querySelector('#related h2').textContent=EN?'More news':'Mais notícias';
-    var rel=all.filter(function(x){return x.id!==n.id;}).slice(0,3);
-    var rg=document.getElementById('rg');
-    rel.forEach(function(x){var a=document.createElement('a');a.className='rc';a.href='noticia.html?id='+x.id;
-      a.innerHTML='<img loading="lazy" src="'+x.imagem+'" alt="'+fld(x,'titulo')+'"><div class="b"><div class="d">'+fmtData(x.data)+'</div><h3>'+fld(x,'titulo')+'</h3></div>';rg.appendChild(a);});
-    document.getElementById('related').style.display='';
+    document.getElementById('others').style.display='';
     window.scrollTo(0,0);
-  }catch(e){ art.innerHTML='<div class="load">'+(EN?'Error loading.':'Erro ao carregar.')+' <a href="index.html">'+(EN?'Back':'Voltar')+'</a></div>'; }
+  }catch(e){ document.getElementById('herowr').innerHTML='<div class="load" style="color:#fff">Erro ao carregar. <a href="index.html">Voltar</a></div>'; }
 })();
 </script>
 <script src="assets/cookie-consent.js" defer></script>
