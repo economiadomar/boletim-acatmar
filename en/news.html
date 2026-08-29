@@ -165,6 +165,7 @@
 
 
 
+
 <link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/noticias.html">
 <link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/news.html">
 <link rel="alternate" hreflang="x-default" href="https://www.acatmar.org/noticias.html">
@@ -255,7 +256,7 @@ function render(){
 (async function(){
   try{
     var d=await (await fetch('../noticias.json?v='+Date.now())).json();
-    ALL=(d.noticias||[]).slice().sort(function(a,b){return a.data<b.data?1:-1;});
+    ALL=(d.noticias||[]).slice().sort(function(a,b){return a.data<b.data?1:(a.data>b.data?-1:0);});
     render();
   }catch(e){ document.getElementById('grid').innerHTML='<div class="load">'+(EN?'Could not load the news.':'Não foi possível carregar as notícias.')+'</div>'; }
 })();
