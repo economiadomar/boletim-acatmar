@@ -59,7 +59,7 @@ META_EN = {
  "cookie-policy.html": ("Cookie Policy | ACATMAR",
    "How the ACATMAR website uses cookies and local storage.",
    "cookie policy, privacy, lgpd"),
- "numbers.html": ("Sea Economy in Numbers | Brazilian Nautical Sector Data — ACATMAR",
+ "numbers.html": ("Sea Economy in Numbers | Brazilian Nautical Sector Data | ACATMAR",
    "ACATMAR reference page with the key figures of Brazil's Sea Economy and nautical sector: jobs, companies, boat production, Itajaí and Santa Catarina exports, foreign trade, legal framework (ZENAs) and US tariffs. Data with source, date and methodology.",
    "sea economy data, blue economy brazil statistics, brazilian nautical industry numbers, boat production santa catarina, boat exports itajai, marine industry jobs brazil, acatmar data"),
 }
@@ -95,6 +95,8 @@ def para_en(t, pt_file, en_file):
     titulo, desc, kw = META_EN[en_file]
     canon_en = f"{BASE}/en/" if en_file == "index.html" else f"{BASE}/en/{en_file}"
     canon_pt = f"{BASE}/" if pt_file == "index.html" else f"{BASE}/{pt_file}"
+    if pt_file == "numeros.html":  # pagina de referencia: URL limpa (Cloudflare redireciona .html)
+        canon_pt, canon_en = canon_pt[:-5], canon_en[:-5]
     t = re.sub(r'<title>.*?</title>', f"<title>{titulo}</title>", t, count=1, flags=re.S)
     t = re.sub(r'\n\s*<meta name="description"[^>]*>', f'\n<meta name="description" content="{desc}">', t, count=1)
     t = re.sub(r'\n\s*<meta name="keywords"[^>]*>', f'\n<meta name="keywords" content="{kw}">', t, count=1)
