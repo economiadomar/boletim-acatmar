@@ -137,6 +137,22 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.acatmar.org/n/tarifas-eua-embarcacoes-informativo-2026.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/n/tarifas-eua-embarcacoes-informativo-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/n/tarifas-eua-embarcacoes-informativo-2026.html"/>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.acatmar.org/en/n/tarifas-eua-embarcacoes-informativo-2026.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/n/tarifas-eua-embarcacoes-informativo-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/n/tarifas-eua-embarcacoes-informativo-2026.html"/>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.acatmar.org/n/itajai-exportacoes-barcos-93-2026.html</loc>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/n/itajai-exportacoes-barcos-93-2026.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/n/itajai-exportacoes-barcos-93-2026.html"/>
