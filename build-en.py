@@ -164,6 +164,8 @@ for pt, en in PAGES.items():
     t = re.sub(r'\n<link rel="alternate" hreflang="[^"]*"[^>]*>', '', t)
     canon_pt = f"{BASE}/" if pt == "index.html" else f"{BASE}/{pt}"
     canon_en = f"{BASE}/en/" if en == "index.html" else f"{BASE}/en/{en}"
+    if pt == "numeros.html":  # pagina de referencia: URL limpa
+        canon_pt, canon_en = canon_pt[:-5], canon_en[:-5]
     hre = (f'\n<link rel="alternate" hreflang="pt-BR" href="{canon_pt}">'
            f'\n<link rel="alternate" hreflang="en" href="{canon_en}">'
            f'\n<link rel="alternate" hreflang="x-default" href="{canon_pt}">')
