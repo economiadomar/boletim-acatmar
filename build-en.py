@@ -108,6 +108,7 @@ def para_en(t, pt_file, en_file):
     t = re.sub(r'<meta property="og:locale:alternate"[^>]*>', '<meta property="og:locale:alternate" content="pt_BR">', t, count=1)
     t = re.sub(r'<meta name="twitter:title"[^>]*>', f'<meta name="twitter:title" content="{titulo}">', t, count=1)
     t = re.sub(r'<meta name="twitter:description"[^>]*>', f'<meta name="twitter:description" content="{desc}">', t, count=1)
+    t = re.sub(r'\n<link rel="alternate" hreflang="[^"]*"[^>]*>', '', t)  # nao duplicar os da pagina PT
     hre = (f'\n<link rel="alternate" hreflang="pt-BR" href="{canon_pt}">'
            f'\n<link rel="alternate" hreflang="en" href="{canon_en}">'
            f'\n<link rel="alternate" hreflang="x-default" href="{canon_pt}">')
