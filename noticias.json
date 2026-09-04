@@ -7,9 +7,7 @@
       "categoria": "Economia do Mar",
       "categoria_en": "Blue Economy",
       "data": "2026-09-04",
-      "imagem": "media/noticias/itajai-exportacoes-2026.jpg",
-      "sem_card": true,
-      "imagem_inteira": true,
+      "imagem": "media/noticias/itajai-marina-aerea.jpg",
       "resumo": "No primeiro semestre de 2026, Itajaí exportou US$ 8,7 milhões em embarcações de esporte e lazer, alta de 93% sobre 2025, e liderou as exportações do país. Para a ACATMAR, o dado revela a dimensão de uma cadeia que gera indústria, tecnologia, serviços, emprego e comércio exterior.",
       "resumo_en": "In the first half of 2026, Itajaí exported US$ 8.7 million in sport and leisure vessels, up 93% on 2025, leading the country's exports. For ACATMAR, the figure reveals the scale of a chain that generates industry, technology, services, jobs and foreign trade.",
       "corpo": [
@@ -57,6 +55,10 @@
         "The US$ 8.7 million exported by Itajaí in the first half of 2026 are, therefore, much more than a foreign-trade figure. They represent a chain that produces, employs, buys, sells, develops technology, drives services and takes high-value Brazilian products to the international market.",
         "The nautical sector is industry. It is services. It is technology. It is jobs. It is exports. It is the Blue Economy.",
         "<b>Foreign-trade data: Comex Stat/MDIC. With information from reporting by the newspaper Diarinho.</b>"
+      ],
+      "credito": "Marina Itajaí / Divulgação",
+      "galeria": [
+        "media/noticias/itajai-exportacoes-2026.jpg"
       ]
     },
     {
