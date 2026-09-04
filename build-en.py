@@ -20,6 +20,7 @@ PAGES = {                       # arquivo PT -> arquivo EN (dentro de /en/)
     "lei.html":        "public-utility-law.html",
     "privacidade.html":"privacy-policy.html",
     "cookies.html":    "cookie-policy.html",
+    "numeros.html":    "numbers.html",
 }
 
 # meta tags em inglês (title / description / keywords)
@@ -58,6 +59,9 @@ META_EN = {
  "cookie-policy.html": ("Cookie Policy | ACATMAR",
    "How the ACATMAR website uses cookies and local storage.",
    "cookie policy, privacy, lgpd"),
+ "numbers.html": ("Sea Economy in Numbers | Brazilian Nautical Sector Data — ACATMAR",
+   "ACATMAR reference page with the key figures of Brazil's Sea Economy and nautical sector: jobs, companies, boat production, Itajaí and Santa Catarina exports, foreign trade, legal framework (ZENAs) and US tariffs. Data with source, date and methodology.",
+   "sea economy data, blue economy brazil statistics, brazilian nautical industry numbers, boat production santa catarina, boat exports itajai, marine industry jobs brazil, acatmar data"),
 }
 
 os.makedirs("en", exist_ok=True)
@@ -173,6 +177,7 @@ def add(loc, prio, freq, last=None, alts=None):
 pares = [("", "en/", "1.0", "weekly"), ("sobre.html", "en/about.html", "0.9", "monthly"),
          ("noticias.html", "en/news.html", "0.9", "weekly"),
          ("projetos.html", "en/projects.html", "0.9", "weekly"), ("associe-se.html", "en/join.html", "0.9", "monthly"),
+         ("numeros.html", "en/numbers.html", "0.9", "weekly"),
          ("lei.html", "en/public-utility-law.html", "0.4", "yearly"),
          ("privacidade.html", "en/privacy-policy.html", "0.3", "yearly"),
          ("cookies.html", "en/cookie-policy.html", "0.3", "yearly")]
