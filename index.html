@@ -65,6 +65,21 @@
   .forumband .fb-cta{font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.05em;
     background:#00a3b4;color:#fff;padding:.42rem 1.2rem;border-radius:999px;font-size:.95rem;white-space:nowrap}
   .forumband:hover .fb-cta{background:#35c9da;color:#06263c}
+  .numref{background:var(--paper);padding:2.6rem 0 2.3rem;border-bottom:1px solid var(--line)}
+  .numref .wrap{max-width:1160px;margin:0 auto;padding:0 1.4rem}
+  .numref .head{display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;flex-wrap:wrap;margin-bottom:1.2rem}
+  .numref .eb{font-family:'Barlow Condensed',sans-serif;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--teal-d);font-size:.82rem}
+  .numref h2{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;color:var(--navy);font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.08;margin-top:.25rem}
+  .numref .sub{color:var(--muted);max-width:640px;margin-top:.4rem;font-size:1rem}
+  .numref .btn-num{font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff;background:var(--teal);padding:.7rem 1.3rem;border-radius:999px;text-decoration:none;white-space:nowrap}
+  .numref .btn-num:hover{background:var(--teal-d)}
+  .numref .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+  .numref .t{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1rem 1.1rem;box-shadow:0 8px 22px rgba(10,37,64,.06)}
+  .numref .t .n{font-family:'Oswald',sans-serif;font-weight:700;color:var(--teal-d);font-size:1.95rem;line-height:1}
+  .numref .t .l{font-size:.94rem;margin-top:.3rem;line-height:1.35}
+  .numref .t .s{font-family:'Barlow Condensed',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:.7rem;color:var(--muted);margin-top:.45rem}
+  @media(max-width:900px){.numref .grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.numref .grid{grid-template-columns:1fr}}
   .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
   .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
   .nav .logo{display:flex;align-items:center;height:56px}
@@ -300,6 +315,7 @@
 
 
 
+
 <link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/">
 <link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/">
 <link rel="alternate" hreflang="x-default" href="https://www.acatmar.org/">
@@ -362,6 +378,25 @@
     <div><div class="n">+15</div><div class="l">Anos de história</div></div>
   </div></div>
 </div>
+
+<section class="numref" id="numeros-home">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <div class="eb" data-pt="Referência do setor" data-en="Sector reference">Referência do setor</div>
+        <h2 data-pt="Economia do Mar em Números" data-en="Sea Economy in Numbers">Economia do Mar em Números</h2>
+        <p class="sub" data-pt="Os principais indicadores do setor náutico brasileiro e catarinense, com fonte, data e metodologia. A página de dados da ACATMAR para imprensa, pesquisa e mercado." data-en="The key indicators of the Brazilian and Santa Catarina nautical sector, with source, date and methodology. ACATMAR's data page for the press, research and the market.">Os principais indicadores do setor náutico brasileiro e catarinense, com fonte, data e metodologia. A página de dados da ACATMAR para imprensa, pesquisa e mercado.</p>
+      </div>
+      <a class="btn-num" href="numeros.html" data-pt="Ver todos os números →" data-en="See all the numbers →">Ver todos os números →</a>
+    </div>
+    <div class="grid">
+      <a class="t" href="numeros.html#sc" style="text-decoration:none;color:inherit"><div class="n">240 mil</div><div class="l" data-pt="trabalhadores formais na Economia do Mar de SC" data-en="formal workers in SC's Sea Economy">trabalhadores formais na Economia do Mar de SC</div><div class="s">SEPLAN/SC · 2026</div></a>
+      <a class="t" href="numeros.html#nautico" style="text-decoration:none;color:inherit"><div class="n">68%</div><div class="l" data-pt="das exportações brasileiras de embarcações de lazer saem de SC" data-en="of Brazil's leisure-boat exports come from SC">das exportações brasileiras de embarcações de lazer saem de SC</div><div class="s" data-pt="Levantamentos do setor · ACATMAR" data-en="Sector surveys · ACATMAR">Levantamentos do setor · ACATMAR</div></a>
+      <a class="t" href="numeros.html#comex" style="text-decoration:none;color:inherit"><div class="n">US$ 8,7 mi</div><div class="l" data-pt="exportados por Itajaí no 1º sem. de 2026 (+93%), líder nacional" data-en="exported by Itajaí in H1 2026 (+93%), national leader">exportados por Itajaí no 1º sem. de 2026 (+93%), líder nacional</div><div class="s">Comex Stat / MDIC · 2026</div></a>
+      <a class="t" href="numeros.html#nautico" style="text-decoration:none;color:inherit"><div class="n">~70%</div><div class="l" data-pt="da produção brasileira de barcos a motor está em SC" data-en="of Brazil's motorboat production is in SC">da produção brasileira de barcos a motor está em SC</div><div class="s" data-pt="Levantamentos do setor · ACATMAR" data-en="Sector surveys · ACATMAR">Levantamentos do setor · ACATMAR</div></a>
+    </div>
+  </div>
+</section>
 
 <a class="forumband" href="/vi-forum-2026.html">
   <span class="fb-t" data-pt="<b>VI Fórum de Capacitação Técnica ACATMAR</b> · Outubro de 2026 · inscrições abertas" data-en="<b>VI ACATMAR Technical Training Forum</b> · October 2026 · registration open"><b>VI Fórum de Capacitação Técnica ACATMAR</b> · Outubro de 2026 · inscrições abertas</span>
