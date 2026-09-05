@@ -37,6 +37,9 @@ html = (f'\n    <h3 data-en="Active nautical companies in Santa Catarina (Federa
         f'      <tr><td></td><td data-en="Plus: companies with a nautical CNAE as secondary activity">Além desses: empresas com CNAE náutico como atividade secundária</td><td class="v">{n(R["sc_com_cnae_nautico_secundario"])}</td></tr>\n    </table></div>\n'
         f'    <div class="src" data-en="Size: {rows_porte} · MEI: {n(R["sc_setor_nautico_mei"])}. Source: Federal Revenue, CNPJ open data, {REF_EN} release, ACATMAR extraction.">Porte: {rows_porte} · MEI: {n(R["sc_setor_nautico_mei"])}. Fonte: Receita Federal, dados abertos do CNPJ, divulgação de {REF}, extração ACATMAR.</div>\n'
         f'    <div class="tw" style="margin-top:1rem"><table>\n      <tr><th data-en="Municipality (SC)">Município (SC)</th><th data-en="Active nautical establishments">Estabelecimentos náuticos ativos</th></tr>\n{rows_mun}    </table></div>\n')
+cm = R.get('sc_construtores_por_municipio', {})
+if cm:
+    html += ('    <p class="mini" data-en="Where the boatbuilders are: ' + ' · '.join(f'{m} {v}' for m, v in cm.items()) + '. Of the 91 active builders, 39 had employees in 2025 (RAIS); the rest are small yards without formal staff.">Onde estão os construtores: ' + ' · '.join(f'{m} {v}' for m, v in cm.items()) + '. Dos 91 construtores ativos, 39 tinham empregados em 2025 (RAIS); os demais são pequenos estaleiros sem equipe formal.</p>\n')
 put('sc', html)
 br = R['brasil_setor_nautico_principal_por_uf']
 b3 = R['brasil_construcao_esporte_lazer_por_uf']

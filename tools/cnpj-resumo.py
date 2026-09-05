@@ -12,7 +12,7 @@ NUCLEO = {"3012100": "Construção de embarcações para esporte e lazer", "3011
           "4329102": "Instalação de equipamentos para orientação à navegação"}
 rows = list(csv.DictReader(open(os.path.join(OUT, "estabelecimentos_nautica.csv"), encoding="utf-8")))
 pasta = sys.argv[1] if len(sys.argv) > 1 else "2026-08"
-ACENTOS = {"FLORIANOPOLIS": "Florianópolis", "ITAJAI": "Itajaí", "BALNEARIO CAMBORIU": "Balneário Camboriú", "PALHOCA": "Palhoça", "SAO JOSE": "São José", "BIGUACU": "Biguaçu", "CAMBORIU": "Camboriú", "SAO FRANCISCO DO SUL": "São Francisco do Sul", "GOVERNADOR CELSO RAMOS": "Governador Celso Ramos", "CRICIUMA": "Criciúma", "CHAPECO": "Chapecó", "PICARRAS": "Piçarras", "BALNEARIO PICARRAS": "Balneário Piçarras", "ITAPEMA": "Itapema", "BOMBINHAS": "Bombinhas", "TIJUCAS": "Tijucas", "LAGUNA": "Laguna", "GAROPABA": "Garopaba", "IMBITUBA": "Imbituba", "PENHA": "Penha", "PORTO BELO": "Porto Belo", "NAVEGANTES": "Navegantes", "JOINVILLE": "Joinville", "BLUMENAU": "Blumenau", "BARRA VELHA": "Barra Velha", "SAO JOAO BATISTA": "São João Batista", "BRUSQUE": "Brusque", "GUARAMIRIM": "Guaramirim", "JARAGUA DO SUL": "Jaraguá do Sul", "ARARANGUA": "Araranguá", "TUBARAO": "Tubarão", "LAGES": "Lages"}
+ACENTOS = {"FLORIANOPOLIS": "Florianópolis", "ITAJAI": "Itajaí", "BALNEARIO CAMBORIU": "Balneário Camboriú", "PALHOCA": "Palhoça", "SAO JOSE": "São José", "BIGUACU": "Biguaçu", "CAMBORIU": "Camboriú", "SAO FRANCISCO DO SUL": "São Francisco do Sul", "GOVERNADOR CELSO RAMOS": "Governador Celso Ramos", "CRICIUMA": "Criciúma", "CHAPECO": "Chapecó", "PICARRAS": "Piçarras", "BALNEARIO PICARRAS": "Balneário Piçarras", "BALNEARIO DE PICARRAS": "Balneário Piçarras", "ARAQUARI": "Araquari", "ILHOTA": "Ilhota", "ANTONIO CARLOS": "Antônio Carlos", "SANTO AMARO DA IMPERATRIZ": "Santo Amaro da Imperatriz", "ITAPEMA": "Itapema", "BOMBINHAS": "Bombinhas", "TIJUCAS": "Tijucas", "LAGUNA": "Laguna", "GAROPABA": "Garopaba", "IMBITUBA": "Imbituba", "PENHA": "Penha", "PORTO BELO": "Porto Belo", "NAVEGANTES": "Navegantes", "JOINVILLE": "Joinville", "BLUMENAU": "Blumenau", "BARRA VELHA": "Barra Velha", "SAO JOAO BATISTA": "São João Batista", "BRUSQUE": "Brusque", "GUARAMIRIM": "Guaramirim", "JARAGUA DO SUL": "Jaraguá do Sul", "ARARANGUA": "Araranguá", "TUBARAO": "Tubarão", "LAGES": "Lages"}
 def title(m):
     return ACENTOS.get(m, " ".join(w.capitalize() if w not in ("DE", "DO", "DA", "DOS", "DAS") else w.lower() for w in m.split()))
 core = [r for r in rows if r["cnae_principal"] in NUCLEO]
@@ -27,6 +27,8 @@ res = {"pasta": pasta, "gerado_em": datetime.date.today().isoformat(), "fonte": 
        "sc_setor_nautico_mei": sum(1 for r in sc if r["mei"] == "S"),
        "sc_setor_nautico_total_principal": len(sc),
        "sc_com_cnae_nautico_secundario": sum(1 for r in rows if r["uf"] == "SC" and r["cnae_principal"] not in NUCLEO and set(r["cnae_secundaria"].split(",")) & set(NUCLEO)),
+       "sc_construtores_por_municipio": {title(m): v for m, v in collections.Counter(r["municipio"] for r in sc if r["cnae_principal"] == "3012100").most_common(12)},
+       "sc_construtores_por_porte": dict(collections.Counter(r["porte"] or "Não informado" for r in sc if r["cnae_principal"] == "3012100")),
        "sc_matriz_filial": dict(collections.Counter("matriz" if r["matriz_filial"] == "1" else "filial" for r in sc))}
 json.dump(res, open(os.path.join(OUT, "resumo.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print("SC nucleo:", len(sc), "| por CNAE:", {NUCLEO[c][:30]: v["estabelecimentos_ativos"] for c, v in res["sc_por_cnae"].items()})

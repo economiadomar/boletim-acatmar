@@ -140,7 +140,7 @@
   "Bombinhas": 30,
   "Tijucas": 23,
   "São Francisco do Sul": 21,
-  "Balneario de Picarras": 20,
+  "Balneário Piçarras": 20,
   "Araquari": 15,
   "Penha": 15,
   "Chapecó": 15,
@@ -166,6 +166,25 @@
  "sc_setor_nautico_mei": 613,
  "sc_setor_nautico_total_principal": 1273,
  "sc_com_cnae_nautico_secundario": 2808,
+ "sc_construtores_por_municipio": {
+  "Itajaí": 18,
+  "Joinville": 12,
+  "Palhoça": 10,
+  "Araquari": 7,
+  "São José": 7,
+  "Biguaçu": 6,
+  "Florianópolis": 4,
+  "Balneário Piçarras": 3,
+  "Ilhota": 3,
+  "Porto Belo": 3,
+  "Tijucas": 3,
+  "Navegantes": 2
+ },
+ "sc_construtores_por_porte": {
+  "Microempresa": 43,
+  "Demais": 27,
+  "Empresa de pequeno porte": 21
+ },
  "sc_matriz_filial": {
   "matriz": 1215,
   "filial": 58
