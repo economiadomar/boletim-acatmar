@@ -24,9 +24,9 @@ body, n['mini'] = re.subn(r'\s*<p class="mini"[^>]*>(?:Unidades são|Units are)[
 # links para fora da plataforma (e chamadas "saiba mais") no corpo: some o botao; links externos comuns viram texto
 def _link(m):
     href = m.group(1); inner = m.group(2)
-    if href.startswith('#') or href.startswith('data/'):
+    if href.startswith('#'):
         return m.group(0)
-    if '&rarr;' in inner or '→' in inner or re.match(r'^\s*(Saiba mais|Ver as notícias|Todas as edições|Guia completo|Informativo técnico|ALESC|SEF/SC|Senado Federal|Antaq|resumo|panrotas|Boletim estatístico|Ler a análise completa)', re.sub(r'<[^>]+>', '', inner), re.I):
+    if '&rarr;' in inner or '→' in inner or re.match(r'^\s*(Baixar|Download|PDF|planilha|tabelas|Saiba mais|Ver as notícias|Todas as edições|Guia completo|Informativo técnico|ALESC|SEF/SC|Senado Federal|Antaq|resumo|panrotas|Boletim estatístico|Ler a análise completa)', re.sub(r'<[^>]+>', '', inner), re.I):
         return ''
     return inner
 body, n['links'] = re.subn(r'<a\b[^>]*?href="([^"]*)"[^>]*>(.*?)</a>', _link, body, flags=re.S)
