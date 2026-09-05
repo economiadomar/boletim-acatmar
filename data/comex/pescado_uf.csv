@@ -1,0 +1,1215 @@
+grupo,flow,year,state,uf,metricFOB,metricKG
+cap03,export,2026,Ceará,CE,50858259,4347720
+cap03,export,2026,Pará,PA,46900451,5131140
+cap03,export,2026,São Paulo,SP,29045329,3432485
+cap03,export,2026,Santa Catarina,SC,23149281,11398471
+cap03,export,2026,Paraná,PR,14471366,2969662
+cap03,export,2026,Rio Grande do Sul,RS,14253002,8900591
+cap03,export,2026,Rio Grande do Norte,RN,9236932,1127537
+cap03,export,2026,Mato Grosso do Sul,MS,6660953,1002899
+cap03,export,2026,Pernambuco,PE,4637661,616378
+cap03,export,2026,Bahia,BA,4503593,618577
+cap03,export,2026,Rondônia,RO,3607276,1133607
+cap03,export,2026,Amazonas,AM,3125189,811261
+cap03,export,2026,Rio de Janeiro,RJ,2938929,774250
+cap03,export,2026,Espírito Santo,ES,2475190,386898
+cap03,export,2026,Piauí,PI,1995035,157765
+cap03,export,2026,Maranhão,MA,1220088,77488
+cap03,export,2026,Paraíba,PB,967534,46832
+cap03,export,2026,Goiás,GO,217429,68211
+cap03,export,2026,Não Declarada,ND,214586,53460
+cap03,export,2026,Minas Gerais,MG,152666,50000
+cap03,export,2026,Alagoas,AL,131465,35569
+cap03,export,2026,Roraima,RR,91352,30530
+cap03,export,2026,Amapá,AP,17354,2095
+cap03,export,2025,Ceará,CE,84373886,7148415
+cap03,export,2025,Pará,PA,73639579,8527505
+cap03,export,2025,São Paulo,SP,51358835,6239654
+cap03,export,2025,Santa Catarina,SC,32175845,13304502
+cap03,export,2025,Paraná,PR,28439099,7065950
+cap03,export,2025,Rio Grande do Norte,RN,26471265,2318568
+cap03,export,2025,Rio Grande do Sul,RS,20010695,13780004
+cap03,export,2025,Bahia,BA,10792328,1094439
+cap03,export,2025,Mato Grosso do Sul,MS,10688157,2011285
+cap03,export,2025,Pernambuco,PE,9171114,1198674
+cap03,export,2025,Espírito Santo,ES,7416991,792960
+cap03,export,2025,Amazonas,AM,6311290,1961015
+cap03,export,2025,Rondônia,RO,5820963,1710486
+cap03,export,2025,Rio de Janeiro,RJ,4540609,527706
+cap03,export,2025,Piauí,PI,3859683,291445
+cap03,export,2025,Paraíba,PB,1084124,53930
+cap03,export,2025,Goiás,GO,359327,83210
+cap03,export,2025,Maranhão,MA,351878,62864
+cap03,export,2025,Alagoas,AL,130838,18314
+cap03,export,2025,Não Declarada,ND,21802,4752
+cap03,export,2025,Roraima,RR,21789,3915
+cap03,export,2025,Amapá,AP,14066,1886
+cap03,export,2024,Ceará,CE,93779141,7011822
+cap03,export,2024,Pará,PA,72473081,8528625
+cap03,export,2024,São Paulo,SP,39967400,5491892
+cap03,export,2024,Paraná,PR,34977438,7646784
+cap03,export,2024,Santa Catarina,SC,27872898,8952763
+cap03,export,2024,Rio Grande do Norte,RN,25038421,2174143
+cap03,export,2024,Rio Grande do Sul,RS,16387131,10310096
+cap03,export,2024,Bahia,BA,16380704,1424467
+cap03,export,2024,Pernambuco,PE,9079425,1037884
+cap03,export,2024,Espírito Santo,ES,7285017,715413
+cap03,export,2024,Rio de Janeiro,RJ,5763762,932908
+cap03,export,2024,Paraíba,PB,4849785,245480
+cap03,export,2024,Amazonas,AM,4029351,1322730
+cap03,export,2024,Piauí,PI,3911312,206434
+cap03,export,2024,Rondônia,RO,3461778,1048230
+cap03,export,2024,Mato Grosso do Sul,MS,1899416,533605
+cap03,export,2024,Goiás,GO,472811,76291
+cap03,export,2024,Maranhão,MA,424349,71794
+cap03,export,2024,Alagoas,AL,94556,14853
+cap03,export,2024,Não Declarada,ND,93612,24003
+cap03,export,2024,Amapá,AP,15118,1810
+cap03,export,2024,Roraima,RR,13372,7459
+cap03,export,2024,Mato Grosso,MT,181,96
+cap03,export,2023,Ceará,CE,74734864,7208427
+cap03,export,2023,Pará,PA,72047075,9640589
+cap03,export,2023,Rio Grande do Norte,RN,32285677,3026309
+cap03,export,2023,Santa Catarina,SC,26174078,11349781
+cap03,export,2023,Bahia,BA,23459859,1789028
+cap03,export,2023,Paraná,PR,18705663,5203743
+cap03,export,2023,São Paulo,SP,14531678,2659829
+cap03,export,2023,Rio Grande do Sul,RS,14049678,8724670
+cap03,export,2023,Pernambuco,PE,6675046,851932
+cap03,export,2023,Espírito Santo,ES,6111438,674757
+cap03,export,2023,Paraíba,PB,5022814,263574
+cap03,export,2023,Rio de Janeiro,RJ,4456590,479183
+cap03,export,2023,Rondônia,RO,2626853,890298
+cap03,export,2023,Piauí,PI,2562278,122389
+cap03,export,2023,Amazonas,AM,1766246,290380
+cap03,export,2023,Maranhão,MA,702453,114965
+cap03,export,2023,Mato Grosso do Sul,MS,301340,55900
+cap03,export,2023,Goiás,GO,110412,15558
+cap03,export,2023,Acre,AC,99414,41153
+cap03,export,2023,Alagoas,AL,66395,11147
+cap03,export,2023,Roraima,RR,17122,8485
+cap03,export,2023,Amapá,AP,12938,1372
+cap03,export,2023,Mato Grosso,MT,765,27
+cap03,export,2023,Não Declarada,ND,396,1
+cap03,export,2023,Minas Gerais,MG,105,7
+cap03,export,2022,Ceará,CE,82244951,7057520
+cap03,export,2022,Pará,PA,81998250,11586338
+cap03,export,2022,Rio Grande do Norte,RN,46958622,4333943
+cap03,export,2022,Santa Catarina,SC,28510126,9774318
+cap03,export,2022,Bahia,BA,26510462,2364928
+cap03,export,2022,São Paulo,SP,15822805,3601635
+cap03,export,2022,Paraná,PR,13800866,5162345
+cap03,export,2022,Rio Grande do Sul,RS,12170942,7138947
+cap03,export,2022,Espírito Santo,ES,10335078,1082529
+cap03,export,2022,Paraíba,PB,9393685,491831
+cap03,export,2022,Pernambuco,PE,8952711,1066732
+cap03,export,2022,Mato Grosso do Sul,MS,3824526,828101
+cap03,export,2022,Rondônia,RO,2311032,871263
+cap03,export,2022,Rio de Janeiro,RJ,2242900,169726
+cap03,export,2022,Amazonas,AM,2207878,196731
+cap03,export,2022,Piauí,PI,1522736,87534
+cap03,export,2022,Maranhão,MA,458482,97242
+cap03,export,2022,Goiás,GO,168855,54885
+cap03,export,2022,Não Declarada,ND,92050,26000
+cap03,export,2022,Alagoas,AL,83815,11683
+cap03,export,2022,Roraima,RR,26756,14730
+cap03,export,2022,Amapá,AP,8694,886
+cap03,export,2021,Ceará,CE,102320677,7451763
+cap03,export,2021,Pará,PA,81545920,11359944
+cap03,export,2021,Rio Grande do Norte,RN,45231678,3831049
+cap03,export,2021,Bahia,BA,31210507,2491613
+cap03,export,2021,Santa Catarina,SC,20263742,5777253
+cap03,export,2021,São Paulo,SP,11489438,2854596
+cap03,export,2021,Pernambuco,PE,10661150,1134904
+cap03,export,2021,Paraíba,PB,8820623,354889
+cap03,export,2021,Espírito Santo,ES,8652682,955194
+cap03,export,2021,Rio Grande do Sul,RS,6462918,3859830
+cap03,export,2021,Mato Grosso do Sul,MS,6424220,1161927
+cap03,export,2021,Paraná,PR,5164722,2172289
+cap03,export,2021,Amazonas,AM,3908855,1219666
+cap03,export,2021,Piauí,PI,2667710,116448
+cap03,export,2021,Rondônia,RO,2014824,806511
+cap03,export,2021,Rio de Janeiro,RJ,1203049,160238
+cap03,export,2021,Maranhão,MA,302398,66716
+cap03,export,2021,Goiás,GO,193106,79104
+cap03,export,2021,Alagoas,AL,71664,11417
+cap03,export,2021,Minas Gerais,MG,40998,4706
+cap03,export,2021,Roraima,RR,32841,18620
+cap03,export,2021,Amapá,AP,9867,1085
+cap03,export,2021,Sergipe,SE,4181,500
+cap03,export,2021,Não Declarada,ND,1623,28
+cap03,export,2020,Pará,PA,71494298,9739770
+cap03,export,2020,Ceará,CE,66965418,7146485
+cap03,export,2020,Bahia,BA,20595024,1472040
+cap03,export,2020,Santa Catarina,SC,19516901,6827755
+cap03,export,2020,Rio Grande do Norte,RN,17811918,2070286
+cap03,export,2020,São Paulo,SP,11591334,3189390
+cap03,export,2020,Rio Grande do Sul,RS,10501346,7756278
+cap03,export,2020,Pernambuco,PE,6318024,695886
+cap03,export,2020,Mato Grosso do Sul,MS,5613582,1069147
+cap03,export,2020,Espírito Santo,ES,4347191,626567
+cap03,export,2020,Paraíba,PB,3770534,163956
+cap03,export,2020,Piauí,PI,2595123,181224
+cap03,export,2020,Amazonas,AM,2557298,879671
+cap03,export,2020,Rio de Janeiro,RJ,1905502,141070
+cap03,export,2020,Rondônia,RO,1504218,782792
+cap03,export,2020,Paraná,PR,1118987,675995
+cap03,export,2020,Maranhão,MA,278470,57268
+cap03,export,2020,Alagoas,AL,76651,11781
+cap03,export,2020,Acre,AC,18228,8022
+cap03,export,2020,Roraima,RR,10339,10750
+cap03,export,2020,Não Declarada,ND,10214,1631
+cap03,export,2020,Amapá,AP,7769,1028
+cap03,export,2020,Goiás,GO,4228,800
+cap03,export,2019,Ceará,CE,87636640,9625076
+cap03,export,2019,Pará,PA,72532588,8352800
+cap03,export,2019,Santa Catarina,SC,24664625,7333484
+cap03,export,2019,Rio Grande do Norte,RN,22060457,2738889
+cap03,export,2019,São Paulo,SP,16214735,3189033
+cap03,export,2019,Rio Grande do Sul,RS,15858974,6131159
+cap03,export,2019,Bahia,BA,15030688,1360890
+cap03,export,2019,Rio de Janeiro,RJ,10474773,476859
+cap03,export,2019,Espírito Santo,ES,7142002,835345
+cap03,export,2019,Piauí,PI,5572358,258432
+cap03,export,2019,Mato Grosso do Sul,MS,5544943,922861
+cap03,export,2019,Pernambuco,PE,4503947,536453
+cap03,export,2019,Paraíba,PB,2908359,124941
+cap03,export,2019,Amazonas,AM,2802993,864366
+cap03,export,2019,Rondônia,RO,1300880,571691
+cap03,export,2019,Paraná,PR,597876,221846
+cap03,export,2019,Maranhão,MA,263339,52069
+cap03,export,2019,Alagoas,AL,129577,26490
+cap03,export,2019,Minas Gerais,MG,98346,25530
+cap03,export,2019,Goiás,GO,74075,20869
+cap03,export,2019,Não Declarada,ND,44395,1902
+cap03,export,2019,Distrito Federal,DF,29570,90
+cap03,export,2019,Roraima,RR,7019,5800
+cap03,export,2019,Amapá,AP,5053,502
+cap03,export,2018,Pará,PA,62949126,8458428
+cap03,export,2018,Ceará,CE,62441358,6745471
+cap03,export,2018,São Paulo,SP,25468862,2194605
+cap03,export,2018,Rio Grande do Norte,RN,22425485,2733603
+cap03,export,2018,Santa Catarina,SC,21042392,4562655
+cap03,export,2018,Rio Grande do Sul,RS,14843687,7045730
+cap03,export,2018,Bahia,BA,10785876,1142635
+cap03,export,2018,Espírito Santo,ES,8918406,1015314
+cap03,export,2018,Pernambuco,PE,4813448,521242
+cap03,export,2018,Mato Grosso do Sul,MS,4516001,709020
+cap03,export,2018,Piauí,PI,3628480,113583
+cap03,export,2018,Amazonas,AM,2224521,359122
+cap03,export,2018,Rio de Janeiro,RJ,2138879,328948
+cap03,export,2018,Paraíba,PB,1986940,87555
+cap03,export,2018,Acre,AC,688145,272603
+cap03,export,2018,Rondônia,RO,602813,268827
+cap03,export,2018,Goiás,GO,445190,56387
+cap03,export,2018,Não Declarada,ND,428536,123004
+cap03,export,2018,Amapá,AP,150347,7840
+cap03,export,2018,Minas Gerais,MG,79820,24105
+cap03,export,2018,Maranhão,MA,40470,7317
+cap03,export,2018,Paraná,PR,32421,33325
+cap03,export,2018,Mato Grosso,MT,22623,171
+cap03,export,2018,Alagoas,AL,6843,952
+cap03,export,2018,Roraima,RR,3668,39
+cap03,export,2017,Ceará,CE,54675431,4801966
+cap03,export,2017,Pará,PA,53882525,7264636
+cap03,export,2017,Rio Grande do Sul,RS,23221001,10351292
+cap03,export,2017,Bahia,BA,20454395,843967
+cap03,export,2017,Santa Catarina,SC,17734210,4762657
+cap03,export,2017,Rio Grande do Norte,RN,17456134,2374861
+cap03,export,2017,São Paulo,SP,11167242,1548227
+cap03,export,2017,Espírito Santo,ES,10735859,1166405
+cap03,export,2017,Mato Grosso do Sul,MS,4869037,659550
+cap03,export,2017,Pernambuco,PE,4421832,504601
+cap03,export,2017,Rio de Janeiro,RJ,3814741,680665
+cap03,export,2017,Amazonas,AM,2771694,345225
+cap03,export,2017,Piauí,PI,2536456,87798
+cap03,export,2017,Rondônia,RO,2320606,1607805
+cap03,export,2017,Paraíba,PB,1266588,56322
+cap03,export,2017,Acre,AC,1011195,381457
+cap03,export,2017,Não Declarada,ND,663973,381277
+cap03,export,2017,Amapá,AP,408571,19698
+cap03,export,2017,Goiás,GO,174061,14108
+cap03,export,2017,Mato Grosso,MT,38341,324
+cap03,export,2017,Minas Gerais,MG,19112,86
+cap03,export,2017,Roraima,RR,2942,16
+cap03,export,2016,Pará,PA,55837199,7078482
+cap03,export,2016,Ceará,CE,51277610,4500240
+cap03,export,2016,Rio Grande do Norte,RN,24840285,3262655
+cap03,export,2016,Rio Grande do Sul,RS,21507387,11006595
+cap03,export,2016,Bahia,BA,19032317,1018386
+cap03,export,2016,Santa Catarina,SC,17085709,5089881
+cap03,export,2016,Espírito Santo,ES,15294016,1788520
+cap03,export,2016,São Paulo,SP,9506884,1360079
+cap03,export,2016,Pernambuco,PE,3570529,535440
+cap03,export,2016,Rio de Janeiro,RJ,2887055,722913
+cap03,export,2016,Mato Grosso do Sul,MS,2053930,248851
+cap03,export,2016,Amazonas,AM,1235689,27191
+cap03,export,2016,Piauí,PI,667988,27571
+cap03,export,2016,Goiás,GO,293513,16801
+cap03,export,2016,Paraíba,PB,251825,14450
+cap03,export,2016,Reexportação,RE,195122,73916
+cap03,export,2016,Amapá,AP,105903,5029
+cap03,export,2016,Acre,AC,69769,29159
+cap03,export,2016,Mercadoria Nacionalizada,MN,51400,26000
+cap03,export,2016,Mato Grosso,MT,43033,402
+cap03,export,2016,Minas Gerais,MG,17483,25
+cap03,export,2016,Roraima,RR,1610,16
+cap03,export,2016,Não Declarada,ND,62,6
+cap03,export,2015,Pará,PA,59475717,6296646
+cap03,export,2015,Ceará,CE,46757484,2561730
+cap03,export,2015,Rio Grande do Norte,RN,26074745,2949094
+cap03,export,2015,Rio Grande do Sul,RS,21929471,10814302
+cap03,export,2015,Santa Catarina,SC,18356056,5515703
+cap03,export,2015,Bahia,BA,10298701,365500
+cap03,export,2015,Pernambuco,PE,6542342,658259
+cap03,export,2015,Espírito Santo,ES,5596578,833501
+cap03,export,2015,São Paulo,SP,3772811,397263
+cap03,export,2015,Paraíba,PB,2280856,67559
+cap03,export,2015,Rio de Janeiro,RJ,2070525,526849
+cap03,export,2015,Amazonas,AM,1528691,53046
+cap03,export,2015,Mato Grosso do Sul,MS,1328737,105793
+cap03,export,2015,Piauí,PI,151560,4500
+cap03,export,2015,Goiás,GO,149393,646
+cap03,export,2015,Mato Grosso,MT,27854,237
+cap03,export,2015,Minas Gerais,MG,22634,150
+cap03,export,2015,Amapá,AP,15602,800
+cap03,export,2015,Roraima,RR,8835,85
+cap03,export,2014,Pará,PA,56874809,4865228
+cap03,export,2014,Ceará,CE,46947000,2016156
+cap03,export,2014,Santa Catarina,SC,24867973,8621818
+cap03,export,2014,Rio Grande do Sul,RS,19923846,9101199
+cap03,export,2014,Rio Grande do Norte,RN,17690243,2136869
+cap03,export,2014,Pernambuco,PE,8551172,656776
+cap03,export,2014,Bahia,BA,7780709,224349
+cap03,export,2014,Espírito Santo,ES,2506059,389848
+cap03,export,2014,Mato Grosso do Sul,MS,1586578,109665
+cap03,export,2014,Piauí,PI,1579938,47575
+cap03,export,2014,São Paulo,SP,1384405,189567
+cap03,export,2014,Amazonas,AM,1076822,41306
+cap03,export,2014,Rio de Janeiro,RJ,855153,181190
+cap03,export,2014,Goiás,GO,131711,720
+cap03,export,2014,Zona Não Declarada,ZN,56322,431
+cap03,export,2014,Mato Grosso,MT,50734,378
+cap03,export,2014,Não Declarada,ND,27103,3252
+cap03,export,2014,Roraima,RR,20115,217
+cap03,export,2014,Minas Gerais,MG,8061,340
+cap03,export,2014,Rondônia,RO,5301,60
+cap03,export,2013,Pará,PA,55692020,5695799
+cap03,export,2013,Ceará,CE,47909802,2357175
+cap03,export,2013,Rio Grande do Sul,RS,26175258,11238488
+cap03,export,2013,Santa Catarina,SC,22850616,7674432
+cap03,export,2013,Rio Grande do Norte,RN,17508232,1983995
+cap03,export,2013,Pernambuco,PE,11189621,756495
+cap03,export,2013,Espírito Santo,ES,8484270,517235
+cap03,export,2013,São Paulo,SP,5083893,654447
+cap03,export,2013,Bahia,BA,2947915,92063
+cap03,export,2013,Amazonas,AM,900782,22547
+cap03,export,2013,Rio de Janeiro,RJ,824621,178196
+cap03,export,2013,Piauí,PI,577689,36473
+cap03,export,2013,Mato Grosso do Sul,MS,501790,40580
+cap03,export,2013,Goiás,GO,141056,802
+cap03,export,2013,Roraima,RR,1911,1800
+cap03,export,2013,Zona Não Declarada,ZN,643,26
+cap03,export,2013,Mato Grosso,MT,139,27
+cap03,export,2012,Pará,PA,51482205,5609102
+cap03,export,2012,Santa Catarina,SC,34132201,12659194
+cap03,export,2012,Ceará,CE,32568665,1513609
+cap03,export,2012,Rio Grande do Sul,RS,23578209,10626012
+cap03,export,2012,Rio Grande do Norte,RN,19472805,2915388
+cap03,export,2012,Pernambuco,PE,12814064,831427
+cap03,export,2012,São Paulo,SP,5424397,595820
+cap03,export,2012,Espírito Santo,ES,2509456,334429
+cap03,export,2012,Bahia,BA,2011372,66624
+cap03,export,2012,Piauí,PI,1710168,60094
+cap03,export,2012,Amazonas,AM,1249444,106289
+cap03,export,2012,Rio de Janeiro,RJ,522934,62100
+cap03,export,2012,Mato Grosso do Sul,MS,194566,21940
+cap03,export,2012,Goiás,GO,163682,1000
+cap03,export,2012,Não Declarada,ND,21220,4877
+cap03,export,2012,Zona Não Declarada,ZN,12720,240
+cap03,export,2012,Paraná,PR,7114,855
+cap03,export,2012,Roraima,RR,3319,2300
+cap03,export,2011,Ceará,CE,54239374,2313054
+cap03,export,2011,Pará,PA,41376827,5529675
+cap03,export,2011,Rio Grande do Sul,RS,25588814,10285373
+cap03,export,2011,Rio Grande do Norte,RN,23831079,3819281
+cap03,export,2011,Santa Catarina,SC,22695979,7438024
+cap03,export,2011,Bahia,BA,11057560,348775
+cap03,export,2011,Pernambuco,PE,8972002,680572
+cap03,export,2011,São Paulo,SP,5066493,629776
+cap03,export,2011,Rio de Janeiro,RJ,3827886,1194391
+cap03,export,2011,Espírito Santo,ES,2700972,464691
+cap03,export,2011,Amazonas,AM,1178685,61691
+cap03,export,2011,Piauí,PI,450776,13717
+cap03,export,2011,Mato Grosso do Sul,MS,427228,51549
+cap03,export,2011,Zona Não Declarada,ZN,154676,13526
+cap03,export,2011,Mato Grosso,MT,92439,8565
+cap03,export,2011,Mercadoria Nacionalizada,MN,78940,22400
+cap03,export,2011,Goiás,GO,63651,445
+cap03,export,2011,Paraná,PR,2683,295
+cap03,export,2010,Ceará,CE,63493873,2423840
+cap03,export,2010,Pará,PA,37489175,5823100
+cap03,export,2010,Rio Grande do Norte,RN,21509783,3957239
+cap03,export,2010,Rio Grande do Sul,RS,20027424,8790904
+cap03,export,2010,Santa Catarina,SC,15154782,3388088
+cap03,export,2010,Pernambuco,PE,14112518,875314
+cap03,export,2010,Bahia,BA,8668395,403865
+cap03,export,2010,São Paulo,SP,5544447,821722
+cap03,export,2010,Espírito Santo,ES,5392900,973512
+cap03,export,2010,Rio de Janeiro,RJ,4504369,583764
+cap03,export,2010,Amazonas,AM,1720323,177532
+cap03,export,2010,Mato Grosso do Sul,MS,757177,102274
+cap03,export,2010,Piauí,PI,592105,29571
+cap03,export,2010,Zona Não Declarada,ZN,116306,8932
+cap03,export,2010,Mato Grosso,MT,66178,6715
+cap03,export,2010,Goiás,GO,64517,576
+cap03,export,2010,Não Declarada,ND,5701,354
+cap03,export,2010,Paraná,PR,1708,216
+cap03,import,2026,São Paulo,SP,518006061,89091281
+cap03,import,2026,Santa Catarina,SC,295229825,56077394
+cap03,import,2026,Rio de Janeiro,RJ,142957815,22892928
+cap03,import,2026,Minas Gerais,MG,54690637,11166428
+cap03,import,2026,Pernambuco,PE,27782329,6411037
+cap03,import,2026,Rondônia,RO,26796853,5980925
+cap03,import,2026,Rio Grande do Sul,RS,23458466,3683861
+cap03,import,2026,Alagoas,AL,19783756,3244724
+cap03,import,2026,Paraíba,PB,4725724,871130
+cap03,import,2026,Ceará,CE,4643643,1903270
+cap03,import,2026,Bahia,BA,3625996,518276
+cap03,import,2026,Paraná,PR,2554212,591875
+cap03,import,2026,Rio Grande do Norte,RN,2153971,507573
+cap03,import,2026,Espírito Santo,ES,1499320,230687
+cap03,import,2026,Amazonas,AM,1030632,91631
+cap03,import,2026,Maranhão,MA,631548,160437
+cap03,import,2026,Mato Grosso do Sul,MS,301902,88320
+cap03,import,2026,Piauí,PI,176779,25000
+cap03,import,2026,Pará,PA,7538,1005
+cap03,import,2025,São Paulo,SP,701240457,128887890
+cap03,import,2025,Santa Catarina,SC,361827288,79894285
+cap03,import,2025,Rio de Janeiro,RJ,163329931,29901739
+cap03,import,2025,Minas Gerais,MG,64889271,14047819
+cap03,import,2025,Pernambuco,PE,43879381,10203964
+cap03,import,2025,Rio Grande do Sul,RS,26874678,4540465
+cap03,import,2025,Alagoas,AL,23636117,4544935
+cap03,import,2025,Rondônia,RO,23469693,5288120
+cap03,import,2025,Paraíba,PB,8290525,1779633
+cap03,import,2025,Bahia,BA,8264071,1347684
+cap03,import,2025,Paraná,PR,4957430,1267764
+cap03,import,2025,Rio Grande do Norte,RN,3911895,821888
+cap03,import,2025,Ceará,CE,3140849,1734156
+cap03,import,2025,Espírito Santo,ES,2475605,501635
+cap03,import,2025,Maranhão,MA,1740041,395000
+cap03,import,2025,Amazonas,AM,972646,105572
+cap03,import,2025,Mato Grosso do Sul,MS,739250,243240
+cap03,import,2025,Piauí,PI,267328,69112
+cap03,import,2025,Distrito Federal,DF,42600,24000
+cap03,import,2024,São Paulo,SP,779156326,131341883
+cap03,import,2024,Santa Catarina,SC,348555226,66643961
+cap03,import,2024,Rio de Janeiro,RJ,157588982,28903913
+cap03,import,2024,Minas Gerais,MG,69522287,14792459
+cap03,import,2024,Pernambuco,PE,45632405,11321395
+cap03,import,2024,Rondônia,RO,38321393,6534689
+cap03,import,2024,Rio Grande do Sul,RS,27932090,4450852
+cap03,import,2024,Alagoas,AL,14360096,2698523
+cap03,import,2024,Paraná,PR,7877564,1462575
+cap03,import,2024,Paraíba,PB,6753988,1768740
+cap03,import,2024,Mato Grosso,MT,6199983,797808
+cap03,import,2024,Bahia,BA,5139478,1173535
+cap03,import,2024,Espírito Santo,ES,3821370,856948
+cap03,import,2024,Ceará,CE,2805722,2023257
+cap03,import,2024,Rio Grande do Norte,RN,2376938,581661
+cap03,import,2024,Mato Grosso do Sul,MS,1414238,406054
+cap03,import,2024,Maranhão,MA,1411444,371003
+cap03,import,2024,Amazonas,AM,1184649,124652
+cap03,import,2024,Goiás,GO,145210,52000
+cap03,import,2024,Piauí,PI,52516,22080
+cap03,import,2024,Pará,PA,9944,1728
+cap03,import,2024,Distrito Federal,DF,2450,344
+cap03,import,2024,Tocantins,TO,550,448
+cap03,import,2023,São Paulo,SP,698492942,114313659
+cap03,import,2023,Santa Catarina,SC,351120558,77750719
+cap03,import,2023,Rio de Janeiro,RJ,150253684,29240178
+cap03,import,2023,Minas Gerais,MG,52469740,10001848
+cap03,import,2023,Pernambuco,PE,40225631,8492628
+cap03,import,2023,Rio Grande do Sul,RS,28445910,4858631
+cap03,import,2023,Alagoas,AL,24971213,3606737
+cap03,import,2023,Rondônia,RO,19013341,3906458
+cap03,import,2023,Bahia,BA,4047659,761798
+cap03,import,2023,Mato Grosso do Sul,MS,3430881,663478
+cap03,import,2023,Paraíba,PB,3171820,802707
+cap03,import,2023,Rio Grande do Norte,RN,2896356,932128
+cap03,import,2023,Ceará,CE,2115259,1718062
+cap03,import,2023,Espírito Santo,ES,1686786,372351
+cap03,import,2023,Amazonas,AM,1529545,164405
+cap03,import,2023,Paraná,PR,999443,288945
+cap03,import,2023,Maranhão,MA,965913,220200
+cap03,import,2023,Mato Grosso,MT,681977,104985
+cap03,import,2023,Goiás,GO,385950,49012
+cap03,import,2023,Piauí,PI,186580,47500
+cap03,import,2023,Sergipe,SE,47952,10656
+cap03,import,2023,Distrito Federal,DF,41275,23518
+cap03,import,2023,Tocantins,TO,300,625
+cap03,import,2022,São Paulo,SP,655339595,104235079
+cap03,import,2022,Santa Catarina,SC,386494316,114401932
+cap03,import,2022,Rio de Janeiro,RJ,128286207,26075884
+cap03,import,2022,Minas Gerais,MG,43674007,7337096
+cap03,import,2022,Pernambuco,PE,36975987,8317999
+cap03,import,2022,Alagoas,AL,30359721,5074152
+cap03,import,2022,Rio Grande do Sul,RS,19011912,3380143
+cap03,import,2022,Rondônia,RO,12344463,3597906
+cap03,import,2022,Ceará,CE,9787987,8443324
+cap03,import,2022,Paraná,PR,9138279,1593682
+cap03,import,2022,Mato Grosso do Sul,MS,8676543,1373840
+cap03,import,2022,Paraíba,PB,5192235,1400101
+cap03,import,2022,Bahia,BA,5134620,1065607
+cap03,import,2022,Rio Grande do Norte,RN,2144997,726098
+cap03,import,2022,Maranhão,MA,973777,179762
+cap03,import,2022,Amazonas,AM,809100,87300
+cap03,import,2022,Goiás,GO,668857,94270
+cap03,import,2022,Espírito Santo,ES,579089,100000
+cap03,import,2022,Piauí,PI,203469,48290
+cap03,import,2022,Sergipe,SE,28604,27000
+cap03,import,2022,Distrito Federal,DF,4650,51
+cap03,import,2021,São Paulo,SP,550598035,110036071
+cap03,import,2021,Santa Catarina,SC,348686375,119587227
+cap03,import,2021,Rio de Janeiro,RJ,89774955,22584196
+cap03,import,2021,Minas Gerais,MG,37023594,8088999
+cap03,import,2021,Pernambuco,PE,36077537,13388195
+cap03,import,2021,Alagoas,AL,19577147,4746400
+cap03,import,2021,Rio Grande do Sul,RS,18159286,4215953
+cap03,import,2021,Paraná,PR,12129018,3222782
+cap03,import,2021,Rondônia,RO,11668449,5302070
+cap03,import,2021,Paraíba,PB,6486726,2907664
+cap03,import,2021,Ceará,CE,6463231,5808336
+cap03,import,2021,Bahia,BA,4694482,1357705
+cap03,import,2021,Mato Grosso do Sul,MS,1984852,560097
+cap03,import,2021,Rio Grande do Norte,RN,1480198,549332
+cap03,import,2021,Amazonas,AM,756730,88723
+cap03,import,2021,Piauí,PI,197097,73350
+cap03,import,2021,Goiás,GO,173031,16950
+cap03,import,2021,Pará,PA,85735,21983
+cap03,import,2021,Sergipe,SE,58442,53500
+cap03,import,2021,Maranhão,MA,45384,20064
+cap03,import,2021,Distrito Federal,DF,1229,62
+cap03,import,2020,São Paulo,SP,423324717,107700517
+cap03,import,2020,Santa Catarina,SC,230694489,107029955
+cap03,import,2020,Rio de Janeiro,RJ,71496109,23356733
+cap03,import,2020,Pernambuco,PE,32491985,10954124
+cap03,import,2020,Minas Gerais,MG,30253848,7636906
+cap03,import,2020,Rio Grande do Sul,RS,21982720,6063745
+cap03,import,2020,Rondônia,RO,11522057,4910526
+cap03,import,2020,Alagoas,AL,9232514,3130495
+cap03,import,2020,Paraná,PR,8820849,3611959
+cap03,import,2020,Ceará,CE,5666488,5239372
+cap03,import,2020,Bahia,BA,3633854,908498
+cap03,import,2020,Paraíba,PB,3575822,1702818
+cap03,import,2020,Rio Grande do Norte,RN,2474128,741808
+cap03,import,2020,Mato Grosso do Sul,MS,1082505,300075
+cap03,import,2020,Amazonas,AM,856961,119566
+cap03,import,2020,Distrito Federal,DF,664895,100000
+cap03,import,2020,Sergipe,SE,618002,184990
+cap03,import,2020,Goiás,GO,264922,40780
+cap03,import,2020,Pará,PA,189040,64479
+cap03,import,2020,Piauí,PI,99534,25000
+cap03,import,2019,São Paulo,SP,648163801,129911782
+cap03,import,2019,Santa Catarina,SC,283452827,112213279
+cap03,import,2019,Rio de Janeiro,RJ,105792579,26479599
+cap03,import,2019,Pernambuco,PE,43855427,12810214
+cap03,import,2019,Minas Gerais,MG,41132632,8689267
+cap03,import,2019,Rio Grande do Sul,RS,33104880,6187236
+cap03,import,2019,Rondônia,RO,18415374,4904848
+cap03,import,2019,Paraná,PR,9872249,3507364
+cap03,import,2019,Mato Grosso do Sul,MS,8800952,2340308
+cap03,import,2019,Alagoas,AL,6071670,2269307
+cap03,import,2019,Ceará,CE,4887224,4554589
+cap03,import,2019,Paraíba,PB,4563737,1551254
+cap03,import,2019,Bahia,BA,3520435,1068094
+cap03,import,2019,Rio Grande do Norte,RN,1989234,853280
+cap03,import,2019,Distrito Federal,DF,1551144,275964
+cap03,import,2019,Amazonas,AM,978559,131040
+cap03,import,2019,Sergipe,SE,439139,156950
+cap03,import,2019,Piauí,PI,130992,47440
+cap03,import,2019,Goiás,GO,121851,19500
+cap03,import,2019,Espírito Santo,ES,83454,25000
+cap03,import,2019,Tocantins,TO,65805,23000
+cap03,import,2018,São Paulo,SP,655824549,133337658
+cap03,import,2018,Santa Catarina,SC,287810150,124566470
+cap03,import,2018,Rio de Janeiro,RJ,115678818,26695097
+cap03,import,2018,Minas Gerais,MG,41502609,8898890
+cap03,import,2018,Pernambuco,PE,39725346,11449453
+cap03,import,2018,Rio Grande do Sul,RS,33283458,6535582
+cap03,import,2018,Paraná,PR,25407199,6629615
+cap03,import,2018,Rondônia,RO,16524307,4269088
+cap03,import,2018,Alagoas,AL,7630193,2458510
+cap03,import,2018,Ceará,CE,7581408,5517150
+cap03,import,2018,Paraíba,PB,7515551,2367710
+cap03,import,2018,Mato Grosso do Sul,MS,7132567,1998392
+cap03,import,2018,Bahia,BA,7026267,1689289
+cap03,import,2018,Espírito Santo,ES,3144736,600187
+cap03,import,2018,Rio Grande do Norte,RN,2845419,1051140
+cap03,import,2018,Tocantins,TO,2160572,367775
+cap03,import,2018,Distrito Federal,DF,1807124,359816
+cap03,import,2018,Amazonas,AM,833123,141164
+cap03,import,2018,Sergipe,SE,538104,229758
+cap03,import,2018,Maranhão,MA,348506,104000
+cap03,import,2018,Goiás,GO,156520,39540
+cap03,import,2017,São Paulo,SP,699005344,150014546
+cap03,import,2017,Santa Catarina,SC,251614908,122504469
+cap03,import,2017,Rio de Janeiro,RJ,163440662,47721913
+cap03,import,2017,Minas Gerais,MG,44034628,10490462
+cap03,import,2017,Pernambuco,PE,39702970,12820487
+cap03,import,2017,Rio Grande do Sul,RS,26687418,5887388
+cap03,import,2017,Paraná,PR,19408604,5989322
+cap03,import,2017,Rondônia,RO,17035939,6398802
+cap03,import,2017,Alagoas,AL,15347678,6250402
+cap03,import,2017,Paraíba,PB,7631808,2719963
+cap03,import,2017,Ceará,CE,6279911,5155325
+cap03,import,2017,Bahia,BA,5965637,1841465
+cap03,import,2017,Tocantins,TO,5673733,1070000
+cap03,import,2017,Mato Grosso do Sul,MS,4844847,1509297
+cap03,import,2017,Rio Grande do Norte,RN,2939947,1306394
+cap03,import,2017,Espírito Santo,ES,2273599,386150
+cap03,import,2017,Distrito Federal,DF,1953787,394135
+cap03,import,2017,Amazonas,AM,1091062,178390
+cap03,import,2017,Maranhão,MA,972039,208336
+cap03,import,2017,Goiás,GO,21055,27000
+cap03,import,2016,São Paulo,SP,555266319,125414670
+cap03,import,2016,Santa Catarina,SC,223471445,106338997
+cap03,import,2016,Rio de Janeiro,RJ,174177317,52612042
+cap03,import,2016,Pernambuco,PE,29266846,9375665
+cap03,import,2016,Minas Gerais,MG,27218645,7521866
+cap03,import,2016,Alagoas,AL,21824210,11562708
+cap03,import,2016,Rio Grande do Sul,RS,17059005,4777971
+cap03,import,2016,Paraná,PR,15383578,5002771
+cap03,import,2016,Bahia,BA,6924233,2087635
+cap03,import,2016,Rondônia,RO,6891982,1690471
+cap03,import,2016,Tocantins,TO,4898451,1078900
+cap03,import,2016,Ceará,CE,3903595,3399801
+cap03,import,2016,Mato Grosso do Sul,MS,3510194,1261475
+cap03,import,2016,Rio Grande do Norte,RN,2691438,1597991
+cap03,import,2016,Distrito Federal,DF,2540127,538483
+cap03,import,2016,Paraíba,PB,1615301,497488
+cap03,import,2016,Espírito Santo,ES,936358,178000
+cap03,import,2016,Amazonas,AM,599455,124118
+cap03,import,2016,Maranhão,MA,500200,109150
+cap03,import,2016,Sergipe,SE,449413,135048
+cap03,import,2016,Goiás,GO,90640,21773
+cap03,import,2015,São Paulo,SP,549653312,134309232
+cap03,import,2015,Santa Catarina,SC,206277110,72320363
+cap03,import,2015,Rio de Janeiro,RJ,186747834,47133650
+cap03,import,2015,Pernambuco,PE,40085356,11066366
+cap03,import,2015,Minas Gerais,MG,31923117,7760298
+cap03,import,2015,Alagoas,AL,20155261,9260867
+cap03,import,2015,Paraná,PR,16982139,5221979
+cap03,import,2015,Bahia,BA,15955244,3903972
+cap03,import,2015,Rio Grande do Sul,RS,13899134,4272967
+cap03,import,2015,Mato Grosso do Sul,MS,7897753,2368899
+cap03,import,2015,Ceará,CE,5980673,4618164
+cap03,import,2015,Distrito Federal,DF,3388963,611605
+cap03,import,2015,Espírito Santo,ES,2893318,838895
+cap03,import,2015,Sergipe,SE,1737460,452113
+cap03,import,2015,Maranhão,MA,1530819,331250
+cap03,import,2015,Rio Grande do Norte,RN,1494887,1225427
+cap03,import,2015,Amazonas,AM,1165869,219292
+cap03,import,2015,Tocantins,TO,1049850,168000
+cap03,import,2015,Goiás,GO,468920,118990
+cap03,import,2015,Paraíba,PB,200612,82440
+cap03,import,2015,Pará,PA,90459,21660
+cap03,import,2014,São Paulo,SP,690528471,155743440
+cap03,import,2014,Rio de Janeiro,RJ,272360486,71136632
+cap03,import,2014,Santa Catarina,SC,266580893,91108651
+cap03,import,2014,Pernambuco,PE,64347158,17668654
+cap03,import,2014,Rio Grande do Sul,RS,35744941,7998097
+cap03,import,2014,Minas Gerais,MG,28785429,7056484
+cap03,import,2014,Bahia,BA,17901094,4713288
+cap03,import,2014,Paraná,PR,16394576,4565040
+cap03,import,2014,Mato Grosso do Sul,MS,11432135,3535459
+cap03,import,2014,Alagoas,AL,9629714,3200044
+cap03,import,2014,Ceará,CE,5141377,2444700
+cap03,import,2014,Espírito Santo,ES,5063694,1142714
+cap03,import,2014,Distrito Federal,DF,4840162,912420
+cap03,import,2014,Sergipe,SE,1595633,367111
+cap03,import,2014,Rio Grande do Norte,RN,1352185,949592
+cap03,import,2014,Maranhão,MA,1201069,249000
+cap03,import,2014,Amazonas,AM,914565,172093
+cap03,import,2014,Tocantins,TO,866975,361000
+cap03,import,2014,Paraíba,PB,562545,197685
+cap03,import,2014,Pará,PA,282446,19219
+cap03,import,2014,Goiás,GO,163044,73772
+cap03,import,2014,Mato Grosso,MT,117734,18096
+cap03,import,2013,São Paulo,SP,613259331,144169884
+cap03,import,2013,Santa Catarina,SC,280308351,110088324
+cap03,import,2013,Rio de Janeiro,RJ,252253834,69650694
+cap03,import,2013,Pernambuco,PE,63534792,21055994
+cap03,import,2013,Rio Grande do Sul,RS,26973079,10130819
+cap03,import,2013,Minas Gerais,MG,22530954,5644316
+cap03,import,2013,Bahia,BA,18085398,4867934
+cap03,import,2013,Paraná,PR,13836225,4574985
+cap03,import,2013,Mato Grosso do Sul,MS,13496960,4617009
+cap03,import,2013,Espírito Santo,ES,8456683,1575500
+cap03,import,2013,Alagoas,AL,7735115,2744518
+cap03,import,2013,Ceará,CE,3685153,1584905
+cap03,import,2013,Distrito Federal,DF,2640115,439445
+cap03,import,2013,Rio Grande do Norte,RN,1716780,1149464
+cap03,import,2013,Sergipe,SE,1691456,400500
+cap03,import,2013,Paraíba,PB,814515,278500
+cap03,import,2013,Amazonas,AM,684425,127237
+cap03,import,2013,Maranhão,MA,679719,152000
+cap03,import,2013,Pará,PA,183368,25000
+cap03,import,2013,Tocantins,TO,160085,71800
+cap03,import,2013,Mato Grosso,MT,52051,8124
+cap03,import,2013,Goiás,GO,41404,26000
+cap03,import,2012,São Paulo,SP,495926457,123598341
+cap03,import,2012,Rio de Janeiro,RJ,243451187,69274505
+cap03,import,2012,Santa Catarina,SC,231182751,93350216
+cap03,import,2012,Pernambuco,PE,69961503,21282447
+cap03,import,2012,Bahia,BA,21865059,5358084
+cap03,import,2012,Paraná,PR,20448789,5606269
+cap03,import,2012,Minas Gerais,MG,19801406,4313104
+cap03,import,2012,Mato Grosso do Sul,MS,16219027,5150967
+cap03,import,2012,Rio Grande do Sul,RS,12268163,5892001
+cap03,import,2012,Espírito Santo,ES,12076271,2111308
+cap03,import,2012,Alagoas,AL,7361640,2280765
+cap03,import,2012,Sergipe,SE,3292086,569448
+cap03,import,2012,Ceará,CE,2355687,1018676
+cap03,import,2012,Amazonas,AM,923695,148820
+cap03,import,2012,Rio Grande do Norte,RN,758596,431447
+cap03,import,2012,Paraíba,PB,512324,295469
+cap03,import,2012,Rondônia,RO,77751,23997
+cap03,import,2011,São Paulo,SP,536324388,122734310
+cap03,import,2011,Rio de Janeiro,RJ,238080460,68628148
+cap03,import,2011,Santa Catarina,SC,204684084,71930295
+cap03,import,2011,Pernambuco,PE,77882979,25529018
+cap03,import,2011,Paraná,PR,33040913,8979850
+cap03,import,2011,Bahia,BA,22302556,5382639
+cap03,import,2011,Mato Grosso do Sul,MS,17197900,4179711
+cap03,import,2011,Espírito Santo,ES,14324839,2244731
+cap03,import,2011,Rio Grande do Sul,RS,11518191,4492667
+cap03,import,2011,Minas Gerais,MG,10180934,2215826
+cap03,import,2011,Rondônia,RO,9924066,2582660
+cap03,import,2011,Alagoas,AL,5255100,2008916
+cap03,import,2011,Sergipe,SE,3504947,634000
+cap03,import,2011,Ceará,CE,3115218,1102302
+cap03,import,2011,Paraíba,PB,1248388,597801
+cap03,import,2011,Rio Grande do Norte,RN,912217,405159
+cap03,import,2011,Amazonas,AM,786784,120430
+cap03,import,2011,Tocantins,TO,247030,36000
+cap03,import,2011,Distrito Federal,DF,151741,14600
+cap03,import,2010,São Paulo,SP,455782700,104231731
+cap03,import,2010,Rio de Janeiro,RJ,188970109,51945860
+cap03,import,2010,Santa Catarina,SC,125658929,56038569
+cap03,import,2010,Pernambuco,PE,60055871,20670066
+cap03,import,2010,Paraná,PR,36822890,9604052
+cap03,import,2010,Rondônia,RO,27614304,5707475
+cap03,import,2010,Espírito Santo,ES,16643172,2598750
+cap03,import,2010,Bahia,BA,14899801,3977007
+cap03,import,2010,Mato Grosso do Sul,MS,8962395,2173459
+cap03,import,2010,Rio Grande do Sul,RS,5749073,2251981
+cap03,import,2010,Alagoas,AL,4767547,1935738
+cap03,import,2010,Minas Gerais,MG,3877230,739143
+cap03,import,2010,Sergipe,SE,3092572,569150
+cap03,import,2010,Ceará,CE,1294660,373288
+cap03,import,2010,Amazonas,AM,796753,134136
+cap03,import,2010,Rio Grande do Norte,RN,716988,448438
+cap03,import,2010,Paraíba,PB,715368,542216
+cap03,import,2010,Mato Grosso,MT,107243,48000
+cap03,import,2010,Goiás,GO,68158,12500
+1604-1605,export,2026,Ceará,CE,15697698,3294511
+1604-1605,export,2026,Santa Catarina,SC,10008204,2304780
+1604-1605,export,2026,São Paulo,SP,156920,17662
+1604-1605,export,2026,Rio de Janeiro,RJ,57703,9126
+1604-1605,export,2026,Espírito Santo,ES,45882,5812
+1604-1605,export,2026,Paraná,PR,37968,5457
+1604-1605,export,2026,Rio Grande do Sul,RS,36658,3768
+1604-1605,export,2026,Maranhão,MA,36133,5351
+1604-1605,export,2026,Pará,PA,34541,5483
+1604-1605,export,2026,Alagoas,AL,9181,731
+1604-1605,export,2026,Bahia,BA,8160,1177
+1604-1605,export,2026,Amazonas,AM,7225,512
+1604-1605,export,2026,Pernambuco,PE,6048,469
+1604-1605,export,2026,Amapá,AP,4369,232
+1604-1605,export,2026,Roraima,RR,1255,87
+1604-1605,export,2026,Minas Gerais,MG,140,50
+1604-1605,export,2025,Ceará,CE,17759027,3663596
+1604-1605,export,2025,Santa Catarina,SC,15255823,3678131
+1604-1605,export,2025,São Paulo,SP,231366,29450
+1604-1605,export,2025,Rio de Janeiro,RJ,85976,10084
+1604-1605,export,2025,Rio Grande do Sul,RS,69322,7301
+1604-1605,export,2025,Espírito Santo,ES,67837,9600
+1604-1605,export,2025,Maranhão,MA,56586,7997
+1604-1605,export,2025,Paraná,PR,53138,8584
+1604-1605,export,2025,Pará,PA,40061,6681
+1604-1605,export,2025,Alagoas,AL,16361,1429
+1604-1605,export,2025,Bahia,BA,11543,2338
+1604-1605,export,2025,Pernambuco,PE,11158,1473
+1604-1605,export,2025,Amazonas,AM,10658,842
+1604-1605,export,2025,Amapá,AP,4082,220
+1604-1605,export,2025,Roraima,RR,288,49
+1604-1605,export,2024,Ceará,CE,19273864,4015546
+1604-1605,export,2024,Santa Catarina,SC,12063613,2733151
+1604-1605,export,2024,Rio Grande do Sul,RS,249714,42178
+1604-1605,export,2024,São Paulo,SP,230693,33724
+1604-1605,export,2024,Rio de Janeiro,RJ,80143,9520
+1604-1605,export,2024,Maranhão,MA,54231,8025
+1604-1605,export,2024,Paraná,PR,53285,8747
+1604-1605,export,2024,Espírito Santo,ES,50936,9772
+1604-1605,export,2024,Pará,PA,30640,3185
+1604-1605,export,2024,Não Declarada,ND,18408,896
+1604-1605,export,2024,Bahia,BA,15255,2540
+1604-1605,export,2024,Alagoas,AL,11351,1245
+1604-1605,export,2024,Amazonas,AM,9853,837
+1604-1605,export,2024,Pernambuco,PE,4568,595
+1604-1605,export,2024,Amapá,AP,4160,207
+1604-1605,export,2024,Minas Gerais,MG,152,5
+1604-1605,export,2023,Santa Catarina,SC,15929541,3679315
+1604-1605,export,2023,Ceará,CE,13955238,2747505
+1604-1605,export,2023,Rio Grande do Sul,RS,509030,91864
+1604-1605,export,2023,São Paulo,SP,276562,41012
+1604-1605,export,2023,Roraima,RR,76275,14929
+1604-1605,export,2023,Rio de Janeiro,RJ,68190,7928
+1604-1605,export,2023,Maranhão,MA,64163,9095
+1604-1605,export,2023,Espírito Santo,ES,49119,6009
+1604-1605,export,2023,Paraná,PR,40962,8177
+1604-1605,export,2023,Pará,PA,37357,3892
+1604-1605,export,2023,Amazonas,AM,20408,3637
+1604-1605,export,2023,Bahia,BA,11892,2331
+1604-1605,export,2023,Alagoas,AL,11638,1661
+1604-1605,export,2023,Pernambuco,PE,4559,380
+1604-1605,export,2023,Amapá,AP,4400,304
+1604-1605,export,2023,Minas Gerais,MG,95,2
+1604-1605,export,2022,Ceará,CE,12185681,2820982
+1604-1605,export,2022,Santa Catarina,SC,12076410,2979976
+1604-1605,export,2022,Rio Grande do Sul,RS,451481,90684
+1604-1605,export,2022,São Paulo,SP,346374,62518
+1604-1605,export,2022,Roraima,RR,59550,10868
+1604-1605,export,2022,Maranhão,MA,56899,9328
+1604-1605,export,2022,Espírito Santo,ES,44014,5594
+1604-1605,export,2022,Paraná,PR,41289,12723
+1604-1605,export,2022,Pará,PA,23535,3776
+1604-1605,export,2022,Rio de Janeiro,RJ,18864,3552
+1604-1605,export,2022,Bahia,BA,15978,2505
+1604-1605,export,2022,Alagoas,AL,10732,1327
+1604-1605,export,2022,Amazonas,AM,3420,210
+1604-1605,export,2022,Pernambuco,PE,2515,194
+1604-1605,export,2022,Amapá,AP,2020,118
+1604-1605,export,2021,Santa Catarina,SC,9274655,2461574
+1604-1605,export,2021,Ceará,CE,8332427,2185884
+1604-1605,export,2021,Rio Grande do Sul,RS,911523,200728
+1604-1605,export,2021,São Paulo,SP,167497,30218
+1604-1605,export,2021,Roraima,RR,118782,24539
+1604-1605,export,2021,Rio de Janeiro,RJ,79890,19140
+1604-1605,export,2021,Espírito Santo,ES,63900,12495
+1604-1605,export,2021,Maranhão,MA,50888,12161
+1604-1605,export,2021,Paraná,PR,26765,9390
+1604-1605,export,2021,Pará,PA,22969,7036
+1604-1605,export,2021,Amazonas,AM,18001,4222
+1604-1605,export,2021,Bahia,BA,12328,2242
+1604-1605,export,2021,Alagoas,AL,10575,1210
+1604-1605,export,2021,Pernambuco,PE,3254,334
+1604-1605,export,2021,Amapá,AP,1999,176
+1604-1605,export,2021,Sergipe,SE,314,160
+1604-1605,export,2020,Santa Catarina,SC,7390723,2167149
+1604-1605,export,2020,Ceará,CE,3372923,934246
+1604-1605,export,2020,São Paulo,SP,181975,46321
+1604-1605,export,2020,Rio Grande do Sul,RS,170304,42046
+1604-1605,export,2020,Roraima,RR,116005,20442
+1604-1605,export,2020,Amazonas,AM,92600,22647
+1604-1605,export,2020,Maranhão,MA,47539,9317
+1604-1605,export,2020,Rio de Janeiro,RJ,39758,12746
+1604-1605,export,2020,Espírito Santo,ES,32887,10348
+1604-1605,export,2020,Não Declarada,ND,26628,7304
+1604-1605,export,2020,Pará,PA,23971,5727
+1604-1605,export,2020,Paraná,PR,22835,8748
+1604-1605,export,2020,Bahia,BA,13162,3942
+1604-1605,export,2020,Alagoas,AL,12172,1810
+1604-1605,export,2020,Pernambuco,PE,3939,386
+1604-1605,export,2020,Amapá,AP,3375,263
+1604-1605,export,2019,Santa Catarina,SC,6973915,1895935
+1604-1605,export,2019,Ceará,CE,4122467,1094926
+1604-1605,export,2019,São Paulo,SP,159446,52541
+1604-1605,export,2019,Rio Grande do Sul,RS,145703,30956
+1604-1605,export,2019,Maranhão,MA,44637,9124
+1604-1605,export,2019,Espírito Santo,ES,44531,16529
+1604-1605,export,2019,Paraná,PR,26131,8948
+1604-1605,export,2019,Rio de Janeiro,RJ,22500,5842
+1604-1605,export,2019,Pará,PA,21424,3310
+1604-1605,export,2019,Amazonas,AM,14597,1910
+1604-1605,export,2019,Pernambuco,PE,10658,1449
+1604-1605,export,2019,Bahia,BA,10220,4275
+1604-1605,export,2019,Alagoas,AL,9740,2410
+1604-1605,export,2019,Goiás,GO,3905,612
+1604-1605,export,2019,Amapá,AP,1405,79
+1604-1605,export,2019,Roraima,RR,396,88
+1604-1605,export,2018,Santa Catarina,SC,7626189,2083139
+1604-1605,export,2018,Ceará,CE,1068802,262747
+1604-1605,export,2018,Rio de Janeiro,RJ,1029655,209985
+1604-1605,export,2018,Rio Grande do Sul,RS,660827,123677
+1604-1605,export,2018,São Paulo,SP,34232,6352
+1604-1605,export,2018,Espírito Santo,ES,15042,7205
+1604-1605,export,2018,Maranhão,MA,7482,2126
+1604-1605,export,2018,Pará,PA,6085,1417
+1604-1605,export,2018,Paraná,PR,5362,2102
+1604-1605,export,2018,Minas Gerais,MG,4251,499
+1604-1605,export,2018,Bahia,BA,2859,1354
+1604-1605,export,2018,Pernambuco,PE,2727,312
+1604-1605,export,2018,Amazonas,AM,1252,352
+1604-1605,export,2018,Alagoas,AL,164,127
+1604-1605,export,2018,Goiás,GO,98,12
+1604-1605,export,2017,Santa Catarina,SC,11279226,2760223
+1604-1605,export,2017,Ceará,CE,562995,162194
+1604-1605,export,2017,Rio de Janeiro,RJ,506166,104744
+1604-1605,export,2017,São Paulo,SP,6616,1165
+1604-1605,export,2017,Não Declarada,ND,3260,705
+1604-1605,export,2017,Rio Grande do Sul,RS,1616,394
+1604-1605,export,2017,Goiás,GO,42,4
+1604-1605,export,2016,Santa Catarina,SC,10144488,2794408
+1604-1605,export,2016,Rio de Janeiro,RJ,123932,33770
+1604-1605,export,2016,São Paulo,SP,77691,9886
+1604-1605,export,2016,Paraná,PR,25228,2296
+1604-1605,export,2016,Minas Gerais,MG,3484,433
+1604-1605,export,2016,Rio Grande do Sul,RS,3246,907
+1604-1605,export,2016,Pernambuco,PE,2901,392
+1604-1605,export,2016,Rondônia,RO,275,36
+1604-1605,export,2016,Goiás,GO,85,8
+1604-1605,export,2015,Santa Catarina,SC,12091763,3438133
+1604-1605,export,2015,Rio de Janeiro,RJ,252709,67830
+1604-1605,export,2015,São Paulo,SP,219367,36220
+1604-1605,export,2015,Paraná,PR,10142,1350
+1604-1605,export,2015,Minas Gerais,MG,7279,1041
+1604-1605,export,2015,Rio Grande do Sul,RS,3365,902
+1604-1605,export,2015,Rondônia,RO,112,19
+1604-1605,export,2014,Santa Catarina,SC,13905589,3374504
+1604-1605,export,2014,Rio Grande do Sul,RS,851510,121125
+1604-1605,export,2014,São Paulo,SP,321907,53625
+1604-1605,export,2014,Rio de Janeiro,RJ,205978,38185
+1604-1605,export,2014,Minas Gerais,MG,3616,3300
+1604-1605,export,2014,Pernambuco,PE,1975,245
+1604-1605,export,2014,Paraná,PR,578,138
+1604-1605,export,2014,Goiás,GO,144,12
+1604-1605,export,2013,Santa Catarina,SC,14542565,3618028
+1604-1605,export,2013,Rio Grande do Sul,RS,2398671,340381
+1604-1605,export,2013,São Paulo,SP,144077,11096
+1604-1605,export,2013,Rio de Janeiro,RJ,84908,16515
+1604-1605,export,2013,Minas Gerais,MG,3660,298
+1604-1605,export,2013,Paraná,PR,1362,269
+1604-1605,export,2013,Não Declarada,ND,1065,234
+1604-1605,export,2013,Zona Não Declarada,ZN,320,34
+1604-1605,export,2013,Mato Grosso,MT,38,6
+1604-1605,export,2012,Santa Catarina,SC,16994727,4473732
+1604-1605,export,2012,Rio Grande do Sul,RS,4860552,864201
+1604-1605,export,2012,São Paulo,SP,112421,12303
+1604-1605,export,2012,Rio de Janeiro,RJ,5627,921
+1604-1605,export,2012,Pará,PA,5138,512
+1604-1605,export,2012,Não Declarada,ND,3588,1143
+1604-1605,export,2012,Paraná,PR,3389,696
+1604-1605,export,2012,Mercadoria Nacionalizada,MN,959,12
+1604-1605,export,2012,Rondônia,RO,784,85
+1604-1605,export,2012,Zona Não Declarada,ZN,759,71
+1604-1605,export,2012,Minas Gerais,MG,220,24
+1604-1605,export,2012,Mato Grosso,MT,12,60
+1604-1605,export,2011,Santa Catarina,SC,14053694,3751652
+1604-1605,export,2011,Rio Grande do Sul,RS,4781444,974985
+1604-1605,export,2011,Rio de Janeiro,RJ,896619,197042
+1604-1605,export,2011,São Paulo,SP,121359,21208
+1604-1605,export,2011,Acre,AC,65907,18430
+1604-1605,export,2011,Zona Não Declarada,ZN,21399,2816
+1604-1605,export,2011,Paraná,PR,17237,2644
+1604-1605,export,2011,Mercadoria Nacionalizada,MN,9535,397
+1604-1605,export,2011,Não Declarada,ND,1798,203
+1604-1605,export,2011,Goiás,GO,999,263
+1604-1605,export,2011,Minas Gerais,MG,760,57
+1604-1605,export,2011,Rondônia,RO,686,61
+1604-1605,export,2011,Pará,PA,534,60
+1604-1605,export,2011,Mato Grosso do Sul,MS,133,55
+1604-1605,export,2010,Santa Catarina,SC,11643053,3438618
+1604-1605,export,2010,Rio Grande do Sul,RS,3796590,859255
+1604-1605,export,2010,Rio de Janeiro,RJ,1288202,276566
+1604-1605,export,2010,São Paulo,SP,224770,41424
+1604-1605,export,2010,Zona Não Declarada,ZN,26828,1665
+1604-1605,export,2010,Minas Gerais,MG,15424,4131
+1604-1605,export,2010,Paraná,PR,12185,2027
+1604-1605,export,2010,Não Declarada,ND,10321,1222
+1604-1605,export,2010,Goiás,GO,2393,484
+1604-1605,export,2010,Pará,PA,2316,549
+1604-1605,export,2010,Mercadoria Nacionalizada,MN,406,85
+1604-1605,export,2010,Mato Grosso do Sul,MS,214,28
+1604-1605,import,2026,Santa Catarina,SC,28723504,8823053
+1604-1605,import,2026,São Paulo,SP,6848673,1388596
+1604-1605,import,2026,Rio de Janeiro,RJ,1660599,465608
+1604-1605,import,2026,Rondônia,RO,987708,285306
+1604-1605,import,2026,Rio Grande do Sul,RS,620385,171417
+1604-1605,import,2026,Pernambuco,PE,541244,187468
+1604-1605,import,2026,Minas Gerais,MG,504151,73298
+1604-1605,import,2026,Alagoas,AL,406113,122284
+1604-1605,import,2026,Bahia,BA,309864,85120
+1604-1605,import,2026,Ceará,CE,285120,129600
+1604-1605,import,2026,Paraná,PR,204175,48978
+1604-1605,import,2026,Espírito Santo,ES,170574,50294
+1604-1605,import,2026,Paraíba,PB,133099,15599
+1604-1605,import,2026,Goiás,GO,74205,20196
+1604-1605,import,2026,Amazonas,AM,64192,8992
+1604-1605,import,2026,Distrito Federal,DF,6887,218
+1604-1605,import,2025,Santa Catarina,SC,26447679,8995427
+1604-1605,import,2025,São Paulo,SP,11731043,2376254
+1604-1605,import,2025,Ceará,CE,2556999,1032262
+1604-1605,import,2025,Rio de Janeiro,RJ,2002109,671893
+1604-1605,import,2025,Rondônia,RO,1068878,300910
+1604-1605,import,2025,Rio Grande do Sul,RS,920661,208953
+1604-1605,import,2025,Minas Gerais,MG,780935,120050
+1604-1605,import,2025,Pernambuco,PE,776797,280296
+1604-1605,import,2025,Bahia,BA,487073,130973
+1604-1605,import,2025,Espírito Santo,ES,391165,102917
+1604-1605,import,2025,Alagoas,AL,239310,114504
+1604-1605,import,2025,Amazonas,AM,205787,35332
+1604-1605,import,2025,Paraná,PR,137898,6920
+1604-1605,import,2025,Goiás,GO,122555,30600
+1604-1605,import,2025,Paraíba,PB,69192,10159
+1604-1605,import,2024,Santa Catarina,SC,29250017,9886778
+1604-1605,import,2024,São Paulo,SP,12697116,2589242
+1604-1605,import,2024,Rondônia,RO,1819504,563226
+1604-1605,import,2024,Rio de Janeiro,RJ,1797518,600370
+1604-1605,import,2024,Ceará,CE,1285236,460881
+1604-1605,import,2024,Pernambuco,PE,996166,385844
+1604-1605,import,2024,Minas Gerais,MG,903922,138794
+1604-1605,import,2024,Rio Grande do Sul,RS,688409,168446
+1604-1605,import,2024,Bahia,BA,561901,154514
+1604-1605,import,2024,Espírito Santo,ES,546987,143054
+1604-1605,import,2024,Alagoas,AL,350498,127894
+1604-1605,import,2024,Amazonas,AM,300048,55832
+1604-1605,import,2024,Goiás,GO,87016,21828
+1604-1605,import,2024,Paraná,PR,42413,1871
+1604-1605,import,2024,Paraíba,PB,39758,6948
+1604-1605,import,2023,Santa Catarina,SC,17090869,6890239
+1604-1605,import,2023,São Paulo,SP,11876749,2441040
+1604-1605,import,2023,Rio de Janeiro,RJ,1852195,604726
+1604-1605,import,2023,Minas Gerais,MG,1083336,209269
+1604-1605,import,2023,Rondônia,RO,1067470,361342
+1604-1605,import,2023,Pernambuco,PE,984915,313480
+1604-1605,import,2023,Ceará,CE,913352,300217
+1604-1605,import,2023,Rio Grande do Sul,RS,572398,134298
+1604-1605,import,2023,Bahia,BA,269103,76683
+1604-1605,import,2023,Espírito Santo,ES,228357,59539
+1604-1605,import,2023,Paraná,PR,203193,27126
+1604-1605,import,2023,Amazonas,AM,165892,32916
+1604-1605,import,2023,Alagoas,AL,153620,70166
+1604-1605,import,2023,Goiás,GO,98069,27460
+1604-1605,import,2023,Rio Grande do Norte,RN,56675,25000
+1604-1605,import,2022,Santa Catarina,SC,19236158,7275914
+1604-1605,import,2022,São Paulo,SP,7792143,1768662
+1604-1605,import,2022,Rondônia,RO,1448003,511203
+1604-1605,import,2022,Ceará,CE,1394595,721966
+1604-1605,import,2022,Rio de Janeiro,RJ,1376814,496575
+1604-1605,import,2022,Espírito Santo,ES,1120381,309437
+1604-1605,import,2022,Minas Gerais,MG,794750,234820
+1604-1605,import,2022,Rio Grande do Sul,RS,610265,184572
+1604-1605,import,2022,Pernambuco,PE,477600,167464
+1604-1605,import,2022,Alagoas,AL,277200,108550
+1604-1605,import,2022,Bahia,BA,224442,71675
+1604-1605,import,2022,Amazonas,AM,187034,42961
+1604-1605,import,2022,Paraná,PR,71506,12061
+1604-1605,import,2022,Mato Grosso do Sul,MS,24600,5098
+1604-1605,import,2022,Goiás,GO,12860,2808
+1604-1605,import,2021,Santa Catarina,SC,17326305,8163317
+1604-1605,import,2021,São Paulo,SP,8811477,2521575
+1604-1605,import,2021,Rio de Janeiro,RJ,1727510,650576
+1604-1605,import,2021,Ceará,CE,1241328,692018
+1604-1605,import,2021,Minas Gerais,MG,1171148,361430
+1604-1605,import,2021,Pernambuco,PE,1170335,417463
+1604-1605,import,2021,Rio Grande do Sul,RS,738358,243756
+1604-1605,import,2021,Rondônia,RO,618641,198987
+1604-1605,import,2021,Espírito Santo,ES,509972,191390
+1604-1605,import,2021,Bahia,BA,409951,119022
+1604-1605,import,2021,Alagoas,AL,332000,122383
+1604-1605,import,2021,Amazonas,AM,208688,46731
+1604-1605,import,2021,Paraná,PR,151905,35436
+1604-1605,import,2021,Goiás,GO,56978,15344
+1604-1605,import,2021,Mato Grosso do Sul,MS,2975,648
+1604-1605,import,2020,Santa Catarina,SC,19671711,7732067
+1604-1605,import,2020,São Paulo,SP,9409732,2515229
+1604-1605,import,2020,Rio de Janeiro,RJ,1585028,572470
+1604-1605,import,2020,Ceará,CE,1445230,605549
+1604-1605,import,2020,Espírito Santo,ES,1386010,453409
+1604-1605,import,2020,Minas Gerais,MG,965966,287693
+1604-1605,import,2020,Alagoas,AL,800434,311148
+1604-1605,import,2020,Pernambuco,PE,612818,193553
+1604-1605,import,2020,Rondônia,RO,501854,160492
+1604-1605,import,2020,Rio Grande do Sul,RS,412625,100948
+1604-1605,import,2020,Goiás,GO,142595,45859
+1604-1605,import,2020,Bahia,BA,135528,36659
+1604-1605,import,2020,Amazonas,AM,118755,26736
+1604-1605,import,2020,Paraná,PR,63300,18650
+1604-1605,import,2020,Sergipe,SE,55946,16994
+1604-1605,import,2020,Tocantins,TO,43886,18302
+1604-1605,import,2020,Mato Grosso do Sul,MS,2144,432
+1604-1605,import,2019,Santa Catarina,SC,24287139,8339580
+1604-1605,import,2019,São Paulo,SP,15436149,3939220
+1604-1605,import,2019,Rondônia,RO,2518117,765813
+1604-1605,import,2019,Rio de Janeiro,RJ,2022541,743725
+1604-1605,import,2019,Ceará,CE,1750534,674383
+1604-1605,import,2019,Espírito Santo,ES,1209357,330120
+1604-1605,import,2019,Rio Grande do Sul,RS,789514,214576
+1604-1605,import,2019,Alagoas,AL,725524,181638
+1604-1605,import,2019,Tocantins,TO,482061,170153
+1604-1605,import,2019,Mato Grosso do Sul,MS,435327,118488
+1604-1605,import,2019,Pernambuco,PE,427340,133259
+1604-1605,import,2019,Minas Gerais,MG,331274,91606
+1604-1605,import,2019,Amazonas,AM,179537,34304
+1604-1605,import,2019,Paraná,PR,120624,30724
+1604-1605,import,2019,Paraíba,PB,18094,4298
+1604-1605,import,2019,Bahia,BA,10807,2332
+1604-1605,import,2019,Sergipe,SE,2535,583
+1604-1605,import,2019,Distrito Federal,DF,1865,389
+1604-1605,import,2018,Santa Catarina,SC,42219896,11824776
+1604-1605,import,2018,São Paulo,SP,15885697,3818193
+1604-1605,import,2018,Espírito Santo,ES,2410553,676993
+1604-1605,import,2018,Rio de Janeiro,RJ,2078446,769277
+1604-1605,import,2018,Rondônia,RO,1691637,492309
+1604-1605,import,2018,Ceará,CE,687170,308400
+1604-1605,import,2018,Alagoas,AL,584564,200466
+1604-1605,import,2018,Minas Gerais,MG,477971,122411
+1604-1605,import,2018,Rio Grande do Sul,RS,451071,111995
+1604-1605,import,2018,Tocantins,TO,421435,155612
+1604-1605,import,2018,Mato Grosso do Sul,MS,342245,94080
+1604-1605,import,2018,Pernambuco,PE,337859,97003
+1604-1605,import,2018,Paraná,PR,198326,34723
+1604-1605,import,2018,Sergipe,SE,155085,38824
+1604-1605,import,2018,Amazonas,AM,153951,30960
+1604-1605,import,2018,Goiás,GO,111894,29997
+1604-1605,import,2018,Bahia,BA,46112,10876
+1604-1605,import,2018,Paraíba,PB,40215,9240
+1604-1605,import,2017,Santa Catarina,SC,34679200,11956009
+1604-1605,import,2017,São Paulo,SP,16057618,4546446
+1604-1605,import,2017,Espírito Santo,ES,1921312,626415
+1604-1605,import,2017,Rio de Janeiro,RJ,1915422,701634
+1604-1605,import,2017,Ceará,CE,875168,410060
+1604-1605,import,2017,Rio Grande do Sul,RS,825223,314543
+1604-1605,import,2017,Rondônia,RO,783263,190723
+1604-1605,import,2017,Alagoas,AL,757100,226634
+1604-1605,import,2017,Tocantins,TO,439151,161133
+1604-1605,import,2017,Pernambuco,PE,413869,117801
+1604-1605,import,2017,Minas Gerais,MG,359636,105931
+1604-1605,import,2017,Paraná,PR,341232,96417
+1604-1605,import,2017,Mato Grosso do Sul,MS,301084,77480
+1604-1605,import,2017,Goiás,GO,274694,74993
+1604-1605,import,2017,Sergipe,SE,86690,23491
+1604-1605,import,2017,Amazonas,AM,79470,16065
+1604-1605,import,2017,Bahia,BA,71973,16525
+1604-1605,import,2017,Paraíba,PB,30571,6734
+1604-1605,import,2017,Maranhão,MA,13489,3024
+1604-1605,import,2016,Santa Catarina,SC,40399482,14118571
+1604-1605,import,2016,São Paulo,SP,8499170,2455900
+1604-1605,import,2016,Rio de Janeiro,RJ,2157790,872264
+1604-1605,import,2016,Espírito Santo,ES,1251073,422603
+1604-1605,import,2016,Goiás,GO,860336,299960
+1604-1605,import,2016,Rondônia,RO,746249,218674
+1604-1605,import,2016,Rio Grande do Sul,RS,716931,306425
+1604-1605,import,2016,Tocantins,TO,628339,258021
+1604-1605,import,2016,Paraná,PR,586741,188780
+1604-1605,import,2016,Pernambuco,PE,449220,138694
+1604-1605,import,2016,Alagoas,AL,367913,110881
+1604-1605,import,2016,Ceará,CE,256910,115770
+1604-1605,import,2016,Minas Gerais,MG,231786,62118
+1604-1605,import,2016,Mato Grosso do Sul,MS,186223,66000
+1604-1605,import,2016,Bahia,BA,77687,17856
+1604-1605,import,2016,Amazonas,AM,28631,6724
+1604-1605,import,2016,Paraíba,PB,21960,4838
+1604-1605,import,2016,Sergipe,SE,5531,1043
+1604-1605,import,2016,Maranhão,MA,3675,864
+1604-1605,import,2015,Santa Catarina,SC,47657006,16434023
+1604-1605,import,2015,São Paulo,SP,13938388,3577588
+1604-1605,import,2015,Espírito Santo,ES,2925805,966245
+1604-1605,import,2015,Rio de Janeiro,RJ,2301518,731576
+1604-1605,import,2015,Paraná,PR,1648792,521708
+1604-1605,import,2015,Ceará,CE,928340,242745
+1604-1605,import,2015,Rio Grande do Sul,RS,914569,304374
+1604-1605,import,2015,Rondônia,RO,823352,278379
+1604-1605,import,2015,Mato Grosso do Sul,MS,682618,246450
+1604-1605,import,2015,Tocantins,TO,534693,194520
+1604-1605,import,2015,Pernambuco,PE,442028,124578
+1604-1605,import,2015,Goiás,GO,371663,93527
+1604-1605,import,2015,Bahia,BA,316071,78412
+1604-1605,import,2015,Amazonas,AM,245843,89853
+1604-1605,import,2015,Alagoas,AL,204815,88440
+1604-1605,import,2015,Minas Gerais,MG,172584,42878
+1604-1605,import,2015,Paraíba,PB,54930,21118
+1604-1605,import,2015,Sergipe,SE,51517,17162
+1604-1605,import,2014,Santa Catarina,SC,68211296,19924669
+1604-1605,import,2014,São Paulo,SP,15092523,3548174
+1604-1605,import,2014,Rio de Janeiro,RJ,3883929,1021074
+1604-1605,import,2014,Espírito Santo,ES,2980484,1027342
+1604-1605,import,2014,Paraná,PR,2802951,910491
+1604-1605,import,2014,Pernambuco,PE,1936279,539540
+1604-1605,import,2014,Rio Grande do Sul,RS,1530892,420864
+1604-1605,import,2014,Goiás,GO,1363520,405371
+1604-1605,import,2014,Tocantins,TO,1344490,374952
+1604-1605,import,2014,Ceará,CE,1211434,333356
+1604-1605,import,2014,Amazonas,AM,985963,268365
+1604-1605,import,2014,Alagoas,AL,679029,182960
+1604-1605,import,2014,Mato Grosso do Sul,MS,628317,219502
+1604-1605,import,2014,Minas Gerais,MG,470802,133805
+1604-1605,import,2014,Bahia,BA,419680,122979
+1604-1605,import,2014,Rondônia,RO,282349,26120
+1604-1605,import,2014,Sergipe,SE,2219,389
+1604-1605,import,2013,Santa Catarina,SC,79550822,24892863
+1604-1605,import,2013,São Paulo,SP,16082390,3599248
+1604-1605,import,2013,Pernambuco,PE,5523863,1518604
+1604-1605,import,2013,Rio de Janeiro,RJ,2767471,795659
+1604-1605,import,2013,Goiás,GO,2487815,614496
+1604-1605,import,2013,Amazonas,AM,2281459,663613
+1604-1605,import,2013,Espírito Santo,ES,2241993,771953
+1604-1605,import,2013,Paraná,PR,2193212,705614
+1604-1605,import,2013,Rio Grande do Sul,RS,1847765,496548
+1604-1605,import,2013,Tocantins,TO,1552584,411948
+1604-1605,import,2013,Ceará,CE,1214630,313196
+1604-1605,import,2013,Bahia,BA,712561,180545
+1604-1605,import,2013,Mato Grosso do Sul,MS,189144,66600
+1604-1605,import,2013,Minas Gerais,MG,171379,35823
+1604-1605,import,2013,Rondônia,RO,156358,27540
+1604-1605,import,2013,Distrito Federal,DF,119306,20516
+1604-1605,import,2013,Alagoas,AL,19742,3800
+1604-1605,import,2012,Santa Catarina,SC,47097442,16229120
+1604-1605,import,2012,São Paulo,SP,14867024,3477134
+1604-1605,import,2012,Rio de Janeiro,RJ,4106601,750852
+1604-1605,import,2012,Paraná,PR,1957945,538951
+1604-1605,import,2012,Goiás,GO,1861307,590155
+1604-1605,import,2012,Pernambuco,PE,1495493,390880
+1604-1605,import,2012,Tocantins,TO,1054339,296095
+1604-1605,import,2012,Bahia,BA,922367,195719
+1604-1605,import,2012,Rio Grande do Sul,RS,781368,240477
+1604-1605,import,2012,Mato Grosso do Sul,MS,748192,286000
+1604-1605,import,2012,Espírito Santo,ES,468151,142060
+1604-1605,import,2012,Ceará,CE,398353,82803
+1604-1605,import,2012,Rondônia,RO,265847,26796
+1604-1605,import,2012,Minas Gerais,MG,245773,39792
+1604-1605,import,2012,Amazonas,AM,52793,7711
+1604-1605,import,2012,Alagoas,AL,1844,418
+1604-1605,import,2011,Santa Catarina,SC,25883622,9226683
+1604-1605,import,2011,São Paulo,SP,17897313,5409188
+1604-1605,import,2011,Paraná,PR,5869027,2103649
+1604-1605,import,2011,Ceará,CE,3740075,1176142
+1604-1605,import,2011,Rio de Janeiro,RJ,2329497,697591
+1604-1605,import,2011,Goiás,GO,1721895,613950
+1604-1605,import,2011,Bahia,BA,1159851,392191
+1604-1605,import,2011,Rio Grande do Sul,RS,966750,362555
+1604-1605,import,2011,Espírito Santo,ES,707506,198671
+1604-1605,import,2011,Tocantins,TO,490512,150228
+1604-1605,import,2011,Pernambuco,PE,452853,140561
+1604-1605,import,2011,Rondônia,RO,391951,105032
+1604-1605,import,2011,Mato Grosso do Sul,MS,290202,110000
+1604-1605,import,2011,Sergipe,SE,136291,39840
+1604-1605,import,2011,Distrito Federal,DF,33210,5237
+1604-1605,import,2011,Amazonas,AM,32458,4375
+1604-1605,import,2010,Santa Catarina,SC,16085502,6145456
+1604-1605,import,2010,São Paulo,SP,15188835,5204826
+1604-1605,import,2010,Rio de Janeiro,RJ,4611188,1568368
+1604-1605,import,2010,Paraná,PR,3256625,1097028
+1604-1605,import,2010,Goiás,GO,1522018,587070
+1604-1605,import,2010,Espírito Santo,ES,1116791,355690
+1604-1605,import,2010,Rondônia,RO,638043,208373
+1604-1605,import,2010,Pernambuco,PE,625700,265687
+1604-1605,import,2010,Rio Grande do Sul,RS,551054,224031
+1604-1605,import,2010,Mato Grosso do Sul,MS,543494,198000
+1604-1605,import,2010,Bahia,BA,444077,127550
+1604-1605,import,2010,Tocantins,TO,172955,35811
+1604-1605,import,2010,Distrito Federal,DF,86412,4800
+1604-1605,import,2010,Sergipe,SE,45472,16320

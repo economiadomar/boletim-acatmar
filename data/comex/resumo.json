@@ -1,0 +1,3882 @@
+{
+ "gerado_em": "2026-09-05",
+ "fonte": "Comex Stat / MDIC, API pública (api-comexstat.mdic.gov.br), extração ACATMAR",
+ "embarcacoes_8903": {
+  "serie_anual": [
+   {
+    "ano": 2010,
+    "exp_sc": 1566603,
+    "exp_br": 28644230,
+    "part_sc": 5.5,
+    "imp_sc": 58658844,
+    "imp_br": 135349756,
+    "part_imp_sc": 43.3,
+    "ranking_exp": [
+     {
+      "uf": "SP",
+      "fob": 10908296
+     },
+     {
+      "uf": "RJ",
+      "fob": 10549950
+     },
+     {
+      "uf": "CE",
+      "fob": 5134600
+     },
+     {
+      "uf": "SC",
+      "fob": 1566603
+     },
+     {
+      "uf": "PB",
+      "fob": 82318
+     },
+     {
+      "uf": "AL",
+      "fob": 69614
+     }
+    ]
+   },
+   {
+    "ano": 2011,
+    "exp_sc": 557841,
+    "exp_br": 1237397,
+    "part_sc": 45.1,
+    "imp_sc": 89943991,
+    "imp_br": 232516467,
+    "part_imp_sc": 38.7,
+    "ranking_exp": [
+     {
+      "uf": "SC",
+      "fob": 557841
+     },
+     {
+      "uf": "SP",
+      "fob": 151337
+     },
+     {
+      "uf": "PE",
+      "fob": 70000
+     },
+     {
+      "uf": "PR",
+      "fob": 35121
+     }
+    ]
+   },
+   {
+    "ano": 2012,
+    "exp_sc": 147950,
+    "exp_br": 7968192,
+    "part_sc": 1.9,
+    "imp_sc": 51013101,
+    "imp_br": 164723654,
+    "part_imp_sc": 31.0,
+    "ranking_exp": [
+     {
+      "uf": "CE",
+      "fob": 7050000
+     },
+     {
+      "uf": "SP",
+      "fob": 241358
+     },
+     {
+      "uf": "SC",
+      "fob": 147950
+     },
+     {
+      "uf": "PR",
+      "fob": 62336
+     },
+     {
+      "uf": "MG",
+      "fob": 11729
+     },
+     {
+      "uf": "RS",
+      "fob": 1574
+     }
+    ]
+   },
+   {
+    "ano": 2013,
+    "exp_sc": 370107,
+    "exp_br": 1978773,
+    "part_sc": 18.7,
+    "imp_sc": 39144745,
+    "imp_br": 135454878,
+    "part_imp_sc": 28.9,
+    "ranking_exp": [
+     {
+      "uf": "SP",
+      "fob": 630174
+     },
+     {
+      "uf": "SC",
+      "fob": 370107
+     },
+     {
+      "uf": "RJ",
+      "fob": 362059
+     },
+     {
+      "uf": "MG",
+      "fob": 51546
+     },
+     {
+      "uf": "PR",
+      "fob": 15585
+     },
+     {
+      "uf": "PA",
+      "fob": 1852
+     }
+    ]
+   },
+   {
+    "ano": 2014,
+    "exp_sc": 345055,
+    "exp_br": 2094119,
+    "part_sc": 16.5,
+    "imp_sc": 35645737,
+    "imp_br": 98843723,
+    "part_imp_sc": 36.1,
+    "ranking_exp": [
+     {
+      "uf": "RJ",
+      "fob": 1001895
+     },
+     {
+      "uf": "SC",
+      "fob": 345055
+     },
+     {
+      "uf": "SP",
+      "fob": 271142
+     },
+     {
+      "uf": "PR",
+      "fob": 182507
+     },
+     {
+      "uf": "MG",
+      "fob": 26652
+     },
+     {
+      "uf": "MS",
+      "fob": 10261
+     }
+    ]
+   },
+   {
+    "ano": 2015,
+    "exp_sc": 3468499,
+    "exp_br": 9243789,
+    "part_sc": 37.5,
+    "imp_sc": 14742624,
+    "imp_br": 44393983,
+    "part_imp_sc": 33.2,
+    "ranking_exp": [
+     {
+      "uf": "SC",
+      "fob": 3468499
+     },
+     {
+      "uf": "SP",
+      "fob": 2286066
+     },
+     {
+      "uf": "RJ",
+      "fob": 877767
+     },
+     {
+      "uf": "PR",
+      "fob": 15805
+     },
+     {
+      "uf": "MS",
+      "fob": 3911
+     },
+     {
+      "uf": "PE",
+      "fob": 2705
+     }
+    ]
+   },
+   {
+    "ano": 2016,
+    "exp_sc": 14013193,
+    "exp_br": 23820629,
+    "part_sc": 58.8,
+    "imp_sc": 10633665,
+    "imp_br": 19831523,
+    "part_imp_sc": 53.6,
+    "ranking_exp": [
+     {
+      "uf": "SC",
+      "fob": 14013193
+     },
+     {
+      "uf": "SP",
+      "fob": 1881447
+     },
+     {
+      "uf": "RJ",
+      "fob": 1493354
+     },
+     {
+      "uf": "AL",
+      "fob": 608273
+     },
+     {
+      "uf": "PR",
+      "fob": 107120
+     },
+     {
+      "uf": "PE",
+      "fob": 50000
+     }
+    ]
+   },
+   {
+    "ano": 2017,
+    "exp_sc": 14307071,
+    "exp_br": 19020402,
+    "part_sc": 75.2,
+    "imp_sc": 24802269,
+    "imp_br": 38212649,
+    "part_imp_sc": 64.9,
+    "ranking_exp": [
+     {
+      "uf": "SC",
+      "fob": 14307071
+     },
+     {
+      "uf": "RJ",
+      "fob": 1547091
+     },
+     {
+      "uf": "SP",
+      "fob": 1483992
+     },
+     {
+      "uf": "AL",
+      "fob": 838000
+     },
+     {
+      "uf": "PE",
+      "fob": 155194
+     },
+     {
+      "uf": "PR",
+      "fob": 141126
+     }
+    ]
+   },
+   {
+    "ano": 2018,
+    "exp_sc": 13330576,
+    "exp_br": 19091862,
+    "part_sc": 69.8,
+    "imp_sc": 32940111,
+    "imp_br": 47654631,
+    "part_imp_sc": 69.1,
+    "ranking_exp": [
+     {
+      "uf": "SC",
+      "fob": 13330576
+     },
+     {
+      "uf": "SP",
+      "fob": 4477355
+     },
+     {
+      "uf": "RJ",
+      "fob": 484031
+     },
+     {
+      "uf": "RS",
+      "fob": 463675
+     },
+     {
+      "uf": "PR",
+      "fob": 85329
+     },
+     {
+      "uf": "AM",
+      "fob": 79588
+     }
+    ]
+   },
+   {
+    "ano": 2019,
+    "exp_sc": 14721142,
+    "exp_br": 23560899,
+    "part_sc": 62.5,
+    "imp_sc": 42307138,
+    "imp_br": 49656699,
+    "part_imp_sc": 85.2,
+    "ranking_exp": [
+     {
+      "uf": "SC",
+      "fob": 14721142
+     },
+     {
+      "uf": "SP",
+      "fob": 6461208
+     },
+     {
+      "uf": "MG",
+      "fob": 1258190
+     },
+     {
+      "uf": "RJ",
+      "fob": 506048
+     },
+     {
+      "uf": "AP",
+      "fob": 263656
+     },
+     {
+      "uf": "PE",
+      "fob": 215600
+     }
+    ]
+   },
+   {
+    "ano": 2020,
+    "exp_sc": 10175728,
+    "exp_br": 18158588,
+    "part_sc": 56.0,
+    "imp_sc": 25172431,
+    "imp_br": 32837611,
+    "part_imp_sc": 76.7,
+    "ranking_exp": [
+     {
+      "uf": "SC",
+      "fob": 10175728
+     },
+     {
+      "uf": "SP",
+      "fob": 6414100
+     },
+     {
+      "uf": "PE",
+      "fob": 920500
+     },
+     {
+      "uf": "RJ",
+      "fob": 267166
+     },
+     {
+      "uf": "PR",
+      "fob": 161773
+     },
+     {
+      "uf": "MG",
+      "fob": 116175
+     }
+    ]
+   },
+   {
+    "ano": 2021,
+    "exp_sc": 24892803,
+    "exp_br": 29897057,
+    "part_sc": 83.3,
+    "imp_sc": 61206763,
+    "imp_br": 75686562,
+    "part_imp_sc": 80.9,
+    "ranking_exp": [
+     {
+      "uf": "SC",
+      "fob": 24892803
+     },
+     {
+      "uf": "PE",
+      "fob": 1740639
+     },
+     {
+      "uf": "SP",
+      "fob": 1382179
+     },
+     {
+      "uf": "MG",
+      "fob": 566873
+     },
+     {
+      "uf": "RJ",
+      "fob": 491992
+     },
+     {
+      "uf": "PR",
+      "fob": 317295
+     }
+    ]
+   },
+   {
+    "ano": 2022,
+    "exp_sc": 52855814,
+    "exp_br": 57354816,
+    "part_sc": 92.2,
+    "imp_sc": 81332295,
+    "imp_br": 89657512,
+    "part_imp_sc": 90.7,
+    "ranking_exp": [
+     {
+      "uf": "SC",
+      "fob": 52855814
+     },
+     {
+      "uf": "PE",
+      "fob": 2381209
+     },
+     {
+      "uf": "SP",
+      "fob": 958834
+     },
+     {
+      "uf": "PR",
+      "fob": 525837
+     },
+     {
+      "uf": "RJ",
+      "fob": 339714
+     },
+     {
+      "uf": "AM",
+      "fob": 138074
+     }
+    ]
+   },
+   {
+    "ano": 2023,
+    "exp_sc": 54491415,
+    "exp_br": 68101123,
+    "part_sc": 80.0,
+    "imp_sc": 118231341,
+    "imp_br": 145143430,
+    "part_imp_sc": 81.5,
+    "ranking_exp": [
+     {
+      "uf": "SC",
+      "fob": 54491415
+     },
+     {
+      "uf": "PE",
+      "fob": 6691253
+     },
+     {
+      "uf": "PR",
+      "fob": 3363109
+     },
+     {
+      "uf": "SP",
+      "fob": 1535317
+     },
+     {
+      "uf": "MG",
+      "fob": 1111334
+     },
+     {
+      "uf": "RJ",
+      "fob": 630576
+     }
+    ]
+   },
+   {
+    "ano": 2024,
+    "exp_sc": 49979954,
+    "exp_br": 67890958,
+    "part_sc": 73.6,
+    "imp_sc": 136704839,
+    "imp_br": 161972117,
+    "part_imp_sc": 84.4,
+    "ranking_exp": [
+     {
+      "uf": "SC",
+      "fob": 49979954
+     },
+     {
+      "uf": "PE",
+      "fob": 7563830
+     },
+     {
+      "uf": "PR",
+      "fob": 6412775
+     },
+     {
+      "uf": "SP",
+      "fob": 2077559
+     },
+     {
+      "uf": "MG",
+      "fob": 1278995
+     },
+     {
+      "uf": "RJ",
+      "fob": 346677
+     }
+    ]
+   },
+   {
+    "ano": 2025,
+    "exp_sc": 37580765,
+    "exp_br": 56604391,
+    "part_sc": 66.4,
+    "imp_sc": 118343124,
+    "imp_br": 133543254,
+    "part_imp_sc": 88.6,
+    "ranking_exp": [
+     {
+      "uf": "SC",
+      "fob": 37580765
+     },
+     {
+      "uf": "PE",
+      "fob": 6179561
+     },
+     {
+      "uf": "SP",
+      "fob": 4853064
+     },
+     {
+      "uf": "PR",
+      "fob": 4761414
+     },
+     {
+      "uf": "RJ",
+      "fob": 737233
+     },
+     {
+      "uf": "MG",
+      "fob": 669257
+     }
+    ]
+   },
+   {
+    "ano": 2026,
+    "exp_sc": 20778691,
+    "exp_br": 30563397,
+    "part_sc": 68.0,
+    "imp_sc": 72943322,
+    "imp_br": 91802930,
+    "part_imp_sc": 79.5,
+    "ranking_exp": [
+     {
+      "uf": "SC",
+      "fob": 20778691
+     },
+     {
+      "uf": "PR",
+      "fob": 3911319
+     },
+     {
+      "uf": "PE",
+      "fob": 2780183
+     },
+     {
+      "uf": "SP",
+      "fob": 2263368
+     },
+     {
+      "uf": "MG",
+      "fob": 551475
+     },
+     {
+      "uf": "AM",
+      "fob": 200254
+     }
+    ]
+   }
+  ],
+  "municipios_top_brasil": {
+   "2026": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 11918004
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 8692755
+    },
+    {
+     "municipio": "Curitiba - PR",
+     "fob": 3569292
+    },
+    {
+     "municipio": "Jaboatão dos Guararapes - PE",
+     "fob": 2780183
+    },
+    {
+     "municipio": "Guarujá - SP",
+     "fob": 1973788
+    },
+    {
+     "municipio": "Capitólio - MG",
+     "fob": 514263
+    },
+    {
+     "municipio": "Biguaçu - SC",
+     "fob": 200330
+    },
+    {
+     "municipio": "Manaus - AM",
+     "fob": 196115
+    },
+    {
+     "municipio": "Diadema - SP",
+     "fob": 170910
+    },
+    {
+     "municipio": "São José dos Pinhais - PR",
+     "fob": 145000
+    }
+   ],
+   "2025": [
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 18939757
+    },
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 18399483
+    },
+    {
+     "municipio": "Jaboatão dos Guararapes - PE",
+     "fob": 6179561
+    },
+    {
+     "municipio": "Guarujá - SP",
+     "fob": 4145253
+    },
+    {
+     "municipio": "Curitiba - PR",
+     "fob": 3640394
+    },
+    {
+     "municipio": "São José dos Pinhais - PR",
+     "fob": 1021363
+    },
+    {
+     "municipio": "São Paulo - SP",
+     "fob": 892385
+    },
+    {
+     "municipio": "Vera Cruz - RS",
+     "fob": 626742
+    },
+    {
+     "municipio": "Capitólio - MG",
+     "fob": 603931
+    },
+    {
+     "municipio": "Queimados - RJ",
+     "fob": 593378
+    }
+   ],
+   "2024": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 26237273
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 20432727
+    },
+    {
+     "municipio": "Jaboatão dos Guararapes - PE",
+     "fob": 7242600
+    },
+    {
+     "municipio": "São José dos Pinhais - PR",
+     "fob": 3198723
+    },
+    {
+     "municipio": "Curitiba - PR",
+     "fob": 2491832
+    },
+    {
+     "municipio": "Joinville - SC",
+     "fob": 1979976
+    },
+    {
+     "municipio": "Capitólio - MG",
+     "fob": 1249718
+    },
+    {
+     "municipio": "Guarujá - SP",
+     "fob": 1213043
+    },
+    {
+     "municipio": "São José - SC",
+     "fob": 928570
+    },
+    {
+     "municipio": "Santa Terezinha de Itaipu - PR",
+     "fob": 589333
+    }
+   ],
+   "2023": [
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 27290399
+    },
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 24573565
+    },
+    {
+     "municipio": "Jaboatão dos Guararapes - PE",
+     "fob": 6691253
+    },
+    {
+     "municipio": "São José dos Pinhais - PR",
+     "fob": 2617628
+    },
+    {
+     "municipio": "Joinville - SC",
+     "fob": 1973161
+    },
+    {
+     "municipio": "Capitólio - MG",
+     "fob": 1083783
+    },
+    {
+     "municipio": "Itupeva - SP",
+     "fob": 778586
+    },
+    {
+     "municipio": "Curitiba - PR",
+     "fob": 553491
+    },
+    {
+     "municipio": "São José - SC",
+     "fob": 426090
+    },
+    {
+     "municipio": "Rio de Janeiro - RJ",
+     "fob": 417817
+    }
+   ],
+   "2022": [
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 30405029
+    },
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 18925433
+    },
+    {
+     "municipio": "Macapá - AP",
+     "fob": 2203274
+    },
+    {
+     "municipio": "Jaboatão dos Guararapes - PE",
+     "fob": 2031209
+    },
+    {
+     "municipio": "São José - SC",
+     "fob": 763463
+    },
+    {
+     "municipio": "Biguaçu - SC",
+     "fob": 558615
+    },
+    {
+     "municipio": "Atibaia - SP",
+     "fob": 457905
+    },
+    {
+     "municipio": "São José dos Pinhais - PR",
+     "fob": 369140
+    },
+    {
+     "municipio": "Cabo de Santo Agostinho - PE",
+     "fob": 350000
+    },
+    {
+     "municipio": "Rio de Janeiro - RJ",
+     "fob": 339714
+    }
+   ],
+   "2021": [
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 18785761
+    },
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 4373305
+    },
+    {
+     "municipio": "Jaboatão dos Guararapes - PE",
+     "fob": 1740639
+    },
+    {
+     "municipio": "Piçarras - SC",
+     "fob": 1413600
+    },
+    {
+     "municipio": "Guarujá - SP",
+     "fob": 798360
+    },
+    {
+     "municipio": "Rio de Janeiro - RJ",
+     "fob": 489177
+    },
+    {
+     "municipio": "Capitólio - MG",
+     "fob": 481000
+    },
+    {
+     "municipio": "São José - SC",
+     "fob": 181494
+    },
+    {
+     "municipio": "Venâncio Aires - RS",
+     "fob": 175096
+    },
+    {
+     "municipio": "Atibaia - SP",
+     "fob": 174333
+    }
+   ],
+   "2020": [
+    {
+     "municipio": "Guarujá - SP",
+     "fob": 6056290
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 5283398
+    },
+    {
+     "municipio": "Piçarras - SC",
+     "fob": 2499675
+    },
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 2359455
+    },
+    {
+     "municipio": "Jaboatão dos Guararapes - PE",
+     "fob": 920500
+    },
+    {
+     "municipio": "Rio de Janeiro - RJ",
+     "fob": 267166
+    },
+    {
+     "municipio": "Paulínia - SP",
+     "fob": 110229
+    },
+    {
+     "municipio": "Capitólio - MG",
+     "fob": 74619
+    },
+    {
+     "municipio": "São José dos Pinhais - PR",
+     "fob": 70538
+    },
+    {
+     "municipio": "Gavião Peixoto - SP",
+     "fob": 69392
+    }
+   ],
+   "2019": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 12505256
+    },
+    {
+     "municipio": "Guarujá - SP",
+     "fob": 6114883
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 1887936
+    },
+    {
+     "municipio": "Uberlândia - MG",
+     "fob": 861180
+    },
+    {
+     "municipio": "Rio de Janeiro - RJ",
+     "fob": 505134
+    },
+    {
+     "municipio": "Capitólio - MG",
+     "fob": 289300
+    },
+    {
+     "municipio": "Macapá - AP",
+     "fob": 263656
+    },
+    {
+     "municipio": "Jaboatão dos Guararapes - PE",
+     "fob": 215600
+    },
+    {
+     "municipio": "Paulínia - SP",
+     "fob": 176845
+    },
+    {
+     "municipio": "São José - SC",
+     "fob": 150000
+    }
+   ],
+   "2018": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 8397556
+    },
+    {
+     "municipio": "Guarujá - SP",
+     "fob": 3048716
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 2906375
+    },
+    {
+     "municipio": "Joinville - SC",
+     "fob": 1704462
+    },
+    {
+     "municipio": "São Paulo - SP",
+     "fob": 1163069
+    },
+    {
+     "municipio": "Santa Cruz do Sul - RS",
+     "fob": 452785
+    },
+    {
+     "municipio": "Rio de Janeiro - RJ",
+     "fob": 242786
+    },
+    {
+     "municipio": "Angra dos Reis - RJ",
+     "fob": 242647
+    },
+    {
+     "municipio": "São José - SC",
+     "fob": 147221
+    },
+    {
+     "municipio": "São Francisco do Sul - SC",
+     "fob": 84000
+    }
+   ],
+   "2017": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 9452621
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 2498930
+    },
+    {
+     "municipio": "Joinville - SC",
+     "fob": 2337258
+    },
+    {
+     "municipio": "Angra dos Reis - RJ",
+     "fob": 1473281
+    },
+    {
+     "municipio": "São Paulo - SP",
+     "fob": 982309
+    },
+    {
+     "municipio": "Guarujá - SP",
+     "fob": 870000
+    },
+    {
+     "municipio": "Rio de Janeiro - RJ",
+     "fob": 287500
+    },
+    {
+     "municipio": "São Bernardo do Campo - SP",
+     "fob": 195000
+    },
+    {
+     "municipio": "Paulínia - SP",
+     "fob": 193462
+    },
+    {
+     "municipio": "Manaus - AM",
+     "fob": 128201
+    }
+   ],
+   "2016": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 9061082
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 3823084
+    },
+    {
+     "municipio": "São Paulo - SP",
+     "fob": 3160950
+    },
+    {
+     "municipio": "Manaus - AM",
+     "fob": 1487550
+    },
+    {
+     "municipio": "Brasília - DF",
+     "fob": 1418000
+    },
+    {
+     "municipio": "Angra dos Reis - RJ",
+     "fob": 1298367
+    },
+    {
+     "municipio": "Joinville - SC",
+     "fob": 1250008
+    },
+    {
+     "municipio": "Rio de Janeiro - RJ",
+     "fob": 1238936
+    },
+    {
+     "municipio": "Biguaçu - SC",
+     "fob": 292923
+    },
+    {
+     "municipio": "São Bernardo do Campo - SP",
+     "fob": 164747
+    }
+   ],
+   "2015": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 3094531
+    },
+    {
+     "municipio": "Maceió - AL",
+     "fob": 2361488
+    },
+    {
+     "municipio": "Macapá - AP",
+     "fob": 1850000
+    },
+    {
+     "municipio": "Angra dos Reis - RJ",
+     "fob": 847172
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 292530
+    },
+    {
+     "municipio": "Rio de Janeiro - RJ",
+     "fob": 214450
+    },
+    {
+     "municipio": "Curitiba - PR",
+     "fob": 120465
+    },
+    {
+     "municipio": "Atibaia - SP",
+     "fob": 94657
+    },
+    {
+     "municipio": "Campinas - SP",
+     "fob": 89539
+    },
+    {
+     "municipio": "São José dos Campos - SP",
+     "fob": 53638
+    }
+   ],
+   "2014": [
+    {
+     "municipio": "Angra dos Reis - RJ",
+     "fob": 1000986
+    },
+    {
+     "municipio": "Biguaçu - SC",
+     "fob": 228055
+    },
+    {
+     "municipio": "São José dos Pinhais - PR",
+     "fob": 168139
+    },
+    {
+     "municipio": "Rio de Janeiro - RJ",
+     "fob": 152952
+    },
+    {
+     "municipio": "Atibaia - SP",
+     "fob": 126376
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 117000
+    },
+    {
+     "municipio": "Campinas - SP",
+     "fob": 106171
+    },
+    {
+     "municipio": "São José dos Campos - SP",
+     "fob": 69212
+    },
+    {
+     "municipio": "Macaé - RJ",
+     "fob": 22542
+    },
+    {
+     "municipio": "Pompéia - SP",
+     "fob": 20455
+    }
+   ],
+   "2013": [
+    {
+     "municipio": "Macaé - RJ",
+     "fob": 421198
+    },
+    {
+     "municipio": "Atibaia - SP",
+     "fob": 320834
+    },
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 266350
+    },
+    {
+     "municipio": "Angra dos Reis - RJ",
+     "fob": 198733
+    },
+    {
+     "municipio": "Rio de Janeiro - RJ",
+     "fob": 130250
+    },
+    {
+     "municipio": "Campinas - SP",
+     "fob": 114514
+    },
+    {
+     "municipio": "Pompéia - SP",
+     "fob": 113537
+    },
+    {
+     "municipio": "São José dos Campos - SP",
+     "fob": 112886
+    },
+    {
+     "municipio": "Joinville - SC",
+     "fob": 100757
+    },
+    {
+     "municipio": "Belo Horizonte - MG",
+     "fob": 49957
+    }
+   ],
+   "2012": [
+    {
+     "municipio": "Fortaleza - CE",
+     "fob": 7050000
+    },
+    {
+     "municipio": "São José dos Campos - SP",
+     "fob": 299167
+    },
+    {
+     "municipio": "Rio de Janeiro - RJ",
+     "fob": 166691
+    },
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 147950
+    },
+    {
+     "municipio": "Pompéia - SP",
+     "fob": 109834
+    },
+    {
+     "municipio": "Campinas - SP",
+     "fob": 70422
+    },
+    {
+     "municipio": "Guaíra - PR",
+     "fob": 62336
+    },
+    {
+     "municipio": "Foz do Iguaçu - PR",
+     "fob": 20972
+    },
+    {
+     "municipio": "Santos - SP",
+     "fob": 19767
+    },
+    {
+     "municipio": "Atibaia - SP",
+     "fob": 13252
+    }
+   ],
+   "2011": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 403499
+    },
+    {
+     "municipio": "Rio de Janeiro - RJ",
+     "fob": 191492
+    },
+    {
+     "municipio": "São José dos Campos - SP",
+     "fob": 171793
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 154342
+    },
+    {
+     "municipio": "Pompéia - SP",
+     "fob": 72571
+    },
+    {
+     "municipio": "Jaboatão dos Guararapes - PE",
+     "fob": 70000
+    },
+    {
+     "municipio": "Penápolis - SP",
+     "fob": 52500
+    },
+    {
+     "municipio": "Atibaia - SP",
+     "fob": 45108
+    },
+    {
+     "municipio": "Santa Terezinha de Itaipu - PR",
+     "fob": 35121
+    },
+    {
+     "municipio": "Campinas - SP",
+     "fob": 33658
+    }
+   ],
+   "2010": [
+    {
+     "municipio": "Angra dos Reis - RJ",
+     "fob": 10500000
+    },
+    {
+     "municipio": "Guarujá - SP",
+     "fob": 10277182
+    },
+    {
+     "municipio": "Fortaleza - CE",
+     "fob": 5134600
+    },
+    {
+     "municipio": "Santo André - SP",
+     "fob": 690353
+    },
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 476478
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 393082
+    },
+    {
+     "municipio": "Barueri - SP",
+     "fob": 264000
+    },
+    {
+     "municipio": "Atibaia - SP",
+     "fob": 204181
+    },
+    {
+     "municipio": "São José dos Campos - SP",
+     "fob": 194012
+    },
+    {
+     "municipio": "Rio de Janeiro - RJ",
+     "fob": 83729
+    }
+   ]
+  },
+  "municipios_sc": {
+   "2026": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 11918004
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 8692755
+    },
+    {
+     "municipio": "Biguaçu - SC",
+     "fob": 200330
+    },
+    {
+     "municipio": "São Francisco do Sul - SC",
+     "fob": 432
+    }
+   ],
+   "2025": [
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 18939757
+    },
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 18399483
+    },
+    {
+     "municipio": "São José - SC",
+     "fob": 206937
+    },
+    {
+     "municipio": "Balneário Camboriú - SC",
+     "fob": 62866
+    }
+   ],
+   "2024": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 26237273
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 20432727
+    },
+    {
+     "municipio": "Joinville - SC",
+     "fob": 1979976
+    },
+    {
+     "municipio": "São José - SC",
+     "fob": 928570
+    },
+    {
+     "municipio": "Biguaçu - SC",
+     "fob": 431988
+    },
+    {
+     "municipio": "São Francisco do Sul - SC",
+     "fob": 456
+    }
+   ],
+   "2023": [
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 27290399
+    },
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 24573565
+    },
+    {
+     "municipio": "Joinville - SC",
+     "fob": 1973161
+    },
+    {
+     "municipio": "São José - SC",
+     "fob": 426090
+    },
+    {
+     "municipio": "Biguaçu - SC",
+     "fob": 254074
+    }
+   ],
+   "2022": [
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 30405029
+    },
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 18925433
+    },
+    {
+     "municipio": "São José - SC",
+     "fob": 763463
+    },
+    {
+     "municipio": "Biguaçu - SC",
+     "fob": 558615
+    }
+   ],
+   "2021": [
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 18785761
+    },
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 4373305
+    },
+    {
+     "municipio": "Piçarras - SC",
+     "fob": 1413600
+    },
+    {
+     "municipio": "São José - SC",
+     "fob": 181494
+    },
+    {
+     "municipio": "Biguaçu - SC",
+     "fob": 151060
+    },
+    {
+     "municipio": "Araquari - SC",
+     "fob": 6531
+    }
+   ],
+   "2020": [
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 5283398
+    },
+    {
+     "municipio": "Piçarras - SC",
+     "fob": 2499675
+    },
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 2359455
+    },
+    {
+     "municipio": "Biguaçu - SC",
+     "fob": 34863
+    },
+    {
+     "municipio": "Porto Belo - SC",
+     "fob": 6596
+    }
+   ],
+   "2019": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 12505256
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 1887936
+    },
+    {
+     "municipio": "São José - SC",
+     "fob": 150000
+    },
+    {
+     "municipio": "Piçarras - SC",
+     "fob": 116340
+    },
+    {
+     "municipio": "Biguaçu - SC",
+     "fob": 48454
+    }
+   ],
+   "2018": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 8397556
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 2906375
+    },
+    {
+     "municipio": "Joinville - SC",
+     "fob": 1704462
+    },
+    {
+     "municipio": "São José - SC",
+     "fob": 147221
+    },
+    {
+     "municipio": "São Francisco do Sul - SC",
+     "fob": 84000
+    },
+    {
+     "municipio": "Biguaçu - SC",
+     "fob": 43327
+    }
+   ],
+   "2017": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 9452621
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 2498930
+    },
+    {
+     "municipio": "Joinville - SC",
+     "fob": 2337258
+    },
+    {
+     "municipio": "Biguaçu - SC",
+     "fob": 68678
+    },
+    {
+     "municipio": "São Miguel do Oeste - SC",
+     "fob": 13636
+    }
+   ],
+   "2016": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 9061082
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 3823084
+    },
+    {
+     "municipio": "Joinville - SC",
+     "fob": 1250008
+    },
+    {
+     "municipio": "Biguaçu - SC",
+     "fob": 292923
+    },
+    {
+     "municipio": "Florianópolis - SC",
+     "fob": 115000
+    },
+    {
+     "municipio": "Videira - SC",
+     "fob": 42103
+    },
+    {
+     "municipio": "Gaspar - SC",
+     "fob": 1670
+    }
+   ],
+   "2015": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 3094531
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 292530
+    },
+    {
+     "municipio": "Biguaçu - SC",
+     "fob": 39360
+    },
+    {
+     "municipio": "Joinville - SC",
+     "fob": 27000
+    }
+   ],
+   "2014": [
+    {
+     "municipio": "Biguaçu - SC",
+     "fob": 228055
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 117000
+    }
+   ],
+   "2013": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 266350
+    },
+    {
+     "municipio": "Joinville - SC",
+     "fob": 100757
+    }
+   ],
+   "2012": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 147950
+    }
+   ],
+   "2011": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 403499
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 154342
+    }
+   ],
+   "2010": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 476478
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 393082
+    }
+   ]
+  },
+  "ncm_sc": {
+   "2026": [
+    {
+     "ncm": "89039900",
+     "desc": "Outros barcos/embarcações de recreio/esporte, inclusive canoas",
+     "fob": 10519972,
+     "kg": 187167,
+     "unidades": 41
+    },
+    {
+     "ncm": "89033200",
+     "desc": "Barcos a motor, exceto os infláveis, não equipados com motor fora de borda, de comprimento superior a 7,5 m, mas não superior a 24 m",
+     "fob": 9562406,
+     "kg": 169286,
+     "unidades": 20
+    },
+    {
+     "ncm": "89039300",
+     "desc": "Outros iates e outros barcos e embarcações de recreio ou de esporte; barcos a remos e canoas, de comprimento não superior a 7,5 m",
+     "fob": 384524,
+     "kg": 16411,
+     "unidades": 17
+    },
+    {
+     "ncm": "89033100",
+     "desc": "Barcos a motor, exceto os infláveis, não equipados com motor fora de borda, de comprimento não superior a 7,5 m",
+     "fob": 311789,
+     "kg": 14808,
+     "unidades": 13
+    }
+   ],
+   "2025": [
+    {
+     "ncm": "89033200",
+     "desc": "Barcos a motor, exceto os infláveis, não equipados com motor fora de borda, de comprimento superior a 7,5 m, mas não superior a 24 m",
+     "fob": 21453743,
+     "kg": 403561,
+     "unidades": 34
+    },
+    {
+     "ncm": "89039900",
+     "desc": "Outros barcos/embarcações de recreio/esporte, inclusive canoas",
+     "fob": 15545074,
+     "kg": 289200,
+     "unidades": 40
+    },
+    {
+     "ncm": "89039300",
+     "desc": "Outros iates e outros barcos e embarcações de recreio ou de esporte; barcos a remos e canoas, de comprimento não superior a 7,5 m",
+     "fob": 443396,
+     "kg": 20521,
+     "unidades": 23
+    },
+    {
+     "ncm": "89033100",
+     "desc": "Barcos a motor, exceto os infláveis, não equipados com motor fora de borda, de comprimento não superior a 7,5 m",
+     "fob": 138552,
+     "kg": 6567,
+     "unidades": 9
+    }
+   ],
+   "2024": [
+    {
+     "ncm": "89033200",
+     "desc": "Barcos a motor, exceto os infláveis, não equipados com motor fora de borda, de comprimento superior a 7,5 m, mas não superior a 24 m",
+     "fob": 27347437,
+     "kg": 515440,
+     "unidades": 43
+    },
+    {
+     "ncm": "89039900",
+     "desc": "Outros barcos/embarcações de recreio/esporte, inclusive canoas",
+     "fob": 16352849,
+     "kg": 348756,
+     "unidades": 50
+    },
+    {
+     "ncm": "89033300",
+     "desc": "Barcos a motor, exceto os infláveis, não equipados com motor fora de borda, de comprimento superior a 24 m",
+     "fob": 5407037,
+     "kg": 92960,
+     "unidades": 1
+    },
+    {
+     "ncm": "89039300",
+     "desc": "Outros iates e outros barcos e embarcações de recreio ou de esporte; barcos a remos e canoas, de comprimento não superior a 7,5 m",
+     "fob": 680915,
+     "kg": 33234,
+     "unidades": 34
+    },
+    {
+     "ncm": "89033100",
+     "desc": "Barcos a motor, exceto os infláveis, não equipados com motor fora de borda, de comprimento não superior a 7,5 m",
+     "fob": 185838,
+     "kg": 6743,
+     "unidades": 4
+    },
+    {
+     "ncm": "89031900",
+     "desc": "Outros barcos infláveis, mesmo com casco rígido, não classificados em códigos anteriores",
+     "fob": 5878,
+     "kg": 112,
+     "unidades": 1
+    }
+   ],
+   "2023": [
+    {
+     "ncm": "89033200",
+     "desc": "Barcos a motor, exceto os infláveis, não equipados com motor fora de borda, de comprimento superior a 7,5 m, mas não superior a 24 m",
+     "fob": 31917294,
+     "kg": 649014,
+     "unidades": 43
+    },
+    {
+     "ncm": "89039900",
+     "desc": "Outros barcos/embarcações de recreio/esporte, inclusive canoas",
+     "fob": 16122157,
+     "kg": 363170,
+     "unidades": 52
+    },
+    {
+     "ncm": "89033300",
+     "desc": "Barcos a motor, exceto os infláveis, não equipados com motor fora de borda, de comprimento superior a 24 m",
+     "fob": 5344304,
+     "kg": 92960,
+     "unidades": 1
+    },
+    {
+     "ncm": "89039300",
+     "desc": "Outros iates e outros barcos e embarcações de recreio ou de esporte; barcos a remos e canoas, de comprimento não superior a 7,5 m",
+     "fob": 691455,
+     "kg": 36310,
+     "unidades": 37
+    },
+    {
+     "ncm": "89033100",
+     "desc": "Barcos a motor, exceto os infláveis, não equipados com motor fora de borda, de comprimento não superior a 7,5 m",
+     "fob": 412255,
+     "kg": 13550,
+     "unidades": 8
+    },
+    {
+     "ncm": "89031200",
+     "desc": "Barcos infláveis, mesmo com casco rígido, não concebidos para serem utilizados com um motor e de peso vazio (sem carga) não superior a 100 kg",
+     "fob": 3950,
+     "kg": 44,
+     "unidades": 2
+    }
+   ],
+   "2022": [
+    {
+     "ncm": "89033200",
+     "desc": "Barcos a motor, exceto os infláveis, não equipados com motor fora de borda, de comprimento superior a 7,5 m, mas não superior a 24 m",
+     "fob": 22730176,
+     "kg": 509692,
+     "unidades": 39
+    },
+    {
+     "ncm": "89039900",
+     "desc": "Outros barcos/embarcações de recreio/esporte, inclusive canoas",
+     "fob": 15149137,
+     "kg": 382743,
+     "unidades": 85
+    },
+    {
+     "ncm": "89039200",
+     "desc": "Barcos a motor, exceto com motor fora-de-borda",
+     "fob": 11392471,
+     "kg": 262800,
+     "unidades": 19
+    },
+    {
+     "ncm": "89032300",
+     "desc": "Barcos à vela, exceto os infláveis, mesmo com motor auxiliar de comprimento superior a 24 m",
+     "fob": 2203274,
+     "kg": 64480,
+     "unidades": 1
+    },
+    {
+     "ncm": "89033100",
+     "desc": "Barcos a motor, exceto os infláveis, não equipados com motor fora de borda, de comprimento não superior a 7,5 m",
+     "fob": 700925,
+     "kg": 28200,
+     "unidades": 18
+    },
+    {
+     "ncm": "89039300",
+     "desc": "Outros iates e outros barcos e embarcações de recreio ou de esporte; barcos a remos e canoas, de comprimento não superior a 7,5 m",
+     "fob": 679831,
+     "kg": 36855,
+     "unidades": 38
+    }
+   ],
+   "2021": [
+    {
+     "ncm": "89039200",
+     "desc": "Barcos a motor, exceto com motor fora-de-borda",
+     "fob": 15119957,
+     "kg": 375729,
+     "unidades": 38
+    },
+    {
+     "ncm": "89039900",
+     "desc": "Outros barcos/embarcações de recreio/esporte, inclusive canoas",
+     "fob": 9686039,
+     "kg": 286042,
+     "unidades": 76
+    },
+    {
+     "ncm": "89031000",
+     "desc": "Barcos infláveis",
+     "fob": 82421,
+     "kg": 2455,
+     "unidades": 21
+    },
+    {
+     "ncm": "89039100",
+     "desc": "Barcos a vela, mesmo com motor auxiliar",
+     "fob": 4386,
+     "kg": 128,
+     "unidades": 1
+    }
+   ],
+   "2020": [
+    {
+     "ncm": "89039200",
+     "desc": "Barcos a motor, exceto com motor fora-de-borda",
+     "fob": 6055647,
+     "kg": 171647,
+     "unidades": 18
+    },
+    {
+     "ncm": "89039900",
+     "desc": "Outros barcos/embarcações de recreio/esporte, inclusive canoas",
+     "fob": 4078327,
+     "kg": 110659,
+     "unidades": 38
+    },
+    {
+     "ncm": "89031000",
+     "desc": "Barcos infláveis",
+     "fob": 35158,
+     "kg": 494,
+     "unidades": 22
+    },
+    {
+     "ncm": "89039100",
+     "desc": "Barcos a vela, mesmo com motor auxiliar",
+     "fob": 6596,
+     "kg": 252,
+     "unidades": 8
+    }
+   ],
+   "2019": [
+    {
+     "ncm": "89039900",
+     "desc": "Outros barcos/embarcações de recreio/esporte, inclusive canoas",
+     "fob": 7822923,
+     "kg": 175630,
+     "unidades": 40
+    },
+    {
+     "ncm": "89039200",
+     "desc": "Barcos a motor, exceto com motor fora-de-borda",
+     "fob": 6892011,
+     "kg": 183645,
+     "unidades": 23
+    },
+    {
+     "ncm": "89031000",
+     "desc": "Barcos infláveis",
+     "fob": 6208,
+     "kg": 285,
+     "unidades": 1
+    }
+   ],
+   "2018": [
+    {
+     "ncm": "89039200",
+     "desc": "Barcos a motor, exceto com motor fora-de-borda",
+     "fob": 7119626,
+     "kg": 180458,
+     "unidades": 19
+    },
+    {
+     "ncm": "89039900",
+     "desc": "Outros barcos/embarcações de recreio/esporte, inclusive canoas",
+     "fob": 6126950,
+     "kg": 143110,
+     "unidades": 27
+    },
+    {
+     "ncm": "89031000",
+     "desc": "Barcos infláveis",
+     "fob": 84000,
+     "kg": 920,
+     "unidades": 8
+    }
+   ],
+   "2017": [
+    {
+     "ncm": "89039200",
+     "desc": "Barcos a motor, exceto com motor fora-de-borda",
+     "fob": 7823904,
+     "kg": 253550,
+     "unidades": 56
+    },
+    {
+     "ncm": "89039900",
+     "desc": "Outros barcos/embarcações de recreio/esporte, inclusive canoas",
+     "fob": 6483167,
+     "kg": 146307,
+     "unidades": 52
+    }
+   ],
+   "2016": [
+    {
+     "ncm": "89039200",
+     "desc": "Barcos a motor, exceto com motor fora-de-borda",
+     "fob": 12507083,
+     "kg": 308508,
+     "unidades": 43
+    },
+    {
+     "ncm": "89039900",
+     "desc": "Outros barcos/embarcações de recreio/esporte, inclusive canoas",
+     "fob": 1459453,
+     "kg": 51608,
+     "unidades": 47
+    },
+    {
+     "ncm": "89031000",
+     "desc": "Barcos infláveis",
+     "fob": 46657,
+     "kg": 508,
+     "unidades": 24
+    }
+   ],
+   "2015": [
+    {
+     "ncm": "89039200",
+     "desc": "Barcos a motor, exceto com motor fora-de-borda",
+     "fob": 3378931,
+     "kg": 79271,
+     "unidades": 14
+    },
+    {
+     "ncm": "89039900",
+     "desc": "Outros barcos/embarcações de recreio/esporte, inclusive canoas",
+     "fob": 87531,
+     "kg": 4640,
+     "unidades": 4
+    },
+    {
+     "ncm": "89031000",
+     "desc": "Barcos infláveis",
+     "fob": 2037,
+     "kg": 22,
+     "unidades": 1
+    }
+   ],
+   "2014": [
+    {
+     "ncm": "89039900",
+     "desc": "Outros barcos/embarcações de recreio/esporte, inclusive canoas",
+     "fob": 228055,
+     "kg": 9170,
+     "unidades": 9
+    },
+    {
+     "ncm": "89039200",
+     "desc": "Barcos a motor, exceto com motor fora-de-borda",
+     "fob": 117000,
+     "kg": 3200,
+     "unidades": 1
+    }
+   ],
+   "2013": [
+    {
+     "ncm": "89039200",
+     "desc": "Barcos a motor, exceto com motor fora-de-borda",
+     "fob": 364350,
+     "kg": 19300,
+     "unidades": 7
+    },
+    {
+     "ncm": "89039900",
+     "desc": "Outros barcos/embarcações de recreio/esporte, inclusive canoas",
+     "fob": 5757,
+     "kg": 243,
+     "unidades": 3
+    }
+   ],
+   "2012": [
+    {
+     "ncm": "89039200",
+     "desc": "Barcos a motor, exceto com motor fora-de-borda",
+     "fob": 147950,
+     "kg": 8523,
+     "unidades": 6
+    }
+   ],
+   "2011": [
+    {
+     "ncm": "89039200",
+     "desc": "Barcos a motor, exceto com motor fora-de-borda",
+     "fob": 538184,
+     "kg": 30168,
+     "unidades": 14
+    },
+    {
+     "ncm": "89039900",
+     "desc": "Outros barcos/embarcações de recreio/esporte, inclusive canoas",
+     "fob": 19657,
+     "kg": 950,
+     "unidades": 1
+    }
+   ],
+   "2010": [
+    {
+     "ncm": "89039200",
+     "desc": "Barcos a motor, exceto com motor fora-de-borda",
+     "fob": 789364,
+     "kg": 45703,
+     "unidades": 21
+    },
+    {
+     "ncm": "89039100",
+     "desc": "Barcos a vela, mesmo com motor auxiliar",
+     "fob": 690353,
+     "kg": 63520,
+     "unidades": 1
+    },
+    {
+     "ncm": "89039900",
+     "desc": "Outros barcos/embarcações de recreio/esporte, inclusive canoas",
+     "fob": 86886,
+     "kg": 6670,
+     "unidades": 10
+    }
+   ]
+  },
+  "paises_sc": {
+   "2026": [
+    {
+     "pais": "Estados Unidos",
+     "fob": 8363949,
+     "unidades": 22
+    },
+    {
+     "pais": "Espanha",
+     "fob": 3055405,
+     "unidades": 3
+    },
+    {
+     "pais": "Paraguai",
+     "fob": 2600817,
+     "unidades": 15
+    },
+    {
+     "pais": "Itália",
+     "fob": 2014158,
+     "unidades": 2
+    },
+    {
+     "pais": "Panamá",
+     "fob": 1562664,
+     "unidades": 3
+    },
+    {
+     "pais": "México",
+     "fob": 748445,
+     "unidades": 1
+    },
+    {
+     "pais": "Colômbia",
+     "fob": 521582,
+     "unidades": 19
+    },
+    {
+     "pais": "Hong Kong",
+     "fob": 448815,
+     "unidades": 1
+    },
+    {
+     "pais": "Malta",
+     "fob": 405078,
+     "unidades": 5
+    },
+    {
+     "pais": "Equador",
+     "fob": 257000,
+     "unidades": 1
+    }
+   ],
+   "2025": [
+    {
+     "pais": "Estados Unidos",
+     "fob": 16313543,
+     "unidades": 45
+    },
+    {
+     "pais": "Portugal",
+     "fob": 6989091,
+     "unidades": 1
+    },
+    {
+     "pais": "Itália",
+     "fob": 3821345,
+     "unidades": 4
+    },
+    {
+     "pais": "Austrália",
+     "fob": 1798294,
+     "unidades": 3
+    },
+    {
+     "pais": "Argentina",
+     "fob": 1755000,
+     "unidades": 1
+    },
+    {
+     "pais": "Panamá",
+     "fob": 1674598,
+     "unidades": 2
+    },
+    {
+     "pais": "Bélgica",
+     "fob": 1442499,
+     "unidades": 3
+    },
+    {
+     "pais": "França",
+     "fob": 793692,
+     "unidades": 1
+    },
+    {
+     "pais": "Paraguai",
+     "fob": 621730,
+     "unidades": 17
+    },
+    {
+     "pais": "Colômbia",
+     "fob": 617274,
+     "unidades": 15
+    }
+   ],
+   "2024": [
+    {
+     "pais": "Estados Unidos",
+     "fob": 25608266,
+     "unidades": 54
+    },
+    {
+     "pais": "Itália",
+     "fob": 14016023,
+     "unidades": 9
+    },
+    {
+     "pais": "Paraguai",
+     "fob": 3299037,
+     "unidades": 19
+    },
+    {
+     "pais": "Uruguai",
+     "fob": 2016412,
+     "unidades": 3
+    },
+    {
+     "pais": "Colômbia",
+     "fob": 915898,
+     "unidades": 21
+    },
+    {
+     "pais": "Espanha",
+     "fob": 861297,
+     "unidades": 3
+    },
+    {
+     "pais": "Austrália",
+     "fob": 713664,
+     "unidades": 1
+    },
+    {
+     "pais": "Bélgica",
+     "fob": 700000,
+     "unidades": 1
+    },
+    {
+     "pais": "Emirados Árabes Unidos",
+     "fob": 437736,
+     "unidades": 5
+    },
+    {
+     "pais": "Países Baixos (Holanda)",
+     "fob": 337575,
+     "unidades": 4
+    }
+   ],
+   "2023": [
+    {
+     "pais": "Estados Unidos",
+     "fob": 27507604,
+     "unidades": 53
+    },
+    {
+     "pais": "Itália",
+     "fob": 12792940,
+     "unidades": 9
+    },
+    {
+     "pais": "Costa Rica",
+     "fob": 2229000,
+     "unidades": 1
+    },
+    {
+     "pais": "Austrália",
+     "fob": 1751685,
+     "unidades": 2
+    },
+    {
+     "pais": "Porto Rico",
+     "fob": 1723843,
+     "unidades": 5
+    },
+    {
+     "pais": "Emirados Árabes Unidos",
+     "fob": 1624439,
+     "unidades": 7
+    },
+    {
+     "pais": "Equador",
+     "fob": 1538538,
+     "unidades": 4
+    },
+    {
+     "pais": "Bélgica",
+     "fob": 1302700,
+     "unidades": 2
+    },
+    {
+     "pais": "Turquia",
+     "fob": 807555,
+     "unidades": 7
+    },
+    {
+     "pais": "Nova Zelândia",
+     "fob": 570000,
+     "unidades": 1
+    }
+   ],
+   "2022": [
+    {
+     "pais": "Estados Unidos",
+     "fob": 29632966,
+     "unidades": 68
+    },
+    {
+     "pais": "Itália",
+     "fob": 7613873,
+     "unidades": 8
+    },
+    {
+     "pais": "Paraguai",
+     "fob": 2951538,
+     "unidades": 23
+    },
+    {
+     "pais": "Suíça",
+     "fob": 2203274,
+     "unidades": 1
+    },
+    {
+     "pais": "Colômbia",
+     "fob": 1690163,
+     "unidades": 3
+    },
+    {
+     "pais": "Austrália",
+     "fob": 1665592,
+     "unidades": 3
+    },
+    {
+     "pais": "Espanha",
+     "fob": 1316763,
+     "unidades": 16
+    },
+    {
+     "pais": "Equador",
+     "fob": 1292132,
+     "unidades": 3
+    },
+    {
+     "pais": "Japão",
+     "fob": 873383,
+     "unidades": 1
+    },
+    {
+     "pais": "Turquia",
+     "fob": 352189,
+     "unidades": 11
+    }
+   ],
+   "2021": [
+    {
+     "pais": "Estados Unidos",
+     "fob": 16518375,
+     "unidades": 49
+    },
+    {
+     "pais": "Austrália",
+     "fob": 2465495,
+     "unidades": 15
+    },
+    {
+     "pais": "França",
+     "fob": 1769478,
+     "unidades": 2
+    },
+    {
+     "pais": "Paraguai",
+     "fob": 1601476,
+     "unidades": 17
+    },
+    {
+     "pais": "Turquia",
+     "fob": 329500,
+     "unidades": 3
+    },
+    {
+     "pais": "Canadá",
+     "fob": 304780,
+     "unidades": 1
+    },
+    {
+     "pais": "Emirados Árabes Unidos",
+     "fob": 286887,
+     "unidades": 1
+    },
+    {
+     "pais": "Países Baixos (Holanda)",
+     "fob": 272390,
+     "unidades": 18
+    },
+    {
+     "pais": "Singapura",
+     "fob": 252784,
+     "unidades": 1
+    },
+    {
+     "pais": "República Dominicana",
+     "fob": 232233,
+     "unidades": 1
+    }
+   ],
+   "2020": [
+    {
+     "pais": "Estados Unidos",
+     "fob": 6477043,
+     "unidades": 34
+    },
+    {
+     "pais": "Virgens, Ilhas (Americanas)",
+     "fob": 2030000,
+     "unidades": 1
+    },
+    {
+     "pais": "Argentina",
+     "fob": 806066,
+     "unidades": 5
+    },
+    {
+     "pais": "Paraguai",
+     "fob": 319586,
+     "unidades": 2
+    },
+    {
+     "pais": "Bahamas",
+     "fob": 155660,
+     "unidades": 1
+    },
+    {
+     "pais": "Japão",
+     "fob": 78323,
+     "unidades": 1
+    },
+    {
+     "pais": "Países Baixos (Holanda)",
+     "fob": 73114,
+     "unidades": 12
+    },
+    {
+     "pais": "Turquia",
+     "fob": 65228,
+     "unidades": 1
+    },
+    {
+     "pais": "Canadá",
+     "fob": 64113,
+     "unidades": 1
+    },
+    {
+     "pais": "Emirados Árabes Unidos",
+     "fob": 38512,
+     "unidades": 1
+    }
+   ],
+   "2019": [
+    {
+     "pais": "Estados Unidos",
+     "fob": 8212434,
+     "unidades": 17
+    },
+    {
+     "pais": "Paraguai",
+     "fob": 4117214,
+     "unidades": 14
+    },
+    {
+     "pais": "Colômbia",
+     "fob": 983273,
+     "unidades": 5
+    },
+    {
+     "pais": "Cayman, Ilhas",
+     "fob": 584881,
+     "unidades": 2
+    },
+    {
+     "pais": "Argentina",
+     "fob": 355628,
+     "unidades": 11
+    },
+    {
+     "pais": "Tailândia",
+     "fob": 150000,
+     "unidades": 1
+    },
+    {
+     "pais": "Índia",
+     "fob": 116340,
+     "unidades": 5
+    },
+    {
+     "pais": "Emirados Árabes Unidos",
+     "fob": 85316,
+     "unidades": 1
+    },
+    {
+     "pais": "Nova Zelândia",
+     "fob": 67602,
+     "unidades": 4
+    },
+    {
+     "pais": "Suíça",
+     "fob": 35847,
+     "unidades": 3
+    }
+   ],
+   "2018": [
+    {
+     "pais": "Estados Unidos",
+     "fob": 8394150,
+     "unidades": 16
+    },
+    {
+     "pais": "Paraguai",
+     "fob": 2931868,
+     "unidades": 17
+    },
+    {
+     "pais": "Uruguai",
+     "fob": 1150000,
+     "unidades": 1
+    },
+    {
+     "pais": "Itália",
+     "fob": 481172,
+     "unidades": 1
+    },
+    {
+     "pais": "Argentina",
+     "fob": 139078,
+     "unidades": 8
+    },
+    {
+     "pais": "Austrália",
+     "fob": 128308,
+     "unidades": 1
+    },
+    {
+     "pais": "Bolívia",
+     "fob": 84000,
+     "unidades": 8
+    },
+    {
+     "pais": "Colômbia",
+     "fob": 22000,
+     "unidades": 2
+    }
+   ],
+   "2017": [
+    {
+     "pais": "Estados Unidos",
+     "fob": 8599637,
+     "unidades": 22
+    },
+    {
+     "pais": "Argentina",
+     "fob": 2103972,
+     "unidades": 39
+    },
+    {
+     "pais": "Paraguai",
+     "fob": 1714103,
+     "unidades": 10
+    },
+    {
+     "pais": "Emirados Árabes Unidos",
+     "fob": 980000,
+     "unidades": 2
+    },
+    {
+     "pais": "Panamá",
+     "fob": 469777,
+     "unidades": 1
+    },
+    {
+     "pais": "Peru",
+     "fob": 145066,
+     "unidades": 10
+    },
+    {
+     "pais": "Polônia",
+     "fob": 114086,
+     "unidades": 1
+    },
+    {
+     "pais": "Austrália",
+     "fob": 80046,
+     "unidades": 2
+    },
+    {
+     "pais": "Espanha",
+     "fob": 65448,
+     "unidades": 4
+    },
+    {
+     "pais": "Colômbia",
+     "fob": 21300,
+     "unidades": 2
+    }
+   ],
+   "2016": [
+    {
+     "pais": "Estados Unidos",
+     "fob": 5044389,
+     "unidades": 12
+    },
+    {
+     "pais": "Itália",
+     "fob": 3752777,
+     "unidades": 2
+    },
+    {
+     "pais": "Argentina",
+     "fob": 1291310,
+     "unidades": 51
+    },
+    {
+     "pais": "Uruguai",
+     "fob": 1238428,
+     "unidades": 2
+    },
+    {
+     "pais": "Paraguai",
+     "fob": 948358,
+     "unidades": 7
+    },
+    {
+     "pais": "Austrália",
+     "fob": 863858,
+     "unidades": 6
+    },
+    {
+     "pais": "Colômbia",
+     "fob": 525884,
+     "unidades": 2
+    },
+    {
+     "pais": "Alemanha",
+     "fob": 113906,
+     "unidades": 4
+    },
+    {
+     "pais": "Peru",
+     "fob": 73028,
+     "unidades": 4
+    },
+    {
+     "pais": "Espanha",
+     "fob": 45600,
+     "unidades": 1
+    }
+   ],
+   "2015": [
+    {
+     "pais": "Uruguai",
+     "fob": 1500000,
+     "unidades": 1
+    },
+    {
+     "pais": "Estados Unidos",
+     "fob": 1267813,
+     "unidades": 6
+    },
+    {
+     "pais": "Paraguai",
+     "fob": 420078,
+     "unidades": 2
+    },
+    {
+     "pais": "Emirados Árabes Unidos",
+     "fob": 119040,
+     "unidades": 4
+    },
+    {
+     "pais": "Austrália",
+     "fob": 82064,
+     "unidades": 2
+    },
+    {
+     "pais": "Argentina",
+     "fob": 27444,
+     "unidades": 1
+    },
+    {
+     "pais": "Chile",
+     "fob": 27000,
+     "unidades": 1
+    },
+    {
+     "pais": "Países Baixos (Holanda)",
+     "fob": 23023,
+     "unidades": 1
+    },
+    {
+     "pais": "Alemanha",
+     "fob": 2037,
+     "unidades": 1
+    }
+   ],
+   "2014": [
+    {
+     "pais": "Emirados Árabes Unidos",
+     "fob": 228055,
+     "unidades": 9
+    },
+    {
+     "pais": "Coreia do Sul",
+     "fob": 117000,
+     "unidades": 1
+    }
+   ],
+   "2013": [
+    {
+     "pais": "Emirados Árabes Unidos",
+     "fob": 189269,
+     "unidades": 4
+    },
+    {
+     "pais": "Argentina",
+     "fob": 98000,
+     "unidades": 1
+    },
+    {
+     "pais": "Coreia do Sul",
+     "fob": 77081,
+     "unidades": 2
+    },
+    {
+     "pais": "Japão",
+     "fob": 3000,
+     "unidades": 1
+    },
+    {
+     "pais": "Portugal",
+     "fob": 2757,
+     "unidades": 2
+    }
+   ],
+   "2012": [
+    {
+     "pais": "Países Baixos (Holanda)",
+     "fob": 147950,
+     "unidades": 6
+    }
+   ],
+   "2011": [
+    {
+     "pais": "Países Baixos (Holanda)",
+     "fob": 255357,
+     "unidades": 10
+    },
+    {
+     "pais": "Noruega",
+     "fob": 154342,
+     "unidades": 1
+    },
+    {
+     "pais": "Bélgica",
+     "fob": 128485,
+     "unidades": 3
+    },
+    {
+     "pais": "Uruguai",
+     "fob": 19657,
+     "unidades": 1
+    }
+   ],
+   "2010": [
+    {
+     "pais": "Virgens, Ilhas (Britânicas)",
+     "fob": 690353,
+     "unidades": 1
+    },
+    {
+     "pais": "Noruega",
+     "fob": 625790,
+     "unidades": 17
+    },
+    {
+     "pais": "Bélgica",
+     "fob": 103555,
+     "unidades": 2
+    },
+    {
+     "pais": "Colômbia",
+     "fob": 80196,
+     "unidades": 9
+    },
+    {
+     "pais": "Países Baixos (Holanda)",
+     "fob": 60019,
+     "unidades": 2
+    },
+    {
+     "pais": "Uruguai",
+     "fob": 6690,
+     "unidades": 1
+    }
+   ]
+  },
+  "semestre": {
+   "ano": 2026,
+   "ate_mes": 8,
+   "h1": {
+    "br": [
+     25824435,
+     22836941
+    ],
+    "sc": [
+     15067411,
+     15012182
+    ],
+    "itajai": [
+     4513412,
+     8711691
+    ],
+    "palhoca": [
+     10350974,
+     6204716
+    ]
+   },
+   "acumulado_ate_mes": {
+    "br": [
+     41925715,
+     30563397
+    ],
+    "sc": [
+     28012316,
+     20778691
+    ]
+   }
+  }
+ },
+ "pescado_cap03_1604_1605": {
+  "serie_anual": [
+   {
+    "ano": 2010,
+    "exp_sc": 26797835,
+    "exp_br": 216244383,
+    "part_sc": 12.4,
+    "imp_sc": 141744431,
+    "imp_br": 1001483929,
+    "ranking_exp": [
+     {
+      "uf": "CE",
+      "fob": 63493873
+     },
+     {
+      "uf": "PA",
+      "fob": 37491491
+     },
+     {
+      "uf": "SC",
+      "fob": 26797835
+     },
+     {
+      "uf": "RS",
+      "fob": 23824014
+     },
+     {
+      "uf": "RN",
+      "fob": 21509783
+     }
+    ]
+   },
+   {
+    "ano": 2011,
+    "exp_sc": 36749673,
+    "exp_br": 221778168,
+    "part_sc": 16.6,
+    "imp_sc": 230567706,
+    "imp_br": 1252785748,
+    "ranking_exp": [
+     {
+      "uf": "CE",
+      "fob": 54239374
+     },
+     {
+      "uf": "PA",
+      "fob": 41377361
+     },
+     {
+      "uf": "SC",
+      "fob": 36749673
+     },
+     {
+      "uf": "RS",
+      "fob": 30370258
+     },
+     {
+      "uf": "RN",
+      "fob": 23831079
+     }
+    ]
+   },
+   {
+    "ano": 2012,
+    "exp_sc": 51126928,
+    "exp_br": 209866717,
+    "part_sc": 24.4,
+    "imp_sc": 278280193,
+    "imp_br": 1234807231,
+    "ranking_exp": [
+     {
+      "uf": "PA",
+      "fob": 51487343
+     },
+     {
+      "uf": "SC",
+      "fob": 51126928
+     },
+     {
+      "uf": "CE",
+      "fob": 32568665
+     },
+     {
+      "uf": "RS",
+      "fob": 28438761
+     },
+     {
+      "uf": "RN",
+      "fob": 19472805
+     }
+    ]
+   },
+   {
+    "ano": 2013,
+    "exp_sc": 37393181,
+    "exp_br": 217966924,
+    "part_sc": 17.2,
+    "imp_sc": 359859173,
+    "imp_br": 1451932287,
+    "ranking_exp": [
+     {
+      "uf": "PA",
+      "fob": 55692020
+     },
+     {
+      "uf": "CE",
+      "fob": 47909802
+     },
+     {
+      "uf": "SC",
+      "fob": 37393181
+     },
+     {
+      "uf": "RS",
+      "fob": 28573929
+     },
+     {
+      "uf": "RN",
+      "fob": 17508232
+     }
+    ]
+   },
+   {
+    "ano": 2014,
+    "exp_sc": 38773562,
+    "exp_br": 207215351,
+    "part_sc": 18.7,
+    "imp_sc": 334792189,
+    "imp_br": 1539632483,
+    "ranking_exp": [
+     {
+      "uf": "PA",
+      "fob": 56874809
+     },
+     {
+      "uf": "CE",
+      "fob": 46947000
+     },
+     {
+      "uf": "SC",
+      "fob": 38773562
+     },
+     {
+      "uf": "RS",
+      "fob": 20775356
+     },
+     {
+      "uf": "RN",
+      "fob": 17690243
+     }
+    ]
+   },
+   {
+    "ano": 2015,
+    "exp_sc": 30447819,
+    "exp_br": 218973329,
+    "part_sc": 13.9,
+    "imp_sc": 253934116,
+    "imp_br": 1183792622,
+    "ranking_exp": [
+     {
+      "uf": "PA",
+      "fob": 59475717
+     },
+     {
+      "uf": "CE",
+      "fob": 46757484
+     },
+     {
+      "uf": "SC",
+      "fob": 30447819
+     },
+     {
+      "uf": "RN",
+      "fob": 26074745
+     },
+     {
+      "uf": "RS",
+      "fob": 21932836
+     }
+    ]
+   },
+   {
+    "ano": 2016,
+    "exp_sc": 27230197,
+    "exp_br": 236207648,
+    "part_sc": 11.5,
+    "imp_sc": 263870927,
+    "imp_br": 1156694399,
+    "ranking_exp": [
+     {
+      "uf": "PA",
+      "fob": 55837199
+     },
+     {
+      "uf": "CE",
+      "fob": 51277610
+     },
+     {
+      "uf": "SC",
+      "fob": 27230197
+     },
+     {
+      "uf": "RN",
+      "fob": 24840285
+     },
+     {
+      "uf": "RS",
+      "fob": 21510633
+     }
+    ]
+   },
+   {
+    "ano": 2017,
+    "exp_sc": 29013436,
+    "exp_br": 246005867,
+    "part_sc": 11.8,
+    "imp_sc": 286294108,
+    "imp_br": 1376151741,
+    "ranking_exp": [
+     {
+      "uf": "CE",
+      "fob": 55238426
+     },
+     {
+      "uf": "PA",
+      "fob": 53882525
+     },
+     {
+      "uf": "SC",
+      "fob": 29013436
+     },
+     {
+      "uf": "RS",
+      "fob": 23222617
+     },
+     {
+      "uf": "BA",
+      "fob": 20454395
+     }
+    ]
+   },
+   {
+    "ano": 2018,
+    "exp_sc": 28668581,
+    "exp_br": 261149364,
+    "part_sc": 11.0,
+    "imp_sc": 330030046,
+    "imp_br": 1332770653,
+    "ranking_exp": [
+     {
+      "uf": "CE",
+      "fob": 63510160
+     },
+     {
+      "uf": "PA",
+      "fob": 62955211
+     },
+     {
+      "uf": "SC",
+      "fob": 28668581
+     },
+     {
+      "uf": "SP",
+      "fob": 25503094
+     },
+     {
+      "uf": "RN",
+      "fob": 22425485
+     }
+    ]
+   },
+   {
+    "ano": 2019,
+    "exp_sc": 31638540,
+    "exp_br": 307109887,
+    "part_sc": 10.3,
+    "imp_sc": 307739966,
+    "imp_br": 1267742304,
+    "ranking_exp": [
+     {
+      "uf": "CE",
+      "fob": 91759107
+     },
+     {
+      "uf": "PA",
+      "fob": 72554012
+     },
+     {
+      "uf": "SC",
+      "fob": 31638540
+     },
+     {
+      "uf": "RN",
+      "fob": 22060457
+     },
+     {
+      "uf": "SP",
+      "fob": 16374181
+     }
+    ]
+   },
+   {
+    "ano": 2020,
+    "exp_sc": 26907624,
+    "exp_br": 260163393,
+    "part_sc": 10.3,
+    "imp_sc": 250366200,
+    "imp_br": 896299001,
+    "ranking_exp": [
+     {
+      "uf": "PA",
+      "fob": 71518269
+     },
+     {
+      "uf": "CE",
+      "fob": 70338341
+     },
+     {
+      "uf": "SC",
+      "fob": 26907624
+     },
+     {
+      "uf": "BA",
+      "fob": 20608186
+     },
+     {
+      "uf": "RN",
+      "fob": 17811918
+     }
+    ]
+   },
+   {
+    "ano": 2021,
+    "exp_sc": 29538397,
+    "exp_br": 367795160,
+    "part_sc": 8.0,
+    "imp_sc": 366012680,
+    "imp_br": 1180599104,
+    "ranking_exp": [
+     {
+      "uf": "CE",
+      "fob": 110653104
+     },
+     {
+      "uf": "PA",
+      "fob": 81568889
+     },
+     {
+      "uf": "RN",
+      "fob": 45231678
+     },
+     {
+      "uf": "BA",
+      "fob": 31222835
+     },
+     {
+      "uf": "SC",
+      "fob": 29538397
+     }
+    ]
+   },
+   {
+    "ano": 2022,
+    "exp_sc": 40586536,
+    "exp_br": 374984984,
+    "part_sc": 10.8,
+    "imp_sc": 405730474,
+    "imp_br": 1390876766,
+    "ranking_exp": [
+     {
+      "uf": "CE",
+      "fob": 94430632
+     },
+     {
+      "uf": "PA",
+      "fob": 82021785
+     },
+     {
+      "uf": "RN",
+      "fob": 46958622
+     },
+     {
+      "uf": "SC",
+      "fob": 40586536
+     },
+     {
+      "uf": "BA",
+      "fob": 26526440
+     }
+    ]
+   },
+   {
+    "ano": 2023,
+    "exp_sc": 42103619,
+    "exp_br": 337580606,
+    "part_sc": 12.5,
+    "imp_sc": 368211427,
+    "imp_br": 1423796908,
+    "ranking_exp": [
+     {
+      "uf": "CE",
+      "fob": 88690102
+     },
+     {
+      "uf": "PA",
+      "fob": 72084432
+     },
+     {
+      "uf": "SC",
+      "fob": 42103619
+     },
+     {
+      "uf": "RN",
+      "fob": 32285677
+     },
+     {
+      "uf": "BA",
+      "fob": 23471751
+     }
+    ]
+   },
+   {
+    "ano": 2024,
+    "exp_sc": 39936511,
+    "exp_br": 400420925,
+    "part_sc": 10.0,
+    "imp_sc": 377805243,
+    "imp_br": 1571631358,
+    "ranking_exp": [
+     {
+      "uf": "CE",
+      "fob": 113053005
+     },
+     {
+      "uf": "PA",
+      "fob": 72503721
+     },
+     {
+      "uf": "SP",
+      "fob": 40198093
+     },
+     {
+      "uf": "SC",
+      "fob": 39936511
+     },
+     {
+      "uf": "PR",
+      "fob": 35030723
+     }
+    ]
+   },
+   {
+    "ano": 2025,
+    "exp_sc": 47431668,
+    "exp_br": 410727389,
+    "part_sc": 11.5,
+    "imp_sc": 388274967,
+    "imp_br": 1491887137,
+    "ranking_exp": [
+     {
+      "uf": "CE",
+      "fob": 102132913
+     },
+     {
+      "uf": "PA",
+      "fob": 73679640
+     },
+     {
+      "uf": "SP",
+      "fob": 51590201
+     },
+     {
+      "uf": "SC",
+      "fob": 47431668
+     },
+     {
+      "uf": "PR",
+      "fob": 28492237
+     }
+    ]
+   },
+   {
+    "ano": 2026,
+    "exp_sc": 33157485,
+    "exp_br": 247019005,
+    "part_sc": 13.4,
+    "imp_sc": 323953329,
+    "imp_br": 1171597500,
+    "ranking_exp": [
+     {
+      "uf": "CE",
+      "fob": 66555957
+     },
+     {
+      "uf": "PA",
+      "fob": 46934992
+     },
+     {
+      "uf": "SC",
+      "fob": 33157485
+     },
+     {
+      "uf": "SP",
+      "fob": 29202249
+     },
+     {
+      "uf": "PR",
+      "fob": 14509334
+     }
+    ]
+   }
+  ],
+  "municipios_sc": {
+   "2026": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 20009519
+    },
+    {
+     "municipio": "Navegantes - SC",
+     "fob": 8606921
+    },
+    {
+     "municipio": "Laguna - SC",
+     "fob": 2491284
+    },
+    {
+     "municipio": "Porto Belo - SC",
+     "fob": 813435
+    },
+    {
+     "municipio": "Garuva - SC",
+     "fob": 240576
+    },
+    {
+     "municipio": "Camboriú - SC",
+     "fob": 209007
+    },
+    {
+     "municipio": "Florianópolis - SC",
+     "fob": 203470
+    },
+    {
+     "municipio": "São Francisco do Sul - SC",
+     "fob": 189901
+    }
+   ],
+   "2025": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 30752640
+    },
+    {
+     "municipio": "Navegantes - SC",
+     "fob": 10957678
+    },
+    {
+     "municipio": "Laguna - SC",
+     "fob": 2352492
+    },
+    {
+     "municipio": "Águas Mornas - SC",
+     "fob": 878990
+    },
+    {
+     "municipio": "Antônio Carlos - SC",
+     "fob": 760026
+    },
+    {
+     "municipio": "Florianópolis - SC",
+     "fob": 338691
+    },
+    {
+     "municipio": "São Francisco do Sul - SC",
+     "fob": 327212
+    },
+    {
+     "municipio": "Penha - SC",
+     "fob": 266140
+    }
+   ],
+   "2024": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 19836362
+    },
+    {
+     "municipio": "Navegantes - SC",
+     "fob": 9962426
+    },
+    {
+     "municipio": "Laguna - SC",
+     "fob": 4396528
+    },
+    {
+     "municipio": "Penha - SC",
+     "fob": 2007866
+    },
+    {
+     "municipio": "Águas Mornas - SC",
+     "fob": 1530582
+    },
+    {
+     "municipio": "Porto Belo - SC",
+     "fob": 780080
+    },
+    {
+     "municipio": "Florianópolis - SC",
+     "fob": 374519
+    },
+    {
+     "municipio": "Balneário Camboriú - SC",
+     "fob": 329400
+    }
+   ],
+   "2023": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 19168372
+    },
+    {
+     "municipio": "Navegantes - SC",
+     "fob": 9462214
+    },
+    {
+     "municipio": "Laguna - SC",
+     "fob": 8484649
+    },
+    {
+     "municipio": "Penha - SC",
+     "fob": 2379672
+    },
+    {
+     "municipio": "Águas Mornas - SC",
+     "fob": 682547
+    },
+    {
+     "municipio": "Barra Velha - SC",
+     "fob": 550068
+    },
+    {
+     "municipio": "Florianópolis - SC",
+     "fob": 477060
+    },
+    {
+     "municipio": "São Francisco do Sul - SC",
+     "fob": 212196
+    }
+   ],
+   "2022": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 17699516
+    },
+    {
+     "municipio": "Laguna - SC",
+     "fob": 8839301
+    },
+    {
+     "municipio": "Navegantes - SC",
+     "fob": 7311484
+    },
+    {
+     "municipio": "Penha - SC",
+     "fob": 2726091
+    },
+    {
+     "municipio": "Águas Mornas - SC",
+     "fob": 1331786
+    },
+    {
+     "municipio": "Porto Belo - SC",
+     "fob": 1245934
+    },
+    {
+     "municipio": "Itapema - SC",
+     "fob": 562117
+    },
+    {
+     "municipio": "Barra Velha - SC",
+     "fob": 369834
+    }
+   ],
+   "2021": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 12315242
+    },
+    {
+     "municipio": "Laguna - SC",
+     "fob": 6243364
+    },
+    {
+     "municipio": "Navegantes - SC",
+     "fob": 4176413
+    },
+    {
+     "municipio": "Penha - SC",
+     "fob": 3815594
+    },
+    {
+     "municipio": "Porto Belo - SC",
+     "fob": 1407758
+    },
+    {
+     "municipio": "Águas Mornas - SC",
+     "fob": 880467
+    },
+    {
+     "municipio": "Barra Velha - SC",
+     "fob": 151499
+    },
+    {
+     "municipio": "São Francisco do Sul - SC",
+     "fob": 140123
+    }
+   ],
+   "2020": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 9729650
+    },
+    {
+     "municipio": "Laguna - SC",
+     "fob": 5127413
+    },
+    {
+     "municipio": "Navegantes - SC",
+     "fob": 4055114
+    },
+    {
+     "municipio": "Penha - SC",
+     "fob": 3662922
+    },
+    {
+     "municipio": "Águas Mornas - SC",
+     "fob": 976372
+    },
+    {
+     "municipio": "Porto Belo - SC",
+     "fob": 924333
+    },
+    {
+     "municipio": "Barra Velha - SC",
+     "fob": 637775
+    },
+    {
+     "municipio": "Jaraguá do Sul - SC",
+     "fob": 262072
+    }
+   ],
+   "2019": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 13986520
+    },
+    {
+     "municipio": "Laguna - SC",
+     "fob": 6266535
+    },
+    {
+     "municipio": "Penha - SC",
+     "fob": 4763504
+    },
+    {
+     "municipio": "Navegantes - SC",
+     "fob": 3426226
+    },
+    {
+     "municipio": "Águas Mornas - SC",
+     "fob": 879042
+    },
+    {
+     "municipio": "Porto Belo - SC",
+     "fob": 867623
+    },
+    {
+     "municipio": "Florianópolis - SC",
+     "fob": 680154
+    },
+    {
+     "municipio": "Camboriú - SC",
+     "fob": 337028
+    }
+   ],
+   "2018": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 12224426
+    },
+    {
+     "municipio": "Penha - SC",
+     "fob": 5579318
+    },
+    {
+     "municipio": "Laguna - SC",
+     "fob": 4800308
+    },
+    {
+     "municipio": "Navegantes - SC",
+     "fob": 3629873
+    },
+    {
+     "municipio": "Águas Mornas - SC",
+     "fob": 2338885
+    },
+    {
+     "municipio": "Porto Belo - SC",
+     "fob": 1848524
+    },
+    {
+     "municipio": "Jaraguá do Sul - SC",
+     "fob": 488488
+    },
+    {
+     "municipio": "Balneário Camboriú - SC",
+     "fob": 214319
+    }
+   ],
+   "2017": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 16437860
+    },
+    {
+     "municipio": "Laguna - SC",
+     "fob": 4145667
+    },
+    {
+     "municipio": "Penha - SC",
+     "fob": 4021659
+    },
+    {
+     "municipio": "Águas Mornas - SC",
+     "fob": 3738948
+    },
+    {
+     "municipio": "Navegantes - SC",
+     "fob": 3636297
+    },
+    {
+     "municipio": "Porto Belo - SC",
+     "fob": 1464573
+    },
+    {
+     "municipio": "Itapema - SC",
+     "fob": 888534
+    },
+    {
+     "municipio": "Balneário Camboriú - SC",
+     "fob": 240792
+    }
+   ],
+   "2016": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 12238161
+    },
+    {
+     "municipio": "Penha - SC",
+     "fob": 4129614
+    },
+    {
+     "municipio": "Águas Mornas - SC",
+     "fob": 3999628
+    },
+    {
+     "municipio": "Navegantes - SC",
+     "fob": 3731373
+    },
+    {
+     "municipio": "Laguna - SC",
+     "fob": 3480991
+    },
+    {
+     "municipio": "Porto Belo - SC",
+     "fob": 2230878
+    },
+    {
+     "municipio": "Itapema - SC",
+     "fob": 927524
+    },
+    {
+     "municipio": "Jaraguá do Sul - SC",
+     "fob": 143800
+    }
+   ],
+   "2015": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 12431980
+    },
+    {
+     "municipio": "Navegantes - SC",
+     "fob": 5912626
+    },
+    {
+     "municipio": "Penha - SC",
+     "fob": 4889884
+    },
+    {
+     "municipio": "Águas Mornas - SC",
+     "fob": 3381664
+    },
+    {
+     "municipio": "Porto Belo - SC",
+     "fob": 2941769
+    },
+    {
+     "municipio": "Laguna - SC",
+     "fob": 2902273
+    },
+    {
+     "municipio": "Itapema - SC",
+     "fob": 243236
+    }
+   ],
+   "2014": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 21147631
+    },
+    {
+     "municipio": "Navegantes - SC",
+     "fob": 10271557
+    },
+    {
+     "municipio": "Penha - SC",
+     "fob": 6287558
+    },
+    {
+     "municipio": "Porto Belo - SC",
+     "fob": 3483761
+    },
+    {
+     "municipio": "Águas Mornas - SC",
+     "fob": 1329458
+    },
+    {
+     "municipio": "Laguna - SC",
+     "fob": 1304084
+    },
+    {
+     "municipio": "Itapema - SC",
+     "fob": 482126
+    }
+   ],
+   "2013": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 16847018
+    },
+    {
+     "municipio": "Navegantes - SC",
+     "fob": 9399611
+    },
+    {
+     "municipio": "Penha - SC",
+     "fob": 4943617
+    },
+    {
+     "municipio": "Porto Belo - SC",
+     "fob": 2944125
+    },
+    {
+     "municipio": "Itapema - SC",
+     "fob": 2187875
+    },
+    {
+     "municipio": "Laguna - SC",
+     "fob": 1297114
+    },
+    {
+     "municipio": "Águas Mornas - SC",
+     "fob": 1016843
+    }
+   ],
+   "2012": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 34249778
+    },
+    {
+     "municipio": "Navegantes - SC",
+     "fob": 6863865
+    },
+    {
+     "municipio": "Penha - SC",
+     "fob": 5201660
+    },
+    {
+     "municipio": "Porto Belo - SC",
+     "fob": 3916351
+    },
+    {
+     "municipio": "Itapema - SC",
+     "fob": 2703223
+    },
+    {
+     "municipio": "Laguna - SC",
+     "fob": 1420433
+    },
+    {
+     "municipio": "Águas Mornas - SC",
+     "fob": 428895
+    },
+    {
+     "municipio": "Palhoça - SC",
+     "fob": 177333
+    }
+   ],
+   "2011": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 21472149
+    },
+    {
+     "municipio": "Penha - SC",
+     "fob": 8244781
+    },
+    {
+     "municipio": "Navegantes - SC",
+     "fob": 6076797
+    },
+    {
+     "municipio": "Itapema - SC",
+     "fob": 4467026
+    },
+    {
+     "municipio": "Porto Belo - SC",
+     "fob": 2926680
+    },
+    {
+     "municipio": "Laguna - SC",
+     "fob": 799251
+    },
+    {
+     "municipio": "São Francisco do Sul - SC",
+     "fob": 244185
+    }
+   ],
+   "2010": [
+    {
+     "municipio": "Itajaí - SC",
+     "fob": 12123176
+    },
+    {
+     "municipio": "Penha - SC",
+     "fob": 5141869
+    },
+    {
+     "municipio": "Navegantes - SC",
+     "fob": 4472767
+    },
+    {
+     "municipio": "Itapema - SC",
+     "fob": 3870683
+    },
+    {
+     "municipio": "Porto Belo - SC",
+     "fob": 3254873
+    },
+    {
+     "municipio": "Laguna - SC",
+     "fob": 293870
+    }
+   ]
+  }
+ }
+}

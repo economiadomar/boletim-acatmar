@@ -1,0 +1,229 @@
+flow,year,monthNumber,municipio,uf,metricFOB,metricKG
+export,2025,08,Itajaí,SC,7039119,95355
+export,2025,03,Palhoça,SC,4719472,82200
+export,2025,07,Itajaí,SC,3138675,75179
+export,2025,11,Itajaí,SC,3009375,65740
+export,2025,05,Palhoça,SC,2454570,33700
+export,2025,10,Palhoça,SC,2298944,38300
+export,2025,12,Palhoça,SC,2083655,33100
+export,2025,07,Palhoça,SC,2025683,42000
+export,2025,04,Itajaí,SC,1447262,36323
+export,2025,05,Itajaí,SC,1339812,30893
+export,2025,05,Guarujá,SP,1277992,16692
+export,2025,01,Palhoça,SC,1095254,24400
+export,2025,03,Jaboatão dos Guararapes,PE,1048111,36550
+export,2025,10,Jaboatão dos Guararapes,PE,1042744,28600
+export,2025,04,Palhoça,SC,1037985,18000
+export,2025,07,Guarujá,SP,963664,13035
+export,2025,12,Curitiba,PR,945000,26500
+export,2025,03,São Paulo,SP,840349,8692
+export,2025,05,Jaboatão dos Guararapes,PE,832656,26050
+export,2025,06,Jaboatão dos Guararapes,PE,814796,21500
+export,2025,07,Jaboatão dos Guararapes,PE,761005,22150
+export,2025,06,Guarujá,SP,750945,10100
+export,2025,08,Curitiba,PR,734099,29866
+export,2025,11,Palhoça,SC,730976,15000
+export,2025,09,Palhoça,SC,727397,15000
+export,2025,05,Curitiba,PR,725900,21650
+export,2025,08,Palhoça,SC,722128,15000
+export,2025,09,Curitiba,PR,640913,28520
+export,2025,02,Queimados,RJ,593378,10500
+export,2025,06,Itajaí,SC,575375,11750
+export,2025,02,Palhoça,SC,574166,12000
+export,2025,01,Jaboatão dos Guararapes,PE,550115,13000
+export,2025,01,Itajaí,SC,507419,16014
+export,2025,12,Guarujá,SP,490247,8500
+export,2025,06,Palhoça,SC,469527,9000
+export,2025,02,Itajaí,SC,449966,12858
+export,2025,12,Jaboatão dos Guararapes,PE,425102,16000
+export,2025,01,Vera Cruz,RS,424191,17700
+export,2025,02,São José dos Pinhais,PR,411470,16500
+export,2025,04,Guarujá,SP,351561,3709
+export,2025,11,Jaboatão dos Guararapes,PE,335770,10200
+export,2025,09,Guarujá,SP,310844,4800
+export,2025,04,Jaboatão dos Guararapes,PE,310712,9650
+export,2025,10,Itajaí,SC,304742,8875
+export,2025,12,Itajaí,SC,272362,9515
+export,2025,03,São José dos Pinhais,PR,270000,8300
+export,2025,11,Capitólio,MG,255230,9585
+export,2025,04,Curitiba,PR,250000,7750
+export,2025,07,Curitiba,PR,240000,7750
+export,2025,02,Vera Cruz,RS,202551,8400
+export,2025,03,Itajaí,SC,193578,9546
+export,2025,01,São José,SC,189611,4000
+export,2025,09,Diadema,SP,159313,6000
+export,2025,05,São José dos Pinhais,PR,135000,6150
+export,2025,10,Capitólio,MG,132178,4205
+export,2025,08,São José dos Pinhais,PR,124893,6800
+export,2025,09,Itajaí,SC,121798,3500
+export,2025,05,Capitólio,MG,120256,4245
+export,2025,01,Diadema,SP,112809,4000
+export,2025,08,Capitólio,MG,80067,2635
+export,2025,01,São José dos Pinhais,PR,80000,3000
+export,2025,05,Pederneiras,SP,78260,3000
+export,2025,06,Rio de Janeiro,RJ,61853,88
+export,2025,03,Curitiba,PR,59325,3265
+export,2025,02,Jaboatão dos Guararapes,PE,58550,3800
+export,2025,07,Paulínia,SP,48154,2630
+export,2025,10,Santo Antônio de Pádua,RJ,44755,2110
+export,2025,02,Pederneiras,SP,44727,1500
+export,2025,08,São Paulo,SP,43090,3562
+export,2025,12,Manaus,AM,40462,3479
+export,2025,08,Guararema,SP,40000,1850
+export,2025,03,Atibaia,SP,38181,1082
+export,2025,07,Balneário Camboriú,SC,36132,708
+export,2025,04,Manaus,AM,35383,1940
+export,2025,10,Taboão da Serra,SP,34686,3168
+export,2025,10,Franca,SP,33920,1507
+export,2025,12,Tabatinga,AM,31575,710
+export,2025,02,Franca,SP,31406,1565
+export,2025,09,Rio de Janeiro,RJ,30655,18
+export,2025,06,Curitiba,PR,28500,1285
+export,2025,05,Balneário Camboriú,SC,26734,2482
+export,2025,08,Manaus,AM,25802,680
+export,2025,09,Taboão da Serra,SP,23123,2650
+export,2025,07,Manaus,AM,23105,2105
+export,2025,06,Manaus,AM,22128,2140
+export,2025,09,Manaus,AM,21234,1630
+export,2025,07,Foz do Iguaçu,PR,21169,410
+export,2025,09,Foz do Iguaçu,PR,19200,1750
+export,2025,07,Boa Vista,RR,17358,2090
+export,2025,04,São José,SC,17326,400
+export,2025,02,Curitiba,PR,16657,620
+export,2025,06,Capitólio,MG,16200,795
+export,2025,01,Manaus,AM,15687,1450
+export,2025,11,Francisco Beltrão,PR,15500,1350
+export,2025,06,Boa Vista,RR,13577,1085
+export,2025,05,Pinhais,PR,13008,465
+export,2025,10,Manaus,AM,12500,1200
+export,2025,03,Francisco Beltrão,PR,12500,1050
+export,2025,03,Manaus,AM,11952,1200
+export,2025,12,Taboão da Serra,SP,10445,904
+export,2025,08,Boa Vista,RR,10223,1210
+export,2025,11,Chuí,RS,9533,530
+export,2025,12,Boa Vista,RR,8612,1440
+export,2025,11,Corumbá,MS,8505,291
+export,2025,04,Itaquaquecetuba,SP,7518,528
+export,2025,11,Boa Vista,RR,7368,900
+export,2025,06,Santana do Livramento,RS,7055,350
+export,2025,02,Manaus,AM,6876,680
+export,2025,12,Porto Velho,RO,6857,96
+export,2025,04,São Vicente,SP,6700,592
+export,2025,05,Boa Vista,RR,6592,1010
+export,2025,11,São Paulo,SP,5588,800
+export,2025,03,Foz do Iguaçu,PR,5500,950
+export,2025,03,Boa Vista,RR,5005,695
+export,2025,09,Corumbá,MS,4598,327
+export,2025,06,Porto Velho,RO,3921,1050
+export,2025,09,Porto Velho,RO,3808,450
+export,2025,04,Boa Vista,RR,3467,420
+export,2025,11,Manaus,AM,3440,190
+export,2025,12,Foz do Iguaçu,PR,3140,168
+export,2025,09,Boa Vista,RR,2856,120
+export,2025,01,São Paulo,SP,2797,20
+export,2025,07,Ponta Porã,MS,2753,330
+export,2025,10,Foz do Iguaçu,PR,2456,174
+export,2025,05,Manaus,AM,2331,300
+export,2025,11,Oiapoque,AP,1702,500
+export,2025,06,Alvorada do Sul,PR,1596,332
+export,2025,02,Foz do Iguaçu,PR,1511,76
+export,2025,04,Alvorada do Sul,PR,1295,276
+export,2025,07,Porto Velho,RO,1256,150
+export,2025,05,Alvorada do Sul,PR,1252,276
+export,2025,01,Alvorada do Sul,PR,1180,276
+export,2025,11,Foz do Iguaçu,PR,1114,56
+export,2025,08,Foz do Iguaçu,PR,1030,90
+export,2025,03,Alvorada do Sul,PR,850,181
+export,2025,10,Alvorada do Sul,PR,845,190
+export,2025,07,Alvorada do Sul,PR,842,181
+export,2025,12,Alvorada do Sul,PR,840,181
+export,2025,10,Pompéia,SP,787,50
+export,2025,11,Alvorada do Sul,PR,770,160
+export,2025,12,Oiapoque,AP,753,500
+export,2025,08,Tupã,SP,668,288
+export,2025,12,Diadema,SP,459,48
+export,2025,07,São Paulo,SP,365,2
+export,2025,04,São Paulo,SP,196,1
+export,2025,02,Mazagão,AP,50,36
+export,2025,09,Vila Velha,ES,0,0
+export,2026,05,Itajaí,SC,4341945,91211
+export,2026,03,Itajaí,SC,2791406,51304
+export,2026,07,Palhoça,SC,2488039,43900
+export,2026,08,Itajaí,SC,2233466,27800
+export,2026,05,Palhoça,SC,1946444,28800
+export,2026,03,Palhoça,SC,1523362,25900
+export,2026,04,Guarujá,SP,1229296,32500
+export,2026,07,Itajaí,SC,972847,23586
+export,2026,08,Curitiba,PR,840000,23400
+export,2026,01,Itajaí,SC,837834,22985
+export,2026,02,Palhoça,SC,748007,10900
+export,2026,06,Curitiba,PR,745000,21600
+export,2026,06,Palhoça,SC,726007,10900
+export,2026,04,Palhoça,SC,715769,15000
+export,2026,04,Itajaí,SC,590925,13800
+export,2026,05,Curitiba,PR,558749,17812
+export,2026,01,Palhoça,SC,545127,12000
+export,2026,01,Curitiba,PR,544664,13700
+export,2026,06,Jaboatão dos Guararapes,PE,534157,14050
+export,2026,04,Jaboatão dos Guararapes,PE,533795,15700
+export,2026,04,Curitiba,PR,475000,13600
+export,2026,05,Guarujá,SP,467496,8500
+export,2026,07,Curitiba,PR,405000,11800
+export,2026,03,Jaboatão dos Guararapes,PE,400070,10750
+export,2026,05,Jaboatão dos Guararapes,PE,395100,11500
+export,2026,01,Jaboatão dos Guararapes,PE,367027,12050
+export,2026,02,Jaboatão dos Guararapes,PE,344545,11000
+export,2026,07,Capitólio,MG,246658,6770
+export,2026,07,Jaboatão dos Guararapes,PE,205489,5500
+export,2026,03,Diadema,SP,170910,4000
+export,2026,03,Guarujá,SP,152959,2500
+export,2026,03,Capitólio,MG,150400,7000
+export,2026,06,São José dos Pinhais,PR,145000,4900
+export,2026,03,Biguaçu,SC,128180,2650
+export,2026,01,Guarujá,SP,124037,2500
+export,2026,05,Capitólio,MG,117205,3450
+export,2026,07,Santa Terezinha de Itaipu,PR,105048,1200
+export,2026,02,Itajaí,SC,81276,3800
+export,2026,08,Biguaçu,SC,72150,2100
+export,2026,06,Itajaí,SC,68305,2954
+export,2026,07,Manaus,AM,52907,4718
+export,2026,01,Foz do Iguaçu,PR,49057,1900
+export,2026,08,Taboão da Serra,SP,42960,3537
+export,2026,03,Franca,SP,37212,1786
+export,2026,05,Paulínia,SP,34262,1640
+export,2026,02,Manaus,AM,34145,700
+export,2026,08,Manaus,AM,30246,2740
+export,2026,06,Manaus,AM,25995,2090
+export,2026,01,Taboão da Serra,SP,18455,2060
+export,2026,01,Manaus,AM,16783,1857
+export,2026,02,Santo Antônio de Pádua,RJ,15350,759
+export,2026,03,Manaus,AM,12933,1150
+export,2026,05,Manaus,AM,12353,1140
+export,2026,05,Macapá,AP,11666,1190
+export,2026,04,Manaus,AM,10753,1090
+export,2026,08,Rio de Janeiro,RJ,10541,114
+export,2026,02,Pompéia,SP,9977,524
+export,2026,07,Porto Velho,RO,9451,1050
+export,2026,05,Porto Velho,RO,7601,450
+export,2026,05,Corumbá,MS,6276,180
+export,2026,03,Boa Vista,RR,6201,480
+export,2026,03,Taboão da Serra,SP,6165,525
+export,2026,08,Porto Velho,RO,5082,300
+export,2026,06,Pompéia,SP,3871,144
+export,2026,02,Macapá,AP,3849,900
+export,2026,03,Macapá,AP,3335,810
+export,2026,04,Foz do Iguaçu,PR,3197,420
+export,2026,07,Boa Vista,RR,2894,150
+export,2026,04,Guaíra,PR,2003,300
+export,2026,05,Foz do Iguaçu,PR,1907,608
+export,2026,07,São Vicente,SP,1266,42
+export,2026,08,Alvorada do Sul,PR,1225,288
+export,2026,07,Foz do Iguaçu,PR,1180,56
+export,2026,02,Curitiba,PR,879,37
+export,2026,01,São Paulo,SP,862,8
+export,2026,03,Foz do Iguaçu,PR,580,33
+export,2026,03,São Paulo,SP,550,5
+export,2026,05,São Francisco do Sul,SC,341,2
+export,2026,05,São Paulo,SP,302,2
+export,2026,06,São Francisco do Sul,SC,84,3
+export,2026,08,São Francisco do Sul,SC,7,0

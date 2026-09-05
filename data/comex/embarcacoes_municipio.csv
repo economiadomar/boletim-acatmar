@@ -1,0 +1,1460 @@
+flow,year,municipio,uf,metricFOB,metricKG
+export,2026,Itajaí,SC,11918004,237440
+export,2026,Palhoça,SC,8692755,147400
+export,2026,Curitiba,PR,3569292,101949
+export,2026,Jaboatão dos Guararapes,PE,2780183,80550
+export,2026,Guarujá,SP,1973788,46000
+export,2026,Capitólio,MG,514263,17220
+export,2026,Biguaçu,SC,200330,4750
+export,2026,Manaus,AM,196115,15485
+export,2026,Diadema,SP,170910,4000
+export,2026,São José dos Pinhais,PR,145000,4900
+export,2026,Santa Terezinha de Itaipu,PR,105048,1200
+export,2026,Taboão da Serra,SP,67580,6122
+export,2026,Foz do Iguaçu,PR,55921,3017
+export,2026,Franca,SP,37212,1786
+export,2026,Paulínia,SP,34262,1640
+export,2026,Porto Velho,RO,22134,1800
+export,2026,Macapá,AP,18850,2900
+export,2026,Santo Antônio de Pádua,RJ,15350,759
+export,2026,Pompéia,SP,13848,668
+export,2026,Rio de Janeiro,RJ,10541,114
+export,2026,Boa Vista,RR,9095,630
+export,2026,Corumbá,MS,6276,180
+export,2026,Guaíra,PR,2003,300
+export,2026,São Paulo,SP,1714,15
+export,2026,São Vicente,SP,1266,42
+export,2026,Alvorada do Sul,PR,1225,288
+export,2026,São Francisco do Sul,SC,432,5
+export,2025,Palhoça,SC,18939757,337700
+export,2025,Itajaí,SC,18399483,375548
+export,2025,Jaboatão dos Guararapes,PE,6179561,187500
+export,2025,Guarujá,SP,4145253,56836
+export,2025,Curitiba,PR,3640394,127206
+export,2025,São José dos Pinhais,PR,1021363,40750
+export,2025,São Paulo,SP,892385,13077
+export,2025,Vera Cruz,RS,626742,26100
+export,2025,Capitólio,MG,603931,21465
+export,2025,Queimados,RJ,593378,10500
+export,2025,Diadema,SP,272581,10048
+export,2025,Manaus,AM,220900,16994
+export,2025,São José,SC,206937,4400
+export,2025,Pederneiras,SP,122987,4500
+export,2025,Rio de Janeiro,RJ,92508,106
+export,2025,Boa Vista,RR,75058,8970
+export,2025,Taboão da Serra,SP,68254,6722
+export,2025,Franca,SP,65326,3072
+export,2025,Balneário Camboriú,SC,62866,3190
+export,2025,Foz do Iguaçu,PR,55120,3674
+export,2025,Paulínia,SP,48154,2630
+export,2025,Santo Antônio de Pádua,RJ,44755,2110
+export,2025,Guararema,SP,40000,1850
+export,2025,Atibaia,SP,38181,1082
+export,2025,Tabatinga,AM,31575,710
+export,2025,Francisco Beltrão,PR,28000,2400
+export,2025,Porto Velho,RO,15842,1746
+export,2025,Corumbá,MS,13103,618
+export,2025,Pinhais,PR,13008,465
+export,2025,Chuí,RS,9533,530
+export,2025,Alvorada do Sul,PR,9470,2053
+export,2025,Itaquaquecetuba,SP,7518,528
+export,2025,Santana do Livramento,RS,7055,350
+export,2025,São Vicente,SP,6700,592
+export,2025,Ponta Porã,MS,2753,330
+export,2025,Oiapoque,AP,2455,1000
+export,2025,Pompéia,SP,787,50
+export,2025,Tupã,SP,668,288
+export,2025,Mazagão,AP,50,36
+export,2025,Vila Velha,ES,0,0
+export,2024,Itajaí,SC,26237273,550557
+export,2024,Palhoça,SC,20432727,367200
+export,2024,Jaboatão dos Guararapes,PE,7242600,241200
+export,2024,São José dos Pinhais,PR,3198723,94481
+export,2024,Curitiba,PR,2491832,79499
+export,2024,Joinville,SC,1979976,28112
+export,2024,Capitólio,MG,1249718,43814
+export,2024,Guarujá,SP,1213043,15513
+export,2024,São José,SC,928570,19550
+export,2024,Santa Terezinha de Itaipu,PR,589333,8300
+export,2024,Biguaçu,SC,431988,34000
+export,2024,Diadema,SP,416529,9106
+export,2024,Rio de Janeiro,RJ,350677,5315
+export,2024,Cabo de Santo Agostinho,PE,321230,12000
+export,2024,São Paulo,SP,172227,9092
+export,2024,Atibaia,SP,146255,3179
+export,2024,Manaus,AM,112626,11900
+export,2024,Taboão da Serra,SP,88551,10366
+export,2024,Pinhais,PR,81140,4623
+export,2024,Vitória,ES,39942,2532
+export,2024,Paulínia,SP,33696,1670
+export,2024,Franca,SP,29277,1365
+export,2024,Boa Vista,RR,24166,3955
+export,2024,Porto Xavier,RS,21600,1050
+export,2024,Oiapoque,AP,11646,950
+export,2024,Corumbá,MS,8699,574
+export,2024,Porto Seguro,BA,7333,530
+export,2024,Pompéia,SP,7258,400
+export,2024,Ponta Porã,MS,4317,300
+export,2024,Pelotas,RS,3808,345
+export,2024,Tabatinga,AM,3420,190
+export,2024,Macapá,AP,3128,103
+export,2024,Foz do Iguaçu,PR,2955,194
+export,2024,Porto Velho,RO,2594,340
+export,2024,Guajará-Mirim,RO,891,100
+export,2024,Alvorada do Sul,PR,754,172
+export,2024,São Francisco do Sul,SC,456,6
+export,2023,Palhoça,SC,27290399,554164
+export,2023,Itajaí,SC,24573565,546854
+export,2023,Jaboatão dos Guararapes,PE,6691253,164600
+export,2023,São José dos Pinhais,PR,2617628,65750
+export,2023,Joinville,SC,1973161,36800
+export,2023,Capitólio,MG,1083783,34163
+export,2023,Itupeva,SP,778586,14961
+export,2023,Curitiba,PR,553491,16750
+export,2023,São José,SC,426090,8000
+export,2023,Rio de Janeiro,RJ,417817,14689
+export,2023,Atibaia,SP,387390,19370
+export,2023,Biguaçu,SC,254074,10600
+export,2023,Duque de Caxias,RJ,207100,4100
+export,2023,São Carlos,SP,149250,131
+export,2023,Pinhais,PR,132613,5508
+export,2023,Manaus,AM,107059,12008
+export,2023,Paulínia,SP,84769,4985
+export,2023,Taboão da Serra,SP,72619,6187
+export,2023,Queimados,RJ,55659,4120
+export,2023,São Paulo,SP,51231,5887
+export,2023,Oiapoque,AP,35788,4784
+export,2023,Foz do Iguaçu,PR,27753,2816
+export,2023,Franca,SP,27551,1349
+export,2023,Vitória,ES,25200,216
+export,2023,Porto Xavier,RS,18550,900
+export,2023,Santos,SP,11996,127
+export,2023,Guaíra,PR,9377,970
+export,2023,Lauro de Freitas,BA,8947,590
+export,2023,Corumbá,MS,8563,375
+export,2023,São Vicente,SP,4790,350
+export,2023,Caxias do Sul,RS,4588,272
+export,2023,Porto Velho,RO,2753,240
+export,2023,Marau,RS,2600,72
+export,2023,Pompéia,SP,2060,102
+export,2023,Pelotas,RS,1691,230
+export,2023,Boa Vista,RR,769,100
+export,2023,Salvador,BA,610,16
+export,2022,Palhoça,SC,30405029,663093
+export,2022,Itajaí,SC,18925433,513697
+export,2022,Macapá,AP,2203274,64480
+export,2022,Jaboatão dos Guararapes,PE,2031209,63550
+export,2022,São José,SC,763463,21000
+export,2022,Biguaçu,SC,558615,22500
+export,2022,Atibaia,SP,457905,20215
+export,2022,São José dos Pinhais,PR,369140,11200
+export,2022,Cabo de Santo Agostinho,PE,350000,12800
+export,2022,Rio de Janeiro,RJ,339714,3483
+export,2022,Itupeva,SP,277941,5727
+export,2022,Manaus,AM,134930,14548
+export,2022,Curitiba,PR,116720,6895
+export,2022,São Paulo,SP,76234,6131
+export,2022,Paulínia,SP,71030,3765
+export,2022,Porto Xavier,RS,65350,3800
+export,2022,Franca,SP,53903,2431
+export,2022,Taboão da Serra,SP,52684,4701
+export,2022,Foz do Iguaçu,PR,30102,1669
+export,2022,Oiapoque,AP,24358,3892
+export,2022,Guarujá,SP,15496,440
+export,2022,Guaíra,PR,14561,1240
+export,2022,Boa Vista,RR,11811,90340
+export,2022,Corumbá,MS,2214,96
+export,2022,Pinhais,PR,1201,156
+export,2022,Ponta Porã,MS,1169,80
+export,2022,Santos,SP,707,9
+export,2022,Pelotas,RS,623,110
+export,2021,Palhoça,SC,18785761,482535
+export,2021,Itajaí,SC,4373305,137743
+export,2021,Jaboatão dos Guararapes,PE,1740639,87720
+export,2021,Piçarras,SC,1413600,31000
+export,2021,Guarujá,SP,798360,21000
+export,2021,Rio de Janeiro,RJ,489177,15456
+export,2021,Capitólio,MG,481000,15235
+export,2021,São José,SC,181494,7300
+export,2021,Venâncio Aires,RS,175096,11000
+export,2021,Atibaia,SP,174333,5788
+export,2021,Biguaçu,SC,151060,6600
+export,2021,São Paulo,SP,144317,10023
+export,2021,Foz do Iguaçu,PR,110488,18226
+export,2021,Maceió,AL,95000,6300
+export,2021,Santa Terezinha de Itaipu,PR,88915,3320
+export,2021,Paulínia,SP,87486,5355
+export,2021,Franca,SP,71770,3973
+export,2021,Porto Xavier,RS,70300,4750
+export,2021,Guaíra,PR,56558,4430
+export,2021,Curitiba,PR,54657,3042
+export,2021,Manaus,AM,52213,2925
+export,2021,Taboão da Serra,SP,50892,4190
+export,2021,Cabreúva,SP,41679,5500
+export,2021,Serra,ES,39961,692
+export,2021,Oiapoque,AP,38695,5486
+export,2021,Boa Vista,RR,30717,3865
+export,2021,Maringá,PR,20080,1240
+export,2021,Pelotas,RS,13608,2449
+export,2021,São José dos Pinhais,PR,11250,600
+export,2021,Santa Rosa,RS,9450,480
+export,2021,Araquari,SC,6531,168
+export,2021,Macapá,AP,4944,1200
+export,2021,Tabatinga,AM,4936,300
+export,2021,São José dos Campos,SP,4900,91
+export,2021,Guajará-Mirim,RO,4684,1200
+export,2021,Guarulhos,SP,4330,162
+export,2021,Portão,RS,3251,350
+export,2021,Santos,SP,2977,328
+export,2021,São Gonçalo do Amarante,CE,2338,117
+export,2021,Ponta Porã,MS,2132,240
+export,2021,Ribeirão Preto,SP,2040,24
+export,2021,Jaguarão,RS,1439,90
+export,2021,Tupã,SP,593,221
+export,2021,Paranaguá,PR,57,2
+export,2021,Vila Velha,ES,44,1
+export,2020,Guarujá,SP,6056290,105500
+export,2020,Palhoça,SC,5283398,165258
+export,2020,Piçarras,SC,2499675,57400
+export,2020,Itajaí,SC,2359455,57412
+export,2020,Jaboatão dos Guararapes,PE,920500,45000
+export,2020,Rio de Janeiro,RJ,267166,546
+export,2020,Paulínia,SP,110229,7793
+export,2020,Capitólio,MG,74619,3770
+export,2020,São José dos Pinhais,PR,70538,3100
+export,2020,Gavião Peixoto,SP,69392,198
+export,2020,São Paulo,SP,62777,6147
+export,2020,Atibaia,SP,57970,1579
+export,2020,Oiapoque,AP,56416,5209
+export,2020,Califórnia,PR,42644,2600
+export,2020,Franca,SP,36594,2250
+export,2020,Biguaçu,SC,34863,1350
+export,2020,São José dos Campos,SP,33194,184
+export,2020,Foz do Iguaçu,PR,29052,4714
+export,2020,Guararema,SP,26720,980
+export,2020,Tabatinga,AM,17603,995
+export,2020,Curitiba,PR,13214,1206
+export,2020,Vitória,ES,7977,395
+export,2020,Porto Belo,SC,6596,252
+export,2020,Porto Xavier,RS,6000,950
+export,2020,Pelotas,RS,5518,815
+export,2020,Macapá,AP,5123,950
+export,2020,Tartarugalzinho,AP,2972,800
+export,2020,Boa Vista,RR,996,80
+export,2020,Pinhais,PR,556,34
+export,2020,Santo Cristo,RS,376,80
+export,2020,Vila Velha,ES,165,9
+export,2019,Itajaí,SC,12505256,290400
+export,2019,Guarujá,SP,6114883,119900
+export,2019,Palhoça,SC,1887936,57330
+export,2019,Uberlândia,MG,861180,36800
+export,2019,Rio de Janeiro,RJ,505134,995
+export,2019,Capitólio,MG,289300,13700
+export,2019,Macapá,AP,263656,19495
+export,2019,Jaboatão dos Guararapes,PE,215600,9800
+export,2019,Paulínia,SP,176845,11005
+export,2019,São José,SC,150000,5700
+export,2019,Piçarras,SC,116340,3250
+export,2019,Atibaia,SP,101462,2468
+export,2019,São Paulo,SP,77745,7740
+export,2019,Ponta Porã,MS,68911,4300
+export,2019,Foz do Iguaçu,PR,68430,10176
+export,2019,Biguaçu,SC,48454,2200
+export,2019,Guararema,SP,21921,795
+export,2019,São José dos Campos,SP,21072,51
+export,2019,Gavião Peixoto,SP,19648,30
+export,2019,Franca,SP,19456,1040
+export,2019,Boa Vista,RR,7723,380
+export,2019,Manaus,AM,7045,750
+export,2019,Porto Xavier,RS,6480,570
+export,2019,Goiânia,GO,5400,34
+export,2019,Macaé,RJ,914,108
+export,2019,Santarém,PA,108,131
+export,2018,Itajaí,SC,8397556,198410
+export,2018,Guarujá,SP,3048716,51000
+export,2018,Palhoça,SC,2906375,71345
+export,2018,Joinville,SC,1704462,40463
+export,2018,São Paulo,SP,1163069,32509
+export,2018,Santa Cruz do Sul,RS,452785,13000
+export,2018,Rio de Janeiro,RJ,242786,490
+export,2018,Angra dos Reis,RJ,242647,8000
+export,2018,São José,SC,147221,7100
+export,2018,São Francisco do Sul,SC,84000,920
+export,2018,Paulínia,SP,77178,4860
+export,2018,Manaus,AM,70086,4735
+export,2018,Atibaia,SP,69443,2185
+export,2018,Foz do Iguaçu,PR,65080,11218
+export,2018,São Roque,SP,63000,3500
+export,2018,Flores da Cunha,RS,47635,3700
+export,2018,Guararema,SP,46672,1008
+export,2018,Rio Largo,AL,44345,3460
+export,2018,Biguaçu,SC,43327,2550
+export,2018,Jaboatão dos Guararapes,PE,41378,4900
+export,2018,Capitólio,MG,28550,2300
+export,2018,Curitiba,PR,26046,2725
+export,2018,Porto Xavier,RS,20850,1350
+export,2018,São José dos Campos,SP,16817,121
+export,2018,Franca,SP,14525,758
+export,2018,Santa Rosa,RS,10890,1050
+export,2018,Tabatinga,AM,9502,600
+export,2018,Guaíra,PR,2158,400
+export,2018,São Caetano do Sul,SP,2042,6
+export,2018,Guajará-Mirim,RO,1686,140
+export,2018,Pompéia,SP,1035,102
+export,2017,Itajaí,SC,9452621,229398
+export,2017,Palhoça,SC,2498930,75827
+export,2017,Joinville,SC,2337258,92427
+export,2017,Angra dos Reis,RJ,1473281,46950
+export,2017,São Paulo,SP,982309,46819
+export,2017,Guarujá,SP,870000,16000
+export,2017,Rio de Janeiro,RJ,287500,836
+export,2017,São Bernardo do Campo,SP,195000,5100
+export,2017,Paulínia,SP,193462,12705
+export,2017,Manaus,AM,128201,8980
+export,2017,Foz do Iguaçu,PR,99102,10580
+export,2017,Jaboatão dos Guararapes,PE,85000,4900
+export,2017,Curitiba,PR,75792,6904
+export,2017,Recife,PE,70194,2600
+export,2017,Biguaçu,SC,68678,3850
+export,2017,Vitória,ES,52270,7740
+export,2017,Atibaia,SP,45476,1519
+export,2017,Santa Rosa,RS,44762,2720
+export,2017,Pompéia,SP,18688,1305
+export,2017,São José dos Campos,SP,17763,130
+export,2017,São Miguel do Oeste,SC,13636,1200
+export,2017,Corumbá,MS,6423,945
+export,2017,Guaíra,PR,4056,630
+export,2016,Itajaí,SC,9061082,212330
+export,2016,Palhoça,SC,3823084,101378
+export,2016,São Paulo,SP,3160950,94214
+export,2016,Manaus,AM,1487550,55749
+export,2016,Brasília,DF,1418000,48000
+export,2016,Angra dos Reis,RJ,1298367,41580
+export,2016,Joinville,SC,1250008,55352
+export,2016,Rio de Janeiro,RJ,1238936,30626
+export,2016,Biguaçu,SC,292923,14898
+export,2016,São Bernardo do Campo,SP,164747,4885
+export,2016,Florianópolis,SC,115000,63000
+export,2016,Paulínia,SP,110609,6383
+export,2016,Campinas,SP,89044,4789
+export,2016,Jaboatão dos Guararapes,PE,50000,3300
+export,2016,Foz do Iguaçu,PR,47607,5482
+export,2016,São José dos Campos,SP,45751,424
+export,2016,Videira,SC,42103,4500
+export,2016,Curitiba,PR,40562,3290
+export,2016,Franca,SP,24830,1530
+export,2016,Corumbá,MS,22287,2500
+export,2016,Epitaciolândia,AC,12543,584
+export,2016,Guaíra,PR,10573,1280
+export,2016,Guajará-Mirim,RO,9042,400
+export,2016,Pompéia,SP,2692,195
+export,2016,Gaspar,SC,1670,110
+export,2016,Santana do Livramento,RS,527,85
+export,2016,Exterior,EX,142,150
+export,2015,Itajaí,SC,3094531,71021
+export,2015,Maceió,AL,2361488,60810
+export,2015,Macapá,AP,1850000,32000
+export,2015,Angra dos Reis,RJ,847172,22600
+export,2015,Palhoça,SC,292530,8122
+export,2015,Rio de Janeiro,RJ,214450,1107
+export,2015,Curitiba,PR,120465,5400
+export,2015,Atibaia,SP,94657,3224
+export,2015,Campinas,SP,89539,3760
+export,2015,São José dos Campos,SP,53638,316
+export,2015,São Bernardo do Campo,SP,51370,1750
+export,2015,Paulínia,SP,44247,2528
+export,2015,Biguaçu,SC,39360,1540
+export,2015,Joinville,SC,27000,1850
+export,2015,Foz do Iguaçu,PR,19984,2157
+export,2015,São José dos Pinhais,PR,11000,20
+export,2015,Corumbá,MS,10907,540
+export,2015,Guarulhos,SP,5400,90
+export,2015,Guaíra,PR,3903,300
+export,2015,Pompéia,SP,3521,202
+export,2015,Recife,PE,2705,150
+export,2015,Guajará-Mirim,RO,2664,100
+export,2015,São Paulo,SP,1709,64
+export,2015,Jaguarão,RS,1527,120
+export,2015,Barueri,SP,22,21
+export,2014,Angra dos Reis,RJ,1000986,28250
+export,2014,Biguaçu,SC,228055,9170
+export,2014,São José dos Pinhais,PR,168139,6720
+export,2014,Rio de Janeiro,RJ,152952,501
+export,2014,Atibaia,SP,126376,3948
+export,2014,Palhoça,SC,117000,3200
+export,2014,Campinas,SP,106171,5105
+export,2014,São José dos Campos,SP,69212,178
+export,2014,Macaé,RJ,22542,85
+export,2014,Pompéia,SP,20455,1041
+export,2014,Franca,SP,20188,795
+export,2014,Corumbá,MS,16464,1440
+export,2014,Penápolis,SP,15400,116
+export,2014,Guaíra,PR,9606,520
+export,2014,São João da Boa Vista,SP,6464,270
+export,2014,Camaçari,BA,5634,138
+export,2014,Foz do Iguaçu,PR,4762,420
+export,2014,Ferraz de Vasconcelos,SP,1388,122
+export,2014,Niterói,RJ,1345,60
+export,2014,Manaus,AM,489,40
+export,2014,Ponta Porã,MS,357,7
+export,2014,Santa Cruz do Sul,RS,121,22
+export,2014,Botucatu,SP,13,1
+export,2013,Macaé,RJ,421198,283
+export,2013,Atibaia,SP,320834,9729
+export,2013,Itajaí,SC,266350,15646
+export,2013,Angra dos Reis,RJ,198733,5400
+export,2013,Rio de Janeiro,RJ,130250,829
+export,2013,Campinas,SP,114514,5050
+export,2013,Pompéia,SP,113537,5963
+export,2013,São José dos Campos,SP,112886,366
+export,2013,Joinville,SC,100757,3744
+export,2013,Belo Horizonte,MG,49957,569
+export,2013,Foz do Iguaçu,PR,44933,2960
+export,2013,Franca,SP,31268,1162
+export,2013,Paulínia,SP,26606,1550
+export,2013,São José dos Pinhais,PR,13791,465
+export,2013,Capitólio,MG,10920,2050
+export,2013,Santos,SP,7875,400
+export,2013,Corumbá,MS,4472,350
+export,2013,São Paulo,SP,3654,155
+export,2013,Gavião Peixoto,SP,1880,11
+export,2013,Cascavel,PR,1794,279
+export,2013,Ananindeua,PA,1610,1000
+export,2013,Santa Cruz do Sul,RS,472,49
+export,2013,Santarém,PA,242,85
+export,2013,Caxias do Sul,RS,240,38
+export,2012,Fortaleza,CE,7050000,329940
+export,2012,São José dos Campos,SP,299167,671
+export,2012,Rio de Janeiro,RJ,166691,951
+export,2012,Itajaí,SC,147950,8523
+export,2012,Pompéia,SP,109834,5991
+export,2012,Campinas,SP,70422,3017
+export,2012,Guaíra,PR,62336,3525
+export,2012,Foz do Iguaçu,PR,20972,2400
+export,2012,Santos,SP,19767,500
+export,2012,Atibaia,SP,13252,1877
+export,2012,Cariacica,ES,3657,54
+export,2012,Gavião Peixoto,SP,2080,11
+export,2012,Jaguarão,RS,1574,90
+export,2012,São Paulo,SP,304,20
+export,2012,Ferraz de Vasconcelos,SP,186,2
+export,2011,Itajaí,SC,403499,24818
+export,2011,Rio de Janeiro,RJ,191492,824
+export,2011,São José dos Campos,SP,171793,606
+export,2011,Palhoça,SC,154342,6300
+export,2011,Pompéia,SP,72571,3796
+export,2011,Jaboatão dos Guararapes,PE,70000,3000
+export,2011,Penápolis,SP,52500,400
+export,2011,Atibaia,SP,45108,2829
+export,2011,Santa Terezinha de Itaipu,PR,35121,1673
+export,2011,Campinas,SP,33658,1540
+export,2011,São Paulo,SP,5849,29
+export,2011,Macaé,RJ,1464,2
+export,2010,Angra dos Reis,RJ,10500000,127000
+export,2010,Guarujá,SP,10277182,105380
+export,2010,Fortaleza,CE,5134600,139000
+export,2010,Santo André,SP,690353,63520
+export,2010,Itajaí,SC,476478,27593
+export,2010,Palhoça,SC,393082,23600
+export,2010,Barueri,SP,264000,7545
+export,2010,Atibaia,SP,204181,9881
+export,2010,São José dos Campos,SP,194012,650
+export,2010,Rio de Janeiro,RJ,83729,882
+export,2010,Cabedelo,PB,82318,5500
+export,2010,Rio Largo,AL,69614,2500
+export,2010,Pompéia,SP,59156,3438
+export,2010,São Bernardo do Campo,SP,55822,850
+export,2010,Santa Terezinha de Itaipu,PR,42708,2306
+export,2010,Jaboatão dos Guararapes,PE,39687,4315
+export,2010,Campinas,SP,30823,1680
+export,2010,São Paulo,SP,24154,1491
+export,2010,Curitiba,PR,12086,550
+export,2010,Colombo,PR,3600,25
+export,2010,Jundiaí,SP,2647,12
+export,2010,Santa Cruz do Sul,RS,2262,363
+export,2010,Ribeirão Preto,SP,1000,13
+export,2010,Brasiléia,AC,637,35
+export,2010,São José dos Pinhais,PR,99,23
+import,2026,Joinville,SC,71336993,2998840
+import,2026,Macapá,AP,9852917,81188
+import,2026,Salvador,BA,2999151,47295
+import,2026,Itajaí,SC,1526801,48859
+import,2026,Guaratuba,PR,1428467,30369
+import,2026,Manaus,AM,1326258,21077
+import,2026,Toledo,MG,657411,11948
+import,2026,Entre Rios,BA,636720,10650
+import,2026,Rio de Janeiro,RJ,497076,3206
+import,2026,Cabedelo,PB,419144,9144
+import,2026,São Paulo,SP,223604,4193
+import,2026,Capitólio,MG,150835,10766
+import,2026,Maceió,AL,143535,4128
+import,2026,Alpinópolis,MG,83593,18480
+import,2026,Contagem,MG,72936,26151
+import,2026,Santana de Parnaíba,SP,51899,11850
+import,2026,Porto Velho,RO,46614,2496
+import,2026,Florianópolis,SC,38795,223
+import,2026,Embu,SP,38529,4595
+import,2026,Lajeado,RS,35133,417
+import,2026,Americana,SP,35111,4241
+import,2026,Curitiba,PR,29990,2911
+import,2026,Extrema,MG,28304,9177
+import,2026,São José,SC,16504,5057
+import,2026,Belém,PA,16014,37
+import,2026,Navegantes,SC,15990,4737
+import,2026,São Gonçalo,RJ,13806,2510
+import,2026,Guarulhos,SP,12500,139
+import,2026,Botucatu,SP,12052,111
+import,2026,Bonito,MS,11995,306
+import,2026,João Pessoa,PB,9480,1274
+import,2026,Angra dos Reis,RJ,9321,84
+import,2026,Palhoça,SC,6943,426
+import,2026,Santa Terezinha de Itaipu,PR,4451,552
+import,2026,Paulínia,SP,4295,1295
+import,2026,Nova Roma do Sul,RS,3162,404
+import,2026,São Caetano do Sul,SP,2536,854
+import,2026,Boa Vista,RR,1354,134
+import,2026,Santo Antônio da Platina,PR,760,65
+import,2026,Ponte Nova,MG,655,313
+import,2026,Araquari,SC,591,299
+import,2026,Indaial,SC,445,287
+import,2026,Dionísio Cerqueira,SC,260,89
+import,2025,Joinville,SC,101692785,4052802
+import,2025,Itajaí,SC,15928700,426104
+import,2025,Macapá,AP,9465199,143157
+import,2025,Rio de Janeiro,RJ,1319382,18332
+import,2025,Guaratuba,PR,1157634,26580
+import,2025,Maceió,AL,853358,19794
+import,2025,Palhoça,SC,490646,9632
+import,2025,Entre Rios,BA,477895,13930
+import,2025,São Paulo,SP,438464,47040
+import,2025,Cabedelo,PB,337808,10554
+import,2025,Toledo,MG,283504,4820
+import,2025,Curitiba,PR,205424,10235
+import,2025,Manaus,AM,147946,5279
+import,2025,Florianópolis,SC,70000,16531
+import,2025,Capitólio,MG,68940,1516
+import,2025,Alpinópolis,MG,67500,15597
+import,2025,Araquari,SC,67266,168
+import,2025,São José,SC,66772,20773
+import,2025,Embu,SP,65027,7609
+import,2025,Extrema,MG,48438,15819
+import,2025,Vitória,ES,33990,204
+import,2025,Americana,SP,31889,3170
+import,2025,Aparecida de Goiânia,GO,29972,994
+import,2025,Porto Alegre,RS,29926,327
+import,2025,Navegantes,SC,26676,6345
+import,2025,São Gonçalo,RJ,24163,4393
+import,2025,Cairu,BA,24000,1000
+import,2025,Contagem,MG,19216,7840
+import,2025,São José dos Campos,SP,12524,20
+import,2025,Porto Velho,RO,11488,2225
+import,2025,Boa Vista,RR,9939,109
+import,2025,Cariacica,ES,7055,888
+import,2025,Maraú,BA,7041,24
+import,2025,Recife,PE,5000,874
+import,2025,Paulínia,SP,3255,926
+import,2025,Ouro Fino,MG,3255,305
+import,2025,Lajeado,RS,2602,57
+import,2025,São Bernardo do Campo,SP,2146,356
+import,2025,São Caetano do Sul,SP,2117,787
+import,2025,Belo Horizonte,MG,1142,413
+import,2025,Fortaleza,CE,924,330
+import,2025,Ribeirão Pires,SP,698,110
+import,2025,Linhares,ES,558,39
+import,2025,Pompéia,SP,508,165
+import,2025,Camboriú,SC,279,78
+import,2025,Maringá,PR,152,50
+import,2025,São José dos Pinhais,PR,51,53
+import,2024,Joinville,SC,134361868,4940247
+import,2024,Macapá,AP,11352521,191618
+import,2024,Rio de Janeiro,RJ,3015449,35337
+import,2024,Entre Rios,BA,2758627,48291
+import,2024,Itajaí,SC,1896939,58178
+import,2024,Capitólio,MG,1846775,42483
+import,2024,Cabedelo,PB,1470779,57601
+import,2024,Maceió,AL,1380095,30378
+import,2024,Vitória,ES,769554,23645
+import,2024,Niterói,RJ,578158,22624
+import,2024,Salvador,BA,435428,12350
+import,2024,São Paulo,SP,386937,5314
+import,2024,Porto Velho,RO,279078,3500
+import,2024,Extrema,MG,191668,59183
+import,2024,Palhoça,SC,182304,4492
+import,2024,Curitiba,PR,176177,8210
+import,2024,Manaus,AM,166326,30803
+import,2024,Araquari,SC,100644,475
+import,2024,Franca,SP,69300,8386
+import,2024,São José,SC,64478,2725
+import,2024,Florianópolis,SC,60086,102386
+import,2024,Embu,SP,53671,5022
+import,2024,Barueri,SP,31755,1142
+import,2024,Porto Alegre,RS,30761,1039
+import,2024,Ribeirão Pires,SP,24126,7100
+import,2024,Santa Terezinha de Itaipu,PR,23405,1210
+import,2024,Cotia,SP,23181,1800
+import,2024,Lajeado,RS,20570,567
+import,2024,Linhares,ES,20188,1800
+import,2024,Pomerode,SC,20076,652
+import,2024,Queimados,RJ,19938,1333
+import,2024,Cariacica,ES,18571,447
+import,2024,Criciúma,SC,18444,564
+import,2024,Americana,SP,18387,2627
+import,2024,Alpinópolis,MG,16000,3000
+import,2024,Caruaru,PE,14699,721
+import,2024,Ponte Nova,MG,13792,4758
+import,2024,São Bernardo do Campo,SP,13303,283
+import,2024,São José dos Pinhais,PR,8898,3641
+import,2024,Campinas,SP,7504,148
+import,2024,Ipojuca,PE,6721,1900
+import,2024,São José dos Campos,SP,4664,11
+import,2024,Duque de Caxias,RJ,4282,35
+import,2024,Salinópolis,PA,3868,241
+import,2024,Serra,ES,3480,408
+import,2024,Santos,SP,3269,180
+import,2024,Mairiporã,SP,1987,160
+import,2024,Paulínia,SP,1683,569
+import,2024,Brasília,DF,610,78
+import,2024,Palmas,TO,460,109
+import,2024,Maringá,PR,358,95
+import,2024,Santana,AP,183,42
+import,2024,São Caetano do Sul,SP,62,22
+import,2024,Porto Seguro,BA,30,5
+import,2023,Joinville,SC,91156738,3335819
+import,2023,Itajaí,SC,26862237,507068
+import,2023,Macapá,AP,7882513,116234
+import,2023,Salvador,BA,6452043,143679
+import,2023,Entre Rios,BA,4319536,113264
+import,2023,Rio de Janeiro,RJ,2055839,34067
+import,2023,Cabedelo,PB,1926507,48963
+import,2023,Guarulhos,SP,959244,1496
+import,2023,Maceió,AL,647428,13668
+import,2023,Santana de Parnaíba,SP,514100,5115
+import,2023,Niterói,RJ,356445,16625
+import,2023,Curitiba,PR,315311,45598
+import,2023,Capitólio,MG,242638,31010
+import,2023,Manaus,AM,203738,4459
+import,2023,São Paulo,SP,136863,12787
+import,2023,Jaboatão dos Guararapes,PE,118589,2624
+import,2023,Araquari,SC,97551,486
+import,2023,Porto Real,RJ,95000,26770
+import,2023,Itu,SP,80000,8200
+import,2023,Extrema,MG,74501,24702
+import,2023,Embu,SP,64966,5158
+import,2023,Porto Belo,SC,52781,2211
+import,2023,Ubatuba,SP,52503,12000
+import,2023,Porto Alegre,RS,49008,819
+import,2023,Americana,SP,46524,4820
+import,2023,Brasília,DF,39005,750
+import,2023,Porto Velho,RO,37545,7491
+import,2023,Palhoça,SC,26295,178
+import,2023,Claraval,MG,24997,5220
+import,2023,São Bernardo do Campo,SP,22073,525
+import,2023,Piracicaba,SP,20480,2546
+import,2023,Queimados,RJ,19938,1301
+import,2023,Guarujá,SP,17180,658
+import,2023,Arujá,SP,17000,405
+import,2023,Vinhedo,SP,17000,405
+import,2023,Belo Horizonte,MG,16574,628
+import,2023,Petrópolis,RJ,14663,181
+import,2023,Balneário Camboriú,SC,12718,1262
+import,2023,Florianópolis,SC,12096,393
+import,2023,Caucaia,CE,12030,700
+import,2023,Goiânia,GO,9800,1272
+import,2023,Ponte Nova,MG,9038,3130
+import,2023,São José dos Pinhais,PR,8878,3630
+import,2023,Natal,RN,8563,65
+import,2023,Navegantes,SC,7150,1725
+import,2023,Rio Bonito,RJ,6513,125
+import,2023,Lajeado,RS,5406,219
+import,2023,São Gonçalo,RJ,5320,3130
+import,2023,Imbituba,SC,3775,1207
+import,2023,Governador Valadares,MG,2303,297
+import,2023,Santo André,SP,1575,56
+import,2023,Caxias do Sul,RS,1000,469
+import,2023,Parnaíba,PI,719,98
+import,2023,Pedreiras,MA,643,89
+import,2023,Paulínia,SP,225,72
+import,2023,Limeira,SP,225,30
+import,2023,Cajamar,SP,51,17
+import,2023,Palmeira,PR,49,4
+import,2022,Joinville,SC,70352481,2837242
+import,2022,Itajaí,SC,10376842,228883
+import,2022,Macapá,AP,2891027,46376
+import,2022,Salvador,BA,1427929,43450
+import,2022,Entre Rios,BA,1209162,42252
+import,2022,Cabedelo,PB,666642,16842
+import,2022,Guarulhos,SP,536516,19790
+import,2022,São Paulo,SP,437534,24880
+import,2022,Rio de Janeiro,RJ,391642,7577
+import,2022,Porto Belo,SC,262857,14572
+import,2022,Araquari,SC,215614,4850
+import,2022,Embu,SP,156005,13515
+import,2022,Recife,PE,121441,2625
+import,2022,São José,SC,98531,27231
+import,2022,Capitólio,MG,74889,11800
+import,2022,Porto Velho,RO,73194,1433
+import,2022,Itu,SP,56545,8200
+import,2022,Porto Alegre,RS,44837,1313
+import,2022,Lajeado,RS,41051,1375
+import,2022,Caravelas,BA,39488,14000
+import,2022,Cabo de Santo Agostinho,PE,31709,776
+import,2022,Americana,SP,28528,2919
+import,2022,Imbituba,SC,22591,5718
+import,2022,Pelotas,RS,20000,900
+import,2022,Vitória,ES,14701,3019
+import,2022,Araras,SP,11700,24
+import,2022,Mogi-Mirim,SP,9203,375
+import,2022,Extrema,MG,8593,2063
+import,2022,Osasco,SP,6669,14
+import,2022,Guarujá,SP,5726,437
+import,2022,Curitiba,PR,5573,617
+import,2022,Gavião Peixoto,SP,4551,3
+import,2022,Balneário Camboriú,SC,2998,253
+import,2022,Sorocaba,SP,2412,6
+import,2022,Belo Horizonte,MG,2229,677
+import,2022,São Gonçalo,RJ,2180,1081
+import,2022,Manaus,AM,1745,340
+import,2022,Cambé,PR,1522,213
+import,2022,Navegantes,SC,381,20
+import,2022,Cajamar,SP,225,58
+import,2022,Maringá,PR,49,30
+import,2021,Joinville,SC,47473615,2565114
+import,2021,Itajaí,SC,13176717,277128
+import,2021,Macapá,AP,8095235,132333
+import,2021,Rio de Janeiro,RJ,4522559,59757
+import,2021,Manaus,AM,936825,31049
+import,2021,Santana de Parnaíba,SP,259227,4586
+import,2021,Porto Belo,SC,181693,13818
+import,2021,São José,SC,152908,39529
+import,2021,Embu,SP,143176,15355
+import,2021,Palhoça,SC,128933,5610
+import,2021,Pomerode,SC,76234,3180
+import,2021,São Luís,MA,75101,1100
+import,2021,Gavião Peixoto,SP,56485,108
+import,2021,Porto Alegre,RS,48889,3940
+import,2021,Vitória,ES,42517,6925
+import,2021,Belo Horizonte,MG,40577,10670
+import,2021,São José dos Campos,SP,40096,127
+import,2021,Curitiba,PR,39913,4087
+import,2021,Ponte Nova,MG,39556,11303
+import,2021,São Paulo,SP,36451,656
+import,2021,Guarulhos,SP,33040,9073
+import,2021,Americana,SP,27164,2693
+import,2021,Santa Cruz do Sul,RS,14237,5772
+import,2021,São Gonçalo,RJ,10190,4952
+import,2021,Itapema,SC,8250,75
+import,2021,Florianópolis,SC,6509,125
+import,2021,Garibaldi,RS,4084,900
+import,2021,Fortaleza,CE,3701,14
+import,2021,Cascavel,PR,2388,75
+import,2021,Balneário Camboriú,SC,1904,162
+import,2021,Arraial do Cabo,RJ,1821,236
+import,2021,Salvador,BA,1614,150
+import,2021,Guarujá,SP,1464,612
+import,2021,Jandira,SP,1200,18
+import,2021,Cajamar,SP,981,327
+import,2021,Paulínia,SP,506,39
+import,2021,Pontal do Paraná,PR,290,1
+import,2021,Jaboatão dos Guararapes,PE,240,213
+import,2021,Uberlândia,MG,129,29
+import,2021,Maringá,PR,54,26
+import,2021,Porto Velho,RO,48,24
+import,2021,Santos,SP,41,8
+import,2020,Joinville,SC,24907637,1403593
+import,2020,Manaus,AM,2865018,98067
+import,2020,Macapá,AP,2685519,59988
+import,2020,Salvador,BA,1374412,28750
+import,2020,Rio de Janeiro,RJ,367875,2134
+import,2020,Porto Belo,SC,141052,9014
+import,2020,Porto Alegre,RS,64632,3402
+import,2020,Itajaí,SC,59579,26529
+import,2020,Balneário Camboriú,SC,50592,1758
+import,2020,Americana,SP,49841,4359
+import,2020,Embu,SP,47430,4630
+import,2020,Gavião Peixoto,SP,40649,36
+import,2020,Brasília,DF,36104,520
+import,2020,Cambé,PR,35612,2969
+import,2020,Curitiba,PR,27016,501
+import,2020,São José dos Campos,SP,23064,113
+import,2020,Lajeado,RS,15832,570
+import,2020,São Francisco do Sul,SC,11516,330
+import,2020,São Gonçalo,RJ,10489,2950
+import,2020,Belo Horizonte,MG,5648,2054
+import,2020,São Bernardo do Campo,SP,5503,808
+import,2020,Osasco,SP,3148,4
+import,2020,Paulínia,SP,3127,693
+import,2020,Florianópolis,SC,1489,221
+import,2020,São Paulo,SP,1255,662
+import,2020,Guarulhos,SP,1107,130
+import,2020,Maringá,PR,966,33
+import,2020,Guarujá,SP,670,202
+import,2020,Cordilheira Alta,SC,566,209
+import,2020,Rio Claro,SP,217,80
+import,2020,Indaiatuba,SP,46,4
+import,2019,Joinville,SC,40203819,2046090
+import,2019,Manaus,AM,4362309,146033
+import,2019,Itajaí,SC,1903019,76754
+import,2019,Macapá,AP,1570517,54462
+import,2019,Recife,PE,358204,12930
+import,2019,Rio de Janeiro,RJ,199919,3647
+import,2019,Porto Belo,SC,177630,10038
+import,2019,Embu,SP,157320,14187
+import,2019,São José dos Campos,SP,131091,280
+import,2019,Gavião Peixoto,SP,90553,244
+import,2019,Cabedelo,PB,70221,1804
+import,2019,Foz do Iguaçu,PR,61147,980
+import,2019,Belo Horizonte,MG,53828,3905
+import,2019,São Bernardo do Campo,SP,39898,9782
+import,2019,Maceió,AL,36379,1840
+import,2019,Boa Vista,RR,33950,1060
+import,2019,Porto Alegre,RS,23936,2008
+import,2019,Guarulhos,SP,22617,8009
+import,2019,São Paulo,SP,20515,529
+import,2019,Goiânia,GO,20500,35
+import,2019,Lajeado,RS,16539,567
+import,2019,Pomerode,SC,13769,786
+import,2019,Santa Cruz do Sul,RS,12748,5264
+import,2019,Ponte Nova,MG,11386,4175
+import,2019,Uruguaiana,RS,7136,116
+import,2019,Porto Velho,RO,7081,283
+import,2019,Paulínia,SP,6194,335
+import,2019,Jandira,SP,5737,2256
+import,2019,Palhoça,SC,4866,799
+import,2019,Vila Velha,ES,4651,78
+import,2019,Rio das Ostras,RJ,4154,22
+import,2019,Salvador,BA,3071,200
+import,2019,Itupeva,SP,2818,1170
+import,2019,Navegantes,SC,2732,294
+import,2019,Cabo Frio,RJ,2637,181
+import,2019,Curitiba,PR,2446,253
+import,2019,Itaboraí,RJ,2209,23
+import,2019,Guarujá,SP,2111,748
+import,2019,Contagem,MG,1740,510
+import,2019,São José dos Pinhais,PR,1532,76
+import,2019,São José,SC,1208,479
+import,2019,Londrina,PR,1116,61
+import,2019,Franca,SP,872,200
+import,2019,Itaúna,MG,479,70
+import,2019,Piçarras,SC,95,3
+import,2018,Joinville,SC,29892961,1620067
+import,2018,Macapá,AP,6675603,156243
+import,2018,Salvador,BA,3550039,61956
+import,2018,Itajaí,SC,2812706,87970
+import,2018,Manaus,AM,2727989,96611
+import,2018,Rio de Janeiro,RJ,382181,4685
+import,2018,Recife,PE,251164,9219
+import,2018,Cabedelo,PB,148853,4370
+import,2018,Embu,SP,148324,15567
+import,2018,São José dos Campos,SP,133277,203
+import,2018,Porto Velho,RO,132472,4322
+import,2018,Porto Belo,SC,103009,6122
+import,2018,Santa Cruz do Sul,RS,100463,38460
+import,2018,Osasco,SP,88871,90
+import,2018,Porto Alegre,RS,51975,1156
+import,2018,Florianópolis,SC,51599,1212
+import,2018,Guarulhos,SP,42011,7812
+import,2018,Lajeado,RS,38010,1364
+import,2018,Pomerode,SC,37466,1592
+import,2018,Palhoça,SC,37155,399
+import,2018,Jandira,SP,32564,6226
+import,2018,Guarujá,SP,31476,388
+import,2018,São Bernardo do Campo,SP,22777,4289
+import,2018,Ponte Nova,MG,18316,6324
+import,2018,Gavião Peixoto,SP,15434,29
+import,2018,Taubaté,SP,14264,62
+import,2018,Sorocaba,SP,13588,35
+import,2018,Maceió,AL,10895,750
+import,2018,Curitiba,PR,10421,1433
+import,2018,Belo Horizonte,MG,9852,22
+import,2018,Paulínia,SP,8898,391
+import,2018,Juiz de Fora,MG,8450,48
+import,2018,Serra,ES,8443,2822
+import,2018,Olímpia,SP,8389,460
+import,2018,Parobé,RS,6419,56
+import,2018,Santana de Parnaíba,SP,5204,701
+import,2018,São José,SC,4624,1749
+import,2018,Brasília,DF,4163,134
+import,2018,São Paulo,SP,4000,38
+import,2018,Rosário Oeste,MT,2595,280
+import,2018,Rio Claro,SP,2132,813
+import,2018,Itupeva,SP,2030,844
+import,2018,Indaiatuba,SP,967,112
+import,2018,Itaúna,MG,966,76
+import,2018,Campo Grande,MS,673,115
+import,2018,Cordilheira Alta,SC,591,227
+import,2018,Maringá,PR,372,167
+import,2017,Joinville,SC,22121766,1180334
+import,2017,Macapá,AP,6202827,161740
+import,2017,Manaus,AM,3236142,121651
+import,2017,Itajaí,SC,2447703,70820
+import,2017,Cabedelo,PB,937556,27517
+import,2017,São Paulo,SP,675062,47517
+import,2017,Rio de Janeiro,RJ,549457,17251
+import,2017,Entre Rios,BA,446982,15000
+import,2017,Arujá,SP,400489,20000
+import,2017,Porto Belo,SC,206274,10140
+import,2017,Porto Alegre,RS,170023,6515
+import,2017,Recife,PE,148939,6321
+import,2017,Curitiba,PR,140926,3366
+import,2017,São José dos Campos,SP,110101,253
+import,2017,Embu,SP,88321,9087
+import,2017,Santa Cruz do Sul,RS,77013,32467
+import,2017,Palmas,TO,52599,1783
+import,2017,Guarulhos,SP,28153,4172
+import,2017,Gavião Peixoto,SP,25816,55
+import,2017,Maceió,AL,22080,1112
+import,2017,Lajeado,RS,16501,506
+import,2017,São José,SC,15112,700
+import,2017,São Bernardo do Campo,SP,12899,2364
+import,2017,Pouso Alegre,MG,9811,2163
+import,2017,Anápolis,GO,8647,750
+import,2017,Jandira,SP,8275,3192
+import,2017,Contagem,MG,5731,60
+import,2017,Cascavel,PR,5176,42
+import,2017,Caieiras,SP,4691,114
+import,2017,Belo Horizonte,MG,4611,375
+import,2017,Ponte Nova,MG,4331,1571
+import,2017,Brusque,SC,4146,1595
+import,2017,Jaboatão dos Guararapes,PE,4134,1165
+import,2017,Palhoça,SC,3875,850
+import,2017,Brasília,DF,3000,23
+import,2017,Florianópolis,SC,2749,1076
+import,2017,Salvador,BA,2454,116
+import,2017,Rio Claro,SP,2063,813
+import,2017,Álvares Machado,SP,1632,345
+import,2017,São Luís,MA,1340,468
+import,2017,Paulínia,SP,1103,784
+import,2017,Itupeva,SP,656,285
+import,2017,Cordilheira Alta,SC,644,258
+import,2017,Niterói,RJ,465,94
+import,2017,Várzea Paulista,SP,373,308
+import,2017,Porto Velho,RO,1,0
+import,2016,Joinville,SC,7156428,412970
+import,2016,Manaus,AM,4111795,165627
+import,2016,Itajaí,SC,3399779,96016
+import,2016,Macapá,AP,2007161,71155
+import,2016,Porto Velho,RO,1208285,32541
+import,2016,Rio de Janeiro,RJ,753385,11048
+import,2016,Cabedelo,PB,438572,12575
+import,2016,São José dos Campos,SP,240326,680
+import,2016,Porto Alegre,RS,99510,7349
+import,2016,Santa Cruz do Sul,RS,79652,24282
+import,2016,Porto Belo,SC,60457,2875
+import,2016,Embu,SP,50790,4644
+import,2016,Osasco,SP,40717,43
+import,2016,Gavião Peixoto,SP,25200,45
+import,2016,Guarulhos,SP,20716,6462
+import,2016,Ilhabela,SP,18838,630
+import,2016,Lajeado,RS,17520,721
+import,2016,São Paulo,SP,15292,4261
+import,2016,Iranduba,AM,15164,814
+import,2016,Barueri,SP,13843,5052
+import,2016,Saquarema,RJ,13714,137
+import,2016,Florianópolis,SC,12423,1026
+import,2016,Curitiba,PR,7554,97
+import,2016,Ponte Nova,MG,6002,2252
+import,2016,Paulínia,SP,2737,2096
+import,2016,Palhoça,SC,2365,847
+import,2016,Cordilheira Alta,SC,2213,809
+import,2016,Rio Claro,SP,2080,802
+import,2016,Maceió,AL,1858,117
+import,2016,Recife,PE,1812,626
+import,2016,Itupeva,SP,1372,464
+import,2016,Jandira,SP,1216,432
+import,2016,Maringá,PR,1123,234
+import,2016,Belo Horizonte,MG,845,332
+import,2016,Salvador,BA,377,80
+import,2016,São Bernardo do Campo,SP,275,6
+import,2016,Santos,SP,127,38
+import,2015,Joinville,SC,12116299,865068
+import,2015,Macapá,AP,6835227,203377
+import,2015,Manaus,AM,5321746,192439
+import,2015,Porto Velho,RO,3738143,119556
+import,2015,Maceió,AL,3018143,81122
+import,2015,Itajaí,SC,2449166,68503
+import,2015,Salvador,BA,2349337,101004
+import,2015,Rio de Janeiro,RJ,2234808,63520
+import,2015,Ji-Paraná,RO,1792087,61900
+import,2015,Lorena,SP,1180941,35000
+import,2015,São Paulo,SP,470202,26414
+import,2015,São José dos Campos,SP,407245,1162
+import,2015,Porto Alegre,RS,400338,9196
+import,2015,Cabedelo,PB,395432,12502
+import,2015,São José dos Pinhais,PR,248592,13339
+import,2015,Recife,PE,189142,5726
+import,2015,Pouso Alegre,MG,161704,27559
+import,2015,Santa Cruz do Sul,RS,140678,44456
+import,2015,Embu,SP,121250,9430
+import,2015,Porto Belo,SC,115432,6302
+import,2015,Brasília,DF,85202,954
+import,2015,Guarulhos,SP,66880,12005
+import,2015,Paulista,PE,59810,2363
+import,2015,Curitiba,PR,47557,1011
+import,2015,Ilhéus,BA,47275,1590
+import,2015,Lajeado,RS,35598,1649
+import,2015,Boa Vista,RR,35518,1439
+import,2015,Belo Horizonte,MG,32476,10882
+import,2015,Ponte Nova,MG,30651,10035
+import,2015,Extrema,MG,28775,4945
+import,2015,São José,SC,28680,11601
+import,2015,Jandira,SP,27693,4658
+import,2015,Bauru,SP,22142,386
+import,2015,Goiânia,GO,20816,1691
+import,2015,Barueri,SP,19028,1424
+import,2015,Paulínia,SP,15016,6838
+import,2015,Esmeraldas,MG,11534,3787
+import,2015,Balneário Camboriú,SC,10510,106
+import,2015,Osasco,SP,9819,3225
+import,2015,Pomerode,SC,9430,347
+import,2015,Taubaté,SP,6828,20
+import,2015,Jaboatão dos Guararapes,PE,6752,125
+import,2015,Florianópolis,SC,6295,70
+import,2015,Gavião Peixoto,SP,4125,4
+import,2015,Rio Claro,SP,3915,1327
+import,2015,São Francisco do Sul,SC,3804,1505
+import,2015,Maringá,PR,3532,1049
+import,2015,Vitória,ES,3518,209
+import,2015,São Gonçalo,RJ,3384,2110
+import,2015,Caxias do Sul,RS,3200,140
+import,2015,Camaçari,BA,3083,1688
+import,2015,Cordilheira Alta,SC,3008,989
+import,2015,Nossa Senhora do Socorro,SE,2662,1615
+import,2015,Itupeva,SP,2341,1158
+import,2015,Jundiaí,SP,2151,665
+import,2015,Arujá,SP,1980,140
+import,2015,Duque de Caxias,RJ,995,326
+import,2015,Santana de Parnaíba,SP,550,196
+import,2015,João Pessoa,PB,504,76
+import,2015,Americana,SP,440,50
+import,2015,São Bernardo do Campo,SP,328,90
+import,2015,Santos,SP,199,2
+import,2015,Santana,AP,67,17
+import,2014,Joinville,SC,30248682,1351372
+import,2014,Macapá,AP,13289735,305657
+import,2014,Manaus,AM,10387349,363015
+import,2014,Rio de Janeiro,RJ,10075438,257948
+import,2014,Itajaí,SC,4957832,125545
+import,2014,Recife,PE,4790104,133233
+import,2014,Ji-Paraná,RO,4654143,135384
+import,2014,Salvador,BA,4227157,149341
+import,2014,Porto Velho,RO,4201376,108960
+import,2014,Cabedelo,PB,2719108,84179
+import,2014,São Paulo,SP,2327844,72260
+import,2014,Maceió,AL,2166419,51190
+import,2014,Brasília,DF,645993,13502
+import,2014,São José dos Campos,SP,427964,1373
+import,2014,Paulista,PE,382805,13219
+import,2014,Entre Rios,BA,380618,11650
+import,2014,Porto Alegre,RS,341205,3488
+import,2014,Cabo de Santo Agostinho,PE,233440,7217
+import,2014,Canavieiras,BA,200593,7619
+import,2014,Pomerode,SC,191246,9312
+import,2014,Serra,ES,179705,7005
+import,2014,Santa Cruz do Sul,RS,147356,50730
+import,2014,Florianópolis,SC,146180,4438
+import,2014,Curitiba,PR,142601,1788
+import,2014,Embu,SP,141874,9439
+import,2014,Vitória,ES,124889,4545
+import,2014,Belo Horizonte,MG,118051,7670
+import,2014,Guarulhos,SP,105083,21197
+import,2014,Gavião Peixoto,SP,104087,144
+import,2014,Esmeraldas,MG,90525,31536
+import,2014,Extrema,MG,87558,16288
+import,2014,Santos,SP,55535,2043
+import,2014,São José,SC,54125,22778
+import,2014,Cuiabá,MT,51895,2468
+import,2014,Lajeado,RS,49937,960
+import,2014,Niterói,RJ,41334,2700
+import,2014,Cambé,PR,31475,5117
+import,2014,São Francisco do Sul,SC,27725,5169
+import,2014,Boa Vista,RR,27200,976
+import,2014,Pouso Alegre,MG,26462,5446
+import,2014,Foz do Iguaçu,PR,25857,260
+import,2014,Jandira,SP,24806,6534
+import,2014,Osasco,SP,23238,270
+import,2014,São Vicente,SP,15720,1300
+import,2014,Londrina,PR,15119,1663
+import,2014,Ponte Nova,MG,11448,3345
+import,2014,Vila Velha,ES,10801,300
+import,2014,Paulínia,SP,10576,2478
+import,2014,Belém,PA,10375,945
+import,2014,Mogi das Cruzes,SP,9835,23
+import,2014,Esteio,RS,7532,134
+import,2014,Monte Mor,SP,6789,520
+import,2014,Gravataí,RS,6600,300
+import,2014,Rio Claro,SP,6282,2112
+import,2014,Ribeirão Preto,SP,5167,145
+import,2014,Araranguá,SC,5017,350
+import,2014,Araquari,SC,4624,1147
+import,2014,Nossa Senhora do Socorro,SE,4512,1782
+import,2014,Cordilheira Alta,SC,4488,1513
+import,2014,Ribeirão das Neves,MG,4019,1428
+import,2014,Eusébio,CE,3650,1234
+import,2014,Itapema,SC,3600,320
+import,2014,Igrejinha,RS,3312,294
+import,2014,Camaçari,BA,2993,1177
+import,2014,São João de Meriti,RJ,2928,494
+import,2014,Guarujá,SP,2367,817
+import,2014,Balneário Camboriú,SC,2218,239
+import,2014,Mogi Guaçu,SP,1884,566
+import,2014,Ilhabela,SP,1720,115
+import,2014,Pinhais,PR,1473,18
+import,2014,Jundiaí,SP,1360,418
+import,2014,Maringá,PR,383,114
+import,2014,Itápolis,SP,256,2
+import,2014,Mariana,MG,126,26
+import,2013,Joinville,SC,24134588,1176100
+import,2013,Macapá,AP,22725020,559417
+import,2013,Manaus,AM,15573139,554331
+import,2013,Rio de Janeiro,RJ,13161490,430112
+import,2013,Itajaí,SC,12453244,344262
+import,2013,Salvador,BA,11666542,412423
+import,2013,Recife,PE,11210729,378352
+import,2013,Porto Velho,RO,6046235,163021
+import,2013,Maceió,AL,4422085,108543
+import,2013,Cabedelo,PB,2132645,69264
+import,2013,São José,SC,1517342,85343
+import,2013,Vitória,ES,1463056,38655
+import,2013,Ji-Paraná,RO,1194710,36146
+import,2013,São José dos Campos,SP,986735,3339
+import,2013,Santos,SP,891096,34112
+import,2013,Florianópolis,SC,746806,34023
+import,2013,Exterior,EX,735739,19170
+import,2013,Cabo de Santo Agostinho,PE,712590,22373
+import,2013,São Paulo,SP,706942,60581
+import,2013,Belém,PA,361750,6940
+import,2013,Ribeirão Preto,SP,338345,14000
+import,2013,Serra,ES,255644,15529
+import,2013,Guarulhos,SP,211236,24858
+import,2013,Santa Cruz do Sul,RS,200314,52211
+import,2013,Curitiba,PR,148520,9025
+import,2013,João Pessoa,PB,140214,5671
+import,2013,Porto Alegre,RS,109810,9849
+import,2013,Belo Horizonte,MG,90082,8976
+import,2013,Pomerode,SC,83642,4008
+import,2013,Porto Belo,SC,81299,15009
+import,2013,Boca do Acre,AM,75579,2159
+import,2013,Angra dos Reis,RJ,71233,4365
+import,2013,Canavieiras,BA,57703,2868
+import,2013,Palhoça,SC,57337,1728
+import,2013,Paulista,PE,57075,2234
+import,2013,Santa Isabel,SP,51920,970
+import,2013,Niterói,RJ,45549,1236
+import,2013,Brasília,DF,44479,1137
+import,2013,Embu,SP,41622,2452
+import,2013,Cuiabá,MT,38566,3609
+import,2013,Balneário Camboriú,SC,37988,350
+import,2013,Lajeado,RS,36149,693
+import,2013,Cambé,PR,32382,5825
+import,2013,Gavião Peixoto,SP,32177,32
+import,2013,Osasco,SP,31535,59
+import,2013,Campinas,SP,28289,150
+import,2013,Londrina,PR,24955,202
+import,2013,Macaé,RJ,19749,42
+import,2013,Garopaba,SC,19171,1167
+import,2013,Cajamar,SP,17210,4123
+import,2013,São Pedro da Aldeia,RJ,14446,180
+import,2013,Vila Velha,ES,14253,155
+import,2013,Barueri,SP,12167,1470
+import,2013,Uberlândia,MG,11690,330
+import,2013,Extrema,MG,10200,1283
+import,2013,Rio Claro,SP,9740,170
+import,2013,Jandira,SP,9560,2726
+import,2013,Ribeirão das Neves,MG,7149,2500
+import,2013,Ponte Nova,MG,6974,2322
+import,2013,Imbituba,SC,6302,290
+import,2013,Nossa Senhora do Socorro,SE,5738,2228
+import,2013,Santana do Livramento,RS,4772,320
+import,2013,Jaboatão dos Guararapes,PE,3750,989
+import,2013,São Francisco do Sul,SC,3642,1426
+import,2013,Abreu e Lima,PE,2552,1496
+import,2013,Formosa,GO,2292,194
+import,2013,Guarujá,SP,1517,245
+import,2013,Cordilheira Alta,SC,1389,488
+import,2013,São Miguel do Oeste,SC,1184,414
+import,2013,São Caetano do Sul,SP,860,23
+import,2013,Blumenau,SC,811,54
+import,2013,Santana,AP,804,230
+import,2013,São José dos Pinhais,PR,719,5
+import,2013,Esmeraldas,MG,87,36
+import,2013,São Bernardo do Campo,SP,23,1
+import,2012,Joinville,SC,26095269,1305530
+import,2012,Recife,PE,25586921,811794
+import,2012,Manaus,AM,22559101,843202
+import,2012,Macapá,AP,20567576,417831
+import,2012,Itajaí,SC,17234408,433460
+import,2012,Salvador,BA,13540503,446997
+import,2012,Porto Velho,RO,5555616,176580
+import,2012,Florianópolis,SC,5335294,115006
+import,2012,Rio de Janeiro,RJ,5073988,227874
+import,2012,São Paulo,SP,4674734,178276
+import,2012,Vitória,ES,3491389,94806
+import,2012,Maceió,AL,1758133,68626
+import,2012,Angra dos Reis,RJ,1489223,86405
+import,2012,Palhoça,SC,1035630,34538
+import,2012,São José,SC,958678,39657
+import,2012,Ji-Paraná,RO,907542,28099
+import,2012,Cabo de Santo Agostinho,PE,904422,28611
+import,2012,Cabedelo,PB,805156,26994
+import,2012,Brasília,DF,709494,20441
+import,2012,São José dos Campos,SP,624085,2175
+import,2012,Curitiba,PR,604891,23952
+import,2012,Santana de Parnaíba,SP,489727,10800
+import,2012,São Sebastião,SP,475480,15500
+import,2012,Porto Alegre,RS,451764,33809
+import,2012,Abreu e Lima,PE,357939,15432
+import,2012,Porto Real,RJ,337910,14100
+import,2012,Taubaté,SP,289468,10340
+import,2012,Guarulhos,SP,233566,20669
+import,2012,Santos,SP,202149,5590
+import,2012,Palmas,TO,155648,2740
+import,2012,Belém,PA,146467,6307
+import,2012,Foz do Iguaçu,PR,129248,4719
+import,2012,João Pessoa,PB,128123,7316
+import,2012,Vila Velha,ES,118923,6275
+import,2012,Jaboatão dos Guararapes,PE,118800,4074
+import,2012,Pomerode,SC,118649,4199
+import,2012,Santa Cruz do Sul,RS,112899,28600
+import,2012,Boa Vista,RR,102241,3472
+import,2012,Barueri,SP,97833,15238
+import,2012,Esmeraldas,MG,93208,29346
+import,2012,Serra,ES,92399,6549
+import,2012,Brusque,SC,88018,5580
+import,2012,Mogi das Cruzes,SP,83533,1260
+import,2012,Aparecida de Goiânia,GO,76490,8400
+import,2012,Garopaba,SC,69258,4638
+import,2012,São Leopoldo,RS,66705,1999
+import,2012,Jandira,SP,54558,16425
+import,2012,Nova Lima,MG,53649,1771
+import,2012,Porto Belo,SC,45039,13587
+import,2012,Jacareí,SP,36280,10425
+import,2012,Gavião Peixoto,SP,30728,48
+import,2012,Ampére,PR,29600,770
+import,2012,Itumbiara,GO,25959,783
+import,2012,Balneário Camboriú,SC,24967,795
+import,2012,Cariacica,ES,24186,690
+import,2012,Realeza,PR,23826,1370
+import,2012,Novo Hamburgo,RS,23325,699
+import,2012,Juína,MT,17164,436
+import,2012,Montividiu,GO,13975,354
+import,2012,Extrema,MG,13973,1282
+import,2012,Ribeirão das Neves,MG,11385,3671
+import,2012,Cambé,PR,11141,2078
+import,2012,Osório,RS,10963,369
+import,2012,Nossa Senhora do Socorro,SE,8632,3243
+import,2012,Vitória de Santo Antão,PE,8611,700
+import,2012,Embu,SP,8344,590
+import,2012,Hortolândia,SP,8000,338
+import,2012,Campinas,SP,7853,721
+import,2012,Viçosa,MG,7715,487
+import,2012,Sirinhaém,PE,7185,330
+import,2012,Santana,AP,6799,200
+import,2012,Piquete,SP,6749,1740
+import,2012,São Pedro da Aldeia,RJ,6118,60
+import,2012,Santa Luzia,BA,5724,340
+import,2012,São Francisco do Sul,SC,5233,1914
+import,2012,Ipatinga,MG,4962,325
+import,2012,Guarujá,SP,4358,412
+import,2012,Valinhos,SP,4079,96
+import,2012,Indaiatuba,SP,3436,106
+import,2012,Mairinque,SP,3093,210
+import,2012,Registro,SP,3074,192
+import,2012,Jaraguá do Sul,SC,2658,665
+import,2012,Diadema,SP,2387,140
+import,2012,São José dos Pinhais,PR,1960,176
+import,2012,Londrina,PR,1205,69
+import,2012,Camaçari,BA,1196,206
+import,2012,Santa Terezinha de Itaipu,PR,1003,35
+import,2012,Belo Horizonte,MG,984,1
+import,2012,Ponte Nova,MG,734,201
+import,2012,São Bernardo do Campo,SP,581,3
+import,2012,Contagem,MG,477,36
+import,2012,Esteio,RS,464,90
+import,2012,Cambará,PR,295,68
+import,2012,Tangará da Serra,MT,273,77
+import,2012,Itápolis,SP,256,12
+import,2011,Itajaí,SC,36681549,692227
+import,2011,Joinville,SC,26105545,1186451
+import,2011,Macapá,AP,25101377,559817
+import,2011,Palhoça,SC,22207863,422474
+import,2011,Manaus,AM,21339004,819374
+import,2011,São Paulo,SP,19525077,567268
+import,2011,Recife,PE,15378118,607641
+import,2011,Palmas,TO,13299279,369238
+import,2011,Maceió,AL,11033522,280165
+import,2011,Vitória,ES,9844505,241740
+import,2011,Salvador,BA,5368699,175589
+import,2011,Florianópolis,SC,3459861,84610
+import,2011,Brasília,DF,3326956,95230
+import,2011,Porto Velho,RO,3159080,126746
+import,2011,João Pessoa,PB,3117844,113420
+import,2011,Rio de Janeiro,RJ,1486106,57031
+import,2011,Curitiba,PR,1145599,59242
+import,2011,Campinas,SP,1098870,39144
+import,2011,Cabedelo,PB,1045422,41327
+import,2011,Porto Alegre,RS,801936,38081
+import,2011,Serra,ES,775314,28866
+import,2011,Boca do Acre,AM,566533,14969
+import,2011,Balneário Camboriú,SC,527929,16651
+import,2011,São José dos Campos,SP,478690,1693
+import,2011,Santa Bárbara d'Oeste,SP,346611,14450
+import,2011,Vinhedo,SP,334396,14935
+import,2011,Niterói,RJ,301027,21059
+import,2011,Cuiabá,MT,264652,11202
+import,2011,Pelotas,RS,257974,13400
+import,2011,Angra dos Reis,RJ,254427,13470
+import,2011,Ji-Paraná,RO,251900,8445
+import,2011,Blumenau,SC,234238,8364
+import,2011,Juiz de Fora,MG,220905,10500
+import,2011,Pomerode,SC,220888,7569
+import,2011,São José,SC,199702,83815
+import,2011,Arujá,SP,178609,11470
+import,2011,Belém,PA,171774,7951
+import,2011,Mogi das Cruzes,SP,158456,2440
+import,2011,Jandira,SP,153516,28931
+import,2011,Criciúma,SC,134726,4403
+import,2011,Santa Cruz do Sul,RS,133903,48630
+import,2011,Olinda,PE,123764,4218
+import,2011,Jaboatão dos Guararapes,PE,115270,5914
+import,2011,Santos,SP,114546,7700
+import,2011,Esmeraldas,MG,112745,41778
+import,2011,Guarulhos,SP,99288,9526
+import,2011,Vila Velha,ES,79204,2585
+import,2011,Goiânia,GO,71885,2900
+import,2011,Ponte Nova,MG,63717,19118
+import,2011,Novo Hamburgo,RS,60450,3569
+import,2011,Ilhabela,SP,58800,6000
+import,2011,Barueri,SP,58291,8817
+import,2011,Araquari,SC,57321,696
+import,2011,Uberlândia,MG,48577,15355
+import,2011,Garopaba,SC,47297,2646
+import,2011,Rubiataba,GO,40800,2560
+import,2011,São Bento,PB,38765,1990
+import,2011,Rio Largo,AL,34279,1700
+import,2011,Foz do Iguaçu,PR,32309,1444
+import,2011,Cariacica,ES,31500,1350
+import,2011,Nova Roma do Sul,RS,30300,1416
+import,2011,Diadema,SP,29273,1117
+import,2011,Londrina,PR,28941,944
+import,2011,Santa Isabel,SP,25098,225
+import,2011,Belo Horizonte,MG,24707,1167
+import,2011,Brusque,SC,23839,554
+import,2011,São José dos Pinhais,PR,23474,1310
+import,2011,Jaboticabal,SP,22500,595
+import,2011,São Leopoldo,RS,20000,738
+import,2011,Chapecó,SC,20000,738
+import,2011,Santa Rosa,RS,19522,1404
+import,2011,Simões Filho,BA,18363,1461
+import,2011,Boa Vista,RR,17799,590
+import,2011,Porto Belo,SC,17147,6519
+import,2011,Gavião Peixoto,SP,15738,50
+import,2011,Teresina,PI,15102,668
+import,2011,Belford Roxo,RJ,14922,846
+import,2011,Cambé,PR,14098,2201
+import,2011,Cotia,SP,14062,388
+import,2011,Campo Bom,RS,14000,450
+import,2011,Barra de São Francisco,ES,12381,369
+import,2011,Caxias do Sul,RS,11439,551
+import,2011,Eunápolis,BA,9623,770
+import,2011,Santo André,SP,9559,383
+import,2011,Camaçari,BA,9399,3221
+import,2011,Aracaju,SE,8999,145
+import,2011,Teresópolis,RJ,8527,383
+import,2011,Pinhais,PR,7620,334
+import,2011,São Sebastião,SP,5700,400
+import,2011,Natal,RN,5677,240
+import,2011,Caieiras,SP,4862,1014
+import,2011,Franca,SP,4700,336
+import,2011,Itupeva,SP,4628,6
+import,2011,Ananindeua,PA,3789,1298
+import,2011,Cordilheira Alta,SC,3579,1341
+import,2011,Araxá,MG,3390,376
+import,2011,Aparecida do Taboado,MS,3058,884
+import,2011,Nossa Senhora do Socorro,SE,2593,1180
+import,2011,Araricá,RS,1690,454
+import,2011,São Francisco do Sul,SC,1317,539
+import,2011,Jaraguá do Sul,SC,1190,442
+import,2011,Ribeirão das Neves,MG,1166,268
+import,2011,Passo Fundo,RS,579,80
+import,2011,Santa Rita do Passa Quatro,SP,500,112
+import,2011,Santana,AP,372,97
+import,2011,São Bernardo do Campo,SP,55,2
+import,2010,Itajaí,SC,38961927,912125
+import,2010,Manaus,AM,19385222,751134
+import,2010,São Paulo,SP,18241333,504400
+import,2010,Joinville,SC,15616268,794120
+import,2010,Macapá,AP,12481633,290215
+import,2010,Palmas,TO,3952169,101320
+import,2010,João Pessoa,PB,3853288,147883
+import,2010,Florianópolis,SC,3222212,49808
+import,2010,Recife,PE,3149251,149834
+import,2010,Rio de Janeiro,RJ,2891489,109125
+import,2010,Vila Velha,ES,1878810,82743
+import,2010,Maceió,AL,1332760,55136
+import,2010,Angra dos Reis,RJ,1058000,36058
+import,2010,Brasília,DF,971569,29907
+import,2010,Serra,ES,830746,30757
+import,2010,São José dos Campos,SP,768392,2121
+import,2010,Santana de Parnaíba,SP,482345,22055
+import,2010,Balneário Camboriú,SC,457793,16969
+import,2010,Barueri,SP,432656,16370
+import,2010,Cabedelo,PB,429644,17022
+import,2010,Santos,SP,408037,32590
+import,2010,Niterói,RJ,380072,18085
+import,2010,Vitória,ES,367517,17448
+import,2010,Campinas,SP,358578,12923
+import,2010,Curitiba,PR,338990,36476
+import,2010,Belo Horizonte,MG,231377,10500
+import,2010,Ribeirão Preto,SP,222763,10565
+import,2010,Belém,PA,220676,9061
+import,2010,Porto Alegre,RS,218270,32408
+import,2010,Santa Bárbara d'Oeste,SP,171590,10565
+import,2010,Jandira,SP,168998,50385
+import,2010,Guarulhos,SP,157828,13832
+import,2010,Macaé,RJ,148855,2282
+import,2010,Porto Velho,RO,147295,5795
+import,2010,São José,SC,113344,53163
+import,2010,Gavião Peixoto,SP,113014,148
+import,2010,Cabo de Santo Agostinho,PE,101705,4518
+import,2010,Criciúma,SC,95860,4008
+import,2010,Pomerode,SC,74125,3454
+import,2010,Palhoça,SC,66001,2256
+import,2010,Esmeraldas,MG,60325,25471
+import,2010,Santa Cruz do Sul,RS,59791,23100
+import,2010,Fortaleza,CE,52772,4069
+import,2010,Dionísio Cerqueira,SC,44940,2022
+import,2010,Piracicaba,SP,43817,2973
+import,2010,Diadema,SP,43162,4249
+import,2010,Arujá,SP,42460,1627
+import,2010,Lauro de Freitas,BA,42254,2477
+import,2010,São Bernardo do Campo,SP,40337,5105
+import,2010,Maracanaú,CE,39413,1920
+import,2010,Várzea Grande,MT,38564,1363
+import,2010,São Bento,PB,36000,1938
+import,2010,Rubiataba,GO,34060,1164
+import,2010,Jaboatão dos Guararapes,PE,30941,1289
+import,2010,Boca do Acre,AM,25171,1179
+import,2010,Foz do Iguaçu,PR,24653,964
+import,2010,Cuiabá,MT,22879,777
+import,2010,Osasco,SP,18135,30
+import,2010,Novo Hamburgo,RS,15190,751
+import,2010,Mauá,SP,13465,300
+import,2010,Petrópolis,RJ,13000,404
+import,2010,Uberlândia,MG,11555,4473
+import,2010,Arapongas,PR,10999,760
+import,2010,Caxias do Sul,RS,10800,381
+import,2010,Contagem,MG,10139,430
+import,2010,São Leopoldo,RS,9500,359
+import,2010,Pinhais,PR,8560,397
+import,2010,Duque de Caxias,RJ,8237,4034
+import,2010,Uruguaiana,RS,5930,600
+import,2010,Montenegro,RS,5900,280
+import,2010,Bom Jesus dos Perdões,SP,5569,1300
+import,2010,São Francisco do Sul,SC,3662,1623
+import,2010,Ponte Nova,MG,3352,1303
+import,2010,Salvador,BA,2777,221
+import,2010,Jaraguá do Sul,SC,2712,947
+import,2010,Exterior,EX,2339,40
+import,2010,Nossa Senhora do Socorro,SE,1915,903
+import,2010,São José dos Pinhais,PR,1551,42
+import,2010,Santana,AP,528,148

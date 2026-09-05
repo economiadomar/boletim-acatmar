@@ -1,0 +1,770 @@
+grupo,flow,year,municipio,uf,metricFOB,metricKG
+cap03,export,2026,Itajaí,SC,10822199,4586793
+cap03,export,2026,Navegantes,SC,7867239,4532829
+cap03,export,2026,Laguna,SC,2491284,1886970
+cap03,export,2026,Porto Belo,SC,813435,45400
+cap03,export,2026,Garuva,SC,240576,125140
+cap03,export,2026,Camboriú,SC,209007,32287
+cap03,export,2026,Florianópolis,SC,203470,1252
+cap03,export,2026,São Francisco do Sul,SC,167663,28339
+cap03,export,2026,Gaspar,SC,129281,50000
+cap03,export,2026,Águas Mornas,SC,104167,34226
+cap03,export,2026,Jaguaruna,SC,58954,11718
+cap03,export,2026,Antônio Carlos,SC,39838,28000
+cap03,export,2026,Blumenau,SC,13141,13147
+cap03,export,2025,Itajaí,SC,16373631,5467091
+cap03,export,2025,Navegantes,SC,10195526,5805237
+cap03,export,2025,Laguna,SC,2352492,1607142
+cap03,export,2025,Águas Mornas,SC,878990,53182
+cap03,export,2025,Antônio Carlos,SC,760026,32870
+cap03,export,2025,Florianópolis,SC,338691,1807
+cap03,export,2025,São Francisco do Sul,SC,291976,48517
+cap03,export,2025,Penha,SC,266140,70500
+cap03,export,2025,Jaguaruna,SC,89590,21863
+cap03,export,2025,Balneário Camboriú,SC,83250,20430
+cap03,export,2025,Garuva,SC,71862,46836
+cap03,export,2025,São João do Itaperiú,SC,65000,26000
+cap03,export,2025,Blumenau,SC,56331,5337
+cap03,export,2025,Porto Belo,SC,566,100
+cap03,export,2024,Navegantes,SC,9050002,3926555
+cap03,export,2024,Itajaí,SC,8834534,2373974
+cap03,export,2024,Laguna,SC,4396528,1672182
+cap03,export,2024,Penha,SC,2007866,531410
+cap03,export,2024,Águas Mornas,SC,1530582,100806
+cap03,export,2024,Porto Belo,SC,780080,65286
+cap03,export,2024,Florianópolis,SC,356111,30227
+cap03,export,2024,Balneário Camboriú,SC,329400,81720
+cap03,export,2024,São Francisco do Sul,SC,219753,43219
+cap03,export,2024,Biguaçu,SC,99900,54000
+cap03,export,2024,Gaspar,SC,78260,26000
+cap03,export,2024,Jaguaruna,SC,43014,8998
+cap03,export,2024,Blumenau,SC,32821,3476
+cap03,export,2023,Laguna,SC,8484649,3314647
+cap03,export,2023,Navegantes,SC,8327360,4457561
+cap03,export,2023,Itajaí,SC,4474954,2107936
+cap03,export,2023,Penha,SC,2379672,698475
+cap03,export,2023,Águas Mornas,SC,682547,23835
+cap03,export,2023,Barra Velha,SC,550068,453590
+cap03,export,2023,Florianópolis,SC,477060,3518
+cap03,export,2023,São Francisco do Sul,SC,183332,40227
+cap03,export,2023,Porto Belo,SC,119572,128595
+cap03,export,2023,Itapema,SC,43168,11991
+cap03,export,2023,Blumenau,SC,29818,4105
+cap03,export,2023,Joinville,SC,17751,2754
+cap03,export,2023,Imbituba,SC,5237,887
+cap03,export,2023,Jaguaruna,SC,80,10
+cap03,export,2022,Laguna,SC,8839301,3442946
+cap03,export,2022,Navegantes,SC,6655974,3153317
+cap03,export,2022,Itajaí,SC,6338002,1460205
+cap03,export,2022,Penha,SC,2726091,825995
+cap03,export,2022,Águas Mornas,SC,1331786,130383
+cap03,export,2022,Porto Belo,SC,1245934,16007
+cap03,export,2022,Itapema,SC,562117,408792
+cap03,export,2022,Barra Velha,SC,369834,253180
+cap03,export,2022,Florianópolis,SC,255988,1741
+cap03,export,2022,São Francisco do Sul,SC,155508,28295
+cap03,export,2022,Ilhota,SC,39224,15086
+cap03,export,2022,Blumenau,SC,16882,2317
+cap03,export,2022,Imbituba,SC,4104,793
+cap03,export,2021,Laguna,SC,6243364,1877245
+cap03,export,2021,Penha,SC,3815594,1036765
+cap03,export,2021,Itajaí,SC,3717936,879882
+cap03,export,2021,Navegantes,SC,3523117,1599981
+cap03,export,2021,Porto Belo,SC,1407758,31539
+cap03,export,2021,Águas Mornas,SC,880467,129112
+cap03,export,2021,Barra Velha,SC,151499,100765
+cap03,export,2021,Gaspar,SC,130379,47328
+cap03,export,2021,São Francisco do Sul,SC,123250,24591
+cap03,export,2021,Florianópolis,SC,102085,465
+cap03,export,2021,Blumenau,SC,19309,3453
+cap03,export,2021,Joinville,SC,9783,447
+cap03,export,2021,Imbituba,SC,3163,370
+cap03,export,2020,Laguna,SC,5127413,2158569
+cap03,export,2020,Penha,SC,3662922,918010
+cap03,export,2020,Navegantes,SC,3291823,1773715
+cap03,export,2020,Itajaí,SC,3120556,786379
+cap03,export,2020,Águas Mornas,SC,976372,172319
+cap03,export,2020,Porto Belo,SC,924333,195166
+cap03,export,2020,Barra Velha,SC,637775,346170
+cap03,export,2020,Jaraguá do Sul,SC,262072,68060
+cap03,export,2020,Camboriú,SC,209505,18170
+cap03,export,2020,São José,SC,163945,17500
+cap03,export,2020,Pomerode,SC,84126,18480
+cap03,export,2020,São Francisco do Sul,SC,80280,17010
+cap03,export,2020,Blumenau,SC,14697,3313
+cap03,export,2020,Imbituba,SC,4296,523
+cap03,export,2019,Itajaí,SC,7777367,3335893
+cap03,export,2019,Laguna,SC,6266535,1243925
+cap03,export,2019,Penha,SC,4763504,1222050
+cap03,export,2019,Navegantes,SC,2671857,1154143
+cap03,export,2019,Águas Mornas,SC,879042,119612
+cap03,export,2019,Porto Belo,SC,867623,87298
+cap03,export,2019,Florianópolis,SC,680154,36329
+cap03,export,2019,Camboriú,SC,337028,29020
+cap03,export,2019,Jaraguá do Sul,SC,215734,23645
+cap03,export,2019,Itapema,SC,125400,19001
+cap03,export,2019,Antônio Carlos,SC,83527,65725
+cap03,export,2019,São Francisco do Sul,SC,82971,17755
+cap03,export,2019,Blumenau,SC,6621,1901
+cap03,export,2019,Imbituba,SC,3912,687
+cap03,export,2018,Penha,SC,5579318,1424896
+cap03,export,2018,Itajaí,SC,5451351,1445447
+cap03,export,2018,Laguna,SC,4800308,555924
+cap03,export,2018,Navegantes,SC,2882365,1358988
+cap03,export,2018,Águas Mornas,SC,2338885,130372
+cap03,export,2018,Porto Belo,SC,1848524,176005
+cap03,export,2018,Jaraguá do Sul,SC,488488,180322
+cap03,export,2018,Balneário Camboriú,SC,214319,16311
+cap03,export,2018,Camboriú,SC,148337,23419
+cap03,export,2018,São Francisco do Sul,SC,17238,4050
+cap03,export,2018,Blumenau,SC,3807,968
+cap03,export,2018,Imbituba,SC,75,20
+cap03,export,2017,Itajaí,SC,5746915,1811919
+cap03,export,2017,Laguna,SC,4145667,787849
+cap03,export,2017,Penha,SC,4021659,1123174
+cap03,export,2017,Águas Mornas,SC,3738948,654623
+cap03,export,2017,Navegantes,SC,3124951,1378701
+cap03,export,2017,Porto Belo,SC,1464573,261358
+cap03,export,2017,Itapema,SC,888534,130095
+cap03,export,2017,Balneário Camboriú,SC,240792,24146
+cap03,export,2017,Florianópolis,SC,96064,78280
+cap03,export,2017,Turvo,SC,81866,96520
+cap03,export,2016,Penha,SC,4129614,1258988
+cap03,export,2016,Águas Mornas,SC,3999628,699430
+cap03,export,2016,Navegantes,SC,3697173,1599766
+cap03,export,2016,Laguna,SC,3480991,1104367
+cap03,export,2016,Porto Belo,SC,2230878,378177
+cap03,export,2016,Itajaí,SC,2178053,711567
+cap03,export,2016,Itapema,SC,927524,172796
+cap03,export,2016,Jaraguá do Sul,SC,143800,50000
+cap03,export,2016,Antônio Carlos,SC,71143,13411
+cap03,export,2016,Florianópolis,SC,60758,34435
+cap03,export,2016,Chapecó,SC,34774,24490
+cap03,export,2015,Navegantes,SC,5808386,2721977
+cap03,export,2015,Penha,SC,4889884,1506600
+cap03,export,2015,Águas Mornas,SC,3381664,524185
+cap03,export,2015,Porto Belo,SC,2941769,432395
+cap03,export,2015,Laguna,SC,2902273,689152
+cap03,export,2015,Itajaí,SC,869875,217874
+cap03,export,2015,Itapema,SC,243236,118148
+cap03,export,2014,Navegantes,SC,10018939,5149720
+cap03,export,2014,Itajaí,SC,8436295,804456
+cap03,export,2014,Penha,SC,6287558,1848000
+cap03,export,2014,Porto Belo,SC,3483761,847000
+cap03,export,2014,Águas Mornas,SC,1329458,221450
+cap03,export,2014,Laguna,SC,1304084,51758
+cap03,export,2014,Itapema,SC,482126,124750
+cap03,export,2013,Navegantes,SC,9059496,4028137
+cap03,export,2013,Penha,SC,4943617,1413810
+cap03,export,2013,Porto Belo,SC,2944125,839296
+cap03,export,2013,Itajaí,SC,2931945,673818
+cap03,export,2013,Itapema,SC,2187875,614830
+cap03,export,2013,Laguna,SC,1297114,97980
+cap03,export,2013,Águas Mornas,SC,1016843,206318
+cap03,export,2012,Itajaí,SC,18242347,6203236
+cap03,export,2012,Navegantes,SC,6764912,2584027
+cap03,export,2012,Penha,SC,5201660,1447810
+cap03,export,2012,Porto Belo,SC,3916351,1608140
+cap03,export,2012,Itapema,SC,2703223,870460
+cap03,export,2012,Laguna,SC,1420433,73615
+cap03,export,2012,Águas Mornas,SC,428895,41760
+cap03,export,2012,Palhoça,SC,177333,14393
+cap03,export,2011,Itajaí,SC,8672366,3969065
+cap03,export,2011,Penha,SC,8244781,2086150
+cap03,export,2011,Navegantes,SC,5724897,1437294
+cap03,export,2011,Itapema,SC,4467026,1088805
+cap03,export,2011,Porto Belo,SC,2926680,881389
+cap03,export,2011,Laguna,SC,799251,181537
+cap03,export,2011,São Francisco do Sul,SC,244185,19386
+cap03,export,2010,Penha,SC,5141869,1605540
+cap03,export,2010,Itapema,SC,3870683,988085
+cap03,export,2010,Navegantes,SC,3869439,1147691
+cap03,export,2010,Porto Belo,SC,3254873,508040
+cap03,export,2010,Itajaí,SC,1934472,620034
+cap03,export,2010,Laguna,SC,293870,19999
+cap03,import,2026,Itajaí,SC,59861206,13315854
+cap03,import,2026,Navegantes,SC,51543901,9868738
+cap03,import,2026,Balneário Camboriú,SC,47611482,9222224
+cap03,import,2026,Camboriú,SC,29898499,4328879
+cap03,import,2026,Itapema,SC,23218172,3428013
+cap03,import,2026,Jaraguá do Sul,SC,16357595,2806481
+cap03,import,2026,Florianópolis,SC,15217093,2383040
+cap03,import,2026,Ilhota,SC,13951432,2169667
+cap03,import,2026,Gaspar,SC,12654702,3313487
+cap03,import,2026,São João do Itaperiú,SC,6437664,1054498
+cap03,import,2026,São José,SC,5687825,1387809
+cap03,import,2026,Penha,SC,4936205,704498
+cap03,import,2026,Biguaçu,SC,4724775,1570495
+cap03,import,2026,Blumenau,SC,1691353,264911
+cap03,import,2026,Laguna,SC,553118,169928
+cap03,import,2026,Xaxim,SC,477313,60784
+cap03,import,2026,Criciúma,SC,186992,10080
+cap03,import,2026,São Francisco do Sul,SC,160450,8000
+cap03,import,2026,Dionísio Cerqueira,SC,60048,10008
+cap03,import,2025,Navegantes,SC,86417861,18080869
+cap03,import,2025,Itajaí,SC,72078182,21694756
+cap03,import,2025,Balneário Camboriú,SC,55194012,10934713
+cap03,import,2025,Itapema,SC,39709294,6151597
+cap03,import,2025,Jaraguá do Sul,SC,26697735,5458731
+cap03,import,2025,Gaspar,SC,20651978,5620697
+cap03,import,2025,Camboriú,SC,16332873,2413871
+cap03,import,2025,Ilhota,SC,10542893,1998994
+cap03,import,2025,Florianópolis,SC,8359708,1718729
+cap03,import,2025,Penha,SC,6812998,1079046
+cap03,import,2025,São João do Itaperiú,SC,5965122,1520469
+cap03,import,2025,São José,SC,5558176,1366495
+cap03,import,2025,Biguaçu,SC,3485419,1164837
+cap03,import,2025,Criciúma,SC,2244209,260448
+cap03,import,2025,Laguna,SC,835163,254771
+cap03,import,2025,Xaxim,SC,391000,60000
+cap03,import,2025,Blumenau,SC,153216,21888
+cap03,import,2025,Joinville,SC,137931,9736
+cap03,import,2025,Dionísio Cerqueira,SC,126176,20028
+cap03,import,2025,Catanduvas,SC,69609,24003
+cap03,import,2025,Governador Celso Ramos,SC,63733,39607
+cap03,import,2024,Itajaí,SC,62323359,16566382
+cap03,import,2024,Navegantes,SC,60756264,11583571
+cap03,import,2024,Balneário Camboriú,SC,50746250,7943563
+cap03,import,2024,Itapema,SC,42597241,6427767
+cap03,import,2024,Jaraguá do Sul,SC,26403755,4697391
+cap03,import,2024,Gaspar,SC,18634088,5403492
+cap03,import,2024,Camboriú,SC,17929863,2286818
+cap03,import,2024,São José,SC,17499376,3101457
+cap03,import,2024,Florianópolis,SC,14049222,2271648
+cap03,import,2024,Ilhota,SC,12705109,2135995
+cap03,import,2024,Criciúma,SC,11277431,1500200
+cap03,import,2024,Penha,SC,6491979,910212
+cap03,import,2024,São João do Itaperiú,SC,2160599,498357
+cap03,import,2024,Dionísio Cerqueira,SC,1938291,518033
+cap03,import,2024,Xaxim,SC,1358162,170262
+cap03,import,2024,Biguaçu,SC,704302,240736
+cap03,import,2024,Laguna,SC,414543,168486
+cap03,import,2024,Araquari,SC,249139,74880
+cap03,import,2024,Governador Celso Ramos,SC,241913,119711
+cap03,import,2024,Itapoá,SC,74340,25000
+cap03,import,2023,Balneário Camboriú,SC,69479995,11319870
+cap03,import,2023,Navegantes,SC,58477900,21448546
+cap03,import,2023,Itajaí,SC,48435125,15199199
+cap03,import,2023,Itapema,SC,36687906,5691353
+cap03,import,2023,Florianópolis,SC,24922350,3734894
+cap03,import,2023,Jaraguá do Sul,SC,23098031,4175510
+cap03,import,2023,Gaspar,SC,19430696,5384265
+cap03,import,2023,Ilhota,SC,18216930,3192424
+cap03,import,2023,Camboriú,SC,14327292,1795302
+cap03,import,2023,Criciúma,SC,12172363,1632769
+cap03,import,2023,São José,SC,9478007,1698057
+cap03,import,2023,Dionísio Cerqueira,SC,8053584,1247876
+cap03,import,2023,Tijucas,SC,5043261,629010
+cap03,import,2023,Xaxim,SC,2010754,264117
+cap03,import,2023,Penha,SC,682858,200648
+cap03,import,2023,Laguna,SC,242198,81430
+cap03,import,2023,Joinville,SC,141830,11000
+cap03,import,2023,Araquari,SC,116370,35000
+cap03,import,2023,Palhoça,SC,103108,9449
+cap03,import,2022,Itajaí,SC,85985136,44000728
+cap03,import,2022,Balneário Camboriú,SC,66099117,11260542
+cap03,import,2022,Navegantes,SC,64792736,31927210
+cap03,import,2022,Itapema,SC,33608858,4662179
+cap03,import,2022,Florianópolis,SC,30291295,4160442
+cap03,import,2022,Tijucas,SC,22939616,3065059
+cap03,import,2022,Jaraguá do Sul,SC,19332163,3392329
+cap03,import,2022,Gaspar,SC,16638094,4621162
+cap03,import,2022,Ilhota,SC,15479193,2842263
+cap03,import,2022,Camboriú,SC,14125066,1628207
+cap03,import,2022,São José,SC,6739460,1212669
+cap03,import,2022,Araquari,SC,3649194,450514
+cap03,import,2022,Criciúma,SC,3258379,410408
+cap03,import,2022,Pomerode,SC,1918315,399154
+cap03,import,2022,Xaxim,SC,560500,76000
+cap03,import,2022,Laguna,SC,361782,194503
+cap03,import,2022,Joinville,SC,331327,23040
+cap03,import,2022,Dionísio Cerqueira,SC,302852,39989
+cap03,import,2022,Governador Celso Ramos,SC,41983,23990
+cap03,import,2022,Brusque,SC,39250,11544
+cap03,import,2021,Itajaí,SC,76603081,46749074
+cap03,import,2021,Navegantes,SC,62336625,30838900
+cap03,import,2021,Balneário Camboriú,SC,50542334,11372998
+cap03,import,2021,Itapema,SC,29037284,4662545
+cap03,import,2021,Tijucas,SC,26351560,4224316
+cap03,import,2021,Florianópolis,SC,23866230,4299087
+cap03,import,2021,Jaraguá do Sul,SC,21391835,4640829
+cap03,import,2021,Ilhota,SC,20268753,4995622
+cap03,import,2021,Camboriú,SC,14179583,1983436
+cap03,import,2021,Gaspar,SC,9557791,2872533
+cap03,import,2021,Araquari,SC,9141074,1661571
+cap03,import,2021,São José,SC,2909187,761219
+cap03,import,2021,Joinville,SC,1093062,266654
+cap03,import,2021,Criciúma,SC,623387,62511
+cap03,import,2021,Laguna,SC,317336,108786
+cap03,import,2021,Pomerode,SC,222203,47096
+cap03,import,2021,Palhoça,SC,93119,10030
+cap03,import,2021,Águas Mornas,SC,81861,10000
+cap03,import,2021,Brusque,SC,70070,20020
+cap03,import,2020,Itajaí,SC,64986568,47894415
+cap03,import,2020,Navegantes,SC,47295740,25872326
+cap03,import,2020,Balneário Camboriú,SC,21393772,7110095
+cap03,import,2020,Jaraguá do Sul,SC,18090515,4772806
+cap03,import,2020,Tijucas,SC,16497902,4240565
+cap03,import,2020,Itapema,SC,13315362,3419453
+cap03,import,2020,Ilhota,SC,10478338,3728214
+cap03,import,2020,Florianópolis,SC,10349585,2684398
+cap03,import,2020,Araquari,SC,8519156,2281238
+cap03,import,2020,Camboriú,SC,8134826,1677103
+cap03,import,2020,Gaspar,SC,6677441,1826955
+cap03,import,2020,São José,SC,2181587,677617
+cap03,import,2020,Pomerode,SC,1484645,517589
+cap03,import,2020,Criciúma,SC,631416,68331
+cap03,import,2020,Laguna,SC,298253,154500
+cap03,import,2020,Brusque,SC,286286,80080
+cap03,import,2020,Biguaçu,SC,73097,24270
+cap03,import,2019,Itajaí,SC,93572299,50140715
+cap03,import,2019,Navegantes,SC,62724314,35520054
+cap03,import,2019,Jaraguá do Sul,SC,22219055,4808629
+cap03,import,2019,Itapema,SC,19611399,3326146
+cap03,import,2019,Camboriú,SC,19592530,2868319
+cap03,import,2019,Tijucas,SC,19248641,3220140
+cap03,import,2019,Balneário Camboriú,SC,15381597,4858621
+cap03,import,2019,Ilhota,SC,11982871,3308227
+cap03,import,2019,Florianópolis,SC,7760352,1324762
+cap03,import,2019,Gaspar,SC,6811687,1642716
+cap03,import,2019,São José,SC,2135668,451902
+cap03,import,2019,Criciúma,SC,1132148,128099
+cap03,import,2019,Laguna,SC,491509,247713
+cap03,import,2019,Pomerode,SC,422567,250975
+cap03,import,2019,Porto Belo,SC,218668,68003
+cap03,import,2019,Brusque,SC,73073,20020
+cap03,import,2019,Governador Celso Ramos,SC,38160,24000
+cap03,import,2019,Palhoça,SC,35024,3600
+cap03,import,2019,Chapecó,SC,1265,638
+cap03,import,2018,Itajaí,SC,94434474,62108869
+cap03,import,2018,Navegantes,SC,50941689,33740189
+cap03,import,2018,Camboriú,SC,31422865,5196956
+cap03,import,2018,Jaraguá do Sul,SC,23369466,4919297
+cap03,import,2018,Tijucas,SC,21572189,3409871
+cap03,import,2018,Itapema,SC,21209041,3378368
+cap03,import,2018,Ilhota,SC,19981023,4627949
+cap03,import,2018,Balneário Camboriú,SC,13158072,4226192
+cap03,import,2018,Gaspar,SC,4930881,1389307
+cap03,import,2018,Florianópolis,SC,3753649,743817
+cap03,import,2018,São José,SC,1040101,240062
+cap03,import,2018,Criciúma,SC,963439,99500
+cap03,import,2018,Laguna,SC,732083,379889
+cap03,import,2018,Porto Belo,SC,299830,106016
+cap03,import,2018,Chapecó,SC,1348,188
+cap03,import,2017,Itajaí,SC,86229321,68314075
+cap03,import,2017,Navegantes,SC,41384767,26067751
+cap03,import,2017,Camboriú,SC,30466074,4816680
+cap03,import,2017,Tijucas,SC,18914839,2928706
+cap03,import,2017,Jaraguá do Sul,SC,17983761,5437756
+cap03,import,2017,Itapema,SC,15862961,2384846
+cap03,import,2017,Ilhota,SC,13316251,3707091
+cap03,import,2017,Florianópolis,SC,11483368,2653796
+cap03,import,2017,Balneário Camboriú,SC,9499147,4177870
+cap03,import,2017,Gaspar,SC,3719949,1182408
+cap03,import,2017,Criciúma,SC,996787,113146
+cap03,import,2017,São José,SC,886263,214103
+cap03,import,2017,Laguna,SC,679905,446236
+cap03,import,2017,Palhoça,SC,144415,48005
+cap03,import,2017,Porto Belo,SC,47100,12000
+cap03,import,2016,Itajaí,SC,65591618,54568423
+cap03,import,2016,Florianópolis,SC,31568833,6176245
+cap03,import,2016,Navegantes,SC,30782513,20468323
+cap03,import,2016,Tijucas,SC,23163301,4120173
+cap03,import,2016,Camboriú,SC,21353985,3562470
+cap03,import,2016,Ilhota,SC,17177022,4594109
+cap03,import,2016,Jaraguá do Sul,SC,12241717,6178494
+cap03,import,2016,Itapema,SC,10704914,1746998
+cap03,import,2016,Balneário Camboriú,SC,6321416,3157925
+cap03,import,2016,Blumenau,SC,1200698,549553
+cap03,import,2016,Gaspar,SC,1028039,328155
+cap03,import,2016,Laguna,SC,586900,381000
+cap03,import,2016,Criciúma,SC,555323,102768
+cap03,import,2016,São José,SC,554546,203157
+cap03,import,2016,Porto Belo,SC,537699,174704
+cap03,import,2016,Joinville,SC,102921,26500
+cap03,import,2015,Itajaí,SC,42004607,25412395
+cap03,import,2015,Florianópolis,SC,31742700,7026527
+cap03,import,2015,Tijucas,SC,31109486,6932376
+cap03,import,2015,Navegantes,SC,22103464,8171781
+cap03,import,2015,Camboriú,SC,21482872,5434882
+cap03,import,2015,Jaraguá do Sul,SC,18317999,8052811
+cap03,import,2015,Ilhota,SC,13708833,3999335
+cap03,import,2015,Itapema,SC,11719220,2543780
+cap03,import,2015,Balneário Camboriú,SC,5304520,1888625
+cap03,import,2015,Blumenau,SC,2298320,856319
+cap03,import,2015,Criciúma,SC,1751366,316791
+cap03,import,2015,Porto Belo,SC,1532980,621913
+cap03,import,2015,Joinville,SC,1196984,191500
+cap03,import,2015,São José,SC,877947,323731
+cap03,import,2015,Laguna,SC,592736,320500
+cap03,import,2015,Pomerode,SC,349377,190847
+cap03,import,2015,Palhoça,SC,183699,36250
+cap03,import,2014,Navegantes,SC,66540727,26001500
+cap03,import,2014,Itajaí,SC,54235993,27162500
+cap03,import,2014,Tijucas,SC,43688402,7350720
+cap03,import,2014,Camboriú,SC,29969257,6256934
+cap03,import,2014,Jaraguá do Sul,SC,20061066,8531308
+cap03,import,2014,Ilhota,SC,17534936,4421692
+cap03,import,2014,Florianópolis,SC,13260238,4370831
+cap03,import,2014,Balneário Camboriú,SC,8323798,2818292
+cap03,import,2014,Itapema,SC,3650589,760173
+cap03,import,2014,Blumenau,SC,3289589,1259052
+cap03,import,2014,Porto Belo,SC,2718674,1112607
+cap03,import,2014,São José,SC,1057005,342591
+cap03,import,2014,Criciúma,SC,591213,99273
+cap03,import,2014,Joinville,SC,576432,105158
+cap03,import,2014,Palhoça,SC,419729,130210
+cap03,import,2014,Laguna,SC,301412,213600
+cap03,import,2014,Pomerode,SC,215765,103210
+cap03,import,2014,Biguaçu,SC,146068,69000
+cap03,import,2013,Tijucas,SC,76122050,12283066
+cap03,import,2013,Itajaí,SC,72771446,43226111
+cap03,import,2013,Navegantes,SC,65984929,32033135
+cap03,import,2013,Ilhota,SC,17678787,4751905
+cap03,import,2013,Jaraguá do Sul,SC,15710310,7215005
+cap03,import,2013,Camboriú,SC,8587243,2080578
+cap03,import,2013,Criciúma,SC,7087055,1376323
+cap03,import,2013,Porto Belo,SC,5277225,2146533
+cap03,import,2013,Florianópolis,SC,4792251,2550049
+cap03,import,2013,Blumenau,SC,2701311,1134240
+cap03,import,2013,Joinville,SC,1298482,440600
+cap03,import,2013,Balneário Camboriú,SC,719265,350684
+cap03,import,2013,Fraiburgo,SC,655500,146275
+cap03,import,2013,Itapema,SC,288796,107320
+cap03,import,2013,Biguaçu,SC,199419,91500
+cap03,import,2013,Pomerode,SC,175170,69000
+cap03,import,2013,Dionísio Cerqueira,SC,151200,36000
+cap03,import,2013,São José,SC,64822,26000
+cap03,import,2013,Laguna,SC,43090,24000
+cap03,import,2012,Itajaí,SC,79030595,40028510
+cap03,import,2012,Navegantes,SC,63501121,28561568
+cap03,import,2012,Tijucas,SC,37966323,7934150
+cap03,import,2012,Ilhota,SC,13357549,4750406
+cap03,import,2012,Jaraguá do Sul,SC,9348186,3507398
+cap03,import,2012,Camboriú,SC,8533408,2110080
+cap03,import,2012,Criciúma,SC,5603059,1354949
+cap03,import,2012,Porto Belo,SC,5486063,2044702
+cap03,import,2012,Fraiburgo,SC,3310565,1024500
+cap03,import,2012,Blumenau,SC,1782078,712157
+cap03,import,2012,Florianópolis,SC,1392588,669585
+cap03,import,2012,Joinville,SC,857487,205100
+cap03,import,2012,Itapema,SC,737420,346127
+cap03,import,2012,Dionísio Cerqueira,SC,116800,52000
+cap03,import,2012,São José,SC,92896,23984
+cap03,import,2012,Biguaçu,SC,66613,25000
+cap03,import,2011,Itajaí,SC,63192452,27180699
+cap03,import,2011,Navegantes,SC,61785694,24569136
+cap03,import,2011,Tijucas,SC,41712948,7264021
+cap03,import,2011,Ilhota,SC,10516529,4124031
+cap03,import,2011,Jaraguá do Sul,SC,7491411,2486033
+cap03,import,2011,Porto Belo,SC,6706695,2239926
+cap03,import,2011,Fraiburgo,SC,4713235,1022550
+cap03,import,2011,Criciúma,SC,2354950,487461
+cap03,import,2011,Florianópolis,SC,1715191,697565
+cap03,import,2011,Dionísio Cerqueira,SC,1684977,865776
+cap03,import,2011,Blumenau,SC,994020,378387
+cap03,import,2011,Itapema,SC,916719,378418
+cap03,import,2011,Joinville,SC,314599,67187
+cap03,import,2011,São José,SC,305991,71985
+cap03,import,2011,Balneário Camboriú,SC,169633,45120
+cap03,import,2011,Penha,SC,109040,52000
+cap03,import,2010,Navegantes,SC,58325510,25372849
+cap03,import,2010,Itajaí,SC,26321648,19622191
+cap03,import,2010,Tijucas,SC,20662989,3828076
+cap03,import,2010,Ilhota,SC,5735391,2244406
+cap03,import,2010,Porto Belo,SC,3058285,985320
+cap03,import,2010,Jaraguá do Sul,SC,3058185,983862
+cap03,import,2010,Fraiburgo,SC,2465061,433100
+cap03,import,2010,Florianópolis,SC,2206502,898700
+cap03,import,2010,Dionísio Cerqueira,SC,1989198,984702
+cap03,import,2010,Itapema,SC,1005038,383879
+cap03,import,2010,Criciúma,SC,473853,113788
+cap03,import,2010,Blumenau,SC,173851,70988
+cap03,import,2010,Balneário Camboriú,SC,72200,67000
+cap03,import,2010,Piçarras,SC,66243,22686
+cap03,import,2010,Joinville,SC,44975,27022
+1604-1605,export,2026,Itajaí,SC,9187320,2138748
+1604-1605,export,2026,Navegantes,SC,739682,151599
+1604-1605,export,2026,São Francisco do Sul,SC,22238,2992
+1604-1605,export,2026,Dionísio Cerqueira,SC,11339,1627
+1604-1605,export,2026,Blumenau,SC,222,20
+1604-1605,export,2026,Imbituba,SC,4,2
+1604-1605,export,2025,Itajaí,SC,14379009,3494562
+1604-1605,export,2025,Navegantes,SC,762152,162537
+1604-1605,export,2025,São Francisco do Sul,SC,35236,5134
+1604-1605,export,2025,Blumenau,SC,15625,2080
+1604-1605,export,2025,Imbituba,SC,114,64
+1604-1605,export,2024,Itajaí,SC,11001828,2461107
+1604-1605,export,2024,Navegantes,SC,912424,241242
+1604-1605,export,2024,São Francisco do Sul,SC,31077,3939
+1604-1605,export,2024,Florianópolis,SC,18408,896
+1604-1605,export,2024,Blumenau,SC,9457,1480
+1604-1605,export,2024,Imbituba,SC,108,144
+1604-1605,export,2023,Itajaí,SC,14693418,3433166
+1604-1605,export,2023,Navegantes,SC,1134854,232917
+1604-1605,export,2023,Jaguaruna,SC,30082,1018
+1604-1605,export,2023,São Francisco do Sul,SC,28864,4099
+1604-1605,export,2023,Blumenau,SC,10502,2154
+1604-1605,export,2023,Imbituba,SC,2444,189
+1604-1605,export,2022,Itajaí,SC,11361514,2827092
+1604-1605,export,2022,Navegantes,SC,655510,142510
+1604-1605,export,2022,São Francisco do Sul,SC,22244,3084
+1604-1605,export,2022,Blumenau,SC,8406,1365
+1604-1605,export,2022,Imbituba,SC,602,81
+1604-1605,export,2021,Itajaí,SC,8597306,2295103
+1604-1605,export,2021,Navegantes,SC,653296,162969
+1604-1605,export,2021,São Francisco do Sul,SC,16873,2442
+1604-1605,export,2021,Blumenau,SC,5632,921
+1604-1605,export,2021,Imbituba,SC,866,77
+1604-1605,export,2020,Itajaí,SC,6609094,1952757
+1604-1605,export,2020,Navegantes,SC,763291,210473
+1604-1605,export,2020,São Francisco do Sul,SC,12340,2880
+1604-1605,export,2020,Blumenau,SC,5010,944
+1604-1605,export,2020,Imbituba,SC,267,26
+1604-1605,export,2019,Itajaí,SC,6209153,1712400
+1604-1605,export,2019,Navegantes,SC,754369,179409
+1604-1605,export,2019,São Francisco do Sul,SC,7769,3577
+1604-1605,export,2019,Blumenau,SC,2342,516
+1604-1605,export,2019,Imbituba,SC,282,33
+1604-1605,export,2018,Itajaí,SC,6773075,1898552
+1604-1605,export,2018,Navegantes,SC,747508,161608
+1604-1605,export,2018,São Francisco do Sul,SC,2886,1600
+1604-1605,export,2018,Blumenau,SC,1621,388
+1604-1605,export,2018,Imbituba,SC,293,22
+1604-1605,export,2017,Itajaí,SC,10690945,2637141
+1604-1605,export,2017,Navegantes,SC,511346,115356
+1604-1605,export,2016,Itajaí,SC,10060108,2773162
+1604-1605,export,2016,Navegantes,SC,34200,9375
+1604-1605,export,2015,Itajaí,SC,11562105,3337840
+1604-1605,export,2015,Navegantes,SC,104240,21174
+1604-1605,export,2014,Itajaí,SC,12711336,3136441
+1604-1605,export,2014,Navegantes,SC,252618,57693
+1604-1605,export,2013,Itajaí,SC,13915073,3485080
+1604-1605,export,2013,Navegantes,SC,340115,70397
+1604-1605,export,2012,Itajaí,SC,16007431,4246101
+1604-1605,export,2012,Navegantes,SC,98953,18976
+1604-1605,export,2012,São José,SC,608,80
+1604-1605,export,2011,Itajaí,SC,12799783,3460859
+1604-1605,export,2011,Navegantes,SC,351900,72583
+1604-1605,export,2010,Itajaí,SC,10188704,3079715
+1604-1605,export,2010,Navegantes,SC,603328,130605
+1604-1605,import,2026,Itajaí,SC,20209070,6098043
+1604-1605,import,2026,Navegantes,SC,6475941,2129215
+1604-1605,import,2026,Camboriú,SC,422479,138980
+1604-1605,import,2026,Biguaçu,SC,290000,88440
+1604-1605,import,2026,Jaraguá do Sul,SC,254654,97216
+1604-1605,import,2026,Itapema,SC,229506,40318
+1604-1605,import,2026,Porto Belo,SC,144360,31715
+1604-1605,import,2026,Ilhota,SC,130501,30051
+1604-1605,import,2026,Florianópolis,SC,121552,43124
+1604-1605,import,2026,Joinville,SC,112509,32550
+1604-1605,import,2026,Criciúma,SC,80740,16788
+1604-1605,import,2026,Garuva,SC,71981,26003
+1604-1605,import,2026,Gaspar,SC,68040,21600
+1604-1605,import,2026,Blumenau,SC,47527,1424
+1604-1605,import,2026,São João do Itaperiú,SC,39532,26000
+1604-1605,import,2026,São Francisco do Sul,SC,25112,1586
+1604-1605,import,2025,Itajaí,SC,18130263,6040041
+1604-1605,import,2025,Navegantes,SC,6430787,2335689
+1604-1605,import,2025,Camboriú,SC,530017,184985
+1604-1605,import,2025,Jaraguá do Sul,SC,253410,106152
+1604-1605,import,2025,Balneário Camboriú,SC,191194,55765
+1604-1605,import,2025,Florianópolis,SC,189906,62167
+1604-1605,import,2025,Itapema,SC,137915,31686
+1604-1605,import,2025,Ilhota,SC,118755,32100
+1604-1605,import,2025,Biguaçu,SC,111000,37500
+1604-1605,import,2025,Criciúma,SC,109445,19750
+1604-1605,import,2025,Porto Belo,SC,107449,23092
+1604-1605,import,2025,Gaspar,SC,88866,39600
+1604-1605,import,2025,São João do Itaperiú,SC,43302,26000
+1604-1605,import,2025,Joinville,SC,5370,900
+1604-1605,import,2024,Itajaí,SC,23353494,7667628
+1604-1605,import,2024,Navegantes,SC,3226519,1246301
+1604-1605,import,2024,Camboriú,SC,755590,281677
+1604-1605,import,2024,Florianópolis,SC,428425,147100
+1604-1605,import,2024,Jaraguá do Sul,SC,345544,154688
+1604-1605,import,2024,Balneário Camboriú,SC,270350,89905
+1604-1605,import,2024,Itapema,SC,199952,62483
+1604-1605,import,2024,Gaspar,SC,138384,59400
+1604-1605,import,2024,Criciúma,SC,126419,31926
+1604-1605,import,2024,Porto Belo,SC,98513,19456
+1604-1605,import,2024,São João do Itaperiú,SC,95200,51000
+1604-1605,import,2024,Ilhota,SC,86567,37468
+1604-1605,import,2024,Dionísio Cerqueira,SC,52000,26000
+1604-1605,import,2024,Chapecó,SC,47129,10950
+1604-1605,import,2024,Blumenau,SC,25931,796
+1604-1605,import,2023,Itajaí,SC,10767689,4583218
+1604-1605,import,2023,Navegantes,SC,4055625,1529971
+1604-1605,import,2023,Camboriú,SC,511840,223493
+1604-1605,import,2023,Jaraguá do Sul,SC,365021,143799
+1604-1605,import,2023,Balneário Camboriú,SC,301678,97736
+1604-1605,import,2023,Itapema,SC,224139,60123
+1604-1605,import,2023,Florianópolis,SC,194584,63382
+1604-1605,import,2023,Porto Belo,SC,192592,38236
+1604-1605,import,2023,Gaspar,SC,149272,57000
+1604-1605,import,2023,Ilhota,SC,135251,41014
+1604-1605,import,2023,Criciúma,SC,70550,9620
+1604-1605,import,2023,Dionísio Cerqueira,SC,52000,26000
+1604-1605,import,2023,Blumenau,SC,27784,1040
+1604-1605,import,2023,Penha,SC,22396,12000
+1604-1605,import,2023,Palhoça,SC,20448,3607
+1604-1605,import,2022,Itajaí,SC,13205053,4721773
+1604-1605,import,2022,Navegantes,SC,3962931,1957800
+1604-1605,import,2022,Camboriú,SC,411510,116371
+1604-1605,import,2022,Florianópolis,SC,384127,94189
+1604-1605,import,2022,Balneário Camboriú,SC,283693,89116
+1604-1605,import,2022,Jaraguá do Sul,SC,259527,99502
+1604-1605,import,2022,Itapema,SC,198503,69563
+1604-1605,import,2022,Joinville,SC,145330,6984
+1604-1605,import,2022,Porto Belo,SC,108389,27271
+1604-1605,import,2022,Gaspar,SC,89685,36360
+1604-1605,import,2022,Criciúma,SC,87105,20089
+1604-1605,import,2022,Ilhota,SC,57525,18594
+1604-1605,import,2022,São Francisco do Sul,SC,42780,18302
+1604-1605,import,2021,Itajaí,SC,10316128,5261258
+1604-1605,import,2021,Navegantes,SC,5238002,2292853
+1604-1605,import,2021,Camboriú,SC,497324,175505
+1604-1605,import,2021,Jaraguá do Sul,SC,282882,130740
+1604-1605,import,2021,Itapema,SC,248042,77999
+1604-1605,import,2021,Balneário Camboriú,SC,212568,64314
+1604-1605,import,2021,Ilhota,SC,155650,56882
+1604-1605,import,2021,Florianópolis,SC,153199,48887
+1604-1605,import,2021,Porto Belo,SC,85061,19544
+1604-1605,import,2021,Gaspar,SC,53111,24000
+1604-1605,import,2021,Criciúma,SC,38983,7058
+1604-1605,import,2021,Joinville,SC,30032,1037
+1604-1605,import,2021,Palhoça,SC,15323,3240
+1604-1605,import,2020,Itajaí,SC,13461647,5536802
+1604-1605,import,2020,Navegantes,SC,4360465,1702158
+1604-1605,import,2020,Jaraguá do Sul,SC,325617,136166
+1604-1605,import,2020,Camboriú,SC,299803,99500
+1604-1605,import,2020,Palhoça,SC,265714,31116
+1604-1605,import,2020,Joinville,SC,217760,11400
+1604-1605,import,2020,Florianópolis,SC,160422,44458
+1604-1605,import,2020,Itapema,SC,145572,35238
+1604-1605,import,2020,Balneário Camboriú,SC,119613,32660
+1604-1605,import,2020,Ilhota,SC,107770,37985
+1604-1605,import,2020,Criciúma,SC,90242,22004
+1604-1605,import,2020,Porto Belo,SC,59426,18600
+1604-1605,import,2020,Gaspar,SC,57660,23980
+1604-1605,import,2019,Itajaí,SC,16615118,6150834
+1604-1605,import,2019,Navegantes,SC,5947255,1672318
+1604-1605,import,2019,Camboriú,SC,419320,141180
+1604-1605,import,2019,Palhoça,SC,331886,70314
+1604-1605,import,2019,Jaraguá do Sul,SC,272785,112814
+1604-1605,import,2019,Itapema,SC,201780,46505
+1604-1605,import,2019,Florianópolis,SC,197917,56535
+1604-1605,import,2019,Brusque,SC,164587,48960
+1604-1605,import,2019,Criciúma,SC,109491,27120
+1604-1605,import,2019,Gaspar,SC,27000,13000
+1604-1605,import,2018,Itajaí,SC,28478275,8441731
+1604-1605,import,2018,Navegantes,SC,11087858,2689195
+1604-1605,import,2018,Florianópolis,SC,687001,119934
+1604-1605,import,2018,Camboriú,SC,646591,179725
+1604-1605,import,2018,Palhoça,SC,393711,114240
+1604-1605,import,2018,Jaraguá do Sul,SC,370138,122873
+1604-1605,import,2018,Porto Belo,SC,191681,40148
+1604-1605,import,2018,Itapema,SC,157461,39142
+1604-1605,import,2018,Ilhota,SC,85000,40000
+1604-1605,import,2018,Criciúma,SC,81705,21288
+1604-1605,import,2018,Gaspar,SC,40475,16500
+1604-1605,import,2017,Itajaí,SC,20869796,7881988
+1604-1605,import,2017,Navegantes,SC,11041861,3186867
+1604-1605,import,2017,Palhoça,SC,503019,195840
+1604-1605,import,2017,Florianópolis,SC,438842,134357
+1604-1605,import,2017,Camboriú,SC,404017,126320
+1604-1605,import,2017,Porto Belo,SC,333385,81402
+1604-1605,import,2017,Jaraguá do Sul,SC,301866,106376
+1604-1605,import,2017,São Francisco do Sul,SC,287902,77079
+1604-1605,import,2017,Blumenau,SC,254756,92200
+1604-1605,import,2017,Itapema,SC,164917,49480
+1604-1605,import,2017,Criciúma,SC,72639,22100
+1604-1605,import,2017,Gaspar,SC,6200,2000
+1604-1605,import,2016,Itajaí,SC,31623044,11475673
+1604-1605,import,2016,Navegantes,SC,6140471,1808605
+1604-1605,import,2016,São Francisco do Sul,SC,815579,202953
+1604-1605,import,2016,Jaraguá do Sul,SC,412206,131828
+1604-1605,import,2016,Camboriú,SC,403878,127370
+1604-1605,import,2016,Ilhota,SC,391037,158625
+1604-1605,import,2016,Florianópolis,SC,155449,51605
+1604-1605,import,2016,Blumenau,SC,147284,57240
+1604-1605,import,2016,Palhoça,SC,116285,48960
+1604-1605,import,2016,Porto Belo,SC,82846,22578
+1604-1605,import,2016,Criciúma,SC,57967,20449
+1604-1605,import,2016,Itapema,SC,53436,12685
+1604-1605,import,2015,Itajaí,SC,34737069,12223513
+1604-1605,import,2015,Navegantes,SC,9153422,2992539
+1604-1605,import,2015,São Francisco do Sul,SC,1398516,379898
+1604-1605,import,2015,Ilhota,SC,734122,272645
+1604-1605,import,2015,Itapema,SC,326436,83226
+1604-1605,import,2015,Jaraguá do Sul,SC,306496,101992
+1604-1605,import,2015,Camboriú,SC,262945,96240
+1604-1605,import,2015,Palhoça,SC,194090,86904
+1604-1605,import,2015,Fraiburgo,SC,139816,81600
+1604-1605,import,2015,Porto Belo,SC,133372,29164
+1604-1605,import,2015,Indaial,SC,97291,32166
+1604-1605,import,2015,Blumenau,SC,96384,32000
+1604-1605,import,2015,Içara,SC,45042,16080
+1604-1605,import,2015,Criciúma,SC,32005,6056
+1604-1605,import,2014,Itajaí,SC,48376951,14479531
+1604-1605,import,2014,Navegantes,SC,12446361,3358753
+1604-1605,import,2014,São Francisco do Sul,SC,3160421,794355
+1604-1605,import,2014,Blumenau,SC,2763122,831317
+1604-1605,import,2014,Ilhota,SC,327390,109997
+1604-1605,import,2014,Fraiburgo,SC,262069,81600
+1604-1605,import,2014,Camboriú,SC,231853,88200
+1604-1605,import,2014,Jaraguá do Sul,SC,215219,73390
+1604-1605,import,2014,Porto Belo,SC,162582,25782
+1604-1605,import,2014,Florianópolis,SC,79853,24500
+1604-1605,import,2014,Palhoça,SC,53062,16320
+1604-1605,import,2014,Indaial,SC,51941,15846
+1604-1605,import,2014,Itapema,SC,34200,12000
+1604-1605,import,2014,Ituporanga,SC,32091,10648
+1604-1605,import,2014,Criciúma,SC,10331,1800
+1604-1605,import,2014,Joinville,SC,3850,630
+1604-1605,import,2013,Itajaí,SC,70483652,21958560
+1604-1605,import,2013,Navegantes,SC,4094706,1474403
+1604-1605,import,2013,São Francisco do Sul,SC,2118055,559510
+1604-1605,import,2013,Fraiburgo,SC,965335,345465
+1604-1605,import,2013,Blumenau,SC,606606,179299
+1604-1605,import,2013,Ilhota,SC,417343,160224
+1604-1605,import,2013,Porto Belo,SC,384061,75807
+1604-1605,import,2013,Itapema,SC,126618,40600
+1604-1605,import,2013,Palhoça,SC,110025,12943
+1604-1605,import,2013,Jaraguá do Sul,SC,84775,28100
+1604-1605,import,2013,Joinville,SC,73890,24000
+1604-1605,import,2013,Balneário Camboriú,SC,36244,17692
+1604-1605,import,2013,Florianópolis,SC,35012,11260
+1604-1605,import,2013,Camboriú,SC,14500,5000
+1604-1605,import,2012,Itajaí,SC,40148605,13814046
+1604-1605,import,2012,Navegantes,SC,3424825,1306324
+1604-1605,import,2012,Fraiburgo,SC,953280,412117
+1604-1605,import,2012,Florianópolis,SC,637583,200755
+1604-1605,import,2012,Palhoça,SC,610019,71917
+1604-1605,import,2012,Balneário Camboriú,SC,518066,199581
+1604-1605,import,2012,São Francisco do Sul,SC,372256,128763
+1604-1605,import,2012,Porto Belo,SC,147531,32069
+1604-1605,import,2012,Itapema,SC,72186,10895
+1604-1605,import,2012,Jaraguá do Sul,SC,70941,20540
+1604-1605,import,2012,Blumenau,SC,63204,10080
+1604-1605,import,2012,Ilhota,SC,53801,22000
+1604-1605,import,2012,Joinville,SC,25145,33
+1604-1605,import,2011,Itajaí,SC,19177663,6547574
+1604-1605,import,2011,Navegantes,SC,3486245,1445580
+1604-1605,import,2011,Fraiburgo,SC,1258439,553025
+1604-1605,import,2011,Balneário Camboriú,SC,1035290,380462
+1604-1605,import,2011,Pomerode,SC,447083,144960
+1604-1605,import,2011,Florianópolis,SC,276893,96754
+1604-1605,import,2011,Ilhota,SC,59800,23000
+1604-1605,import,2011,Blumenau,SC,47643,7171
+1604-1605,import,2011,Jaraguá do Sul,SC,47400,12000
+1604-1605,import,2011,Porto Belo,SC,47166,16157
+1604-1605,import,2010,Itajaí,SC,12453386,4758682
+1604-1605,import,2010,Navegantes,SC,2570845,1005506
+1604-1605,import,2010,Fraiburgo,SC,406312,179965
+1604-1605,import,2010,Balneário Camboriú,SC,347130,115356
+1604-1605,import,2010,Pomerode,SC,179118,49990
+1604-1605,import,2010,Itapema,SC,45000,15000
+1604-1605,import,2010,Florianópolis,SC,35732,9820
+1604-1605,import,2010,Blumenau,SC,30279,5137
+1604-1605,import,2010,Ilhota,SC,17700,6000
