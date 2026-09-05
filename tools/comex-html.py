@@ -150,10 +150,10 @@ put('h1', h1_html)
 # tile e guia de Itajai: acumulado do ano
 v = pct(it1, it0)
 t, n = re.subn(r'<div class="tile" id="tile-itajai"><div class="n">[^<]*</div><div class="l"[^>]*>[^<]*</div>(?:<div class="s"[^>]*>[^<]*</div>)?</div>',
-               f'<div class="tile" id="tile-itajai"><div class="n">{usd(it1)}</div><div class="l" data-en="exported by Itajaí in boats from January to {MES_EN[M]} {Y} ({fmtpct(v)}), national leader">exportados por Itajaí em embarcações de janeiro a {MES[M]} de {Y} ({fmtpct(v)}), líder nacional</div></div>', t, count=1)
+               f'<div class="tile" id="tile-itajai"><div class="n">{usd(it1)}</div><div class="l" data-en="exported by Itajaí in boats from January to {MES_EN[M]} {Y}, national leader">exportados por Itajaí em embarcações de janeiro a {MES[M]} de {Y}, líder nacional</div></div>', t, count=1)
 print('  tile itajai:', n)
 t, n = re.subn(r'<li data-en="<b>Itajaí is the country\'s top boat-exporting city</b>[^"]*"><b>Itajaí é a cidade que mais exporta barcos no país</b>[^<]*<a href="#comex">ver &darr;</a></li>',
-               f'<li data-en="<b>Itajaí is the country\'s top boat-exporting city</b>: {usd_en(it1)} from January to {MES_EN[M]} {Y}, {fmtpct(v)}. <a href=&quot;#comex&quot;>see &darr;</a>"><b>Itajaí é a cidade que mais exporta barcos no país</b>: {usd(it1).replace(" mi", " milhões")} de janeiro a {MES[M]} de {Y}, {fmtpct(v)}. <a href="#comex">ver &darr;</a></li>', t, count=1)
+               f'<li data-en="<b>Itajaí is the country\'s top boat-exporting city</b>: {usd_en(it1)} from January to {MES_EN[M]} {Y}. <a href=&quot;#comex&quot;>see &darr;</a>"><b>Itajaí é a cidade que mais exporta barcos no país</b>: {usd(it1).replace(" mi", " milhões")} de janeiro a {MES[M]} de {Y}. <a href="#comex">ver &darr;</a></li>', t, count=1)
 print('  guia itajai:', n)
 
 # ---------- pesca (SC): tabela propria ----------
@@ -184,10 +184,10 @@ for key, uf in [('sp', 'SP'), ('rj', 'RJ'), ('sc', 'SC'), ('pr', 'PR'), ('rs', '
 
 # ---------- FAQ cidade lider ----------
 t, n = re.subn(r'Itajaí \(SC\): US\$ [^<"]*? no 1º semestre de \d{4}, alta de \d+%, líder nacional\.',
-               f'Itajaí (SC): {usd(it1).replace(" mi", " milhões")} de janeiro a {MES[M]} de {Y}, {"alta" if (v or 0) >= 0 else "queda"} de {abs(v or 0)}%, líder nacional.', t)
+               f'Itajaí (SC): {usd(it1).replace(" mi", " milhões")} de janeiro a {MES[M]} de {Y}, líder nacional.', t)
 print('  faq itajai pt:', n)
 t, n = re.subn(r'Itajaí \(SC\): US\$ [^<"]*? (?:in H1|from January to \w+) \d{4}, (?:up|down) \d+%, national leader\.',
-               f'Itajaí (SC): {usd_en(it1)} from January to {MES_EN[M]} {Y}, {"up" if (v or 0) >= 0 else "down"} {abs(v or 0)}%, national leader.', t)
+               f'Itajaí (SC): {usd_en(it1)} from January to {MES_EN[M]} {Y}, national leader.', t)
 print('  faq itajai en:', n)
 for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>', t, flags=re.S):
     json.loads(x)
