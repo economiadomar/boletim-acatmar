@@ -108,7 +108,7 @@ def painel(key, cfg):
          kpi(n(ind1['vinculos']), f'empregos formais na indústria náutica ({A1})', f'formal jobs in the nautical industry ({A1})', f'RAIS {A1}, extração ACATMAR', f'RAIS {A1}, ACATMAR extraction'),
          kpi(usd(ex[YC]), f'exportados em embarcações em {YC}' + (f', {rk}º do país' if rk else ', sem exportações'), f'boat exports in {YC}' + (f', {rk}th in the country' if rk else ', no exports'), 'Comex Stat / MDIC, extração ACATMAR', 'Comex Stat / MDIC, ACATMAR extraction')]
     if emp is not None:
-        k.append(kpi(n(emp), 'empresas náuticas ativas (CNAE principal)', 'active nautical companies (main CNAE)', f'Receita Federal, {CNPJ["pasta"]}, extração ACATMAR', f'Federal Revenue, {CNPJ["pasta"]}, ACATMAR extraction'))
+        k.append(kpi(n(emp), 'empresas náuticas ativas', 'active nautical companies', f'Receita Federal, {CNPJ["pasta"]}, extração ACATMAR', f'Federal Revenue, {CNPJ["pasta"]}, ACATMAR extraction'))
     if cfg.get('extra_kpi'):
         e = cfg['extra_kpi']; k.append(kpi(e['n'], e['l'], e['l_en'], e['s'], e['s_en']))
     kpis = '<div class="kpis">' + ''.join(k) + '</div>'
