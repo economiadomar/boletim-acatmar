@@ -136,7 +136,7 @@ def painel(key, cfg):
     xr += f'<tr><td>{Y} (jan a {MES[M][:3]})</td><td class="v">{usd(ex_cur) if ex_cur else "-"}</td><td class="v"></td><td class="v"></td></tr>'
     if zeros:
         xr += f'<tr><td colspan="4" class="mini" data-en="No exports recorded in {", ".join(zeros)}.">Sem exportações registradas em {", ".join(zeros)}.</td></tr>'
-    muns = sorted(((v, m) for m, v in mun_uf[uf].items() if v > 0), reverse=True)[:5]
+    muns = sorted(((v, m) for m, v in mun_uf[uf].items() if v >= 1_000_000 or (ex[YC] and v >= 0.05 * ex[YC])), reverse=True)[:4]
     mtxt = ' · '.join(f'{m} {usd(v)}' for v, m in muns)
     xb = (f'<div class="ufbox"><h3 data-en="Boat exports (heading 8903)">Exportações de embarcações (posição 8903)</h3><table><tr><th data-en="Year">Ano</th><th>US$ FOB</th><th data-en="Share of Brazil">Parte do Brasil</th><th data-en="Rank">Posição</th></tr>{xr}</table>'
           + (f'<p class="mini" data-en="{YC}, by municipality: {mtxt}">{YC}, por município: {mtxt}</p>' if muns else '')

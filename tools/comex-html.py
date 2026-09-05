@@ -95,69 +95,78 @@ def mun_of_uf(uf, year, n=3):
     return [x for x in lst if x['municipio'].endswith('- ' + uf)][:n]
 
 
-# ---------- serie anual (SC) ----------
+# ---------- serie anual (SC), 2014 em diante ----------
 rows = ''
 for s in serie:
-    if not s['exp_br']:
+    if s['ano'] < 2014 or not s['exp_br']:
         continue
-    rk = ' · '.join(f"{r['uf']} {usd(r['fob'])}" for r in s['ranking_exp'][:3])
-    rows += f'      <tr><td>{s["ano"]}</td><td class="v">{usd(s["exp_sc"])}</td><td class="v">{usd(s["exp_br"])}</td><td class="v">{str(s["part_sc"]).replace(".", ",")}%</td><td>{rk}</td></tr>\n'
-serie_html = ('\n    <div class="tw"><table>\n      <tr><th data-en="Year">Ano</th><th data-en="SC exports">Exportações de SC</th><th data-en="Brazil exports">Exportações do Brasil</th><th data-en="SC share">Participação de SC</th><th data-en="Top 3 states">Três maiores exportadores</th></tr>\n'
-              + rows + f'    </table></div>\n    <div class="src" data-en="Source: Comex Stat/MDIC, heading 8903 (yachts and other vessels for pleasure or sports), US$ FOB. Extracted by ACATMAR from the ministry\'s public API on {GER}; {Y} covers January to {MES_EN[M]}.">Fonte: Comex Stat/MDIC, posição 8903 (iates e outros barcos e embarcações de recreio ou esporte), US$ FOB. Extração ACATMAR da API pública do ministério em {GER}; {Y} cobre janeiro a {MES[M]}.</div>\n')
-# municipios SC e paises e NCM do ultimo ano completo
+    rows += f'      <tr><td>{s["ano"]}</td><td class="v">{usd(s["exp_sc"])}</td><td class="v">{usd(s["exp_br"])}</td><td class="v">{str(s["part_sc"]).replace(".", ",")}%</td></tr>\n'
+serie_html = ('\n    <div class="tw"><table>\n      <tr><th data-en="Year">Ano</th><th data-en="Santa Catarina">Santa Catarina</th><th data-en="Brazil">Brasil</th><th data-en="SC share">Participação de SC</th></tr>\n' + rows + '    </table></div>\n')
 YC = Y - 1
-msc = B['municipios_sc'].get(str(YC), [])
-psc = B['paises_sc'].get(str(YC), [])
-nsc = sorted(B['ncm_sc'].get(str(YC), []), key=lambda x: -x['fob'])
-tot_units = sum(x['unidades'] for x in nsc)
-ncm_rows = ''.join(f'      <tr><td>{x["ncm"][:4]}.{x["ncm"][4:6]}.{x["ncm"][6:]}</td><td>{x["desc"]}</td><td class="v">{x["unidades"]}</td><td class="v">{usd(x["fob"])}</td></tr>\n' for x in nsc if x['fob'] > 0)
-serie_html += (f'    <h3 data-en="{YC}: what Santa Catarina exported, by product code (NCM)" style="margin-top:1.2rem">{YC}: o que Santa Catarina exportou, por código de produto (NCM)</h3>\n'
-               f'    <div class="tw"><table>\n      <tr><th>NCM</th><th data-en="Description">Descrição</th><th data-en="Units">Unidades</th><th>US$ FOB</th></tr>\n{ncm_rows}'
-               f'      <tr><td></td><td><b data-en="Total">Total</b></td><td class="v"><b>{tot_units}</b></td><td class="v"><b>{usd(sum(x["fob"] for x in nsc))}</b></td></tr>\n    </table></div>\n'
-               f'    <div class="src" data-en="Units are the statistical quantity reported to Comex Stat (number of boats). Extracted by ACATMAR.">Unidades são a quantidade estatística informada ao Comex Stat (número de barcos). Extração ACATMAR.</div>\n'
-               f'    <div class="tw" style="margin-top:1rem"><table>\n      <tr><th data-en="{YC}, by municipality">{YC}, por município de SC</th><th>US$ FOB</th><th data-en="{YC}, by destination">{YC}, por destino</th><th>US$ FOB</th></tr>\n')
-for i in range(max(len(msc[:6]), len(psc[:6]))):
-    a = msc[i] if i < len(msc[:6]) else None
-    b = psc[i] if i < len(psc[:6]) else None
-    serie_html += f'      <tr><td>{a["municipio"].replace(" - SC", "") if a else ""}</td><td class="v">{usd(a["fob"]) if a else ""}</td><td>{b["pais"] if b else ""}</td><td class="v">{usd(b["fob"]) + (" (" + str(b["unidades"]) + " un)" if b and b["unidades"] else "") if b else ""}</td></tr>\n'
-serie_html += '    </table></div>\n'
+tot_sc = next((s['exp_sc'] for s in serie if s['ano'] == YC), 0)
+def top(lst, key, tot, minimo=1_000_000, frac=0.05, n=5):
+    return [x for x in sorted(lst, key=lambda x: -x['fob']) if x['fob'] >= minimo or (tot and x['fob'] >= frac * tot)][:n]
+msc = top(B['municipios_sc'].get(str(YC), []), 'municipio', tot_sc)
+psc = top(B['paises_sc'].get(str(YC), []), 'pais', tot_sc)
+# NCM agrupado em cinco linhas
+nsc = B['ncm_sc'].get(str(YC), [])
+GRUPOS = [('Lanchas de 7,5 a 24 m', 'Motorboats 7.5 to 24 m', ['89033200']), ('Lanchas e iates acima de 24 m', 'Motorboats and yachts over 24 m', ['89033300']), ('Lanchas até 7,5 m', 'Motorboats up to 7.5 m', ['89033100']), ('Veleiros', 'Sailboats', ['89039100', '89032100', '89032200', '89032300']), ('Infláveis', 'Inflatables', ['89031000', '89031100', '89031200', '89031900'])]
+usados = set(); grows = ''
+for pt, en, codes in GRUPOS:
+    v = sum(x['fob'] for x in nsc if x['ncm'] in codes); u = sum(x['unidades'] for x in nsc if x['ncm'] in codes); usados |= set(codes)
+    if v:
+        grows += f'      <tr><td data-en="{en}">{pt}</td><td class="v">{u}</td><td class="v">{usd(v)}</td></tr>\n'
+v = sum(x['fob'] for x in nsc if x['ncm'] not in usados); u = sum(x['unidades'] for x in nsc if x['ncm'] not in usados)
+if v:
+    grows += f'      <tr><td data-en="Other recreational boats (jet skis, canoes, others)">Outras embarcações de recreio (motos aquáticas, canoas, outras)</td><td class="v">{u}</td><td class="v">{usd(v)}</td></tr>\n'
+tot_u = sum(x['unidades'] for x in nsc)
+serie_html += (f'    <h3 data-en="{YC}: what Santa Catarina exported" style="margin-top:1.2rem">{YC}: o que Santa Catarina exportou</h3>\n'
+               f'    <div class="tw"><table>\n      <tr><th data-en="Type">Tipo</th><th data-en="Boats">Barcos</th><th>US$ FOB</th></tr>\n{grows}'
+               f'      <tr><td><b data-en="Total">Total</b></td><td class="v"><b>{tot_u}</b></td><td class="v"><b>{usd(tot_sc)}</b></td></tr>\n    </table></div>\n')
+if msc:
+    serie_html += f'    <p class="mini" data-en="{YC}, by municipality: ' + ' · '.join(f"{x['municipio'].replace(' - SC', '')} {usd_en(x['fob'])}" for x in msc) + f'.">Por município em {YC}: ' + ' · '.join(f"{x['municipio'].replace(' - SC', '')} {usd(x['fob'])}" for x in msc) + '.</p>\n'
+if psc:
+    serie_html += f'    <p class="mini" data-en="{YC}, by destination: ' + ' · '.join(f"{x['pais']} {usd_en(x['fob'])}" + (f" ({x['unidades']} boats)" if x['unidades'] else '') for x in psc) + f'.">Por destino em {YC}: ' + ' · '.join(f"{x['pais']} {usd(x['fob'])}" + (f" ({x['unidades']} barcos)" if x['unidades'] else '') for x in psc) + '.</p>\n'
 put('serie', serie_html)
 
-# ---------- semestre / acumulado do ano corrente ----------
-h = sem['h1']; ac = sem['acumulado_ate_mes']
-h1_html = (f'\n    <h3 data-en="{Y} so far: January to {MES_EN[M]}, against the same months of {Y-1}" style="margin-top:1.2rem">{Y} até agora: janeiro a {MES[M]}, contra os mesmos meses de {Y-1}</h3>\n'
-           f'    <div class="tw"><table>\n      <tr><th data-en="Indicator">Indicador</th><th>{Y-1}</th><th>{Y}</th><th data-en="Change">Variação</th></tr>\n'
-           f'      <tr><td data-en="Brazil, boat exports (8903), Jan to {MES_EN[M]}">Brasil, exportações de embarcações (8903), jan a {MES[M][:3]}</td><td class="v">{usd(ac["br"][0])}</td><td class="v">{usd(ac["br"][1])}</td><td class="v">{fmtpct(pct(ac["br"][1], ac["br"][0]))}</td></tr>\n'
-           f'      <tr><td data-en="Santa Catarina, Jan to {MES_EN[M]}">Santa Catarina, jan a {MES[M][:3]}</td><td class="v">{usd(ac["sc"][0])}</td><td class="v">{usd(ac["sc"][1])}</td><td class="v">{fmtpct(pct(ac["sc"][1], ac["sc"][0]))}</td></tr>\n'
-           f'      <tr><td data-en="Brazil, first half">Brasil, 1º semestre</td><td class="v">{usd(h["br"][0])}</td><td class="v">{usd(h["br"][1])}</td><td class="v">{fmtpct(pct(h["br"][1], h["br"][0]))}</td></tr>\n'
-           f'      <tr><td data-en="Santa Catarina, first half">Santa Catarina, 1º semestre</td><td class="v">{usd(h["sc"][0])}</td><td class="v">{usd(h["sc"][1])}</td><td class="v">{fmtpct(pct(h["sc"][1], h["sc"][0]))}</td></tr>\n'
-           f'      <tr><td data-en="Itajaí, first half">Itajaí, 1º semestre</td><td class="v">{usd(h["itajai"][0])}</td><td class="v">{usd(h["itajai"][1])}</td><td class="v">{fmtpct(pct(h["itajai"][1], h["itajai"][0]))}</td></tr>\n'
-           f'      <tr><td data-en="Palhoça, first half">Palhoça, 1º semestre</td><td class="v">{usd(h["palhoca"][0])}</td><td class="v">{usd(h["palhoca"][1])}</td><td class="v">{fmtpct(pct(h["palhoca"][1], h["palhoca"][0]))}</td></tr>\n'
-           f'    </table></div>\n    <div class="src" data-en="Source: Comex Stat/MDIC, monthly data, heading 8903, US$ FOB. Extracted by ACATMAR on {GER}.">Fonte: Comex Stat/MDIC, dados mensais, posição 8903, US$ FOB. Extração ACATMAR em {GER}.</div>\n')
+# ---------- ano corrente: um periodo so (janeiro ao ultimo mes divulgado) ----------
+import csv as _csv
+ac = sem['acumulado_ate_mes']
+def acum_mun(nome, ano):
+    s = 0
+    for r in _csv.DictReader(open(os.path.join(ROOT, 'data', 'comex', 'embarcacoes_mensal_municipio.csv'), encoding='utf-8')):
+        if r['flow'] == 'export' and int(r['year']) == ano and int(r['monthNumber']) <= M and r['municipio'] == nome and r['uf'] == 'SC':
+            s += int(float(r['metricFOB'] or 0))
+    return s
+it0, it1 = acum_mun('Itajaí', Y - 1), acum_mun('Itajaí', Y)
+pa0, pa1 = acum_mun('Palhoça', Y - 1), acum_mun('Palhoça', Y)
+h1_html = (f'\n    <h3 data-en="{Y}, January to {MES_EN[M]}, against the same months of {Y-1}" style="margin-top:1.2rem">{Y}, janeiro a {MES[M]}, contra os mesmos meses de {Y-1}</h3>\n'
+           f'    <div class="tw"><table>\n      <tr><th></th><th>{Y-1}</th><th>{Y}</th><th data-en="Change">Variação</th></tr>\n'
+           f'      <tr><td data-en="Brazil">Brasil</td><td class="v">{usd(ac["br"][0])}</td><td class="v">{usd(ac["br"][1])}</td><td class="v">{fmtpct(pct(ac["br"][1], ac["br"][0]))}</td></tr>\n'
+           f'      <tr><td data-en="Santa Catarina">Santa Catarina</td><td class="v">{usd(ac["sc"][0])}</td><td class="v">{usd(ac["sc"][1])}</td><td class="v">{fmtpct(pct(ac["sc"][1], ac["sc"][0]))}</td></tr>\n'
+           f'      <tr><td>Itajaí</td><td class="v">{usd(it0)}</td><td class="v">{usd(it1)}</td><td class="v">{fmtpct(pct(it1, it0))}</td></tr>\n'
+           f'      <tr><td>Palhoça</td><td class="v">{usd(pa0)}</td><td class="v">{usd(pa1)}</td><td class="v">{fmtpct(pct(pa1, pa0))}</td></tr>\n    </table></div>\n')
 put('h1', h1_html)
-
-# tile e guia de Itajai (1o semestre)
-it0, it1 = h['itajai']
+# tile e guia de Itajai: acumulado do ano
 v = pct(it1, it0)
 t, n = re.subn(r'<div class="tile" id="tile-itajai"><div class="n">[^<]*</div><div class="l"[^>]*>[^<]*</div>(?:<div class="s"[^>]*>[^<]*</div>)?</div>',
-               f'<div class="tile" id="tile-itajai"><div class="n">{usd(it1)}</div><div class="l" data-en="exported by Itajaí in boats in the first half of {Y} ({fmtpct(v)}), national leader">exportados por Itajaí em embarcações no 1º semestre de {Y} ({fmtpct(v)}), líder nacional</div></div>', t, count=1)
+               f'<div class="tile" id="tile-itajai"><div class="n">{usd(it1)}</div><div class="l" data-en="exported by Itajaí in boats from January to {MES_EN[M]} {Y} ({fmtpct(v)}), national leader">exportados por Itajaí em embarcações de janeiro a {MES[M]} de {Y} ({fmtpct(v)}), líder nacional</div></div>', t, count=1)
 print('  tile itajai:', n)
 t, n = re.subn(r'<li data-en="<b>Itajaí is the country\'s top boat-exporting city</b>[^"]*"><b>Itajaí é a cidade que mais exporta barcos no país</b>[^<]*<a href="#comex">ver &darr;</a></li>',
-               f'<li data-en="<b>Itajaí is the country\'s top boat-exporting city</b>: {usd_en(it1)} in the first half of {Y}, {fmtpct(v)}. <a href=&quot;#comex&quot;>see &darr;</a>"><b>Itajaí é a cidade que mais exporta barcos no país</b>: {usd(it1).replace(" mi", " milhões")} no 1º semestre de {Y}, {fmtpct(v)}. <a href="#comex">ver &darr;</a></li>', t, count=1)
+               f'<li data-en="<b>Itajaí is the country\'s top boat-exporting city</b>: {usd_en(it1)} from January to {MES_EN[M]} {Y}, {fmtpct(v)}. <a href=&quot;#comex&quot;>see &darr;</a>"><b>Itajaí é a cidade que mais exporta barcos no país</b>: {usd(it1).replace(" mi", " milhões")} de janeiro a {MES[M]} de {Y}, {fmtpct(v)}. <a href="#comex">ver &darr;</a></li>', t, count=1)
 print('  guia itajai:', n)
 
-# ---------- pesca (SC), serie ----------
+# ---------- pesca (SC): tabela propria ----------
 ps = F['serie_anual']
 pr = ''
-for s in ps[-6:]:
+for s in ps[-5:]:
     if not s['exp_br']:
         continue
-    rk = ' · '.join(f"{r['uf']} {usd(r['fob'])}" for r in s['ranking_exp'][:3])
-    pr += f'      <tr><td>{s["ano"]}</td><td class="v">{usd(s["exp_sc"])}</td><td class="v">{str(s["part_sc"]).replace(".", ",")}%</td><td class="v">{usd(s["imp_sc"])}</td><td>{rk}</td></tr>\n'
-pmun = F['municipios_sc'].get(str(YC), [])[:4]
-pesca_html = ('<tr><td colspan="3"><b data-en="Foreign trade in fish and seafood (chapter 03 plus headings 1604 and 1605)">Comércio exterior de pescado (capítulo 03 mais posições 1604 e 1605)</b></td></tr>\n'
-              '      <tr><td colspan="3"><div class="tw"><table>\n      <tr><th data-en="Year">Ano</th><th data-en="SC exports">Exportações de SC</th><th data-en="SC share of Brazil">Participação no Brasil</th><th data-en="SC imports">Importações de SC</th><th data-en="Top 3 exporting states">Três maiores exportadores</th></tr>\n' + pr + '    </table></div></td></tr>\n'
-              + f'      <tr><td data-en="{YC}, SC seafood exports by municipality">{YC}, exportações de pescado de SC por município</td><td class="v">{usd(pmun[0]["fob"]) if pmun else "-"}</td><td>' + ' · '.join(f'{x["municipio"].replace(" - SC", "")} {usd(x["fob"])}' for x in pmun) + '</td></tr>')
+    pr += f'      <tr><td>{s["ano"]}</td><td class="v">{usd(s["exp_sc"])}</td><td class="v">{str(s["part_sc"]).replace(".", ",")}%</td><td class="v">{usd(s["imp_sc"])}</td></tr>\n'
+pmun = top(F['municipios_sc'].get(str(YC), []), 'municipio', sum(x['fob'] for x in F['municipios_sc'].get(str(YC), [])), n=3)
+pesca_html = (f'\n    <h3 data-en="Foreign trade in fish and seafood (chapter 03 plus headings 1604 and 1605)" style="margin-top:1.2rem">Comércio exterior de pescado (capítulo 03 mais posições 1604 e 1605)</h3>\n'
+              f'    <div class="tw"><table>\n      <tr><th data-en="Year">Ano</th><th data-en="SC exports">Exportações de SC</th><th data-en="Share of Brazil">Parte do Brasil</th><th data-en="SC imports">Importações de SC</th></tr>\n{pr}    </table></div>\n'
+              + (f'    <p class="mini" data-en="{YC}, exports by municipality: ' + ' · '.join(f"{x['municipio'].replace(' - SC', '')} {usd_en(x['fob'])}" for x in pmun) + f'.">Exportações por município em {YC}: ' + ' · '.join(f"{x['municipio'].replace(' - SC', '')} {usd(x['fob'])}" for x in pmun) + '.</p>\n' if pmun else ''))
 put('pesca', pesca_html)
 
 # ---------- cards por UF ----------
@@ -165,7 +174,7 @@ for key, uf in [('sp', 'SP'), ('rj', 'RJ'), ('sc', 'SC'), ('pr', 'PR'), ('rs', '
     v_prev = uf_val(uf, YC); r_prev, n_uf = uf_rank(uf, YC)
     v_cur = uf_val(uf, Y)
     v_imp = uf_val(uf, YC, 'import')
-    muns = mun_of_uf(uf, YC)
+    muns = [m for m in mun_of_uf(uf, YC) if m['fob'] >= 1_000_000 or (v_prev and m['fob'] >= 0.05 * v_prev)]
     ordinal = f'{r_prev}º' if r_prev else 'sem exportações'
     ordinal_en = (f'{r_prev}th' if r_prev not in (1, 2, 3) else {1: '1st', 2: '2nd', 3: '3rd'}[r_prev]) if r_prev else 'no exports'
     mtxt = (' · ' + ' · '.join(f'{m["municipio"].replace(" - " + uf, "")} {usd(m["fob"])}' for m in muns)) if muns else ''
@@ -175,10 +184,10 @@ for key, uf in [('sp', 'SP'), ('rj', 'RJ'), ('sc', 'SC'), ('pr', 'PR'), ('rs', '
 
 # ---------- FAQ cidade lider ----------
 t, n = re.subn(r'Itajaí \(SC\): US\$ [^<"]*? no 1º semestre de \d{4}, alta de \d+%, líder nacional\.',
-               f'Itajaí (SC): {usd(it1).replace(" mi", " milhões")} no 1º semestre de {Y}, {"alta" if (v or 0) >= 0 else "queda"} de {abs(v or 0)}%, líder nacional.', t)
+               f'Itajaí (SC): {usd(it1).replace(" mi", " milhões")} de janeiro a {MES[M]} de {Y}, {"alta" if (v or 0) >= 0 else "queda"} de {abs(v or 0)}%, líder nacional.', t)
 print('  faq itajai pt:', n)
-t, n = re.subn(r'Itajaí \(SC\): US\$ [^<"]*? in H1 \d{4}, up \d+%, national leader\.',
-               f'Itajaí (SC): {usd_en(it1)} in H1 {Y}, {"up" if (v or 0) >= 0 else "down"} {abs(v or 0)}%, national leader.', t)
+t, n = re.subn(r'Itajaí \(SC\): US\$ [^<"]*? (?:in H1|from January to \w+) \d{4}, (?:up|down) \d+%, national leader\.',
+               f'Itajaí (SC): {usd_en(it1)} from January to {MES_EN[M]} {Y}, {"up" if (v or 0) >= 0 else "down"} {abs(v or 0)}%, national leader.', t)
 print('  faq itajai en:', n)
 for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>', t, flags=re.S):
     json.loads(x)
