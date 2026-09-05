@@ -3,23 +3,23 @@
  "definicao": {
   "3012100": {
    "descricao": "Construção de embarcações para esporte e lazer",
-   "grupo": "Indústria náutica"
+   "grupo": "Construção de embarcações"
   },
   "3011302": {
    "descricao": "Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",
-   "grupo": "Indústria náutica"
+   "grupo": "Construção de embarcações"
+  },
+  "3011301": {
+   "descricao": "Construção de embarcações de grande porte",
+   "grupo": "Construção de embarcações"
   },
   "3317102": {
    "descricao": "Manutenção e reparação de embarcações para esporte e lazer",
-   "grupo": "Indústria náutica"
+   "grupo": "Manutenção e reparo de embarcações"
   },
-  "3230200": {
-   "descricao": "Fabricação de artefatos para pesca e esporte",
-   "grupo": "Indústria náutica"
-  },
-  "4329102": {
-   "descricao": "Instalação de equipamentos para orientação à navegação",
-   "grupo": "Indústria náutica"
+  "3317101": {
+   "descricao": "Manutenção e reparação de embarcações e estruturas flutuantes",
+   "grupo": "Manutenção e reparo de embarcações"
   },
   "4763605": {
    "descricao": "Comércio varejista de embarcações e outros veículos recreativos",
@@ -29,25 +29,13 @@
    "descricao": "Locação de embarcações sem tripulação, exceto para fins recreativos",
    "grupo": "Comércio e serviços náuticos"
   },
-  "7721700": {
-   "descricao": "Aluguel de equipamentos recreativos e esportivos",
-   "grupo": "Comércio e serviços náuticos"
-  },
   "5099801": {
    "descricao": "Transporte aquaviário para passeios turísticos",
    "grupo": "Comércio e serviços náuticos"
   },
-  "9319199": {
-   "descricao": "Outras atividades esportivas (inclui escolas e clubes náuticos)",
+  "4329102": {
+   "descricao": "Instalação de equipamentos para orientação à navegação",
    "grupo": "Comércio e serviços náuticos"
-  },
-  "3011301": {
-   "descricao": "Construção de embarcações de grande porte",
-   "grupo": "Indústria naval"
-  },
-  "3317101": {
-   "descricao": "Manutenção e reparação de embarcações e estruturas flutuantes",
-   "grupo": "Indústria naval"
   },
   "5231101": {
    "descricao": "Administração da infraestrutura portuária",
@@ -134,21 +122,21 @@
      "estab": 1857,
      "vinculos": 41006
     },
-    "Comércio e serviços náuticos": {
-     "estab": 2976,
-     "vinculos": 17472
-    },
     "Portos e navegação": {
      "estab": 2010,
      "vinculos": 99897
     },
-    "Indústria naval": {
-     "estab": 556,
-     "vinculos": 43395
+    "Comércio e serviços náuticos": {
+     "estab": 971,
+     "vinculos": 5795
     },
-    "Indústria náutica": {
-     "estab": 1011,
-     "vinculos": 14306
+    "Construção de embarcações": {
+     "estab": 404,
+     "vinculos": 31427
+    },
+    "Manutenção e reparo de embarcações": {
+     "estab": 662,
+     "vinculos": 20820
     }
    },
    "grupos_sc": {
@@ -156,131 +144,715 @@
      "estab": 477,
      "vinculos": 10487
     },
-    "Comércio e serviços náuticos": {
-     "estab": 217,
-     "vinculos": 1026
+    "Construção de embarcações": {
+     "estab": 70,
+     "vinculos": 5315
     },
-    "Indústria náutica": {
-     "estab": 147,
-     "vinculos": 2786
+    "Comércio e serviços náuticos": {
+     "estab": 81,
+     "vinculos": 522
     },
     "Portos e navegação": {
      "estab": 177,
      "vinculos": 8088
     },
-    "Indústria naval": {
-     "estab": 62,
-     "vinculos": 4080
+    "Manutenção e reparo de embarcações": {
+     "estab": 82,
+     "vinculos": 1039
     }
    },
-   "industria_nautica_por_uf": {
-    "SP": {
-     "estab": 318,
-     "vinculos": 4328
+   "construcao_por_uf": {
+    "RJ": {
+     "estab": 55,
+     "vinculos": 13644
     },
     "SC": {
-     "estab": 147,
-     "vinculos": 2786
+     "estab": 70,
+     "vinculos": 5315
     },
-    "PE": {
-     "estab": 19,
-     "vinculos": 1049
-    },
-    "PR": {
-     "estab": 106,
-     "vinculos": 1000
-    },
-    "RJ": {
-     "estab": 93,
-     "vinculos": 975
-    },
-    "PA": {
-     "estab": 16,
-     "vinculos": 716
-    },
-    "MG": {
-     "estab": 61,
-     "vinculos": 629
-    },
-    "RS": {
-     "estab": 61,
-     "vinculos": 597
-    },
-    "MA": {
-     "estab": 5,
-     "vinculos": 427
+    "ES": {
+     "estab": 3,
+     "vinculos": 3257
     },
     "AM": {
-     "estab": 27,
-     "vinculos": 363
+     "estab": 40,
+     "vinculos": 2670
     },
-    "GO": {
-     "estab": 41,
-     "vinculos": 335
+    "PE": {
+     "estab": 9,
+     "vinculos": 1519
+    },
+    "SP": {
+     "estab": 59,
+     "vinculos": 1182
+    },
+    "RS": {
+     "estab": 23,
+     "vinculos": 931
+    },
+    "PA": {
+     "estab": 24,
+     "vinculos": 767
     },
     "CE": {
-     "estab": 17,
-     "vinculos": 335
+     "estab": 2,
+     "vinculos": 442
     },
-    "BA": {
-     "estab": 28,
+    "PR": {
+     "estab": 36,
+     "vinculos": 424
+    },
+    "MA": {
+     "estab": 4,
+     "vinculos": 424
+    },
+    "MG": {
+     "estab": 19,
      "vinculos": 276
     },
-    "MS": {
-     "estab": 5,
-     "vinculos": 155
+    "BA": {
+     "estab": 12,
+     "vinculos": 247
+    },
+    "GO": {
+     "estab": 16,
+     "vinculos": 122
     },
     "MT": {
      "estab": 12,
-     "vinculos": 71
-    },
-    "DF": {
-     "estab": 7,
-     "vinculos": 63
-    },
-    "AL": {
-     "estab": 7,
-     "vinculos": 41
+     "vinculos": 72
     },
     "AP": {
      "estab": 6,
-     "vinculos": 37
+     "vinculos": 38
     },
-    "ES": {
-     "estab": 10,
-     "vinculos": 35
+    "AL": {
+     "estab": 1,
+     "vinculos": 30
     },
     "RO": {
-     "estab": 4,
-     "vinculos": 23
-    },
-    "TO": {
-     "estab": 7,
+     "estab": 3,
      "vinculos": 22
     },
     "SE": {
-     "estab": 5,
+     "estab": 1,
      "vinculos": 18
     },
-    "PI": {
-     "estab": 3,
-     "vinculos": 14
+    "TO": {
+     "estab": 4,
+     "vinculos": 17
     },
     "PB": {
-     "estab": 4,
-     "vinculos": 9
+     "estab": 2,
+     "vinculos": 6
     },
-    "RN": {
-     "estab": 1,
-     "vinculos": 1
+    "MS": {
+     "estab": 2,
+     "vinculos": 3
     },
     "AC": {
      "estab": 1,
      "vinculos": 1
     },
+    "RN": {
+     "estab": 0,
+     "vinculos": 0
+    },
+    "DF": {
+     "estab": 0,
+     "vinculos": 0
+    },
     "RR": {
      "estab": 0,
      "vinculos": 0
+    }
+   },
+   "grupos_por_uf": {
+    "MA": {
+     "Pesca e aquicultura": {
+      "estab": 15,
+      "vinculos": 108
+     },
+     "Portos e navegação": {
+      "estab": 77,
+      "vinculos": 2391
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 5,
+      "vinculos": 131
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 7,
+      "vinculos": 11
+     },
+     "Construção de embarcações": {
+      "estab": 4,
+      "vinculos": 424
+     }
+    },
+    "SC": {
+     "Pesca e aquicultura": {
+      "estab": 477,
+      "vinculos": 10487
+     },
+     "Construção de embarcações": {
+      "estab": 70,
+      "vinculos": 5315
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 81,
+      "vinculos": 522
+     },
+     "Portos e navegação": {
+      "estab": 177,
+      "vinculos": 8088
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 82,
+      "vinculos": 1039
+     }
+    },
+    "PB": {
+     "Pesca e aquicultura": {
+      "estab": 27,
+      "vinculos": 465
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 14,
+      "vinculos": 55
+     },
+     "Portos e navegação": {
+      "estab": 11,
+      "vinculos": 93
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 1,
+      "vinculos": 2
+     },
+     "Construção de embarcações": {
+      "estab": 2,
+      "vinculos": 6
+     }
+    },
+    "SE": {
+     "Pesca e aquicultura": {
+      "estab": 29,
+      "vinculos": 146
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 6,
+      "vinculos": 14
+     },
+     "Portos e navegação": {
+      "estab": 13,
+      "vinculos": 281
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 5,
+      "vinculos": 7
+     },
+     "Construção de embarcações": {
+      "estab": 1,
+      "vinculos": 18
+     }
+    },
+    "BA": {
+     "Pesca e aquicultura": {
+      "estab": 63,
+      "vinculos": 1382
+     },
+     "Portos e navegação": {
+      "estab": 91,
+      "vinculos": 2982
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 45,
+      "vinculos": 147
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 30,
+      "vinculos": 202
+     },
+     "Construção de embarcações": {
+      "estab": 12,
+      "vinculos": 247
+     }
+    },
+    "AL": {
+     "Pesca e aquicultura": {
+      "estab": 12,
+      "vinculos": 246
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 18,
+      "vinculos": 57
+     },
+     "Portos e navegação": {
+      "estab": 19,
+      "vinculos": 502
+     },
+     "Construção de embarcações": {
+      "estab": 1,
+      "vinculos": 30
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 5,
+      "vinculos": 10
+     }
+    },
+    "PA": {
+     "Pesca e aquicultura": {
+      "estab": 83,
+      "vinculos": 2321
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 30,
+      "vinculos": 320
+     },
+     "Portos e navegação": {
+      "estab": 139,
+      "vinculos": 4204
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 74,
+      "vinculos": 329
+     },
+     "Construção de embarcações": {
+      "estab": 24,
+      "vinculos": 767
+     }
+    },
+    "PR": {
+     "Pesca e aquicultura": {
+      "estab": 35,
+      "vinculos": 3323
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 61,
+      "vinculos": 488
+     },
+     "Portos e navegação": {
+      "estab": 131,
+      "vinculos": 5782
+     },
+     "Construção de embarcações": {
+      "estab": 36,
+      "vinculos": 424
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 24,
+      "vinculos": 440
+     }
+    },
+    "SP": {
+     "Portos e navegação": {
+      "estab": 428,
+      "vinculos": 25027
+     },
+     "Pesca e aquicultura": {
+      "estab": 136,
+      "vinculos": 4080
+     },
+     "Construção de embarcações": {
+      "estab": 59,
+      "vinculos": 1182
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 196,
+      "vinculos": 953
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 87,
+      "vinculos": 1705
+     }
+    },
+    "RJ": {
+     "Pesca e aquicultura": {
+      "estab": 151,
+      "vinculos": 2487
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 283,
+      "vinculos": 15976
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 171,
+      "vinculos": 1881
+     },
+     "Portos e navegação": {
+      "estab": 396,
+      "vinculos": 35266
+     },
+     "Construção de embarcações": {
+      "estab": 55,
+      "vinculos": 13644
+     }
+    },
+    "PE": {
+     "Pesca e aquicultura": {
+      "estab": 40,
+      "vinculos": 1895
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 33,
+      "vinculos": 130
+     },
+     "Portos e navegação": {
+      "estab": 73,
+      "vinculos": 1778
+     },
+     "Construção de embarcações": {
+      "estab": 9,
+      "vinculos": 1519
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 10,
+      "vinculos": 48
+     }
+    },
+    "ES": {
+     "Pesca e aquicultura": {
+      "estab": 59,
+      "vinculos": 462
+     },
+     "Portos e navegação": {
+      "estab": 113,
+      "vinculos": 4553
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 14,
+      "vinculos": 51
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 12,
+      "vinculos": 102
+     },
+     "Construção de embarcações": {
+      "estab": 3,
+      "vinculos": 3257
+     }
+    },
+    "RS": {
+     "Pesca e aquicultura": {
+      "estab": 58,
+      "vinculos": 987
+     },
+     "Construção de embarcações": {
+      "estab": 23,
+      "vinculos": 931
+     },
+     "Portos e navegação": {
+      "estab": 110,
+      "vinculos": 3219
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 23,
+      "vinculos": 125
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 20,
+      "vinculos": 112
+     }
+    },
+    "CE": {
+     "Pesca e aquicultura": {
+      "estab": 313,
+      "vinculos": 4968
+     },
+     "Portos e navegação": {
+      "estab": 65,
+      "vinculos": 2608
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 13,
+      "vinculos": 38
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 7,
+      "vinculos": 33
+     },
+     "Construção de embarcações": {
+      "estab": 2,
+      "vinculos": 442
+     }
+    },
+    "RN": {
+     "Pesca e aquicultura": {
+      "estab": 174,
+      "vinculos": 4060
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 27,
+      "vinculos": 122
+     },
+     "Portos e navegação": {
+      "estab": 26,
+      "vinculos": 622
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 5,
+      "vinculos": 14
+     },
+     "Construção de embarcações": {
+      "estab": 0,
+      "vinculos": 0
+     }
+    },
+    "AM": {
+     "Comércio e serviços náuticos": {
+      "estab": 47,
+      "vinculos": 182
+     },
+     "Portos e navegação": {
+      "estab": 74,
+      "vinculos": 1542
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 21,
+      "vinculos": 116
+     },
+     "Pesca e aquicultura": {
+      "estab": 25,
+      "vinculos": 359
+     },
+     "Construção de embarcações": {
+      "estab": 40,
+      "vinculos": 2670
+     }
+    },
+    "AP": {
+     "Pesca e aquicultura": {
+      "estab": 15,
+      "vinculos": 115
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 13,
+      "vinculos": 59
+     },
+     "Construção de embarcações": {
+      "estab": 6,
+      "vinculos": 38
+     },
+     "Portos e navegação": {
+      "estab": 33,
+      "vinculos": 301
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 2,
+      "vinculos": 8
+     }
+    },
+    "MG": {
+     "Comércio e serviços náuticos": {
+      "estab": 23,
+      "vinculos": 85
+     },
+     "Construção de embarcações": {
+      "estab": 19,
+      "vinculos": 276
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 5,
+      "vinculos": 480
+     },
+     "Pesca e aquicultura": {
+      "estab": 47,
+      "vinculos": 675
+     },
+     "Portos e navegação": {
+      "estab": 9,
+      "vinculos": 56
+     }
+    },
+    "MT": {
+     "Comércio e serviços náuticos": {
+      "estab": 22,
+      "vinculos": 142
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 2,
+      "vinculos": 8
+     },
+     "Construção de embarcações": {
+      "estab": 12,
+      "vinculos": 72
+     },
+     "Pesca e aquicultura": {
+      "estab": 14,
+      "vinculos": 338
+     },
+     "Portos e navegação": {
+      "estab": 1,
+      "vinculos": 1
+     }
+    },
+    "RR": {
+     "Manutenção e reparo de embarcações": {
+      "estab": 0,
+      "vinculos": 0
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 3,
+      "vinculos": 11
+     },
+     "Portos e navegação": {
+      "estab": 0,
+      "vinculos": 0
+     },
+     "Pesca e aquicultura": {
+      "estab": 2,
+      "vinculos": 28
+     },
+     "Construção de embarcações": {
+      "estab": 0,
+      "vinculos": 0
+     }
+    },
+    "MS": {
+     "Construção de embarcações": {
+      "estab": 2,
+      "vinculos": 3
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 28,
+      "vinculos": 179
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 3,
+      "vinculos": 7
+     },
+     "Portos e navegação": {
+      "estab": 11,
+      "vinculos": 62
+     },
+     "Pesca e aquicultura": {
+      "estab": 9,
+      "vinculos": 968
+     }
+    },
+    "PI": {
+     "Pesca e aquicultura": {
+      "estab": 25,
+      "vinculos": 373
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 7,
+      "vinculos": 27
+     },
+     "Portos e navegação": {
+      "estab": 2,
+      "vinculos": 47
+     }
+    },
+    "DF": {
+     "Pesca e aquicultura": {
+      "estab": 18,
+      "vinculos": 181
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 11,
+      "vinculos": 59
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 7,
+      "vinculos": 27
+     },
+     "Portos e navegação": {
+      "estab": 1,
+      "vinculos": 3
+     },
+     "Construção de embarcações": {
+      "estab": 0,
+      "vinculos": 0
+     }
+    },
+    "RO": {
+     "Portos e navegação": {
+      "estab": 8,
+      "vinculos": 230
+     },
+     "Pesca e aquicultura": {
+      "estab": 8,
+      "vinculos": 273
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 8,
+      "vinculos": 30
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 1,
+      "vinculos": 1
+     },
+     "Construção de embarcações": {
+      "estab": 3,
+      "vinculos": 22
+     }
+    },
+    "GO": {
+     "Manutenção e reparo de embarcações": {
+      "estab": 7,
+      "vinculos": 25
+     },
+     "Construção de embarcações": {
+      "estab": 16,
+      "vinculos": 122
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 24,
+      "vinculos": 84
+     },
+     "Pesca e aquicultura": {
+      "estab": 16,
+      "vinculos": 191
+     },
+     "Portos e navegação": {
+      "estab": 1,
+      "vinculos": 256
+     }
+    },
+    "TO": {
+     "Comércio e serviços náuticos": {
+      "estab": 5,
+      "vinculos": 13
+     },
+     "Pesca e aquicultura": {
+      "estab": 3,
+      "vinculos": 56
+     },
+     "Construção de embarcações": {
+      "estab": 4,
+      "vinculos": 17
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 2,
+      "vinculos": 2
+     },
+     "Portos e navegação": {
+      "estab": 1,
+      "vinculos": 3
+     }
+    },
+    "AC": {
+     "Pesca e aquicultura": {
+      "estab": 1,
+      "vinculos": 18
+     },
+     "Construção de embarcações": {
+      "estab": 1,
+      "vinculos": 1
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 3,
+      "vinculos": 6
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 0,
+      "vinculos": 0
+     },
+     "Portos e navegação": {
+      "estab": 0,
+      "vinculos": 0
+     }
     }
    },
    "construcao_esporte_lazer_por_uf": {
@@ -381,188 +953,188 @@
      "vinculos": 0
     }
    },
-   "industria_nautica_sc_por_municipio": {
+   "construcao_sc_por_municipio": {
     "Itajaí": {
-     "estab": 24,
-     "vinculos": 926
-    },
-    "Palhoça": {
-     "estab": 11,
-     "vinculos": 814
-    },
-    "Florianópolis": {
-     "estab": 18,
-     "vinculos": 203
-    },
-    "Joinville": {
-     "estab": 16,
-     "vinculos": 147
+     "estab": 23,
+     "vinculos": 3033
     },
     "Navegantes": {
-     "estab": 5,
-     "vinculos": 135
+     "estab": 10,
+     "vinculos": 1158
     },
-    "Guaramirim": {
-     "estab": 4,
-     "vinculos": 96
+    "Palhoça": {
+     "estab": 5,
+     "vinculos": 798
+    },
+    "Florianópolis": {
+     "estab": 3,
+     "vinculos": 106
     },
     "Biguaçu": {
-     "estab": 6,
-     "vinculos": 72
-    },
-    "São José": {
-     "estab": 7,
-     "vinculos": 69
+     "estab": 3,
+     "vinculos": 68
     },
     "Porto Belo": {
-     "estab": 5,
-     "vinculos": 43
-    },
-    "Brusque": {
-     "estab": 1,
-     "vinculos": 39
-    },
-    "Ilhota": {
      "estab": 3,
-     "vinculos": 38
+     "vinculos": 40
     },
-    "São Francisco do Sul": {
-     "estab": 2,
-     "vinculos": 25
-    },
-    "Itapema": {
-     "estab": 4,
-     "vinculos": 25
+    "Joinville": {
+     "estab": 5,
+     "vinculos": 28
     },
     "Gaspar": {
      "estab": 2,
      "vinculos": 21
     },
-    "Balneário Camboriú": {
-     "estab": 5,
-     "vinculos": 20
-    },
-    "Araquari": {
-     "estab": 5,
+    "São José": {
+     "estab": 1,
      "vinculos": 17
     },
-    "Blumenau": {
-     "estab": 1,
-     "vinculos": 16
-    },
-    "Pomerode": {
-     "estab": 2,
-     "vinculos": 14
+    "Araquari": {
+     "estab": 3,
+     "vinculos": 13
     },
     "Santo Amaro da Imperatriz": {
      "estab": 1,
      "vinculos": 11
     },
-    "Araranguá": {
+    "São Francisco do Sul": {
+     "estab": 2,
+     "vinculos": 7
+    },
+    "Balneário Camboriú": {
+     "estab": 2,
+     "vinculos": 4
+    },
+    "Tijucas": {
      "estab": 1,
-     "vinculos": 10
+     "vinculos": 3
+    },
+    "Penha": {
+     "estab": 1,
+     "vinculos": 3
+    },
+    "Balneário Piçarras": {
+     "estab": 2,
+     "vinculos": 2
+    },
+    "Antônio Carlos": {
+     "estab": 1,
+     "vinculos": 1
+    },
+    "Balneário Barra do Sul": {
+     "estab": 1,
+     "vinculos": 1
+    },
+    "Imbituba": {
+     "estab": 1,
+     "vinculos": 1
+    },
+    "Jacinto Machado": {
+     "estab": 0,
+     "vinculos": 0
     }
    },
    "cadeia_sc_por_municipio": {
     "Itajaí": {
-     "estab": 237,
-     "vinculos": 10046
+     "estab": 230,
+     "vinculos": 10023
     },
     "Navegantes": {
-     "estab": 124,
-     "vinculos": 5703
+     "estab": 122,
+     "vinculos": 5682
     },
     "Itapoá": {
-     "estab": 4,
-     "vinculos": 1827
+     "estab": 3,
+     "vinculos": 1826
     },
     "São Francisco do Sul": {
-     "estab": 51,
-     "vinculos": 1665
+     "estab": 50,
+     "vinculos": 1645
     },
     "Palhoça": {
-     "estab": 27,
-     "vinculos": 938
-    },
-    "Florianópolis": {
-     "estab": 87,
-     "vinculos": 841
+     "estab": 18,
+     "vinculos": 914
     },
     "Imbituba": {
-     "estab": 29,
-     "vinculos": 818
+     "estab": 27,
+     "vinculos": 795
     },
     "Penha": {
-     "estab": 90,
-     "vinculos": 744
+     "estab": 89,
+     "vinculos": 742
+    },
+    "Florianópolis": {
+     "estab": 52,
+     "vinculos": 632
     },
     "Laguna": {
-     "estab": 36,
-     "vinculos": 634
+     "estab": 33,
+     "vinculos": 627
     },
     "Porto Belo": {
-     "estab": 65,
-     "vinculos": 494
-    },
-    "Joinville": {
-     "estab": 45,
-     "vinculos": 321
+     "estab": 64,
+     "vinculos": 492
     },
     "Balneário Camboriú": {
-     "estab": 30,
-     "vinculos": 316
-    },
-    "São José": {
-     "estab": 23,
-     "vinculos": 234
+     "estab": 28,
+     "vinculos": 307
     },
     "Balneário Piçarras": {
      "estab": 8,
      "vinculos": 224
     },
     "Barra Velha": {
-     "estab": 9,
-     "vinculos": 215
+     "estab": 7,
+     "vinculos": 210
     },
     "Bombinhas": {
-     "estab": 26,
-     "vinculos": 193
+     "estab": 25,
+     "vinculos": 190
+    },
+    "São José": {
+     "estab": 11,
+     "vinculos": 160
     },
     "Biguaçu": {
      "estab": 12,
      "vinculos": 145
     },
     "Ilhota": {
-     "estab": 5,
-     "vinculos": 141
-    },
-    "Guaramirim": {
      "estab": 4,
-     "vinculos": 96
+     "vinculos": 138
     },
-    "Blumenau": {
-     "estab": 11,
-     "vinculos": 74
+    "Joinville": {
+     "estab": 22,
+     "vinculos": 93
     },
     "Criciúma": {
-     "estab": 6,
-     "vinculos": 65
-    },
-    "Itapema": {
-     "estab": 8,
-     "vinculos": 54
+     "estab": 1,
+     "vinculos": 56
     },
     "Governador Celso Ramos": {
      "estab": 9,
      "vinculos": 50
     },
-    "Camboriú": {
-     "estab": 8,
-     "vinculos": 49
+    "Blumenau": {
+     "estab": 5,
+     "vinculos": 47
     },
-    "Brusque": {
+    "Camboriú": {
+     "estab": 5,
+     "vinculos": 45
+    },
+    "Jaguaruna": {
+     "estab": 2,
+     "vinculos": 38
+    },
+    "Urussanga": {
+     "estab": 1,
+     "vinculos": 37
+    },
+    "Tijucas": {
      "estab": 4,
-     "vinculos": 43
+     "vinculos": 34
     }
    },
    "sc_por_cnae": {
@@ -578,12 +1150,6 @@
      "estab": 13,
      "vinculos": 120
     },
-    "9319199": {
-     "desc": "Outras atividades esportivas (inclui escolas e clubes náuticos)",
-     "grupo": "Comércio e serviços náuticos",
-     "estab": 68,
-     "vinculos": 316
-    },
     "1020101": {
      "desc": "Preservação de peixes, crustáceos e moluscos",
      "grupo": "Pesca e aquicultura",
@@ -598,7 +1164,7 @@
     },
     "3012100": {
      "desc": "Construção de embarcações para esporte e lazer",
-     "grupo": "Indústria náutica",
+     "grupo": "Construção de embarcações",
      "estab": 33,
      "vinculos": 1657
     },
@@ -640,15 +1206,9 @@
     },
     "3317102": {
      "desc": "Manutenção e reparação de embarcações para esporte e lazer",
-     "grupo": "Indústria náutica",
+     "grupo": "Manutenção e reparo de embarcações",
      "estab": 40,
      "vinculos": 211
-    },
-    "7721700": {
-     "desc": "Aluguel de equipamentos recreativos e esportivos",
-     "grupo": "Comércio e serviços náuticos",
-     "estab": 69,
-     "vinculos": 191
     },
     "1020102": {
      "desc": "Fabricação de conservas de peixes, crustáceos e moluscos",
@@ -674,12 +1234,6 @@
      "estab": 5,
      "vinculos": 23
     },
-    "3230200": {
-     "desc": "Fabricação de artefatos para pesca e esporte",
-     "grupo": "Indústria náutica",
-     "estab": 56,
-     "vinculos": 509
-    },
     "0321305": {
      "desc": "Atividades de apoio à aquicultura em água salgada e salobra",
      "grupo": "Pesca e aquicultura",
@@ -688,25 +1242,25 @@
     },
     "3011301": {
      "desc": "Construção de embarcações de grande porte",
-     "grupo": "Indústria naval",
+     "grupo": "Construção de embarcações",
      "estab": 20,
      "vinculos": 3252
     },
     "4329102": {
      "desc": "Instalação de equipamentos para orientação à navegação",
-     "grupo": "Indústria náutica",
+     "grupo": "Comércio e serviços náuticos",
      "estab": 1,
      "vinculos": 3
     },
     "3317101": {
      "desc": "Manutenção e reparação de embarcações e estruturas flutuantes",
-     "grupo": "Indústria naval",
+     "grupo": "Manutenção e reparo de embarcações",
      "estab": 42,
      "vinculos": 828
     },
     "3011302": {
      "desc": "Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",
-     "grupo": "Indústria náutica",
+     "grupo": "Construção de embarcações",
      "estab": 17,
      "vinculos": 406
     },
@@ -759,153 +1313,725 @@
      "estab": 1877,
      "vinculos": 41770
     },
-    "Comércio e serviços náuticos": {
-     "estab": 3080,
-     "vinculos": 19125
-    },
     "Portos e navegação": {
      "estab": 2099,
      "vinculos": 105372
     },
-    "Indústria náutica": {
-     "estab": 1068,
-     "vinculos": 15539
+    "Construção de embarcações": {
+     "estab": 437,
+     "vinculos": 35631
     },
-    "Indústria naval": {
-     "estab": 588,
-     "vinculos": 47993
+    "Comércio e serviços náuticos": {
+     "estab": 990,
+     "vinculos": 6267
+    },
+    "Manutenção e reparo de embarcações": {
+     "estab": 701,
+     "vinculos": 21729
     }
    },
    "grupos_sc": {
-    "Comércio e serviços náuticos": {
-     "estab": 225,
-     "vinculos": 1265
-    },
     "Pesca e aquicultura": {
      "estab": 478,
      "vinculos": 10393
     },
-    "Indústria náutica": {
-     "estab": 153,
-     "vinculos": 2629
+    "Construção de embarcações": {
+     "estab": 77,
+     "vinculos": 5460
     },
-    "Indústria naval": {
-     "estab": 65,
-     "vinculos": 4402
+    "Comércio e serviços náuticos": {
+     "estab": 88,
+     "vinculos": 507
     },
     "Portos e navegação": {
      "estab": 174,
      "vinculos": 8619
+    },
+    "Manutenção e reparo de embarcações": {
+     "estab": 87,
+     "vinculos": 1052
     }
    },
-   "industria_nautica_por_uf": {
-    "SP": {
-     "estab": 333,
-     "vinculos": 4566
+   "construcao_por_uf": {
+    "RJ": {
+     "estab": 61,
+     "vinculos": 15108
     },
     "SC": {
-     "estab": 153,
-     "vinculos": 2629
-    },
-    "PR": {
-     "estab": 110,
-     "vinculos": 1566
-    },
-    "PE": {
-     "estab": 20,
-     "vinculos": 1160
-    },
-    "PA": {
-     "estab": 17,
-     "vinculos": 996
-    },
-    "RJ": {
-     "estab": 103,
-     "vinculos": 963
-    },
-    "MG": {
-     "estab": 64,
-     "vinculos": 689
-    },
-    "RS": {
-     "estab": 59,
-     "vinculos": 591
-    },
-    "MA": {
-     "estab": 5,
-     "vinculos": 469
+     "estab": 77,
+     "vinculos": 5460
     },
     "AM": {
-     "estab": 32,
-     "vinculos": 374
+     "estab": 49,
+     "vinculos": 3786
     },
-    "GO": {
-     "estab": 48,
-     "vinculos": 370
+    "ES": {
+     "estab": 2,
+     "vinculos": 3302
     },
-    "CE": {
-     "estab": 18,
-     "vinculos": 363
+    "PE": {
+     "estab": 9,
+     "vinculos": 1972
+    },
+    "SP": {
+     "estab": 62,
+     "vinculos": 1210
+    },
+    "PA": {
+     "estab": 24,
+     "vinculos": 1127
     },
     "BA": {
-     "estab": 29,
-     "vinculos": 304
+     "estab": 13,
+     "vinculos": 956
     },
-    "MS": {
-     "estab": 3,
-     "vinculos": 137
+    "RS": {
+     "estab": 24,
+     "vinculos": 695
     },
-    "DF": {
-     "estab": 9,
-     "vinculos": 77
+    "MA": {
+     "estab": 4,
+     "vinculos": 468
     },
-    "AP": {
-     "estab": 6,
-     "vinculos": 47
+    "CE": {
+     "estab": 2,
+     "vinculos": 458
+    },
+    "PR": {
+     "estab": 41,
+     "vinculos": 450
+    },
+    "MG": {
+     "estab": 18,
+     "vinculos": 277
+    },
+    "GO": {
+     "estab": 21,
+     "vinculos": 155
     },
     "MT": {
-     "estab": 12,
+     "estab": 11,
+     "vinculos": 46
+    },
+    "AP": {
+     "estab": 5,
      "vinculos": 44
     },
     "AL": {
-     "estab": 7,
-     "vinculos": 39
-    },
-    "ES": {
-     "estab": 12,
-     "vinculos": 35
-    },
-    "SE": {
-     "estab": 6,
-     "vinculos": 31
+     "estab": 2,
+     "vinculos": 42
     },
     "RO": {
-     "estab": 5,
-     "vinculos": 26
+     "estab": 4,
+     "vinculos": 25
     },
     "TO": {
-     "estab": 4,
-     "vinculos": 23
+     "estab": 2,
+     "vinculos": 20
     },
-    "PI": {
-     "estab": 3,
-     "vinculos": 14
+    "SE": {
+     "estab": 2,
+     "vinculos": 12
     },
     "PB": {
-     "estab": 4,
-     "vinculos": 11
+     "estab": 2,
+     "vinculos": 8
     },
     "AC": {
      "estab": 1,
      "vinculos": 8
     },
-    "RN": {
-     "estab": 5,
-     "vinculos": 7
+    "MS": {
+     "estab": 1,
+     "vinculos": 2
     },
-    "RR": {
+    "RN": {
      "estab": 0,
      "vinculos": 0
+    }
+   },
+   "grupos_por_uf": {
+    "BA": {
+     "Pesca e aquicultura": {
+      "estab": 61,
+      "vinculos": 1392
+     },
+     "Portos e navegação": {
+      "estab": 98,
+      "vinculos": 3325
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 30,
+      "vinculos": 230
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 43,
+      "vinculos": 142
+     },
+     "Construção de embarcações": {
+      "estab": 13,
+      "vinculos": 956
+     }
+    },
+    "MA": {
+     "Pesca e aquicultura": {
+      "estab": 15,
+      "vinculos": 120
+     },
+     "Portos e navegação": {
+      "estab": 78,
+      "vinculos": 2481
+     },
+     "Construção de embarcações": {
+      "estab": 4,
+      "vinculos": 468
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 6,
+      "vinculos": 107
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 3,
+      "vinculos": 5
+     }
+    },
+    "PE": {
+     "Pesca e aquicultura": {
+      "estab": 36,
+      "vinculos": 1976
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 35,
+      "vinculos": 109
+     },
+     "Portos e navegação": {
+      "estab": 71,
+      "vinculos": 1945
+     },
+     "Construção de embarcações": {
+      "estab": 9,
+      "vinculos": 1972
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 10,
+      "vinculos": 29
+     }
+    },
+    "SE": {
+     "Pesca e aquicultura": {
+      "estab": 32,
+      "vinculos": 154
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 5,
+      "vinculos": 7
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 6,
+      "vinculos": 15
+     },
+     "Portos e navegação": {
+      "estab": 12,
+      "vinculos": 307
+     },
+     "Construção de embarcações": {
+      "estab": 2,
+      "vinculos": 12
+     }
+    },
+    "RJ": {
+     "Pesca e aquicultura": {
+      "estab": 156,
+      "vinculos": 2534
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 180,
+      "vinculos": 2200
+     },
+     "Portos e navegação": {
+      "estab": 407,
+      "vinculos": 37326
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 295,
+      "vinculos": 15542
+     },
+     "Construção de embarcações": {
+      "estab": 61,
+      "vinculos": 15108
+     }
+    },
+    "PR": {
+     "Pesca e aquicultura": {
+      "estab": 36,
+      "vinculos": 3661
+     },
+     "Portos e navegação": {
+      "estab": 138,
+      "vinculos": 5643
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 25,
+      "vinculos": 435
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 61,
+      "vinculos": 523
+     },
+     "Construção de embarcações": {
+      "estab": 41,
+      "vinculos": 450
+     }
+    },
+    "ES": {
+     "Pesca e aquicultura": {
+      "estab": 61,
+      "vinculos": 445
+     },
+     "Portos e navegação": {
+      "estab": 118,
+      "vinculos": 4865
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 12,
+      "vinculos": 47
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 15,
+      "vinculos": 115
+     },
+     "Construção de embarcações": {
+      "estab": 2,
+      "vinculos": 3302
+     }
+    },
+    "RS": {
+     "Pesca e aquicultura": {
+      "estab": 53,
+      "vinculos": 929
+     },
+     "Portos e navegação": {
+      "estab": 118,
+      "vinculos": 3483
+     },
+     "Construção de embarcações": {
+      "estab": 24,
+      "vinculos": 695
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 22,
+      "vinculos": 108
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 22,
+      "vinculos": 252
+     }
+    },
+    "SP": {
+     "Pesca e aquicultura": {
+      "estab": 141,
+      "vinculos": 4299
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 193,
+      "vinculos": 981
+     },
+     "Portos e navegação": {
+      "estab": 449,
+      "vinculos": 26352
+     },
+     "Construção de embarcações": {
+      "estab": 62,
+      "vinculos": 1210
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 91,
+      "vinculos": 2773
+     }
+    },
+    "PB": {
+     "Pesca e aquicultura": {
+      "estab": 29,
+      "vinculos": 460
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 17,
+      "vinculos": 71
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 2,
+      "vinculos": 8
+     },
+     "Portos e navegação": {
+      "estab": 12,
+      "vinculos": 85
+     },
+     "Construção de embarcações": {
+      "estab": 2,
+      "vinculos": 8
+     }
+    },
+    "PA": {
+     "Pesca e aquicultura": {
+      "estab": 82,
+      "vinculos": 2407
+     },
+     "Portos e navegação": {
+      "estab": 153,
+      "vinculos": 4283
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 79,
+      "vinculos": 366
+     },
+     "Construção de embarcações": {
+      "estab": 24,
+      "vinculos": 1127
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 31,
+      "vinculos": 389
+     }
+    },
+    "CE": {
+     "Pesca e aquicultura": {
+      "estab": 320,
+      "vinculos": 5031
+     },
+     "Portos e navegação": {
+      "estab": 72,
+      "vinculos": 2854
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 15,
+      "vinculos": 39
+     },
+     "Construção de embarcações": {
+      "estab": 2,
+      "vinculos": 458
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 8,
+      "vinculos": 33
+     }
+    },
+    "AL": {
+     "Pesca e aquicultura": {
+      "estab": 11,
+      "vinculos": 151
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 21,
+      "vinculos": 65
+     },
+     "Construção de embarcações": {
+      "estab": 2,
+      "vinculos": 42
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 5,
+      "vinculos": 8
+     },
+     "Portos e navegação": {
+      "estab": 20,
+      "vinculos": 460
+     }
+    },
+    "SC": {
+     "Pesca e aquicultura": {
+      "estab": 478,
+      "vinculos": 10393
+     },
+     "Construção de embarcações": {
+      "estab": 77,
+      "vinculos": 5460
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 88,
+      "vinculos": 507
+     },
+     "Portos e navegação": {
+      "estab": 174,
+      "vinculos": 8619
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 87,
+      "vinculos": 1052
+     }
+    },
+    "RN": {
+     "Pesca e aquicultura": {
+      "estab": 178,
+      "vinculos": 3951
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 30,
+      "vinculos": 141
+     },
+     "Portos e navegação": {
+      "estab": 28,
+      "vinculos": 653
+     },
+     "Construção de embarcações": {
+      "estab": 0,
+      "vinculos": 0
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 8,
+      "vinculos": 25
+     }
+    },
+    "AM": {
+     "Construção de embarcações": {
+      "estab": 49,
+      "vinculos": 3786
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 43,
+      "vinculos": 184
+     },
+     "Portos e navegação": {
+      "estab": 76,
+      "vinculos": 1642
+     },
+     "Pesca e aquicultura": {
+      "estab": 23,
+      "vinculos": 359
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 24,
+      "vinculos": 109
+     }
+    },
+    "MT": {
+     "Comércio e serviços náuticos": {
+      "estab": 22,
+      "vinculos": 165
+     },
+     "Pesca e aquicultura": {
+      "estab": 14,
+      "vinculos": 369
+     },
+     "Construção de embarcações": {
+      "estab": 11,
+      "vinculos": 46
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 3,
+      "vinculos": 11
+     },
+     "Portos e navegação": {
+      "estab": 1,
+      "vinculos": 1
+     }
+    },
+    "AP": {
+     "Portos e navegação": {
+      "estab": 38,
+      "vinculos": 366
+     },
+     "Pesca e aquicultura": {
+      "estab": 16,
+      "vinculos": 149
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 14,
+      "vinculos": 71
+     },
+     "Construção de embarcações": {
+      "estab": 5,
+      "vinculos": 44
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 2,
+      "vinculos": 12
+     }
+    },
+    "PI": {
+     "Pesca e aquicultura": {
+      "estab": 25,
+      "vinculos": 438
+     },
+     "Portos e navegação": {
+      "estab": 2,
+      "vinculos": 81
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 0,
+      "vinculos": 0
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 7,
+      "vinculos": 30
+     }
+    },
+    "MG": {
+     "Portos e navegação": {
+      "estab": 9,
+      "vinculos": 53
+     },
+     "Construção de embarcações": {
+      "estab": 18,
+      "vinculos": 277
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 25,
+      "vinculos": 97
+     },
+     "Pesca e aquicultura": {
+      "estab": 50,
+      "vinculos": 841
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 7,
+      "vinculos": 508
+     }
+    },
+    "AC": {
+     "Comércio e serviços náuticos": {
+      "estab": 2,
+      "vinculos": 5
+     },
+     "Pesca e aquicultura": {
+      "estab": 2,
+      "vinculos": 10
+     },
+     "Construção de embarcações": {
+      "estab": 1,
+      "vinculos": 8
+     },
+     "Portos e navegação": {
+      "estab": 0,
+      "vinculos": 0
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 0,
+      "vinculos": 0
+     }
+    },
+    "RO": {
+     "Comércio e serviços náuticos": {
+      "estab": 8,
+      "vinculos": 26
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 1,
+      "vinculos": 1
+     },
+     "Portos e navegação": {
+      "estab": 10,
+      "vinculos": 240
+     },
+     "Pesca e aquicultura": {
+      "estab": 8,
+      "vinculos": 279
+     },
+     "Construção de embarcações": {
+      "estab": 4,
+      "vinculos": 25
+     }
+    },
+    "RR": {
+     "Comércio e serviços náuticos": {
+      "estab": 3,
+      "vinculos": 13
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 0,
+      "vinculos": 0
+     },
+     "Portos e navegação": {
+      "estab": 0,
+      "vinculos": 0
+     },
+     "Pesca e aquicultura": {
+      "estab": 1,
+      "vinculos": 28
+     }
+    },
+    "GO": {
+     "Pesca e aquicultura": {
+      "estab": 15,
+      "vinculos": 164
+     },
+     "Construção de embarcações": {
+      "estab": 21,
+      "vinculos": 155
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 24,
+      "vinculos": 77
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 7,
+      "vinculos": 33
+     },
+     "Portos e navegação": {
+      "estab": 1,
+      "vinculos": 235
+     }
+    },
+    "MS": {
+     "Pesca e aquicultura": {
+      "estab": 10,
+      "vinculos": 981
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 26,
+      "vinculos": 201
+     },
+     "Portos e navegação": {
+      "estab": 12,
+      "vinculos": 63
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 2,
+      "vinculos": 6
+     },
+     "Construção de embarcações": {
+      "estab": 1,
+      "vinculos": 2
+     }
+    },
+    "TO": {
+     "Comércio e serviços náuticos": {
+      "estab": 5,
+      "vinculos": 15
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 1,
+      "vinculos": 1
+     },
+     "Pesca e aquicultura": {
+      "estab": 3,
+      "vinculos": 46
+     },
+     "Construção de embarcações": {
+      "estab": 2,
+      "vinculos": 20
+     },
+     "Portos e navegação": {
+      "estab": 1,
+      "vinculos": 7
+     }
+    },
+    "DF": {
+     "Portos e navegação": {
+      "estab": 1,
+      "vinculos": 3
+     },
+     "Comércio e serviços náuticos": {
+      "estab": 14,
+      "vinculos": 78
+     },
+     "Pesca e aquicultura": {
+      "estab": 18,
+      "vinculos": 190
+     },
+     "Manutenção e reparo de embarcações": {
+      "estab": 6,
+      "vinculos": 29
+     }
     }
    },
    "construcao_esporte_lazer_por_uf": {
@@ -1006,197 +2132,191 @@
      "vinculos": 0
     }
    },
-   "industria_nautica_sc_por_municipio": {
+   "construcao_sc_por_municipio": {
     "Itajaí": {
-     "estab": 24,
-     "vinculos": 874
-    },
-    "Palhoça": {
-     "estab": 13,
-     "vinculos": 710
-    },
-    "Joinville": {
-     "estab": 17,
-     "vinculos": 159
-    },
-    "Florianópolis": {
-     "estab": 18,
-     "vinculos": 158
+     "estab": 25,
+     "vinculos": 3405
     },
     "Navegantes": {
-     "estab": 6,
-     "vinculos": 138
+     "estab": 10,
+     "vinculos": 1052
     },
-    "Guaramirim": {
-     "estab": 4,
-     "vinculos": 88
+    "Palhoça": {
+     "estab": 9,
+     "vinculos": 700
     },
     "Biguaçu": {
-     "estab": 7,
-     "vinculos": 82
+     "estab": 4,
+     "vinculos": 79
     },
-    "São José": {
-     "estab": 8,
-     "vinculos": 70
+    "Florianópolis": {
+     "estab": 3,
+     "vinculos": 71
     },
     "Porto Belo": {
+     "estab": 3,
+     "vinculos": 37
+    },
+    "Joinville": {
      "estab": 5,
-     "vinculos": 41
-    },
-    "Brusque": {
-     "estab": 1,
-     "vinculos": 39
-    },
-    "Ilhota": {
-     "estab": 3,
-     "vinculos": 38
-    },
-    "Itapema": {
-     "estab": 3,
-     "vinculos": 36
+     "vinculos": 31
     },
     "Araquari": {
-     "estab": 5,
-     "vinculos": 24
-    },
-    "São Francisco do Sul": {
      "estab": 3,
-     "vinculos": 24
-    },
-    "Balneário Camboriú": {
-     "estab": 5,
-     "vinculos": 22
+     "vinculos": 19
     },
     "Gaspar": {
      "estab": 2,
      "vinculos": 18
     },
-    "Blumenau": {
+    "São José": {
      "estab": 1,
-     "vinculos": 18
+     "vinculos": 17
     },
-    "Pomerode": {
-     "estab": 2,
-     "vinculos": 15
-    },
-    "Araranguá": {
+    "Santo Amaro da Imperatriz": {
      "estab": 1,
-     "vinculos": 11
-    },
-    "Laguna": {
-     "estab": 2,
      "vinculos": 8
+    },
+    "Balneário Camboriú": {
+     "estab": 2,
+     "vinculos": 5
+    },
+    "São Francisco do Sul": {
+     "estab": 2,
+     "vinculos": 4
+    },
+    "Imbituba": {
+     "estab": 1,
+     "vinculos": 4
+    },
+    "Penha": {
+     "estab": 1,
+     "vinculos": 4
+    },
+    "Tijucas": {
+     "estab": 1,
+     "vinculos": 2
+    },
+    "Balneário Piçarras": {
+     "estab": 2,
+     "vinculos": 2
+    },
+    "Antônio Carlos": {
+     "estab": 1,
+     "vinculos": 1
+    },
+    "Balneário Barra do Sul": {
+     "estab": 1,
+     "vinculos": 1
+    },
+    "Brusque": {
+     "estab": 0,
+     "vinculos": 0
     }
    },
    "cadeia_sc_por_municipio": {
     "Itajaí": {
-     "estab": 243,
-     "vinculos": 10836
+     "estab": 236,
+     "vinculos": 10766
     },
     "Navegantes": {
-     "estab": 117,
-     "vinculos": 5513
+     "estab": 114,
+     "vinculos": 5464
     },
     "Itapoá": {
      "estab": 3,
      "vinculos": 2055
     },
     "São Francisco do Sul": {
-     "estab": 52,
-     "vinculos": 1788
+     "estab": 51,
+     "vinculos": 1767
     },
     "Palhoça": {
-     "estab": 31,
-     "vinculos": 862
+     "estab": 21,
+     "vinculos": 814
     },
     "Imbituba": {
-     "estab": 29,
-     "vinculos": 830
-    },
-    "Florianópolis": {
-     "estab": 92,
-     "vinculos": 815
+     "estab": 27,
+     "vinculos": 809
     },
     "Penha": {
-     "estab": 93,
-     "vinculos": 678
+     "estab": 92,
+     "vinculos": 676
     },
     "Laguna": {
-     "estab": 35,
-     "vinculos": 570
+     "estab": 33,
+     "vinculos": 562
     },
-    "Joinville": {
-     "estab": 44,
-     "vinculos": 403
+    "Florianópolis": {
+     "estab": 54,
+     "vinculos": 556
     },
     "Porto Belo": {
-     "estab": 64,
-     "vinculos": 369
+     "estab": 63,
+     "vinculos": 368
     },
     "Balneário Camboriú": {
-     "estab": 33,
-     "vinculos": 349
-    },
-    "Barra Velha": {
-     "estab": 11,
-     "vinculos": 256
+     "estab": 27,
+     "vinculos": 299
     },
     "Balneário Piçarras": {
      "estab": 9,
      "vinculos": 254
     },
-    "São José": {
-     "estab": 24,
-     "vinculos": 215
+    "Barra Velha": {
+     "estab": 8,
+     "vinculos": 248
     },
     "Bombinhas": {
-     "estab": 27,
-     "vinculos": 185
+     "estab": 26,
+     "vinculos": 181
     },
     "Biguaçu": {
      "estab": 12,
      "vinculos": 172
     },
-    "Ilhota": {
-     "estab": 5,
-     "vinculos": 137
+    "São José": {
+     "estab": 13,
+     "vinculos": 141
     },
-    "Guaramirim": {
+    "Ilhota": {
      "estab": 4,
-     "vinculos": 88
+     "vinculos": 135
+    },
+    "Joinville": {
+     "estab": 23,
+     "vinculos": 110
     },
     "Jaguaruna": {
      "estab": 3,
      "vinculos": 76
     },
     "Criciúma": {
-     "estab": 5,
-     "vinculos": 69
+     "estab": 1,
+     "vinculos": 62
     },
     "Governador Celso Ramos": {
      "estab": 10,
      "vinculos": 57
-    },
-    "Itapema": {
-     "estab": 6,
-     "vinculos": 50
     },
     "Ascurra": {
      "estab": 1,
      "vinculos": 48
     },
     "Camboriú": {
-     "estab": 7,
-     "vinculos": 47
+     "estab": 4,
+     "vinculos": 43
+    },
+    "Imaruí": {
+     "estab": 5,
+     "vinculos": 39
+    },
+    "Urussanga": {
+     "estab": 1,
+     "vinculos": 38
     }
    },
    "sc_por_cnae": {
-    "9319199": {
-     "desc": "Outras atividades esportivas (inclui escolas e clubes náuticos)",
-     "grupo": "Comércio e serviços náuticos",
-     "estab": 64,
-     "vinculos": 405
-    },
     "0311601": {
      "desc": "Pesca de peixes em água salgada",
      "grupo": "Pesca e aquicultura",
@@ -1211,7 +2331,7 @@
     },
     "3011302": {
      "desc": "Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",
-     "grupo": "Indústria náutica",
+     "grupo": "Construção de embarcações",
      "estab": 18,
      "vinculos": 383
     },
@@ -1221,12 +2341,6 @@
      "estab": 5,
      "vinculos": 13
     },
-    "7721700": {
-     "desc": "Aluguel de equipamentos recreativos e esportivos",
-     "grupo": "Comércio e serviços náuticos",
-     "estab": 74,
-     "vinculos": 357
-    },
     "5099801": {
      "desc": "Transporte aquaviário para passeios turísticos",
      "grupo": "Comércio e serviços náuticos",
@@ -1235,7 +2349,7 @@
     },
     "3011301": {
      "desc": "Construção de embarcações de grande porte",
-     "grupo": "Indústria naval",
+     "grupo": "Construção de embarcações",
      "estab": 20,
      "vinculos": 3519
     },
@@ -1293,15 +2407,9 @@
      "estab": 1,
      "vinculos": 1
     },
-    "3230200": {
-     "desc": "Fabricação de artefatos para pesca e esporte",
-     "grupo": "Indústria náutica",
-     "estab": 53,
-     "vinculos": 515
-    },
     "3317102": {
      "desc": "Manutenção e reparação de embarcações para esporte e lazer",
-     "grupo": "Indústria náutica",
+     "grupo": "Manutenção e reparo de embarcações",
      "estab": 42,
      "vinculos": 169
     },
@@ -1313,13 +2421,13 @@
     },
     "3012100": {
      "desc": "Construção de embarcações para esporte e lazer",
-     "grupo": "Indústria náutica",
+     "grupo": "Construção de embarcações",
      "estab": 39,
      "vinculos": 1558
     },
     "3317101": {
      "desc": "Manutenção e reparação de embarcações e estruturas flutuantes",
-     "grupo": "Indústria naval",
+     "grupo": "Manutenção e reparo de embarcações",
      "estab": 45,
      "vinculos": 883
     },
@@ -1349,7 +2457,7 @@
     },
     "4329102": {
      "desc": "Instalação de equipamentos para orientação à navegação",
-     "grupo": "Indústria náutica",
+     "grupo": "Comércio e serviços náuticos",
      "estab": 1,
      "vinculos": 4
     },

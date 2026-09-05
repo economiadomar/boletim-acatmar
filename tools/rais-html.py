@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Injeta data/rais/resumo.json em numeros.html entre marcadores <!-- rais:X --> (sc, br, nota)."""
+"""Injeta data/rais/resumo.json em numeros.html entre marcadores <!-- rais:X --> (sc, br, nota). So vinculos (empregos), nunca contagem de estabelecimentos."""
 import json, re, os
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 P = os.path.join(ROOT, 'numeros.html')
 R = json.load(open(os.path.join(ROOT, 'data', 'rais', 'resumo.json'), encoding='utf-8'))
 t = open(P, encoding='utf-8').read()
-anos = sorted(R['anos'])
-A0, A1 = anos[-2], anos[-1]
+anos = sorted(R['anos']); A0, A1 = anos[-2], anos[-1]
 r0, r1 = R['anos'][A0], R['anos'][A1]
 
 
@@ -28,46 +27,29 @@ def put(key, html):
     print(f"  {key}: {k}")
 
 
-GR = ['Indústria náutica', 'Comércio e serviços náuticos', 'Indústria naval', 'Portos e navegação', 'Pesca e aquicultura']
-GR_EN = {'Indústria náutica': 'Boatbuilding and nautical industry', 'Comércio e serviços náuticos': 'Nautical trade and services', 'Indústria naval': 'Shipbuilding', 'Portos e navegação': 'Ports and navigation', 'Pesca e aquicultura': 'Fishing and aquaculture'}
+GR = ['Construção de embarcações', 'Manutenção e reparo de embarcações', 'Comércio e serviços náuticos', 'Portos e navegação', 'Pesca e aquicultura']
+GR_EN = {'Construção de embarcações': 'Boat and ship building', 'Manutenção e reparo de embarcações': 'Boat maintenance and repair', 'Comércio e serviços náuticos': 'Nautical trade and services', 'Portos e navegação': 'Ports and navigation', 'Pesca e aquicultura': 'Fishing and aquaculture'}
 rows = ''
-tot0 = tot1 = te0 = te1 = 0
+tot0 = tot1 = 0
 for g in GR:
-    a = r0['grupos_sc'].get(g, {'estab': 0, 'vinculos': 0}); b = r1['grupos_sc'].get(g, {'estab': 0, 'vinculos': 0})
-    tot0 += a['vinculos']; tot1 += b['vinculos']; te0 += a['estab']; te1 += b['estab']
-    rows += f'      <tr><td data-en="{GR_EN[g]}">{g}</td><td class="v">{n(a["estab"])}</td><td class="v">{n(a["vinculos"])}</td><td class="v">{n(b["estab"])}</td><td class="v">{n(b["vinculos"])}</td><td class="v">{var(a["vinculos"], b["vinculos"])}</td></tr>\n'
-rows += f'      <tr><td><b data-en="Total, nautical and naval chain">Total da cadeia náutica e naval</b></td><td class="v"><b>{n(te0)}</b></td><td class="v"><b>{n(tot0)}</b></td><td class="v"><b>{n(te1)}</b></td><td class="v"><b>{n(tot1)}</b></td><td class="v"><b>{var(tot0, tot1)}</b></td></tr>\n'
-# por CNAE (industria nautica) SC
-cn = ''
-for c, d in sorted(r1['sc_por_cnae'].items(), key=lambda x: -x[1]['vinculos']):
-    if d['grupo'] != 'Indústria náutica':
-        continue
-    d0 = r0['sc_por_cnae'].get(c, {'estab': 0, 'vinculos': 0})
-    cn += f'      <tr><td>{c[:4]}-{c[4]}/{c[5:]}</td><td>{d["desc"]}</td><td class="v">{n(d0["vinculos"])}</td><td class="v">{n(d["vinculos"])}</td><td class="v">{n(d["estab"])}</td></tr>\n'
-# municipios
+    a = r0['grupos_sc'].get(g, {'vinculos': 0})['vinculos']; b = r1['grupos_sc'].get(g, {'vinculos': 0})['vinculos']
+    tot0 += a; tot1 += b
+    rows += f'      <tr><td data-en="{GR_EN[g]}">{g}</td><td class="v">{n(a)}</td><td class="v">{n(b)}</td><td class="v">{var(a, b)}</td></tr>\n'
+rows += f'      <tr><td><b data-en="Total, nautical and naval chain">Total da cadeia náutica e naval</b></td><td class="v"><b>{n(tot0)}</b></td><td class="v"><b>{n(tot1)}</b></td><td class="v"><b>{var(tot0, tot1)}</b></td></tr>\n'
 mun = ''
-for m, d in list(r1['industria_nautica_sc_por_municipio'].items())[:10]:
-    d0 = r0['industria_nautica_sc_por_municipio'].get(m, {'estab': 0, 'vinculos': 0})
-    mun += f'      <tr><td>{m}</td><td class="v">{n(d0["vinculos"])}</td><td class="v">{n(d["vinculos"])}</td><td class="v">{n(d["estab"])}</td><td class="v">{var(d0["vinculos"], d["vinculos"])}</td></tr>\n'
-# ranking UF 3012100
-uf = ''
-for u, d in list(r1['construcao_esporte_lazer_por_uf'].items())[:8]:
-    d0 = r0['construcao_esporte_lazer_por_uf'].get(u, {'estab': 0, 'vinculos': 0})
-    uf += f'      <tr><td>{u}</td><td class="v">{n(d0["vinculos"])}</td><td class="v">{n(d["vinculos"])}</td><td class="v">{n(d["estab"])}</td></tr>\n'
+for m, d in list(r1['construcao_sc_por_municipio'].items())[:6]:
+    d0 = r0['construcao_sc_por_municipio'].get(m, {'vinculos': 0})
+    mun += f'      <tr><td>{m}</td><td class="v">{n(d0["vinculos"])}</td><td class="v">{n(d["vinculos"])}</td><td class="v">{var(d0["vinculos"], d["vinculos"])}</td></tr>\n'
 html = (f'\n    <h3 data-en="Formal jobs in the nautical and naval chain of Santa Catarina, {A0} and {A1}" style="margin-top:1.4rem">Empregos formais na cadeia náutica e naval de Santa Catarina, {A0} e {A1}</h3>\n'
-        f'    <p class="lead" data-en="Establishments with at least one active employment contract on Dec 31 and active contracts, by group of CNAE subclasses defined by ACATMAR (see methodology). Read directly from the public RAIS microdata of the Ministry of Labor.">Estabelecimentos com pelo menos um vínculo ativo em 31 de dezembro e vínculos ativos, por grupo de subclasses CNAE definido pela ACATMAR (ver metodologia). Lidos direto dos microdados públicos da RAIS, do Ministério do Trabalho.</p>\n'
-        f'    <div class="tw"><table>\n      <tr><th data-en="Group">Grupo</th><th data-en="Establishments {A0}">Estab. {A0}</th><th data-en="Jobs {A0}">Vínculos {A0}</th><th data-en="Establishments {A1}">Estab. {A1}</th><th data-en="Jobs {A1}">Vínculos {A1}</th><th data-en="Change">Variação</th></tr>\n{rows}    </table></div>\n'
-        f'    <p class="mini" data-en="Within the nautical industry, sport and leisure boatbuilding alone (CNAE 3012-1/00) had {n(r0["sc_por_cnae"].get("3012100", {"vinculos": 0})["vinculos"])} jobs in {A0} and {n(r1["sc_por_cnae"].get("3012100", {"vinculos": 0})["vinculos"])} in {A1}, in {n(r1["sc_por_cnae"].get("3012100", {"estab": 0})["estab"])} shipyards with employees.">Dentro da indústria náutica, só a construção de embarcações de esporte e lazer (CNAE 3012-1/00) tinha {n(r0["sc_por_cnae"].get("3012100", {"vinculos": 0})["vinculos"])} empregos em {A0} e {n(r1["sc_por_cnae"].get("3012100", {"vinculos": 0})["vinculos"])} em {A1}, em {n(r1["sc_por_cnae"].get("3012100", {"estab": 0})["estab"])} estaleiros com empregados.</p>\n'
-        f'    <h3 data-en="Boatbuilding and nautical industry in SC, by municipality" style="margin-top:1.2rem">Indústria náutica de SC, por município</h3>\n'
-        f'    <div class="tw"><table>\n      <tr><th data-en="Municipality">Município</th><th data-en="Jobs {A0}">Vínculos {A0}</th><th data-en="Jobs {A1}">Vínculos {A1}</th><th data-en="Establishments {A1}">Estab. {A1}</th><th data-en="Change">Variação</th></tr>\n{mun}    </table></div>\n'
-        f'    <div class="src" data-en="Source: RAIS {A0} and {A1}, public establishment microdata (PDET/MTE), read and tabulated by ACATMAR. Open files in data/rais.">Fonte: RAIS {A0} e {A1}, microdados públicos por estabelecimento (PDET/MTE), lidos e tabulados pela ACATMAR. Arquivos abertos em <a href="data/rais/nautica_municipio_sc_{A1}.csv">data/rais</a>.</div>\n')
+        f'    <p class="lead" data-en="Employment contracts active on Dec 31, by activity group (see methodology). Boat and ship building adds up the three construction codes, from small boats to large vessels, because shipyards register under any of them.">Vínculos de emprego ativos em 31 de dezembro, por grupo de atividade (ver metodologia). Construção de embarcações soma os três códigos de construção, do barco pequeno ao navio, porque os estaleiros se registram em qualquer um deles.</p>\n'
+        f'    <div class="tw"><table>\n      <tr><th data-en="Group">Grupo</th><th>{A0}</th><th>{A1}</th><th data-en="Change">Variação</th></tr>\n{rows}    </table></div>\n'
+        f'    <h3 data-en="Boat and ship building jobs in SC, by municipality" style="margin-top:1.2rem">Empregos na construção de embarcações em SC, por município</h3>\n'
+        f'    <div class="tw"><table>\n      <tr><th data-en="Municipality">Município</th><th>{A0}</th><th>{A1}</th><th data-en="Change">Variação</th></tr>\n{mun}    </table></div>\n')
 put('sc', html)
-sc1 = r1['construcao_esporte_lazer_por_uf'].get('SC', {'vinculos': 0, 'estab': 0})
-tot_br = sum(d['vinculos'] for d in r1['construcao_esporte_lazer_por_uf'].values())
-put('br', f'      <tr><td data-en="Formal jobs in sport and leisure boatbuilding (CNAE 3012-1/00), by state">Empregos formais na construção de embarcações de esporte e lazer (CNAE 3012-1/00), por estado</td><td class="v">SC {n(sc1["vinculos"])} de {n(tot_br)}</td><td data-en="{A1}: ' + ' · '.join(f"{u} {n(d['vinculos'])}" for u, d in list(r1['construcao_esporte_lazer_por_uf'].items())[:6]) + f' · RAIS {A1}, ACATMAR extraction">{A1}: ' + ' · '.join(f"{u} {n(d['vinculos'])}" for u, d in list(r1['construcao_esporte_lazer_por_uf'].items())[:6]) + f' · RAIS {A1}, extração ACATMAR</td></tr>\n')
-defs = '; '.join(f"{c[:4]}-{c[4]}/{c[5:]} {d['descricao']}" for c, d in R['definicao'].items())
-put('nota', f'<li data-en="Jobs: RAIS establishment microdata, {len(R["definicao"])} CNAE subclasses grouped by ACATMAR into nautical industry, nautical trade and services, shipbuilding, ports and navigation, fishing and aquaculture; only establishments with at least one active contract on Dec 31 count, so companies without employees do not appear.">Empregos: microdados da RAIS por estabelecimento, {len(R["definicao"])} subclasses CNAE agrupadas pela ACATMAR em indústria náutica, comércio e serviços náuticos, indústria naval, portos e navegação, pesca e aquicultura; só contam estabelecimentos com pelo menos um vínculo ativo em 31 de dezembro, por isso empresas sem empregados não aparecem.</li>')
+top = list(r1['construcao_por_uf'].items())[:6]
+put('br', f'      <tr><td data-en="Formal jobs in boat and ship building, by state ({A1})">Empregos formais na construção de embarcações, por estado ({A1})</td><td class="v">' + ' · '.join(f"{u} {n(d['vinculos'])}" for u, d in top[:3]) + '</td><td data-en="' + ' · '.join(f"{u} {n(d['vinculos'])}" for u, d in top[3:6]) + '">' + ' · '.join(f"{u} {n(d['vinculos'])}" for u, d in top[3:6]) + '</td></tr>\n')
+put('nota', '<li data-en="Jobs: RAIS establishment microdata, grouped by ACATMAR into boat and ship building, maintenance and repair, nautical trade and services, ports and navigation, fishing and aquaculture. Only active contracts on Dec 31 are counted. This page does not count shipyards or companies by economic activity code, because the code does not identify a shipyard: leading yards are registered as commercial vessel builders, glass articles or even tire retail, and marinas and holdings appear as builders. The verified list of shipyards is being built by ACATMAR, name by name.">Empregos: microdados da RAIS por estabelecimento, agrupados pela ACATMAR em construção de embarcações, manutenção e reparo, comércio e serviços náuticos, portos e navegação, pesca e aquicultura. Só contam vínculos ativos em 31 de dezembro. Esta página não conta estaleiros nem empresas por código de atividade (CNAE), porque o código não identifica estaleiro: estaleiros de referência estão registrados como construção de uso comercial, artigos de vidro ou até comércio de pneus, e marinas e holdings aparecem como construtoras. A lista verificada de estaleiros está sendo construída pela ACATMAR, nome a nome.</li>')
 for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>', t, flags=re.S):
     json.loads(x)
 open(P, 'w', encoding='utf-8').write(t)
-print('ok', A0, A1, 'total cadeia SC', tot0, tot1)
+print('ok', A0, A1, 'construcao SC', r0['grupos_sc']['Construção de embarcações']['vinculos'], r1['grupos_sc']['Construção de embarcações']['vinculos'])

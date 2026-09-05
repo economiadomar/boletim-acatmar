@@ -1,56 +1,38 @@
 ano,municipio_codigo,municipio,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
-2025,420010,Abelardo Luz,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,6,3
-2025,420020,Agrolândia,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,420030,Agronômica,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,1,1
-2025,420055,Águas Frias,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
 2025,420100,Anita Garibaldi,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1
-2025,420100,Anita Garibaldi,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,1,1
-2025,420120,Antônio Carlos,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,1,1,1
-2025,420120,Antônio Carlos,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,1
-2025,420120,Antônio Carlos,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
+2025,420120,Antônio Carlos,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,1,1,1
 2025,420130,Araquari,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,113
 2025,420130,Araquari,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,6
 2025,420130,Araquari,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,0,0,1
 2025,420130,Araquari,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,0,0,5
 2025,420130,Araquari,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
-2025,420130,Araquari,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,1,8,1
-2025,420130,Araquari,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,2,11,5
-2025,420130,Araquari,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,2,5,4
-2025,420130,Araquari,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,1
+2025,420130,Araquari,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,1,8,1
+2025,420130,Araquari,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,2,11,5
+2025,420130,Araquari,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,0,0,1
 2025,420130,Araquari,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,3,8,4
 2025,420130,Araquari,5231102,Atividades do operador portuário,Portos e navegação,0,0,1
-2025,420130,Araquari,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,1
-2025,420130,Araquari,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
 2025,420140,Araranguá,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,296
 2025,420140,Araranguá,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,3
 2025,420140,Araranguá,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
 2025,420140,Araranguá,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,2
 2025,420140,Araranguá,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,0,0,1
-2025,420140,Araranguá,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,1,11,1
 2025,420140,Araranguá,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,1,9,1
 2025,420140,Araranguá,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,0,0,1
-2025,420140,Araranguá,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,5
-2025,420150,Armazém,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,1
-2025,420160,Arroio Trinta,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,5
-2025,420165,Arvoredo,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,420170,Ascurra,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,1,48,1
-2025,420180,Atalanta,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
+2025,420170,Ascurra,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,1,48,1
 2025,420195,Balneário Arroio do Silva,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,336
 2025,420195,Balneário Arroio do Silva,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,1
 2025,420195,Balneário Arroio do Silva,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
 2025,420195,Balneário Arroio do Silva,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,3
-2025,420195,Balneário Arroio do Silva,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
 2025,420200,Balneário Camboriú,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,2,37,121
 2025,420200,Balneário Camboriú,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,1,7,52
 2025,420200,Balneário Camboriú,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,0,0,1
 2025,420200,Balneário Camboriú,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,6,43,6
 2025,420200,Balneário Camboriú,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,1,22,1
-2025,420200,Balneário Camboriú,3011301,Construção de embarcações de grande porte,Indústria naval,1,4,1
-2025,420200,Balneário Camboriú,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,1,1,2
-2025,420200,Balneário Camboriú,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,1
-2025,420200,Balneário Camboriú,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,3
-2025,420200,Balneário Camboriú,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,4,21,16
-2025,420200,Balneário Camboriú,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,4
+2025,420200,Balneário Camboriú,3011301,Construção de embarcações de grande porte,Construção de embarcações,1,4,1
+2025,420200,Balneário Camboriú,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,1,1,2
+2025,420200,Balneário Camboriú,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,0,0,3
+2025,420200,Balneário Camboriú,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,4,21,16
+2025,420200,Balneário Camboriú,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,0,0,4
 2025,420200,Balneário Camboriú,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,7,33,12
 2025,420200,Balneário Camboriú,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,0,0,2
 2025,420200,Balneário Camboriú,5030101,Navegação de apoio marítimo,Portos e navegação,0,0,1
@@ -58,139 +40,85 @@ ano,municipio_codigo,municipio,cnae,descricao,grupo,estab_com_vinculo,vinculos_a
 2025,420200,Balneário Camboriú,5231101,Administração da infraestrutura portuária,Portos e navegação,0,0,1
 2025,420200,Balneário Camboriú,5232000,Atividades de agenciamento marítimo,Portos e navegação,3,75,5
 2025,420200,Balneário Camboriú,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,4
-2025,420200,Balneário Camboriú,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,4,42,25
-2025,420200,Balneário Camboriú,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,2,8,20
 2025,420205,Balneário Barra do Sul,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,436
 2025,420205,Balneário Barra do Sul,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,26
 2025,420205,Balneário Barra do Sul,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,49
 2025,420205,Balneário Barra do Sul,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,0,0,15
 2025,420205,Balneário Barra do Sul,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
 2025,420205,Balneário Barra do Sul,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,2,4,3
-2025,420205,Balneário Barra do Sul,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,1,1,1
-2025,420205,Balneário Barra do Sul,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,1,1,1
+2025,420205,Balneário Barra do Sul,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,1,1,1
+2025,420205,Balneário Barra do Sul,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,1,1,1
 2025,420205,Balneário Barra do Sul,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,1,3,1
 2025,420207,Balneário Gaivota,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,997
 2025,420207,Balneário Gaivota,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,13
 2025,420207,Balneário Gaivota,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,46
-2025,420207,Balneário Gaivota,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,1
-2025,420207,Balneário Gaivota,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,420208,Bandeirante,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
 2025,420210,Barra Velha,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,175
 2025,420210,Barra Velha,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,24
 2025,420210,Barra Velha,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,11
 2025,420210,Barra Velha,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,2
 2025,420210,Barra Velha,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,7,247,9
 2025,420210,Barra Velha,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,1,1,1
-2025,420210,Barra Velha,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,2,7,3
-2025,420210,Barra Velha,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,1
-2025,420210,Barra Velha,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,0,0,1
-2025,420210,Barra Velha,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,2
-2025,420210,Barra Velha,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,1,1
-2025,420220,Benedito Novo,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,1,3
-2025,420220,Benedito Novo,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
+2025,420210,Barra Velha,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,0,0,1
+2025,420210,Barra Velha,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,0,0,1
 2025,420230,Biguaçu,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,133
 2025,420230,Biguaçu,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,2
 2025,420230,Biguaçu,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,2,14,4
-2025,420230,Biguaçu,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,4,79,5
-2025,420230,Biguaçu,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,1,70,1
-2025,420230,Biguaçu,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,3,3,6
-2025,420230,Biguaçu,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,3
+2025,420230,Biguaçu,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,4,79,5
+2025,420230,Biguaçu,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,1,70,1
+2025,420230,Biguaçu,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,3,3,6
+2025,420230,Biguaçu,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,0,0,3
 2025,420230,Biguaçu,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,2,6,4
-2025,420230,Biguaçu,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,6
-2025,420230,Biguaçu,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,5
 2025,420240,Blumenau,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1
 2025,420240,Blumenau,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,2,2
-2025,420240,Blumenau,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,0,0,1
-2025,420240,Blumenau,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,1,18,2
-2025,420240,Blumenau,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,0,0,1
+2025,420240,Blumenau,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,0,0,1
+2025,420240,Blumenau,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,0,0,1
 2025,420240,Blumenau,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,2,3,4
 2025,420240,Blumenau,5030101,Navegação de apoio marítimo,Portos e navegação,0,0,1
 2025,420240,Blumenau,5231101,Administração da infraestrutura portuária,Portos e navegação,0,0,2
-2025,420240,Blumenau,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,4,15,8
-2025,420240,Blumenau,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,3,6,18
 2025,420243,Bocaina do Sul,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,1,1
 2025,420245,Bombinhas,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,21,147,293
 2025,420245,Bombinhas,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,47
 2025,420245,Bombinhas,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
 2025,420245,Bombinhas,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,2,2,2
-2025,420245,Bombinhas,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,0,0,1
+2025,420245,Bombinhas,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,0,0,1
 2025,420245,Bombinhas,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,1,5,2
 2025,420245,Bombinhas,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,1,19,7
 2025,420245,Bombinhas,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,1,8,1
-2025,420245,Bombinhas,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,4,5
-2025,420270,Botuverá,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
 2025,420280,Braço do Norte,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,2
 2025,420280,Braço do Norte,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,3,24,4
-2025,420280,Braço do Norte,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,1
-2025,420280,Braço do Norte,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,1,4
-2025,420290,Brusque,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,0,0,1
-2025,420290,Brusque,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,1,39,1
-2025,420290,Brusque,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,1
+2025,420290,Brusque,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,0,0,1
+2025,420290,Brusque,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,0,0,1
 2025,420290,Brusque,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,0,0,1
-2025,420290,Brusque,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,1,3
-2025,420290,Brusque,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,1,9
-2025,420300,Caçador,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,1,5
 2025,420320,Camboriú,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,1,15,16
 2025,420320,Camboriú,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,23,3
-2025,420320,Camboriú,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,1,1,2
-2025,420320,Camboriú,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,1
-2025,420320,Camboriú,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,2,5,8
+2025,420320,Camboriú,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,0,0,1
+2025,420320,Camboriú,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,2,5,8
 2025,420320,Camboriú,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,0,0,4
 2025,420320,Camboriú,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,1
-2025,420320,Camboriú,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,1,4
-2025,420320,Camboriú,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,2,4
-2025,420350,Campo Erê,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,1
-2025,420350,Campo Erê,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
 2025,420360,Campos Novos,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
-2025,420360,Campos Novos,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,1,1
-2025,420360,Campos Novos,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,4
 2025,420370,Canelinha,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,4
-2025,420370,Canelinha,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,1
-2025,420370,Canelinha,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
 2025,420380,Canoinhas,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1
 2025,420380,Canoinhas,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,0,0,2
-2025,420380,Canoinhas,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,1,2
-2025,420380,Canoinhas,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,420390,Capinzal,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,2,6
 2025,420395,Capivari de Baixo,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,2
 2025,420395,Capivari de Baixo,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,2
 2025,420395,Capivari de Baixo,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,0,0,1
-2025,420395,Capivari de Baixo,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,1
-2025,420395,Capivari de Baixo,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,420400,Catanduvas,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,0,0,1
+2025,420400,Catanduvas,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,0,0,1
 2025,420410,Caxambu do Sul,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,0,0,1
 2025,420410,Caxambu do Sul,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,1,1,1
 2025,420420,Chapecó,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,1,1
-2025,420420,Chapecó,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,2,4,3
+2025,420420,Chapecó,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,2,4,3
 2025,420420,Chapecó,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,2,7,4
 2025,420420,Chapecó,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,0,0,1
 2025,420420,Chapecó,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,0,0,1
-2025,420420,Chapecó,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,12
-2025,420420,Chapecó,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,1,34
-2025,420425,Cocal do Sul,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,1,1
 2025,420430,Concórdia,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,2,1
-2025,420430,Concórdia,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,1,5,2
-2025,420430,Concórdia,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,0,0,1
-2025,420430,Concórdia,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,4
-2025,420430,Concórdia,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,2,11,14
-2025,420435,Cordilheira Alta,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,420440,Coronel Freitas,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
-2025,420450,Corupá,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,1
-2025,420450,Corupá,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
-2025,420455,Correia Pinto,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
+2025,420430,Concórdia,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,0,0,1
+2025,420450,Corupá,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,0,0,1
 2025,420460,Criciúma,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,55
 2025,420460,Criciúma,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,2
 2025,420460,Criciúma,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
-2025,420460,Criciúma,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,1
+2025,420460,Criciúma,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,0,0,1
 2025,420460,Criciúma,5232000,Atividades de agenciamento marítimo,Portos e navegação,1,62,1
-2025,420460,Criciúma,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,2,5,9
-2025,420460,Criciúma,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,2,2,23
-2025,420480,Curitibanos,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,3,3
-2025,420480,Curitibanos,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,1,4
 2025,420490,Descanso,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,15,1
-2025,420490,Descanso,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,3
-2025,420500,Dionísio Cerqueira,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,2,3,6
-2025,420520,Erval Velho,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
 2025,420540,Florianópolis,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,6,63,1182
 2025,420540,Florianópolis,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,2,27,6
 2025,420540,Florianópolis,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,7
@@ -200,13 +128,12 @@ ano,municipio_codigo,municipio,cnae,descricao,grupo,estab_com_vinculo,vinculos_a
 2025,420540,Florianópolis,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,2,3,4
 2025,420540,Florianópolis,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,4,17,7
 2025,420540,Florianópolis,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,0,0,3
-2025,420540,Florianópolis,3011301,Construção de embarcações de grande porte,Indústria naval,0,0,1
-2025,420540,Florianópolis,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,0,0,1
-2025,420540,Florianópolis,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,3,71,4
-2025,420540,Florianópolis,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,12,77,25
-2025,420540,Florianópolis,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,3,170,5
-2025,420540,Florianópolis,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,3,10,12
-2025,420540,Florianópolis,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,7
+2025,420540,Florianópolis,3011301,Construção de embarcações de grande porte,Construção de embarcações,0,0,1
+2025,420540,Florianópolis,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,0,0,1
+2025,420540,Florianópolis,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,3,71,4
+2025,420540,Florianópolis,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,3,170,5
+2025,420540,Florianópolis,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,3,10,12
+2025,420540,Florianópolis,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,0,0,7
 2025,420540,Florianópolis,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,7,20,22
 2025,420540,Florianópolis,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,0,0,2
 2025,420540,Florianópolis,5030101,Navegação de apoio marítimo,Portos e navegação,0,0,1
@@ -214,73 +141,42 @@ ano,municipio_codigo,municipio,cnae,descricao,grupo,estab_com_vinculo,vinculos_a
 2025,420540,Florianópolis,5239701,Serviços de praticagem,Portos e navegação,0,0,1
 2025,420540,Florianópolis,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,2,7,3
 2025,420540,Florianópolis,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,2,19,7
-2025,420540,Florianópolis,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,13,91,59
-2025,420540,Florianópolis,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,13,91,60
-2025,420543,Formosa do Sul,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,4
 2025,420545,Forquilhinha,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,12
-2025,420550,Fraiburgo,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,1,2,1
-2025,420550,Fraiburgo,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,5
-2025,420555,Frei Rogério,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,420560,Galvão,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
+2025,420550,Fraiburgo,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,1,2,1
 2025,420570,Garopaba,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,654
 2025,420570,Garopaba,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,8
 2025,420570,Garopaba,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
-2025,420570,Garopaba,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,3
 2025,420570,Garopaba,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,0,0,2
-2025,420570,Garopaba,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,2
-2025,420570,Garopaba,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
 2025,420580,Garuva,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,18
 2025,420580,Garuva,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,2
 2025,420580,Garuva,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
 2025,420580,Garuva,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,0,0,2
-2025,420580,Garuva,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,1
-2025,420580,Garuva,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,1,1,1
+2025,420580,Garuva,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,1,1,1
 2025,420580,Garuva,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,2,2,8
 2025,420580,Garuva,5231102,Atividades do operador portuário,Portos e navegação,0,0,1
 2025,420590,Gaspar,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1
-2025,420590,Gaspar,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,2,18,2
-2025,420590,Gaspar,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,1
+2025,420590,Gaspar,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,2,18,2
 2025,420590,Gaspar,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,1,2,2
-2025,420590,Gaspar,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,2
-2025,420590,Gaspar,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,3,6
 2025,420600,Governador Celso Ramos,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,6,35,543
 2025,420600,Governador Celso Ramos,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,1,1,38
 2025,420600,Governador Celso Ramos,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
 2025,420600,Governador Celso Ramos,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,5
 2025,420600,Governador Celso Ramos,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,16,1
 2025,420600,Governador Celso Ramos,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,1,2,2
-2025,420600,Governador Celso Ramos,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,0,0,1
-2025,420600,Governador Celso Ramos,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,0,0,1
+2025,420600,Governador Celso Ramos,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,0,0,1
+2025,420600,Governador Celso Ramos,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,0,0,1
 2025,420600,Governador Celso Ramos,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,1,3,2
-2025,420600,Governador Celso Ramos,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,1
-2025,420620,Gravatal,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
 2025,420630,Guabiruba,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1
-2025,420630,Guabiruba,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,420640,Guaraciaba,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
 2025,420650,Guaramirim,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,5
-2025,420650,Guaramirim,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,4,88,4
-2025,420650,Guaramirim,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,2
-2025,420650,Guaramirim,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,4
-2025,420660,Guarujá do Sul,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
-2025,420665,Guatambú,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,420670,Herval d'Oeste,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,0,0,1
-2025,420670,Herval d'Oeste,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
-2025,420680,Ibicaré,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,420690,Ibirama,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,1
-2025,420690,Ibirama,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
+2025,420670,Herval d'Oeste,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,0,0,1
 2025,420700,Içara,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,252
 2025,420700,Içara,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,8
 2025,420700,Içara,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,1,1
-2025,420700,Içara,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,2
-2025,420700,Içara,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,1,3
-2025,420700,Içara,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,3
 2025,420710,Ilhota,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1
 2025,420710,Ilhota,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,95,1
-2025,420710,Ilhota,3011301,Construção de embarcações de grande porte,Indústria naval,0,0,1
-2025,420710,Ilhota,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,1,2,1
-2025,420710,Ilhota,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,1,4,2
-2025,420710,Ilhota,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,2,36,2
-2025,420710,Ilhota,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
+2025,420710,Ilhota,3011301,Construção de embarcações de grande porte,Construção de embarcações,0,0,1
+2025,420710,Ilhota,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,1,4,2
+2025,420710,Ilhota,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,2,36,2
 2025,420720,Imaruí,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,19
 2025,420720,Imaruí,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,1065
 2025,420720,Imaruí,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,0,0,2
@@ -291,8 +187,7 @@ ano,municipio_codigo,municipio,cnae,descricao,grupo,estab_com_vinculo,vinculos_a
 2025,420730,Imbituba,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,515
 2025,420730,Imbituba,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,1,2,1
 2025,420730,Imbituba,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,2,3
-2025,420730,Imbituba,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,1,4,1
-2025,420730,Imbituba,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,1
+2025,420730,Imbituba,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,1,4,1
 2025,420730,Imbituba,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,0,0,1
 2025,420730,Imbituba,5030101,Navegação de apoio marítimo,Portos e navegação,0,0,1
 2025,420730,Imbituba,5030102,Navegação de apoio portuário,Portos e navegação,3,36,4
@@ -301,36 +196,19 @@ ano,municipio_codigo,municipio,cnae,descricao,grupo,estab_com_vinculo,vinculos_a
 2025,420730,Imbituba,5232000,Atividades de agenciamento marítimo,Portos e navegação,7,32,11
 2025,420730,Imbituba,5239701,Serviços de praticagem,Portos e navegação,1,7,3
 2025,420730,Imbituba,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,0,0,3
-2025,420730,Imbituba,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,4,3
-2025,420730,Imbituba,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,17,5
-2025,420750,Indaial,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,1
-2025,420750,Indaial,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,1
-2025,420750,Indaial,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,2,5,7
-2025,420760,Ipira,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,420765,Iporã do Oeste,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
-2025,420768,Ipuaçu,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,420770,Ipumirim,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
-2025,420775,Iraceminha,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,6
-2025,420780,Irani,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,6
-2025,420785,Irati,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
-2025,420790,Irineópolis,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,1
 2025,420800,Itá,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,0,0,1
-2025,420800,Itá,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,2,1
-2025,420800,Itá,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,12
 2025,420810,Itaiópolis,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1
-2025,420810,Itaiópolis,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
 2025,420820,Itajaí,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,74,956,153
 2025,420820,Itajaí,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,2,47,13
 2025,420820,Itajaí,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,4,16,5
 2025,420820,Itajaí,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,8,162,14
 2025,420820,Itajaí,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,8,3394,14
-2025,420820,Itajaí,3011301,Construção de embarcações de grande porte,Indústria naval,11,2589,13
-2025,420820,Itajaí,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,4,15,7
-2025,420820,Itajaí,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,10,801,14
-2025,420820,Itajaí,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,2,3,7
-2025,420820,Itajaí,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,16,190,28
-2025,420820,Itajaí,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,7,51,25
-2025,420820,Itajaí,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,1,4,7
+2025,420820,Itajaí,3011301,Construção de embarcações de grande porte,Construção de embarcações,11,2589,13
+2025,420820,Itajaí,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,4,15,7
+2025,420820,Itajaí,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,10,801,14
+2025,420820,Itajaí,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,16,190,28
+2025,420820,Itajaí,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,7,51,25
+2025,420820,Itajaí,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,1,4,7
 2025,420820,Itajaí,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,12,42,35
 2025,420820,Itajaí,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,1,2,5
 2025,420820,Itajaí,5030101,Navegação de apoio marítimo,Portos e navegação,2,703,4
@@ -342,19 +220,12 @@ ano,municipio_codigo,municipio,cnae,descricao,grupo,estab_com_vinculo,vinculos_a
 2025,420820,Itajaí,5239701,Serviços de praticagem,Portos e navegação,1,3,15
 2025,420820,Itajaí,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,2,3,6
 2025,420820,Itajaí,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,1,2,4
-2025,420820,Itajaí,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,3,61,14
-2025,420820,Itajaí,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,2,6,24
 2025,420830,Itapema,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,44
 2025,420830,Itapema,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,1
 2025,420830,Itapema,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
 2025,420830,Itapema,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,2,10,3
-2025,420830,Itapema,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,2,35,6
-2025,420830,Itapema,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,1,1,2
+2025,420830,Itapema,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,1,1,2
 2025,420830,Itapema,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,0,0,2
-2025,420830,Itapema,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,7
-2025,420830,Itapema,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,4,2
-2025,420840,Itapiranga,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,1
-2025,420840,Itapiranga,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,14
 2025,420845,Itapoá,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,600
 2025,420845,Itapoá,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,107
 2025,420845,Itapoá,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,20
@@ -366,22 +237,14 @@ ano,municipio_codigo,municipio,cnae,descricao,grupo,estab_com_vinculo,vinculos_a
 2025,420845,Itapoá,5231102,Atividades do operador portuário,Portos e navegação,2,2049,3
 2025,420845,Itapoá,5232000,Atividades de agenciamento marítimo,Portos e navegação,0,0,1
 2025,420845,Itapoá,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,0,0,1
-2025,420845,Itapoá,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,1
-2025,420845,Itapoá,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
 2025,420850,Ituporanga,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1
-2025,420860,Jaborá,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
 2025,420880,Jaguaruna,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,540
 2025,420880,Jaguaruna,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,257
 2025,420880,Jaguaruna,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
 2025,420880,Jaguaruna,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,19,2
 2025,420880,Jaguaruna,5231101,Administração da infraestrutura portuária,Portos e navegação,2,57,2
 2025,420890,Jaraguá do Sul,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1
-2025,420890,Jaraguá do Sul,3011301,Construção de embarcações de grande porte,Indústria naval,0,0,1
-2025,420890,Jaraguá do Sul,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,2,7,4
-2025,420890,Jaraguá do Sul,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,2,3,13
-2025,420895,Jardinópolis,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,420900,Joaçaba,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,1
-2025,420900,Joaçaba,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,7
+2025,420890,Jaraguá do Sul,3011301,Construção de embarcações de grande porte,Construção de embarcações,0,0,1
 2025,420910,Joinville,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,417
 2025,420910,Joinville,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,41
 2025,420910,Joinville,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,8
@@ -389,13 +252,12 @@ ano,municipio_codigo,municipio,cnae,descricao,grupo,estab_com_vinculo,vinculos_a
 2025,420910,Joinville,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,0,0,17
 2025,420910,Joinville,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,13,1
 2025,420910,Joinville,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,1,3,2
-2025,420910,Joinville,3011301,Construção de embarcações de grande porte,Indústria naval,1,5,1
-2025,420910,Joinville,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,0,0,2
-2025,420910,Joinville,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,4,26,10
-2025,420910,Joinville,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,9,122,14
-2025,420910,Joinville,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,2
-2025,420910,Joinville,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,4,11,15
-2025,420910,Joinville,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,1
+2025,420910,Joinville,3011301,Construção de embarcações de grande porte,Construção de embarcações,1,5,1
+2025,420910,Joinville,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,0,0,2
+2025,420910,Joinville,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,4,26,10
+2025,420910,Joinville,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,0,0,2
+2025,420910,Joinville,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,4,11,15
+2025,420910,Joinville,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,0,0,1
 2025,420910,Joinville,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,5,25,14
 2025,420910,Joinville,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,0,0,1
 2025,420910,Joinville,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,1,1,1
@@ -404,17 +266,11 @@ ano,municipio_codigo,municipio,cnae,descricao,grupo,estab_com_vinculo,vinculos_a
 2025,420910,Joinville,5232000,Atividades de agenciamento marítimo,Portos e navegação,4,23,7
 2025,420910,Joinville,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,0,0,1
 2025,420910,Joinville,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,1,1,4
-2025,420910,Joinville,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,6,13,17
-2025,420910,Joinville,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,6,158,33
-2025,420920,Lacerdópolis,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
 2025,420930,Lages,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1
 2025,420930,Lages,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
 2025,420930,Lages,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,9,1
-2025,420930,Lages,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,0,0,1
-2025,420930,Lages,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,1
+2025,420930,Lages,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,0,0,1
 2025,420930,Lages,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,0,0,1
-2025,420930,Lages,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,2,8,4
-2025,420930,Lages,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,17
 2025,420940,Laguna,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,9,142,619
 2025,420940,Laguna,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,2498
 2025,420940,Laguna,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,1,9,8
@@ -424,33 +280,13 @@ ano,municipio_codigo,municipio,cnae,descricao,grupo,estab_com_vinculo,vinculos_a
 2025,420940,Laguna,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,1,1,2
 2025,420940,Laguna,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,7,181,9
 2025,420940,Laguna,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,10,216,12
-2025,420940,Laguna,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,0,0,1
-2025,420940,Laguna,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,2,8,4
+2025,420940,Laguna,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,0,0,1
 2025,420940,Laguna,5231101,Administração da infraestrutura portuária,Portos e navegação,1,4,1
-2025,420940,Laguna,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,2
-2025,420940,Laguna,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
-2025,420950,Laurentino,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,1,1
-2025,420970,Lebon Régis,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,1
-2025,420970,Lebon Régis,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,420985,Lindóia do Sul,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
-2025,420990,Lontras,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,1,1
-2025,420990,Lontras,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,421000,Luiz Alves,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,0,0,1
-2025,421000,Luiz Alves,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,2,2
-2025,421003,Luzerna,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,1
-2025,421003,Luzerna,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
-2025,421010,Mafra,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,1
-2025,421010,Mafra,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,3,5
-2025,421020,Major Gercino,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
+2025,421000,Luiz Alves,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,0,0,1
 2025,421040,Maracajá,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,3
-2025,421050,Maravilha,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,1,2
-2025,421050,Maravilha,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
 2025,421060,Massaranduba,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,33,1
-2025,421060,Massaranduba,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,4
 2025,421080,Meleiro,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,2
-2025,421090,Modelo,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,421100,Mondaí,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,1
-2025,421100,Mondaí,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,8
+2025,421100,Mondaí,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,0,0,1
 2025,421120,Morro da Fumaça,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,7
 2025,421125,Morro Grande,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1
 2025,421130,Navegantes,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,55,541,356
@@ -458,29 +294,18 @@ ano,municipio_codigo,municipio,cnae,descricao,grupo,estab_com_vinculo,vinculos_a
 2025,421130,Navegantes,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,3,10,6
 2025,421130,Navegantes,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,9,125,23
 2025,421130,Navegantes,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,6,2137,7
-2025,421130,Navegantes,3011301,Construção de embarcações de grande porte,Indústria naval,6,919,7
-2025,421130,Navegantes,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,4,133,9
-2025,421130,Navegantes,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,0,0,2
-2025,421130,Navegantes,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,21,341,30
-2025,421130,Navegantes,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,2,5,9
+2025,421130,Navegantes,3011301,Construção de embarcações de grande porte,Construção de embarcações,6,919,7
+2025,421130,Navegantes,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,4,133,9
+2025,421130,Navegantes,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,0,0,2
+2025,421130,Navegantes,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,21,341,30
+2025,421130,Navegantes,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,2,5,9
 2025,421130,Navegantes,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,0,0,1
 2025,421130,Navegantes,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,0,0,2
 2025,421130,Navegantes,5231101,Administração da infraestrutura portuária,Portos e navegação,0,0,1
 2025,421130,Navegantes,5231102,Atividades do operador portuário,Portos e navegação,3,1219,5
 2025,421130,Navegantes,5232000,Atividades de agenciamento marítimo,Portos e navegação,4,28,5
 2025,421130,Navegantes,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,2
-2025,421130,Navegantes,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,2,14,3
-2025,421130,Navegantes,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,35,4
-2025,421140,Nova Erechim,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,421145,Nova Itaberaba,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,421150,Nova Trento,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,5
 2025,421160,Nova Veneza,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,6
-2025,421160,Nova Veneza,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,1,3
-2025,421165,Novo Horizonte,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
-2025,421170,Orleans,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,421175,Otacílio Costa,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,1
-2025,421180,Ouro,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,3
-2025,421187,Paial,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
 2025,421190,Palhoça,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,361
 2025,421190,Palhoça,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,1
 2025,421190,Palhoça,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,108
@@ -489,27 +314,20 @@ ano,municipio_codigo,municipio,cnae,descricao,grupo,estab_com_vinculo,vinculos_a
 2025,421190,Palhoça,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,1,1,1
 2025,421190,Palhoça,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,6,1
 2025,421190,Palhoça,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,2,27,2
-2025,421190,Palhoça,3011301,Construção de embarcações de grande porte,Indústria naval,0,0,1
-2025,421190,Palhoça,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,3,199,3
-2025,421190,Palhoça,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,6,501,9
-2025,421190,Palhoça,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,1,2,3
-2025,421190,Palhoça,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,3,8,13
-2025,421190,Palhoça,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,1
+2025,421190,Palhoça,3011301,Construção de embarcações de grande porte,Construção de embarcações,0,0,1
+2025,421190,Palhoça,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,3,199,3
+2025,421190,Palhoça,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,6,501,9
+2025,421190,Palhoça,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,3,8,13
+2025,421190,Palhoça,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,0,0,1
 2025,421190,Palhoça,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,5,72,10
 2025,421190,Palhoça,5030101,Navegação de apoio marítimo,Portos e navegação,0,0,1
 2025,421190,Palhoça,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,0,0,1
-2025,421190,Palhoça,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,6,34,9
-2025,421190,Palhoça,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,3,12,11
 2025,421210,Palmitos,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,1,1
 2025,421210,Palmitos,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,1,1,1
 2025,421210,Palmitos,5232000,Atividades de agenciamento marítimo,Portos e navegação,0,0,1
-2025,421210,Palmitos,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,4
-2025,421220,Papanduva,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
 2025,421225,Passo de Torres,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,456
 2025,421225,Passo de Torres,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,1
 2025,421225,Passo de Torres,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,10
-2025,421225,Passo de Torres,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,1,1,1
-2025,421225,Passo de Torres,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,1,1
 2025,421230,Paulo Lopes,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,17
 2025,421230,Paulo Lopes,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,1
 2025,421230,Paulo Lopes,5030101,Navegação de apoio marítimo,Portos e navegação,1,23,1
@@ -521,13 +339,11 @@ ano,municipio_codigo,municipio,cnae,descricao,grupo,estab_com_vinculo,vinculos_a
 2025,421250,Penha,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,1,1,1
 2025,421250,Penha,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,18,231,45
 2025,421250,Penha,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,6,106,11
-2025,421250,Penha,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,1,4,1
-2025,421250,Penha,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,3
-2025,421250,Penha,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,1,1,1
+2025,421250,Penha,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,1,4,1
+2025,421250,Penha,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,0,0,3
+2025,421250,Penha,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,1,1,1
 2025,421250,Penha,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,1,2,1
 2025,421250,Penha,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,1,6,2
-2025,421250,Penha,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,2,3
-2025,421250,Penha,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
 2025,421265,Pescaria Brava,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,20
 2025,421265,Pescaria Brava,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,206
 2025,421265,Pescaria Brava,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,2
@@ -537,84 +353,48 @@ ano,municipio_codigo,municipio,cnae,descricao,grupo,estab_com_vinculo,vinculos_a
 2025,421280,Balneário Piçarras,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,4
 2025,421280,Balneário Piçarras,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,3,31,6
 2025,421280,Balneário Piçarras,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,4,221,4
-2025,421280,Balneário Piçarras,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,2,2,2
-2025,421280,Balneário Piçarras,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,1
-2025,421280,Balneário Piçarras,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,0,0,3
+2025,421280,Balneário Piçarras,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,2,2,2
+2025,421280,Balneário Piçarras,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,0,0,1
+2025,421280,Balneário Piçarras,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,0,0,3
 2025,421280,Balneário Piçarras,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,0,0,1
 2025,421280,Balneário Piçarras,5232000,Atividades de agenciamento marítimo,Portos e navegação,0,0,1
-2025,421280,Balneário Piçarras,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,2
-2025,421290,Pinhalzinho,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,1
+2025,421290,Pinhalzinho,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,0,0,1
 2025,421290,Pinhalzinho,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,0,0,1
-2025,421290,Pinhalzinho,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,1
-2025,421290,Pinhalzinho,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,6
-2025,421310,Piratuba,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,421320,Pomerode,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,2,15,2
-2025,421320,Pomerode,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,3
-2025,421320,Pomerode,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,6
 2025,421350,Porto Belo,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,50,281,244
 2025,421350,Porto Belo,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,19
 2025,421350,Porto Belo,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,3,12,4
 2025,421350,Porto Belo,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,2,21,2
 2025,421350,Porto Belo,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,0,0,2
-2025,421350,Porto Belo,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,3,37,3
-2025,421350,Porto Belo,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,1
-2025,421350,Porto Belo,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,1
-2025,421350,Porto Belo,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,2,4,11
-2025,421350,Porto Belo,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,1
+2025,421350,Porto Belo,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,3,37,3
+2025,421350,Porto Belo,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,0,0,1
+2025,421350,Porto Belo,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,2,4,11
+2025,421350,Porto Belo,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,0,0,1
 2025,421350,Porto Belo,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,2,2,5
 2025,421350,Porto Belo,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,1,11,6
 2025,421350,Porto Belo,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,1
-2025,421350,Porto Belo,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,1,5
-2025,421350,Porto Belo,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
 2025,421370,Pouso Redondo,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,4,1
 2025,421370,Pouso Redondo,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,1,1,1
-2025,421370,Pouso Redondo,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
 2025,421380,Praia Grande,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,5
 2025,421380,Praia Grande,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
 2025,421390,Presidente Castello Branco,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,0,0,1
-2025,421390,Presidente Castello Branco,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,421400,Presidente Getúlio,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
-2025,421415,Princesa,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,3
-2025,421420,Quilombo,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,26
-2025,421440,Rio das Antas,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,1,1
-2025,421460,Rio do Oeste,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,1,1,1
-2025,421470,Rio dos Cedros,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
-2025,421480,Rio do Sul,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,1,10
 2025,421490,Rio Fortuna,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,6,1
-2025,421490,Rio Fortuna,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
 2025,421500,Rio Negrinho,5232000,Atividades de agenciamento marítimo,Portos e navegação,0,0,1
-2025,421507,Riqueza,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,1
-2025,421507,Riqueza,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,3
 2025,421510,Rodeio,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,2,1
-2025,421510,Rodeio,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
-2025,421520,Romelândia,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
-2025,421535,Saltinho,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,1,1
-2025,421540,Salto Veloso,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,5
 2025,421545,Sangão,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,6
-2025,421550,Santa Cecília,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,421560,Santa Rosa de Lima,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
 2025,421565,Santa Rosa do Sul,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,26
 2025,421565,Santa Rosa do Sul,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,4
-2025,421567,Santa Terezinha,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,421569,Santiago do Sul,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,4
 2025,421570,Santo Amaro da Imperatriz,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,3
-2025,421570,Santo Amaro da Imperatriz,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,1,8,2
-2025,421570,Santo Amaro da Imperatriz,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,3
-2025,421575,São Bernardino,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,421580,São Bento do Sul,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,2,7,6
-2025,421580,São Bento do Sul,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,7
+2025,421570,Santo Amaro da Imperatriz,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,1,8,2
 2025,421600,São Carlos,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,3,1
-2025,421600,São Carlos,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
 2025,421620,São Francisco do Sul,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,96
 2025,421620,São Francisco do Sul,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,230
 2025,421620,São Francisco do Sul,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,8
 2025,421620,São Francisco do Sul,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,0,0,2
 2025,421620,São Francisco do Sul,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,1,3,437
-2025,421620,São Francisco do Sul,3011301,Construção de embarcações de grande porte,Indústria naval,1,2,1
-2025,421620,São Francisco do Sul,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,1,2,1
-2025,421620,São Francisco do Sul,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,1,21,2
-2025,421620,São Francisco do Sul,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,2
-2025,421620,São Francisco do Sul,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,1,1,1
+2025,421620,São Francisco do Sul,3011301,Construção de embarcações de grande porte,Construção de embarcações,1,2,1
+2025,421620,São Francisco do Sul,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,1,2,1
+2025,421620,São Francisco do Sul,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,0,0,2
+2025,421620,São Francisco do Sul,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,1,1,1
 2025,421620,São Francisco do Sul,5030101,Navegação de apoio marítimo,Portos e navegação,3,57,5
 2025,421620,São Francisco do Sul,5030102,Navegação de apoio portuário,Portos e navegação,5,123,7
 2025,421620,São Francisco do Sul,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,0,0,1
@@ -623,96 +403,50 @@ ano,municipio_codigo,municipio,cnae,descricao,grupo,estab_com_vinculo,vinculos_a
 2025,421620,São Francisco do Sul,5232000,Atividades de agenciamento marítimo,Portos e navegação,17,186,22
 2025,421620,São Francisco do Sul,5239701,Serviços de praticagem,Portos e navegação,1,6,2
 2025,421620,São Francisco do Sul,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,8,390,11
-2025,421620,São Francisco do Sul,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,2
-2025,421620,São Francisco do Sul,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,3
 2025,421630,São João Batista,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,6
-2025,421630,São João Batista,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,1,4,2
-2025,421630,São João Batista,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,3
 2025,421635,São João do Itaperiú,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,2
 2025,421640,São João do Sul,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,85
 2025,421640,São João do Sul,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,4
-2025,421650,São Joaquim,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,4
 2025,421660,São José,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,1,5,79
 2025,421660,São José,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,3
 2025,421660,São José,0321303,Criação de ostras e mexilhões em água salgada e salobra,Pesca e aquicultura,0,0,1
 2025,421660,São José,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
 2025,421660,São José,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,0,0,1
-2025,421660,São José,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,1,17,4
-2025,421660,São José,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,5,50,6
-2025,421660,São José,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,1,58,1
-2025,421660,São José,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,2,3,5
+2025,421660,São José,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,1,17,4
+2025,421660,São José,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,1,58,1
+2025,421660,São José,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,2,3,5
 2025,421660,São José,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,8,58,17
 2025,421660,São José,5232000,Atividades de agenciamento marítimo,Portos e navegação,0,0,2
-2025,421660,São José,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,5,22,15
-2025,421660,São José,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,2,16
-2025,421670,São José do Cedro,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,421680,São José do Cerrito,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,421690,São Lourenço do Oeste,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,6,13
-2025,421700,São Ludgero,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,421715,São Miguel da Boa Vista,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,1
 2025,421720,São Miguel do Oeste,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,2,1
-2025,421720,São Miguel do Oeste,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,4,2
-2025,421720,São Miguel do Oeste,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,2,8
-2025,421730,Saudades,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,5
 2025,421740,Schroeder,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,1,4,1
-2025,421740,Schroeder,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,421750,Seara,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
-2025,421755,Serra Alta,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
 2025,421760,Siderópolis,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1
 2025,421770,Sombrio,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,189
 2025,421770,Sombrio,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
 2025,421770,Sombrio,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,0,0,1
 2025,421770,Sombrio,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,7
-2025,421770,Sombrio,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,2,2
-2025,421770,Sombrio,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,421775,Sul Brasil,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,421780,Taió,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
-2025,421795,Tigrinhos,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,1
-2025,421795,Tigrinhos,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
 2025,421800,Tijucas,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,2,23,137
 2025,421800,Tijucas,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,1
 2025,421800,Tijucas,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,0,0,1
 2025,421800,Tijucas,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
 2025,421800,Tijucas,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,3,1
-2025,421800,Tijucas,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,0,0,2
-2025,421800,Tijucas,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,1,2,3
-2025,421800,Tijucas,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,1,3,7
+2025,421800,Tijucas,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,0,0,2
+2025,421800,Tijucas,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,1,2,3
+2025,421800,Tijucas,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,1,3,7
 2025,421800,Tijucas,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,1,2,2
-2025,421800,Tijucas,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,3
-2025,421800,Tijucas,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
-2025,421820,Timbó,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,2,3
-2025,421820,Timbó,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,2,5,2
 2025,421835,Treviso,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,0,0,1
 2025,421840,Treze de Maio,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1
-2025,421840,Treze de Maio,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,3
-2025,421850,Treze Tílias,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
-2025,421860,Trombudo Central,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
 2025,421870,Tubarão,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,7
 2025,421870,Tubarão,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,9
 2025,421870,Tubarão,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
 2025,421870,Tubarão,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,1,4,1
-2025,421870,Tubarão,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,1,4
-2025,421870,Tubarão,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
-2025,421875,Tunápolis,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
 2025,421880,Turvo,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,2
 2025,421880,Turvo,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,0,0,1
 2025,421880,Turvo,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,0,0,1
 2025,421890,Urubici,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,1,1
-2025,421890,Urubici,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,1,2
-2025,421890,Urubici,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
 2025,421900,Urussanga,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,38,1
-2025,421900,Urussanga,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,1
-2025,421900,Urussanga,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,3
-2025,421910,Vargeão,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,1
 2025,421930,Videira,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,3,1
-2025,421930,Videira,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,2
-2025,421930,Videira,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,4
 2025,421935,Vitor Meireles,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,9,1
-2025,421950,Xanxerê,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,0,0,2
-2025,421950,Xanxerê,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,7
-2025,421960,Xavantina,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
 2025,421970,Xaxim,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,0,0,1
-2025,421970,Xaxim,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,3
 2025,422000,Balneário Rincão,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1163
 2025,422000,Balneário Rincão,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,2
 2025,422000,Balneário Rincão,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,1,1,1

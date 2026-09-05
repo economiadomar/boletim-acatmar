@@ -18,21 +18,18 @@ os.makedirs(OUT, exist_ok=True)
 
 # CNAE 2.3 subclasses: cadeia nautica e naval + pesca + portos (definicao ACATMAR, explicitada na pagina)
 CNAE = {
-    # industria nautica
-    "3012100": ("Construção de embarcações para esporte e lazer", "Indústria náutica"),
-    "3011302": ("Construção de embarcações para uso comercial e usos especiais, exceto de grande porte", "Indústria náutica"),
-    "3317102": ("Manutenção e reparação de embarcações para esporte e lazer", "Indústria náutica"),
-    "3230200": ("Fabricação de artefatos para pesca e esporte", "Indústria náutica"),
-    "4329102": ("Instalação de equipamentos para orientação à navegação", "Indústria náutica"),
-    # servicos e comercio nauticos
+    # construcao de embarcacoes (os tres CNAEs de construcao juntos: os estaleiros se registram em qualquer um deles)
+    "3012100": ("Construção de embarcações para esporte e lazer", "Construção de embarcações"),
+    "3011302": ("Construção de embarcações para uso comercial e usos especiais, exceto de grande porte", "Construção de embarcações"),
+    "3011301": ("Construção de embarcações de grande porte", "Construção de embarcações"),
+    # manutencao e reparo
+    "3317102": ("Manutenção e reparação de embarcações para esporte e lazer", "Manutenção e reparo de embarcações"),
+    "3317101": ("Manutenção e reparação de embarcações e estruturas flutuantes", "Manutenção e reparo de embarcações"),
+    # comercio e servicos nauticos
     "4763605": ("Comércio varejista de embarcações e outros veículos recreativos", "Comércio e serviços náuticos"),
     "7719501": ("Locação de embarcações sem tripulação, exceto para fins recreativos", "Comércio e serviços náuticos"),
-    "7721700": ("Aluguel de equipamentos recreativos e esportivos", "Comércio e serviços náuticos"),
     "5099801": ("Transporte aquaviário para passeios turísticos", "Comércio e serviços náuticos"),
-    "9319199": ("Outras atividades esportivas (inclui escolas e clubes náuticos)", "Comércio e serviços náuticos"),
-    # naval
-    "3011301": ("Construção de embarcações de grande porte", "Indústria naval"),
-    "3317101": ("Manutenção e reparação de embarcações e estruturas flutuantes", "Indústria naval"),
+    "4329102": ("Instalação de equipamentos para orientação à navegação", "Comércio e serviços náuticos"),
     # portos e navegacao
     "5231101": ("Administração da infraestrutura portuária", "Portos e navegação"),
     "5231102": ("Atividades do operador portuário", "Portos e navegação"),
@@ -124,24 +121,29 @@ def processa(ano, caminho):
         return {k: {"estab": v[0], "vinculos": v[1]} for k, v in g.items()}
     ind_uf = collections.defaultdict(lambda: [0, 0])
     for (uf, c), a in uf_cnae.items():
-        if CNAE[c][1] == "Indústria náutica" and uf:
+        if CNAE[c][1] == "Construção de embarcações" and uf:
             ind_uf[uf][0] += a[0]; ind_uf[uf][1] += a[1]
+    grupos_uf = collections.defaultdict(lambda: collections.defaultdict(lambda: [0, 0]))
+    for (uf, c), a in uf_cnae.items():
+        if uf:
+            grupos_uf[uf][CNAE[c][1]][0] += a[0]; grupos_uf[uf][CNAE[c][1]][1] += a[1]
     constr_uf = collections.defaultdict(lambda: [0, 0])
     for (uf, c), a in uf_cnae.items():
         if c in ("3012100",) and uf:
             constr_uf[uf][0] += a[0]; constr_uf[uf][1] += a[1]
     mun_ind = collections.defaultdict(lambda: [0, 0])
     for (mun, c), a in mun_cnae.items():
-        if CNAE[c][1] == "Indústria náutica":
+        if CNAE[c][1] == "Construção de embarcações":
             mun_ind[mun][0] += a[0]; mun_ind[mun][1] += a[1]
     mun_all = {MUN.get(m, m): {"estab": v[0], "vinculos": v[1]} for m, v in sorted(econ_mar_sc_mun.items(), key=lambda x: -x[1][1])[:25]}
     sc_cnae = {c: {"desc": CNAE[c][0], "grupo": CNAE[c][1], "estab": a[0], "vinculos": a[1]} for (uf, c), a in uf_cnae.items() if uf == "SC"}
     return {
         "ano": ano, "total_sc": {"estab_com_vinculo": total_sc[0], "vinculos_ativos": total_sc[1]},
         "grupos_br": grupo(), "grupos_sc": grupo("SC"),
-        "industria_nautica_por_uf": {u: {"estab": v[0], "vinculos": v[1]} for u, v in sorted(ind_uf.items(), key=lambda x: -x[1][1])},
+        "construcao_por_uf": {u: {"estab": v[0], "vinculos": v[1]} for u, v in sorted(ind_uf.items(), key=lambda x: -x[1][1])},
+        "grupos_por_uf": {u: {g: {"estab": v[0], "vinculos": v[1]} for g, v in gg.items()} for u, gg in grupos_uf.items()},
         "construcao_esporte_lazer_por_uf": {u: {"estab": v[0], "vinculos": v[1]} for u, v in sorted(constr_uf.items(), key=lambda x: -x[1][1])},
-        "industria_nautica_sc_por_municipio": {MUN.get(m, m): {"estab": v[0], "vinculos": v[1]} for m, v in sorted(mun_ind.items(), key=lambda x: -x[1][1])[:20]},
+        "construcao_sc_por_municipio": {MUN.get(m, m): {"estab": v[0], "vinculos": v[1]} for m, v in sorted(mun_ind.items(), key=lambda x: -x[1][1])[:20]},
         "cadeia_sc_por_municipio": mun_all,
         "sc_por_cnae": sc_cnae,
     }
@@ -156,6 +158,6 @@ if __name__ == "__main__":
     for ano, r in res["anos"].items():
         print(f"\n== {ano} ==")
         print("  SC por grupo:", json.dumps(r["grupos_sc"], ensure_ascii=False))
-        print("  Indústria náutica por UF (vínculos):", [(u, v["vinculos"], v["estab"]) for u, v in list(r["industria_nautica_por_uf"].items())[:8]])
+        print("  Construção de embarcações por UF (vínculos):", [(u, v["vinculos"], v["estab"]) for u, v in list(r["construcao_por_uf"].items())[:8]])
         print("  Construção esporte e lazer (3012100) por UF:", [(u, v["vinculos"], v["estab"]) for u, v in list(r["construcao_esporte_lazer_por_uf"].items())[:8]])
-        print("  Indústria náutica SC por município:", [(m, v["vinculos"], v["estab"]) for m, v in list(r["industria_nautica_sc_por_municipio"].items())[:8]])
+        print("  Indústria náutica SC por município:", [(m, v["vinculos"], v["estab"]) for m, v in list(r["construcao_sc_por_municipio"].items())[:8]])

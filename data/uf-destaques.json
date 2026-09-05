@@ -18,14 +18,9 @@
         "About 70% of Brazil's sport and leisure boats are built in SC. In 2010 it was 8.3%."
       ],
       [
-        "Empresas",
-        "1.273 empresas náuticas ativas em agosto de 2026: 552 oficinas de manutenção e reparo, 244 operadoras de passeios turísticos, 197 revendas de embarcações, 110 instaladoras de equipamentos de navegação e 41 locadoras, além dos estaleiros. Florianópolis (231), Itajaí (195), Balneário Camboriú (122) e Joinville (121) concentram serviços e comércio.",
-        "1,273 active nautical companies in August 2026: 552 maintenance and repair shops, 244 tourist boat operators, 197 boat dealers, 110 navigation equipment installers and 41 rental companies, plus the shipyards. Florianópolis (231), Itajaí (195), Balneário Camboriú (122) and Joinville (121) concentrate services and trade."
-      ],
-      [
         "Estaleiros",
-        "39 estaleiros de esporte e lazer com empregados em 2025, o maior número do país (São Paulo 37, Paraná 23, Rio de Janeiro 15): Itajaí 10, Palhoça 6, Biguaçu 4, Joinville 4, Florianópolis 3, Porto Belo 3. Juntos empregam 1.558 pessoas.",
-        "39 sport and leisure shipyards with employees in 2025, the country's largest number (São Paulo 37, Paraná 23, Rio de Janeiro 15): Itajaí 10, Palhoça 6, Biguaçu 4, Joinville 4, Florianópolis 3, Porto Belo 3. Together they employ 1,558 people."
+        "A construção de embarcações emprega 5.460 pessoas em SC (2025), concentradas em Itajaí (3.405), Navegantes (1.052) e Palhoça (700). A lista verificada dos estaleiros, nome a nome, está sendo consolidada pela ACATMAR.",
+        "Boat and ship building employs 5,460 people in SC (2025), concentrated in Itajaí (3,405), Navegantes (1,052) and Palhoça (700). The verified list of shipyards, name by name, is being consolidated by ACATMAR."
       ],
       [
         "Economia do Mar",
@@ -54,11 +49,6 @@
         "Eventos",
         "São Paulo Boat Show 2025: 750 barcos negociados, 120 marcas, 170 barcos expostos, 40 mil visitantes.",
         "São Paulo Boat Show 2025: 750 boats sold, 120 brands, 170 boats on display, 40,000 visitors."
-      ],
-      [
-        "Empresas",
-        "2.710 empresas náuticas ativas, o maior número do país, e 37 estaleiros de esporte e lazer com empregados.",
-        "2,710 active nautical companies, the country's largest number, and 37 sport and leisure shipyards with employees."
       ]
     ]
   },
@@ -77,11 +67,6 @@
         "Investimento",
         "Programa Mar Aberto (Petrobras): 96 novas embarcações até 2032, R$ 32 bilhões em investimentos.",
         "Mar Aberto program (Petrobras): 96 new vessels by 2032, R$ 32 billion in investment."
-      ],
-      [
-        "Empresas",
-        "2.701 empresas náuticas ativas, segundo maior número do país, e 15 estaleiros de esporte e lazer com empregados.",
-        "2,701 active nautical companies, the country's second largest number, and 15 sport and leisure shipyards with employees."
       ]
     ]
   },
@@ -90,26 +75,14 @@
     "nome_en": "Paraná",
     "tagline": "Segunda maior frota de lanchas do país e polo industrial em crescimento, com exportações entre as três maiores do Brasil.",
     "tagline_en": "The country's second largest motorboat fleet and a growing industrial hub, with exports among Brazil's top three.",
-    "destaques": [
-      [
-        "Estaleiros",
-        "23 estaleiros de esporte e lazer com empregados, segundo do país, e 641 empresas náuticas ativas.",
-        "23 sport and leisure shipyards with employees, second in the country, and 641 active nautical companies."
-      ]
-    ]
+    "destaques": []
   },
   "rs": {
     "nome": "Rio Grande do Sul",
     "nome_en": "Rio Grande do Sul",
     "tagline": "Frota expressiva de lanchas e motos aquáticas e forte cultura de vela na Lagoa dos Patos e no Guaíba.",
     "tagline_en": "A sizable motorboat and personal watercraft fleet and a strong sailing culture on Lagoa dos Patos and the Guaíba.",
-    "destaques": [
-      [
-        "Estaleiros",
-        "11 estaleiros de esporte e lazer com empregados.",
-        "11 sport and leisure shipyards with employees."
-      ]
-    ]
+    "destaques": []
   },
   "pe": {
     "nome": "Pernambuco",
@@ -180,11 +153,6 @@
         "Linhas",
         "Nas 22 linhas interestaduais de passageiros e mistas (80 embarcações): 843.924 passageiros e 822.488 toneladas por ano. São 196 terminais fluviais de passageiros, 129 deles no Pará.",
         "On the 22 interstate passenger and mixed lines (80 vessels): 843,924 passengers and 822,488 tonnes a year. There are 196 river passenger terminals, 129 of them in Pará."
-      ],
-      [
-        "Empresas",
-        "674 empresas náuticas ativas, quarto maior número do país, e 8 estaleiros de esporte e lazer com empregados, a maior parte em Manaus.",
-        "674 active nautical companies, the country's fourth largest number, and 8 sport and leisure shipyards with employees, most of them in Manaus."
       ]
     ]
   }

@@ -12,10 +12,7 @@ t = open(P, encoding='utf-8').read()
 D = json.load(open(os.path.join(ROOT, 'data', 'uf-destaques.json'), encoding='utf-8'))
 RAIS = json.load(open(os.path.join(ROOT, 'data', 'rais', 'resumo.json'), encoding='utf-8'))
 CX = json.load(open(os.path.join(ROOT, 'data', 'comex', 'resumo.json'), encoding='utf-8'))
-CNPJ = None
-cp = os.path.join(ROOT, 'data', 'cnpj', 'resumo.json')
-if os.path.exists(cp):
-    CNPJ = json.load(open(cp, encoding='utf-8'))
+CNPJ = None  # contagens de empresas por CNAE nao entram na pagina (ver metodologia)
 ANOS = sorted(RAIS['anos']); A0, A1 = ANOS[-2], ANOS[-1]
 Y = CX['embarcacoes_8903']['semestre']['ano']; M = CX['embarcacoes_8903']['semestre']['ate_mes']; YC = Y - 1
 MES = ['', 'janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
@@ -72,9 +69,19 @@ for r in csv.DictReader(open(os.path.join(ROOT, 'data', 'comex', 'embarcacoes_me
         mes_uf[r['uf']] += int(float(r['metricFOB'] or 0))
 
 # ---------- rais ----------
+GR = ['Construção de embarcações', 'Manutenção e reparo de embarcações', 'Comércio e serviços náuticos', 'Portos e navegação', 'Pesca e aquicultura']
+GR_EN = {'Construção de embarcações': 'Boat and ship building', 'Manutenção e reparo de embarcações': 'Boat maintenance and repair', 'Comércio e serviços náuticos': 'Nautical trade and services', 'Portos e navegação': 'Ports and navigation', 'Pesca e aquicultura': 'Fishing and aquaculture'}
+def rais_grupos(ufs, ano):
+    out = {g: 0 for g in GR}
+    for u in ufs:
+        for g, d in RAIS['anos'][ano]['grupos_por_uf'].get(u, {}).items():
+            if g in out:
+                out[g] += d['vinculos']
+    return out
 def rais_uf(uf, ano):
     r = RAIS['anos'][ano]
-    return r['industria_nautica_por_uf'].get(uf, {'estab': 0, 'vinculos': 0}), r['construcao_esporte_lazer_por_uf'].get(uf, {'estab': 0, 'vinculos': 0})
+    c = r['construcao_por_uf'].get(uf, {'estab': 0, 'vinculos': 0})
+    return c, c
 
 
 def cnpj_uf(uf):
@@ -100,12 +107,13 @@ def painel(key, cfg):
         for u in ufs[1:]:
             i, c = rais_uf(u, A1); ind1 = {'estab': ind1['estab'] + i['estab'], 'vinculos': ind1['vinculos'] + i['vinculos']}; con1 = {'estab': con1['estab'] + c['estab'], 'vinculos': con1['vinculos'] + c['vinculos']}
             i, c = rais_uf(u, A0); ind0 = {'estab': ind0['estab'] + i['estab'], 'vinculos': ind0['vinculos'] + i['vinculos']}; con0 = {'estab': con0['estab'] + c['estab'], 'vinculos': con0['vinculos'] + c['vinculos']}
+    g0 = rais_grupos(ufs, A0); g1 = rais_grupos(ufs, A1)
     ex = {y: sum(exp_uf[u].get(y, 0) for u in ufs) for y in range(YC - 5, YC + 1)}
     rk = rank(uf, YC)
     ex_cur = sum(mes_uf[u] for u in ufs)
     emp, con_cnpj = cnpj_uf(uf)
     k = [kpi(n(fr['lancha']), f'lanchas registradas, {rank_lancha.get(uf, "-")}ª frota do país', f'registered motorboats, {rank_lancha.get(uf, "-")}th fleet in the country', 'Marinha do Brasil / DPC, arquivo de 17/09/2024', 'Brazilian Navy / DPC, file of Sept 17, 2024'),
-         kpi(n(ind1['vinculos']), f'empregos formais na indústria náutica ({A1})', f'formal jobs in the nautical industry ({A1})', f'RAIS {A1}, extração ACATMAR', f'RAIS {A1}, ACATMAR extraction'),
+         kpi(n(g1['Construção de embarcações']), f'empregos formais na construção de embarcações ({A1})', f'formal jobs in boat and ship building ({A1})', f'RAIS {A1}, extração ACATMAR', f'RAIS {A1}, ACATMAR extraction'),
          kpi(usd(ex[YC]), f'exportados em embarcações em {YC}' + (f', {rk}º do país' if rk else ', sem exportações'), f'boat exports in {YC}' + (f', {rk}th in the country' if rk else ', no exports'), 'Comex Stat / MDIC, extração ACATMAR', 'Comex Stat / MDIC, ACATMAR extraction')]
     if emp is not None:
         k.append(kpi(n(emp), 'empresas náuticas ativas', 'active nautical companies', f'Receita Federal, {CNPJ["pasta"]}, extração ACATMAR', f'Federal Revenue, {CNPJ["pasta"]}, ACATMAR extraction'))
@@ -120,16 +128,11 @@ def painel(key, cfg):
           f'<tr><td data-en="Other types (dinghies, canoes, fishing, transport, support)">Outros tipos (botes, canoas, pesca, transporte, apoio)</td><td class="v">{n(fr["outros"])}</td></tr>'
           f'<tr><td><b data-en="Total registered">Total registrado</b></td><td class="v"><b>{n(fr["total"])}</b></td></tr></table>'
           f'<div class="src" data-en="Brazilian Navy / DPC, registry by type, file of Sept 17, 2024">Marinha do Brasil / DPC, registro por tipo, arquivo de 17/09/2024</div></div>')
-    # empresas e empregos
-    rows = (f'<tr><th></th><th>{A0}</th><th>{A1}</th></tr>'
-            f'<tr><td data-en="Nautical industry: establishments with employees">Indústria náutica: estabelecimentos com empregados</td><td class="v">{n(ind0["estab"])}</td><td class="v">{n(ind1["estab"])}</td></tr>'
-            f'<tr><td data-en="Nautical industry: formal jobs">Indústria náutica: empregos formais</td><td class="v">{n(ind0["vinculos"])}</td><td class="v">{n(ind1["vinculos"])}</td></tr>'
-            f'<tr><td data-en="Sport and leisure boatbuilding: establishments">Construção de esporte e lazer: estabelecimentos</td><td class="v">{n(con0["estab"])}</td><td class="v">{n(con1["estab"])}</td></tr>'
-            f'<tr><td data-en="Sport and leisure boatbuilding: formal jobs">Construção de esporte e lazer: empregos formais</td><td class="v">{n(con0["vinculos"])}</td><td class="v">{n(con1["vinculos"])}</td></tr>')
-    if emp is not None:
-        rows += f'<tr><td data-en="Active nautical companies, main CNAE (Federal Revenue)">Empresas náuticas ativas, CNAE principal (Receita Federal)</td><td class="v"></td><td class="v">{n(emp)}</td></tr>'
-    eb = (f'<div class="ufbox"><h3 data-en="Companies and jobs">Empresas e empregos</h3><table>{rows}</table>'
-          f'<div class="src" data-en="RAIS {A0} and {A1} (five nautical industry CNAEs, see methodology)' + (f'; Federal Revenue CNPJ registry, {CNPJ["pasta"]}' if emp is not None else '') + f'. ACATMAR extraction.">RAIS {A0} e {A1} (cinco CNAEs da indústria náutica, ver metodologia)' + (f'; cadastro CNPJ da Receita Federal, {CNPJ["pasta"]}' if emp is not None else '') + '. Extração ACATMAR.</div></div>')
+    # empregos por grupo (estado)
+    g0 = rais_grupos(ufs, A0); g1 = rais_grupos(ufs, A1)
+    rows = f'<tr><th></th><th>{A0}</th><th>{A1}</th></tr>' + ''.join(f'<tr><td data-en="{GR_EN[g]}">{g}</td><td class="v">{n(g0[g])}</td><td class="v">{n(g1[g])}</td></tr>' for g in GR)
+    rows += f'<tr><td><b data-en="Total">Total</b></td><td class="v"><b>{n(sum(g0.values()))}</b></td><td class="v"><b>{n(sum(g1.values()))}</b></td></tr>'
+    eb = f'<div class="ufbox"><h3 data-en="Formal jobs in the nautical and naval chain">Empregos formais na cadeia náutica e naval</h3><table>{rows}</table></div>'
     # exportacoes
     zeros = [str(y) for y in sorted(ex) if not ex[y]]
     xr = ''.join(f'<tr><td>{y}</td><td class="v">{usd(ex[y])}</td><td class="v">{(str(round(100*ex[y]/br_ano[y],1)).replace(".", ",") + "%") if br_ano[y] else "-"}</td><td class="v">{str(rank(uf, y)) + "º" if rank(uf, y) else "-"}</td></tr>' for y in sorted(ex) if ex[y])
@@ -168,12 +171,11 @@ def brasil():
     for u in ordem:
         if frota[u]['lancha'] < 2000 and exp_uf[u].get(YC, 0) < 100000 and u not in keys:
             continue
-        i1, c1 = rais_uf(u, A1)
-        emp, _ = cnpj_uf(u)
+        gu = rais_grupos([u], A1)
         link = f'<a href="#uf-{keys[u]}" class="uflink" data-set-uf="{keys[u]}">{UFN[u]}</a>' if u in keys else UFN[u]
-        rows += f'<tr><td>{link}</td><td class="v">{n(frota[u]["lancha"])}</td><td class="v">{n(i1["vinculos"])}</td><td class="v">{n(c1["estab"])}</td>' + (f'<td class="v">{n(emp)}</td>' if CNPJ else '') + f'<td class="v">{usd(exp_uf[u].get(YC, 0)) if exp_uf[u].get(YC, 0) else "-"}</td></tr>'
-    head = (f'<tr><th data-en="State">Estado</th><th data-en="Motorboats registered">Lanchas registradas</th><th data-en="Nautical industry jobs {A1}">Empregos ind. náutica {A1}</th><th data-en="Sport and leisure boatbuilders {A1}">Construtores esporte e lazer {A1}</th>' + (f'<th data-en="Active nautical companies">Empresas náuticas ativas</th>' if CNPJ else '') + f'<th data-en="Boat exports {YC}">Exportações de barcos {YC}</th></tr>')
-    return (f'<section class="blk gated ufp" data-uf="br" id="uf-br">\n<div class="ufhead"><span class="eyebrow" data-en="States">Estados</span><h2 data-en="The states in numbers">Os estados em números</h2><p class="lead" data-en="Click a state to open its cut. Motorboats: Navy registry (Sept 2024). Jobs and boatbuilders: RAIS {A1}. Companies: Federal Revenue. Exports: Comex Stat {YC}. All read by ACATMAR from the primary sources.">Clique no estado para abrir o recorte dele. Lanchas: registro da Marinha (set/2024). Empregos e construtores: RAIS {A1}. Empresas: Receita Federal. Exportações: Comex Stat {YC}. Tudo lido pela ACATMAR direto das fontes primárias.</p></div>\n'
+        rows += f'<tr><td>{link}</td><td class="v">{n(frota[u]["lancha"])}</td><td class="v">{n(gu["Construção de embarcações"])}</td><td class="v">{n(sum(gu.values()))}</td><td class="v">{usd(exp_uf[u].get(YC, 0)) if exp_uf[u].get(YC, 0) else "-"}</td></tr>'
+    head = (f'<tr><th data-en="State">Estado</th><th data-en="Motorboats registered">Lanchas registradas</th><th data-en="Boat and ship building jobs {A1}">Empregos na construção de embarcações {A1}</th><th data-en="Jobs in the whole chain {A1}">Empregos na cadeia toda {A1}</th><th data-en="Boat exports {YC}">Exportações de barcos {YC}</th></tr>')
+    return (f'<section class="blk gated ufp" data-uf="br" id="uf-br">\n<div class="ufhead"><span class="eyebrow" data-en="States">Estados</span><h2 data-en="The states in numbers">Os estados em números</h2><p class="lead" data-en="Click a state to open its cut.">Clique no estado para abrir o recorte dele.</p></div>\n'
             f'<div class="tw"><table>{head}{rows}</table></div>\n</section>\n')
 
 

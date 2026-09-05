@@ -22,29 +22,9 @@ def put(key, html):
     print(f"  {key}: {k}")
 
 
-core_total = R['sc_setor_nautico_total_principal']
-porte = R['sc_setor_nautico_por_porte']
-rows_cnae = ''
-for c, d in R['sc_por_cnae'].items():
-    if True:
-        rows_cnae += f'      <tr><td>{c[:4]}-{c[4]}/{c[5:]}</td><td>{d["nome"]}</td><td class="v">{n(d["estabelecimentos_ativos"])}</td></tr>\n'
-rows_mun = ''.join(f'      <tr><td>{m}</td><td class="v">{n(v)}</td></tr>\n' for m, v in list(R['sc_setor_nautico_por_municipio'].items())[:12])
-rows_porte = ' · '.join(f'{k} {n(v)}' for k, v in sorted(porte.items(), key=lambda x: -x[1]))
-html = (f'\n    <h3 data-en="Active nautical companies in Santa Catarina (Federal Revenue CNPJ registry, {REF_EN}, ACATMAR extraction)" style="margin-top:1.4rem">Empresas náuticas ativas em Santa Catarina (cadastro CNPJ da Receita Federal, {REF}, extração ACATMAR)</h3>\n'
-        f'    <p class="lead" data-en="Establishments with active registration status whose main CNAE is one of seven nautical subclasses (boatbuilding, maintenance, boat retail, boat rental, tourist boat transport and navigation equipment). Read directly from the Federal Revenue open data. Includes companies without employees (MEI), which do not appear in RAIS. Sebrae/SC counted 1,292 in July 2024 with the same set of activities, which confirms the reading.">Estabelecimentos com situação cadastral ativa cujo CNAE principal é uma de sete subclasses náuticas (construção, manutenção, comércio de embarcações, locação, passeios turísticos e equipamentos de navegação). Lidos direto dos dados abertos da Receita Federal. Inclui empresas sem empregados (MEI), que não aparecem na RAIS. O Sebrae/SC contou 1.292 em julho de 2024 com o mesmo conjunto de atividades, o que confirma a leitura.</p>\n'
-        f'    <div class="tw"><table>\n      <tr><th>CNAE</th><th data-en="Activity">Atividade</th><th data-en="Active establishments">Estabelecimentos ativos</th></tr>\n{rows_cnae}'
-        f'      <tr><td></td><td><b data-en="Total, nautical sector (main CNAE)">Total do setor náutico (CNAE principal)</b></td><td class="v"><b>{n(core_total)}</b></td></tr>\n'
-        f'      <tr><td></td><td data-en="Plus: companies with a nautical CNAE as secondary activity">Além desses: empresas com CNAE náutico como atividade secundária</td><td class="v">{n(R["sc_com_cnae_nautico_secundario"])}</td></tr>\n    </table></div>\n'
-        f'    <div class="src" data-en="Size: {rows_porte} · MEI: {n(R["sc_setor_nautico_mei"])}. Source: Federal Revenue, CNPJ open data, {REF_EN} release, ACATMAR extraction.">Porte: {rows_porte} · MEI: {n(R["sc_setor_nautico_mei"])}. Fonte: Receita Federal, dados abertos do CNPJ, divulgação de {REF}, extração ACATMAR.</div>\n'
-        f'    <div class="tw" style="margin-top:1rem"><table>\n      <tr><th data-en="Municipality (SC)">Município (SC)</th><th data-en="Active nautical establishments">Estabelecimentos náuticos ativos</th></tr>\n{rows_mun}    </table></div>\n')
-cm = R.get('sc_construtores_por_municipio', {})
-if cm:
-    html += ('    <p class="mini" data-en="Caution with the boatbuilding line: the registry counts every CNPJ with that code, and it includes marinas, holdings and companies without operations. Boatbuilders with employees are counted in the jobs table above (RAIS).">Cuidado com a linha de construção de embarcações: o cadastro conta todo CNPJ com esse código, e ali entram marinas, holdings e empresas sem operação. Os estaleiros com empregados estão na tabela de empregos, acima (RAIS).</p>\n')
-put('sc', html)
-br = R['brasil_setor_nautico_principal_por_uf']
-b3 = R['brasil_construcao_esporte_lazer_por_uf']
-put('br', f'      <tr><td data-en="Active nautical companies by state (main CNAE, 7 subclasses)">Empresas náuticas ativas por estado (CNAE principal, 7 subclasses)</td><td class="v">' + ' · '.join(f'{u} {n(v)}' for u, v in list(br.items())[:4]) + f'</td><td data-en="' + ' · '.join(f'{u} {n(v)}' for u, v in list(br.items())[4:9]) + f' · Federal Revenue CNPJ registry, {REF_EN}, ACATMAR extraction">' + ' · '.join(f'{u} {n(v)}' for u, v in list(br.items())[4:9]) + f' · cadastro CNPJ da Receita Federal, {REF}, extração ACATMAR</td></tr>\n')
-put('nota', f'<li data-en="Companies: Federal Revenue CNPJ open data ({REF_EN}), establishments with active status and main CNAE in one of seven nautical subclasses; includes MEI and companies without employees, which is why it exceeds RAIS. Marinas and boat garages have no CNAE of their own and can only be counted by the Port Authority and city halls.">Empresas: dados abertos do CNPJ da Receita Federal ({REF}), estabelecimentos com situação ativa e CNAE principal em uma de sete subclasses náuticas; inclui MEI e empresas sem empregados, por isso é maior que a RAIS. Marinas e garagens náuticas não têm CNAE próprio e só podem ser contadas pela Capitania dos Portos e pelas prefeituras.</li>')
+put('sc', '')
+put('br', '')
+put('nota', '')
 for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>', t, flags=re.S):
     json.loads(x)
 open(P, 'w', encoding='utf-8').write(t)

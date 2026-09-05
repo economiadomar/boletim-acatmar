@@ -7,24 +7,21 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,,0321303,Criação de ostras e mexilhões em água salgada e salobra,Pesca e aquicultura,0,0,1
 2024,,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,3
 2024,,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,0,0,1
-2024,,3011301,Construção de embarcações de grande porte,Indústria naval,0,0,1
-2024,,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,0,0,1
-2024,,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,1
+2024,,3011301,Construção de embarcações de grande porte,Construção de embarcações,0,0,1
+2024,,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,0,0,1
+2024,,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,0,0,1
 2024,,5232000,Atividades de agenciamento marítimo,Portos e navegação,0,0,1
 2024,,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,0,0,1
-2024,,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,4
 2024,AC,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,3
 2024,AC,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,2
 2024,AC,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,1,18,2
-2024,AC,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,1,1,2
-2024,AC,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,0,0,1
-2024,AC,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,0,0,1
+2024,AC,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,1,1,2
+2024,AC,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,0,0,1
+2024,AC,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,0,0,1
 2024,AC,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,3,6,4
 2024,AC,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,0,0,1
 2024,AC,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,0,0,2
 2024,AC,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,1
-2024,AC,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,2,13,4
-2024,AC,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,12
 2024,AL,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,1,7,1276
 2024,AL,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,6533
 2024,AL,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,490
@@ -34,11 +31,10 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,AL,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,309
 2024,AL,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,4,197,5
 2024,AL,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,3,8,6
-2024,AL,3011301,Construção de embarcações de grande porte,Indústria naval,0,0,2
-2024,AL,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,1,30,3
-2024,AL,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,2,2,2
-2024,AL,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,1,1,1
-2024,AL,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,4,9,4
+2024,AL,3011301,Construção de embarcações de grande porte,Construção de embarcações,0,0,2
+2024,AL,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,1,30,3
+2024,AL,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,1,1,1
+2024,AL,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,4,9,4
 2024,AL,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,5,22,11
 2024,AL,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,0,0,2
 2024,AL,5030101,Navegação de apoio marítimo,Portos e navegação,0,0,2
@@ -50,8 +46,6 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,AL,5239701,Serviços de praticagem,Portos e navegação,0,0,1
 2024,AL,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,9,70,15
 2024,AL,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,2
-2024,AL,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,19,52,44
-2024,AL,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,3,18,42
 2024,AM,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,29
 2024,AM,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,2
 2024,AM,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,1,1,14
@@ -60,13 +54,12 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,AM,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
 2024,AM,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,4,148,10
 2024,AM,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,20,210,40
-2024,AM,3011301,Construção de embarcações de grande porte,Indústria naval,21,2447,42
-2024,AM,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,13,72,71
-2024,AM,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,6,151,28
-2024,AM,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,3,132,8
-2024,AM,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,16,108,75
-2024,AM,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,5,8,17
-2024,AM,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,2
+2024,AM,3011301,Construção de embarcações de grande porte,Construção de embarcações,21,2447,42
+2024,AM,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,13,72,71
+2024,AM,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,6,151,28
+2024,AM,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,16,108,75
+2024,AM,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,5,8,17
+2024,AM,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,0,0,2
 2024,AM,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,36,165,104
 2024,AM,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,6,186,36
 2024,AM,5030101,Navegação de apoio marítimo,Portos e navegação,2,6,4
@@ -78,19 +71,17 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,AM,5239701,Serviços de praticagem,Portos e navegação,4,33,8
 2024,AM,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,7,82,18
 2024,AM,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,9,13,37
-2024,AM,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,12,27,36
-2024,AM,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,6,6,41
 2024,AP,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1498
 2024,AP,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,17
 2024,AP,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,0,0,1
 2024,AP,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,10
 2024,AP,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,12,95,30
 2024,AP,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,3,20,7
-2024,AP,3011301,Construção de embarcações de grande porte,Indústria naval,1,2,3
-2024,AP,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,3,13,11
-2024,AP,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,2,23,8
-2024,AP,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,1,7,6
-2024,AP,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,1,1,2
+2024,AP,3011301,Construção de embarcações de grande porte,Construção de embarcações,1,2,3
+2024,AP,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,3,13,11
+2024,AP,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,2,23,8
+2024,AP,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,1,7,6
+2024,AP,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,1,1,2
 2024,AP,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,13,59,40
 2024,AP,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,3,10,5
 2024,AP,5030102,Navegação de apoio portuário,Portos e navegação,5,67,7
@@ -101,8 +92,6 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,AP,5239701,Serviços de praticagem,Portos e navegação,4,17,27
 2024,AP,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,1,60,7
 2024,AP,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,2
-2024,AP,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,4,42,10
-2024,AP,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,2,4,28
 2024,BA,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,4,10,12685
 2024,BA,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,2,6,71274
 2024,BA,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,1,1,678
@@ -113,13 +102,12 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,BA,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,3
 2024,BA,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,10,88,21
 2024,BA,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,14,639,31
-2024,BA,3011301,Construção de embarcações de grande porte,Indústria naval,5,71,8
-2024,BA,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,4,167,7
-2024,BA,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,3,9,7
-2024,BA,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,6,59,16
-2024,BA,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,16,165,37
-2024,BA,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,14,37,30
-2024,BA,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,1,4,7
+2024,BA,3011301,Construção de embarcações de grande porte,Construção de embarcações,5,71,8
+2024,BA,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,4,167,7
+2024,BA,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,3,9,7
+2024,BA,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,16,165,37
+2024,BA,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,14,37,30
+2024,BA,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,1,4,7
 2024,BA,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,20,47,46
 2024,BA,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,4,12,9
 2024,BA,5030101,Navegação de apoio marítimo,Portos e navegação,5,85,13
@@ -131,8 +119,6 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,BA,5239701,Serviços de praticagem,Portos e navegação,4,59,5
 2024,BA,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,7,177,13
 2024,BA,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,3,27,8
-2024,BA,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,45,179,119
-2024,BA,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,26,138,177
 2024,CE,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,3,20,717
 2024,CE,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,8,311,8011
 2024,CE,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,1,38,129
@@ -143,12 +129,11 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,CE,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,3,70,4
 2024,CE,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,28,569,62
 2024,CE,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,12,1065,43
-2024,CE,3011301,Construção de embarcações de grande porte,Indústria naval,1,200,1
-2024,CE,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,0,0,3
-2024,CE,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,1,242,4
-2024,CE,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,12,88,29
-2024,CE,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,9,33,18
-2024,CE,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,4,5,8
+2024,CE,3011301,Construção de embarcações de grande porte,Construção de embarcações,1,200,1
+2024,CE,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,0,0,3
+2024,CE,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,1,242,4
+2024,CE,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,9,33,18
+2024,CE,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,4,5,8
 2024,CE,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,4,28,10
 2024,CE,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,2,6,5
 2024,CE,5030101,Navegação de apoio marítimo,Portos e navegação,13,100,17
@@ -159,19 +144,16 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,CE,5239701,Serviços de praticagem,Portos e navegação,1,29,1
 2024,CE,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,1,160,2
 2024,CE,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,1,2,1
-2024,CE,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,37,202,108
-2024,CE,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,17,105,116
 2024,DF,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1
 2024,DF,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,3
 2024,DF,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
 2024,DF,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,2,9,2
 2024,DF,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,12,150,17
 2024,DF,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,4,22,9
-2024,DF,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,0,0,1
-2024,DF,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,1,38,4
-2024,DF,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,1,2,2
-2024,DF,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,6,25,11
-2024,DF,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,4
+2024,DF,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,0,0,1
+2024,DF,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,1,2,2
+2024,DF,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,6,25,11
+2024,DF,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,0,0,4
 2024,DF,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,8,44,23
 2024,DF,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,0,0,1
 2024,DF,5030101,Navegação de apoio marítimo,Portos e navegação,0,0,1
@@ -181,8 +163,6 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,DF,5232000,Atividades de agenciamento marítimo,Portos e navegação,0,0,1
 2024,DF,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,1,3,3
 2024,DF,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,1,8,7
-2024,DF,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,31,116,81
-2024,DF,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,18,111,95
 2024,ES,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,30,118,346
 2024,ES,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,11,43,5347
 2024,ES,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,17
@@ -193,12 +173,11 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,ES,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
 2024,ES,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,12,189,22
 2024,ES,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,5,106,11
-2024,ES,3011301,Construção de embarcações de grande porte,Indústria naval,2,3255,4
-2024,ES,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,1,2,1
-2024,ES,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,8,29,16
-2024,ES,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,11,98,40
-2024,ES,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,1,4,7
-2024,ES,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,23
+2024,ES,3011301,Construção de embarcações de grande porte,Construção de embarcações,2,3255,4
+2024,ES,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,1,2,1
+2024,ES,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,11,98,40
+2024,ES,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,1,4,7
+2024,ES,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,0,0,23
 2024,ES,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,11,34,27
 2024,ES,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,4,72,5
 2024,ES,5030101,Navegação de apoio marítimo,Portos e navegação,10,867,20
@@ -210,26 +189,21 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,ES,5239701,Serviços de praticagem,Portos e navegação,7,70,8
 2024,ES,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,7,83,22
 2024,ES,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,2,14,9
-2024,ES,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,17,56,49
-2024,ES,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,12,257,99
 2024,GO,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1
 2024,GO,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
 2024,GO,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,0,0,3
 2024,GO,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,1,1,2
 2024,GO,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,8,105,16
 2024,GO,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,7,85,11
-2024,GO,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,1,1,4
-2024,GO,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,15,121,31
-2024,GO,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,18,188,33
-2024,GO,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,3
-2024,GO,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,7,25,17
+2024,GO,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,1,1,4
+2024,GO,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,15,121,31
+2024,GO,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,0,0,3
+2024,GO,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,7,25,17
 2024,GO,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,24,84,61
 2024,GO,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,0,0,1
 2024,GO,5231102,Atividades do operador portuário,Portos e navegação,1,256,3
 2024,GO,5232000,Atividades de agenciamento marítimo,Portos e navegação,0,0,2
 2024,GO,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,2
-2024,GO,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,38,86,106
-2024,GO,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,33,194,168
 2024,MA,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,3,20,47065
 2024,MA,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,1,25,148927
 2024,MA,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1670
@@ -240,13 +214,12 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,MA,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,2
 2024,MA,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,3,8,10
 2024,MA,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,1,3,8
-2024,MA,3011301,Construção de embarcações de grande porte,Indústria naval,0,0,2
-2024,MA,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,4,424,5
-2024,MA,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,0,0,1
-2024,MA,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,1,3,3
-2024,MA,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,5,131,15
-2024,MA,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,0,0,3
-2024,MA,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,1
+2024,MA,3011301,Construção de embarcações de grande porte,Construção de embarcações,0,0,2
+2024,MA,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,4,424,5
+2024,MA,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,0,0,1
+2024,MA,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,5,131,15
+2024,MA,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,0,0,3
+2024,MA,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,0,0,1
 2024,MA,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,6,10,14
 2024,MA,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,1,4,2
 2024,MA,5030101,Navegação de apoio marítimo,Portos e navegação,7,227,17
@@ -257,8 +230,6 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,MA,5232000,Atividades de agenciamento marítimo,Portos e navegação,29,206,56
 2024,MA,5239701,Serviços de praticagem,Portos e navegação,8,15,8
 2024,MA,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,5,28,13
-2024,MA,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,21,51,48
-2024,MA,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,6,148,37
 2024,MG,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,7
 2024,MG,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,4
 2024,MG,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,1,1,1
@@ -267,13 +238,12 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,MG,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
 2024,MG,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,29,435,55
 2024,MG,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,15,235,30
-2024,MG,3011301,Construção de embarcações de grande porte,Indústria naval,0,0,2
-2024,MG,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,5,22,10
-2024,MG,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,14,254,25
-2024,MG,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,38,312,72
-2024,MG,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,2,440,10
-2024,MG,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,3,40,15
-2024,MG,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,1,1,9
+2024,MG,3011301,Construção de embarcações de grande porte,Construção de embarcações,0,0,2
+2024,MG,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,5,22,10
+2024,MG,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,14,254,25
+2024,MG,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,2,440,10
+2024,MG,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,3,40,15
+2024,MG,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,1,1,9
 2024,MG,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,17,76,51
 2024,MG,5030101,Navegação de apoio marítimo,Portos e navegação,1,2,8
 2024,MG,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,4,7,18
@@ -282,20 +252,17 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,MG,5232000,Atividades de agenciamento marítimo,Portos e navegação,5,17,23
 2024,MG,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,2,3,3
 2024,MG,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,1,1,3
-2024,MG,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,118,411,371
-2024,MG,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,85,438,647
 2024,MS,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,2
 2024,MS,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,1,1,2
 2024,MS,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
 2024,MS,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
 2024,MS,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,4,326,7
 2024,MS,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,4,641,7
-2024,MS,3011301,Construção de embarcações de grande porte,Indústria naval,0,0,3
-2024,MS,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,1,1,1
-2024,MS,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,1,2,2
-2024,MS,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,2,151,6
-2024,MS,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,2,6,9
-2024,MS,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,1,1,3
+2024,MS,3011301,Construção de embarcações de grande porte,Construção de embarcações,0,0,3
+2024,MS,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,1,1,1
+2024,MS,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,1,2,2
+2024,MS,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,2,6,9
+2024,MS,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,1,1,3
 2024,MS,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,19,117,24
 2024,MS,5030101,Navegação de apoio marítimo,Portos e navegação,0,0,2
 2024,MS,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,9,62,14
@@ -304,8 +271,6 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,MS,5232000,Atividades de agenciamento marítimo,Portos e navegação,4,18,6
 2024,MS,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,2,5,2
 2024,MS,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,3
-2024,MS,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,23,79,52
-2024,MS,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,22,74,100
 2024,MT,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1
 2024,MT,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
 2024,MT,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,1,2,1
@@ -313,13 +278,12 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,MT,0321303,Criação de ostras e mexilhões em água salgada e salobra,Pesca e aquicultura,0,0,1
 2024,MT,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,10,330,21
 2024,MT,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,3,6,5
-2024,MT,3011301,Construção de embarcações de grande porte,Indústria naval,1,2,1
-2024,MT,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,6,51,11
-2024,MT,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,5,19,8
-2024,MT,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,2
-2024,MT,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,1,7,2
-2024,MT,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,1,1,7
-2024,MT,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,1
+2024,MT,3011301,Construção de embarcações de grande porte,Construção de embarcações,1,2,1
+2024,MT,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,6,51,11
+2024,MT,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,5,19,8
+2024,MT,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,1,7,2
+2024,MT,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,1,1,7
+2024,MT,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,0,0,1
 2024,MT,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,16,101,38
 2024,MT,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,0,0,1
 2024,MT,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,5,23,11
@@ -328,8 +292,6 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,MT,5232000,Atividades de agenciamento marítimo,Portos e navegação,0,0,2
 2024,MT,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,1,1,1
 2024,MT,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,1,18,1
-2024,MT,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,12,38,66
-2024,MT,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,12,21,95
 2024,PA,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,26,202,33508
 2024,PA,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,9,117,644
 2024,PA,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,314
@@ -340,13 +302,12 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,PA,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,2
 2024,PA,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,23,1351,51
 2024,PA,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,21,642,43
-2024,PA,3011301,Construção de embarcações de grande porte,Indústria naval,12,71,31
-2024,PA,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,10,691,35
-2024,PA,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,2,5,10
-2024,PA,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,7
-2024,PA,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,27,301,74
-2024,PA,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,3,19,16
-2024,PA,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,1,1,5
+2024,PA,3011301,Construção de embarcações de grande porte,Construção de embarcações,12,71,31
+2024,PA,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,10,691,35
+2024,PA,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,2,5,10
+2024,PA,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,27,301,74
+2024,PA,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,3,19,16
+2024,PA,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,1,1,5
 2024,PA,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,63,268,130
 2024,PA,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,3,108,11
 2024,PA,5030101,Navegação de apoio marítimo,Portos e navegação,6,224,13
@@ -358,8 +319,6 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,PA,5239701,Serviços de praticagem,Portos e navegação,7,173,18
 2024,PA,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,13,122,26
 2024,PA,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,7,57,31
-2024,PA,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,20,123,47
-2024,PA,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,5,232,64
 2024,PB,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,321
 2024,PB,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,1563
 2024,PB,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,27
@@ -370,12 +329,11 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,PB,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,2,5,2
 2024,PB,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,4,44,4
 2024,PB,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,2,12,6
-2024,PB,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,2,6,3
-2024,PB,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,0,0,1
-2024,PB,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,1,1,2
-2024,PB,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,1
-2024,PB,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,1,2,2
-2024,PB,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,1
+2024,PB,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,2,6,3
+2024,PB,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,0,0,1
+2024,PB,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,0,0,1
+2024,PB,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,1,2,2
+2024,PB,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,0,0,1
 2024,PB,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,1,11,4
 2024,PB,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,0,0,1
 2024,PB,5030101,Navegação de apoio marítimo,Portos e navegação,1,2,2
@@ -387,8 +345,6 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,PB,5239701,Serviços de praticagem,Portos e navegação,0,0,2
 2024,PB,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,3,42,5
 2024,PB,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,2
-2024,PB,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,22,45,49
-2024,PB,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,9,79,51
 2024,PE,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,1,47,733
 2024,PE,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,4696
 2024,PE,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,10
@@ -397,13 +353,12 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,PE,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,1,17,11
 2024,PE,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,2,244,8
 2024,PE,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,19,1246,30
-2024,PE,3011301,Construção de embarcações de grande porte,Indústria naval,3,560,5
-2024,PE,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,2,12,4
-2024,PE,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,4,947,7
-2024,PE,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,7,66,12
-2024,PE,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,4,24,15
-2024,PE,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,6,24,16
-2024,PE,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,3
+2024,PE,3011301,Construção de embarcações de grande porte,Construção de embarcações,3,560,5
+2024,PE,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,2,12,4
+2024,PE,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,4,947,7
+2024,PE,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,4,24,15
+2024,PE,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,6,24,16
+2024,PE,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,0,0,3
 2024,PE,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,10,17,22
 2024,PE,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,8,71,13
 2024,PE,5030101,Navegação de apoio marítimo,Portos e navegação,1,13,2
@@ -415,8 +370,6 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,PE,5239701,Serviços de praticagem,Portos e navegação,2,47,19
 2024,PE,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,8,107,15
 2024,PE,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,7,51,11
-2024,PE,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,31,160,89
-2024,PE,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,11,36,97
 2024,PI,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,4,11,58
 2024,PI,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,2,10,25
 2024,PI,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,9
@@ -426,13 +379,10 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,PI,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,5
 2024,PI,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,3,22,7
 2024,PI,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,2,7,8
-2024,PI,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,3,14,5
 2024,PI,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,5,25,8
 2024,PI,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,2,2,3
 2024,PI,5231101,Administração da infraestrutura portuária,Portos e navegação,1,28,1
 2024,PI,5232000,Atividades de agenciamento marítimo,Portos e navegação,1,19,1
-2024,PI,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,13,42,29
-2024,PI,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,6,30,31
 2024,PR,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1043
 2024,PR,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,3800
 2024,PR,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,12
@@ -442,13 +392,12 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,PR,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
 2024,PR,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,23,3076,44
 2024,PR,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,10,233,21
-2024,PR,3011301,Construção de embarcações de grande porte,Indústria naval,3,22,6
-2024,PR,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,14,87,18
-2024,PR,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,19,315,41
-2024,PR,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,60,583,119
-2024,PR,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,11,425,25
-2024,PR,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,13,15,47
-2024,PR,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,6
+2024,PR,3011301,Construção de embarcações de grande porte,Construção de embarcações,3,22,6
+2024,PR,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,14,87,18
+2024,PR,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,19,315,41
+2024,PR,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,11,425,25
+2024,PR,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,13,15,47
+2024,PR,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,0,0,6
 2024,PR,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,50,255,147
 2024,PR,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,1,21,9
 2024,PR,5030101,Navegação de apoio marítimo,Portos e navegação,5,134,12
@@ -460,8 +409,6 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,PR,5239701,Serviços de praticagem,Portos e navegação,2,7,9
 2024,PR,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,18,151,49
 2024,PR,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,1,1,8
-2024,PR,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,92,293,281
-2024,PR,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,89,528,757
 2024,RJ,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,111,871,2326
 2024,RJ,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,1,1,6630
 2024,RJ,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,4,197,81
@@ -472,13 +419,12 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,RJ,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,3,21,7
 2024,RJ,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,11,270,23
 2024,RJ,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,17,1087,39
-2024,RJ,3011301,Construção de embarcações de grande porte,Indústria naval,27,13037,54
-2024,RJ,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,15,396,33
-2024,RJ,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,13,211,40
-2024,RJ,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,9,87,27
-2024,RJ,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,239,15762,504
-2024,RJ,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,44,214,139
-2024,RJ,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,12,67,142
+2024,RJ,3011301,Construção de embarcações de grande porte,Construção de embarcações,27,13037,54
+2024,RJ,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,15,396,33
+2024,RJ,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,13,211,40
+2024,RJ,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,239,15762,504
+2024,RJ,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,44,214,139
+2024,RJ,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,12,67,142
 2024,RJ,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,84,495,219
 2024,RJ,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,31,2483,62
 2024,RJ,5030101,Navegação de apoio marítimo,Portos e navegação,119,18953,242
@@ -490,8 +436,6 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,RJ,5239701,Serviços de praticagem,Portos e navegação,14,24,32
 2024,RJ,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,30,363,98
 2024,RJ,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,17,1130,62
-2024,RJ,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,69,649,225
-2024,RJ,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,131,1484,506
 2024,RN,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,14,346,1235
 2024,RN,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,2,23,2948
 2024,RN,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,334
@@ -502,12 +446,11 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,RN,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
 2024,RN,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,11,1062,16
 2024,RN,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,8,287,17
-2024,RN,3011301,Construção de embarcações de grande porte,Indústria naval,0,0,3
-2024,RN,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,0,0,3
-2024,RN,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,5
-2024,RN,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,4,13,10
-2024,RN,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,1,1,3
-2024,RN,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,4
+2024,RN,3011301,Construção de embarcações de grande porte,Construção de embarcações,0,0,3
+2024,RN,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,0,0,3
+2024,RN,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,4,13,10
+2024,RN,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,1,1,3
+2024,RN,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,0,0,4
 2024,RN,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,1,5,4
 2024,RN,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,7,47,16
 2024,RN,5030101,Navegação de apoio marítimo,Portos e navegação,4,80,7
@@ -518,19 +461,16 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,RN,5239701,Serviços de praticagem,Portos e navegação,1,2,2
 2024,RN,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,1,3,4
 2024,RN,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,2
-2024,RN,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,17,50,49
-2024,RN,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,16,268,67
 2024,RO,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1
 2024,RO,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
 2024,RO,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,1,3,2
 2024,RO,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
 2024,RO,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,3,1
 2024,RO,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,6,267,11
-2024,RO,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,2,16,3
-2024,RO,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,1,6,2
-2024,RO,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,1
-2024,RO,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,5
-2024,RO,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,1,1,5
+2024,RO,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,2,16,3
+2024,RO,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,1,6,2
+2024,RO,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,0,0,5
+2024,RO,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,1,1,5
 2024,RO,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,7,27,14
 2024,RO,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,0,0,4
 2024,RO,5030101,Navegação de apoio marítimo,Portos e navegação,1,1,3
@@ -540,21 +480,17 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,RO,5232000,Atividades de agenciamento marítimo,Portos e navegação,1,2,2
 2024,RO,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,0,0,1
 2024,RO,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,1
-2024,RO,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,9,15,25
-2024,RO,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,6,43,52
 2024,RR,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
 2024,RR,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,1,1
 2024,RR,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,1,27,1
-2024,RR,3011301,Construção de embarcações de grande porte,Indústria naval,0,0,1
-2024,RR,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,2
-2024,RR,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,0,0,1
+2024,RR,3011301,Construção de embarcações de grande porte,Construção de embarcações,0,0,1
+2024,RR,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,0,0,2
+2024,RR,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,0,0,1
 2024,RR,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,3,11,4
 2024,RR,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,0,0,1
 2024,RR,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,0,0,1
 2024,RR,5231102,Atividades do operador portuário,Portos e navegação,0,0,1
 2024,RR,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,2
-2024,RR,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,3,12,7
-2024,RR,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,5,18,12
 2024,RS,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,25,97,3688
 2024,RS,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,4,29,120
 2024,RS,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,2,43,28
@@ -563,13 +499,12 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,RS,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,1,1,2
 2024,RS,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,15,287,32
 2024,RS,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,11,530,21
-2024,RS,3011301,Construção de embarcações de grande porte,Indústria naval,7,806,10
-2024,RS,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,5,22,16
-2024,RS,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,11,103,30
-2024,RS,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,43,467,83
-2024,RS,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,18,107,41
-2024,RS,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,2,5,10
-2024,RS,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,8
+2024,RS,3011301,Construção de embarcações de grande porte,Construção de embarcações,7,806,10
+2024,RS,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,5,22,16
+2024,RS,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,11,103,30
+2024,RS,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,18,107,41
+2024,RS,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,2,5,10
+2024,RS,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,0,0,8
 2024,RS,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,16,61,50
 2024,RS,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,3,32,12
 2024,RS,5030101,Navegação de apoio marítimo,Portos e navegação,5,72,10
@@ -581,8 +516,6 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,RS,5239701,Serviços de praticagem,Portos e navegação,1,1,26
 2024,RS,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,10,72,35
 2024,RS,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,2,23,4
-2024,RS,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,51,103,193
-2024,RS,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,79,427,847
 2024,SC,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,284,2519,11865
 2024,SC,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,13,120,5069
 2024,SC,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,14,95,315
@@ -593,13 +526,12 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,SC,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,4,7,8
 2024,SC,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,98,1544,169
 2024,SC,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,49,6117,88
-2024,SC,3011301,Construção de embarcações de grande porte,Indústria naval,20,3252,28
-2024,SC,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,17,406,30
-2024,SC,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,33,1657,80
-2024,SC,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,56,509,109
-2024,SC,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,42,828,88
-2024,SC,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,40,211,144
-2024,SC,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,1,3,27
+2024,SC,3011301,Construção de embarcações de grande porte,Construção de embarcações,20,3252,28
+2024,SC,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,17,406,30
+2024,SC,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,33,1657,80
+2024,SC,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,42,828,88
+2024,SC,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,40,211,144
+2024,SC,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,1,3,27
 2024,SC,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,58,291,169
 2024,SC,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,1,1,11
 2024,SC,5030101,Navegação de apoio marítimo,Portos e navegação,6,787,16
@@ -611,8 +543,6 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,SC,5239701,Serviços de praticagem,Portos e navegação,2,9,23
 2024,SC,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,14,383,38
 2024,SC,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,5,23,27
-2024,SC,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,69,191,279
-2024,SC,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,68,316,685
 2024,SE,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,1,1,1350
 2024,SE,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,16466
 2024,SE,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,1,2,46
@@ -622,11 +552,10 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,SE,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,12
 2024,SE,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,2,12,2
 2024,SE,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,1,13,3
-2024,SE,3011301,Construção de embarcações de grande porte,Indústria naval,1,18,1
-2024,SE,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,0,0,1
-2024,SE,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,3,16,3
-2024,SE,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,3,5,8
-2024,SE,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,2,2,3
+2024,SE,3011301,Construção de embarcações de grande porte,Construção de embarcações,1,18,1
+2024,SE,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,0,0,1
+2024,SE,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,3,5,8
+2024,SE,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,2,2,3
 2024,SE,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,4,12,8
 2024,SE,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,1,2,1
 2024,SE,5030101,Navegação de apoio marítimo,Portos e navegação,3,72,7
@@ -637,8 +566,6 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,SE,5232000,Atividades de agenciamento marítimo,Portos e navegação,2,3,5
 2024,SE,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,2,8,4
 2024,SE,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,1
-2024,SE,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,7,18,21
-2024,SE,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,12,97,36
 2024,SP,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,23,192,1003
 2024,SP,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,2,7,2356
 2024,SP,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,3,5,161
@@ -649,13 +576,12 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,SP,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,1,1,5
 2024,SP,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,76,2276,116
 2024,SP,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,26,1576,43
-2024,SP,3011301,Construção de embarcações de grande porte,Indústria naval,7,68,15
-2024,SP,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,18,632,31
-2024,SP,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,34,482,63
-2024,SP,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,208,2624,353
-2024,SP,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,32,1121,82
-2024,SP,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,55,584,190
-2024,SP,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,3,6,22
+2024,SP,3011301,Construção de embarcações de grande porte,Construção de embarcações,7,68,15
+2024,SP,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Construção de embarcações,18,632,31
+2024,SP,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,34,482,63
+2024,SP,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Manutenção e reparo de embarcações,32,1121,82
+2024,SP,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,55,584,190
+2024,SP,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,3,6,22
 2024,SP,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,160,793,393
 2024,SP,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,8,531,32
 2024,SP,5030101,Navegação de apoio marítimo,Portos e navegação,8,356,19
@@ -667,23 +593,18 @@ ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
 2024,SP,5239701,Serviços de praticagem,Portos e navegação,0,0,73
 2024,SP,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,39,495,139
 2024,SP,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,11,82,41
-2024,SP,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,288,1212,860
-2024,SP,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,268,2407,1895
 2024,TO,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,7
 2024,TO,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,1
 2024,TO,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,2
 2024,TO,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,1,2,1
 2024,TO,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,2,54,4
 2024,TO,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,0,0,2
-2024,TO,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,4,17,5
-2024,TO,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,2
-2024,TO,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,2,2,7
-2024,TO,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,1,3,1
+2024,TO,3012100,Construção de embarcações para esporte e lazer,Construção de embarcações,4,17,5
+2024,TO,3317102,Manutenção e reparação de embarcações para esporte e lazer,Manutenção e reparo de embarcações,2,2,7
+2024,TO,4329102,Instalação de equipamentos para orientação à navegação,Comércio e serviços náuticos,1,3,1
 2024,TO,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,3,7,17
 2024,TO,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,0,0,1
 2024,TO,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,1,3,1
 2024,TO,5231101,Administração da infraestrutura portuária,Portos e navegação,1,3,1
 2024,TO,5231102,Atividades do operador portuário,Portos e navegação,0,0,1
 2024,TO,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,2
-2024,TO,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,7,17,24
-2024,TO,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,1,40
