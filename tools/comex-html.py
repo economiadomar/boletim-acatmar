@@ -13,7 +13,7 @@ R = json.load(open(os.path.join(ROOT, 'data', 'comex', 'resumo.json'), encoding=
 t = open(P, encoding='utf-8').read()
 B = R['embarcacoes_8903']; F = R['pescado_cap03_1604_1605']
 serie = B['serie_anual']; sem = B['semestre']
-Y = sem['ano']; M = sem['ate_mes']
+Y = sem['ano']; M = sem['ate_mes']; YC = Y - 1
 MES = ['', 'janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
 MES_EN = ['', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 GER = datetime.date.fromisoformat(R['gerado_em']).strftime('%d/%m/%Y')
