@@ -19,13 +19,13 @@
       ],
       [
         "Empresas",
-        "1.273 empresas náuticas ativas em agosto de 2026: 552 oficinas de manutenção e reparo, 244 operadoras de passeios turísticos, 197 revendas de embarcações, 110 instaladoras de equipamentos de navegação, 91 construtores e 41 locadoras. Florianópolis (231), Itajaí (195), Balneário Camboriú (122) e Joinville (121) concentram serviços e comércio.",
-        "1,273 active nautical companies in August 2026: 552 maintenance and repair shops, 244 tourist boat operators, 197 boat dealers, 110 navigation equipment installers, 91 builders and 41 rental companies. Florianópolis (231), Itajaí (195), Balneário Camboriú (122) and Joinville (121) concentrate services and trade."
+        "1.273 empresas náuticas ativas em agosto de 2026: 552 oficinas de manutenção e reparo, 244 operadoras de passeios turísticos, 197 revendas de embarcações, 110 instaladoras de equipamentos de navegação e 41 locadoras, além dos estaleiros. Florianópolis (231), Itajaí (195), Balneário Camboriú (122) e Joinville (121) concentram serviços e comércio.",
+        "1,273 active nautical companies in August 2026: 552 maintenance and repair shops, 244 tourist boat operators, 197 boat dealers, 110 navigation equipment installers and 41 rental companies, plus the shipyards. Florianópolis (231), Itajaí (195), Balneário Camboriú (122) and Joinville (121) concentrate services and trade."
       ],
       [
-        "Indústria",
-        "91 construtores ativos de embarcações de esporte e lazer, o maior número do país (São Paulo 69, Paraná 57): Itajaí 18, Joinville 12, Palhoça 10, Araquari 7, São José 7, Biguaçu 6. Em 2014 eram 40.",
-        "91 active sport and leisure boatbuilders, the country's largest number (São Paulo 69, Paraná 57): Itajaí 18, Joinville 12, Palhoça 10, Araquari 7, São José 7, Biguaçu 6. In 2014 there were 40."
+        "Estaleiros",
+        "39 estaleiros de esporte e lazer com empregados em 2025, o maior número do país (São Paulo 37, Paraná 23, Rio de Janeiro 15): Itajaí 10, Palhoça 6, Biguaçu 4, Joinville 4, Florianópolis 3, Porto Belo 3. Juntos empregam 1.558 pessoas.",
+        "39 sport and leisure shipyards with employees in 2025, the country's largest number (São Paulo 37, Paraná 23, Rio de Janeiro 15): Itajaí 10, Palhoça 6, Biguaçu 4, Joinville 4, Florianópolis 3, Porto Belo 3. Together they employ 1,558 people."
       ],
       [
         "Economia do Mar",
@@ -57,8 +57,8 @@
       ],
       [
         "Empresas",
-        "2.710 empresas náuticas ativas, o maior número do país, e 69 construtores de embarcações de esporte e lazer.",
-        "2,710 active nautical companies, the country's largest number, and 69 sport and leisure boatbuilders."
+        "2.710 empresas náuticas ativas, o maior número do país, e 37 estaleiros de esporte e lazer com empregados.",
+        "2,710 active nautical companies, the country's largest number, and 37 sport and leisure shipyards with employees."
       ]
     ]
   },
@@ -80,8 +80,8 @@
       ],
       [
         "Empresas",
-        "2.701 empresas náuticas ativas, segundo maior número do país, e 44 construtores de embarcações de esporte e lazer.",
-        "2,701 active nautical companies, the country's second largest number, and 44 sport and leisure boatbuilders."
+        "2.701 empresas náuticas ativas, segundo maior número do país, e 15 estaleiros de esporte e lazer com empregados.",
+        "2,701 active nautical companies, the country's second largest number, and 15 sport and leisure shipyards with employees."
       ]
     ]
   },
@@ -92,9 +92,9 @@
     "tagline_en": "The country's second largest motorboat fleet and a growing industrial hub, with exports among Brazil's top three.",
     "destaques": [
       [
-        "Indústria",
-        "57 construtores ativos de embarcações de esporte e lazer, terceiro do país, e 641 empresas náuticas.",
-        "57 active sport and leisure boatbuilders, third in the country, and 641 nautical companies."
+        "Estaleiros",
+        "23 estaleiros de esporte e lazer com empregados, segundo do país, e 641 empresas náuticas ativas.",
+        "23 sport and leisure shipyards with employees, second in the country, and 641 active nautical companies."
       ]
     ]
   },
@@ -105,9 +105,9 @@
     "tagline_en": "A sizable motorboat and personal watercraft fleet and a strong sailing culture on Lagoa dos Patos and the Guaíba.",
     "destaques": [
       [
-        "Indústria",
-        "32 construtores ativos de embarcações de esporte e lazer.",
-        "32 active sport and leisure boatbuilders."
+        "Estaleiros",
+        "11 estaleiros de esporte e lazer com empregados.",
+        "11 sport and leisure shipyards with employees."
       ]
     ]
   },
@@ -183,8 +183,8 @@
       ],
       [
         "Empresas",
-        "674 empresas náuticas ativas, quarto maior número do país, e 40 construtores de embarcações de esporte e lazer, a maior parte em Manaus.",
-        "674 active nautical companies, the country's fourth largest number, and 40 sport and leisure boatbuilders, most of them in Manaus."
+        "674 empresas náuticas ativas, quarto maior número do país, e 8 estaleiros de esporte e lazer com empregados, a maior parte em Manaus.",
+        "674 active nautical companies, the country's fourth largest number, and 8 sport and leisure shipyards with employees, most of them in Manaus."
       ]
     ]
   }

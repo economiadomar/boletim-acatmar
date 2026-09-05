@@ -186,7 +186,7 @@ for key, uf in [('sp', 'SP'), ('rj', 'RJ'), ('sc', 'SC'), ('pr', 'PR'), ('rs', '
 t, n = re.subn(r'Itajaí \(SC\): US\$ [^<"]*? (?:no 1º semestre|de janeiro a \w+) de \d{4}(?:, (?:alta|queda) de \d+%)?, líder nacional\.',
                f'Itajaí (SC): {usd(it1).replace(" mi", " milhões")} de janeiro a {MES[M]} de {Y}, líder nacional.', t)
 print('  faq itajai pt:', n)
-t, n = re.subn(r'Itajaí \(SC\): US\$ [^<"]*? (?:in H1|from January to \w+) \d{4}, (?:up|down) \d+%, national leader\.',
+t, n = re.subn(r'Itajaí \(SC\): US\$ [^<"]*? (?:in H1|from January to \w+) \d{4}(?:, (?:up|down) \d+%)?, national leader\.',
                f'Itajaí (SC): {usd_en(it1)} from January to {MES_EN[M]} {Y}, national leader.', t)
 print('  faq itajai en:', n)
 for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>', t, flags=re.S):

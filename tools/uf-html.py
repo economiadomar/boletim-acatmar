@@ -127,7 +127,7 @@ def painel(key, cfg):
             f'<tr><td data-en="Sport and leisure boatbuilding: establishments">Construção de esporte e lazer: estabelecimentos</td><td class="v">{n(con0["estab"])}</td><td class="v">{n(con1["estab"])}</td></tr>'
             f'<tr><td data-en="Sport and leisure boatbuilding: formal jobs">Construção de esporte e lazer: empregos formais</td><td class="v">{n(con0["vinculos"])}</td><td class="v">{n(con1["vinculos"])}</td></tr>')
     if emp is not None:
-        rows += f'<tr><td data-en="Active nautical companies, main CNAE (Federal Revenue)">Empresas náuticas ativas, CNAE principal (Receita Federal)</td><td class="v"></td><td class="v">{n(emp)}</td></tr><tr><td data-en="Active sport and leisure boatbuilders (Federal Revenue)">Construtores de esporte e lazer ativos (Receita Federal)</td><td class="v"></td><td class="v">{n(con_cnpj)}</td></tr>'
+        rows += f'<tr><td data-en="Active nautical companies, main CNAE (Federal Revenue)">Empresas náuticas ativas, CNAE principal (Receita Federal)</td><td class="v"></td><td class="v">{n(emp)}</td></tr>'
     eb = (f'<div class="ufbox"><h3 data-en="Companies and jobs">Empresas e empregos</h3><table>{rows}</table>'
           f'<div class="src" data-en="RAIS {A0} and {A1} (five nautical industry CNAEs, see methodology)' + (f'; Federal Revenue CNPJ registry, {CNPJ["pasta"]}' if emp is not None else '') + f'. ACATMAR extraction.">RAIS {A0} e {A1} (cinco CNAEs da indústria náutica, ver metodologia)' + (f'; cadastro CNPJ da Receita Federal, {CNPJ["pasta"]}' if emp is not None else '') + '. Extração ACATMAR.</div></div>')
     # exportacoes
