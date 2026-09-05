@@ -145,7 +145,7 @@ def painel(key, cfg):
           + (f'<p class="mini" data-en="{YC}, by municipality: {mtxt}">{YC}, por município: {mtxt}</p>' if muns else '')
           + f'<div class="src" data-en="Comex Stat / MDIC, US$ FOB, ACATMAR extraction">Comex Stat / MDIC, US$ FOB, extração ACATMAR</div></div>')
     # destaques
-    db = '<div class="ufbox"><h3 data-en="Highlights">Destaques</h3><ul class="dest">' + ''.join(f'<li><b>{a}.</b> <span data-en="{c}">{b}</span></li>' for a, b, c in cfg['destaques']) + '</ul></div>'
+    db = '<div class="ufbox dest"><h3 data-en="Highlights">Destaques</h3><ul class="dest">' + ''.join(f'<li><b>{a}.</b> <span data-en="{c}">{b}</span></li>' for a, b, c in cfg['destaques']) + '</ul></div>'
     sac = ''
     if cfg.get('sac'):
         sac = ('<div class="ufbox sac"><h3 data-en="SAC Náutico: the model other states can copy">SAC Náutico: o modelo que os outros estados podem copiar</h3>'
