@@ -131,8 +131,11 @@ def painel(key, cfg):
     eb = (f'<div class="ufbox"><h3 data-en="Companies and jobs">Empresas e empregos</h3><table>{rows}</table>'
           f'<div class="src" data-en="RAIS {A0} and {A1} (five nautical industry CNAEs, see methodology)' + (f'; Federal Revenue CNPJ registry, {CNPJ["pasta"]}' if emp is not None else '') + f'. ACATMAR extraction.">RAIS {A0} e {A1} (cinco CNAEs da indústria náutica, ver metodologia)' + (f'; cadastro CNPJ da Receita Federal, {CNPJ["pasta"]}' if emp is not None else '') + '. Extração ACATMAR.</div></div>')
     # exportacoes
-    xr = ''.join(f'<tr><td>{y}</td><td class="v">{usd(ex[y])}</td><td class="v">{(str(round(100*ex[y]/br_ano[y],1)).replace(".", ",") + "%") if br_ano[y] else "-"}</td><td class="v">{rank(uf, y) or "-"}º</td></tr>' for y in sorted(ex))
-    xr += f'<tr><td>{Y} (jan a {MES[M][:3]})</td><td class="v">{usd(ex_cur)}</td><td class="v"></td><td class="v"></td></tr>'
+    zeros = [str(y) for y in sorted(ex) if not ex[y]]
+    xr = ''.join(f'<tr><td>{y}</td><td class="v">{usd(ex[y])}</td><td class="v">{(str(round(100*ex[y]/br_ano[y],1)).replace(".", ",") + "%") if br_ano[y] else "-"}</td><td class="v">{str(rank(uf, y)) + "º" if rank(uf, y) else "-"}</td></tr>' for y in sorted(ex) if ex[y])
+    xr += f'<tr><td>{Y} (jan a {MES[M][:3]})</td><td class="v">{usd(ex_cur) if ex_cur else "-"}</td><td class="v"></td><td class="v"></td></tr>'
+    if zeros:
+        xr += f'<tr><td colspan="4" class="mini" data-en="No exports recorded in {", ".join(zeros)}.">Sem exportações registradas em {", ".join(zeros)}.</td></tr>'
     muns = sorted(((v, m) for m, v in mun_uf[uf].items() if v > 0), reverse=True)[:5]
     mtxt = ' · '.join(f'{m} {usd(v)}' for v, m in muns)
     xb = (f'<div class="ufbox"><h3 data-en="Boat exports (heading 8903)">Exportações de embarcações (posição 8903)</h3><table><tr><th data-en="Year">Ano</th><th>US$ FOB</th><th data-en="Share of Brazil">Parte do Brasil</th><th data-en="Rank">Posição</th></tr>{xr}</table>'
