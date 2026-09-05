@@ -29,7 +29,7 @@ def _link(m):
     if '&rarr;' in inner or '→' in inner or re.match(r'^\s*(Saiba mais|Ver as notícias|Todas as edições|Guia completo|Informativo técnico|ALESC|SEF/SC|Senado Federal|Antaq|resumo|panrotas|Boletim estatístico|Ler a análise completa)', re.sub(r'<[^>]+>', '', inner), re.I):
         return ''
     return inner
-body, n['links'] = re.subn(r'<a\s+href="([^"]*)"[^>]*>(.*?)</a>', _link, body, flags=re.S)
+body, n['links'] = re.subn(r'<a\b[^>]*?href="([^"]*)"[^>]*>(.*?)</a>', _link, body, flags=re.S)
 t = t[:a] + body + t[b:]
 for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>', t, flags=re.S):
     json.loads(x)
