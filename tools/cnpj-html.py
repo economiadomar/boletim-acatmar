@@ -28,4 +28,4 @@ put('nota', '')
 for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>', t, flags=re.S):
     json.loads(x)
 open(P, 'w', encoding='utf-8').write(t)
-print('ok', REF, 'SC setor nautico', core_total)
+print('ok (sem tabelas na pagina)')
