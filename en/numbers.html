@@ -27,7 +27,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow+Condensed:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
- {"@type":"Dataset","name":"Economia do Mar em Números · ACATMAR","url":"https://www.acatmar.org/numeros",
+ {"@type":"Dataset","isAccessibleForFree":"False","hasPart":{"@type":"WebPageElement","isAccessibleForFree":"False","cssSelector":".gated"},"name":"Economia do Mar em Números · ACATMAR","url":"https://www.acatmar.org/numeros",
   "description":"Indicadores consolidados da Economia do Mar e do setor náutico brasileiro e catarinense: empregos, estabelecimentos, massa salarial, produção e exportação de embarcações, comércio exterior e marco legal. Compilação da ACATMAR a partir de fontes oficiais e levantamentos do setor.",
   "creator":{"@type":"Organization","name":"ACATMAR · Associação Náutica Brasileira","url":"https://www.acatmar.org/"},
   "publisher":{"@type":"Organization","name":"ACATMAR · Associação Náutica Brasileira","url":"https://www.acatmar.org/"},
@@ -149,6 +149,29 @@
 .guia .chips{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1rem}
 .guia .chips a{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:.32rem .8rem;font-size:.82rem;text-decoration:none}
 .guia .chips a:hover{background:#1aa6c9;color:#062033;border-color:#1aa6c9}
+
+/* portao de cadastro (soft gate) */
+html.locked .gated{display:none}
+html.locked #brasil{display:block;position:relative;max-height:520px;overflow:hidden;pointer-events:none;user-select:none}
+html.locked #brasil::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(246,249,251,0) 0%,rgba(246,249,251,.85) 55%,#f6f9fb 100%)}
+html.locked #brasil .tw,html.locked #brasil .lead{filter:blur(3px)}
+.gate{max-width:1100px;margin:0 auto 2rem;padding:0 1.2rem}
+.gate .gcard{background:#fff;border:1.5px solid #cfe3ec;border-radius:16px;padding:1.5rem 1.6rem;box-shadow:0 12px 34px rgba(11,42,63,.12);display:grid;grid-template-columns:1.05fr 1fr;gap:1.6rem;align-items:start}
+.gate h2{margin:.1rem 0 .5rem;font-size:1.35rem;color:#0b2a3f}
+.gate .gtxt p{margin:0 0 .7rem;color:#37505c;line-height:1.5}
+.gate .gtxt ul{margin:.3rem 0 .8rem 1.1rem;padding:0;color:#37505c;line-height:1.5}
+.gate .gtxt small{color:#5b6f7a}
+.gate label{display:block;font-size:.85rem;font-weight:600;color:#0b2a3f;margin:.55rem 0 .25rem;letter-spacing:.01em}
+.gate input,.gate select{width:100%;font-family:inherit;font-size:1rem;padding:.7rem .85rem;border:1.5px solid #cfe3ec;border-radius:10px;background:#fbfdfe;color:#0b2a3f;box-sizing:border-box}
+.gate .two{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.gate .ck{display:flex;gap:.55rem;align-items:flex-start;font-size:.82rem;font-weight:400;color:#37505c;margin-top:.8rem;line-height:1.4}
+.gate .ck input{width:auto;margin-top:.2rem}
+.gate button{margin-top:.9rem;width:100%;background:#1aa6c9;color:#062033;border:0;border-radius:10px;padding:.85rem 1rem;font-weight:700;font-size:1rem;cursor:pointer}
+.gate button:hover{background:#158cab}.gate button[disabled]{opacity:.6;cursor:wait}
+.gate .msg{margin-top:.6rem;font-size:.88rem;color:#b3261e;min-height:1.2em}
+.gate .ok{color:#1b7f4d}
+html:not(.locked) .gate{display:none}
+@media(max-width:760px){.gate .gcard{grid-template-columns:1fr;padding:1.2rem 1rem}.gate .two{grid-template-columns:1fr}}
 </style>
 
 
@@ -175,6 +198,38 @@
 
 
 
+
+
+<script>
+(function(){
+  var KEY='acatmar_numeros_cadastro';
+  function locked(){try{return !localStorage.getItem(KEY);}catch(e){return false;}}
+  var H=document.documentElement; if(locked()) H.classList.add('locked');
+  function unlock(){H.classList.remove('locked');}
+  document.addEventListener('DOMContentLoaded',function(){
+    var f=document.getElementById('gateForm'), msg=document.getElementById('gateMsg'); if(!f) return;
+    var EN=('en')==='en';
+    // links do sumario para secoes bloqueadas levam ao cadastro
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){
+      var id=a.getAttribute('href').slice(1), el=document.getElementById(id);
+      if(H.classList.contains('locked') && el && el.classList.contains('gated') && id!=='brasil'){e.preventDefault();document.getElementById('cadastro').scrollIntoView({behavior:'smooth'});}
+    });});
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      if(!f.checkValidity()){msg.textContent=EN?'Please fill in all fields.':'Preencha todos os campos.';f.reportValidity();return;}
+      var b=f.querySelector('button'); b.disabled=true; msg.textContent=EN?'Sending...':'Enviando...';
+      var d={nome:f.nome.value.trim(),empresa:f.empresa.value.trim(),email:f.email.value.trim(),cnpj_cpf:f.cnpj_cpf.value.trim(),finalidade:f.finalidade.options[f.finalidade.selectedIndex].text,pagina:location.href,idioma:EN?'en':'pt',_subject:'Cadastro Economia do Mar em Numeros: '+f.nome.value.trim(),_template:'table',_captcha:'false'};
+      fetch('https://formsubmit.co/ajax/dbf5453c958f231720ec8976f1e606ec',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)})
+      .then(function(r){return r.json();}).then(function(){finish(true);}).catch(function(){finish(false);});
+      function finish(ok){
+        try{localStorage.setItem(KEY,JSON.stringify({nome:d.nome,email:d.email,quando:new Date().toISOString()}));}catch(e){}
+        msg.className='msg ok'; msg.textContent=ok?(EN?'Done. Numbers unlocked.':'Pronto. Números liberados.'):(EN?'Numbers unlocked (registration could not be sent, please try again later).':'Números liberados (o cadastro não pôde ser enviado; tente de novo mais tarde).');
+        setTimeout(function(){unlock();var s=document.getElementById('brasil');if(s)s.scrollIntoView({behavior:'smooth'});},600);
+      }
+    });
+  });
+})();
+</script>
 
 <link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/numeros">
 <link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/numbers">
@@ -239,7 +294,35 @@
     <div class="chips"><a href="#brasil" data-en="National fleet">Frota nacional</a><a href="#estados" data-en="States">Estados</a><a href="#sc" data-en="Santa Catarina">Santa Catarina</a><a href="#nautico" data-en="Nautical sector">Setor náutico</a><a href="#pesca" data-en="Fishing">Pesca</a><a href="#comex" data-en="Foreign trade">Comércio exterior</a><a href="#marco" data-en="Legal framework">Marco legal</a><a href="#definicoes" data-en="Definitions">Definições</a><a href="#faq" data-en="FAQ">Perguntas frequentes</a><a href="#citar" data-en="How to cite">Como citar</a><a href="#fontes" data-en="Sources">Fontes</a></div>
   </div>
 </div>
-<section class="blk" id="brasil">
+
+<div class="gate" id="cadastro">
+  <div class="gcard">
+    <div class="gtxt">
+      <h2 data-en="Get the full numbers now">Acesse todos os números agora</h2>
+      <p data-en="The tables below (national fleet by state, Santa Catarina's Sea Economy, nautical sector, fishing, foreign trade, FAQ and methodology) are released immediately after a quick registration. No cost, no waiting.">As tabelas abaixo (frota nacional por estado, Economia do Mar de Santa Catarina, setor náutico, pesca, comércio exterior, perguntas frequentes e metodologia) são liberadas na hora após um cadastro rápido. Sem custo e sem espera.</p>
+      <ul>
+        <li data-en="Official sources, with date and scope on every figure">Fontes oficiais, com data e abrangência em cada número</li>
+        <li data-en="Free to cite in press, research and public policy">Uso livre em imprensa, pesquisa e políticas públicas</li>
+        <li data-en="Updated whenever a new official release comes out">Atualizado a cada nova divulgação oficial</li>
+      </ul>
+      <p><small data-en="Registration lets ACATMAR know who is researching the sector and keep you informed of updates. Data handled under the LGPD; see our Privacy Policy.">O cadastro permite à ACATMAR saber quem pesquisa o setor e avisar você das atualizações. Dados tratados conforme a LGPD; veja a <a href="privacy-policy.html">Política de Privacidade</a>.</small></p>
+    </div>
+    <form id="gateForm" novalidate>
+      <label for="g_nome" data-en="Name">Nome</label><input id="g_nome" name="nome" type="text" required autocomplete="name">
+      <label for="g_empresa" data-en="Company / institution">Empresa / instituição</label><input id="g_empresa" name="empresa" type="text" required autocomplete="organization">
+      <div class="two">
+        <div><label for="g_email" data-en="E-mail">E-mail</label><input id="g_email" name="email" type="email" required autocomplete="email"></div>
+        <div><label for="g_doc" data-en="CNPJ or CPF">CNPJ ou CPF</label><input id="g_doc" name="cnpj_cpf" type="text" required inputmode="numeric" autocomplete="off"></div>
+      </div>
+      <label for="g_fim" data-en="What will you use the data for?">Para que vai usar os dados?</label>
+      <select id="g_fim" name="finalidade" required><option value="" data-en="Select">Selecione</option><option value="estudo" data-en="Academic study / thesis">Estudo acadêmico / TCC / tese</option><option value="imprensa" data-en="Press article">Matéria de imprensa</option><option value="pesquisa" data-en="Market research / consulting">Pesquisa de mercado / consultoria</option><option value="publico" data-en="Government / public policy">Poder público / política pública</option><option value="negocios" data-en="Investment / business">Investimento / negócios</option><option value="associado" data-en="ACATMAR member">Associado ACATMAR</option><option value="outro" data-en="Other">Outro</option></select>
+      <label class="ck"><input id="g_ok" type="checkbox" required> <span data-en="I authorize ACATMAR to store my data and contact me about sector updates (LGPD).">Autorizo a ACATMAR a guardar meus dados e me contatar sobre atualizações do setor (LGPD).</span></label>
+      <button type="submit" data-en="Unlock the numbers">Liberar os números</button>
+      <div class="msg" id="gateMsg"></div>
+    </form>
+  </div>
+</div>
+<section class="blk gated" id="brasil">
     <h2 data-en="Brazil in numbers · sport and recreational fleet">O Brasil náutico em números · frota de esporte e recreio</h2>
     <p class="lead" data-en="The Brazilian Navy publishes its registry by vessel type. Below, the types that characterize sport and recreational boating (motorboats, personal watercraft and sailboats), by state. The registry's own 'sport and recreation' classification by state is not yet in the open dataset and has been requested by ACATMAR from DPC.">A Marinha do Brasil publica o registro por tipo de embarcação. Abaixo, os tipos que caracterizam a náutica de esporte e recreio (lanchas, motos aquáticas e veleiros), por estado. A classificação oficial "esporte e recreio" por estado ainda não consta dos dados abertos e foi solicitada pela ACATMAR à DPC.</p>
     <div class="tw"><table>
@@ -279,7 +362,7 @@
     <div class="src" data-en="Sources: Ministry of Tourism (2025); Firjan, Panorama Naval 2026.">Fontes: Ministério do Turismo (2025); Firjan, Panorama Naval 2026.</div>
   </section>
 
-  <section class="blk" id="estados">
+  <section class="blk gated" id="estados">
     <h2 data-en="Panorama by state and region">Panorama por estado e região</h2>
     <p class="lead" data-en="The main figures available by state and region, each with its source.">Os principais números disponíveis por estado e região, cada um com sua fonte.</p>
     <div class="cards">
@@ -292,7 +375,7 @@
     </div>
   </section>
 
-  <section class="blk" id="sc">
+  <section class="blk gated" id="sc">
     <h2 data-en="Santa Catarina's Sea Economy">A Economia do Mar de Santa Catarina</h2>
     <p class="lead" data-en="Santa Catarina is Brazil's main nautical production base. They come from the State Planning Secretariat (SEPLAN/SC), based on RAIS and Novo Caged, February 2026.">Santa Catarina é a principal base produtiva náutica do Brasil. Os números abaixo se referem à Economia do Mar em sentido amplo (indústria, comércio, serviços e turismo ligados ao mar) e são da Secretaria de Estado do Planejamento (SEPLAN/SC), com base em RAIS e Novo Caged, fevereiro de 2026.</p>
     <div class="tw"><table>
@@ -311,7 +394,7 @@
     <div class="src" data-en="Source: Santa Catarina State Planning Secretariat (SEPLAN/SC), based on RAIS and Novo Caged, February 2026.">Fonte: Secretaria de Estado do Planejamento de Santa Catarina (SEPLAN/SC), com base em RAIS e Novo Caged, fevereiro de 2026.</div>
   </section>
 
-  <section class="blk" id="geografia">
+  <section class="blk gated" id="geografia">
     <h2 data-en="Where the Sea Economy jobs are (all segments) · regional concentration in SC">Onde estão os empregos da Economia do Mar (todos os segmentos) · concentração regional em SC</h2>
     <div class="tw"><table>
       <tr><th data-en="Region">Região</th><th data-en="Formal jobs (2024)">Vínculos formais (2024)</th><th data-en="Share of the state">Participação no estado</th></tr>
@@ -326,7 +409,7 @@
     <div class="src">Fonte: SEPLAN/SC, RAIS/Novo Caged, 2024-2026.</div>
   </section>
 
-  <section class="blk" id="ranking">
+  <section class="blk gated" id="ranking">
     <h2 data-en="Santa Catarina in the national ranking of the Sea Economy (2024)">Santa Catarina no ranking nacional da Economia do Mar (2024)</h2>
     <p class="lead" data-en="In total formal jobs of the broad Sea Economy, Santa Catarina ranks 7th among the states (5% of the national total). In the activities most linked to the nautical sector, it leads or is runner-up.">No total de vínculos formais da Economia do Mar em sentido amplo, Santa Catarina é o 7º estado (5% do total nacional). Nas atividades mais ligadas ao setor náutico, lidera ou é vice-líder.</p>
     <div class="cards">
@@ -337,7 +420,7 @@
   </section>
 
 
-  <section class="blk" id="nautico">
+  <section class="blk gated" id="nautico">
     <h2 data-en="The nautical sector in Santa Catarina">O setor náutico catarinense</h2>
     <p class="lead" data-en="Figures specific to the boatbuilding chain (shipyards, suppliers, marinas and services), compiled by ACATMAR from sector surveys. Note the different scope from the table above: here the focus is the nautical sector, not the Sea Economy as a whole.">Números específicos da cadeia de construção náutica (estaleiros, fornecedores, marinas e serviços), reunidos pela ACATMAR a partir de levantamentos do setor. Atenção à abrangência diferente da tabela anterior: aqui o foco é o setor náutico, e não a Economia do Mar como um todo.</p>
     <div class="tw"><table>
@@ -353,7 +436,7 @@
     <div class="src" data-en="Sources: SEPLAN/SC (2026); Sebrae/SC, Sector Study of Santa Catarina Industry (2011); PIA/IBGE (2010); sector surveys compiled by ACATMAR.">Fontes: SEPLAN/SC (2026); Sebrae/SC, Estudo Setorial da Indústria Catarinense (2011); PIA/IBGE (2010); levantamentos do setor reunidos pela ACATMAR.</div>
   </section>
 
-  <section class="blk" id="pesca">
+  <section class="blk gated" id="pesca">
     <h2 data-en="Fishing · Santa Catarina leads the country">Pesca · Santa Catarina lidera o país</h2>
     <div class="tw"><table>
       <tr><th data-en="Indicator">Indicador</th><th data-en="Value">Valor</th><th data-en="Source">Fonte</th></tr>
@@ -369,7 +452,7 @@
     <div class="src" data-en="Sources: Observatório FIESC; Observatório da Pesca SC (SINDIPI, in partnership with Sebrae); Sebrae/SC.">Fontes: Observatório FIESC; Observatório da Pesca SC (SINDIPI, em parceria com o Sebrae); Sebrae/SC. <a href="https://www.sindipi.com.br/post/pesquisadores-divulgam-boletim-estatistico-da-pesca-em-sc" target="_blank" rel="noopener">Boletim estatístico →</a></div>
   </section>
 
-  <section class="blk" id="comex">
+  <section class="blk gated" id="comex">
     <h2 data-en="Foreign trade · 2026">Comércio exterior · 2026</h2>
     <p class="lead" data-en="Official foreign-trade data (Comex Stat/MDIC) for the first half of 2026 compared with the same period of 2025.">Dados oficiais de comércio exterior (Comex Stat/MDIC) referentes ao primeiro semestre de 2026, comparados ao mesmo período de 2025.</p>
     <div class="tw"><table>
@@ -414,7 +497,7 @@
     </dl>
   </section>
 
-  <section class="blk faq" id="faq">
+  <section class="blk faq gated" id="faq">
     <h2 data-en="Frequently asked questions">Perguntas frequentes</h2>
     <details open><summary data-en="How many motorboats, personal watercraft and sailboats are there in Brazil and where are they concentrated?">Quantas lanchas, motos aquáticas e veleiros há no Brasil e onde se concentram?</summary><p data-en="Brazil has 266,839 motorboats, 160,992 personal watercraft and 17,935 sailboats registered with the Navy (DPC, file of Sept 17, 2024). Motorboats by state: São Paulo 51,852, Paraná 39,198, Rio de Janeiro 35,924, Santa Catarina 19,535, Bahia 14,330 and Rio Grande do Sul 13,017. Personal watercraft: São Paulo 51,495, Santa Catarina 15,119 and Paraná 12,697. Sailboats: Rio de Janeiro 6,765 and São Paulo 4,255.">O Brasil tem 266.839 lanchas, 160.992 motos aquáticas e 17.935 veleiros registrados na Marinha (DPC, arquivo de 17/09/2024). Lanchas por estado: São Paulo 51.852, Paraná 39.198, Rio de Janeiro 35.924, Santa Catarina 19.535, Bahia 14.330 e Rio Grande do Sul 13.017. Motos aquáticas: São Paulo 51.495, Santa Catarina 15.119 e Paraná 12.697. Veleiros: Rio de Janeiro 6.765 e São Paulo 4.255.</p></details>
     <details open><summary data-en="Does Brazil have more than 1 million vessels?">O Brasil tem mais de 1 milhão de embarcações?</summary><p data-en="Yes, registered with the Brazilian Navy across all types: 1,140,059 (DPC, file of Sept 17, 2024). This total includes 334,947 dinghies, 58,781 canoes, 31,595 fishing vessels and transport and support craft. The types that characterize recreational boating are far fewer: 266,839 motorboats, 160,992 personal watercraft and 17,935 sailboats. Saying Brazil has 1 million recreational vessels is inaccurate; the correct figure is 1.14 million registered vessels of all types.">Sim, registradas na Marinha do Brasil de todos os tipos: 1.140.059 (DPC, arquivo de 17/09/2024). Esse total inclui 334.947 botes, 58.781 canoas, 31.595 pesqueiros e embarcações de transporte e apoio. Os tipos característicos da náutica de esporte e recreio são bem menos: 266.839 lanchas, 160.992 motos aquáticas e 17.935 veleiros. Dizer que o Brasil tem 1 milhão de embarcações de esporte e recreio é impreciso; o número correto é 1,14 milhão de embarcações registradas, de todos os tipos.</p></details>
@@ -428,7 +511,7 @@
     <details><summary data-en="What is the US tariff on Brazilian vessels in 2026?">Qual é a tarifa dos EUA sobre embarcações brasileiras em 2026?</summary><p data-en="Since July 22, 2026: the ordinary duty of the code plus the additional 25% Section 301 duty. US-manufactured components may be deducted under HTSUS 9802.00.80, with proof of origin and value.">Desde 22 de julho de 2026: tarifa ordinária do código mais a adicional de 25% da Seção 301. Componentes fabricados nos EUA podem ser deduzidos pela HTSUS 9802.00.80, com comprovação de origem e valor.</p></details>
   </section>
 
-  <section class="blk" id="metodologia">
+  <section class="blk gated" id="metodologia">
     <h2 data-en="Methodology notes">Notas metodológicas</h2>
     <div class="note" data-en="<b>Different scopes.</b> The 23,000+ establishments and 239,671 formal jobs (about 250,000 workers in 2026) refer to the broad Sea Economy (SEPLAN/SC). The 1,028 companies refer to the nautical chain specifically (sector surveys). They are not comparable with each other. <b>Shares.</b> The percentages for Santa Catarina (70% of national boat production and 74% of leisure-boat exports, SEPLAN/SC, 2026) and for Itajaí (~35% of national production) come from different bases and periods and must not be multiplied together. <b>Vessel type versus sport and recreation classification.</b> The Navy's open data records vessels by <i>type</i> (motorboat, personal watercraft, sailboat, etc.), not by the "sport and recreation" use classification, which is assigned by activity. That is why this page shows the types that characterize boating and does not add them up into a "sport and recreation total". The only official sport and recreation figure available so far is Santa Catarina's (about 55,000 in 2026, Santa Catarina Port Authority). The "all types" column includes fishing, transport, support and other uses. <b>Sea Economy and Blue Economy.</b> Every job and company total on this page refers to the Sea Economy (sea-dependent activities, all segments). "Blue Economy" appears only as a sustainability qualifier or when it is the label used by the source (as with Sebrae/SC). The regional job distribution in SC is for the broad Sea Economy, where tourism and services weigh more; in the nautical and naval industrial cut, the Itajaí River Mouth region leads. <b>Date of the Navy series.</b> The DPC open dataset is titled "2025", but the portal states the file was updated on Sept 17, 2024. Fleet figures reflect the registry on that date and will be replaced as soon as DPC publishes a new file. <b>Foreign trade.</b> Comex Stat/MDIC figures refer to the first half of each year and to sport and leisure vessels. <b>Updates.</b> This page is revised whenever a new official release or sector survey is published; the date at the top indicates the last revision."><b>Abrangências diferentes.</b> Os 23 mil+ estabelecimentos e os 239.671 vínculos (cerca de 250 mil trabalhadores em 2026) se referem à Economia do Mar em sentido amplo (SEPLAN/SC). As 1.028 empresas se referem especificamente à cadeia náutica (levantamentos do setor). Não são comparáveis entre si. <b>Participações.</b> Os percentuais de Santa Catarina (70% da produção nacional de embarcações e 74% das exportações de embarcações de lazer, SEPLAN/SC, 2026) e de Itajaí (~35% da produção nacional) vêm de bases e períodos diferentes e não devem ser multiplicados entre si. <b>Tipo de embarcação e classificação de esporte e recreio.</b> Os dados abertos da Marinha trazem o registro por <i>tipo</i> (lancha, moto aquática, veleiro etc.), e não a classificação de emprego "esporte e recreio", que é feita por atividade. Por isso esta página mostra os tipos característicos da náutica e não soma um "total de esporte e recreio" a partir deles. O único número oficial de esporte e recreio já disponível é o de Santa Catarina (cerca de 55 mil em 2026, Capitania dos Portos de SC). A coluna "todos os tipos" inclui pesca, transporte, apoio e demais empregos. <b>Economia do Mar e Economia Azul.</b> Todos os totais de emprego e empresas desta página são de Economia do Mar (atividades que dependem do mar, todos os segmentos). "Economia Azul" aparece apenas como qualificação de sustentabilidade ou quando é o rótulo usado pela fonte (caso do Sebrae/SC). A distribuição regional de empregos em SC é da Economia do Mar ampla, em que turismo e serviços pesam mais; no recorte industrial náutico e naval a liderança é da Foz do Rio Itajaí. <b>Data da série da Marinha.</b> O conjunto de dados abertos da DPC tem o título "2025", mas o portal informa que o arquivo foi atualizado em 17/09/2024. Os números de frota refletem o registro nessa data e serão substituídos assim que a DPC publicar novo arquivo. <b>Comércio exterior.</b> Os dados do Comex Stat/MDIC se referem ao primeiro semestre de cada ano e a embarcações de esporte e lazer. <b>Atualização.</b> Esta página é revisada sempre que há nova divulgação oficial ou levantamento do setor; a data no topo indica a última revisão.</div>
   </section>
