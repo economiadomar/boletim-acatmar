@@ -113,7 +113,6 @@ def painel(key, cfg):
     ex_cur = sum(mes_uf[u] for u in ufs)
     emp, con_cnpj = cnpj_uf(uf)
     k = [kpi(n(fr['lancha']), f'lanchas registradas, {rank_lancha.get(uf, "-")}ª frota do país', f'registered motorboats, {rank_lancha.get(uf, "-")}th fleet in the country', 'Marinha do Brasil / DPC, arquivo de 17/09/2024', 'Brazilian Navy / DPC, file of Sept 17, 2024'),
-         kpi(n(g1['Construção de embarcações']), f'empregos formais na construção de embarcações ({A1})', f'formal jobs in boat and ship building ({A1})', f'RAIS {A1}, extração ACATMAR', f'RAIS {A1}, ACATMAR extraction'),
          kpi(usd(ex[YC]), f'exportados em embarcações em {YC}' + (f', {rk}º do país' if rk else ', sem exportações'), f'boat exports in {YC}' + (f', {rk}th in the country' if rk else ', no exports'), 'Comex Stat / MDIC, extração ACATMAR', 'Comex Stat / MDIC, ACATMAR extraction')]
     if emp is not None:
         k.append(kpi(n(emp), 'empresas náuticas ativas', 'active nautical companies', f'Receita Federal, {CNPJ["pasta"]}, extração ACATMAR', f'Federal Revenue, {CNPJ["pasta"]}, ACATMAR extraction'))
@@ -139,7 +138,7 @@ def painel(key, cfg):
     xr += f'<tr><td>{Y} (jan a {MES[M][:3]})</td><td class="v">{usd(ex_cur) if ex_cur else "-"}</td><td class="v"></td><td class="v"></td></tr>'
     if zeros:
         xr += f'<tr><td colspan="4" class="mini" data-en="No exports recorded in {", ".join(zeros)}.">Sem exportações registradas em {", ".join(zeros)}.</td></tr>'
-    muns = sorted(((v, m) for m, v in mun_uf[uf].items() if v >= 1_000_000 or (ex[YC] and v >= 0.05 * ex[YC])), reverse=True)[:4]
+    muns = []
     mtxt = ' · '.join(f'{m} {usd(v)}' for v, m in muns)
     xb = (f'<div class="ufbox"><h3 data-en="Boat exports (heading 8903)">Exportações de embarcações (posição 8903)</h3><table><tr><th data-en="Year">Ano</th><th>US$ FOB</th><th data-en="Share of Brazil">Parte do Brasil</th><th data-en="Rank">Posição</th></tr>{xr}</table>'
           + (f'<p class="mini" data-en="{YC}, by municipality: {mtxt}">{YC}, por município: {mtxt}</p>' if muns else '')
@@ -160,7 +159,7 @@ def painel(key, cfg):
     more = ''
     if key == 'sc':
         more = '<p class="mini" data-en="Below: Santa Catarina in depth, section by section (Sea Economy, regions, ranking, nautical sector, fishing, foreign trade).">Abaixo, Santa Catarina em profundidade, seção por seção (Economia do Mar, regiões, ranking, setor náutico, pesca, comércio exterior).</p>'
-    return (f'<section class="blk gated ufp" data-uf="{key}" id="uf-{key}">\n<div class="ufhead"><span class="eyebrow" data-en="State cut">Recorte por estado</span><h2 data-en="{nome_en}">{nome}</h2><p class="lead" data-en="{cfg["tagline_en"]}">{cfg["tagline"]}</p></div>\n{kpis}\n<div class="ufgrid">{fb}{eb}{xb}{db}{sac}</div>{more}\n</section>\n')
+    return (f'<section class="blk gated ufp" data-uf="{key}" id="uf-{key}">\n<div class="ufhead"><span class="eyebrow" data-en="State cut">Recorte por estado</span><h2 data-en="{nome_en}">{nome}</h2><p class="lead" data-en="{cfg["tagline_en"]}">{cfg["tagline"]}</p></div>\n{kpis}\n<div class="ufgrid">{fb}{xb}{db}{sac}</div>{more}\n</section>\n')
 
 
 # ---------- painel Brasil: estados em numeros ----------
@@ -171,10 +170,9 @@ def brasil():
     for u in ordem:
         if frota[u]['lancha'] < 2000 and exp_uf[u].get(YC, 0) < 100000 and u not in keys:
             continue
-        gu = rais_grupos([u], A1)
         link = f'<a href="#uf-{keys[u]}" class="uflink" data-set-uf="{keys[u]}">{UFN[u]}</a>' if u in keys else UFN[u]
-        rows += f'<tr><td>{link}</td><td class="v">{n(frota[u]["lancha"])}</td><td class="v">{n(gu["Construção de embarcações"])}</td><td class="v">{n(sum(gu.values()))}</td><td class="v">{usd(exp_uf[u].get(YC, 0)) if exp_uf[u].get(YC, 0) else "-"}</td></tr>'
-    head = (f'<tr><th data-en="State">Estado</th><th data-en="Motorboats registered">Lanchas registradas</th><th data-en="Boat and ship building jobs {A1}">Empregos na construção de embarcações {A1}</th><th data-en="Jobs in the whole chain {A1}">Empregos na cadeia toda {A1}</th><th data-en="Boat exports {YC}">Exportações de barcos {YC}</th></tr>')
+        rows += f'<tr><td>{link}</td><td class="v">{n(frota[u]["lancha"])}</td><td class="v">{n(frota[u]["moto"])}</td><td class="v">{n(frota[u]["veleiro"])}</td><td class="v">{usd(exp_uf[u].get(YC, 0)) if exp_uf[u].get(YC, 0) else "-"}</td></tr>'
+    head = (f'<tr><th data-en="State">Estado</th><th data-en="Motorboats">Lanchas</th><th data-en="Personal watercraft">Motos aquáticas</th><th data-en="Sailboats">Veleiros</th><th data-en="Boat exports {YC}">Exportações de barcos {YC}</th></tr>')
     return (f'<section class="blk gated ufp" data-uf="br" id="uf-br">\n<div class="ufhead"><span class="eyebrow" data-en="States">Estados</span><h2 data-en="The states in numbers">Os estados em números</h2><p class="lead" data-en="Click a state to open its cut.">Clique no estado para abrir o recorte dele.</p></div>\n'
             f'<div class="tw"><table>{head}{rows}</table></div>\n</section>\n')
 

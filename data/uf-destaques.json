@@ -23,11 +23,6 @@
         "1,028 nautical companies (2025), third state in the country. 85% are MEI or micro companies."
       ],
       [
-        "Empregos",
-        "A construção de embarcações emprega 5.460 pessoas (2025), concentradas em Itajaí, Navegantes e Palhoça.",
-        "Boat and ship building employs 5,460 people (2025), concentrated in Itajaí, Navegantes and Palhoça."
-      ],
-      [
         "Economia do Mar",
         "239.671 empregos formais em 2024 (cerca de 250 mil em 2026), 8,5% dos trabalhadores formais do estado; 23.515 estabelecimentos; massa salarial de R$ 1,158 bilhão por mês.",
         "239,671 formal jobs in 2024 (about 250,000 in 2026), 8.5% of the state's formal workforce; 23,515 establishments; R$ 1.158 billion in monthly wages."
@@ -102,18 +97,18 @@
   "pe": {
     "nome": "Pernambuco",
     "nome_en": "Pernambuco",
-    "tagline": "Segundo exportador de embarcações de recreio do país desde 2021, com barcos saídos de Jaboatão dos Guararapes; a construção naval fica em Suape.",
-    "tagline_en": "The country's second largest exporter of recreational boats since 2021, shipped from Jaboatão dos Guararapes; shipbuilding is in Suape.",
+    "tagline": "Segundo exportador de embarcações de recreio do país desde 2021; a construção naval fica em Suape.",
+    "tagline_en": "The country's second largest exporter of recreational boats since 2021; shipbuilding is in Suape.",
     "destaques": [
       [
         "Exportações",
-        "45 barcos de recreio exportados em 2024 (US$ 7,5 milhões) e 28 em 2025, quase todos para os Estados Unidos, a partir de Jaboatão dos Guararapes, sede da NX Boats.",
-        "45 recreational boats exported in 2024 (US$ 7.5 million) and 28 in 2025, almost all to the United States, from Jaboatão dos Guararapes, home of NX Boats."
+        "Segundo maior exportador de embarcações de recreio do país desde 2021, atrás de Santa Catarina.",
+        "The country's second largest exporter of recreational boats since 2021, behind Santa Catarina."
       ],
       [
         "Naval",
-        "O complexo de Suape concentra os grandes estaleiros navais do estado: Estaleiro Atlântico Sul, Vard Promar e Fincantieri do Brasil, em Ipojuca. É indústria naval, não náutica de recreio.",
-        "The Suape complex hosts the state's large shipyards: Estaleiro Atlântico Sul, Vard Promar and Fincantieri do Brasil, in Ipojuca. This is shipbuilding, not recreational boating."
+        "O complexo de Suape concentra a indústria naval do estado. É construção naval, não náutica de recreio.",
+        "The Suape complex hosts the state's shipbuilding industry. This is shipbuilding, not recreational boating."
       ],
       [
         "Frota",
