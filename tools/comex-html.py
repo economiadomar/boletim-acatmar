@@ -155,7 +155,7 @@ for s in ps[-6:]:
     rk = ' · '.join(f"{r['uf']} {usd(r['fob'])}" for r in s['ranking_exp'][:3])
     pr += f'      <tr><td>{s["ano"]}</td><td class="v">{usd(s["exp_sc"])}</td><td class="v">{str(s["part_sc"]).replace(".", ",")}%</td><td class="v">{usd(s["imp_sc"])}</td><td>{rk}</td></tr>\n'
 pmun = F['municipios_sc'].get(str(YC), [])[:4]
-pesca_html = ('<tr><td colspan="3"><b data-en="Foreign trade in fish and seafood (chapter 03 plus headings 1604 and 1605), ACATMAR extraction from Comex Stat/MDIC">Comércio exterior de pescado (capítulo 03 mais posições 1604 e 1605), extração ACATMAR do Comex Stat/MDIC</b></td></tr>\n'
+pesca_html = ('<tr><td colspan="3"><b data-en="Foreign trade in fish and seafood (chapter 03 plus headings 1604 and 1605)">Comércio exterior de pescado (capítulo 03 mais posições 1604 e 1605)</b></td></tr>\n'
               '      <tr><td colspan="3"><div class="tw"><table>\n      <tr><th data-en="Year">Ano</th><th data-en="SC exports">Exportações de SC</th><th data-en="SC share of Brazil">Participação no Brasil</th><th data-en="SC imports">Importações de SC</th><th data-en="Top 3 exporting states">Três maiores exportadores</th></tr>\n' + pr + '    </table></div></td></tr>\n'
               + f'      <tr><td data-en="{YC}, SC seafood exports by municipality">{YC}, exportações de pescado de SC por município</td><td class="v">{usd(pmun[0]["fob"]) if pmun else "-"}</td><td>' + ' · '.join(f'{x["municipio"].replace(" - SC", "")} {usd(x["fob"])}' for x in pmun) + '</td></tr>')
 put('pesca', pesca_html)
