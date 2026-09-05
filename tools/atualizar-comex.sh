@@ -9,6 +9,8 @@ echo "1) Extraindo do Comex Stat (API pública do MDIC)..."
 python3 tools/comex.py 2010
 echo "2) Injetando na página..."
 python3 tools/comex-html.py
+python3 tools/uf-html.py
+python3 tools/limpar-fontes.py
 if [ "$1" != "--sem-publicar" ]; then
   echo "3) Publicando..."
   ./publicar.sh "Numeros: atualizacao mensal do Comex Stat (extracao ACATMAR)"
