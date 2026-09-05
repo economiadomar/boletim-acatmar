@@ -43,10 +43,11 @@ DIST=/tmp/acatmar-dist
 rm -rf "$DIST"; mkdir -p "$DIST"
 rsync -a --exclude='.git' --exclude='*.py' --exclude='*.sh' --exclude='build-*' \
   --exclude='.indexnow-key' --exclude='.cache' --exclude='.DS_Store' --exclude='CNAME' \
-  --exclude='GUIA.html' --exclude='assets/fonts' \
+  --exclude='GUIA.html' --exclude='assets/fonts' --exclude='data/cnpj/estabelecimentos_nautica.csv' \
   ./ "$DIST"/ 2>/dev/null
-npx wrangler pages deploy "$DIST" --project-name=acatmar --branch=main --commit-dirty=true 2>&1 \
-  | grep -iE 'success|deployment|http' | sed 's/^/     /'
+WOUT=$(npx wrangler pages deploy "$DIST" --project-name=acatmar --branch=main --commit-dirty=true 2>&1)
+echo "$WOUT" | grep -iE 'success|deployment|http' | sed 's/^/     /'
+if echo "$WOUT" | grep -qiE 'ERROR|failed'; then echo "$WOUT" | grep -iE 'ERROR|MiB|failed' | sed 's/^/     /'; echo "❌  DEPLOY FALHOU — site NÃO foi atualizado"; exit 1; fi
 
 # backup/histórico no GitHub (não bloqueia; pode estar lento/fora)
 echo "3/4  Backup no GitHub…"
