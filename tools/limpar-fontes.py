@@ -20,8 +20,18 @@ body, n['lead_rais'] = re.subn(r' Lidos direto dos microdados públicos da RAIS,
 body, n['lead_cnpj'] = re.subn(r' Lidos direto dos dados abertos da Receita Federal\.| Read directly from the Federal Revenue open data\.', '', body)
 body, n['lead_uf'] = re.subn(r' Lanchas: registro da Marinha \(set/2024\)\. Empregos e construtores: RAIS \d{4}\. Empresas: Receita Federal\. Exportações: Comex Stat \d{4}\. Tudo lido pela ACATMAR direto das fontes primárias\.| Motorboats: Navy registry \(Sept 2024\)\. Jobs and boatbuilders: RAIS \d{4}\. Companies: Federal Revenue\. Exports: Comex Stat \d{4}\. All read by ACATMAR from the primary sources\.', '', body)
 body, n['mini'] = re.subn(r'\s*<p class="mini"[^>]*>(?:Unidades são|Units are)[^<]*</p>', '', body)
+
+# links para fora da plataforma (e chamadas "saiba mais") no corpo: some o botao; links externos comuns viram texto
+def _link(m):
+    href = m.group(1); inner = m.group(2)
+    if href.startswith('#') or href.startswith('data/'):
+        return m.group(0)
+    if '&rarr;' in inner or '→' in inner or re.match(r'^\s*(Saiba mais|Ver as notícias|Todas as edições|Guia completo|Informativo técnico|ALESC|SEF/SC|Senado Federal|Antaq|resumo|panrotas|Boletim estatístico|Ler a análise completa)', re.sub(r'<[^>]+>', '', inner), re.I):
+        return ''
+    return inner
+body, n['links'] = re.subn(r'<a\s+href="([^"]*)"[^>]*>(.*?)</a>', _link, body, flags=re.S)
 t = t[:a] + body + t[b:]
 for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>', t, flags=re.S):
     json.loads(x)
 open(P, 'w', encoding='utf-8').write(t)
-print('limpeza:', n, '| .src restantes no corpo:', len(re.findall(r'class="src"', t[t.index("<main"):t.index('id="fontes"')])))
+print('limpeza:', n, '| .src restantes no corpo:', len(re.findall(r'class="src"', t[t.index("<main"):t.index('id="fontes"')])), '| links externos no corpo:', len(re.findall(r'href="http', t[t.index("<main"):t.index('id="fontes"')])))
