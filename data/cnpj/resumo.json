@@ -1,0 +1,376 @@
+{
+ "pasta": "2026-08",
+ "gerado_em": "2026-09-05",
+ "fonte": "Receita Federal, dados abertos do CNPJ (estabelecimentos ativos), extração ACATMAR",
+ "definicao": {
+  "3012100": {
+   "descricao": "Construção de embarcações para esporte e lazer",
+   "grupo": "Indústria náutica"
+  },
+  "3011302": {
+   "descricao": "Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",
+   "grupo": "Indústria náutica"
+  },
+  "3317102": {
+   "descricao": "Manutenção e reparação de embarcações para esporte e lazer",
+   "grupo": "Indústria náutica"
+  },
+  "3230200": {
+   "descricao": "Fabricação de artefatos para pesca e esporte",
+   "grupo": "Indústria náutica"
+  },
+  "4329102": {
+   "descricao": "Instalação de equipamentos para orientação à navegação",
+   "grupo": "Indústria náutica"
+  },
+  "4763605": {
+   "descricao": "Comércio varejista de embarcações e outros veículos recreativos",
+   "grupo": "Comércio e serviços náuticos"
+  },
+  "7719501": {
+   "descricao": "Locação de embarcações sem tripulação, exceto para fins recreativos",
+   "grupo": "Comércio e serviços náuticos"
+  },
+  "7721700": {
+   "descricao": "Aluguel de equipamentos recreativos e esportivos",
+   "grupo": "Comércio e serviços náuticos"
+  },
+  "5099801": {
+   "descricao": "Transporte aquaviário para passeios turísticos",
+   "grupo": "Comércio e serviços náuticos"
+  },
+  "9319199": {
+   "descricao": "Outras atividades esportivas (inclui escolas e clubes náuticos)",
+   "grupo": "Comércio e serviços náuticos"
+  },
+  "3011301": {
+   "descricao": "Construção de embarcações de grande porte",
+   "grupo": "Indústria naval"
+  },
+  "3317101": {
+   "descricao": "Manutenção e reparação de embarcações e estruturas flutuantes",
+   "grupo": "Indústria naval"
+  },
+  "5231101": {
+   "descricao": "Administração da infraestrutura portuária",
+   "grupo": "Portos e navegação"
+  },
+  "5231102": {
+   "descricao": "Atividades do operador portuário",
+   "grupo": "Portos e navegação"
+  },
+  "5232000": {
+   "descricao": "Atividades de agenciamento marítimo",
+   "grupo": "Portos e navegação"
+  },
+  "5239701": {
+   "descricao": "Serviços de praticagem",
+   "grupo": "Portos e navegação"
+  },
+  "5239799": {
+   "descricao": "Atividades auxiliares dos transportes aquaviários",
+   "grupo": "Portos e navegação"
+  },
+  "5011401": {
+   "descricao": "Transporte marítimo de cabotagem, carga",
+   "grupo": "Portos e navegação"
+  },
+  "5030101": {
+   "descricao": "Navegação de apoio marítimo",
+   "grupo": "Portos e navegação"
+  },
+  "5030102": {
+   "descricao": "Navegação de apoio portuário",
+   "grupo": "Portos e navegação"
+  },
+  "0311601": {
+   "descricao": "Pesca de peixes em água salgada",
+   "grupo": "Pesca e aquicultura"
+  },
+  "0311602": {
+   "descricao": "Pesca de crustáceos e moluscos em água salgada",
+   "grupo": "Pesca e aquicultura"
+  },
+  "0311604": {
+   "descricao": "Atividades de apoio à pesca em água salgada",
+   "grupo": "Pesca e aquicultura"
+  },
+  "0321301": {
+   "descricao": "Criação de peixes em água salgada e salobra",
+   "grupo": "Pesca e aquicultura"
+  },
+  "0321302": {
+   "descricao": "Criação de camarões em água salgada e salobra",
+   "grupo": "Pesca e aquicultura"
+  },
+  "0321303": {
+   "descricao": "Criação de ostras e mexilhões em água salgada e salobra",
+   "grupo": "Pesca e aquicultura"
+  },
+  "0321305": {
+   "descricao": "Atividades de apoio à aquicultura em água salgada e salobra",
+   "grupo": "Pesca e aquicultura"
+  },
+  "0321399": {
+   "descricao": "Cultivos e semicultivos da aquicultura em água salgada e salobra",
+   "grupo": "Pesca e aquicultura"
+  },
+  "1020101": {
+   "descricao": "Preservação de peixes, crustáceos e moluscos",
+   "grupo": "Pesca e aquicultura"
+  },
+  "1020102": {
+   "descricao": "Fabricação de conservas de peixes, crustáceos e moluscos",
+   "grupo": "Pesca e aquicultura"
+  }
+ },
+ "brasil_setor_nautico_principal_por_uf": {
+  "SP": 10311,
+  "RJ": 5045,
+  "SC": 3999,
+  "MG": 3573,
+  "PR": 3400,
+  "RS": 2883,
+  "BA": 1563,
+  "GO": 1343,
+  "PA": 1135,
+  "PE": 1035,
+  "ES": 1003,
+  "CE": 965,
+  "AM": 925,
+  "MT": 749,
+  "MS": 605,
+  "DF": 580,
+  "AL": 527,
+  "RN": 526,
+  "PB": 472,
+  "MA": 422,
+  "RO": 315,
+  "SE": 301,
+  "TO": 268,
+  "PI": 208,
+  "AP": 202,
+  "AC": 84,
+  "RR": 72,
+  "EX": 53
+ },
+ "brasil_construcao_esporte_lazer_por_uf": {
+  "SC": 91,
+  "SP": 69,
+  "PR": 57,
+  "RJ": 44,
+  "AM": 40,
+  "RS": 32,
+  "GO": 32,
+  "MG": 23,
+  "PA": 22,
+  "AP": 17,
+  "MT": 10,
+  "PE": 10,
+  "BA": 7,
+  "TO": 6,
+  "CE": 4,
+  "AL": 4,
+  "RO": 3,
+  "MS": 2,
+  "RN": 2,
+  "MA": 2,
+  "EX": 2,
+  "ES": 2,
+  "SE": 1,
+  "DF": 1,
+  "AC": 1
+ },
+ "sc_por_cnae": {
+  "7721700": {
+   "nome": "Aluguel de equipamentos recreativos e esportivos",
+   "grupo": "Comércio e serviços náuticos",
+   "estabelecimentos_ativos": 1405
+  },
+  "9319199": {
+   "nome": "Outras atividades esportivas (inclui escolas e clubes náuticos)",
+   "grupo": "Comércio e serviços náuticos",
+   "estabelecimentos_ativos": 1085
+  },
+  "3317102": {
+   "nome": "Manutenção e reparação de embarcações para esporte e lazer",
+   "grupo": "Indústria náutica",
+   "estabelecimentos_ativos": 552
+  },
+  "5099801": {
+   "nome": "Transporte aquaviário para passeios turísticos",
+   "grupo": "Comércio e serviços náuticos",
+   "estabelecimentos_ativos": 244
+  },
+  "3230200": {
+   "nome": "Fabricação de artefatos para pesca e esporte",
+   "grupo": "Indústria náutica",
+   "estabelecimentos_ativos": 236
+  },
+  "5232000": {
+   "nome": "Atividades de agenciamento marítimo",
+   "grupo": "Portos e navegação",
+   "estabelecimentos_ativos": 216
+  },
+  "4763605": {
+   "nome": "Comércio varejista de embarcações e outros veículos recreativos",
+   "grupo": "Comércio e serviços náuticos",
+   "estabelecimentos_ativos": 197
+  },
+  "1020101": {
+   "nome": "Preservação de peixes, crustáceos e moluscos",
+   "grupo": "Pesca e aquicultura",
+   "estabelecimentos_ativos": 184
+  },
+  "4329102": {
+   "nome": "Instalação de equipamentos para orientação à navegação",
+   "grupo": "Indústria náutica",
+   "estabelecimentos_ativos": 110
+  },
+  "3317101": {
+   "nome": "Manutenção e reparação de embarcações e estruturas flutuantes",
+   "grupo": "Indústria naval",
+   "estabelecimentos_ativos": 104
+  },
+  "5231102": {
+   "nome": "Atividades do operador portuário",
+   "grupo": "Portos e navegação",
+   "estabelecimentos_ativos": 98
+  },
+  "1020102": {
+   "nome": "Fabricação de conservas de peixes, crustáceos e moluscos",
+   "grupo": "Pesca e aquicultura",
+   "estabelecimentos_ativos": 95
+  },
+  "5011401": {
+   "nome": "Transporte marítimo de cabotagem, carga",
+   "grupo": "Portos e navegação",
+   "estabelecimentos_ativos": 93
+  },
+  "3012100": {
+   "nome": "Construção de embarcações para esporte e lazer",
+   "grupo": "Indústria náutica",
+   "estabelecimentos_ativos": 91
+  },
+  "0311601": {
+   "nome": "Pesca de peixes em água salgada",
+   "grupo": "Pesca e aquicultura",
+   "estabelecimentos_ativos": 48
+  },
+  "5239799": {
+   "nome": "Atividades auxiliares dos transportes aquaviários",
+   "grupo": "Portos e navegação",
+   "estabelecimentos_ativos": 45
+  },
+  "7719501": {
+   "nome": "Locação de embarcações sem tripulação, exceto para fins recreativos",
+   "grupo": "Comércio e serviços náuticos",
+   "estabelecimentos_ativos": 41
+  },
+  "3011302": {
+   "nome": "Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",
+   "grupo": "Indústria náutica",
+   "estabelecimentos_ativos": 38
+  },
+  "3011301": {
+   "nome": "Construção de embarcações de grande porte",
+   "grupo": "Indústria naval",
+   "estabelecimentos_ativos": 29
+  },
+  "5231101": {
+   "nome": "Administração da infraestrutura portuária",
+   "grupo": "Portos e navegação",
+   "estabelecimentos_ativos": 24
+  },
+  "5239701": {
+   "nome": "Serviços de praticagem",
+   "grupo": "Portos e navegação",
+   "estabelecimentos_ativos": 24
+  },
+  "5030102": {
+   "nome": "Navegação de apoio portuário",
+   "grupo": "Portos e navegação",
+   "estabelecimentos_ativos": 19
+  },
+  "0311604": {
+   "nome": "Atividades de apoio à pesca em água salgada",
+   "grupo": "Pesca e aquicultura",
+   "estabelecimentos_ativos": 18
+  },
+  "5030101": {
+   "nome": "Navegação de apoio marítimo",
+   "grupo": "Portos e navegação",
+   "estabelecimentos_ativos": 13
+  },
+  "0321399": {
+   "nome": "Cultivos e semicultivos da aquicultura em água salgada e salobra",
+   "grupo": "Pesca e aquicultura",
+   "estabelecimentos_ativos": 10
+  },
+  "0321303": {
+   "nome": "Criação de ostras e mexilhões em água salgada e salobra",
+   "grupo": "Pesca e aquicultura",
+   "estabelecimentos_ativos": 9
+  },
+  "0321302": {
+   "nome": "Criação de camarões em água salgada e salobra",
+   "grupo": "Pesca e aquicultura",
+   "estabelecimentos_ativos": 5
+  },
+  "0321301": {
+   "nome": "Criação de peixes em água salgada e salobra",
+   "grupo": "Pesca e aquicultura",
+   "estabelecimentos_ativos": 5
+  },
+  "0321305": {
+   "nome": "Atividades de apoio à aquicultura em água salgada e salobra",
+   "grupo": "Pesca e aquicultura",
+   "estabelecimentos_ativos": 4
+  },
+  "0311602": {
+   "nome": "Pesca de crustáceos e moluscos em água salgada",
+   "grupo": "Pesca e aquicultura",
+   "estabelecimentos_ativos": 3
+  }
+ },
+ "sc_setor_nautico_por_municipio": {
+  "FLORIANOPOLIS": 578,
+  "ITAJAI": 340,
+  "JOINVILLE": 286,
+  "BALNEARIO CAMBORIU": 211,
+  "PALHOCA": 140,
+  "SAO JOSE": 116,
+  "CHAPECO": 113,
+  "BLUMENAU": 91,
+  "PORTO BELO": 87,
+  "CAMBORIU": 76,
+  "NAVEGANTES": 75,
+  "CRICIUMA": 74,
+  "BOMBINHAS": 72,
+  "ITAPEMA": 59,
+  "BIGUACU": 54,
+  "JARAGUA DO SUL": 51,
+  "LAGES": 43,
+  "SAO FRANCISCO DO SUL": 43,
+  "BRUSQUE": 41,
+  "IMBITUBA": 37,
+  "TIJUCAS": 35,
+  "ARAQUARI": 34,
+  "PENHA": 34,
+  "SAO JOSE DO CEDRO": 30,
+  "GASPAR": 29,
+  "SAO MIGUEL DO OESTE": 29,
+  "BALNEARIO DE PICARRAS": 28,
+  "QUILOMBO": 28,
+  "LAGUNA": 26,
+  "CONCORDIA": 26
+ },
+ "sc_setor_nautico_por_porte": {
+  "Microempresa": 2870,
+  "Empresa de pequeno porte": 212,
+  "Demais": 917
+ },
+ "sc_setor_nautico_mei": 1717,
+ "sc_setor_nautico_total_principal": 3999,
+ "sc_com_cnae_nautico_secundario": 7882
+}
