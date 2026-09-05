@@ -18,6 +18,11 @@
         "About 70% of Brazil's sport and leisure boats are built in SC. In 2010 it was 8.3%."
       ],
       [
+        "Empresas",
+        "1.028 empresas do setor náutico em 2025, terceiro estado do país: Itajaí 165, Florianópolis 133, Joinville 101, Balneário Camboriú 79, Navegantes 73, Palhoça 56. 85% são MEI ou microempresas. São 84 indústrias de construção de embarcações de esporte e lazer, 18% do país.",
+        "1,028 nautical companies in 2025, third state in the country: Itajaí 165, Florianópolis 133, Joinville 101, Balneário Camboriú 79, Navegantes 73, Palhoça 56. 85% are MEI or micro companies. There are 84 sport and leisure boatbuilding companies, 18% of the country's total."
+      ],
+      [
         "Estaleiros",
         "A construção de embarcações emprega 5.460 pessoas em SC (2025), concentradas em Itajaí (3.405), Navegantes (1.052) e Palhoça (700). A lista verificada dos estaleiros, nome a nome, está sendo consolidada pela ACATMAR.",
         "Boat and ship building employs 5,460 people in SC (2025), concentrated in Itajaí (3,405), Navegantes (1,052) and Palhoça (700). The verified list of shipyards, name by name, is being consolidated by ACATMAR."
@@ -49,6 +54,11 @@
         "Eventos",
         "São Paulo Boat Show 2025: 750 barcos negociados, 120 marcas, 170 barcos expostos, 40 mil visitantes.",
         "São Paulo Boat Show 2025: 750 boats sold, 120 brands, 170 boats on display, 40,000 visitors."
+      ],
+      [
+        "Empresas",
+        "2.104 empresas náuticas, o maior número do país; Guarujá, com 678, é o município com mais empresas do setor no Brasil. 71 indústrias de construção de esporte e lazer.",
+        "2,104 nautical companies, the country's largest number; Guarujá, with 678, is the municipality with the most nautical companies in Brazil. 71 sport and leisure boatbuilders."
       ]
     ]
   },
@@ -67,6 +77,11 @@
         "Investimento",
         "Programa Mar Aberto (Petrobras): 96 novas embarcações até 2032, R$ 32 bilhões em investimentos.",
         "Mar Aberto program (Petrobras): 96 new vessels by 2032, R$ 32 billion in investment."
+      ],
+      [
+        "Empresas",
+        "1.718 empresas náuticas, segundo maior número do país: Angra dos Reis 372, Rio de Janeiro 370, Niterói 237.",
+        "1,718 nautical companies, the country's second largest number: Angra dos Reis 372, Rio de Janeiro 370, Niterói 237."
       ]
     ]
   },
@@ -75,14 +90,26 @@
     "nome_en": "Paraná",
     "tagline": "Segunda maior frota de lanchas do país e polo industrial em crescimento, com exportações entre as três maiores do Brasil.",
     "tagline_en": "The country's second largest motorboat fleet and a growing industrial hub, with exports among Brazil's top three.",
-    "destaques": []
+    "destaques": [
+      [
+        "Indústria",
+        "56 indústrias de construção de embarcações de esporte e lazer, terceiro estado do país.",
+        "56 sport and leisure boatbuilders, third in the country."
+      ]
+    ]
   },
   "rs": {
     "nome": "Rio Grande do Sul",
     "nome_en": "Rio Grande do Sul",
     "tagline": "Frota expressiva de lanchas e motos aquáticas e forte cultura de vela na Lagoa dos Patos e no Guaíba.",
     "tagline_en": "A sizable motorboat and personal watercraft fleet and a strong sailing culture on Lagoa dos Patos and the Guaíba.",
-    "destaques": []
+    "destaques": [
+      [
+        "Indústria",
+        "36 indústrias de construção de embarcações de esporte e lazer.",
+        "36 sport and leisure boatbuilders."
+      ]
+    ]
   },
   "pe": {
     "nome": "Pernambuco",
@@ -153,6 +180,11 @@
         "Linhas",
         "Nas 22 linhas interestaduais de passageiros e mistas (80 embarcações): 843.924 passageiros e 822.488 toneladas por ano. São 196 terminais fluviais de passageiros, 129 deles no Pará.",
         "On the 22 interstate passenger and mixed lines (80 vessels): 843,924 passengers and 822,488 tonnes a year. There are 196 river passenger terminals, 129 of them in Pará."
+      ],
+      [
+        "Empresas",
+        "395 empresas náuticas, 296 delas em Manaus, quarto município do país em número de empresas do setor.",
+        "395 nautical companies, 296 of them in Manaus, the country's fourth municipality by number of nautical companies."
       ]
     ]
   }
