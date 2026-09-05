@@ -68,7 +68,7 @@ def linhas_zip(caminho):
     with zipfile.ZipFile(caminho) as z:
         for n in z.namelist():
             with z.open(n) as f:
-                for row in csv.reader(io.TextIOWrapper(f, encoding="latin-1", newline=""), delimiter=";"):
+                for row in csv.reader((l.replace("\x00", "") for l in io.TextIOWrapper(f, encoding="latin-1", newline="")), delimiter=";"):
                     yield row
 
 

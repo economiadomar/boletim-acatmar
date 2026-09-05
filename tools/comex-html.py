@@ -139,11 +139,11 @@ put('h1', h1_html)
 # tile e guia de Itajai (1o semestre)
 it0, it1 = h['itajai']
 v = pct(it1, it0)
-t, n = re.subn(r'<div class="tile" id="tile-itajai"><div class="n">[^<]*</div><div class="l"[^>]*>[^<]*</div><div class="s"[^>]*>[^<]*</div></div>',
-               f'<div class="tile" id="tile-itajai"><div class="n">{usd(it1)}</div><div class="l" data-en="exported by Itajaí in boats in the first half of {Y} ({fmtpct(v)}), national leader">exportados por Itajaí em embarcações no 1º semestre de {Y} ({fmtpct(v)}), líder nacional</div><div class="s" data-en="Comex Stat / MDIC · ACATMAR extraction">Comex Stat / MDIC · extração ACATMAR</div></div>', t, count=1)
+t, n = re.subn(r'<div class="tile" id="tile-itajai"><div class="n">[^<]*</div><div class="l"[^>]*>[^<]*</div>(?:<div class="s"[^>]*>[^<]*</div>)?</div>',
+               f'<div class="tile" id="tile-itajai"><div class="n">{usd(it1)}</div><div class="l" data-en="exported by Itajaí in boats in the first half of {Y} ({fmtpct(v)}), national leader">exportados por Itajaí em embarcações no 1º semestre de {Y} ({fmtpct(v)}), líder nacional</div></div>', t, count=1)
 print('  tile itajai:', n)
 t, n = re.subn(r'<li data-en="<b>Itajaí is the country\'s top boat-exporting city</b>[^"]*"><b>Itajaí é a cidade que mais exporta barcos no país</b>[^<]*<a href="#comex">ver &darr;</a></li>',
-               f'<li data-en="<b>Itajaí is the country\'s top boat-exporting city</b>: {usd_en(it1)} in the first half of {Y}, {fmtpct(v)} (Comex Stat/MDIC, ACATMAR extraction). <a href=&quot;#comex&quot;>see &darr;</a>"><b>Itajaí é a cidade que mais exporta barcos no país</b>: {usd(it1).replace(" mi", " milhões")} no 1º semestre de {Y}, {fmtpct(v)} (Comex Stat/MDIC, extração ACATMAR). <a href="#comex">ver &darr;</a></li>', t, count=1)
+               f'<li data-en="<b>Itajaí is the country\'s top boat-exporting city</b>: {usd_en(it1)} in the first half of {Y}, {fmtpct(v)}. <a href=&quot;#comex&quot;>see &darr;</a>"><b>Itajaí é a cidade que mais exporta barcos no país</b>: {usd(it1).replace(" mi", " milhões")} no 1º semestre de {Y}, {fmtpct(v)}. <a href="#comex">ver &darr;</a></li>', t, count=1)
 print('  guia itajai:', n)
 
 # ---------- pesca (SC), serie ----------

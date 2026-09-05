@@ -1,0 +1,89 @@
+{
+  "sc": {
+    "nome": "Santa Catarina", "nome_en": "Santa Catarina",
+    "tagline": "Principal polo náutico do Brasil: cerca de 70% da produção de barcos de esporte e lazer e a maior parte das exportações do país.",
+    "tagline_en": "Brazil's main nautical hub: about 70% of sport and leisure boat production and most of the country's exports.",
+    "extra_kpi": {"n": "~55 mil", "l": "embarcações de esporte e recreio registradas (2026)", "l_en": "sport and recreational vessels registered (2026)", "s": "Capitania dos Portos de SC", "s_en": "Santa Catarina Port Authority"},
+    "destaques": [
+      ["Produção", "Cerca de 70% das embarcações de esporte e lazer do país são feitas em SC. Em 2010 eram 8,3%.", "About 70% of Brazil's sport and leisure boats are built in SC. In 2010 it was 8.3%."],
+      ["Empresas", "1.028 empresas do setor náutico (2025): Itajaí 165, Florianópolis 133, Joinville 101, Balneário Camboriú 79, Navegantes 73, Palhoça 56. 85% são MEI ou microempresas.", "1,028 nautical companies (2025): Itajaí 165, Florianópolis 133, Joinville 101, Balneário Camboriú 79, Navegantes 73, Palhoça 56. 85% are MEI or micro companies."],
+      ["Indústria", "84 indústrias de construção de embarcações de esporte e lazer, 18% do total do país; eram 40 em 2014.", "84 sport and leisure boatbuilders, 18% of the country's total; there were 40 in 2014."],
+      ["Economia do Mar", "239.671 empregos formais em toda a Economia do Mar em 2024 (cerca de 250 mil em 2026), 8,5% dos trabalhadores formais do estado; 23.515 estabelecimentos; massa salarial de R$ 1,158 bilhão por mês.", "239,671 formal jobs across the whole Sea Economy in 2024 (about 250,000 in 2026), 8.5% of the state's formal workforce; 23,515 establishments; R$ 1.158 billion in monthly wages."],
+      ["Pesca", "61% da atividade industrial da pesca do país e 80% da pesca extrativa industrial concentrada em Itajaí e Navegantes; 90% da produção nacional de ostras.", "61% of the country's industrial fishing activity and 80% of industrial catch concentrated in Itajaí and Navegantes; 90% of national oyster output."]
+    ]
+  },
+  "sp": {
+    "nome": "São Paulo", "nome_en": "São Paulo",
+    "tagline": "Maior frota e maior mercado consumidor do país; segundo estado em empresas de construção de embarcações.",
+    "tagline_en": "The country's largest fleet and consumer market; second state in boatbuilding companies.",
+    "destaques": [
+      ["Mercado", "Programa de Turismo Náutico do Governo paulista: elevar o movimento de R$ 6,3 bilhões para R$ 21 bilhões até 2033, com 60 estruturas públicas de apoio à navegação.", "State Nautical Tourism Program: raise turnover from R$ 6.3 billion to R$ 21 billion by 2033, with 60 public boating facilities."],
+      ["Eventos", "São Paulo Boat Show 2025: 750 barcos negociados, 120 marcas, 170 barcos expostos, 40 mil visitantes.", "São Paulo Boat Show 2025: 750 boats sold, 120 brands, 170 boats on display, 40,000 visitors."],
+      ["Empresas", "2.104 empresas náuticas, o maior número do país; Guarujá, com 678, é o município com mais empresas do setor no Brasil. 71 indústrias de construção de esporte e lazer.", "2,104 nautical companies, the country's largest number; Guarujá, with 678, is the municipality with the most nautical companies in Brazil. 71 sport and leisure boatbuilders."]
+    ]
+  },
+  "rj": {
+    "nome": "Rio de Janeiro", "nome_en": "Rio de Janeiro",
+    "tagline": "Maior parque naval do país e a maior frota de veleiros; berço da indústria náutica brasileira.",
+    "tagline_en": "The country's largest shipbuilding park and largest sailboat fleet; birthplace of Brazil's boatbuilding industry.",
+    "destaques": [
+      ["Naval", "24 dos 49 estaleiros brasileiros e 66 mil dos 181 mil empregos ligados à atividade naval; 82% das plataformas marítimas em operação; 475 embarcações de apoio.", "24 of Brazil's 49 shipyards and 66,000 of the 181,000 naval jobs; 82% of offshore platforms in operation; 475 support vessels."],
+      ["Investimento", "Programa Mar Aberto (Petrobras): 96 novas embarcações até 2032, R$ 32 bilhões em investimentos.", "Mar Aberto program (Petrobras): 96 new vessels by 2032, R$ 32 billion in investment."],
+      ["Empresas", "1.718 empresas náuticas, segundo maior número do país: Angra dos Reis 372, Rio de Janeiro 370, Niterói 237. Paraty tem a maior densidade de empresas náuticas por habitante.", "1,718 nautical companies, the country's second largest number: Angra dos Reis 372, Rio de Janeiro 370, Niterói 237. Paraty has the highest density of nautical companies per inhabitant."]
+    ]
+  },
+  "pr": {
+    "nome": "Paraná", "nome_en": "Paraná",
+    "tagline": "Segunda maior frota de lanchas do país e polo industrial em crescimento, com exportações entre as três maiores do Brasil.",
+    "tagline_en": "The country's second largest motorboat fleet and a growing industrial hub, with exports among Brazil's top three.",
+    "destaques": [
+      ["Indústria", "56 indústrias de construção de embarcações de esporte e lazer, terceiro estado do país.", "56 sport and leisure boatbuilders, third in the country."]
+    ]
+  },
+  "rs": {
+    "nome": "Rio Grande do Sul", "nome_en": "Rio Grande do Sul",
+    "tagline": "Frota expressiva de lanchas e motos aquáticas e forte cultura de vela na Lagoa dos Patos e no Guaíba.",
+    "tagline_en": "A sizable motorboat and personal watercraft fleet and a strong sailing culture on Lagoa dos Patos and the Guaíba.",
+    "destaques": [
+      ["Indústria", "36 indústrias de construção de embarcações de esporte e lazer.", "36 sport and leisure boatbuilders."]
+    ]
+  },
+  "pe": {
+    "nome": "Pernambuco", "nome_en": "Pernambuco",
+    "tagline": "Segundo exportador de embarcações do país desde 2021, puxado pelos estaleiros do complexo de Suape.",
+    "tagline_en": "The country's second largest boat exporter since 2021, driven by the shipyards of the Suape complex.",
+    "destaques": [
+      ["Naval", "O Complexo Industrial Portuário de Suape reúne grandes estaleiros com atividade de construção e desmonte de navios, o que puxa as exportações e os empregos do estado.", "The Suape port and industrial complex hosts large shipyards with shipbuilding and ship dismantling, which drives the state's exports and jobs."],
+      ["Frota", "Além de lanchas e motos aquáticas, o estado registra 3.697 jangadas, marca da pesca artesanal do litoral nordestino.", "Besides motorboats and personal watercraft, the state registers 3,697 jangadas, the hallmark of artisanal fishing on the Northeast coast."]
+    ]
+  },
+  "ba": {
+    "nome": "Bahia", "nome_en": "Bahia",
+    "tagline": "Porta de entrada dos veleiros estrangeiros no Brasil, com um modelo de atendimento integrado que outros estados podem replicar.",
+    "tagline_en": "Brazil's gateway for foreign sailboats, with an integrated service model other states can replicate.",
+    "destaques": [
+      ["Infraestrutura", "Salvador tem 20 marinas e clubes náuticos com mais de 3 mil vagas e criou a Secretaria do Mar (Semar) em 2025.", "Salvador has 20 marinas and yacht clubs with more than 3,000 berths and created the Secretariat of the Sea (Semar) in 2025."],
+      ["Eventos", "Em 2025, o Salão Náutico Grand Pavois, o Barco Show Bahia e o Salvador Boat Show movimentaram cerca de R$ 25 milhões e beneficiaram cerca de 5 mil trabalhadores; para 2026 a Semar programou 77 eventos náuticos.", "In 2025 the Grand Pavois boat show, Barco Show Bahia and Salvador Boat Show generated about R$ 25 million and benefited about 5,000 workers; for 2026 Semar scheduled 77 nautical events."]
+    ],
+    "sac": true
+  },
+  "df": {
+    "nome": "Distrito Federal", "nome_en": "Federal District",
+    "tagline": "A maior náutica de água doce do país, concentrada no Lago Paranoá.",
+    "tagline_en": "The country's largest freshwater boating scene, concentrated on Lake Paranoá.",
+    "destaques": [
+      ["Frota", "A frota do Lago Paranoá é a sexta do país em número total de embarcações registradas, à frente de estados litorâneos.", "The Lake Paranoá fleet is the country's sixth largest in total registered vessels, ahead of coastal states."]
+    ]
+  },
+  "am": {
+    "nome": "Amazônia (Amazonas e Pará)", "nome_en": "Amazon (Amazonas and Pará)",
+    "tagline": "Onde o barco é transporte: a maior rede de navegação de passageiros e carga do país.",
+    "tagline_en": "Where the boat is transport: the country's largest passenger and cargo navigation network.",
+    "ufs": ["AM", "PA"],
+    "destaques": [
+      ["Transporte", "No Amazonas, cerca de 2,5 milhões de pessoas por ano usam embarcações como transporte e 1,5 milhão de toneladas de carga circulam pelos rios.", "In Amazonas about 2.5 million people a year travel by boat and 1.5 million tonnes of cargo move on the rivers."],
+      ["Linhas", "Nas 22 linhas interestaduais de passageiros e mistas (80 embarcações): 843.924 passageiros e 822.488 toneladas por ano. São 196 terminais fluviais de passageiros, 129 deles no Pará.", "On the 22 interstate passenger and mixed lines (80 vessels): 843,924 passengers and 822,488 tonnes a year. There are 196 river passenger terminals, 129 of them in Pará."],
+      ["Empresas", "O Amazonas tem 395 empresas náuticas, 296 delas em Manaus, quarto município do país em número de empresas do setor.", "Amazonas has 395 nautical companies, 296 of them in Manaus, the country's fourth municipality by number of nautical companies."]
+    ]
+  }
+}

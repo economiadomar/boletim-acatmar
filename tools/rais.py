@@ -147,14 +147,15 @@ def processa(ano, caminho):
     }
 
 
-res = {"fonte": "RAIS, microdados públicos por estabelecimento (PDET/MTE), extração ACATMAR", "definicao": {c: {"descricao": d, "grupo": g} for c, (d, g) in CNAE.items()}, "anos": {}}
-for arg in sys.argv[1:]:
-    ano, caminho = arg.split("=", 1)
-    res["anos"][ano] = processa(ano, caminho)
-json.dump(res, open(os.path.join(OUT, "resumo.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-for ano, r in res["anos"].items():
-    print(f"\n== {ano} ==")
-    print("  SC por grupo:", json.dumps(r["grupos_sc"], ensure_ascii=False))
-    print("  Indústria náutica por UF (vínculos):", [(u, v["vinculos"], v["estab"]) for u, v in list(r["industria_nautica_por_uf"].items())[:8]])
-    print("  Construção esporte e lazer (3012100) por UF:", [(u, v["vinculos"], v["estab"]) for u, v in list(r["construcao_esporte_lazer_por_uf"].items())[:8]])
-    print("  Indústria náutica SC por município:", [(m, v["vinculos"], v["estab"]) for m, v in list(r["industria_nautica_sc_por_municipio"].items())[:8]])
+if __name__ == "__main__":
+    res = {"fonte": "RAIS, microdados públicos por estabelecimento (PDET/MTE), extração ACATMAR", "definicao": {c: {"descricao": d, "grupo": g} for c, (d, g) in CNAE.items()}, "anos": {}}
+    for arg in sys.argv[1:]:
+        ano, caminho = arg.split("=", 1)
+        res["anos"][ano] = processa(ano, caminho)
+    json.dump(res, open(os.path.join(OUT, "resumo.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    for ano, r in res["anos"].items():
+        print(f"\n== {ano} ==")
+        print("  SC por grupo:", json.dumps(r["grupos_sc"], ensure_ascii=False))
+        print("  Indústria náutica por UF (vínculos):", [(u, v["vinculos"], v["estab"]) for u, v in list(r["industria_nautica_por_uf"].items())[:8]])
+        print("  Construção esporte e lazer (3012100) por UF:", [(u, v["vinculos"], v["estab"]) for u, v in list(r["construcao_esporte_lazer_por_uf"].items())[:8]])
+        print("  Indústria náutica SC por município:", [(m, v["vinculos"], v["estab"]) for m, v in list(r["industria_nautica_sc_por_municipio"].items())[:8]])
