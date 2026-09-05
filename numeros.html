@@ -182,9 +182,6 @@ html:not(.locked) .gate{display:none}
 .ufs .hint{width:100%;font-size:.82rem;color:#5b6f7a;margin-top:.3rem}
 html[data-uf] [data-uf]{display:none}
 html[data-uf="br"] [data-uf~="br"],html[data-uf="sc"] [data-uf~="sc"],html[data-uf="sp"] [data-uf~="sp"],html[data-uf="rj"] [data-uf~="rj"],html[data-uf="pr"] [data-uf~="pr"],html[data-uf="rs"] [data-uf~="rs"],html[data-uf="pe"] [data-uf~="pe"],html[data-uf="ba"] [data-uf~="ba"],html[data-uf="df"] [data-uf~="df"],html[data-uf="am"] [data-uf~="am"]{display:block}
-html[data-uf]:not([data-uf="br"]) .cards{display:block}
-html[data-uf]:not([data-uf="br"]) .cards .card{max-width:none;margin:0 0 1rem}
-html[data-uf]:not([data-uf="br"]) .cards .card p{font-size:1.02rem;line-height:1.6}
 html.locked .ufs{display:none}
 
 /* paineis por estado */
@@ -298,6 +295,7 @@ html.locked .ufs{display:none}
   });
 })();
 </script>
+
 
 
 
@@ -465,7 +463,7 @@ html.locked .ufs{display:none}
       <tr><td data-en="Nautical companies in Brazil (2024)">Empresas do setor náutico no Brasil (2024)</td><td class="v">9.382</td><td data-en="73% services, 19% retail, 8% industry">73% serviços, 19% comércio, 8% indústria</td></tr>
 <!-- rais:br --><!-- /rais:br --><!-- cnpj:br --><!-- /cnpj:br -->    </table></div>
   </section>
-<section class="blk gated" id="cadeia">
+<section class="blk gated" id="cadeia" data-uf="br sc">
     <h2 data-en="What is behind a boat · the production chain">O que está por trás de um barco · a cadeia produtiva</h2>
     <p class="lead" data-en="A boat is not one product: it is the assembly of eight industries. Each stage below is a set of companies, trades and jobs, most of them in Santa Catarina.">Um barco não é um produto: é a montagem de oito indústrias. Cada frente abaixo é um conjunto de empresas, ofícios e postos de trabalho, a maior parte em Santa Catarina.</p>
     <div class="cards">
