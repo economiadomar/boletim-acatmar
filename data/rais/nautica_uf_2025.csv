@@ -1,0 +1,690 @@
+ano,uf,cnae,descricao,grupo,estab_com_vinculo,vinculos_ativos,estab_declarantes
+2025,,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,2,9,611
+2025,,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,1147
+2025,,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,1,4,17
+2025,,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,0,0,1
+2025,,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,0,0,38
+2025,,0321303,Criação de ostras e mexilhões em água salgada e salobra,Pesca e aquicultura,0,0,1
+2025,,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,3
+2025,,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,0,0,1
+2025,,3011301,Construção de embarcações de grande porte,Indústria naval,0,0,1
+2025,,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,0,0,1
+2025,,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,2
+2025,AC,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,3
+2025,AC,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,2
+2025,AC,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,2,10,2
+2025,AC,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,1,8,1
+2025,AC,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,0,0,1
+2025,AC,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,0,0,1
+2025,AC,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,2,5,6
+2025,AC,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,0,0,3
+2025,AC,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,0,0,2
+2025,AC,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,1
+2025,AC,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,1,12,6
+2025,AC,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,0,0,16
+2025,AL,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,1,7,1350
+2025,AL,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,7212
+2025,AL,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,511
+2025,AL,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,0,0,2
+2025,AL,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,3,30,14
+2025,AL,0321303,Criação de ostras e mexilhões em água salgada e salobra,Pesca e aquicultura,0,0,5
+2025,AL,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,328
+2025,AL,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,4,106,7
+2025,AL,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,3,8,6
+2025,AL,3011301,Construção de embarcações de grande porte,Indústria naval,1,12,2
+2025,AL,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,1,30,3
+2025,AL,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,1,1,2
+2025,AL,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,1,1,1
+2025,AL,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,4,7,8
+2025,AL,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,1,1,1
+2025,AL,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,7,31,14
+2025,AL,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,0,0,1
+2025,AL,5030101,Navegação de apoio marítimo,Portos e navegação,0,0,2
+2025,AL,5030102,Navegação de apoio portuário,Portos e navegação,1,7,1
+2025,AL,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,13,33,58
+2025,AL,5231101,Administração da infraestrutura portuária,Portos e navegação,2,22,2
+2025,AL,5231102,Atividades do operador portuário,Portos e navegação,5,357,8
+2025,AL,5232000,Atividades de agenciamento marítimo,Portos e navegação,3,9,6
+2025,AL,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,9,65,12
+2025,AL,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,17,44,47
+2025,AL,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,5,38,47
+2025,AM,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,34
+2025,AM,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,2
+2025,AM,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,1,1,15
+2025,AM,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,0,0,4
+2025,AM,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,0,0,2
+2025,AM,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
+2025,AM,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,6,146,12
+2025,AM,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,16,212,38
+2025,AM,3011301,Construção de embarcações de grande porte,Indústria naval,24,3532,51
+2025,AM,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,17,94,76
+2025,AM,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,8,160,33
+2025,AM,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,3,113,7
+2025,AM,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,20,102,90
+2025,AM,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,4,7,23
+2025,AM,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,3
+2025,AM,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,34,170,121
+2025,AM,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,7,200,36
+2025,AM,5030101,Navegação de apoio marítimo,Portos e navegação,2,6,5
+2025,AM,5030102,Navegação de apoio portuário,Portos e navegação,5,57,14
+2025,AM,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,2,5,35
+2025,AM,5231101,Administração da infraestrutura portuária,Portos e navegação,2,13,11
+2025,AM,5231102,Atividades do operador portuário,Portos e navegação,22,1081,40
+2025,AM,5232000,Atividades de agenciamento marítimo,Portos e navegação,27,163,47
+2025,AM,5239701,Serviços de praticagem,Portos e navegação,4,34,7
+2025,AM,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,7,88,17
+2025,AM,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,7,9,44
+2025,AM,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,12,36,45
+2025,AM,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,5,6,45
+2025,AP,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1642
+2025,AP,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,18
+2025,AP,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,0,0,1
+2025,AP,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,9
+2025,AP,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,13,125,32
+2025,AP,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,3,24,8
+2025,AP,3011301,Construção de embarcações de grande porte,Indústria naval,0,0,3
+2025,AP,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,3,14,10
+2025,AP,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,2,30,11
+2025,AP,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,1,9,5
+2025,AP,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,1,3,2
+2025,AP,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,14,71,41
+2025,AP,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,3,7,4
+2025,AP,5030102,Navegação de apoio portuário,Portos e navegação,5,59,7
+2025,AP,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,0,0,2
+2025,AP,5231101,Administração da infraestrutura portuária,Portos e navegação,2,14,6
+2025,AP,5231102,Atividades do operador portuário,Portos e navegação,10,236,14
+2025,AP,5232000,Atividades de agenciamento marítimo,Portos e navegação,10,22,16
+2025,AP,5239701,Serviços de praticagem,Portos e navegação,6,9,29
+2025,AP,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,2,19,6
+2025,AP,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,2
+2025,AP,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,4,43,9
+2025,AP,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,1,1,32
+2025,BA,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,4,10,13603
+2025,BA,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,3,7,78479
+2025,BA,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,1,1,695
+2025,BA,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,7,16,40
+2025,BA,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,22,603,417
+2025,BA,0321303,Criação de ostras e mexilhões em água salgada e salobra,Pesca e aquicultura,0,0,49
+2025,BA,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,1,14,352
+2025,BA,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,3
+2025,BA,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,9,79,21
+2025,BA,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,14,662,32
+2025,BA,3011301,Construção de embarcações de grande porte,Indústria naval,6,761,10
+2025,BA,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,4,187,8
+2025,BA,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,3,8,7
+2025,BA,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,7,70,20
+2025,BA,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,16,195,38
+2025,BA,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,14,35,32
+2025,BA,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,1,4,8
+2025,BA,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,19,46,44
+2025,BA,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,4,15,9
+2025,BA,5030101,Navegação de apoio marítimo,Portos e navegação,5,59,14
+2025,BA,5030102,Navegação de apoio portuário,Portos e navegação,12,219,21
+2025,BA,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,20,65,59
+2025,BA,5231101,Administração da infraestrutura portuária,Portos e navegação,12,1286,15
+2025,BA,5231102,Atividades do operador portuário,Portos e navegação,16,845,28
+2025,BA,5232000,Atividades de agenciamento marítimo,Portos e navegação,36,609,53
+2025,BA,5239701,Serviços de praticagem,Portos e navegação,6,63,7
+2025,BA,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,7,229,12
+2025,BA,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,3,27,7
+2025,BA,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,50,238,135
+2025,BA,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,24,124,204
+2025,CE,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,3,15,754
+2025,CE,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,7,295,8273
+2025,CE,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,2,47,125
+2025,CE,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,8,54,28
+2025,CE,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,250,2759,539
+2025,CE,0321303,Criação de ostras e mexilhões em água salgada e salobra,Pesca e aquicultura,0,0,2
+2025,CE,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,6,84,60
+2025,CE,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,3,76,4
+2025,CE,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,28,650,64
+2025,CE,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,13,1051,41
+2025,CE,3011301,Construção de embarcações de grande porte,Indústria naval,1,195,1
+2025,CE,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,0,0,3
+2025,CE,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,1,263,4
+2025,CE,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,12,92,32
+2025,CE,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,10,31,14
+2025,CE,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,5,8,10
+2025,CE,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,1
+2025,CE,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,5,28,9
+2025,CE,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,2,6,5
+2025,CE,5030101,Navegação de apoio marítimo,Portos e navegação,14,164,17
+2025,CE,5030102,Navegação de apoio portuário,Portos e navegação,9,137,13
+2025,CE,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,2,3,6
+2025,CE,5231102,Atividades do operador portuário,Portos e navegação,18,2268,27
+2025,CE,5232000,Atividades de agenciamento marítimo,Portos e navegação,27,120,46
+2025,CE,5239701,Serviços de praticagem,Portos e navegação,1,31,1
+2025,CE,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,1,128,3
+2025,CE,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,1,2,1
+2025,CE,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,44,206,136
+2025,CE,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,15,109,135
+2025,DF,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1
+2025,DF,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,4
+2025,DF,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
+2025,DF,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,2,10,2
+2025,DF,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,12,161,19
+2025,DF,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,4,19,8
+2025,DF,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,3,48,7
+2025,DF,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,3
+2025,DF,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,6,29,11
+2025,DF,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,2
+2025,DF,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,11,63,23
+2025,DF,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,0,0,1
+2025,DF,5030101,Navegação de apoio marítimo,Portos e navegação,0,0,1
+2025,DF,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,2,8,10
+2025,DF,5231101,Administração da infraestrutura portuária,Portos e navegação,0,0,1
+2025,DF,5231102,Atividades do operador portuário,Portos e navegação,0,0,2
+2025,DF,5232000,Atividades de agenciamento marítimo,Portos e navegação,0,0,1
+2025,DF,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,1,3,3
+2025,DF,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,1,7,5
+2025,DF,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,31,116,93
+2025,DF,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,21,131,106
+2025,ES,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,34,130,463
+2025,ES,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,8,32,6166
+2025,ES,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,19
+2025,ES,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,0,0,1
+2025,ES,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,0,0,3
+2025,ES,0321303,Criação de ostras e mexilhões em água salgada e salobra,Pesca e aquicultura,0,0,14
+2025,ES,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,1,6,15
+2025,ES,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
+2025,ES,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,12,178,23
+2025,ES,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,6,99,10
+2025,ES,3011301,Construção de embarcações de grande porte,Indústria naval,1,3301,5
+2025,ES,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,1,1,2
+2025,ES,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,0,0,1
+2025,ES,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,9,27,17
+2025,ES,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,14,109,40
+2025,ES,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,1,6,7
+2025,ES,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,1,1,16
+2025,ES,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,9,27,25
+2025,ES,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,5,94,9
+2025,ES,5030101,Navegação de apoio marítimo,Portos e navegação,11,985,21
+2025,ES,5030102,Navegação de apoio portuário,Portos e navegação,15,367,24
+2025,ES,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,0,0,11
+2025,ES,5231101,Administração da infraestrutura portuária,Portos e navegação,3,183,4
+2025,ES,5231102,Atividades do operador portuário,Portos e navegação,23,2754,44
+2025,ES,5232000,Atividades de agenciamento marítimo,Portos e navegação,47,295,93
+2025,ES,5239701,Serviços de praticagem,Portos e navegação,7,69,8
+2025,ES,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,7,118,21
+2025,ES,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,2,19,8
+2025,ES,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,19,61,60
+2025,ES,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,14,292,106
+2025,GO,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1
+2025,GO,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
+2025,GO,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,0,0,3
+2025,GO,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,1,1,2
+2025,GO,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,5,51,13
+2025,GO,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,9,112,11
+2025,GO,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,2,3,4
+2025,GO,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,19,152,31
+2025,GO,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,20,182,34
+2025,GO,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,4
+2025,GO,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,7,33,14
+2025,GO,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,24,77,62
+2025,GO,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,0,0,1
+2025,GO,5231102,Atividades do operador portuário,Portos e navegação,1,235,3
+2025,GO,5232000,Atividades de agenciamento marítimo,Portos e navegação,0,0,2
+2025,GO,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,2
+2025,GO,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,39,85,125
+2025,GO,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,35,201,201
+2025,MA,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,3,15,47243
+2025,MA,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,2,41,154011
+2025,MA,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1368
+2025,MA,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,1,1,90
+2025,MA,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,6,55,2340
+2025,MA,0321303,Criação de ostras e mexilhões em água salgada e salobra,Pesca e aquicultura,0,0,58
+2025,MA,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,255
+2025,MA,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,4
+2025,MA,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,2,7,9
+2025,MA,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,1,1,9
+2025,MA,3011301,Construção de embarcações de grande porte,Indústria naval,0,0,2
+2025,MA,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,4,468,5
+2025,MA,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,0,0,1
+2025,MA,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,1,1,2
+2025,MA,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,6,107,15
+2025,MA,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,0,0,5
+2025,MA,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,1
+2025,MA,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,2,4,15
+2025,MA,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,1,4,1
+2025,MA,5030101,Navegação de apoio marítimo,Portos e navegação,8,229,17
+2025,MA,5030102,Navegação de apoio portuário,Portos e navegação,9,792,16
+2025,MA,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,1,1,8
+2025,MA,5231101,Administração da infraestrutura portuária,Portos e navegação,0,0,4
+2025,MA,5231102,Atividades do operador portuário,Portos e navegação,19,1224,36
+2025,MA,5232000,Atividades de agenciamento marítimo,Portos e navegação,28,196,56
+2025,MA,5239701,Serviços de praticagem,Portos e navegação,8,12,8
+2025,MA,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,5,24,14
+2025,MA,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,21,53,52
+2025,MA,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,7,160,43
+2025,MG,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,8
+2025,MG,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,2
+2025,MG,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,5
+2025,MG,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,0,0,1
+2025,MG,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,0,0,2
+2025,MG,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,2,4,2
+2025,MG,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,1,4,2
+2025,MG,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,32,476,56
+2025,MG,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,15,357,31
+2025,MG,3011301,Construção de embarcações de grande porte,Indústria naval,0,0,1
+2025,MG,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,4,16,11
+2025,MG,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,14,261,24
+2025,MG,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,41,372,67
+2025,MG,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,3,469,7
+2025,MG,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,4,39,19
+2025,MG,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,1,1,8
+2025,MG,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,20,89,61
+2025,MG,5030101,Navegação de apoio marítimo,Portos e navegação,0,0,1
+2025,MG,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,3,6,23
+2025,MG,5231101,Administração da infraestrutura portuária,Portos e navegação,1,1,2
+2025,MG,5231102,Atividades do operador portuário,Portos e navegação,1,34,6
+2025,MG,5232000,Atividades de agenciamento marítimo,Portos e navegação,5,15,21
+2025,MG,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,2,3,4
+2025,MG,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,1,1,5
+2025,MG,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,125,397,394
+2025,MG,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,85,480,699
+2025,MS,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,3
+2025,MS,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,1,1,2
+2025,MS,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
+2025,MS,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,4,364,8
+2025,MS,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,5,616,8
+2025,MS,3011301,Construção de embarcações de grande porte,Indústria naval,0,0,3
+2025,MS,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,0,0,1
+2025,MS,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,1,2,2
+2025,MS,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,2,135,6
+2025,MS,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,2,6,8
+2025,MS,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,0,0,3
+2025,MS,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,17,122,23
+2025,MS,5030101,Navegação de apoio marítimo,Portos e navegação,0,0,3
+2025,MS,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,9,79,13
+2025,MS,5231101,Administração da infraestrutura portuária,Portos e navegação,1,4,2
+2025,MS,5231102,Atividades do operador portuário,Portos e navegação,5,31,8
+2025,MS,5232000,Atividades de agenciamento marítimo,Portos e navegação,4,22,7
+2025,MS,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,2,6,2
+2025,MS,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,3
+2025,MS,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,23,75,59
+2025,MS,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,25,80,112
+2025,MT,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,2
+2025,MT,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
+2025,MT,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,1,3,1
+2025,MT,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,0,0,1
+2025,MT,0321303,Criação de ostras e mexilhões em água salgada e salobra,Pesca e aquicultura,0,0,1
+2025,MT,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,10,360,22
+2025,MT,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,3,6,4
+2025,MT,3011301,Construção de embarcações de grande porte,Indústria naval,1,5,1
+2025,MT,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,5,17,11
+2025,MT,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,5,24,11
+2025,MT,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,1
+2025,MT,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,1,8,2
+2025,MT,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,2,3,5
+2025,MT,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,1
+2025,MT,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,17,129,44
+2025,MT,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,0,0,1
+2025,MT,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,4,18,9
+2025,MT,5231101,Administração da infraestrutura portuária,Portos e navegação,0,0,1
+2025,MT,5232000,Atividades de agenciamento marítimo,Portos e navegação,0,0,2
+2025,MT,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,1,1,1
+2025,MT,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,1,18,1
+2025,MT,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,17,57,79
+2025,MT,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,13,18,104
+2025,PA,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,26,231,35159
+2025,PA,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,8,114,636
+2025,PA,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,318
+2025,PA,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,0,0,15
+2025,PA,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,4,7,30
+2025,PA,0321303,Criação de ostras e mexilhões em água salgada e salobra,Pesca e aquicultura,0,0,5
+2025,PA,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,118
+2025,PA,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,2
+2025,PA,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,23,1411,52
+2025,PA,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,21,644,44
+2025,PA,3011301,Construção de embarcações de grande porte,Indústria naval,12,150,36
+2025,PA,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,8,957,38
+2025,PA,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,4,20,15
+2025,PA,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,8
+2025,PA,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,27,371,75
+2025,PA,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,4,18,16
+2025,PA,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,1,1,6
+2025,PA,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,65,287,147
+2025,PA,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,2,3,14
+2025,PA,5030101,Navegação de apoio marítimo,Portos e navegação,7,250,12
+2025,PA,5030102,Navegação de apoio portuário,Portos e navegação,30,461,47
+2025,PA,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,2,2,22
+2025,PA,5231101,Administração da infraestrutura portuária,Portos e navegação,4,144,10
+2025,PA,5231102,Atividades do operador portuário,Portos e navegação,50,2953,101
+2025,PA,5232000,Atividades de agenciamento marítimo,Portos e navegação,38,181,68
+2025,PA,5239701,Serviços de praticagem,Portos e navegação,10,146,14
+2025,PA,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,12,145,30
+2025,PA,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,11,76,30
+2025,PA,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,21,125,51
+2025,PA,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,5,234,87
+2025,PB,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,324
+2025,PB,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,1592
+2025,PB,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,25
+2025,PB,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,1,1,3
+2025,PB,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,19,425,45
+2025,PB,0321303,Criação de ostras e mexilhões em água salgada e salobra,Pesca e aquicultura,0,0,1
+2025,PB,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,7
+2025,PB,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,2,5,2
+2025,PB,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,4,9,4
+2025,PB,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,3,20,8
+2025,PB,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,2,8,3
+2025,PB,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,0,0,1
+2025,PB,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,1,1,3
+2025,PB,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,1,6,2
+2025,PB,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,1,2,3
+2025,PB,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,1
+2025,PB,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,2,15,5
+2025,PB,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,0,0,1
+2025,PB,5030101,Navegação de apoio marítimo,Portos e navegação,1,2,2
+2025,PB,5030102,Navegação de apoio portuário,Portos e navegação,1,7,1
+2025,PB,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,14,51,28
+2025,PB,5231101,Administração da infraestrutura portuária,Portos e navegação,1,1,2
+2025,PB,5231102,Atividades do operador portuário,Portos e navegação,5,36,8
+2025,PB,5232000,Atividades de agenciamento marítimo,Portos e navegação,1,4,1
+2025,PB,5239701,Serviços de praticagem,Portos e navegação,0,0,1
+2025,PB,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,3,35,4
+2025,PB,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,1,5,3
+2025,PB,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,20,44,59
+2025,PB,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,9,90,55
+2025,PE,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,1,50,778
+2025,PE,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,4963
+2025,PE,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,11
+2025,PE,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,0,0,8
+2025,PE,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,15,356,39
+2025,PE,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,1,19,14
+2025,PE,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
+2025,PE,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,2,243,6
+2025,PE,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,17,1308,32
+2025,PE,3011301,Construção de embarcações de grande porte,Indústria naval,2,892,5
+2025,PE,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,2,12,2
+2025,PE,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,5,1068,9
+2025,PE,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,7,63,13
+2025,PE,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,4,12,11
+2025,PE,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,6,17,18
+2025,PE,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,4
+2025,PE,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,10,16,23
+2025,PE,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,6,73,16
+2025,PE,5030101,Navegação de apoio marítimo,Portos e navegação,1,11,2
+2025,PE,5030102,Navegação de apoio portuário,Portos e navegação,9,133,11
+2025,PE,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,18,44,44
+2025,PE,5231101,Administração da infraestrutura portuária,Portos e navegação,1,115,3
+2025,PE,5231102,Atividades do operador portuário,Portos e navegação,24,1316,44
+2025,PE,5232000,Atividades de agenciamento marítimo,Portos e navegação,20,144,32
+2025,PE,5239701,Serviços de praticagem,Portos e navegação,2,43,13
+2025,PE,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,8,110,14
+2025,PE,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,7,49,13
+2025,PE,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,31,155,102
+2025,PE,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,12,33,121
+2025,PI,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,4,9,58
+2025,PI,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,2,10,26
+2025,PI,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,10
+2025,PI,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,0,0,5
+2025,PI,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,12,289,32
+2025,PI,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,5
+2025,PI,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,1,25,1
+2025,PI,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,3,44,7
+2025,PI,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,3,61,7
+2025,PI,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,3,14,5
+2025,PI,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,0,0,1
+2025,PI,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,5,28,7
+2025,PI,5030101,Navegação de apoio marítimo,Portos e navegação,0,0,1
+2025,PI,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,2,2,4
+2025,PI,5231101,Administração da infraestrutura portuária,Portos e navegação,1,50,1
+2025,PI,5231102,Atividades do operador portuário,Portos e navegação,0,0,1
+2025,PI,5232000,Atividades de agenciamento marítimo,Portos e navegação,1,31,1
+2025,PI,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,13,56,31
+2025,PI,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,6,36,37
+2025,PR,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,1,1,1077
+2025,PR,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,4188
+2025,PR,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,13
+2025,PR,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,1,5,3
+2025,PR,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,1,9,8
+2025,PR,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,5
+2025,PR,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
+2025,PR,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,21,3433,45
+2025,PR,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,12,213,21
+2025,PR,3011301,Construção de embarcações de grande porte,Indústria naval,3,22,7
+2025,PR,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,15,85,17
+2025,PR,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,23,343,42
+2025,PR,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,58,1110,113
+2025,PR,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,11,407,26
+2025,PR,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,14,28,53
+2025,PR,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,6
+2025,PR,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,51,297,133
+2025,PR,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,1,20,9
+2025,PR,5030101,Navegação de apoio marítimo,Portos e navegação,5,134,12
+2025,PR,5030102,Navegação de apoio portuário,Portos e navegação,11,400,16
+2025,PR,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,10,226,32
+2025,PR,5231101,Administração da infraestrutura portuária,Portos e navegação,0,0,1
+2025,PR,5231102,Atividades do operador portuário,Portos e navegação,45,4420,72
+2025,PR,5232000,Atividades de agenciamento marítimo,Portos e navegação,55,554,95
+2025,PR,5239701,Serviços de praticagem,Portos e navegação,4,31,8
+2025,PR,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,17,84,43
+2025,PR,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,7
+2025,PR,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,96,335,305
+2025,PR,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,94,531,840
+2025,RJ,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,114,827,2525
+2025,RJ,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,1,1,7235
+2025,RJ,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,4,195,82
+2025,RJ,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,1,1,2
+2025,RJ,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,4,33,10
+2025,RJ,0321303,Criação de ostras e mexilhões em água salgada e salobra,Pesca e aquicultura,1,1,20
+2025,RJ,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,6
+2025,RJ,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,3,15,10
+2025,RJ,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,12,245,27
+2025,RJ,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,16,1216,32
+2025,RJ,3011301,Construção de embarcações de grande porte,Indústria naval,27,14511,51
+2025,RJ,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,19,312,31
+2025,RJ,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,15,285,42
+2025,RJ,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,11,92,27
+2025,RJ,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,248,15326,512
+2025,RJ,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,47,216,144
+2025,RJ,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,11,58,125
+2025,RJ,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,88,533,209
+2025,RJ,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,33,2862,63
+2025,RJ,5030101,Navegação de apoio marítimo,Portos e navegação,125,19582,245
+2025,RJ,5030102,Navegação de apoio portuário,Portos e navegação,39,1788,67
+2025,RJ,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,62,210,179
+2025,RJ,5231101,Administração da infraestrutura portuária,Portos e navegação,8,524,10
+2025,RJ,5231102,Atividades do operador portuário,Portos e navegação,59,10399,88
+2025,RJ,5232000,Atividades de agenciamento marítimo,Portos e navegação,98,1766,223
+2025,RJ,5239701,Serviços de praticagem,Portos e navegação,17,28,35
+2025,RJ,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,28,377,102
+2025,RJ,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,19,1399,61
+2025,RJ,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,75,726,251
+2025,RJ,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,137,1598,542
+2025,RN,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,16,323,1324
+2025,RN,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,2,23,3142
+2025,RN,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,376
+2025,RN,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,5,18,13
+2025,RN,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,130,2242,190
+2025,RN,0321303,Criação de ostras e mexilhões em água salgada e salobra,Pesca e aquicultura,2,45,3
+2025,RN,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,3,84,13
+2025,RN,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
+2025,RN,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,11,1001,20
+2025,RN,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,9,215,19
+2025,RN,3011301,Construção de embarcações de grande porte,Indústria naval,0,0,4
+2025,RN,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,0,0,3
+2025,RN,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,6
+2025,RN,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,4,20,9
+2025,RN,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,4,5,5
+2025,RN,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,1,2,3
+2025,RN,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,1,6,4
+2025,RN,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,6,29,16
+2025,RN,5030101,Navegação de apoio marítimo,Portos e navegação,5,110,9
+2025,RN,5030102,Navegação de apoio portuário,Portos e navegação,4,165,6
+2025,RN,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,28,133,50
+2025,RN,5231102,Atividades do operador portuário,Portos e navegação,7,330,11
+2025,RN,5232000,Atividades de agenciamento marítimo,Portos e navegação,4,14,10
+2025,RN,5239701,Serviços de praticagem,Portos e navegação,1,2,1
+2025,RN,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,1,3,5
+2025,RN,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,2
+2025,RN,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,19,55,62
+2025,RN,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,17,272,86
+2025,RO,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1
+2025,RO,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
+2025,RO,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,1,1,2
+2025,RO,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
+2025,RO,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,1,3,1
+2025,RO,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,6,275,9
+2025,RO,3011301,Construção de embarcações de grande porte,Indústria naval,0,0,1
+2025,RO,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,3,17,3
+2025,RO,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,1,8,3
+2025,RO,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,1
+2025,RO,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,6
+2025,RO,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,1,1,7
+2025,RO,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,7,25,12
+2025,RO,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,0,0,5
+2025,RO,5030101,Navegação de apoio marítimo,Portos e navegação,1,1,3
+2025,RO,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,1,1,4
+2025,RO,5231101,Administração da infraestrutura portuária,Portos e navegação,1,63,3
+2025,RO,5231102,Atividades do operador portuário,Portos e navegação,6,172,9
+2025,RO,5232000,Atividades de agenciamento marítimo,Portos e navegação,1,3,1
+2025,RO,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,1,1,2
+2025,RO,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,3
+2025,RO,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,10,36,26
+2025,RO,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,7,48,57
+2025,RR,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,1
+2025,RR,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,0,0,1
+2025,RR,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,1,28,1
+2025,RR,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,0,0,1
+2025,RR,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,0,0,1
+2025,RR,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,1
+2025,RR,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,2,12,5
+2025,RR,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,0,0,1
+2025,RR,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,0,0,1
+2025,RR,5231102,Atividades do operador portuário,Portos e navegação,0,0,2
+2025,RR,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,1,1,3
+2025,RR,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,3,3,8
+2025,RR,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,4,16,14
+2025,RS,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,23,94,3932
+2025,RS,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,4,23,176
+2025,RS,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,2,44,27
+2025,RS,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,0,0,5
+2025,RS,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,9
+2025,RS,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,1
+2025,RS,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,14,253,31
+2025,RS,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,10,515,22
+2025,RS,3011301,Construção de embarcações de grande porte,Indústria naval,8,561,11
+2025,RS,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,5,26,14
+2025,RS,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,11,108,27
+2025,RS,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,41,452,81
+2025,RS,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,20,247,41
+2025,RS,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,2,5,12
+2025,RS,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,0,0,4
+2025,RS,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,16,59,50
+2025,RS,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,3,35,13
+2025,RS,5030101,Navegação de apoio marítimo,Portos e navegação,6,84,10
+2025,RS,5030102,Navegação de apoio portuário,Portos e navegação,12,310,18
+2025,RS,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,4,26,15
+2025,RS,5231101,Administração da infraestrutura portuária,Portos e navegação,3,443,8
+2025,RS,5231102,Atividades do operador portuário,Portos e navegação,15,1810,25
+2025,RS,5232000,Atividades de agenciamento marítimo,Portos e navegação,68,729,110
+2025,RS,5239701,Serviços de praticagem,Portos e navegação,1,1,17
+2025,RS,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,10,71,34
+2025,RS,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,2,23,5
+2025,RS,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,64,144,192
+2025,RS,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,79,339,899
+2025,SC,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,282,2535,12537
+2025,SC,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,13,107,5316
+2025,SC,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,14,66,285
+2025,SC,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,1,1,12
+2025,SC,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,5,13,484
+2025,SC,0321303,Criação de ostras e mexilhões em água salgada e salobra,Pesca e aquicultura,8,68,17
+2025,SC,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,1,1,91
+2025,SC,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,5,6,8
+2025,SC,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,101,1425,174
+2025,SC,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,48,6171,81
+2025,SC,3011301,Construção de embarcações de grande porte,Indústria naval,20,3519,27
+2025,SC,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,18,383,33
+2025,SC,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,39,1558,69
+2025,SC,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,53,515,109
+2025,SC,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,45,883,88
+2025,SC,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,42,169,149
+2025,SC,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,1,4,25
+2025,SC,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,65,304,162
+2025,SC,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,1,2,11
+2025,SC,5030101,Navegação de apoio marítimo,Portos e navegação,6,783,15
+2025,SC,5030102,Navegação de apoio portuário,Portos e navegação,10,219,14
+2025,SC,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,18,177,70
+2025,SC,5231101,Administração da infraestrutura portuária,Portos e navegação,7,418,17
+2025,SC,5231102,Atividades do operador portuário,Portos e navegação,43,5384,80
+2025,SC,5232000,Atividades de agenciamento marítimo,Portos e navegação,90,1386,155
+2025,SC,5239701,Serviços de praticagem,Portos e navegação,3,16,21
+2025,SC,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,14,411,27
+2025,SC,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,4,22,23
+2025,SC,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,74,357,302
+2025,SC,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,64,405,723
+2025,SE,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,1523
+2025,SE,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,18407
+2025,SE,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,1,2,49
+2025,SE,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,0,0,1
+2025,SE,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,28,112,58
+2025,SE,0321303,Criação de ostras e mexilhões em água salgada e salobra,Pesca e aquicultura,0,0,1
+2025,SE,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,13
+2025,SE,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,2,22,2
+2025,SE,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,1,18,3
+2025,SE,3011301,Construção de embarcações de grande porte,Indústria naval,1,4,1
+2025,SE,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,1,8,1
+2025,SE,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,3,18,3
+2025,SE,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,4,10,10
+2025,SE,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,2,5,3
+2025,SE,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,4,6,8
+2025,SE,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,0,0,1
+2025,SE,5030101,Navegação de apoio marítimo,Portos e navegação,4,97,7
+2025,SE,5030102,Navegação de apoio portuário,Portos e navegação,2,23,3
+2025,SE,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,1,1,5
+2025,SE,5231101,Administração da infraestrutura portuária,Portos e navegação,1,91,1
+2025,SE,5231102,Atividades do operador portuário,Portos e navegação,2,91,2
+2025,SE,5232000,Atividades de agenciamento marítimo,Portos e navegação,2,3,7
+2025,SE,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,1,2,3
+2025,SE,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,9,41,20
+2025,SE,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,11,114,40
+2025,SP,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,24,205,1050
+2025,SP,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,2,7,2490
+2025,SP,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,3,5,175
+2025,SP,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,3,7,12
+2025,SP,0321302,Criação de camarões em água salgada e salobra,Pesca e aquicultura,1,19,8
+2025,SP,0321303,Criação de ostras e mexilhões em água salgada e salobra,Pesca e aquicultura,1,4,5
+2025,SP,0321305,Atividades de apoio à aquicultura em água salgada e salobra,Pesca e aquicultura,0,0,13
+2025,SP,0321399,Cultivos e semicultivos da aquicultura em água salgada e salobra,Pesca e aquicultura,1,1,5
+2025,SP,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,80,2363,125
+2025,SP,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,26,1688,44
+2025,SP,3011301,Construção de embarcações de grande porte,Indústria naval,6,71,15
+2025,SP,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,19,628,31
+2025,SP,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,37,511,62
+2025,SP,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,221,2787,352
+2025,SP,3317101,Manutenção e reparação de embarcações e estruturas flutuantes,Indústria naval,37,2138,95
+2025,SP,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,54,635,193
+2025,SP,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,2,5,19
+2025,SP,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,157,809,375
+2025,SP,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,8,585,33
+2025,SP,5030101,Navegação de apoio marítimo,Portos e navegação,6,265,22
+2025,SP,5030102,Navegação de apoio portuário,Portos e navegação,22,798,39
+2025,SP,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,23,75,106
+2025,SP,5231101,Administração da infraestrutura portuária,Portos e navegação,6,1241,10
+2025,SP,5231102,Atividades do operador portuário,Portos e navegação,73,15438,130
+2025,SP,5232000,Atividades de agenciamento marítimo,Portos e navegação,292,7512,563
+2025,SP,5239701,Serviços de praticagem,Portos e navegação,0,0,49
+2025,SP,5239799,Atividades auxiliares dos transportes aquaviários,Portos e navegação,42,513,123
+2025,SP,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,11,92,43
+2025,SP,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,298,1495,944
+2025,SP,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,270,2569,1985
+2025,TO,0311601,Pesca de peixes em água salgada,Pesca e aquicultura,0,0,7
+2025,TO,0311602,Pesca de crustáceos e moluscos em água salgada,Pesca e aquicultura,0,0,1
+2025,TO,0311604,Atividades de apoio à pesca em água salgada,Pesca e aquicultura,0,0,3
+2025,TO,0321301,Criação de peixes em água salgada e salobra,Pesca e aquicultura,1,3,1
+2025,TO,1020101,"Preservação de peixes, crustáceos e moluscos",Pesca e aquicultura,2,43,6
+2025,TO,1020102,"Fabricação de conservas de peixes, crustáceos e moluscos",Pesca e aquicultura,0,0,2
+2025,TO,3011302,"Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",Indústria náutica,0,0,1
+2025,TO,3012100,Construção de embarcações para esporte e lazer,Indústria náutica,2,20,4
+2025,TO,3230200,Fabricação de artefatos para pesca e esporte,Indústria náutica,0,0,1
+2025,TO,3317102,Manutenção e reparação de embarcações para esporte e lazer,Indústria náutica,1,1,7
+2025,TO,4329102,Instalação de equipamentos para orientação à navegação,Indústria náutica,1,2,1
+2025,TO,4763605,Comércio varejista de embarcações e outros veículos recreativos,Comércio e serviços náuticos,3,10,21
+2025,TO,5011401,"Transporte marítimo de cabotagem, carga",Portos e navegação,0,0,1
+2025,TO,5099801,Transporte aquaviário para passeios turísticos,Comércio e serviços náuticos,1,3,3
+2025,TO,5231101,Administração da infraestrutura portuária,Portos e navegação,1,7,1
+2025,TO,5231102,Atividades do operador portuário,Portos e navegação,0,0,1
+2025,TO,7719501,"Locação de embarcações sem tripulação, exceto para fins recreativos",Comércio e serviços náuticos,0,0,1
+2025,TO,7721700,Aluguel de equipamentos recreativos e esportivos,Comércio e serviços náuticos,5,10,34
+2025,TO,9319199,Outras atividades esportivas (inclui escolas e clubes náuticos),Comércio e serviços náuticos,5,7,54

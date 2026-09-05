@@ -42,7 +42,7 @@ echo "2/4  Publicando na Cloudflare Pages…"
 DIST=/tmp/acatmar-dist
 rm -rf "$DIST"; mkdir -p "$DIST"
 rsync -a --exclude='.git' --exclude='*.py' --exclude='*.sh' --exclude='build-*' \
-  --exclude='.indexnow-key' --exclude='.DS_Store' --exclude='CNAME' \
+  --exclude='.indexnow-key' --exclude='.cache' --exclude='.DS_Store' --exclude='CNAME' \
   --exclude='GUIA.html' --exclude='assets/fonts' \
   ./ "$DIST"/ 2>/dev/null
 npx wrangler pages deploy "$DIST" --project-name=acatmar --branch=main --commit-dirty=true 2>&1 \

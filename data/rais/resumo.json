@@ -1,0 +1,1377 @@
+{
+ "fonte": "RAIS, microdados públicos por estabelecimento (PDET/MTE), extração ACATMAR",
+ "definicao": {
+  "3012100": {
+   "descricao": "Construção de embarcações para esporte e lazer",
+   "grupo": "Indústria náutica"
+  },
+  "3011302": {
+   "descricao": "Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",
+   "grupo": "Indústria náutica"
+  },
+  "3317102": {
+   "descricao": "Manutenção e reparação de embarcações para esporte e lazer",
+   "grupo": "Indústria náutica"
+  },
+  "3230200": {
+   "descricao": "Fabricação de artefatos para pesca e esporte",
+   "grupo": "Indústria náutica"
+  },
+  "4329102": {
+   "descricao": "Instalação de equipamentos para orientação à navegação",
+   "grupo": "Indústria náutica"
+  },
+  "4763605": {
+   "descricao": "Comércio varejista de embarcações e outros veículos recreativos",
+   "grupo": "Comércio e serviços náuticos"
+  },
+  "7719501": {
+   "descricao": "Locação de embarcações sem tripulação, exceto para fins recreativos",
+   "grupo": "Comércio e serviços náuticos"
+  },
+  "7721700": {
+   "descricao": "Aluguel de equipamentos recreativos e esportivos",
+   "grupo": "Comércio e serviços náuticos"
+  },
+  "5099801": {
+   "descricao": "Transporte aquaviário para passeios turísticos",
+   "grupo": "Comércio e serviços náuticos"
+  },
+  "9319199": {
+   "descricao": "Outras atividades esportivas (inclui escolas e clubes náuticos)",
+   "grupo": "Comércio e serviços náuticos"
+  },
+  "3011301": {
+   "descricao": "Construção de embarcações de grande porte",
+   "grupo": "Indústria naval"
+  },
+  "3317101": {
+   "descricao": "Manutenção e reparação de embarcações e estruturas flutuantes",
+   "grupo": "Indústria naval"
+  },
+  "5231101": {
+   "descricao": "Administração da infraestrutura portuária",
+   "grupo": "Portos e navegação"
+  },
+  "5231102": {
+   "descricao": "Atividades do operador portuário",
+   "grupo": "Portos e navegação"
+  },
+  "5232000": {
+   "descricao": "Atividades de agenciamento marítimo",
+   "grupo": "Portos e navegação"
+  },
+  "5239701": {
+   "descricao": "Serviços de praticagem",
+   "grupo": "Portos e navegação"
+  },
+  "5239799": {
+   "descricao": "Atividades auxiliares dos transportes aquaviários",
+   "grupo": "Portos e navegação"
+  },
+  "5011401": {
+   "descricao": "Transporte marítimo de cabotagem, carga",
+   "grupo": "Portos e navegação"
+  },
+  "5030101": {
+   "descricao": "Navegação de apoio marítimo",
+   "grupo": "Portos e navegação"
+  },
+  "5030102": {
+   "descricao": "Navegação de apoio portuário",
+   "grupo": "Portos e navegação"
+  },
+  "0311601": {
+   "descricao": "Pesca de peixes em água salgada",
+   "grupo": "Pesca e aquicultura"
+  },
+  "0311602": {
+   "descricao": "Pesca de crustáceos e moluscos em água salgada",
+   "grupo": "Pesca e aquicultura"
+  },
+  "0311604": {
+   "descricao": "Atividades de apoio à pesca em água salgada",
+   "grupo": "Pesca e aquicultura"
+  },
+  "0321301": {
+   "descricao": "Criação de peixes em água salgada e salobra",
+   "grupo": "Pesca e aquicultura"
+  },
+  "0321302": {
+   "descricao": "Criação de camarões em água salgada e salobra",
+   "grupo": "Pesca e aquicultura"
+  },
+  "0321303": {
+   "descricao": "Criação de ostras e mexilhões em água salgada e salobra",
+   "grupo": "Pesca e aquicultura"
+  },
+  "0321305": {
+   "descricao": "Atividades de apoio à aquicultura em água salgada e salobra",
+   "grupo": "Pesca e aquicultura"
+  },
+  "0321399": {
+   "descricao": "Cultivos e semicultivos da aquicultura em água salgada e salobra",
+   "grupo": "Pesca e aquicultura"
+  },
+  "1020101": {
+   "descricao": "Preservação de peixes, crustáceos e moluscos",
+   "grupo": "Pesca e aquicultura"
+  },
+  "1020102": {
+   "descricao": "Fabricação de conservas de peixes, crustáceos e moluscos",
+   "grupo": "Pesca e aquicultura"
+  }
+ },
+ "anos": {
+  "2024": {
+   "ano": "2024",
+   "total_sc": {
+    "estab_com_vinculo": 234282,
+    "vinculos_ativos": 2837940
+   },
+   "grupos_br": {
+    "Pesca e aquicultura": {
+     "estab": 1857,
+     "vinculos": 41006
+    },
+    "Comércio e serviços náuticos": {
+     "estab": 2976,
+     "vinculos": 17472
+    },
+    "Portos e navegação": {
+     "estab": 2010,
+     "vinculos": 99897
+    },
+    "Indústria naval": {
+     "estab": 556,
+     "vinculos": 43395
+    },
+    "Indústria náutica": {
+     "estab": 1011,
+     "vinculos": 14306
+    }
+   },
+   "grupos_sc": {
+    "Pesca e aquicultura": {
+     "estab": 477,
+     "vinculos": 10487
+    },
+    "Comércio e serviços náuticos": {
+     "estab": 217,
+     "vinculos": 1026
+    },
+    "Indústria náutica": {
+     "estab": 147,
+     "vinculos": 2786
+    },
+    "Portos e navegação": {
+     "estab": 177,
+     "vinculos": 8088
+    },
+    "Indústria naval": {
+     "estab": 62,
+     "vinculos": 4080
+    }
+   },
+   "industria_nautica_por_uf": {
+    "SP": {
+     "estab": 318,
+     "vinculos": 4328
+    },
+    "SC": {
+     "estab": 147,
+     "vinculos": 2786
+    },
+    "PE": {
+     "estab": 19,
+     "vinculos": 1049
+    },
+    "PR": {
+     "estab": 106,
+     "vinculos": 1000
+    },
+    "RJ": {
+     "estab": 93,
+     "vinculos": 975
+    },
+    "PA": {
+     "estab": 16,
+     "vinculos": 716
+    },
+    "MG": {
+     "estab": 61,
+     "vinculos": 629
+    },
+    "RS": {
+     "estab": 61,
+     "vinculos": 597
+    },
+    "MA": {
+     "estab": 5,
+     "vinculos": 427
+    },
+    "AM": {
+     "estab": 27,
+     "vinculos": 363
+    },
+    "GO": {
+     "estab": 41,
+     "vinculos": 335
+    },
+    "CE": {
+     "estab": 17,
+     "vinculos": 335
+    },
+    "BA": {
+     "estab": 28,
+     "vinculos": 276
+    },
+    "MS": {
+     "estab": 5,
+     "vinculos": 155
+    },
+    "MT": {
+     "estab": 12,
+     "vinculos": 71
+    },
+    "DF": {
+     "estab": 7,
+     "vinculos": 63
+    },
+    "AL": {
+     "estab": 7,
+     "vinculos": 41
+    },
+    "AP": {
+     "estab": 6,
+     "vinculos": 37
+    },
+    "ES": {
+     "estab": 10,
+     "vinculos": 35
+    },
+    "RO": {
+     "estab": 4,
+     "vinculos": 23
+    },
+    "TO": {
+     "estab": 7,
+     "vinculos": 22
+    },
+    "SE": {
+     "estab": 5,
+     "vinculos": 18
+    },
+    "PI": {
+     "estab": 3,
+     "vinculos": 14
+    },
+    "PB": {
+     "estab": 4,
+     "vinculos": 9
+    },
+    "RN": {
+     "estab": 1,
+     "vinculos": 1
+    },
+    "AC": {
+     "estab": 1,
+     "vinculos": 1
+    },
+    "RR": {
+     "estab": 0,
+     "vinculos": 0
+    }
+   },
+   "construcao_esporte_lazer_por_uf": {
+    "SC": {
+     "estab": 33,
+     "vinculos": 1657
+    },
+    "PE": {
+     "estab": 4,
+     "vinculos": 947
+    },
+    "SP": {
+     "estab": 34,
+     "vinculos": 482
+    },
+    "PR": {
+     "estab": 19,
+     "vinculos": 315
+    },
+    "MG": {
+     "estab": 14,
+     "vinculos": 254
+    },
+    "CE": {
+     "estab": 1,
+     "vinculos": 242
+    },
+    "RJ": {
+     "estab": 13,
+     "vinculos": 211
+    },
+    "AM": {
+     "estab": 6,
+     "vinculos": 151
+    },
+    "GO": {
+     "estab": 15,
+     "vinculos": 121
+    },
+    "RS": {
+     "estab": 11,
+     "vinculos": 103
+    },
+    "AL": {
+     "estab": 1,
+     "vinculos": 30
+    },
+    "AP": {
+     "estab": 2,
+     "vinculos": 23
+    },
+    "MT": {
+     "estab": 5,
+     "vinculos": 19
+    },
+    "TO": {
+     "estab": 4,
+     "vinculos": 17
+    },
+    "BA": {
+     "estab": 3,
+     "vinculos": 9
+    },
+    "RO": {
+     "estab": 1,
+     "vinculos": 6
+    },
+    "PA": {
+     "estab": 2,
+     "vinculos": 5
+    },
+    "MS": {
+     "estab": 1,
+     "vinculos": 2
+    },
+    "RN": {
+     "estab": 0,
+     "vinculos": 0
+    },
+    "AC": {
+     "estab": 0,
+     "vinculos": 0
+    },
+    "DF": {
+     "estab": 0,
+     "vinculos": 0
+    },
+    "SE": {
+     "estab": 0,
+     "vinculos": 0
+    },
+    "PB": {
+     "estab": 0,
+     "vinculos": 0
+    },
+    "MA": {
+     "estab": 0,
+     "vinculos": 0
+    }
+   },
+   "industria_nautica_sc_por_municipio": {
+    "Itajaí": {
+     "estab": 24,
+     "vinculos": 926
+    },
+    "Palhoça": {
+     "estab": 11,
+     "vinculos": 814
+    },
+    "Florianópolis": {
+     "estab": 18,
+     "vinculos": 203
+    },
+    "Joinville": {
+     "estab": 16,
+     "vinculos": 147
+    },
+    "Navegantes": {
+     "estab": 5,
+     "vinculos": 135
+    },
+    "Guaramirim": {
+     "estab": 4,
+     "vinculos": 96
+    },
+    "Biguaçu": {
+     "estab": 6,
+     "vinculos": 72
+    },
+    "São José": {
+     "estab": 7,
+     "vinculos": 69
+    },
+    "Porto Belo": {
+     "estab": 5,
+     "vinculos": 43
+    },
+    "Brusque": {
+     "estab": 1,
+     "vinculos": 39
+    },
+    "Ilhota": {
+     "estab": 3,
+     "vinculos": 38
+    },
+    "São Francisco do Sul": {
+     "estab": 2,
+     "vinculos": 25
+    },
+    "Itapema": {
+     "estab": 4,
+     "vinculos": 25
+    },
+    "Gaspar": {
+     "estab": 2,
+     "vinculos": 21
+    },
+    "Balneário Camboriú": {
+     "estab": 5,
+     "vinculos": 20
+    },
+    "Araquari": {
+     "estab": 5,
+     "vinculos": 17
+    },
+    "Blumenau": {
+     "estab": 1,
+     "vinculos": 16
+    },
+    "Pomerode": {
+     "estab": 2,
+     "vinculos": 14
+    },
+    "Santo Amaro da Imperatriz": {
+     "estab": 1,
+     "vinculos": 11
+    },
+    "Araranguá": {
+     "estab": 1,
+     "vinculos": 10
+    }
+   },
+   "cadeia_sc_por_municipio": {
+    "Itajaí": {
+     "estab": 237,
+     "vinculos": 10046
+    },
+    "Navegantes": {
+     "estab": 124,
+     "vinculos": 5703
+    },
+    "Itapoá": {
+     "estab": 4,
+     "vinculos": 1827
+    },
+    "São Francisco do Sul": {
+     "estab": 51,
+     "vinculos": 1665
+    },
+    "Palhoça": {
+     "estab": 27,
+     "vinculos": 938
+    },
+    "Florianópolis": {
+     "estab": 87,
+     "vinculos": 841
+    },
+    "Imbituba": {
+     "estab": 29,
+     "vinculos": 818
+    },
+    "Penha": {
+     "estab": 90,
+     "vinculos": 744
+    },
+    "Laguna": {
+     "estab": 36,
+     "vinculos": 634
+    },
+    "Porto Belo": {
+     "estab": 65,
+     "vinculos": 494
+    },
+    "Joinville": {
+     "estab": 45,
+     "vinculos": 321
+    },
+    "Balneário Camboriú": {
+     "estab": 30,
+     "vinculos": 316
+    },
+    "São José": {
+     "estab": 23,
+     "vinculos": 234
+    },
+    "Balneário Piçarras": {
+     "estab": 8,
+     "vinculos": 224
+    },
+    "Barra Velha": {
+     "estab": 9,
+     "vinculos": 215
+    },
+    "Bombinhas": {
+     "estab": 26,
+     "vinculos": 193
+    },
+    "Biguaçu": {
+     "estab": 12,
+     "vinculos": 145
+    },
+    "Ilhota": {
+     "estab": 5,
+     "vinculos": 141
+    },
+    "Guaramirim": {
+     "estab": 4,
+     "vinculos": 96
+    },
+    "Blumenau": {
+     "estab": 11,
+     "vinculos": 74
+    },
+    "Criciúma": {
+     "estab": 6,
+     "vinculos": 65
+    },
+    "Itapema": {
+     "estab": 8,
+     "vinculos": 54
+    },
+    "Governador Celso Ramos": {
+     "estab": 9,
+     "vinculos": 50
+    },
+    "Camboriú": {
+     "estab": 8,
+     "vinculos": 49
+    },
+    "Brusque": {
+     "estab": 4,
+     "vinculos": 43
+    }
+   },
+   "sc_por_cnae": {
+    "0311601": {
+     "desc": "Pesca de peixes em água salgada",
+     "grupo": "Pesca e aquicultura",
+     "estab": 284,
+     "vinculos": 2519
+    },
+    "0311602": {
+     "desc": "Pesca de crustáceos e moluscos em água salgada",
+     "grupo": "Pesca e aquicultura",
+     "estab": 13,
+     "vinculos": 120
+    },
+    "9319199": {
+     "desc": "Outras atividades esportivas (inclui escolas e clubes náuticos)",
+     "grupo": "Comércio e serviços náuticos",
+     "estab": 68,
+     "vinculos": 316
+    },
+    "1020101": {
+     "desc": "Preservação de peixes, crustáceos e moluscos",
+     "grupo": "Pesca e aquicultura",
+     "estab": 98,
+     "vinculos": 1544
+    },
+    "0321302": {
+     "desc": "Criação de camarões em água salgada e salobra",
+     "grupo": "Pesca e aquicultura",
+     "estab": 5,
+     "vinculos": 15
+    },
+    "3012100": {
+     "desc": "Construção de embarcações para esporte e lazer",
+     "grupo": "Indústria náutica",
+     "estab": 33,
+     "vinculos": 1657
+    },
+    "4763605": {
+     "desc": "Comércio varejista de embarcações e outros veículos recreativos",
+     "grupo": "Comércio e serviços náuticos",
+     "estab": 58,
+     "vinculos": 291
+    },
+    "5231102": {
+     "desc": "Atividades do operador portuário",
+     "grupo": "Portos e navegação",
+     "estab": 44,
+     "vinculos": 5056
+    },
+    "0311604": {
+     "desc": "Atividades de apoio à pesca em água salgada",
+     "grupo": "Pesca e aquicultura",
+     "estab": 14,
+     "vinculos": 95
+    },
+    "5239701": {
+     "desc": "Serviços de praticagem",
+     "grupo": "Portos e navegação",
+     "estab": 2,
+     "vinculos": 9
+    },
+    "5231101": {
+     "desc": "Administração da infraestrutura portuária",
+     "grupo": "Portos e navegação",
+     "estab": 6,
+     "vinculos": 360
+    },
+    "5239799": {
+     "desc": "Atividades auxiliares dos transportes aquaviários",
+     "grupo": "Portos e navegação",
+     "estab": 14,
+     "vinculos": 383
+    },
+    "3317102": {
+     "desc": "Manutenção e reparação de embarcações para esporte e lazer",
+     "grupo": "Indústria náutica",
+     "estab": 40,
+     "vinculos": 211
+    },
+    "7721700": {
+     "desc": "Aluguel de equipamentos recreativos e esportivos",
+     "grupo": "Comércio e serviços náuticos",
+     "estab": 69,
+     "vinculos": 191
+    },
+    "1020102": {
+     "desc": "Fabricação de conservas de peixes, crustáceos e moluscos",
+     "grupo": "Pesca e aquicultura",
+     "estab": 49,
+     "vinculos": 6117
+    },
+    "5232000": {
+     "desc": "Atividades de agenciamento marítimo",
+     "grupo": "Portos e navegação",
+     "estab": 94,
+     "vinculos": 1295
+    },
+    "5030102": {
+     "desc": "Navegação de apoio portuário",
+     "grupo": "Portos e navegação",
+     "estab": 10,
+     "vinculos": 197
+    },
+    "7719501": {
+     "desc": "Locação de embarcações sem tripulação, exceto para fins recreativos",
+     "grupo": "Comércio e serviços náuticos",
+     "estab": 5,
+     "vinculos": 23
+    },
+    "3230200": {
+     "desc": "Fabricação de artefatos para pesca e esporte",
+     "grupo": "Indústria náutica",
+     "estab": 56,
+     "vinculos": 509
+    },
+    "0321305": {
+     "desc": "Atividades de apoio à aquicultura em água salgada e salobra",
+     "grupo": "Pesca e aquicultura",
+     "estab": 1,
+     "vinculos": 1
+    },
+    "3011301": {
+     "desc": "Construção de embarcações de grande porte",
+     "grupo": "Indústria naval",
+     "estab": 20,
+     "vinculos": 3252
+    },
+    "4329102": {
+     "desc": "Instalação de equipamentos para orientação à navegação",
+     "grupo": "Indústria náutica",
+     "estab": 1,
+     "vinculos": 3
+    },
+    "3317101": {
+     "desc": "Manutenção e reparação de embarcações e estruturas flutuantes",
+     "grupo": "Indústria naval",
+     "estab": 42,
+     "vinculos": 828
+    },
+    "3011302": {
+     "desc": "Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",
+     "grupo": "Indústria náutica",
+     "estab": 17,
+     "vinculos": 406
+    },
+    "0321303": {
+     "desc": "Criação de ostras e mexilhões em água salgada e salobra",
+     "grupo": "Pesca e aquicultura",
+     "estab": 8,
+     "vinculos": 68
+    },
+    "5099801": {
+     "desc": "Transporte aquaviário para passeios turísticos",
+     "grupo": "Comércio e serviços náuticos",
+     "estab": 17,
+     "vinculos": 205
+    },
+    "0321399": {
+     "desc": "Cultivos e semicultivos da aquicultura em água salgada e salobra",
+     "grupo": "Pesca e aquicultura",
+     "estab": 4,
+     "vinculos": 7
+    },
+    "5030101": {
+     "desc": "Navegação de apoio marítimo",
+     "grupo": "Portos e navegação",
+     "estab": 6,
+     "vinculos": 787
+    },
+    "0321301": {
+     "desc": "Criação de peixes em água salgada e salobra",
+     "grupo": "Pesca e aquicultura",
+     "estab": 1,
+     "vinculos": 1
+    },
+    "5011401": {
+     "desc": "Transporte marítimo de cabotagem, carga",
+     "grupo": "Portos e navegação",
+     "estab": 1,
+     "vinculos": 1
+    }
+   }
+  },
+  "2025": {
+   "ano": "2025",
+   "total_sc": {
+    "estab_com_vinculo": 237276,
+    "vinculos_ativos": 2920910
+   },
+   "grupos_br": {
+    "Pesca e aquicultura": {
+     "estab": 1877,
+     "vinculos": 41770
+    },
+    "Comércio e serviços náuticos": {
+     "estab": 3080,
+     "vinculos": 19125
+    },
+    "Portos e navegação": {
+     "estab": 2099,
+     "vinculos": 105372
+    },
+    "Indústria náutica": {
+     "estab": 1068,
+     "vinculos": 15539
+    },
+    "Indústria naval": {
+     "estab": 588,
+     "vinculos": 47993
+    }
+   },
+   "grupos_sc": {
+    "Comércio e serviços náuticos": {
+     "estab": 225,
+     "vinculos": 1265
+    },
+    "Pesca e aquicultura": {
+     "estab": 478,
+     "vinculos": 10393
+    },
+    "Indústria náutica": {
+     "estab": 153,
+     "vinculos": 2629
+    },
+    "Indústria naval": {
+     "estab": 65,
+     "vinculos": 4402
+    },
+    "Portos e navegação": {
+     "estab": 174,
+     "vinculos": 8619
+    }
+   },
+   "industria_nautica_por_uf": {
+    "SP": {
+     "estab": 333,
+     "vinculos": 4566
+    },
+    "SC": {
+     "estab": 153,
+     "vinculos": 2629
+    },
+    "PR": {
+     "estab": 110,
+     "vinculos": 1566
+    },
+    "PE": {
+     "estab": 20,
+     "vinculos": 1160
+    },
+    "PA": {
+     "estab": 17,
+     "vinculos": 996
+    },
+    "RJ": {
+     "estab": 103,
+     "vinculos": 963
+    },
+    "MG": {
+     "estab": 64,
+     "vinculos": 689
+    },
+    "RS": {
+     "estab": 59,
+     "vinculos": 591
+    },
+    "MA": {
+     "estab": 5,
+     "vinculos": 469
+    },
+    "AM": {
+     "estab": 32,
+     "vinculos": 374
+    },
+    "GO": {
+     "estab": 48,
+     "vinculos": 370
+    },
+    "CE": {
+     "estab": 18,
+     "vinculos": 363
+    },
+    "BA": {
+     "estab": 29,
+     "vinculos": 304
+    },
+    "MS": {
+     "estab": 3,
+     "vinculos": 137
+    },
+    "DF": {
+     "estab": 9,
+     "vinculos": 77
+    },
+    "AP": {
+     "estab": 6,
+     "vinculos": 47
+    },
+    "MT": {
+     "estab": 12,
+     "vinculos": 44
+    },
+    "AL": {
+     "estab": 7,
+     "vinculos": 39
+    },
+    "ES": {
+     "estab": 12,
+     "vinculos": 35
+    },
+    "SE": {
+     "estab": 6,
+     "vinculos": 31
+    },
+    "RO": {
+     "estab": 5,
+     "vinculos": 26
+    },
+    "TO": {
+     "estab": 4,
+     "vinculos": 23
+    },
+    "PI": {
+     "estab": 3,
+     "vinculos": 14
+    },
+    "PB": {
+     "estab": 4,
+     "vinculos": 11
+    },
+    "AC": {
+     "estab": 1,
+     "vinculos": 8
+    },
+    "RN": {
+     "estab": 5,
+     "vinculos": 7
+    },
+    "RR": {
+     "estab": 0,
+     "vinculos": 0
+    }
+   },
+   "construcao_esporte_lazer_por_uf": {
+    "SC": {
+     "estab": 39,
+     "vinculos": 1558
+    },
+    "PE": {
+     "estab": 5,
+     "vinculos": 1068
+    },
+    "SP": {
+     "estab": 37,
+     "vinculos": 511
+    },
+    "PR": {
+     "estab": 23,
+     "vinculos": 343
+    },
+    "RJ": {
+     "estab": 15,
+     "vinculos": 285
+    },
+    "CE": {
+     "estab": 1,
+     "vinculos": 263
+    },
+    "MG": {
+     "estab": 14,
+     "vinculos": 261
+    },
+    "AM": {
+     "estab": 8,
+     "vinculos": 160
+    },
+    "GO": {
+     "estab": 19,
+     "vinculos": 152
+    },
+    "RS": {
+     "estab": 11,
+     "vinculos": 108
+    },
+    "AP": {
+     "estab": 2,
+     "vinculos": 30
+    },
+    "AL": {
+     "estab": 1,
+     "vinculos": 30
+    },
+    "MT": {
+     "estab": 5,
+     "vinculos": 24
+    },
+    "PA": {
+     "estab": 4,
+     "vinculos": 20
+    },
+    "TO": {
+     "estab": 2,
+     "vinculos": 20
+    },
+    "BA": {
+     "estab": 3,
+     "vinculos": 8
+    },
+    "SE": {
+     "estab": 1,
+     "vinculos": 8
+    },
+    "RO": {
+     "estab": 1,
+     "vinculos": 8
+    },
+    "MS": {
+     "estab": 1,
+     "vinculos": 2
+    },
+    "RN": {
+     "estab": 0,
+     "vinculos": 0
+    },
+    "MA": {
+     "estab": 0,
+     "vinculos": 0
+    },
+    "ES": {
+     "estab": 0,
+     "vinculos": 0
+    },
+    "AC": {
+     "estab": 0,
+     "vinculos": 0
+    },
+    "PB": {
+     "estab": 0,
+     "vinculos": 0
+    }
+   },
+   "industria_nautica_sc_por_municipio": {
+    "Itajaí": {
+     "estab": 24,
+     "vinculos": 874
+    },
+    "Palhoça": {
+     "estab": 13,
+     "vinculos": 710
+    },
+    "Joinville": {
+     "estab": 17,
+     "vinculos": 159
+    },
+    "Florianópolis": {
+     "estab": 18,
+     "vinculos": 158
+    },
+    "Navegantes": {
+     "estab": 6,
+     "vinculos": 138
+    },
+    "Guaramirim": {
+     "estab": 4,
+     "vinculos": 88
+    },
+    "Biguaçu": {
+     "estab": 7,
+     "vinculos": 82
+    },
+    "São José": {
+     "estab": 8,
+     "vinculos": 70
+    },
+    "Porto Belo": {
+     "estab": 5,
+     "vinculos": 41
+    },
+    "Brusque": {
+     "estab": 1,
+     "vinculos": 39
+    },
+    "Ilhota": {
+     "estab": 3,
+     "vinculos": 38
+    },
+    "Itapema": {
+     "estab": 3,
+     "vinculos": 36
+    },
+    "Araquari": {
+     "estab": 5,
+     "vinculos": 24
+    },
+    "São Francisco do Sul": {
+     "estab": 3,
+     "vinculos": 24
+    },
+    "Balneário Camboriú": {
+     "estab": 5,
+     "vinculos": 22
+    },
+    "Gaspar": {
+     "estab": 2,
+     "vinculos": 18
+    },
+    "Blumenau": {
+     "estab": 1,
+     "vinculos": 18
+    },
+    "Pomerode": {
+     "estab": 2,
+     "vinculos": 15
+    },
+    "Araranguá": {
+     "estab": 1,
+     "vinculos": 11
+    },
+    "Laguna": {
+     "estab": 2,
+     "vinculos": 8
+    }
+   },
+   "cadeia_sc_por_municipio": {
+    "Itajaí": {
+     "estab": 243,
+     "vinculos": 10836
+    },
+    "Navegantes": {
+     "estab": 117,
+     "vinculos": 5513
+    },
+    "Itapoá": {
+     "estab": 3,
+     "vinculos": 2055
+    },
+    "São Francisco do Sul": {
+     "estab": 52,
+     "vinculos": 1788
+    },
+    "Palhoça": {
+     "estab": 31,
+     "vinculos": 862
+    },
+    "Imbituba": {
+     "estab": 29,
+     "vinculos": 830
+    },
+    "Florianópolis": {
+     "estab": 92,
+     "vinculos": 815
+    },
+    "Penha": {
+     "estab": 93,
+     "vinculos": 678
+    },
+    "Laguna": {
+     "estab": 35,
+     "vinculos": 570
+    },
+    "Joinville": {
+     "estab": 44,
+     "vinculos": 403
+    },
+    "Porto Belo": {
+     "estab": 64,
+     "vinculos": 369
+    },
+    "Balneário Camboriú": {
+     "estab": 33,
+     "vinculos": 349
+    },
+    "Barra Velha": {
+     "estab": 11,
+     "vinculos": 256
+    },
+    "Balneário Piçarras": {
+     "estab": 9,
+     "vinculos": 254
+    },
+    "São José": {
+     "estab": 24,
+     "vinculos": 215
+    },
+    "Bombinhas": {
+     "estab": 27,
+     "vinculos": 185
+    },
+    "Biguaçu": {
+     "estab": 12,
+     "vinculos": 172
+    },
+    "Ilhota": {
+     "estab": 5,
+     "vinculos": 137
+    },
+    "Guaramirim": {
+     "estab": 4,
+     "vinculos": 88
+    },
+    "Jaguaruna": {
+     "estab": 3,
+     "vinculos": 76
+    },
+    "Criciúma": {
+     "estab": 5,
+     "vinculos": 69
+    },
+    "Governador Celso Ramos": {
+     "estab": 10,
+     "vinculos": 57
+    },
+    "Itapema": {
+     "estab": 6,
+     "vinculos": 50
+    },
+    "Ascurra": {
+     "estab": 1,
+     "vinculos": 48
+    },
+    "Camboriú": {
+     "estab": 7,
+     "vinculos": 47
+    }
+   },
+   "sc_por_cnae": {
+    "9319199": {
+     "desc": "Outras atividades esportivas (inclui escolas e clubes náuticos)",
+     "grupo": "Comércio e serviços náuticos",
+     "estab": 64,
+     "vinculos": 405
+    },
+    "0311601": {
+     "desc": "Pesca de peixes em água salgada",
+     "grupo": "Pesca e aquicultura",
+     "estab": 282,
+     "vinculos": 2535
+    },
+    "0311602": {
+     "desc": "Pesca de crustáceos e moluscos em água salgada",
+     "grupo": "Pesca e aquicultura",
+     "estab": 13,
+     "vinculos": 107
+    },
+    "3011302": {
+     "desc": "Construção de embarcações para uso comercial e usos especiais, exceto de grande porte",
+     "grupo": "Indústria náutica",
+     "estab": 18,
+     "vinculos": 383
+    },
+    "0321302": {
+     "desc": "Criação de camarões em água salgada e salobra",
+     "grupo": "Pesca e aquicultura",
+     "estab": 5,
+     "vinculos": 13
+    },
+    "7721700": {
+     "desc": "Aluguel de equipamentos recreativos e esportivos",
+     "grupo": "Comércio e serviços náuticos",
+     "estab": 74,
+     "vinculos": 357
+    },
+    "5099801": {
+     "desc": "Transporte aquaviário para passeios turísticos",
+     "grupo": "Comércio e serviços náuticos",
+     "estab": 18,
+     "vinculos": 177
+    },
+    "3011301": {
+     "desc": "Construção de embarcações de grande porte",
+     "grupo": "Indústria naval",
+     "estab": 20,
+     "vinculos": 3519
+    },
+    "0321305": {
+     "desc": "Atividades de apoio à aquicultura em água salgada e salobra",
+     "grupo": "Pesca e aquicultura",
+     "estab": 1,
+     "vinculos": 1
+    },
+    "0311604": {
+     "desc": "Atividades de apoio à pesca em água salgada",
+     "grupo": "Pesca e aquicultura",
+     "estab": 14,
+     "vinculos": 66
+    },
+    "4763605": {
+     "desc": "Comércio varejista de embarcações e outros veículos recreativos",
+     "grupo": "Comércio e serviços náuticos",
+     "estab": 65,
+     "vinculos": 304
+    },
+    "5239701": {
+     "desc": "Serviços de praticagem",
+     "grupo": "Portos e navegação",
+     "estab": 3,
+     "vinculos": 16
+    },
+    "5232000": {
+     "desc": "Atividades de agenciamento marítimo",
+     "grupo": "Portos e navegação",
+     "estab": 90,
+     "vinculos": 1386
+    },
+    "1020102": {
+     "desc": "Fabricação de conservas de peixes, crustáceos e moluscos",
+     "grupo": "Pesca e aquicultura",
+     "estab": 48,
+     "vinculos": 6171
+    },
+    "1020101": {
+     "desc": "Preservação de peixes, crustáceos e moluscos",
+     "grupo": "Pesca e aquicultura",
+     "estab": 101,
+     "vinculos": 1425
+    },
+    "5231102": {
+     "desc": "Atividades do operador portuário",
+     "grupo": "Portos e navegação",
+     "estab": 43,
+     "vinculos": 5384
+    },
+    "0321301": {
+     "desc": "Criação de peixes em água salgada e salobra",
+     "grupo": "Pesca e aquicultura",
+     "estab": 1,
+     "vinculos": 1
+    },
+    "3230200": {
+     "desc": "Fabricação de artefatos para pesca e esporte",
+     "grupo": "Indústria náutica",
+     "estab": 53,
+     "vinculos": 515
+    },
+    "3317102": {
+     "desc": "Manutenção e reparação de embarcações para esporte e lazer",
+     "grupo": "Indústria náutica",
+     "estab": 42,
+     "vinculos": 169
+    },
+    "5011401": {
+     "desc": "Transporte marítimo de cabotagem, carga",
+     "grupo": "Portos e navegação",
+     "estab": 1,
+     "vinculos": 2
+    },
+    "3012100": {
+     "desc": "Construção de embarcações para esporte e lazer",
+     "grupo": "Indústria náutica",
+     "estab": 39,
+     "vinculos": 1558
+    },
+    "3317101": {
+     "desc": "Manutenção e reparação de embarcações e estruturas flutuantes",
+     "grupo": "Indústria naval",
+     "estab": 45,
+     "vinculos": 883
+    },
+    "5231101": {
+     "desc": "Administração da infraestrutura portuária",
+     "grupo": "Portos e navegação",
+     "estab": 7,
+     "vinculos": 418
+    },
+    "7719501": {
+     "desc": "Locação de embarcações sem tripulação, exceto para fins recreativos",
+     "grupo": "Comércio e serviços náuticos",
+     "estab": 4,
+     "vinculos": 22
+    },
+    "0321399": {
+     "desc": "Cultivos e semicultivos da aquicultura em água salgada e salobra",
+     "grupo": "Pesca e aquicultura",
+     "estab": 5,
+     "vinculos": 6
+    },
+    "5030101": {
+     "desc": "Navegação de apoio marítimo",
+     "grupo": "Portos e navegação",
+     "estab": 6,
+     "vinculos": 783
+    },
+    "4329102": {
+     "desc": "Instalação de equipamentos para orientação à navegação",
+     "grupo": "Indústria náutica",
+     "estab": 1,
+     "vinculos": 4
+    },
+    "5239799": {
+     "desc": "Atividades auxiliares dos transportes aquaviários",
+     "grupo": "Portos e navegação",
+     "estab": 14,
+     "vinculos": 411
+    },
+    "5030102": {
+     "desc": "Navegação de apoio portuário",
+     "grupo": "Portos e navegação",
+     "estab": 10,
+     "vinculos": 219
+    },
+    "0321303": {
+     "desc": "Criação de ostras e mexilhões em água salgada e salobra",
+     "grupo": "Pesca e aquicultura",
+     "estab": 8,
+     "vinculos": 68
+    }
+   }
+  }
+ }
+}
