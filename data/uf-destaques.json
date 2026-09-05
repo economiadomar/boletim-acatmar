@@ -102,13 +102,18 @@
   "pe": {
     "nome": "Pernambuco",
     "nome_en": "Pernambuco",
-    "tagline": "Segundo exportador de embarcações do país desde 2021, puxado pelos estaleiros do complexo de Suape.",
-    "tagline_en": "The country's second largest boat exporter since 2021, driven by the shipyards of the Suape complex.",
+    "tagline": "Segundo exportador de embarcações de recreio do país desde 2021, com barcos saídos de Jaboatão dos Guararapes; a construção naval fica em Suape.",
+    "tagline_en": "The country's second largest exporter of recreational boats since 2021, shipped from Jaboatão dos Guararapes; shipbuilding is in Suape.",
     "destaques": [
       [
+        "Exportações",
+        "45 barcos de recreio exportados em 2024 (US$ 7,5 milhões) e 28 em 2025, quase todos para os Estados Unidos, a partir de Jaboatão dos Guararapes, sede da NX Boats.",
+        "45 recreational boats exported in 2024 (US$ 7.5 million) and 28 in 2025, almost all to the United States, from Jaboatão dos Guararapes, home of NX Boats."
+      ],
+      [
         "Naval",
-        "O Complexo Industrial Portuário de Suape reúne grandes estaleiros com atividade de construção e desmonte de navios, o que puxa as exportações e os empregos do estado.",
-        "The Suape port and industrial complex hosts large shipyards with shipbuilding and ship dismantling, which drives the state's exports and jobs."
+        "O complexo de Suape concentra os grandes estaleiros navais do estado: Estaleiro Atlântico Sul, Vard Promar e Fincantieri do Brasil, em Ipojuca. É indústria naval, não náutica de recreio.",
+        "The Suape complex hosts the state's large shipyards: Estaleiro Atlântico Sul, Vard Promar and Fincantieri do Brasil, in Ipojuca. This is shipbuilding, not recreational boating."
       ],
       [
         "Frota",
