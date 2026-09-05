@@ -118,7 +118,7 @@ for pt, en, codes in GRUPOS:
         grows += f'      <tr><td data-en="{en}">{pt}</td><td class="v">{u}</td><td class="v">{usd(v)}</td></tr>\n'
 v = sum(x['fob'] for x in nsc if x['ncm'] not in usados); u = sum(x['unidades'] for x in nsc if x['ncm'] not in usados)
 if v:
-    grows += f'      <tr><td data-en="Other recreational boats (jet skis, canoes, others)">Outras embarcações de recreio (motos aquáticas, canoas, outras)</td><td class="v">{u}</td><td class="v">{usd(v)}</td></tr>\n'
+    grows += f'      <tr><td data-en="Other recreational and sport boats">Outras embarcações de recreio e esporte</td><td class="v">{u}</td><td class="v">{usd(v)}</td></tr>\n'
 tot_u = sum(x['unidades'] for x in nsc)
 serie_html += (f'    <h3 data-en="{YC}: what Santa Catarina exported" style="margin-top:1.2rem">{YC}: o que Santa Catarina exportou</h3>\n'
                f'    <div class="tw"><table>\n      <tr><th data-en="Type">Tipo</th><th data-en="Boats">Barcos</th><th>US$ FOB</th></tr>\n{grows}'
@@ -126,7 +126,7 @@ serie_html += (f'    <h3 data-en="{YC}: what Santa Catarina exported" style="mar
 if msc:
     serie_html += f'    <p class="mini" data-en="{YC}, by municipality: ' + ' · '.join(f"{x['municipio'].replace(' - SC', '')} {usd_en(x['fob'])}" for x in msc) + f'.">Por município em {YC}: ' + ' · '.join(f"{x['municipio'].replace(' - SC', '')} {usd(x['fob'])}" for x in msc) + '.</p>\n'
 if psc:
-    serie_html += f'    <p class="mini" data-en="{YC}, by destination: ' + ' · '.join(f"{x['pais']} {usd_en(x['fob'])}" + (f" ({x['unidades']} boats)" if x['unidades'] else '') for x in psc) + f'.">Por destino em {YC}: ' + ' · '.join(f"{x['pais']} {usd(x['fob'])}" + (f" ({x['unidades']} barcos)" if x['unidades'] else '') for x in psc) + '.</p>\n'
+    serie_html += f'    <p class="mini" data-en="{YC}, by destination: ' + ' · '.join(f"{x['pais']} {usd_en(x['fob'])}" + (f" ({x['unidades']} boat{'s' if x['unidades'] > 1 else ''})" if x['unidades'] else '') for x in psc) + f'.">Por destino em {YC}: ' + ' · '.join(f"{x['pais']} {usd(x['fob'])}" + (f" ({x['unidades']} barco{'s' if x['unidades'] > 1 else ''})" if x['unidades'] else '') for x in psc) + '.</p>\n'
 put('serie', serie_html)
 
 # ---------- ano corrente: um periodo so (janeiro ao ultimo mes divulgado) ----------
