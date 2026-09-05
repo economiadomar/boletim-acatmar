@@ -23,11 +23,6 @@
         "1,028 nautical companies (2025), third state in the country. 85% are MEI or micro companies."
       ],
       [
-        "Indústria",
-        "84 indústrias de construção de embarcações de esporte e lazer, 18% do país; eram 40 em 2014.",
-        "84 sport and leisure boatbuilding companies, 18% of the country; there were 40 in 2014."
-      ],
-      [
         "Empregos",
         "A construção de embarcações emprega 5.460 pessoas (2025), concentradas em Itajaí, Navegantes e Palhoça.",
         "Boat and ship building employs 5,460 people (2025), concentrated in Itajaí, Navegantes and Palhoça."
@@ -62,8 +57,8 @@
       ],
       [
         "Empresas",
-        "2.104 empresas náuticas, o maior número do país; Guarujá, com 678, é o município com mais empresas do setor no Brasil. 71 indústrias de construção de esporte e lazer.",
-        "2,104 nautical companies, the country's largest number; Guarujá, with 678, is the municipality with the most nautical companies in Brazil. 71 sport and leisure boatbuilders."
+        "2.104 empresas náuticas, o maior número do país; Guarujá, com 678, é o município com mais empresas do setor no Brasil.",
+        "2,104 nautical companies, the country's largest number; Guarujá, with 678, is the municipality with the most nautical companies in Brazil."
       ]
     ]
   },
@@ -95,26 +90,14 @@
     "nome_en": "Paraná",
     "tagline": "Segunda maior frota de lanchas do país e polo industrial em crescimento, com exportações entre as três maiores do Brasil.",
     "tagline_en": "The country's second largest motorboat fleet and a growing industrial hub, with exports among Brazil's top three.",
-    "destaques": [
-      [
-        "Indústria",
-        "56 indústrias de construção de embarcações de esporte e lazer, terceiro estado do país.",
-        "56 sport and leisure boatbuilders, third in the country."
-      ]
-    ]
+    "destaques": []
   },
   "rs": {
     "nome": "Rio Grande do Sul",
     "nome_en": "Rio Grande do Sul",
     "tagline": "Frota expressiva de lanchas e motos aquáticas e forte cultura de vela na Lagoa dos Patos e no Guaíba.",
     "tagline_en": "A sizable motorboat and personal watercraft fleet and a strong sailing culture on Lagoa dos Patos and the Guaíba.",
-    "destaques": [
-      [
-        "Indústria",
-        "36 indústrias de construção de embarcações de esporte e lazer.",
-        "36 sport and leisure boatbuilders."
-      ]
-    ]
+    "destaques": []
   },
   "pe": {
     "nome": "Pernambuco",
