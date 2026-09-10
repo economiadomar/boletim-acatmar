@@ -45,7 +45,7 @@ def baixar(nome, destino):
     if os.path.exists(destino):
         return destino
     tmp = destino + ".part"
-    for tent in range(5):
+    for tent in range(10):
         try:
             with req(nome) as r, open(tmp, "wb") as f:
                 while True:
@@ -80,7 +80,7 @@ cnae_nome = {}
 for row in linhas_zip(baixar(f"{pasta}/Cnaes.zip", os.path.join(TMP, f"{pasta}-Cnaes.zip"))):
     cnae_nome[row[0]] = row[1]
 PAT = re.compile(r"\bMARINA\b|GARAGEM NAUTICA|GARAGENS NAUTICAS|IATE CLUBE|YACHT CLUB|CLUBE NAUTICO|CLUBE DE VELA|VELA CLUBE|PORTO ESPORTIVO|ESTACIONAMENTO NAUTICO|GUARDA DE EMBARCAC|GUARDERIA|PIER|TRAPICHE", re.I)
-sel = []; n = 0
+sel = []; n = 0; basicos_sc = set()
 for a in sorted(x for x in arquivos if x.startswith("Estabelecimentos")):
     print("Lendo", a, flush=True)
     p = baixar(f"{pasta}/{a}", os.path.join(TMP, f"{pasta}-{a}"))
@@ -88,28 +88,40 @@ for a in sorted(x for x in arquivos if x.startswith("Estabelecimentos")):
         n += 1
         if row[19] != "SC" or row[5] != "02":
             continue
+        basicos_sc.add(row[0])
         nome = row[4]
         if not PAT.search(nome):
             continue
         sel.append({"cnpj": row[0] + row[1] + row[2], "cnpj_basico": row[0], "nome_fantasia": nome, "cnae_principal": row[11], "cnae_nome": cnae_nome.get(row[11], ""), "cnae_secundaria": row[12], "municipio": mun.get(row[20], row[20]), "bairro": row[17], "data_inicio": row[10], "matriz_filial": "matriz" if row[3] == "1" else "filial"})
     os.remove(p)
     print(f"   {n:,} lidos, {len(sel):,} candidatos em SC", flush=True)
+import json as _json
+_json.dump({"sel": sel, "basicos_sc": sorted(basicos_sc)}, open(os.path.join(OUTC, ".marinas-parcial.json"), "w", encoding="utf-8"), ensure_ascii=False)
+print("parcial salvo:", len(sel), "candidatos por nome fantasia;", len(basicos_sc), "CNPJs basicos em SC", flush=True)
 basicos = {s["cnpj_basico"] for s in sel}
-rz = {}
+rz = {}; extra = {}
 for a in sorted(x for x in arquivos if x.startswith("Empresas")):
     print("Lendo", a, flush=True)
-    p = baixar(f"{pasta}/{a}", os.path.join(TMP, f"{pasta}-{a}"))
+    try:
+        p = baixar(f"{pasta}/{a}", os.path.join(TMP, f"{pasta}-{a}"))
+    except Exception as e:
+        print("   falhou", a, e, "(seguindo sem)", flush=True); continue
     for row in linhas_zip(p):
         if row[0] in basicos:
             rz[row[0]] = (row[1], row[5])
-        # razao social tambem pode conter o termo, mas so temos os selecionados pelo nome fantasia
+        elif row[0] in basicos_sc and PAT.search(row[1]):
+            extra[row[0]] = (row[1], row[5])
     os.remove(p)
+for b, (r, pt) in extra.items():
+    sel.append({"cnpj": b, "cnpj_basico": b, "nome_fantasia": "", "cnae_principal": "", "cnae_nome": "", "cnae_secundaria": "", "municipio": "SC (ver CNPJ)", "bairro": "", "data_inicio": "", "matriz_filial": "razao social"})
+    rz[b] = (r, pt)
+print("por razao social (sem nome fantasia):", len(extra), flush=True)
 PORTE = {"00": "Nao informado", "01": "Microempresa", "03": "Empresa de pequeno porte", "05": "Demais"}
 with open(os.path.join(OUTC, "marinas-sc-candidatos.csv"), "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f); w.writerow(["validar (S/N)", "tipo provavel", "nome_fantasia", "razao_social", "municipio", "bairro", "porte", "desde", "cnae_principal", "cnae_nome", "matriz_filial", "cnpj", "observacao"])
     for s in sorted(sel, key=lambda s: (s["municipio"], s["nome_fantasia"])):
         r, pt = rz.get(s["cnpj_basico"], ("", ""))
-        nm = s["nome_fantasia"].upper()
+        nm = (s["nome_fantasia"] + " " + r).upper()
         tipo = "iate clube / clube" if re.search(r"CLUBE|YACHT CLUB|VELA", nm) else "garagem nautica" if "GARAGE" in nm or "GUARD" in nm or "ESTACIONAMENTO" in nm else "marina" if "MARINA" in nm else "pier / trapiche / porto"
         w.writerow(["", tipo, s["nome_fantasia"], r, s["municipio"].title(), s["bairro"].title(), PORTE.get(pt, pt), s["data_inicio"][:4], s["cnae_principal"], s["cnae_nome"], s["matriz_filial"], s["cnpj"], ""])
 print("pronto:", len(sel), "candidatos ->", os.path.join(OUTC, "marinas-sc-candidatos.csv"))
