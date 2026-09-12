@@ -132,8 +132,18 @@ h1,h2,h3{font-family:var(--f-head);text-transform:uppercase;letter-spacing:.02em
 .cota{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 14px;text-align:center;margin:0 0 10px}
 .cota .kicker{margin-bottom:12px}
 .cota img{margin:0 auto;height:auto}
-.spons-strip{display:flex;flex-direction:column;gap:12px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 12px}
-.spons-strip img{max-width:100%;height:auto}
+.spons-strip{display:flex;flex-direction:column;gap:14px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 12px}
+.strip-cota>span{display:block;font-family:var(--f-cond);text-transform:uppercase;letter-spacing:.14em;font-size:.7rem;font-weight:600;color:var(--muted);text-align:center;margin-bottom:8px}
+.strip-cota>div{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:center}
+.strip-cota img{max-width:100%;height:auto}
+.spons{text-align:center;padding:18px 16px}
+.spons-logo{display:flex;justify-content:center;margin-bottom:10px}
+.spons-logo img{max-width:100%;height:auto}
+.spons h3{font-size:1.05rem;margin:8px 0 6px}
+.spons p{text-align:left}
+.spons .btn-row{justify-content:center}
+.spons-destaque{border:2px solid var(--teal);box-shadow:0 8px 24px rgba(0,163,180,.15)}
+.spons-destaque .spons-logo{padding:8px 0}
 
 /* credencial */
 .badge-card{background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 60%,var(--teal-d) 140%);color:#fff;border-radius:22px;padding:20px 18px 18px;box-shadow:0 14px 34px rgba(6,23,38,.4);position:relative;overflow:hidden}
@@ -226,3 +236,7 @@ details p{margin:0 0 12px;font-size:.92rem;line-height:1.5;color:var(--ink)}
   .view{background:var(--paper);padding-left:20px;padding-right:20px}
   .install-banner{max-width:620px;margin:0 auto}
 }
+
+.logo-txt{font-family:var(--f-head);text-transform:uppercase;letter-spacing:.06em;font-size:1.3rem;color:var(--navy);border:2px dashed var(--line);border-radius:12px;padding:14px 18px;max-width:100%}
+.logo-txt-sm{display:inline-block;font-size:.85rem;padding:8px 12px;text-decoration:none}
+.strip-cota a{text-decoration:none}

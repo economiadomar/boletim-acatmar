@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-12-4",
+  "versao": "2026-09-12-6",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -213,27 +213,98 @@
   "patrocinadores": [
     {
       "cota": "Patrocínio",
-      "logo": "../media/logos/vi-forum-patrocinio.png",
-      "alt": "Prefeitura Municipal de Florianópolis",
-      "largura": 240
+      "destaque": true,
+      "descricao": "Patrocinadores do VI Fórum.",
+      "empresas": [
+        {
+          "nome": "Prefeitura Municipal de Florianópolis",
+          "logo": "media/logos/prefeitura-florianopolis.png",
+          "largura": 300,
+          "texto": "Patrocinadora institucional do VI Fórum, a Prefeitura de Florianópolis apoia o encontro como parte do compromisso da capital catarinense com a Economia do Mar. Florianópolis tem no setor náutico, no turismo e na cultura oceânica vetores de desenvolvimento, emprego e renda, e o Fórum reúne na cidade a cadeia produtiva que faz essa economia acontecer.",
+          "site": "https://www.pmf.sc.gov.br",
+          "instagram": "https://www.instagram.com/prefeiturafloripa/",
+          "institucional": true
+        },
+        {
+          "nome": "Okean Yachts · Ferretti Group",
+          "logo": "",
+          "largura": 220,
+          "texto": "Estaleiro catarinense de iates de alto padrão, com sede em Itajaí, ligado ao Ferretti Group. Patrocinadora do VI Fórum, a Okean representa a indústria náutica de Santa Catarina que compete no mercado internacional e demanda mão de obra qualificada, justamente o foco do encontro.",
+          "site": "",
+          "instagram": ""
+        }
+      ]
     },
     {
       "cota": "Realização",
-      "logo": "../media/logos/vi-forum-realizacao.png",
-      "alt": "ACATMAR, Associação Náutica Brasileira e Mundo Mar Consulting",
-      "largura": 300
+      "empresas": [
+        {
+          "nome": "ACATMAR · Associação Náutica Brasileira",
+          "logo": "media/logos/acatmar.png",
+          "largura": 230,
+          "texto": "Criada em 2008, a ACATMAR representa a indústria, o comércio, os serviços e o turismo náutico brasileiro. Realiza o Fórum de Capacitação Técnica desde 2014 como ferramenta de qualificação, articulação e governança para toda a cadeia da Economia do Mar.",
+          "site": "https://www.acatmar.org",
+          "instagram": "https://www.instagram.com/acatmarassociacao/"
+        },
+        {
+          "nome": "Mundo Mar Consulting",
+          "logo": "media/logos/mundo-mar.png",
+          "largura": 190,
+          "texto": "Consultoria dedicada à Economia do Mar, correalizadora do Fórum desde a edição de 2025. Atua em projetos, conteúdo e conexões para empresas, instituições e governos que querem crescer com o mar.",
+          "site": "https://www.mundomar.tv",
+          "instagram": ""
+        }
+      ]
     },
     {
-      "cota": "Apoio",
-      "logo": "../media/logos/vi-forum-apoio.png",
-      "alt": "Safe Boat e Personal Boat",
-      "largura": 210
+      "cota": "Apoio oficial",
+      "empresas": [
+        {
+          "nome": "Iate Clube Veleiros da Ilha",
+          "logo": "",
+          "largura": 180,
+          "texto": "Um dos clubes náuticos mais tradicionais do Brasil, fundado em 1943 em Florianópolis. Referência na vela e na formação de velejadores, o Veleiros da Ilha apoia o VI Fórum e a qualificação de quem trabalha e vive a náutica na Ilha.",
+          "site": "",
+          "instagram": ""
+        },
+        {
+          "nome": "Safeboat",
+          "logo": "media/logos/safeboat.png",
+          "largura": 150,
+          "texto": "Tecnologia de manutenção inteligente para embarcações. A Safeboat apresentou no V Fórum como monitoramento e dados a bordo reduzem custos e aumentam a segurança, e volta como apoiadora da sexta edição.",
+          "site": "",
+          "instagram": ""
+        },
+        {
+          "nome": "Personal Boat",
+          "logo": "media/logos/personal-boat.png",
+          "largura": 150,
+          "texto": "Especializada em vidros para a linha náutica, a Personal Boat fornece para estaleiros e proprietários soluções em para-brisas, janelas e acabamentos em vidro para embarcações.",
+          "site": "",
+          "instagram": ""
+        }
+      ]
     },
     {
       "cota": "Apoio institucional",
-      "logo": "../media/logos/vi-forum-apoio-institucional.png",
-      "alt": "IFSC Câmpus Florianópolis-Continente e Marina Escola",
-      "largura": 260
+      "empresas": [
+        {
+          "nome": "IFSC · Câmpus Florianópolis-Continente",
+          "logo": "media/logos/ifsc.png",
+          "largura": 200,
+          "texto": "Sede do VI Fórum. O Instituto Federal de Santa Catarina forma profissionais para a Economia do Mar e lidera a Rede de Cultura Oceânica, aproximando ensino, pesquisa e o setor produtivo náutico.",
+          "site": "https://www.ifsc.edu.br/web/campus-florianopolis-continente",
+          "instagram": "https://www.instagram.com/ifsc.continente/"
+        },
+        {
+          "nome": "Marina Escola",
+          "logo": "media/logos/marina-escola.png",
+          "largura": 190,
+          "texto": "Projeto de marina-escola ligado ao IFSC, concebido para formar mão de obra qualificada para marinas, turismo náutico e serviços embarcados, unindo prática profissional e cultura oceânica.",
+          "site": "",
+          "instagram": ""
+        }
+      ]
     }
   ],
   "patrocinio_cta": {
