@@ -124,7 +124,7 @@ function credencial(){
     return;
   }
   var A=function(t){return String(t||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^\x20-\x7e]/g,'');};
-  var vcard='BEGIN:VCARD\nVERSION:3.0\nN:'+A(me.nome)+'\nFN:'+A(me.nome)+(me.empresa?'\nORG:'+A(me.empresa):'')+(me.cargo?'\nTITLE:'+A(me.cargo):'')+(me.fone?'\nTEL;TYPE=CELL:'+me.fone.replace(/[^\d+]/g,''):'')+(me.email?'\nEMAIL:'+A(me.email):'')+'\nNOTE:VI Forum ACATMAR 2026\nEND:VCARD';
+  var vcard='BEGIN:VCARD\nVERSION:3.0\nN:'+A(me.nome)+'\nFN:'+A(me.nome)+(me.empresa?'\nORG:'+A(me.empresa):'')+(me.cargo?'\nTITLE:'+A(me.cargo):'')+(me.fone?'\nTEL;TYPE=CELL:'+me.fone.replace(/[^\d+]/g,''):'')+(me.email?'\nEMAIL:'+A(me.email):'')+'\nNOTE:VI Forum ACATMAR 2026 TIPO='+A(me.tipo||'Participante')+'\nEND:VCARD';
   h('<div class="badge-card"><div class="badge-top"><img src="../media/logos/acatmar-branca.png" alt="ACATMAR"><span>'+esc(e.nome)+'</span></div><div class="badge-name">'+esc(me.nome)+'</div><div class="badge-sub">'+esc([me.cargo,me.empresa].filter(Boolean).join(' · '))+'</div><span class="badge-tipo">'+esc(me.tipo||'Participante')+'</span><div class="badge-qr" id="qr"></div><div class="badge-foot"><span>'+esc(e.data_texto)+'</span><span>'+esc(e.local.bairro)+' · Fpolis</span></div></div>'
    +'<p class="small muted" style="text-align:center;margin:12px 0">Mostre este QR Code no credenciamento. Para networking, peça para escanearem com a câmera: seu contato é salvo na hora.</p>'
    +'<div class="btn-row"><button class="btn btn-outline btn-sm" id="me-edit">Editar dados</button><button class="btn btn-navy btn-sm" id="me-share">Compartilhar contato</button></div>');
@@ -220,7 +220,7 @@ function mais(){var me=LS.get('me',null);
 var scan={stream:null,raf:null,last:'',lastT:0};
 function stopScan(){if(scan.raf)cancelAnimationFrame(scan.raf);scan.raf=null;if(scan.stream){scan.stream.getTracks().forEach(function(t){t.stop();});scan.stream=null;}}
 window.addEventListener('hashchange',stopScan);
-function parseVCard(t){var o={raw:t};if(!/BEGIN:VCARD/i.test(t))return o;t.split(/\r?\n/).forEach(function(l){var i=l.indexOf(':');if(i<0)return;var k=l.slice(0,i).split(';')[0].toUpperCase(),v=l.slice(i+1);if(k==='FN')o.nome=v;else if(k==='ORG')o.empresa=v;else if(k==='TITLE')o.cargo=v;else if(k==='EMAIL')o.email=v;else if(k==='TEL')o.fone=v;});return o;}
+function parseVCard(t){var o={raw:t};if(!/BEGIN:VCARD/i.test(t))return o;t.split(/\r?\n/).forEach(function(l){var i=l.indexOf(':');if(i<0)return;var k=l.slice(0,i).split(';')[0].toUpperCase(),v=l.slice(i+1);if(k==='FN')o.nome=v;else if(k==='ORG')o.empresa=v;else if(k==='TITLE')o.cargo=v;else if(k==='EMAIL')o.email=v;else if(k==='TEL')o.fone=v;else if(k==='NOTE'&&/TIPO=/.test(v))o.tipo=v.split('TIPO=')[1];});return o;}
 function credenciamento(){
   if(LS.get('staff',false)!==D.credenciamento_pin){
     h('<div class="card"><p class="kicker">Equipe ACATMAR</p><h3>Credenciamento</h3><p class="small muted">Área da organização. Digite o PIN da equipe para ler os QR Codes dos participantes na entrada.</p><form id="f-pin"><div class="field"><label>PIN</label><input name="pin" type="password" inputmode="numeric" required></div><button class="btn btn-navy btn-block" type="submit">Entrar</button></form></div>');
@@ -229,10 +229,12 @@ function credenciamento(){
   }
   var lista=LS.get('checkins',[]);
   h('<div class="card" style="padding:10px"><div id="cam" style="position:relative;background:#000;border-radius:12px;overflow:hidden;aspect-ratio:1/1"><video id="vid" playsinline muted style="width:100%;height:100%;object-fit:cover"></video><div style="position:absolute;inset:12%;border:3px solid rgba(53,201,218,.9);border-radius:16px;box-shadow:0 0 0 999px rgba(0,0,0,.35)"></div><div id="cam-msg" style="position:absolute;left:0;right:0;bottom:0;padding:10px;color:#fff;text-align:center;font-size:.85rem;background:linear-gradient(transparent,rgba(0,0,0,.7))">Aponte a câmera para o QR Code do participante</div></div><div class="btn-row"><button class="btn btn-teal btn-sm" id="btn-cam">Ligar câmera</button><button class="btn btn-outline btn-sm" id="btn-manual">Registrar sem QR</button></div></div>'
+   +'<label class="check" style="margin:10px 2px 6px"><input type="checkbox" id="auto-print"'+(LS.get('auto_print',false)?' checked':'')+'> Imprimir etiqueta automaticamente a cada leitura</label>'
    +'<div id="result"></div>'
    +'<div class="section-h" style="margin-top:16px"><h2>Credenciados <span class="tag">'+lista.length+'</span></h2><a href="#" id="btn-export">Exportar</a></div><div id="lista">'+listaHtml(lista)+'</div>'
    +'<p class="small muted" style="text-align:center;margin-top:14px">A lista fica salva neste aparelho. Use "Exportar" para enviar ao WhatsApp/e-mail da organização.</p>');
   document.getElementById('btn-cam').onclick=startScan;
+  document.getElementById('auto-print').onchange=function(){LS.set('auto_print',this.checked);};
   document.getElementById('btn-manual').onclick=function(){registrar({nome:prompt('Nome do participante:')||''},true);};
   document.getElementById('btn-export').onclick=function(ev){ev.preventDefault();var l=LS.get('checkins',[]);var csv='hora;nome;empresa;cargo;email;fone\n'+l.map(function(c){return [c.hora,c.nome,c.empresa||'',c.cargo||'',c.email||'',c.fone||''].map(function(x){return String(x).replace(/;/g,',');}).join(';');}).join('\n');share('Credenciados '+D.evento.curto,csv);};
   if(scan.stream===null&&LS.get('cam_auto',false))startScan();
@@ -242,12 +244,25 @@ function registrar(p,manual){
   if(!p.nome){toast('QR sem nome');return;}
   var l=LS.get('checkins',[]);var key=(p.nome+'|'+(p.email||'')).toLowerCase();var dup=l.some(function(c){return (c.nome+'|'+(c.email||'')).toLowerCase()===key;});
   var r=document.getElementById('result');
-  if(dup){r.innerHTML='<div class="notice" style="border-color:#f2b54a;background:#fff3d6">⚠️ <b>'+esc(p.nome)+'</b> já foi credenciado(a).</div>';if(navigator.vibrate)navigator.vibrate([80,60,80]);return;}
-  var now=new Date();var c={nome:p.nome,empresa:p.empresa||'',cargo:p.cargo||'',email:p.email||'',fone:p.fone||'',hora:new Date(now-now.getTimezoneOffset()*6e4).toISOString().slice(0,19),manual:!!manual};
+  if(dup){var ex=null;l.forEach(function(c){if((c.nome+'|'+(c.email||'')).toLowerCase()===key)ex=c;});r.innerHTML='<div class="notice" style="border-color:#f2b54a;background:#fff3d6">⚠️ <b>'+esc(p.nome)+'</b> já foi credenciado(a).<div class="btn-row"><button class="btn btn-outline btn-sm" id="btn-reprint">🖨️ Reimprimir etiqueta</button></div></div>';document.getElementById('btn-reprint').onclick=function(){imprimirEtiqueta(ex);};if(navigator.vibrate)navigator.vibrate([80,60,80]);return;}
+  var now=new Date();var c={nome:p.nome,empresa:p.empresa||'',cargo:p.cargo||'',email:p.email||'',fone:p.fone||'',tipo:p.tipo||'Participante',hora:new Date(now-now.getTimezoneOffset()*6e4).toISOString().slice(0,19),manual:!!manual};
   l.push(c);LS.set('checkins',l);
-  r.innerHTML='<div class="ok-box" style="text-align:left">✅ <b>'+esc(c.nome)+'</b><br><span class="small">'+esc([c.cargo,c.empresa].filter(Boolean).join(' · '))+'</span></div>';
+  r.innerHTML='<div class="ok-box" style="text-align:left">✅ <b>'+esc(c.nome)+'</b><br><span class="small">'+esc([c.cargo,c.empresa].filter(Boolean).join(' · '))+'</span><div class="btn-row"><button class="btn btn-navy btn-sm" id="btn-print">🖨️ Imprimir etiqueta</button></div></div>';
+  document.getElementById('btn-print').onclick=function(){imprimirEtiqueta(c);};
   if(navigator.vibrate)navigator.vibrate(120);
+  if(LS.get('auto_print',false))imprimirEtiqueta(c);
   document.getElementById('lista').innerHTML=listaHtml(l);document.querySelector('.section-h .tag').textContent=l.length;
+}
+function imprimirEtiqueta(c){
+  var et=D.etiqueta||{largura_mm:90,altura_mm:62};var W=et.largura_mm,H=et.altura_mm;
+  var vc='BEGIN:VCARD\nVERSION:3.0\nFN:'+c.nome+(c.empresa?'\nORG:'+c.empresa:'')+(c.cargo?'\nTITLE:'+c.cargo:'')+(c.email?'\nEMAIL:'+c.email:'')+'\nEND:VCARD';
+  var tmp=document.createElement('div');var qrData='';
+  try{new QRCode(tmp,{text:vc.normalize('NFD').replace(/[̀-ͯ]/g,''),width:120,height:120,correctLevel:QRCode.CorrectLevel.L});var cv=tmp.querySelector('canvas');qrData=cv?cv.toDataURL():'';}catch(x){}
+  var nome=esc(c.nome);var fs=c.nome.length>26?'5.2mm':(c.nome.length>18?'6.5mm':'8mm');
+  var html='<!DOCTYPE html><html><head><meta charset="utf-8"><title>Etiqueta</title><style>@page{size:'+W+'mm '+H+'mm;margin:0}html,body{margin:0;padding:0}body{width:'+W+'mm;height:'+H+'mm;font-family:Helvetica,Arial,sans-serif;color:#0a2540;overflow:hidden}.et{box-sizing:border-box;width:'+W+'mm;height:'+H+'mm;padding:4mm 5mm;display:flex;flex-direction:column;justify-content:space-between}.top{display:flex;justify-content:space-between;align-items:center;font-size:2.6mm;letter-spacing:.3mm;text-transform:uppercase;font-weight:700;border-bottom:.5mm solid #0a2540;padding-bottom:1.5mm}.top span{color:#00727e}.mid{display:flex;align-items:center;gap:3mm;flex:1}.nome{font-size:'+fs+';font-weight:800;line-height:1.05;text-transform:uppercase;word-break:break-word}.sub{font-size:3.4mm;margin-top:1.5mm;color:#334}.qr{flex:0 0 18mm;width:18mm;height:18mm}.qr img{width:100%;height:100%}.bot{display:flex;justify-content:space-between;align-items:center;gap:3mm;font-size:2.5mm;color:#556;text-transform:uppercase;letter-spacing:.2mm}.bot .loc{flex:1;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tipo{flex:0 0 auto;background:#0a2540;color:#fff;padding:.6mm 2mm;border-radius:1mm;font-weight:700}</style></head><body><div class="et"><div class="top"><div>'+esc(D.evento.curto)+'</div><span>'+esc(D.evento.data_iso.split('-').reverse().join('/'))+'</span></div><div class="mid"><div style="flex:1;min-width:0"><div class="nome">'+nome+'</div><div class="sub">'+esc([c.cargo,c.empresa].filter(Boolean).join(' · '))+'</div></div>'+(qrData?'<div class="qr"><img src="'+qrData+'"></div>':'')+'</div><div class="bot"><span class="tipo">'+esc(c.tipo||'Participante')+'</span><span class="loc">IFSC Florianópolis-Continente</span></div></div><script>window.onload=function(){setTimeout(function(){window.print();},250);}<\/script></body></html>';
+  var w=window.open('','_blank');
+  if(!w){toast('Permita pop-ups para imprimir');return;}
+  w.document.open();w.document.write(html);w.document.close();
 }
 function startScan(){
   var vid=document.getElementById('vid'),msg=document.getElementById('cam-msg');if(!vid)return;

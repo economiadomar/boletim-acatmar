@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-12-3",
+  "versao": "2026-09-12-4",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -269,5 +269,10 @@
       "r": "Pelo app, na aba Avisos, e por e-mail e WhatsApp para quem se inscreveu."
     }
   ],
-  "credenciamento_pin": "2026"
+  "credenciamento_pin": "2026",
+  "etiqueta": {
+    "largura_mm": 90,
+    "altura_mm": 62,
+    "obs": "Padrão Brother DK-11202 (62x100) ou similar. Ajuste aqui conforme a impressora."
+  }
 }
