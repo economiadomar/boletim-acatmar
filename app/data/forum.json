@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-12-2",
+  "versao": "2026-09-12-3",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -32,7 +32,9 @@
     "instagram": "https://www.instagram.com/acatmarassociacao/",
     "email": "atendimento@acatmar.com.br",
     "whatsapp_comunidade": "",
-    "formsubmit": "https://formsubmit.co/ajax/dbf5453c958f231720ec8976f1e606ec"
+    "formsubmit": "https://formsubmit.co/ajax/dbf5453c958f231720ec8976f1e606ec",
+    "whatsapp_acatmar": "5548991448836",
+    "whatsapp_acatmar_texto": "(48) 99144-8836"
   },
   "sobre": {
     "resumo": "Um dia inteiro de imersão em conhecimento náutico. Palestras técnicas com especialistas de toda a cadeia produtiva, trazendo inovação e novas tecnologias para quem já vive o setor e, principalmente, para quem ainda quer entrar nele.",
@@ -266,5 +268,6 @@
       "p": "Como recebo as novidades?",
       "r": "Pelo app, na aba Avisos, e por e-mail e WhatsApp para quem se inscreveu."
     }
-  ]
+  ],
+  "credenciamento_pin": "2026"
 }

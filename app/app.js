@@ -26,8 +26,8 @@ var booted=false;
 function boot(){if(booted)return;booted=true;render();updateBadge();setTimeout(function(){var s=document.getElementById('splash');s.classList.add('off');setTimeout(function(){s.remove();},400);},350);}
 
 /* ---------- roteamento ---------- */
-var routes={'/':home,'/programacao':programacao,'/palestrantes':palestrantes,'/avisos':avisos,'/aviso':aviso,'/credencial':credencial,'/patrocinadores':patrocinadores,'/local':local,'/interagir':interagir,'/certificado':certificado,'/instalar':instalar,'/sobre':sobre,'/mais':mais,'/anterior':anterior,'/faq':faq};
-var titles={'/programacao':'Programação','/palestrantes':'Palestrantes','/avisos':'Avisos','/aviso':'Aviso','/credencial':'Minha credencial','/patrocinadores':'Patrocinadores','/local':'Local e como chegar','/interagir':'Interagir','/certificado':'Certificado','/instalar':'Instalar o app','/sobre':'Sobre o Fórum','/mais':'Mais','/anterior':'V Fórum (2025)','/faq':'Perguntas frequentes'};
+var routes={'/':home,'/programacao':programacao,'/palestrantes':palestrantes,'/avisos':avisos,'/aviso':aviso,'/credencial':credencial,'/patrocinadores':patrocinadores,'/local':local,'/interagir':interagir,'/certificado':certificado,'/instalar':instalar,'/sobre':sobre,'/mais':mais,'/anterior':anterior,'/faq':faq,'/credenciamento':credenciamento};
+var titles={'/programacao':'Programação','/palestrantes':'Palestrantes','/avisos':'Avisos','/aviso':'Aviso','/credencial':'Minha credencial','/patrocinadores':'Patrocinadores','/local':'Local e como chegar','/interagir':'Interagir','/certificado':'Certificado','/instalar':'Instalar o app','/sobre':'Sobre o Fórum','/mais':'Mais','/anterior':'V Fórum (2025)','/faq':'Perguntas frequentes','/credenciamento':'Credenciamento'};
 var tabsMain=['/','/programacao','/credencial','/avisos','/mais'];
 function route(){var hsh=location.hash.replace(/^#/,'')||'/';var parts=hsh.split('/');var path='/'+(parts[1]||'');var arg=parts[2]||'';return {path:path,arg:arg};}
 function render(){
@@ -153,11 +153,12 @@ function interagir(sessId){
   var e=D.evento;var sess=null;D.programacao.forEach(function(s){if(s.id===sessId)sess=s;});var me=LS.get('me',{})||{};
   var opts='<option value="">Geral / não sei</option>'+D.programacao.filter(function(s){return s.tipo!=='pausa'&&s.tipo!=='org';}).map(function(s){return '<option'+(sess&&sess.id===s.id?' selected':'')+'>'+esc(s.hora.replace(':','h')+' · '+s.titulo)+'</option>';}).join('');
   var wa=e.whatsapp_comunidade?'<a href="'+e.whatsapp_comunidade+'" target="_blank" rel="noopener"><i>💬</i>Grupo do Fórum no WhatsApp</a>':'';
-  h('<div class="menu">'+wa+'<a href="'+e.instagram+'" target="_blank" rel="noopener"><i>📸</i>@acatmarassociacao no Instagram</a><a href="#" id="share-app"><i>📲</i>Convidar alguém para o app</a><a href="mailto:'+e.email+'"><i>✉️</i>Falar com a organização</a></div>'
-   +'<div class="card" id="c-perg"><p class="kicker">Pergunte ao palestrante</p><h3>Envie sua pergunta</h3><p class="small muted">As perguntas chegam à organização e são levadas ao palestrante durante o Fórum.</p><form id="f-perg"><input type="hidden" name="_subject" value="[App VI Fórum] Pergunta ao palestrante"><input type="text" name="_honey" style="display:none"><div class="field"><label>Palestra</label><select name="palestra">'+opts+'</select></div><div class="field"><label>Sua pergunta</label><textarea name="pergunta" required maxlength="600"></textarea></div><div class="field"><label>Seu nome</label><input name="nome" value="'+esc(me.nome||'')+'" required></div><div class="field"><label>Seu e-mail</label><input name="email" type="email" value="'+esc(me.email||'')+'"></div><button class="btn btn-teal btn-block" type="submit">Enviar pergunta</button></form></div>'
+  h('<div class="menu">'+wa+'<a href="'+e.instagram+'" target="_blank" rel="noopener"><i>📸</i>@acatmarassociacao no Instagram</a><a href="#" id="share-app"><i>📲</i>Convidar alguém para o app</a><a href="https://wa.me/'+e.whatsapp_acatmar+'?text='+encodeURIComponent('Olá! Estou no app do '+e.curto+'.')+'" target="_blank" rel="noopener"><i>📱</i>WhatsApp da ACATMAR</a><a href="mailto:'+e.email+'"><i>✉️</i>E-mail da organização</a></div>'
+   +'<div class="card" id="c-perg"><p class="kicker">Pergunte ao palestrante</p><h3>Envie sua pergunta</h3><p class="small muted">A pergunta vai pelo WhatsApp direto para a equipe da ACATMAR ('+esc(e.whatsapp_acatmar_texto||'')+'), que a leva ao palestrante durante o Fórum.</p><form id="f-perg"><div class="field"><label>Palestra</label><select name="palestra">'+opts+'</select></div><div class="field"><label>Sua pergunta</label><textarea name="pergunta" required maxlength="600"></textarea></div><div class="field"><label>Seu nome</label><input name="nome" value="'+esc(me.nome||'')+'" required></div><button class="btn btn-teal btn-block" type="submit">Enviar pelo WhatsApp</button></form></div>'
    +'<div class="card" id="c-aval"><p class="kicker">Sua opinião</p><h3>Avalie o Fórum</h3><form id="f-aval"><input type="hidden" name="_subject" value="[App VI Fórum] Avaliação"><input type="text" name="_honey" style="display:none"><div class="field"><label>Nota geral</label><select name="nota"><option>5 · Excelente</option><option>4 · Muito bom</option><option>3 · Bom</option><option>2 · Regular</option><option>1 · Ruim</option></select></div><div class="field"><label>O que mais gostou e o que podemos melhorar?</label><textarea name="comentario" required maxlength="800"></textarea></div><div class="field"><label>Seu nome</label><input name="nome" value="'+esc(me.nome||'')+'"></div><button class="btn btn-navy btn-block" type="submit">Enviar avaliação</button></form></div>');
   document.getElementById('share-app').onclick=function(ev){ev.preventDefault();shareApp();};
-  ['f-perg','f-aval'].forEach(function(id){var f=document.getElementById(id);f.onsubmit=function(ev){ev.preventDefault();var btn=f.querySelector('button');btn.disabled=true;btn.textContent='Enviando…';var fd=new FormData(f);fd.append('origem','App VI Fórum ACATMAR');
+  document.getElementById('f-perg').onsubmit=function(ev){ev.preventDefault();var f=ev.target;var msg='*Pergunta ao palestrante · '+e.curto+'*\n'+'Palestra: '+(f.palestra.value||'Geral')+'\n'+'Pergunta: '+f.pergunta.value.trim()+'\n'+'De: '+f.nome.value.trim();window.open('https://wa.me/'+e.whatsapp_acatmar+'?text='+encodeURIComponent(msg),'_blank');};
+  ['f-aval'].forEach(function(id){var f=document.getElementById(id);f.onsubmit=function(ev){ev.preventDefault();var btn=f.querySelector('button');btn.disabled=true;btn.textContent='Enviando…';var fd=new FormData(f);fd.append('origem','App VI Fórum ACATMAR');
     fetch(e.formsubmit,{method:'POST',headers:{'Accept':'application/json'},body:fd}).then(function(r){if(!r.ok)throw 0;f.parentNode.innerHTML='<div class="ok-box">⚓ Recebido! Obrigado pela participação.</div>';}).catch(function(){btn.disabled=false;btn.textContent='Tentar de novo';toast('Não foi possível enviar agora. Verifique a conexão.');});};});
 }
 
@@ -211,8 +212,62 @@ function faq(){h(D.faq.map(function(q){return '<details><summary>'+esc(q.p)+'</s
 function mais(){var me=LS.get('me',null);
   h('<a class="card" href="#/credencial" style="display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit"><div class="spk"><div class="av">'+esc(me?me.nome.split(' ').map(function(w){return w[0];}).slice(0,2).join(''):'?')+'</div><div><b>'+esc(me?me.nome:'Crie sua credencial')+'</b><span>'+esc(me?[me.cargo,me.empresa].filter(Boolean).join(' · ')||(me.tipo||''):'Toque para criar seu QR Code')+'</span></div></div><span style="margin-left:auto;font-size:1.6rem;color:#aab7bf">›</span></a>'
    +'<div class="menu"><a href="#/palestrantes"><i>🎤</i>Palestrantes</a><a href="#/patrocinadores"><i>🤝</i>Patrocinadores e apoio</a><a href="#/local"><i>📍</i>Local e como chegar</a><a href="#/interagir"><i>💬</i>Interagir e perguntar</a><a href="#/certificado"><i>📜</i>Certificado</a><a href="#/anterior"><i>📷</i>V Fórum (2025)</a><a href="#/sobre"><i>⚓</i>Sobre o Fórum</a><a href="#/faq"><i>❓</i>Perguntas frequentes</a><a href="#/instalar"><i>📲</i>Instalar o app</a></div>'
+   +'<div class="menu"><a href="#/credenciamento"><i>📷</i>Credenciamento (equipe ACATMAR)</a></div>'
    +'<div class="menu"><a href="'+D.evento.inscricao_url+'" target="_blank" rel="noopener"><i>📝</i>Inscrição gratuita</a><a href="https://www.acatmar.org/" target="_blank" rel="noopener"><i>🌐</i>Site da ACATMAR</a><a href="https://www.acatmar.org/privacidade.html" target="_blank" rel="noopener"><i>🔒</i>Política de Privacidade</a></div>'
    +'<p class="small muted" style="text-align:center">Seus dados de credencial ficam somente neste aparelho.<br>App oficial · ACATMAR · versão '+esc(D.versao)+'</p>');}
+
+/* ---------- Credenciamento (equipe) ---------- */
+var scan={stream:null,raf:null,last:'',lastT:0};
+function stopScan(){if(scan.raf)cancelAnimationFrame(scan.raf);scan.raf=null;if(scan.stream){scan.stream.getTracks().forEach(function(t){t.stop();});scan.stream=null;}}
+window.addEventListener('hashchange',stopScan);
+function parseVCard(t){var o={raw:t};if(!/BEGIN:VCARD/i.test(t))return o;t.split(/\r?\n/).forEach(function(l){var i=l.indexOf(':');if(i<0)return;var k=l.slice(0,i).split(';')[0].toUpperCase(),v=l.slice(i+1);if(k==='FN')o.nome=v;else if(k==='ORG')o.empresa=v;else if(k==='TITLE')o.cargo=v;else if(k==='EMAIL')o.email=v;else if(k==='TEL')o.fone=v;});return o;}
+function credenciamento(){
+  if(LS.get('staff',false)!==D.credenciamento_pin){
+    h('<div class="card"><p class="kicker">Equipe ACATMAR</p><h3>Credenciamento</h3><p class="small muted">Área da organização. Digite o PIN da equipe para ler os QR Codes dos participantes na entrada.</p><form id="f-pin"><div class="field"><label>PIN</label><input name="pin" type="password" inputmode="numeric" required></div><button class="btn btn-navy btn-block" type="submit">Entrar</button></form></div>');
+    document.getElementById('f-pin').onsubmit=function(ev){ev.preventDefault();var v=ev.target.pin.value.trim();if(v===String(D.credenciamento_pin)){LS.set('staff',v);credenciamento();}else toast('PIN incorreto');};
+    return;
+  }
+  var lista=LS.get('checkins',[]);
+  h('<div class="card" style="padding:10px"><div id="cam" style="position:relative;background:#000;border-radius:12px;overflow:hidden;aspect-ratio:1/1"><video id="vid" playsinline muted style="width:100%;height:100%;object-fit:cover"></video><div style="position:absolute;inset:12%;border:3px solid rgba(53,201,218,.9);border-radius:16px;box-shadow:0 0 0 999px rgba(0,0,0,.35)"></div><div id="cam-msg" style="position:absolute;left:0;right:0;bottom:0;padding:10px;color:#fff;text-align:center;font-size:.85rem;background:linear-gradient(transparent,rgba(0,0,0,.7))">Aponte a câmera para o QR Code do participante</div></div><div class="btn-row"><button class="btn btn-teal btn-sm" id="btn-cam">Ligar câmera</button><button class="btn btn-outline btn-sm" id="btn-manual">Registrar sem QR</button></div></div>'
+   +'<div id="result"></div>'
+   +'<div class="section-h" style="margin-top:16px"><h2>Credenciados <span class="tag">'+lista.length+'</span></h2><a href="#" id="btn-export">Exportar</a></div><div id="lista">'+listaHtml(lista)+'</div>'
+   +'<p class="small muted" style="text-align:center;margin-top:14px">A lista fica salva neste aparelho. Use "Exportar" para enviar ao WhatsApp/e-mail da organização.</p>');
+  document.getElementById('btn-cam').onclick=startScan;
+  document.getElementById('btn-manual').onclick=function(){registrar({nome:prompt('Nome do participante:')||''},true);};
+  document.getElementById('btn-export').onclick=function(ev){ev.preventDefault();var l=LS.get('checkins',[]);var csv='hora;nome;empresa;cargo;email;fone\n'+l.map(function(c){return [c.hora,c.nome,c.empresa||'',c.cargo||'',c.email||'',c.fone||''].map(function(x){return String(x).replace(/;/g,',');}).join(';');}).join('\n');share('Credenciados '+D.evento.curto,csv);};
+  if(scan.stream===null&&LS.get('cam_auto',false))startScan();
+}
+function listaHtml(l){if(!l.length)return '<div class="card"><p class="small muted">Ninguém credenciado ainda.</p></div>';return l.slice().reverse().slice(0,50).map(function(c){return '<div class="card spk" style="padding:10px 14px"><div class="av" style="flex-basis:40px;height:40px;font-size:.95rem">'+esc((c.nome||'?').split(' ').map(function(w){return w[0];}).slice(0,2).join(''))+'</div><div><b>'+esc(c.nome)+'</b><span>'+esc([c.cargo,c.empresa].filter(Boolean).join(' · '))+'</span></div><span class="small muted" style="margin-left:auto">'+esc(c.hora.slice(11,16))+'</span></div>';}).join('');}
+function registrar(p,manual){
+  if(!p.nome){toast('QR sem nome');return;}
+  var l=LS.get('checkins',[]);var key=(p.nome+'|'+(p.email||'')).toLowerCase();var dup=l.some(function(c){return (c.nome+'|'+(c.email||'')).toLowerCase()===key;});
+  var r=document.getElementById('result');
+  if(dup){r.innerHTML='<div class="notice" style="border-color:#f2b54a;background:#fff3d6">⚠️ <b>'+esc(p.nome)+'</b> já foi credenciado(a).</div>';if(navigator.vibrate)navigator.vibrate([80,60,80]);return;}
+  var now=new Date();var c={nome:p.nome,empresa:p.empresa||'',cargo:p.cargo||'',email:p.email||'',fone:p.fone||'',hora:new Date(now-now.getTimezoneOffset()*6e4).toISOString().slice(0,19),manual:!!manual};
+  l.push(c);LS.set('checkins',l);
+  r.innerHTML='<div class="ok-box" style="text-align:left">✅ <b>'+esc(c.nome)+'</b><br><span class="small">'+esc([c.cargo,c.empresa].filter(Boolean).join(' · '))+'</span></div>';
+  if(navigator.vibrate)navigator.vibrate(120);
+  document.getElementById('lista').innerHTML=listaHtml(l);document.querySelector('.section-h .tag').textContent=l.length;
+}
+function startScan(){
+  var vid=document.getElementById('vid'),msg=document.getElementById('cam-msg');if(!vid)return;
+  if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia){msg.textContent='Este navegador não dá acesso à câmera. Abra pelo Safari (iPhone) ou Chrome (Android).';return;}
+  navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:'environment'},width:{ideal:1280},height:{ideal:1280}},audio:false}).then(function(st){
+    scan.stream=st;vid.srcObject=st;vid.play();LS.set('cam_auto',true);msg.textContent='Lendo… aproxime o QR Code';
+    var det=('BarcodeDetector' in window)?new BarcodeDetector({formats:['qr_code']}):null;
+    var cv=document.createElement('canvas'),cx=cv.getContext('2d',{willReadFrequently:true});
+    function tick(){
+      if(!scan.stream)return;
+      if(vid.readyState>=2){
+        if(det){det.detect(vid).then(function(codes){if(codes.length)onCode(codes[0].rawValue);}).catch(function(){});}
+        else if(window.jsQR){var w=Math.min(640,vid.videoWidth),hh=Math.round(w*vid.videoHeight/vid.videoWidth);cv.width=w;cv.height=hh;cx.drawImage(vid,0,0,w,hh);var im=cx.getImageData(0,0,w,hh);var code=jsQR(im.data,w,hh,{inversionAttempts:'dontInvert'});if(code&&code.data)onCode(code.data);}
+      }
+      scan.raf=requestAnimationFrame(tick);
+    }
+    if(!('BarcodeDetector' in window)&&!window.jsQR){var sc=document.createElement('script');sc.src='lib/jsQR.min.js';sc.onload=tick;document.body.appendChild(sc);}else tick();
+  }).catch(function(){msg.textContent='Sem permissão para a câmera. Permita o acesso nos ajustes do navegador e tente de novo.';});
+}
+function onCode(txt){var t=Date.now();if(txt===scan.last&&t-scan.lastT<4000)return;scan.last=txt;scan.lastT=t;registrar(parseVCard(txt));}
 
 /* ---------- compartilhar ---------- */
 function share(title,text,url){if(navigator.share){navigator.share({title:title,text:text,url:url}).catch(function(){});}else{var s=text+(url?'\n'+url:'');(navigator.clipboard?navigator.clipboard.writeText(s):Promise.reject()).then(function(){toast('Copiado');},function(){prompt('Copie:',s);});}}
