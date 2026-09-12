@@ -190,6 +190,9 @@ for p, e, prio, freq in pares:
     add(f"{BASE}/{p}", prio, freq, alts=[("pt-BR", f"{BASE}/{p}"), ("en", f"{BASE}/{e}")])
     add(f"{BASE}/{e}", prio, freq, alts=[("pt-BR", f"{BASE}/{p}"), ("en", f"{BASE}/{e}")])
 
+# App do VI Fórum (PWA)
+add(f"{BASE}/app/", "0.9", "weekly")
+
 # URL limpa do Forum — usada nos e-mails e materiais (o Gmail bloqueia links com "?")
 add(f"{BASE}/forum-acatmar.html", "0.9", "monthly",
     alts=[("pt-BR", f"{BASE}/forum-acatmar.html"),

@@ -1,0 +1,110 @@
+{
+  "versao": "2026-09-12-1",
+  "evento": {
+    "nome": "VI Fórum de Capacitação Técnica ACATMAR",
+    "curto": "VI Fórum ACATMAR",
+    "edicao": "6ª edição",
+    "mote": "Uma imersão em conhecimento náutico",
+    "data_iso": "2026-10-20",
+    "inicio": "08:00",
+    "fim": "19:00",
+    "data_texto": "Terça-feira, 20 de outubro de 2026",
+    "horario_texto": "das 8h às 19h",
+    "gratuito": true,
+    "certificado": true,
+    "local": {
+      "nome": "IFSC — Câmpus Florianópolis-Continente",
+      "endereco": "R. Quatorze de Julho, 150 — Coqueiros, Florianópolis/SC",
+      "bairro": "Coqueiros",
+      "maps": "https://www.google.com/maps/search/?api=1&query=IFSC+C%C3%A2mpus+Florian%C3%B3polis-Continente+R.+Quatorze+de+Julho+150+Coqueiros",
+      "waze": "https://waze.com/ul?q=IFSC%20Campus%20Florianopolis-Continente%20Rua%20Quatorze%20de%20Julho%20150%20Coqueiros&navigate=yes",
+      "apple": "https://maps.apple.com/?q=IFSC+Campus+Florianopolis-Continente+Rua+Quatorze+de+Julho+150+Coqueiros",
+      "dicas": [
+        "O câmpus fica em Coqueiros, na parte continental de Florianópolis, a cerca de 10 minutos do centro.",
+        "Chegue com antecedência para o credenciamento, que começa às 8h. Tenha seu QR Code aberto no app.",
+        "Há estacionamento nas ruas do entorno e vagas limitadas no câmpus. Combine caronas pelo grupo do Fórum.",
+        "Linhas de ônibus que passam pela Beira-Mar Continental atendem a região de Coqueiros."
+      ]
+    },
+    "inscricao_url": "https://www.acatmar.org/vi-forum-2026.html",
+    "site_url": "https://www.acatmar.org/projeto.html?id=vi-forum-acatmar-2026",
+    "app_url": "https://www.acatmar.org/app/",
+    "instagram": "https://www.instagram.com/acatmarassociacao/",
+    "email": "atendimento@acatmar.com.br",
+    "whatsapp_comunidade": "",
+    "formsubmit": "https://formsubmit.co/ajax/dbf5453c958f231720ec8976f1e606ec"
+  },
+  "sobre": {
+    "resumo": "Um dia inteiro de imersão em conhecimento náutico. Palestras técnicas com especialistas de toda a cadeia produtiva, trazendo inovação e novas tecnologias para quem já vive o setor e, principalmente, para quem ainda quer entrar nele.",
+    "para_quem": "Para quem quer vir trabalhar no setor, para quem já trabalha e para quem vive o setor. Inscrição gratuita, vagas limitadas, certificado de participação.",
+    "motivos": [
+      "Palestras técnicas com especialistas e profissionais de toda a cadeia produtiva.",
+      "Inovação e novas tecnologias aplicadas ao dia a dia do setor náutico.",
+      "Requalificação de mão de obra e uma porta de entrada de verdade para quem quer trabalhar no setor.",
+      "Um dia de networking, aprendizado e conexões na Economia do Mar."
+    ],
+    "historia": [
+      {"ed": "I", "ano": 2014, "onde": "CentroSul, Florianópolis", "tema": "Infraestrutura e Gestão Náutica"},
+      {"ed": "II", "ano": 2022, "onde": "Majestic Palace Hotel, Florianópolis", "tema": "Um mar de possibilidades"},
+      {"ed": "III", "ano": 2023, "onde": "Fenaostra, CentroSul, Florianópolis", "tema": "15 anos da ACATMAR: capacitação prática"},
+      {"ed": "IV", "ano": 2024, "onde": "Comfort Hotel, Joinville", "tema": "Com o Sebrae: manutenção, segurança e turismo náutico"},
+      {"ed": "V", "ano": 2025, "onde": "IFSC Florianópolis-Continente", "tema": "Recorde de público: 227 participantes e 14 palestrantes"}
+    ]
+  },
+  "programacao_status": "preliminar",
+  "programacao_aviso": "Programação preliminar. As palestras e os palestrantes serão confirmados aqui no app, em primeira mão para os inscritos.",
+  "programacao": [
+    {"id": "cred", "periodo": "Manhã", "hora": "08:00", "titulo": "Credenciamento e boas-vindas", "quem": "Apresente seu QR Code do app na entrada", "tipo": "org"},
+    {"id": "abertura", "periodo": "Manhã", "hora": "08:30", "titulo": "Abertura oficial", "quem": "ACATMAR, Mundo Mar Consulting e IFSC", "tipo": "org"},
+    {"id": "manha", "periodo": "Manhã", "hora": "09:00", "titulo": "Palestras técnicas da manhã", "quem": "Palestrantes a confirmar", "tipo": "bloco", "desc": "Segurança da navegação, tecnologia embarcada, legislação e manutenção de embarcações."},
+    {"id": "almoco", "periodo": "Manhã", "hora": "12:30", "titulo": "Intervalo para almoço", "quem": "Retorno às 13h15", "tipo": "pausa"},
+    {"id": "tarde", "periodo": "Tarde", "hora": "13:15", "titulo": "Palestras técnicas da tarde", "quem": "Palestrantes a confirmar", "tipo": "bloco", "desc": "Inovação, novas tecnologias, cultura oceânica, marinas e turismo náutico."},
+    {"id": "encerra", "periodo": "Tarde", "hora": "18:30", "titulo": "Encerramento e certificados", "quem": "ACATMAR", "tipo": "org"}
+  ],
+  "palestrantes": [],
+  "edicao_anterior": {
+    "titulo": "V Fórum (2025): relembre",
+    "resumo": "Em 18 de novembro de 2025, no mesmo IFSC Florianópolis-Continente, o V Fórum bateu recorde: 227 participantes e 14 palestrantes. Foi também o primeiro ato externo da Frente Parlamentar da Economia do Mar.",
+    "fotos": ["../media/projetos/v-forum-1.jpg", "../media/projetos/v-forum-2.jpg", "../media/projetos/v-forum-3.jpg", "../media/projetos/v-forum-4.jpg", "../media/projetos/v-forum-5.jpg", "../media/projetos/v-forum-6.jpg"],
+    "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025",
+    "programacao": [
+      {"periodo": "Manhã", "titulo": "Frente Parlamentar da Economia do Mar: setor náutico, desafios e oportunidades", "quem": "Esperidião Amin · senador da República"},
+      {"periodo": "Manhã", "titulo": "Socorros de urgência na náutica: protocolos e práticas de atendimento pré-hospitalar", "quem": "Hamilton Fernandes dos Santos · Despachante e Escola Náutica Sports Resgate"},
+      {"periodo": "Manhã", "titulo": "Como os eletrônicos de navegação e novas tecnologias aumentam a segurança e o conforto a bordo", "quem": "André da Costa e Paulo Mendonça · Marine Express"},
+      {"periodo": "Manhã", "titulo": "Segurança e conformidade às leis e normas como valor no setor náutico", "quem": "Arthur Rocha Baptista (ARB.Legal) e Gabriela Ferreira, advogada"},
+      {"periodo": "Tarde", "titulo": "Rede de Cultura Oceânica, Marina Escola IFSC e capacitação para a Economia do Mar", "quem": "Benjamim Teixeira, Eduardo Cargnin Ferreira e Tiago Savi Mondo · IFSC"},
+      {"periodo": "Tarde", "titulo": "Manutenção inteligente para embarcações", "quem": "Marcelo Reis e Lucas Barbosa · Safeboat"},
+      {"periodo": "Tarde", "titulo": "Produtos náuticos e a importância da aplicação profissional", "quem": "Amauri e Hendrick · Catarina Náutica"},
+      {"periodo": "Tarde", "titulo": "A importância da escolha do motor certo para sua embarcação", "quem": "Fábio Prado · HSU"},
+      {"periodo": "Tarde", "titulo": "Inovação que salva: resposta imediata em situações de homem ao mar", "quem": "Fabrício Ardigó · Navitec"}
+    ]
+  },
+  "avisos": [
+    {"id": "app-no-ar", "data": "2026-09-12", "titulo": "O app do VI Fórum está no ar", "texto": "A partir de agora, tudo sobre o Fórum chega primeiro aqui: programação, palestrantes, avisos de última hora, local, sua credencial com QR Code e, depois do evento, o certificado. Instale o app na tela inicial do seu celular para não perder nada.", "destaque": true},
+    {"id": "inscricoes", "data": "2026-08-16", "titulo": "Inscrições abertas para o VI Fórum", "texto": "A sexta edição acontece em 20 de outubro de 2026, das 8h às 19h, no IFSC Câmpus Florianópolis-Continente. A inscrição é gratuita e as vagas são limitadas. Quem se inscreve recebe a programação em primeira mão.", "link": "https://www.acatmar.org/vi-forum-2026.html", "link_label": "Quero me inscrever"}
+  ],
+  "patrocinadores": [
+    {"cota": "Patrocínio", "logo": "../media/logos/vi-forum-patrocinio.png", "alt": "Prefeitura Municipal de Florianópolis", "largura": 240},
+    {"cota": "Realização", "logo": "../media/logos/vi-forum-realizacao.png", "alt": "ACATMAR, Associação Náutica Brasileira e Mundo Mar Consulting", "largura": 300},
+    {"cota": "Apoio", "logo": "../media/logos/vi-forum-apoio.png", "alt": "Safe Boat e Personal Boat", "largura": 210},
+    {"cota": "Apoio institucional", "logo": "../media/logos/vi-forum-apoio-institucional.png", "alt": "IFSC Câmpus Florianópolis-Continente e Marina Escola", "largura": 260}
+  ],
+  "patrocinio_cta": {
+    "titulo": "Sua marca no Fórum",
+    "texto": "Empresas da cadeia produtiva podem apoiar o VI Fórum e falar diretamente com mais de 220 profissionais, empresários e autoridades da Economia do Mar.",
+    "email": "atendimento@acatmar.com.br"
+  },
+  "certificado": {
+    "liberado": false,
+    "codigo": "",
+    "texto": "O certificado de participação fica disponível aqui no app após o evento, com o código divulgado no encerramento.",
+    "carga_horaria": "10 horas"
+  },
+  "faq": [
+    {"p": "O evento é gratuito?", "r": "Sim. A inscrição é gratuita e as vagas são limitadas. Inscreva-se pelo site da ACATMAR."},
+    {"p": "Tem certificado?", "r": "Sim. O certificado de participação é liberado no app após o evento, com o código divulgado no encerramento."},
+    {"p": "Preciso levar algo?", "r": "Só o celular com o app instalado e o QR Code da sua credencial. Traga também cartões ou seu QR de contato para o networking."},
+    {"p": "Haverá almoço?", "r": "O intervalo para almoço é livre, com retorno às 13h15. Há opções de restaurantes na região de Coqueiros."},
+    {"p": "Como recebo as novidades?", "r": "Pelo app, na aba Avisos, e por e-mail e WhatsApp para quem se inscreveu."}
+  ]
+}

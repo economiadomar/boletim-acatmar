@@ -1,0 +1,14 @@
+/* Service worker do app do VI Fórum ACATMAR */
+var CACHE='forum-acatmar-v1';
+var SHELL=['./','index.html','app.css?v=1','app.js?v=1','lib/qrcode.min.js','manifest.webmanifest','icons/icon-192.png','icons/icon-512.png','media/hero.jpg','../media/logos/acatmar-branca.png','../media/logos/vi-forum-patrocinio.png','../media/logos/vi-forum-realizacao.png','../media/logos/vi-forum-apoio.png','../media/logos/vi-forum-apoio-institucional.png'];
+self.addEventListener('install',function(e){e.waitUntil(caches.open(CACHE).then(function(c){return Promise.all(SHELL.map(function(u){return c.add(u).catch(function(){});}));}).then(function(){return self.skipWaiting();}));});
+self.addEventListener('activate',function(e){e.waitUntil(caches.keys().then(function(ks){return Promise.all(ks.filter(function(k){return k!==CACHE;}).map(function(k){return caches.delete(k);}));}).then(function(){return self.clients.claim();}));});
+self.addEventListener('fetch',function(e){
+  var req=e.request;if(req.method!=='GET')return;
+  var url=new URL(req.url);
+  if(url.origin!==location.origin){ // fontes e externos: cache oportunista
+    e.respondWith(caches.match(req).then(function(r){return r||fetch(req).then(function(res){if(res.ok&&/fonts\.(googleapis|gstatic)\.com/.test(url.host)){var cl=res.clone();caches.open(CACHE).then(function(c){c.put(req,cl);});}return res;}).catch(function(){return r;});}));return;}
+  if(/forum\.json/.test(url.pathname)){ // dados: rede primeiro, cache como reserva
+    e.respondWith(fetch(req).then(function(res){var cl=res.clone();caches.open(CACHE).then(function(c){c.put(url.pathname,cl);});return res;}).catch(function(){return caches.match(url.pathname);}));return;}
+  e.respondWith(caches.match(req,{ignoreSearch:false}).then(function(r){return r||fetch(req).then(function(res){if(res.ok&&(/\.(png|jpg|jpeg|webp|css|js)(\?|$)/.test(url.pathname+url.search)||url.pathname.endsWith('/'))){var cl=res.clone();caches.open(CACHE).then(function(c){c.put(req,cl);});}return res;});}).catch(function(){if(req.mode==='navigate')return caches.match('index.html');}));
+});
