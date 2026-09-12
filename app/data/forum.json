@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-12-6",
+  "versao": "2026-09-12-7",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -227,8 +227,8 @@
         },
         {
           "nome": "Okean Yachts · Ferretti Group",
-          "logo": "",
-          "largura": 220,
+          "logo": "media/logos/okean.svg",
+          "largura": 230,
           "texto": "Estaleiro catarinense de iates de alto padrão, com sede em Itajaí, ligado ao Ferretti Group. Patrocinadora do VI Fórum, a Okean representa a indústria náutica de Santa Catarina que compete no mercado internacional e demanda mão de obra qualificada, justamente o foco do encontro.",
           "site": "",
           "instagram": ""
@@ -261,8 +261,8 @@
       "empresas": [
         {
           "nome": "Iate Clube Veleiros da Ilha",
-          "logo": "",
-          "largura": 180,
+          "logo": "media/logos/veleiros-da-ilha.png",
+          "largura": 130,
           "texto": "Um dos clubes náuticos mais tradicionais do Brasil, fundado em 1943 em Florianópolis. Referência na vela e na formação de velejadores, o Veleiros da Ilha apoia o VI Fórum e a qualificação de quem trabalha e vive a náutica na Ilha.",
           "site": "",
           "instagram": ""
