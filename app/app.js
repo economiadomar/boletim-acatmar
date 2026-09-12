@@ -214,7 +214,7 @@ function mais(){var me=LS.get('me',null);
    +'<div class="menu"><a href="#/palestrantes"><i>🎤</i>Palestrantes</a><a href="#/patrocinadores"><i>🤝</i>Patrocinadores e apoio</a><a href="#/local"><i>📍</i>Local e como chegar</a><a href="#/interagir"><i>💬</i>Interagir e perguntar</a><a href="#/certificado"><i>📜</i>Certificado</a><a href="#/anterior"><i>📷</i>V Fórum (2025)</a><a href="#/sobre"><i>⚓</i>Sobre o Fórum</a><a href="#/faq"><i>❓</i>Perguntas frequentes</a><a href="#/instalar"><i>📲</i>Instalar o app</a></div>'
    +'<div class="menu"><a href="#/credenciamento"><i>📷</i>Credenciamento (equipe ACATMAR)</a></div>'
    +'<div class="menu"><a href="'+D.evento.inscricao_url+'" target="_blank" rel="noopener"><i>📝</i>Inscrição gratuita</a><a href="https://www.acatmar.org/" target="_blank" rel="noopener"><i>🌐</i>Site da ACATMAR</a><a href="https://www.acatmar.org/privacidade.html" target="_blank" rel="noopener"><i>🔒</i>Política de Privacidade</a></div>'
-   +'<p class="small muted" style="text-align:center">Seus dados de credencial ficam somente neste aparelho.<br>App oficial · ACATMAR · versão '+esc(D.versao)+'</p>');}
+   +'<p class="small muted" style="text-align:center">Seus dados de credencial ficam somente neste aparelho.<br>App oficial · ACATMAR · conteúdo '+esc(D.versao)+' · app v8</p>');}
 
 /* ---------- Credenciamento (equipe) ---------- */
 var scan={stream:null,raf:null,last:'',lastT:0};
@@ -267,9 +267,33 @@ function imprimirEtiqueta(c){
    +'<div class="bar"><button class="btn btn-teal" id="et-print">🖨️ Imprimir etiqueta</button><button class="btn btn-light" id="et-close">Fechar</button></div><div class="hint">Na caixa de impressão, escolha a impressora de etiquetas. Se não aparecer, confira se ela está na mesma rede Wi-Fi.</div>';
   document.body.appendChild(ov);
   document.getElementById('et-close').onclick=function(){ov.remove();};
-  document.getElementById('et-print').onclick=function(){window.print();};
-  if(LS.get('auto_print',false)&&imprimirEtiqueta._auto){setTimeout(function(){window.print();},400);}
+  var usaPDF=isStandalone()||isIOS();
+  if(usaPDF){document.getElementById('et-print').textContent='🖨️ Imprimir / salvar etiqueta';document.querySelector('#et-overlay .hint').textContent='Vai abrir o menu do iPhone: escolha "Imprimir" para mandar à impressora, ou salve/compartilhe o PDF.';}
+  document.getElementById('et-print').onclick=function(){if(usaPDF)etiquetaPDF(c,qrData,W,H);else window.print();};
+  if(LS.get('auto_print',false)&&imprimirEtiqueta._auto){setTimeout(function(){if(usaPDF)etiquetaPDF(c,qrData,W,H);else window.print();},400);}
   imprimirEtiqueta._auto=false;
+}
+function etiquetaPDF(c,qrData,W,H){
+  function go(){
+    var doc=new window.jspdf.jsPDF({orientation:W>=H?'landscape':'portrait',unit:'mm',format:[W,H]});
+    var pad=5;doc.setTextColor(10,37,64);doc.setFont('helvetica','bold');doc.setFontSize(7);
+    doc.text(D.evento.curto.toUpperCase(),pad,pad+2);doc.setTextColor(0,114,126);doc.text(D.evento.data_iso.split('-').reverse().join('/'),W-pad,pad+2,{align:'right'});
+    doc.setDrawColor(10,37,64);doc.setLineWidth(.5);doc.line(pad,pad+4,W-pad,pad+4);
+    var qrS=18,textW=W-pad*2-(qrData?qrS+3:0);
+    doc.setTextColor(10,37,64);var fs=c.nome.length>26?15:(c.nome.length>18?19:23);doc.setFontSize(fs);
+    var lines=doc.splitTextToSize(c.nome.toUpperCase(),textW);var y=H/2-(lines.length*fs*0.42)/2+2;
+    doc.text(lines,pad,y);
+    var sub=[c.cargo,c.empresa].filter(Boolean).join(' · ');if(sub){doc.setFont('helvetica','normal');doc.setFontSize(9.5);doc.setTextColor(51,51,68);doc.text(doc.splitTextToSize(sub,textW),pad,y+lines.length*fs*0.42+2);}
+    if(qrData)doc.addImage(qrData,'PNG',W-pad-qrS,H/2-qrS/2-1,qrS,qrS);
+    doc.setFont('helvetica','bold');doc.setFontSize(7);var tipoTxt=(c.tipo||'Participante').toUpperCase();var tw=doc.getTextWidth(tipoTxt)+5;
+    doc.setFillColor(10,37,64);doc.roundedRect(pad,H-pad-5,tw,5,1,1,'F');doc.setTextColor(255,255,255);doc.text(tipoTxt,pad+2.5,H-pad-1.5);
+    doc.setTextColor(85,85,102);doc.setFont('helvetica','normal');doc.text('IFSC FLORIANÓPOLIS-CONTINENTE',W-pad,H-pad-1.5,{align:'right'});
+    var blob=doc.output('blob');var nome='etiqueta-'+c.nome.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]+/g,'-')+'.pdf';
+    var file=null;try{file=new File([blob],nome,{type:'application/pdf'});}catch(x){}
+    if(file&&navigator.canShare&&navigator.canShare({files:[file]})){navigator.share({files:[file],title:'Etiqueta '+c.nome}).catch(function(){});}
+    else{var u=URL.createObjectURL(blob);var a=document.createElement('a');a.href=u;a.download=nome;a.target='_blank';document.body.appendChild(a);a.click();a.remove();}
+  }
+  if(window.jspdf)go();else{var sc=document.createElement('script');sc.src='lib/jspdf.umd.min.js';sc.onload=go;sc.onerror=function(){toast('Não foi possível carregar o gerador de PDF.');};document.body.appendChild(sc);}
 }
 function startScan(){
   var vid=document.getElementById('vid'),msg=document.getElementById('cam-msg');if(!vid)return;
