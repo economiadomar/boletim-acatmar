@@ -4,7 +4,7 @@
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
-function h(html){view.innerHTML=html;view.scrollTop=0;window.scrollTo(0,0);}
+function h(html){if(document.activeElement&&document.activeElement.blur)document.activeElement.blur();view.innerHTML=html;view.scrollTop=0;window.scrollTo(0,0);}
 function toast(m){var t=document.getElementById('toast');t.textContent=m;t.hidden=false;clearTimeout(toast._t);toast._t=setTimeout(function(){t.hidden=true;},2600);}
 function fmtData(iso){var p=iso.split('-');var m=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];return p[2]+' '+m[+p[1]-1]+' '+p[0];}
 function eventDate(){var e=D.evento;return {start:new Date(e.data_iso+'T'+e.inicio+':00-03:00'),end:new Date(e.data_iso+'T'+e.fim+':00-03:00')};}
