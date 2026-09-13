@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-12-18",
+  "versao": "2026-09-12-19",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -198,6 +198,14 @@
   },
   "avisos": [
     {
+      "id": "marina-escola-acordo",
+      "data": "2026-09-12",
+      "titulo": "IFSC e ACATMAR assinam acordo da Marina Escola",
+      "texto": "O reitor do IFSC, Zízimo Moreira Filho, e o presidente da ACATMAR, Mané Ferrari, assinaram o Acordo de Cooperação Técnica que dá sustentação institucional à Marina Escola do Câmpus Florianópolis-Continente, sede do VI Fórum. O acordo vale por cinco anos e coloca o setor produtivo dentro da formação de mão de obra para a Economia do Mar. A Marina Escola é apoiadora institucional do Fórum.",
+      "link": "https://www.acatmar.org/n/ifsc-acatmar-marina-escola-2026.html",
+      "link_label": "Ler a matéria completa"
+    },
+    {
       "id": "app-no-ar",
       "data": "2026-09-12",
       "titulo": "O app do VI Fórum está no ar",
@@ -314,7 +322,13 @@
           "texto": "Projeto do IFSC Câmpus Florianópolis-Continente, desenvolvido em parceria com a ACATMAR, sob o título \"Marina-Escola IFSC Florianópolis-Continente: Sabores e Navegação no Litoral Catarinense\". Integra dois eixos: formação náutica em manutenção, operação e serviços de embarcações, e gastronomia com foco em hospitalidade a bordo e experiências ligadas ao turismo náutico, por meio de cursos de extensão, oficinas e parcerias com empresas do setor.",
           "site": "https://www.ifsc.edu.br/web/campus-florianopolis-continente",
           "instagram": "https://www.instagram.com/ifsc.continente/",
-          "escala": 1
+          "escala": 1,
+          "materia": {
+            "titulo": "IFSC e ACATMAR assinam acordo de cooperação técnica para tirar a Marina Escola do papel",
+            "data": "2026-09-12",
+            "resumo": "Em setembro de 2026, o reitor do IFSC, Zízimo Moreira Filho, e o presidente da ACATMAR, Mané Ferrari, assinaram o Acordo de Cooperação Técnica que dá base institucional à Marina Escola. O acordo vale por cinco anos, sem repasse de recursos: o IFSC coordena a Marina Escola e os cursos, e a ACATMAR faz a ponte com marinas, estaleiros, empresas e profissionais do setor, levando a demanda real de qualificação para dentro da escola e o estudante para dentro do barco. O projeto prevê cais flutuante, vagas para embarcações e laboratórios na orla do câmpus.",
+            "link": "https://www.acatmar.org/n/ifsc-acatmar-marina-escola-2026.html"
+          }
         },
         {
           "nome": "FORTUR · Fórum de Turismo da Grande Florianópolis",
@@ -375,5 +389,96 @@
     "largura_mm": 90,
     "altura_mm": 62,
     "obs": "Padrão Brother DK-11202 (62x100) ou similar. Ajuste aqui conforme a impressora."
-  }
+  },
+  "edicoes": [
+    {
+      "ed": "I",
+      "ano": 2014,
+      "data": "28 de março de 2014",
+      "onde": "CentroSul, Florianópolis",
+      "tema": "Infraestrutura e Gestão Náutica",
+      "resumo": "O encontro que deu início aos Fóruns ACATMAR. Com o tema Infraestrutura e Gestão Náutica, reuniu empresários, especialistas e o poder público para discutir os desafios e as perspectivas de crescimento do setor náutico catarinense, com o Programa Nova Economia e a experiência italiana em infraestrutura náutica.",
+      "capa": "media/edicoes/i-forum-hero.jpg",
+      "fotos": [
+        "media/edicoes/i-forum-1.jpg",
+        "media/edicoes/i-forum-2.jpg",
+        "media/edicoes/i-forum-3.jpg",
+        "media/edicoes/i-forum-4.jpg",
+        "media/edicoes/i-forum-flyer1.jpg"
+      ],
+      "link": "https://www.acatmar.org/projeto.html?id=i-forum-acatmar-2014"
+    },
+    {
+      "ed": "II",
+      "ano": 2022,
+      "data": "14 de junho de 2022",
+      "onde": "Majestic Palace Hotel, Florianópolis",
+      "tema": "Um mar de possibilidades",
+      "resumo": "Oito anos depois da primeira edição, o setor chegou maduro: o debate avançou para novas tecnologias, modelos de negócio, sustentabilidade, incentivos e projetos de infraestrutura para a Economia do Mar, com gestão de marinas e responsabilidade ambiental entre os temas.",
+      "capa": "media/edicoes/ii-forum-1.jpg",
+      "fotos": [
+        "media/edicoes/ii-forum-2.jpg",
+        "media/edicoes/ii-forum-3.jpg",
+        "media/edicoes/ii-forum-4.jpg",
+        "media/edicoes/ii-forum-5.jpg",
+        "media/edicoes/ii-forum-6.jpg",
+        "media/edicoes/ii-forum-7.jpg"
+      ],
+      "link": "https://www.acatmar.org/projeto.html?id=ii-forum-acatmar-2022"
+    },
+    {
+      "ed": "III",
+      "ano": 2023,
+      "data": "31 de outubro de 2023",
+      "onde": "Fenaostra, CentroSul, Florianópolis",
+      "tema": "15 anos da ACATMAR: capacitação prática",
+      "resumo": "Realizado durante a Fenaostra, nos 15 anos da ACATMAR, das 8h às 19h. O foco foi a formação técnica e prática de quem faz o setor acontecer: navegação, segurança, comunicação, manutenção, tecnologia, energia a bordo, sustentabilidade e turismo náutico, num dia só.",
+      "capa": "media/edicoes/iii-forum-hero.jpg",
+      "fotos": [
+        "media/edicoes/iii-forum-grupo.jpg",
+        "media/edicoes/iii-forum-1.jpg",
+        "media/edicoes/iii-forum-2.jpg",
+        "media/edicoes/iii-forum-3.jpg",
+        "media/edicoes/iii-forum-4.jpg",
+        "media/edicoes/iii-forum-6.jpg"
+      ],
+      "link": "https://www.acatmar.org/projeto.html?id=iii-forum-acatmar-2023"
+    },
+    {
+      "ed": "IV",
+      "ano": 2024,
+      "data": "12 de novembro de 2024",
+      "onde": "Comfort Hotel, Joinville",
+      "tema": "Com o Sebrae: manutenção, segurança e turismo náutico",
+      "resumo": "A primeira edição fora de Florianópolis, em Joinville, em parceria com o Sebrae. Um dia inteiro de palestras técnicas sobre manutenção, segurança, sustentabilidade, tecnologia e turismo náutico, com certificado de participação e foco no desenvolvimento da cadeia produtiva.",
+      "capa": "media/edicoes/iv-forum-hero.jpg",
+      "fotos": [
+        "media/edicoes/iv-forum-1.jpg",
+        "media/edicoes/iv-forum-2.jpg",
+        "media/edicoes/iv-forum-3.jpg",
+        "media/edicoes/iv-forum-4.jpg",
+        "media/edicoes/iv-forum-5.jpg",
+        "media/edicoes/iv-forum-6.jpg"
+      ],
+      "link": "https://www.acatmar.org/projeto.html?id=iv-forum-acatmar-2024"
+    },
+    {
+      "ed": "V",
+      "ano": 2025,
+      "data": "18 de novembro de 2025",
+      "onde": "IFSC Câmpus Florianópolis-Continente",
+      "tema": "Recorde de público: 227 participantes e 14 palestrantes",
+      "resumo": "No mesmo IFSC que recebe a sexta edição, o V Fórum bateu recorde: 227 participantes e 14 palestrantes, com a Mundo Mar Consulting e o IFSC na realização. Foi também o primeiro ato externo da Frente Parlamentar da Economia do Mar, com o senador Esperidião Amin na abertura.",
+      "capa": "media/edicoes/v-forum-hero.jpg",
+      "fotos": [
+        "media/edicoes/v-forum-1.jpg",
+        "media/edicoes/v-forum-2.jpg",
+        "media/edicoes/v-forum-3.jpg",
+        "media/edicoes/v-forum-4.jpg",
+        "media/edicoes/v-forum-5.jpg",
+        "media/edicoes/v-forum-6.jpg"
+      ],
+      "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
+    }
+  ]
 }
