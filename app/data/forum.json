@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-13-4",
+  "versao": "2026-09-13-5",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -306,7 +306,7 @@
           "escala": 0.9
         }
       ],
-      "logo": "../media/logos/vi-forum-patrocinio.png",
+      "logo": "../media/logos/vi-forum-patrocinio-empilhado.png",
       "alt": "Prefeitura Municipal de Florianópolis, Okean Yachts · Ferretti Group",
       "largura": 300
     },
