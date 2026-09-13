@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=22;
+var APP_V=23;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
@@ -27,7 +27,7 @@ var booted=false;
 function checkUpdate(){if(D&&D.app_min&&D.app_min>APP_V){var k='forum_reload_'+D.app_min;try{if(sessionStorage.getItem(k))return;sessionStorage.setItem(k,'1');}catch(e){}
   var p=('serviceWorker' in navigator)?navigator.serviceWorker.getRegistrations().then(function(rs){return Promise.all(rs.map(function(r){return r.update().catch(function(){});}));}):Promise.resolve();
   p.then(function(){return caches&&caches.keys?caches.keys().then(function(ks){return Promise.all(ks.map(function(x){return caches.delete(x);}));}):null;}).catch(function(){}).then(function(){location.reload();});}}
-function boot(){if(booted)return;booted=true;checkUpdate();render();updateBadge();setTimeout(function(){var s=document.getElementById('splash');s.classList.add('off');setTimeout(function(){s.remove();},400);},350);}
+function boot(){if(booted)return;booted=true;checkUpdate();render();updateBadge();setTimeout(inAppWarn,900);setTimeout(function(){var s=document.getElementById('splash');s.classList.add('off');setTimeout(function(){s.remove();},400);},350);}
 
 /* ---------- roteamento ---------- */
 var routes={'/':home,'/programacao':programacao,'/palestrantes':palestrantes,'/avisos':avisos,'/aviso':aviso,'/credencial':credencial,'/patrocinadores':patrocinadores,'/local':local,'/interagir':interagir,'/certificado':certificado,'/instalar':instalar,'/sobre':sobre,'/mais':mais,'/anterior':anterior,'/faq':faq,'/credenciamento':credenciamento,'/edicoes':edicoes};
@@ -212,6 +212,16 @@ var deferredPrompt=null;
 window.addEventListener('beforeinstallprompt',function(ev){ev.preventDefault();deferredPrompt=ev;maybeBanner();});
 function isStandalone(){return window.matchMedia('(display-mode: standalone)').matches||navigator.standalone===true;}
 function isIOS(){return /iphone|ipad|ipod/i.test(navigator.userAgent)&&!window.MSStream;}
+function inAppBrowser(){var ua=navigator.userAgent||'';return /WhatsApp|Instagram|FBAN|FBAV|FB_IAB|Line\/|LinkedInApp|Twitter|TikTok|Telegram/i.test(ua)||(isIOS()&&!/Safari\//.test(ua)&&!isStandalone())||(isIOS()&&/CriOS|FxiOS|EdgiOS/.test(ua)&&false);}
+function inAppWarn(){if(isStandalone()||!inAppBrowser())return;if(document.getElementById('inapp-ov'))return;
+  var ios=isIOS();var ov=document.createElement('div');ov.id='inapp-ov';ov.className='inapp-ov';
+  ov.innerHTML='<div class="inapp-card"><img src="icons/icon-192.png" alt=""><h3>Abra no '+(ios?'Safari':'Chrome')+' para instalar</h3><p>Você está no navegador interno do '+(/WhatsApp/i.test(navigator.userAgent)?'WhatsApp':/Instagram/i.test(navigator.userAgent)?'Instagram':'aplicativo')+'. Aqui dá para ver o app, mas não dá para instalar na tela inicial.</p>'
+   +(ios?'<ol><li>Toque no botão <b>⋯</b> ou no ícone da bússola <b>⌘</b> no canto da tela</li><li>Escolha <b>"Abrir no Safari"</b></li><li>No Safari, toque em <b>Compartilhar</b> e em <b>"Adicionar à Tela de Início"</b></li></ol>':'<ol><li>Toque no menu <b>⋮</b> no canto superior</li><li>Escolha <b>"Abrir no Chrome"</b> (ou "Abrir no navegador")</li><li>No Chrome, toque em <b>Instalar</b></li></ol>')
+   +'<div class="btn-row"><button class="btn btn-teal" id="inapp-copy">Copiar o link</button><button class="btn btn-light" id="inapp-close">Continuar aqui mesmo</button></div><p class="small" style="opacity:.75;margin:10px 0 0">Se preferir, cole <b>acatmar.org/app</b> direto na barra do '+(ios?'Safari':'Chrome')+'.</p></div>';
+  document.body.appendChild(ov);
+  document.getElementById('inapp-close').onclick=function(){ov.remove();};
+  document.getElementById('inapp-copy').onclick=function(){var u='https://www.acatmar.org/app/';(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){toast('Link copiado. Cole no '+(ios?'Safari':'Chrome')+'.');},function(){prompt('Copie o link:',u);});};
+}
 function maybeBanner(){if(isStandalone()||LS.get('banner_off',false))return;var b=document.getElementById('install-banner');b.hidden=false;
   document.getElementById('ib-install').onclick=function(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt.userChoice.then(function(){b.hidden=true;deferredPrompt=null;});}else{location.hash='#/instalar';b.hidden=true;}};
   document.getElementById('ib-close').onclick=function(){b.hidden=true;LS.set('banner_off',true);};}
@@ -220,10 +230,12 @@ function instalar(){
   var and='<div class="steps"><div><span>Abra <b>acatmar.org/app</b> no <b>Chrome</b>.</span></div><div><span>Toque em <b>Instalar</b> no aviso que aparece, ou no menu ⋮ escolha <b>"Instalar app"</b> / <b>"Adicionar à tela inicial"</b>.</span></div><div><span>Confirme. O app do Fórum aparece junto dos seus outros apps.</span></div></div>';
   h((isStandalone()?'<div class="ok-box" style="margin-bottom:14px">✅ O app já está instalado neste aparelho.</div>':'')
    +(deferredPrompt?'<div class="card" style="text-align:center"><h3>Instalar agora</h3><p class="small muted">Seu celular permite instalar em um toque.</p><button class="btn btn-teal btn-block" id="btn-inst">Instalar o app</button></div>':'')
+   +(inAppBrowser()&&!isStandalone()?'<div class="notice">⚠️ Você está no navegador interno de um aplicativo (WhatsApp, Instagram…). Ele não instala apps. <b>Abra no '+(isIOS()?'Safari':'Chrome')+'</b> pelo menu do canto da tela, ou copie o link: <button class="btn btn-navy btn-sm" id="copy-link2" style="margin-top:8px">Copiar acatmar.org/app</button></div>':'')
    +'<div class="card"><p class="kicker">iPhone e iPad</p><h3>Safari</h3>'+ios+'</div>'
    +'<div class="card"><h3>Não achou "Adicionar à Tela de Início"?</h3><p class="small">• <b>Confira se é o Safari de verdade.</b> Link aberto pelo WhatsApp ou Instagram abre um navegador interno, sem essa opção. Copie <b>acatmar.org/app</b>, abra o Safari pelo ícone dele e cole na barra.</p><p class="small">• <b>Role a lista até o fim.</b> No menu Compartilhar, os apps ficam em cima e as ações embaixo. "Adicionar à Tela de Início" fica quase no final.</p><p class="small">• <b>Se sumiu, reative.</b> No fim do menu Compartilhar toque em "Editar Ações…" e ative "Adicionar à Tela de Início" no "+" verde.</p><p class="small">• Se o aparelho tiver restrição de perfil (comum em celular institucional), use o app direto pelo Safari. Funciona igual, só não fica o ícone.</p></div><div class="card"><p class="kicker">Android</p><h3>Chrome</h3>'+and+'</div>'
    +'<div class="card"><h3>Por que instalar?</h3><p class="small">• Abre em um toque, como um app da loja.<br>• Sua credencial com QR Code aparece na hora no credenciamento.<br>• Programação, local e avisos ficam disponíveis mesmo sem sinal.<br>• Sem cadastro, sem senha, sem ocupar espaço.</p><div class="btn-row"><button class="btn btn-outline btn-sm" id="share-app2">Enviar o link para alguém</button></div></div>');
   var bi=document.getElementById('btn-inst');if(bi)bi.onclick=function(){deferredPrompt.prompt();};
+  var cl=document.getElementById('copy-link2');if(cl)cl.onclick=function(){var u='https://www.acatmar.org/app/';(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){toast('Link copiado');},function(){prompt('Copie o link:',u);});};
   document.getElementById('share-app2').onclick=shareApp;
 }
 
@@ -236,7 +248,7 @@ function mais(){var me=LS.get('me',null);
    +'<div class="menu"><a href="#/palestrantes"><i>🎤</i>Palestrantes</a><a href="#/patrocinadores"><i>🤝</i>Patrocinadores e apoio</a><a href="#/local"><i>📍</i>Local e como chegar</a><a href="#/interagir"><i>💬</i>Interagir e perguntar</a><a href="#/certificado"><i>📜</i>Certificado</a><a href="#/edicoes"><i>📷</i>Edições anteriores (2014 a 2025)</a><a href="#/sobre"><i>⚓</i>Sobre o Fórum</a><a href="#/faq"><i>❓</i>Perguntas frequentes</a><a href="#/instalar"><i>📲</i>Instalar o app</a></div>'
    +'<div class="menu"><a href="#/credenciamento"><i>📷</i>Credenciamento (equipe ACATMAR)</a></div>'
    +'<div class="menu"><a href="'+D.evento.inscricao_url+'" target="_blank" rel="noopener"><i>📝</i>Inscrição gratuita</a><a href="https://www.acatmar.org/" target="_blank" rel="noopener"><i>🌐</i>Site da ACATMAR</a><a href="https://www.acatmar.org/privacidade.html" target="_blank" rel="noopener"><i>🔒</i>Política de Privacidade</a></div>'
-   +'<p class="small muted" style="text-align:center">Seus dados de credencial ficam somente neste aparelho.<br>App oficial · ACATMAR · conteúdo '+esc(D.versao)+' · app v22</p>');}
+   +'<p class="small muted" style="text-align:center">Seus dados de credencial ficam somente neste aparelho.<br>App oficial · ACATMAR · conteúdo '+esc(D.versao)+' · app v23</p>');}
 
 /* ---------- Credenciamento (equipe) ---------- */
 var scan={stream:null,raf:null,last:'',lastT:0};
