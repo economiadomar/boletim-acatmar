@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-12-8",
+  "versao": "2026-09-12-9",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -277,8 +277,8 @@
         },
         {
           "nome": "Personal Boat",
-          "logo": "media/logos/personal-boat.png",
-          "largura": 150,
+          "logo": "media/logos/personal-boat-v2.png",
+          "largura": 170,
           "texto": "Empresa de Palhoça (SC) especializada em vidros para a linha náutica. Fabrica vidros curvos, temperados e laminados e estruturas de alumínio para para-brisas, janelas laterais e escotilhas, atendendo estaleiros de barcos de lazer, esporte e pesca e proprietários que precisam de reposição sob medida.",
           "site": "https://personalboat.ind.br",
           "instagram": "https://www.instagram.com/personal_boat/"
