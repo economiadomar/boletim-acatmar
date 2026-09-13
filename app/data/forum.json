@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-12-19",
+  "versao": "2026-09-12-20",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -135,7 +135,17 @@
       "tipo": "org"
     }
   ],
-  "palestrantes": [],
+  "palestrantes": [
+    {
+      "id": "jovan-sampaio",
+      "nome": "Jovan Sampaio",
+      "cargo": "",
+      "empresa": "Volvo Penta",
+      "foto": "media/palestrantes/jovan-sampaio.jpg",
+      "tema": "O motor fala: saiba entender os sinais",
+      "bio": ""
+    }
+  ],
   "edicao_anterior": {
     "titulo": "V Fórum (2025): relembre",
     "resumo": "Em 18 de novembro de 2025, no mesmo IFSC Florianópolis-Continente, o V Fórum bateu recorde: 227 participantes e 14 palestrantes. Foi também o primeiro ato externo da Frente Parlamentar da Economia do Mar.",
@@ -197,6 +207,14 @@
     ]
   },
   "avisos": [
+    {
+      "id": "palestra-jovan",
+      "data": "2026-09-12",
+      "titulo": "Primeira palestra confirmada: O motor fala",
+      "texto": "Jovan Sampaio, da Volvo Penta, abre a lista de palestrantes do VI Fórum com \"O motor fala: saiba entender os sinais\". Ruídos, vibração, fumaça, temperatura e consumo dizem muito sobre a saúde do motor, e saber ler esses sinais evita pane e prejuízo. Horário será divulgado aqui no app.",
+      "link": "",
+      "link_label": ""
+    },
     {
       "id": "marina-escola-acordo",
       "data": "2026-09-12",
