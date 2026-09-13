@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-12-9",
+  "versao": "2026-09-12-10",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -262,7 +262,7 @@
         {
           "nome": "Iate Clube Veleiros da Ilha",
           "logo": "media/logos/veleiros-da-ilha.png",
-          "largura": 130,
+          "largura": 150,
           "texto": "Fundado em 1943, o Iate Clube de Santa Catarina Veleiros da Ilha é a maior agremiação náutica catarinense e uma das mais importantes do Brasil, com cerca de 700 sócios e 400 embarcações. Tem sede central na Baía Sul, no centro de Florianópolis, e sede em Jurerê, com atividades de vela oceânica, monotipos, pesca, escola de vela e um calendário de regatas e eventos que revelou gerações de velejadores.",
           "site": "https://icsc.com.br",
           "instagram": "https://www.instagram.com/icsc_veleirosdailha/"
@@ -270,7 +270,7 @@
         {
           "nome": "Safeboat",
           "logo": "media/logos/safeboat.png",
-          "largura": 150,
+          "largura": 200,
           "texto": "Sistema de manutenção inteligente para embarcações criado pela NAVALCARE, escritório de engenharia naval fundado em 2016 pelo engenheiro Marcelo Reis. O hardware SAFEBOAT, instalado a bordo, monitora em tempo real os sistemas críticos do barco e se conecta ao app NAVALCARE Connect, pelo qual o proprietário acompanha o estado da embarcação e aciona manutenções preventivas e corretivas por assinatura.",
           "site": "https://www.naval.care",
           "instagram": "https://www.instagram.com/naval.care/"
