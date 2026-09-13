@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-13-1",
+  "versao": "2026-09-13-2",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -110,6 +110,16 @@
       "desc": "Segurança da navegação, tecnologia embarcada, legislação e manutenção de embarcações."
     },
     {
+      "id": "gianotti",
+      "periodo": "Manhã",
+      "hora": "11:00",
+      "titulo": "Estrutura de resgate do CBMSC no litoral de Santa Catarina",
+      "quem": "Sgt. Gianotti · Batalhão de Operações Aéreas do CBMSC",
+      "tipo": "palestra",
+      "palestrante": "sgt-gianotti",
+      "desc": "A capacidade de resgate no mar do Corpo de Bombeiros: quais são os recursos, como funcionam e como acionar. Jet skis, botes infláveis, embarcações maiores com dois motores e as aeronaves do Batalhão de Operações Aéreas."
+    },
+    {
       "id": "almoco",
       "periodo": "Manhã",
       "hora": "12:30",
@@ -155,6 +165,16 @@
       "tema": "O motor fala: saiba entender os sinais",
       "bio": "Profissional com mais de uma década de experiência no setor náutico, atua com motores marítimos Volvo Penta na Linck Náutica, revenda e assistência técnica da marca em Santa Catarina. No dia a dia da oficina e do atendimento a proprietários, acompanha instalação, manutenção e diagnóstico de motores, e é dessa vivência que vem a palestra: ensinar a reconhecer os sinais que o motor dá antes de virar problema.",
       "hora": "13h30 · Tarde"
+    },
+    {
+      "id": "sgt-gianotti",
+      "nome": "Sgt. Gianotti",
+      "cargo": "Sargento · Batalhão de Operações Aéreas",
+      "empresa": "CBMSC",
+      "foto": "media/palestrantes/sgt-gianotti.jpg",
+      "tema": "Estrutura de resgate do CBMSC no litoral de Santa Catarina",
+      "hora": "11h00 · Manhã",
+      "bio": "Sargento do Corpo de Bombeiros Militar de Santa Catarina, integra o Batalhão de Operações Aéreas, unidade responsável pelas operações com aeronaves do CBMSC em resgates, salvamentos e apoio às guarnições em todo o estado."
     }
   ],
   "edicao_anterior": {
@@ -218,6 +238,15 @@
     ]
   },
   "avisos": [
+    {
+      "id": "palestra-gianotti",
+      "data": "2026-09-13",
+      "titulo": "Confirmado: resgate no mar com o CBMSC",
+      "texto": "O Sgt. Gianotti, do Batalhão de Operações Aéreas do Corpo de Bombeiros Militar de Santa Catarina, apresenta às 11h a estrutura de resgate do CBMSC no litoral catarinense: jet skis, botes, embarcações e aeronaves, como funcionam e como acionar. Conteúdo essencial para quem navega, trabalha em marina ou opera embarcações.",
+      "imagem": "media/palestrantes/sgt-gianotti.jpg",
+      "link": "#/palestrantes",
+      "link_label": "Ver palestrante"
+    },
     {
       "id": "palestra-jovan",
       "data": "2026-09-12",
