@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-13-3",
+  "versao": "2026-09-13-4",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -276,7 +276,7 @@
       "data": "2026-08-16",
       "titulo": "Inscrições abertas para o VI Fórum",
       "texto": "A sexta edição acontece em 20 de outubro de 2026, das 8h às 19h, no IFSC Câmpus Florianópolis-Continente. A inscrição é gratuita e as vagas são limitadas. Quem se inscreve recebe a programação em primeira mão.",
-      "link": "https://www.acatmar.org/vi-forum-2026.html",
+      "link": "#/inscricao",
       "link_label": "Quero me inscrever"
     }
   ],
@@ -436,7 +436,7 @@
   "faq": [
     {
       "p": "O evento é gratuito?",
-      "r": "Sim. A inscrição é gratuita e as vagas são limitadas. Inscreva-se pelo site da ACATMAR."
+      "r": "Sim. A inscrição é gratuita e as vagas são limitadas. Inscreva-se aqui mesmo no app, em Mais > Inscrição gratuita, ou pelo botão na tela Início."
     },
     {
       "p": "Tem certificado?",
@@ -552,5 +552,5 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 29
+  "app_min": 30
 }

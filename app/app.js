@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=29;
+var APP_V=30;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
@@ -30,8 +30,8 @@ function checkUpdate(){if(D&&D.app_min&&D.app_min>APP_V){var k='forum_reload_'+D
 function boot(){if(booted)return;booted=true;checkUpdate();render();updateBadge();setTimeout(installGate,150);setTimeout(function(){var s=document.getElementById('splash');s.classList.add('off');setTimeout(function(){s.remove();},400);},350);}
 
 /* ---------- roteamento ---------- */
-var routes={'/':home,'/programacao':programacao,'/palestrantes':palestrantes,'/avisos':avisos,'/aviso':aviso,'/credencial':credencial,'/patrocinadores':patrocinadores,'/local':local,'/interagir':interagir,'/certificado':certificado,'/instalar':instalar,'/sobre':sobre,'/mais':mais,'/anterior':anterior,'/faq':faq,'/credenciamento':credenciamento,'/edicoes':edicoes};
-var titles={'/programacao':'Programação','/palestrantes':'Palestrantes','/avisos':'Avisos','/aviso':'Aviso','/credencial':'Minha credencial','/patrocinadores':'Patrocinadores','/local':'Local e como chegar','/interagir':'Interagir','/certificado':'Certificado','/instalar':'Instalar o app','/sobre':'Sobre o Fórum','/mais':'Mais','/anterior':'V Fórum (2025)','/faq':'Perguntas frequentes','/credenciamento':'Credenciamento','/edicoes':'Edições anteriores'};
+var routes={'/':home,'/programacao':programacao,'/palestrantes':palestrantes,'/avisos':avisos,'/aviso':aviso,'/credencial':credencial,'/patrocinadores':patrocinadores,'/local':local,'/interagir':interagir,'/certificado':certificado,'/instalar':instalar,'/sobre':sobre,'/mais':mais,'/anterior':anterior,'/faq':faq,'/credenciamento':credenciamento,'/edicoes':edicoes,'/inscricao':inscricao};
+var titles={'/programacao':'Programação','/palestrantes':'Palestrantes','/avisos':'Avisos','/aviso':'Aviso','/credencial':'Minha credencial','/patrocinadores':'Patrocinadores','/local':'Local e como chegar','/interagir':'Interagir','/certificado':'Certificado','/instalar':'Instalar o app','/sobre':'Sobre o Fórum','/mais':'Mais','/anterior':'V Fórum (2025)','/faq':'Perguntas frequentes','/credenciamento':'Credenciamento','/edicoes':'Edições anteriores','/inscricao':'Inscrição'};
 var tabsMain=['/','/programacao','/credencial','/avisos','/mais'];
 function route(){var hsh=location.hash.replace(/^#/,'')||'/';var parts=hsh.split('/');var path='/'+(parts[1]||'');var arg=parts[2]||'';return {path:path,arg:arg};}
 function render(){
@@ -58,7 +58,7 @@ function home(){
   var unread=unreadAvisos();
   var av=D.avisos.slice(0,2).map(avisoCard).join('');
   var spons=D.patrocinadores.map(function(c,i){var modo=i===0?'grande':(i===1?'medio':(c.cota==='Apoio institucional'?'duplo':'lado'));return '<div class="strip-cota strip-'+modo+'"><span>'+esc(c.cota)+'</span><div>'+c.empresas.map(function(p){var sc=Math.round((p.escala||1)*100);return '<a href="#/patrocinadores">'+(p.logo?'<img src="'+p.logo+'" alt="'+esc(p.nome)+'" style="max-height:'+sc+'%;max-width:'+sc+'%">':'<span class="logo-txt logo-txt-sm">'+esc(p.nome)+'</span>')+'</a>';}).join('')+'</div></div>';}).join('');
-  var regBtn=st==='antes'?'<a class="btn btn-teal btn-block" href="'+e.inscricao_url+'" target="_blank" rel="noopener">Inscrição gratuita</a>':'';
+  var regBtn=st==='antes'?'<a class="btn btn-teal btn-block" href="#/inscricao">'+(LS.get('inscrito',null)?'✅ Inscrito · ver programação':'Inscrição gratuita')+'</a>':'';
   h('<section class="hero"><div class="hero-top"><img src="media/emblema-v2.jpg" alt="VI Fórum ACATMAR"><div><p class="kicker">'+esc(e.edicao)+' · '+esc(e.mote)+'</p><h1>'+esc(e.nome)+'</h1></div></div><div class="hero-in"><p>'+esc(e.data_texto)+' · '+esc(e.horario_texto)+'</p>'+cd+'</div></section>'
    +'<div class="quick"><a href="#/programacao"><i>🗓️</i>Programação</a><a href="#/local"><i>📍</i>Local</a><a href="#/credencial"><i>🎫</i>Credencial</a><a href="#/interagir"><i>💬</i>Interagir</a></div>'
    +'<section class="section"><div class="card"><div class="info"><div class="info-row"><div class="ic">📅</div><div><b>Quando</b><span>'+esc(e.data_texto)+'<br>'+esc(e.horario_texto)+'</span></div></div><div class="info-row"><div class="ic">📍</div><div><b>Onde</b><span>'+esc(e.local.nome)+(e.local.sala?' · '+esc(e.local.sala):'')+'<br><small class="muted">'+esc(e.local.endereco)+'</small></span></div></div><div class="info-row"><div class="ic">🅿️</div><div><b>Estacionamento</b><span>Próprio e gratuito no câmpus</span></div></div><div class="info-row"><div class="ic">🎟️</div><div><b>Participação</b><span>Gratuita, vagas limitadas'+(e.certificado?' · com certificado':'')+'</span></div></div></div>'+(regBtn?'<div class="btn-row">'+regBtn+'</div>':'')+'</div></section>'
@@ -114,7 +114,7 @@ function palestrantes(){
 function unreadAvisos(){var seen=LS.get('seen',[]);return D.avisos.filter(function(a){return seen.indexOf(a.id)<0;}).length;}
 function updateBadge(){if(!D)return;var n=unreadAvisos();var b=document.getElementById('badge-avisos');b.hidden=!n;b.textContent=n;if(navigator.setAppBadge){if(n)navigator.setAppBadge(n);else if(navigator.clearAppBadge)navigator.clearAppBadge();}}
 function avisoCard(a){var seen=LS.get('seen',[]);var un=seen.indexOf(a.id)<0;return '<a class="card aviso'+(un?' unread':'')+(a.destaque?' destaque':'')+'" href="#/aviso/'+esc(a.id)+'"><div class="aviso-dot"></div><div style="flex:1;min-width:0"><div class="aviso-date">'+fmtData(a.data)+'</div><h3>'+esc(a.titulo)+'</h3><p>'+esc(a.texto.length>140?a.texto.slice(0,140)+'…':a.texto)+'</p></div>'+(a.imagem?'<img class="aviso-thumb" src="'+a.imagem+'" alt="">':'')+'</a>';}
-function avisos(){h('<p class="small muted" style="margin:0 0 12px">As novidades do Fórum chegam aqui antes do e-mail. Toque para ler.</p>'+D.avisos.map(avisoCard).join('')+'<div class="card" style="margin-top:14px"><p class="small muted">Quer receber também por WhatsApp e e-mail? <a href="'+D.evento.inscricao_url+'" target="_blank" rel="noopener">Faça sua inscrição</a>.</p></div>');}
+function avisos(){h('<p class="small muted" style="margin:0 0 12px">As novidades do Fórum chegam aqui antes do e-mail. Toque para ler.</p>'+D.avisos.map(avisoCard).join('')+'<div class="card" style="margin-top:14px"><p class="small muted">Quer receber também por WhatsApp e e-mail? <a href="#/inscricao">Faça sua inscrição</a>.</p></div>');}
 function aviso(id){var a=null;D.avisos.forEach(function(x){if(x.id===id)a=x;});if(!a){location.hash='#/avisos';return;}
   var seen=LS.get('seen',[]);if(seen.indexOf(id)<0){seen.push(id);LS.set('seen',seen);updateBadge();}
   var retrato=a.imagem&&/palestrantes\//.test(a.imagem);var interno=a.link&&a.link.charAt(0)==='#';
@@ -277,8 +277,8 @@ function mais(){var me=LS.get('me',null);
   h('<a class="card" href="#/credencial" style="display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit"><div class="spk"><div class="av">'+esc(me?me.nome.split(' ').map(function(w){return w[0];}).slice(0,2).join(''):'?')+'</div><div><b>'+esc(me?me.nome:'Crie sua credencial')+'</b><span>'+esc(me?[me.cargo,me.empresa].filter(Boolean).join(' · ')||(me.tipo||''):'Toque para criar seu QR Code')+'</span></div></div><span style="margin-left:auto;font-size:1.6rem;color:#aab7bf">›</span></a>'
    +'<div class="menu"><a href="#/palestrantes"><i>🎤</i>Palestrantes</a><a href="#/patrocinadores"><i>🤝</i>Patrocinadores e apoio</a><a href="#/local"><i>📍</i>Local e como chegar</a><a href="#/interagir"><i>💬</i>Interagir e perguntar</a><a href="#/certificado"><i>📜</i>Certificado</a><a href="#/edicoes"><i>📷</i>Edições anteriores (2014 a 2025)</a><a href="#/sobre"><i>⚓</i>Sobre o Fórum</a><a href="#/faq"><i>❓</i>Perguntas frequentes</a><a href="#/instalar"><i>📲</i>Instalar o app</a></div>'
    +'<div class="menu"><a href="#/credenciamento"><i>📷</i>Credenciamento (equipe ACATMAR)</a></div>'
-   +'<div class="menu"><a href="'+D.evento.inscricao_url+'" target="_blank" rel="noopener"><i>📝</i>Inscrição gratuita</a><a href="https://www.acatmar.org/" target="_blank" rel="noopener"><i>🌐</i>Site da ACATMAR</a><a href="https://www.acatmar.org/privacidade.html" target="_blank" rel="noopener"><i>🔒</i>Política de Privacidade</a></div>'
-   +'<p class="small muted" style="text-align:center">Seus dados de credencial ficam somente neste aparelho.<br>App oficial · ACATMAR · conteúdo '+esc(D.versao)+' · app v29</p>');}
+   +'<div class="menu"><a href="#/inscricao"><i>📝</i>Inscrição gratuita</a><a href="https://www.acatmar.org/" target="_blank" rel="noopener"><i>🌐</i>Site da ACATMAR</a><a href="https://www.acatmar.org/privacidade.html" target="_blank" rel="noopener"><i>🔒</i>Política de Privacidade</a></div>'
+   +'<p class="small muted" style="text-align:center">Seus dados de credencial ficam somente neste aparelho.<br>App oficial · ACATMAR · conteúdo '+esc(D.versao)+' · app v30</p>');}
 
 /* ---------- Credenciamento (equipe) ---------- */
 var scan={stream:null,raf:null,last:'',lastT:0};
@@ -378,6 +378,19 @@ function startScan(){
   }).catch(function(){msg.textContent='Sem permissão para a câmera. Permita o acesso nos ajustes do navegador e tente de novo.';});
 }
 function onCode(txt){var t=Date.now();if(txt===scan.last&&t-scan.lastT<4000)return;scan.last=txt;scan.lastT=t;registrar(parseVCard(txt));}
+
+/* ---------- Inscrição (dentro do app) ---------- */
+function inscricao(){
+  var e=D.evento,me=LS.get('me',{})||{},ins=LS.get('inscrito',null);
+  if(ins){h('<div class="ok-box" style="text-align:left"><div style="font-size:1.6rem">⚓</div><b>Inscrição enviada!</b><p class="small" style="margin:6px 0 0">'+esc(ins.nome)+', sua inscrição foi recebida em '+esc(ins.quando)+'. A programação e os avisos chegam aqui no app e no seu e-mail e WhatsApp.</p></div><div class="btn-row"><a class="btn btn-teal" href="#/credencial">Criar minha credencial</a><a class="btn btn-outline btn-sm" href="#/programacao">Ver programação</a></div><p class="small muted" style="margin-top:14px">Precisa corrigir algo? <a href="#" id="ins-again">Enviar de novo</a>.</p>');
+    document.getElementById('ins-again').onclick=function(ev){ev.preventDefault();LS.set('inscrito',null);inscricao();};return;}
+  h('<div class="card"><p class="kicker">'+esc(e.data_texto)+'</p><h3>Inscrição gratuita</h3><p class="small muted">Vagas limitadas. Preencha e você recebe a programação e os avisos em primeira mão.</p><form id="f-ins"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"><input type="hidden" name="_subject" value="Inscrição — VI Fórum de Capacitação Técnica ACATMAR (out/2026)"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="Origem" value="Inscrição VI Fórum ACATMAR 2026 (pelo app)"><div class="field"><label>Nome completo</label><input name="Nome" required autocomplete="name" value="'+esc(me.nome||'')+'"></div><div class="field"><label>E-mail</label><input name="email" type="email" required autocomplete="email" value="'+esc(me.email||'')+'"></div><div class="field"><label>WhatsApp</label><input name="WhatsApp" type="tel" required autocomplete="tel" placeholder="(48) 99999-9999" value="'+esc(me.fone||'')+'"></div><div class="field"><label>Empresa ou instituição (opcional)</label><input name="Empresa" autocomplete="organization" value="'+esc(me.empresa||'')+'"></div><label class="check"><input type="checkbox" required> Autorizo o contato sobre o VI Fórum por e-mail e WhatsApp, conforme a <a href="https://www.acatmar.org/privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.</label><button class="btn btn-teal btn-block btn-xl" type="submit">Quero me inscrever</button></form></div>');
+  document.getElementById('f-ins').onsubmit=function(ev){ev.preventDefault();var f=ev.target;var btn=f.querySelector('button');btn.disabled=true;btn.textContent='Enviando…';var fd=new FormData(f);
+    fetch(e.formsubmit,{method:'POST',headers:{'Accept':'application/json'},body:fd}).then(function(r){return r.json();}).then(function(j){if(!(j&&(j.success==='true'||j.success===true)))throw 0;
+      var now=new Date();LS.set('inscrito',{nome:String(fd.get('Nome')).trim(),quando:now.toLocaleDateString('pt-BR')+' às '+now.toLocaleTimeString('pt-BR').slice(0,5)});
+      if(!LS.get('me',null))LS.set('me',{nome:String(fd.get('Nome')).trim(),email:String(fd.get('email')).trim(),fone:String(fd.get('WhatsApp')).trim(),empresa:String(fd.get('Empresa')||'').trim(),cargo:'',tipo:'Participante'});
+      inscricao();toast('Inscrição enviada!');}).catch(function(){btn.disabled=false;btn.textContent='Tentar de novo';toast('Não foi possível enviar. Verifique a conexão ou escreva para '+e.email);});};
+}
 
 /* ---------- Edições anteriores ---------- */
 function edicoes(){
