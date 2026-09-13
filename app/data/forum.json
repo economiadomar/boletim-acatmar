@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-12-22",
+  "versao": "2026-09-12-23",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -131,7 +131,7 @@
       "periodo": "Tarde",
       "hora": "13:30",
       "titulo": "O motor fala: saiba entender os sinais",
-      "quem": "Jovan Sampaio · Volvo Penta",
+      "quem": "Jovan Sampaio · Linck Náutica (Volvo Penta)",
       "tipo": "palestra",
       "palestrante": "jovan-sampaio",
       "desc": "Ruídos, vibração, fumaça, temperatura e consumo dizem muito sobre a saúde do motor. Como ler esses sinais e agir antes da pane."
@@ -149,11 +149,11 @@
     {
       "id": "jovan-sampaio",
       "nome": "Jovan Sampaio",
-      "cargo": "",
-      "empresa": "Volvo Penta",
+      "cargo": "Coordenador",
+      "empresa": "Linck Náutica",
       "foto": "media/palestrantes/jovan-sampaio.jpg",
       "tema": "O motor fala: saiba entender os sinais",
-      "bio": "",
+      "bio": "Profissional com mais de uma década de experiência no setor náutico, atua com motores marítimos Volvo Penta na Linck Náutica, revenda e assistência técnica da marca em Santa Catarina. No dia a dia da oficina e do atendimento a proprietários, acompanha instalação, manutenção e diagnóstico de motores, e é dessa vivência que vem a palestra: ensinar a reconhecer os sinais que o motor dá antes de virar problema.",
       "hora": "13h30 · Tarde"
     }
   ],
@@ -222,7 +222,7 @@
       "id": "palestra-jovan",
       "data": "2026-09-12",
       "titulo": "Primeira palestra confirmada: O motor fala",
-      "texto": "Jovan Sampaio, da Volvo Penta, abre a lista de palestrantes do VI Fórum com \"O motor fala: saiba entender os sinais\", às 13h30. Ruídos, vibração, fumaça, temperatura e consumo dizem muito sobre a saúde do motor, e saber ler esses sinais evita pane e prejuízo.",
+      "texto": "Jovan Sampaio, coordenador da Linck Náutica, especialista em motores Volvo Penta, abre a lista de palestrantes do VI Fórum com \"O motor fala: saiba entender os sinais\", às 13h30. Ruídos, vibração, fumaça, temperatura e consumo dizem muito sobre a saúde do motor, e saber ler esses sinais evita pane e prejuízo.",
       "link": "#/palestrantes",
       "link_label": "Ver palestrante",
       "imagem": "media/palestrantes/jovan-sampaio.jpg"
