@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-12-10",
+  "versao": "2026-09-12-11",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -303,6 +303,14 @@
           "texto": "Projeto do IFSC Câmpus Florianópolis-Continente, desenvolvido em parceria com a ACATMAR, sob o título \"Marina-Escola IFSC Florianópolis-Continente: Sabores e Navegação no Litoral Catarinense\". Integra dois eixos: formação náutica em manutenção, operação e serviços de embarcações, e gastronomia com foco em hospitalidade a bordo e experiências ligadas ao turismo náutico, por meio de cursos de extensão, oficinas e parcerias com empresas do setor.",
           "site": "https://www.ifsc.edu.br/web/campus-florianopolis-continente",
           "instagram": "https://www.instagram.com/ifsc.continente/"
+        },
+        {
+          "nome": "FORTUR · Fórum de Turismo da Grande Florianópolis",
+          "logo": "media/logos/fortur.png",
+          "largura": 230,
+          "texto": "Fórum que reúne as entidades do trade turístico da Grande Florianópolis, entre hotelaria, eventos, gastronomia, transporte e serviços, para atuar como voz coletiva do setor junto ao poder público. Responsável pelo Plano Integrado de Promoção do Turismo da região e pelo portal Destino Floripa, o FORTUR discute temas como turismo de eventos, financiamento do turismo, novos produtos turísticos e a integração entre iniciativa privada e governos. É presidido por Mané Ferrari, com Hamilton Peluso na vice-presidência.",
+          "site": "https://www.destinofloripa.com.br",
+          "instagram": ""
         }
       ]
     }
