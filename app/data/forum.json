@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-12-7",
+  "versao": "2026-09-12-8",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -220,18 +220,18 @@
           "nome": "Prefeitura Municipal de Florianópolis",
           "logo": "media/logos/prefeitura-florianopolis.png",
           "largura": 300,
-          "texto": "Patrocinadora institucional do VI Fórum, a Prefeitura de Florianópolis apoia o encontro como parte do compromisso da capital catarinense com a Economia do Mar. Florianópolis tem no setor náutico, no turismo e na cultura oceânica vetores de desenvolvimento, emprego e renda, e o Fórum reúne na cidade a cadeia produtiva que faz essa economia acontecer.",
+          "texto": "Governo da capital de Santa Catarina, cidade de 42 praias, com mais de 500 mil habitantes e uma das maiores frotas de embarcações de lazer do país. Florianópolis é polo de turismo, tecnologia e inovação, e vem estruturando políticas para a Economia do Mar, com a náutica, a pesca, a maricultura e o turismo náutico entre os eixos de desenvolvimento do município.",
           "site": "https://www.pmf.sc.gov.br",
-          "instagram": "https://www.instagram.com/prefeiturafloripa/",
+          "instagram": "https://www.instagram.com/prefflorianopolis/",
           "institucional": true
         },
         {
           "nome": "Okean Yachts · Ferretti Group",
           "logo": "media/logos/okean.svg",
           "largura": 230,
-          "texto": "Estaleiro catarinense de iates de alto padrão, com sede em Itajaí, ligado ao Ferretti Group. Patrocinadora do VI Fórum, a Okean representa a indústria náutica de Santa Catarina que compete no mercado internacional e demanda mão de obra qualificada, justamente o foco do encontro.",
-          "site": "",
-          "instagram": ""
+          "texto": "Estaleiro brasileiro de iates de luxo fundado em 2015, com fábrica própria de 26 mil m² em Itajaí (SC). Produz a linha OKEAN, com design de Paolo Ferragni e o conceito pioneiro de side decks abertos, e é o único estaleiro do mundo licenciado a fabricar barcos Ferretti Yachts fora da Itália, com cinco modelos produzidos no Brasil. O Grupo OKEAN também administra a Yachtmax, revenda exclusiva de Ferretti Yachts, Riva, Pershing e OKEAN no país.",
+          "site": "https://okeanyachts.com",
+          "instagram": "https://www.instagram.com/okeanyachts/"
         }
       ]
     },
@@ -242,7 +242,7 @@
           "nome": "ACATMAR · Associação Náutica Brasileira",
           "logo": "media/logos/acatmar.png",
           "largura": 230,
-          "texto": "Criada em 2008, a ACATMAR representa a indústria, o comércio, os serviços e o turismo náutico brasileiro. Realiza o Fórum de Capacitação Técnica desde 2014 como ferramenta de qualificação, articulação e governança para toda a cadeia da Economia do Mar.",
+          "texto": "Fundada em 2008 em Florianópolis, a ACATMAR é a entidade que representa a indústria, o comércio, os serviços e o turismo náutico brasileiro. Atua na articulação com governos e o Congresso, na produção de dados sobre a Economia do Mar, em projetos como a Escola do Mar e a Marina Escola, e em eventos técnicos e de negócios para toda a cadeia produtiva.",
           "site": "https://www.acatmar.org",
           "instagram": "https://www.instagram.com/acatmarassociacao/"
         },
@@ -250,9 +250,9 @@
           "nome": "Mundo Mar Consulting",
           "logo": "media/logos/mundo-mar.png",
           "largura": 190,
-          "texto": "Consultoria dedicada à Economia do Mar, correalizadora do Fórum desde a edição de 2025. Atua em projetos, conteúdo e conexões para empresas, instituições e governos que querem crescer com o mar.",
-          "site": "https://www.mundomar.tv",
-          "instagram": ""
+          "texto": "Consultoria especializada no setor náutico e na Economia do Mar, com experiência prática, rede internacional de contatos e resultados em certificações, infraestrutura e desenvolvimento de negócios ligados ao mar. Faz parte do ecossistema Mundo Mar, que reúne também o Mundo Mar TV Show, hub de conteúdo náutico com programas, notícias e cobertura dos principais eventos do setor.",
+          "site": "https://mundomar.tv",
+          "instagram": "https://www.instagram.com/mundomartv/"
         }
       ]
     },
@@ -263,25 +263,25 @@
           "nome": "Iate Clube Veleiros da Ilha",
           "logo": "media/logos/veleiros-da-ilha.png",
           "largura": 130,
-          "texto": "Um dos clubes náuticos mais tradicionais do Brasil, fundado em 1943 em Florianópolis. Referência na vela e na formação de velejadores, o Veleiros da Ilha apoia o VI Fórum e a qualificação de quem trabalha e vive a náutica na Ilha.",
-          "site": "",
-          "instagram": ""
+          "texto": "Fundado em 1943, o Iate Clube de Santa Catarina Veleiros da Ilha é a maior agremiação náutica catarinense e uma das mais importantes do Brasil, com cerca de 700 sócios e 400 embarcações. Tem sede central na Baía Sul, no centro de Florianópolis, e sede em Jurerê, com atividades de vela oceânica, monotipos, pesca, escola de vela e um calendário de regatas e eventos que revelou gerações de velejadores.",
+          "site": "https://icsc.com.br",
+          "instagram": "https://www.instagram.com/icsc_veleirosdailha/"
         },
         {
           "nome": "Safeboat",
           "logo": "media/logos/safeboat.png",
           "largura": 150,
-          "texto": "Tecnologia de manutenção inteligente para embarcações. A Safeboat apresentou no V Fórum como monitoramento e dados a bordo reduzem custos e aumentam a segurança, e volta como apoiadora da sexta edição.",
-          "site": "",
-          "instagram": ""
+          "texto": "Sistema de manutenção inteligente para embarcações criado pela NAVALCARE, escritório de engenharia naval fundado em 2016 pelo engenheiro Marcelo Reis. O hardware SAFEBOAT, instalado a bordo, monitora em tempo real os sistemas críticos do barco e se conecta ao app NAVALCARE Connect, pelo qual o proprietário acompanha o estado da embarcação e aciona manutenções preventivas e corretivas por assinatura.",
+          "site": "https://www.naval.care",
+          "instagram": "https://www.instagram.com/naval.care/"
         },
         {
           "nome": "Personal Boat",
           "logo": "media/logos/personal-boat.png",
           "largura": 150,
-          "texto": "Especializada em vidros para a linha náutica, a Personal Boat fornece para estaleiros e proprietários soluções em para-brisas, janelas e acabamentos em vidro para embarcações.",
-          "site": "",
-          "instagram": ""
+          "texto": "Empresa de Palhoça (SC) especializada em vidros para a linha náutica. Fabrica vidros curvos, temperados e laminados e estruturas de alumínio para para-brisas, janelas laterais e escotilhas, atendendo estaleiros de barcos de lazer, esporte e pesca e proprietários que precisam de reposição sob medida.",
+          "site": "https://personalboat.ind.br",
+          "instagram": "https://www.instagram.com/personal_boat/"
         }
       ]
     },
@@ -292,7 +292,7 @@
           "nome": "IFSC · Câmpus Florianópolis-Continente",
           "logo": "media/logos/ifsc.png",
           "largura": 200,
-          "texto": "Sede do VI Fórum. O Instituto Federal de Santa Catarina forma profissionais para a Economia do Mar e lidera a Rede de Cultura Oceânica, aproximando ensino, pesquisa e o setor produtivo náutico.",
+          "texto": "Câmpus do Instituto Federal de Santa Catarina localizado em Coqueiros, na parte continental de Florianópolis, referência em cursos de gastronomia, hotelaria, turismo, eventos e panificação. O IFSC é uma rede pública federal com 22 câmpus no estado, ensino gratuito do técnico à pós-graduação, e lidera a Rede de Cultura Oceânica, que aproxima escola, pesquisa e o mar.",
           "site": "https://www.ifsc.edu.br/web/campus-florianopolis-continente",
           "instagram": "https://www.instagram.com/ifsc.continente/"
         },
@@ -300,9 +300,9 @@
           "nome": "Marina Escola",
           "logo": "media/logos/marina-escola.png",
           "largura": 190,
-          "texto": "Projeto de marina-escola ligado ao IFSC, concebido para formar mão de obra qualificada para marinas, turismo náutico e serviços embarcados, unindo prática profissional e cultura oceânica.",
-          "site": "",
-          "instagram": ""
+          "texto": "Projeto do IFSC Câmpus Florianópolis-Continente, desenvolvido em parceria com a ACATMAR, sob o título \"Marina-Escola IFSC Florianópolis-Continente: Sabores e Navegação no Litoral Catarinense\". Integra dois eixos: formação náutica em manutenção, operação e serviços de embarcações, e gastronomia com foco em hospitalidade a bordo e experiências ligadas ao turismo náutico, por meio de cursos de extensão, oficinas e parcerias com empresas do setor.",
+          "site": "https://www.ifsc.edu.br/web/campus-florianopolis-continente",
+          "instagram": "https://www.instagram.com/ifsc.continente/"
         }
       ]
     }
