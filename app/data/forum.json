@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-12-23",
+  "versao": "2026-09-12-24",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -269,14 +269,17 @@
         },
         {
           "nome": "Okean Yachts · Ferretti Group",
-          "logo": "media/logos/okean.svg",
+          "logo": "media/logos/okean.png",
           "largura": 230,
           "texto": "Estaleiro brasileiro de iates de luxo fundado em 2015, com fábrica própria de 26 mil m² em Itajaí (SC). Produz a linha OKEAN, com design de Paolo Ferragni e o conceito pioneiro de side decks abertos, e é o único estaleiro do mundo licenciado a fabricar barcos Ferretti Yachts fora da Itália, com cinco modelos produzidos no Brasil. O Grupo OKEAN também administra a Yachtmax, revenda exclusiva de Ferretti Yachts, Riva, Pershing e OKEAN no país.",
           "site": "https://okeanyachts.com",
           "instagram": "https://www.instagram.com/okeanyachts/",
           "escala": 0.9
         }
-      ]
+      ],
+      "logo": "../media/logos/vi-forum-patrocinio.png",
+      "alt": "Prefeitura Municipal de Florianópolis, Okean Yachts · Ferretti Group",
+      "largura": 300
     },
     {
       "cota": "Realização",
@@ -299,7 +302,10 @@
           "instagram": "https://www.instagram.com/mundomartv/",
           "escala": 1
         }
-      ]
+      ],
+      "logo": "../media/logos/vi-forum-realizacao.png",
+      "alt": "ACATMAR · Associação Náutica Brasileira, Mundo Mar Consulting",
+      "largura": 300
     },
     {
       "cota": "Apoio oficial",
@@ -331,7 +337,10 @@
           "instagram": "https://www.instagram.com/personal_boat/",
           "escala": 1
         }
-      ]
+      ],
+      "logo": "../media/logos/vi-forum-apoio.png",
+      "alt": "Iate Clube Veleiros da Ilha, Safeboat, Personal Boat",
+      "largura": 320
     },
     {
       "cota": "Apoio institucional",
@@ -378,7 +387,10 @@
           "instagram": "",
           "escala": 1
         }
-      ]
+      ],
+      "logo": "../media/logos/vi-forum-apoio-institucional.png",
+      "alt": "IFSC · Câmpus Florianópolis-Continente, Marina Escola, FORTUR · Fórum de Turismo da Grande Florianópolis, Capitania dos Portos de Santa Catarina",
+      "largura": 330
     }
   ],
   "patrocinio_cta": {
@@ -510,5 +522,6 @@
       ],
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
-  ]
+  ],
+  "app_min": 21
 }

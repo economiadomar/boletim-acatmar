@@ -1,6 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
+var APP_V=21;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
@@ -18,12 +19,15 @@ function load(){
   if(cached){D=cached;boot();}
   fetch('data/forum.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){
     var changed=!D||D.versao!==j.versao;D=j;LS.set('data',j);
-    if(!cached)boot();else if(changed){render();toast('Conteúdo atualizado');}
+    if(!cached)boot();else if(changed){checkUpdate();render();toast('Conteúdo atualizado');}
     updateBadge();
   }).catch(function(){ if(!D){h('<div class="card"><h3>Sem conexão</h3><p>Abra o app com internet uma vez para baixar o conteúdo do Fórum.</p></div>');} });
 }
 var booted=false;
-function boot(){if(booted)return;booted=true;render();updateBadge();setTimeout(function(){var s=document.getElementById('splash');s.classList.add('off');setTimeout(function(){s.remove();},400);},350);}
+function checkUpdate(){if(D&&D.app_min&&D.app_min>APP_V){var k='forum_reload_'+D.app_min;try{if(sessionStorage.getItem(k))return;sessionStorage.setItem(k,'1');}catch(e){}
+  var p=('serviceWorker' in navigator)?navigator.serviceWorker.getRegistrations().then(function(rs){return Promise.all(rs.map(function(r){return r.update().catch(function(){});}));}):Promise.resolve();
+  p.then(function(){return caches&&caches.keys?caches.keys().then(function(ks){return Promise.all(ks.map(function(x){return caches.delete(x);}));}):null;}).catch(function(){}).then(function(){location.reload();});}}
+function boot(){if(booted)return;booted=true;checkUpdate();render();updateBadge();setTimeout(function(){var s=document.getElementById('splash');s.classList.add('off');setTimeout(function(){s.remove();},400);},350);}
 
 /* ---------- roteamento ---------- */
 var routes={'/':home,'/programacao':programacao,'/palestrantes':palestrantes,'/avisos':avisos,'/aviso':aviso,'/credencial':credencial,'/patrocinadores':patrocinadores,'/local':local,'/interagir':interagir,'/certificado':certificado,'/instalar':instalar,'/sobre':sobre,'/mais':mais,'/anterior':anterior,'/faq':faq,'/credenciamento':credenciamento,'/edicoes':edicoes};
@@ -231,7 +235,7 @@ function mais(){var me=LS.get('me',null);
    +'<div class="menu"><a href="#/palestrantes"><i>🎤</i>Palestrantes</a><a href="#/patrocinadores"><i>🤝</i>Patrocinadores e apoio</a><a href="#/local"><i>📍</i>Local e como chegar</a><a href="#/interagir"><i>💬</i>Interagir e perguntar</a><a href="#/certificado"><i>📜</i>Certificado</a><a href="#/edicoes"><i>📷</i>Edições anteriores (2014 a 2025)</a><a href="#/sobre"><i>⚓</i>Sobre o Fórum</a><a href="#/faq"><i>❓</i>Perguntas frequentes</a><a href="#/instalar"><i>📲</i>Instalar o app</a></div>'
    +'<div class="menu"><a href="#/credenciamento"><i>📷</i>Credenciamento (equipe ACATMAR)</a></div>'
    +'<div class="menu"><a href="'+D.evento.inscricao_url+'" target="_blank" rel="noopener"><i>📝</i>Inscrição gratuita</a><a href="https://www.acatmar.org/" target="_blank" rel="noopener"><i>🌐</i>Site da ACATMAR</a><a href="https://www.acatmar.org/privacidade.html" target="_blank" rel="noopener"><i>🔒</i>Política de Privacidade</a></div>'
-   +'<p class="small muted" style="text-align:center">Seus dados de credencial ficam somente neste aparelho.<br>App oficial · ACATMAR · conteúdo '+esc(D.versao)+' · app v20</p>');}
+   +'<p class="small muted" style="text-align:center">Seus dados de credencial ficam somente neste aparelho.<br>App oficial · ACATMAR · conteúdo '+esc(D.versao)+' · app v21</p>');}
 
 /* ---------- Credenciamento (equipe) ---------- */
 var scan={stream:null,raf:null,last:'',lastT:0};
@@ -346,7 +350,7 @@ function shareApp(){share('App do VI Fórum ACATMAR','Instale o app oficial do V
 document.getElementById('btn-share').addEventListener('click',function(){if(D)shareApp();});
 
 /* ---------- service worker ---------- */
-if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(reg){reg.addEventListener('updatefound',function(){var nw=reg.installing;nw.addEventListener('statechange',function(){if(nw.state==='installed'&&navigator.serviceWorker.controller)toast('Nova versão do app disponível. Feche e abra de novo.');});});}).catch(function(){});});}
+if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(reg){reg.addEventListener('updatefound',function(){var nw=reg.installing;nw.addEventListener('statechange',function(){if(nw.state==='installed'&&navigator.serviceWorker.controller){var t=document.getElementById('toast');t.innerHTML='Nova versão do app disponível. <b style="text-decoration:underline">Atualizar agora</b>';t.hidden=false;t.style.cursor='pointer';t.onclick=function(){location.reload();};clearTimeout(toast._t);}});});}).catch(function(){});});}
 window.addEventListener('appinstalled',function(){toast('App instalado!');document.getElementById('install-banner').hidden=true;});
 setTimeout(maybeBanner,6000);
 document.addEventListener('visibilitychange',function(){if(!document.hidden&&D)fetch('data/forum.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){if(j.versao!==D.versao){D=j;LS.set('data',j);render();updateBadge();toast('Conteúdo atualizado');}}).catch(function(){});});
