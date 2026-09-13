@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-12-20",
+  "versao": "2026-09-12-22",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -127,6 +127,16 @@
       "desc": "Inovação, novas tecnologias, cultura oceânica, marinas e turismo náutico."
     },
     {
+      "id": "jovan",
+      "periodo": "Tarde",
+      "hora": "13:30",
+      "titulo": "O motor fala: saiba entender os sinais",
+      "quem": "Jovan Sampaio · Volvo Penta",
+      "tipo": "palestra",
+      "palestrante": "jovan-sampaio",
+      "desc": "Ruídos, vibração, fumaça, temperatura e consumo dizem muito sobre a saúde do motor. Como ler esses sinais e agir antes da pane."
+    },
+    {
       "id": "encerra",
       "periodo": "Tarde",
       "hora": "18:30",
@@ -143,7 +153,8 @@
       "empresa": "Volvo Penta",
       "foto": "media/palestrantes/jovan-sampaio.jpg",
       "tema": "O motor fala: saiba entender os sinais",
-      "bio": ""
+      "bio": "",
+      "hora": "13h30 · Tarde"
     }
   ],
   "edicao_anterior": {
@@ -211,9 +222,10 @@
       "id": "palestra-jovan",
       "data": "2026-09-12",
       "titulo": "Primeira palestra confirmada: O motor fala",
-      "texto": "Jovan Sampaio, da Volvo Penta, abre a lista de palestrantes do VI Fórum com \"O motor fala: saiba entender os sinais\". Ruídos, vibração, fumaça, temperatura e consumo dizem muito sobre a saúde do motor, e saber ler esses sinais evita pane e prejuízo. Horário será divulgado aqui no app.",
-      "link": "",
-      "link_label": ""
+      "texto": "Jovan Sampaio, da Volvo Penta, abre a lista de palestrantes do VI Fórum com \"O motor fala: saiba entender os sinais\", às 13h30. Ruídos, vibração, fumaça, temperatura e consumo dizem muito sobre a saúde do motor, e saber ler esses sinais evita pane e prejuízo.",
+      "link": "#/palestrantes",
+      "link_label": "Ver palestrante",
+      "imagem": "media/palestrantes/jovan-sampaio.jpg"
     },
     {
       "id": "marina-escola-acordo",
