@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-12-11",
+  "versao": "2026-09-12-12",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -310,6 +310,14 @@
           "largura": 230,
           "texto": "Fórum que reúne as entidades do trade turístico da Grande Florianópolis, entre hotelaria, eventos, gastronomia, transporte e serviços, para atuar como voz coletiva do setor junto ao poder público. Responsável pelo Plano Integrado de Promoção do Turismo da região e pelo portal Destino Floripa, o FORTUR discute temas como turismo de eventos, financiamento do turismo, novos produtos turísticos e a integração entre iniciativa privada e governos. É presidido por Mané Ferrari, com Hamilton Peluso na vice-presidência.",
           "site": "https://www.destinofloripa.com.br",
+          "instagram": ""
+        },
+        {
+          "nome": "Capitania dos Portos de Santa Catarina",
+          "logo": "media/logos/capitania-sc.png",
+          "largura": 110,
+          "texto": "Organização militar da Marinha do Brasil sediada no Estreito, em Florianópolis, com jurisdição sobre as águas que banham todo o litoral catarinense, da divisa com o Paraná à divisa com o Rio Grande do Sul. É a autoridade marítima responsável pela segurança da navegação, pela salvaguarda da vida humana no mar e pela prevenção da poluição hídrica: inscreve e vistoria embarcações, habilita amadores e aquaviários, fiscaliza marinas, clubes e eventos náuticos e orienta o setor sobre as normas da navegação. Fica na mesma rua do IFSC Continente, sede do Fórum.",
+          "site": "https://www.marinha.mil.br/cpsc/",
           "instagram": ""
         }
       ]
