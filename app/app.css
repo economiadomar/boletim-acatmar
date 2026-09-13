@@ -135,9 +135,13 @@ h1,h2,h3{font-family:var(--f-head);text-transform:uppercase;letter-spacing:.02em
 .spons-strip{display:flex;flex-direction:column;gap:14px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 12px}
 .strip-cota>span{display:block;font-family:var(--f-cond);text-transform:uppercase;letter-spacing:.14em;font-size:.7rem;font-weight:600;color:var(--muted);text-align:center;margin-bottom:8px}
 .strip-cota>div{display:flex;flex-wrap:wrap;gap:14px 4%;align-items:center;justify-content:center}
-.strip-cota a{flex:0 0 30%;max-width:30%;display:flex;align-items:center;justify-content:center;height:70px}
+.strip-cota a{display:flex;align-items:center;justify-content:center}
 .strip-cota img{width:auto;height:auto;object-fit:contain}
-.strip-cota:first-child a{flex-basis:46%;max-width:46%;height:80px}
+.strip-grande>div{flex-direction:column;gap:18px}
+.strip-grande a{width:80%;height:96px}
+.strip-medio>div{gap:16px 8%}
+.strip-medio a{flex:0 0 42%;max-width:42%;height:76px}
+.strip-lado a{flex:0 0 30%;max-width:30%;height:70px}
 .spons{text-align:center;padding:18px 16px}
 .spons-logo{display:flex;justify-content:center;margin-bottom:10px}
 .spons-logo img{max-width:100%;height:auto}
