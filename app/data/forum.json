@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-12-17",
+  "versao": "2026-09-12-18",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -20,13 +20,14 @@
       "waze": "https://waze.com/ul?q=IFSC%20Campus%20Florianopolis-Continente%20Rua%20Quatorze%20de%20Julho%20150%20Coqueiros&navigate=yes",
       "apple": "https://maps.apple.com/?q=IFSC+Campus+Florianopolis-Continente+Rua+Quatorze+de+Julho+150+Coqueiros",
       "dicas": [
-        "O câmpus fica em Coqueiros, na parte continental de Florianópolis, a cerca de 10 minutos do centro.",
-        "Chegue com antecedência para o credenciamento, que começa às 8h. Tenha seu QR Code aberto no app.",
-        "Há estacionamento nas ruas do entorno e vagas limitadas no câmpus. Combine caronas pelo grupo do Fórum.",
+        "O Fórum acontece no auditório principal do câmpus. A entrada é pela R. Quatorze de Julho, 150, em Coqueiros, na parte continental de Florianópolis, a cerca de 10 minutos do centro.",
+        "Estacionamento próprio e gratuito dentro do câmpus. As vagas são limitadas, então chegue cedo ou combine carona pelo grupo do Fórum.",
+        "Credenciamento a partir das 8h, na entrada do auditório. Tenha seu QR Code aberto no app.",
         "Linhas de ônibus que passam pela Beira-Mar Continental atendem a região de Coqueiros."
       ],
       "foto": "media/ifsc-continente.jpg",
-      "foto_legenda": "IFSC Câmpus Florianópolis-Continente, em Coqueiros, à beira da Baía Sul. Entrada principal pela R. Quatorze de Julho."
+      "foto_legenda": "IFSC Câmpus Florianópolis-Continente, em Coqueiros, à beira da Baía Sul. Entrada principal pela R. Quatorze de Julho.",
+      "sala": "Auditório principal"
     },
     "inscricao_url": "https://www.acatmar.org/vi-forum-2026.html",
     "site_url": "https://www.acatmar.org/projeto.html?id=vi-forum-acatmar-2026",
