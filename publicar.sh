@@ -29,8 +29,18 @@ python3 build-en.py | sed 's/^/     /'
 python3 - <<'PY'
 import json, xml.dom.minidom, sys
 try:
-    for f in ("noticias.json", "projetos.json", "editions.json"):
+    for f in ("noticias.json", "projetos.json", "editions.json", "app/data/forum.json"):
         json.load(open(f))
+    d = json.load(open("app/data/forum.json"))
+    for k in ("evento", "programacao", "avisos", "patrocinadores", "versao"):
+        assert k in d, "forum.json sem campo " + k
+    import re, subprocess
+    appv = int(re.search(r"var APP_V=(\d+);", open("app/app.js").read()).group(1))
+    assert d.get("app_min", 0) <= appv, f"app_min ({d.get('app_min')}) maior que APP_V do app.js ({appv}): causaria recarga em loop"
+    for js in ("app/app.js", "app/sw.js"):
+        r = subprocess.run(["node", "-e", "new Function(require('fs').readFileSync(process.argv[1],'utf8'))", js], capture_output=True, text=True)
+        assert r.returncode == 0, js + " com erro de sintaxe: " + r.stderr[:300]
+    print("     app do Fórum validado (forum.json, app.js, sw.js)")
     xml.dom.minidom.parse("sitemap.xml")
     print("     conteúdo validado (JSONs e sitemap OK)")
 except Exception as e:
