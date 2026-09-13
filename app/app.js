@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=26;
+var APP_V=27;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
@@ -234,15 +234,18 @@ function androidOpenChrome(){if(isIOS()||isStandalone()||deferredPrompt)return;i
 var CHROME_INTENT='intent://www.acatmar.org/app/#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fwww.acatmar.org%2Fapp%2F;end';
 function installGate(){if(isStandalone())return;try{if(sessionStorage.getItem('forum_gate_off'))return;}catch(e){}
   var old=document.getElementById('gate');if(old)old.remove();var ov=document.getElementById('inapp-ov');if(ov)ov.remove();var co=document.getElementById('ios-coach');if(co)co.remove();var ib=document.getElementById('install-banner');if(ib)ib.hidden=true;
-  var ios=isIOS(),inapp=inAppBrowser(),and=/Android/i.test(navigator.userAgent);var body='',arrow=false;
-  var shareIco='<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-4px"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>';
-  if(ios&&inapp){body='<p>Você abriu pelo '+(/WhatsApp/i.test(navigator.userAgent)?'WhatsApp':'aplicativo')+'. Para instalar, abra no Safari:</p><a class="btn btn-teal btn-block btn-xl" href="x-safari-https://www.acatmar.org/app/">Abrir no Safari</a><p class="small">Se não abrir, toque no ícone da <b>bússola</b> ou nos <b>⋯</b> no canto da tela e escolha <b>"Abrir no Safari"</b>.</p>';}
-  else if(ios){body='<div class="gate-steps"><div><b>1</b><span>Toque em '+shareIco+' <b>Compartilhar</b>, aí embaixo no Safari</span></div><div><b>2</b><span>Toque em <b>"Adicionar à Tela de Início"</b> e confirme</span></div></div>';arrow=true;}
-  else if(and&&deferredPrompt){body='<button class="btn btn-teal btn-block btn-xl" id="gate-inst">Instalar agora</button><p class="small">Um toque. O app aparece junto dos seus outros aplicativos.</p>';}
-  else if(and){body='<a class="btn btn-teal btn-block btn-xl" href="'+CHROME_INTENT+'">Abrir no Chrome e instalar</a><p class="small">No Chrome, toque em <b>Instalar</b>. Se o botão não aparecer, use o menu <b>⋮</b> e "Instalar app".</p>';}
-  else {body='<p>No celular, abra <b>acatmar.org/app</b> no Safari (iPhone) ou no Chrome (Android) para instalar.</p>';}
+  var ios=isIOS(),inapp=inAppBrowser(),and=/Android/i.test(navigator.userAgent);
+  var I_SHARE='<svg viewBox="0 0 24 24" fill="none" stroke="#0a84ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/><polyline points="15.5 6.5 12 3 8.5 6.5"/><line x1="12" y1="3" x2="12" y2="15"/></svg>';
+  var I_PLUS='<svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>';
+  var I_COMPASS='<svg viewBox="0 0 24 24" fill="none" stroke="#0a84ff" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><polygon points="15.5 8.5 13.5 13.5 8.5 15.5 10.5 10.5" fill="#0a84ff" stroke="none"/></svg>';
+  var body='',arrow=false,title='Instale o app';
+  if(ios&&inapp){title='Abra no Safari';body='<a class="btn btn-teal btn-block btn-xl" href="x-safari-https://www.acatmar.org/app/">Abrir no Safari</a><div class="gate-ou">ou toque neste botão do WhatsApp</div><div class="gate-pic">'+I_COMPASS+'</div>';}
+  else if(ios){title='Instale o app';body='<div class="gate-big"><div class="gate-num">1</div><div class="gate-pic">'+I_SHARE+'</div><div class="gate-txt">Toque neste botão<br><small>aí embaixo, no meio</small></div></div><div class="gate-big"><div class="gate-num">2</div><div class="gate-row">'+I_PLUS+'<span>Adicionar à Tela de Início</span></div><div class="gate-txt">Toque nesta opção<br><small>e depois em <b>Adicionar</b></small></div></div>';arrow=true;}
+  else if(and&&deferredPrompt){body='<button class="btn btn-teal btn-block btn-xl" id="gate-inst">Instalar</button>';}
+  else if(and){body='<a class="btn btn-teal btn-block btn-xl" href="'+CHROME_INTENT+'">Instalar</a>';}
+  else {body='<p>Abra <b>acatmar.org/app</b> no celular para instalar.</p>';}
   var g=document.createElement('div');g.id='gate';g.className='gate'+(arrow?' gate-arrow':'');
-  g.innerHTML='<div class="gate-in"><img src="icons/icon-192.png" alt=""><div class="kicker" style="color:var(--teal-b)">VI Fórum ACATMAR · 20 de outubro</div><h2>Instale o app do Fórum</h2>'+body+'<button class="gate-skip" id="gate-skip">Ver o app sem instalar por enquanto</button></div>'+(arrow?'<div class="gate-down">▼</div>':'');
+  g.innerHTML='<div class="gate-in"><img src="icons/icon-192.png" alt=""><h2>'+title+'</h2>'+body+'<button class="gate-skip" id="gate-skip">Agora não</button></div>'+(arrow?'<div class="gate-down">▼</div>':'');
   document.body.appendChild(g);
   document.getElementById('gate-skip').onclick=function(){g.remove();try{sessionStorage.setItem('forum_gate_off','1');}catch(e){}};
   var gi=document.getElementById('gate-inst');if(gi)gi.onclick=function(){deferredPrompt.prompt();deferredPrompt.userChoice.then(function(){g.remove();});};
@@ -274,7 +277,7 @@ function mais(){var me=LS.get('me',null);
    +'<div class="menu"><a href="#/palestrantes"><i>🎤</i>Palestrantes</a><a href="#/patrocinadores"><i>🤝</i>Patrocinadores e apoio</a><a href="#/local"><i>📍</i>Local e como chegar</a><a href="#/interagir"><i>💬</i>Interagir e perguntar</a><a href="#/certificado"><i>📜</i>Certificado</a><a href="#/edicoes"><i>📷</i>Edições anteriores (2014 a 2025)</a><a href="#/sobre"><i>⚓</i>Sobre o Fórum</a><a href="#/faq"><i>❓</i>Perguntas frequentes</a><a href="#/instalar"><i>📲</i>Instalar o app</a></div>'
    +'<div class="menu"><a href="#/credenciamento"><i>📷</i>Credenciamento (equipe ACATMAR)</a></div>'
    +'<div class="menu"><a href="'+D.evento.inscricao_url+'" target="_blank" rel="noopener"><i>📝</i>Inscrição gratuita</a><a href="https://www.acatmar.org/" target="_blank" rel="noopener"><i>🌐</i>Site da ACATMAR</a><a href="https://www.acatmar.org/privacidade.html" target="_blank" rel="noopener"><i>🔒</i>Política de Privacidade</a></div>'
-   +'<p class="small muted" style="text-align:center">Seus dados de credencial ficam somente neste aparelho.<br>App oficial · ACATMAR · conteúdo '+esc(D.versao)+' · app v26</p>');}
+   +'<p class="small muted" style="text-align:center">Seus dados de credencial ficam somente neste aparelho.<br>App oficial · ACATMAR · conteúdo '+esc(D.versao)+' · app v27</p>');}
 
 /* ---------- Credenciamento (equipe) ---------- */
 var scan={stream:null,raf:null,last:'',lastT:0};
