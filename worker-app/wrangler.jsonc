@@ -1,0 +1,8 @@
+{
+  "name": "acatmar-app",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-01",
+  "kv_namespaces": [
+    { "binding": "FORUM_APP", "id": "d1238791c4264c33828440f80667c12a" }
+  ]
+}

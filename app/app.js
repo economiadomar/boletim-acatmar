@@ -1,9 +1,13 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=30;
+var APP_V=31;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
+var API='https://acatmar-app.programamundomar.workers.dev';
+function plataforma(){var u=navigator.userAgent;if(/iPad/.test(u))return 'iPad';if(/iPhone/.test(u))return 'iPhone';if(/Android/.test(u))return 'Android';if(/Macintosh/.test(u))return 'Mac';if(/Windows/.test(u))return 'Windows';return 'Outro';}
+function devId(){var id=LS.get('dev_id',null);if(!id){id='d'+Date.now().toString(36)+Math.random().toString(36).slice(2,8);LS.set('dev_id',id);}return id;}
+function registrar(forcar,extra){try{var agora=Date.now();if(!forcar&&agora-(LS.get('reg_t',0)||0)<43200000)return;var me=LS.get('me',null)||{};var b={id:devId(),plataforma:plataforma(),instalado:isStandalone()||LS.get('instalado',false),nome:me.nome||'',empresa:me.empresa||'',cargo:me.cargo||'',email:me.email||'',fone:me.fone||'',tipo:me.tipo||''};if(extra)for(var k in extra)b[k]=extra[k];LS.set('reg_t',agora);fetch(API+'/registro',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(b),keepalive:true}).catch(function(){});}catch(e){}}
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
 function h(html){if(document.activeElement&&document.activeElement.blur)document.activeElement.blur();view.innerHTML=html;view.scrollTop=0;window.scrollTo(0,0);}
 function toast(m){var t=document.getElementById('toast');t.textContent=m;t.hidden=false;clearTimeout(toast._t);toast._t=setTimeout(function(){t.hidden=true;},2600);}
@@ -30,8 +34,8 @@ function checkUpdate(){if(D&&D.app_min&&D.app_min>APP_V){var k='forum_reload_'+D
 function boot(){if(booted)return;booted=true;checkUpdate();render();updateBadge();setTimeout(installGate,150);setTimeout(function(){var s=document.getElementById('splash');s.classList.add('off');setTimeout(function(){s.remove();},400);},350);}
 
 /* ---------- roteamento ---------- */
-var routes={'/':home,'/programacao':programacao,'/palestrantes':palestrantes,'/avisos':avisos,'/aviso':aviso,'/credencial':credencial,'/patrocinadores':patrocinadores,'/local':local,'/interagir':interagir,'/certificado':certificado,'/instalar':instalar,'/sobre':sobre,'/mais':mais,'/anterior':anterior,'/faq':faq,'/credenciamento':credenciamento,'/edicoes':edicoes,'/inscricao':inscricao};
-var titles={'/programacao':'Programação','/palestrantes':'Palestrantes','/avisos':'Avisos','/aviso':'Aviso','/credencial':'Minha credencial','/patrocinadores':'Patrocinadores','/local':'Local e como chegar','/interagir':'Interagir','/certificado':'Certificado','/instalar':'Instalar o app','/sobre':'Sobre o Fórum','/mais':'Mais','/anterior':'V Fórum (2025)','/faq':'Perguntas frequentes','/credenciamento':'Credenciamento','/edicoes':'Edições anteriores','/inscricao':'Inscrição'};
+var routes={'/':home,'/programacao':programacao,'/palestrantes':palestrantes,'/avisos':avisos,'/aviso':aviso,'/credencial':credencial,'/patrocinadores':patrocinadores,'/local':local,'/interagir':interagir,'/certificado':certificado,'/instalar':instalar,'/sobre':sobre,'/mais':mais,'/anterior':anterior,'/faq':faq,'/credenciamento':credenciamento,'/edicoes':edicoes,'/inscricao':inscricao,'/controle':controle};
+var titles={'/programacao':'Programação','/palestrantes':'Palestrantes','/avisos':'Avisos','/aviso':'Aviso','/credencial':'Minha credencial','/patrocinadores':'Patrocinadores','/local':'Local e como chegar','/interagir':'Interagir','/certificado':'Certificado','/instalar':'Instalar o app','/sobre':'Sobre o Fórum','/mais':'Mais','/anterior':'V Fórum (2025)','/faq':'Perguntas frequentes','/credenciamento':'Credenciamento','/edicoes':'Edições anteriores','/inscricao':'Inscrição','/controle':'Controle do app'};
 var tabsMain=['/','/programacao','/credencial','/avisos','/mais'];
 function route(){var hsh=location.hash.replace(/^#/,'')||'/';var parts=hsh.split('/');var path='/'+(parts[1]||'');var arg=parts[2]||'';return {path:path,arg:arg};}
 function render(){
@@ -129,8 +133,8 @@ function credencial(){
     var m=me||{};var tipos=['Participante','Palestrante','Patrocinador','Imprensa','Estudante','Organização'];
     var storageOk=(function(){try{localStorage.setItem('forum_t','1');localStorage.removeItem('forum_t');return true;}catch(x){return false;}})();
     var aviso=!storageOk?'<div class="notice">⚠️ Este navegador está bloqueando o salvamento (modo privado ou restrição). A credencial não vai ficar guardada. Abra o app pelo ícone instalado ou pelo Safari normal.</div>':(!me&&!isStandalone()?'<div class="notice">💡 Já criou sua credencial antes? Ela fica salva no lugar onde foi criada. Se você a fez no Safari e agora está no app instalado (ou abriu pelo WhatsApp), precisa criar uma vez aqui também. Leva 30 segundos.</div>':'');
-    h(aviso+'<div class="card"><p class="kicker">Sua credencial</p><h3>'+(me?'Editar credencial':'Crie seu QR Code')+'</h3><p class="small muted">Preencha uma vez. Seu QR Code fica salvo neste aparelho e serve para o credenciamento e para trocar contato com outros participantes: quem escanear com a câmera do celular salva você direto na agenda.</p><form id="f-me"><div class="field"><label>Nome completo</label><input name="nome" required autocomplete="name" value="'+esc(m.nome||'')+'"></div><div class="field"><label>Empresa ou instituição</label><input name="empresa" autocomplete="organization" value="'+esc(m.empresa||'')+'"></div><div class="field"><label>Cargo ou função</label><input name="cargo" autocomplete="organization-title" value="'+esc(m.cargo||'')+'"></div><div class="field"><label>E-mail</label><input name="email" type="email" autocomplete="email" value="'+esc(m.email||'')+'"></div><div class="field"><label>WhatsApp</label><input name="fone" type="tel" autocomplete="tel" placeholder="(48) 9 9999-9999" value="'+esc(m.fone||'')+'"></div><div class="field"><label>Perfil</label><select name="tipo">'+tipos.map(function(t){return '<option'+(m.tipo===t?' selected':'')+'>'+t+'</option>';}).join('')+'</select></div><button class="btn btn-teal btn-block" type="submit">'+(me?'Salvar':'Gerar minha credencial')+'</button>'+(me?'<div class="btn-row"><button type="button" class="btn btn-outline btn-sm btn-block" id="me-cancel">Cancelar</button></div>':'')+'</form></div>');
-    document.getElementById('f-me').onsubmit=function(ev){ev.preventDefault();var fd=new FormData(ev.target);var o={};fd.forEach(function(v,k){o[k]=String(v).trim();});LS.set('me',o);credencial._editing=false;if(!LS.get('me',null)){toast('Não foi possível salvar neste navegador.');}credencial();toast(me?'Credencial atualizada':'Credencial criada');};
+    h(aviso+'<div class="card"><p class="kicker">Sua credencial</p><h3>'+(me?'Editar credencial':'Crie seu QR Code')+'</h3><p class="small muted">Preencha uma vez. Seu QR Code fica salvo neste aparelho e serve para o credenciamento e para trocar contato com outros participantes: quem escanear com a câmera do celular salva você direto na agenda. Nome, empresa e contato também ficam com a organização do Fórum, para controle de uso do app.</p><form id="f-me"><div class="field"><label>Nome completo</label><input name="nome" required autocomplete="name" value="'+esc(m.nome||'')+'"></div><div class="field"><label>Empresa ou instituição</label><input name="empresa" autocomplete="organization" value="'+esc(m.empresa||'')+'"></div><div class="field"><label>Cargo ou função</label><input name="cargo" autocomplete="organization-title" value="'+esc(m.cargo||'')+'"></div><div class="field"><label>E-mail</label><input name="email" type="email" autocomplete="email" value="'+esc(m.email||'')+'"></div><div class="field"><label>WhatsApp</label><input name="fone" type="tel" autocomplete="tel" placeholder="(48) 9 9999-9999" value="'+esc(m.fone||'')+'"></div><div class="field"><label>Perfil</label><select name="tipo">'+tipos.map(function(t){return '<option'+(m.tipo===t?' selected':'')+'>'+t+'</option>';}).join('')+'</select></div><button class="btn btn-teal btn-block" type="submit">'+(me?'Salvar':'Gerar minha credencial')+'</button>'+(me?'<div class="btn-row"><button type="button" class="btn btn-outline btn-sm btn-block" id="me-cancel">Cancelar</button></div>':'')+'</form></div>');
+    document.getElementById('f-me').onsubmit=function(ev){ev.preventDefault();var fd=new FormData(ev.target);var o={};fd.forEach(function(v,k){o[k]=String(v).trim();});LS.set('me',o);registrar(true);credencial._editing=false;if(!LS.get('me',null)){toast('Não foi possível salvar neste navegador.');}credencial();toast(me?'Credencial atualizada':'Credencial criada');};
     var mc=document.getElementById('me-cancel');if(mc)mc.onclick=function(){credencial._editing=false;credencial();};
     return;
   }
@@ -276,9 +280,43 @@ function faq(){h(D.faq.map(function(q){return '<details><summary>'+esc(q.p)+'</s
 function mais(){var me=LS.get('me',null);
   h('<a class="card" href="#/credencial" style="display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit"><div class="spk"><div class="av">'+esc(me?me.nome.split(' ').map(function(w){return w[0];}).slice(0,2).join(''):'?')+'</div><div><b>'+esc(me?me.nome:'Crie sua credencial')+'</b><span>'+esc(me?[me.cargo,me.empresa].filter(Boolean).join(' · ')||(me.tipo||''):'Toque para criar seu QR Code')+'</span></div></div><span style="margin-left:auto;font-size:1.6rem;color:#aab7bf">›</span></a>'
    +'<div class="menu"><a href="#/palestrantes"><i>🎤</i>Palestrantes</a><a href="#/patrocinadores"><i>🤝</i>Patrocinadores e apoio</a><a href="#/local"><i>📍</i>Local e como chegar</a><a href="#/interagir"><i>💬</i>Interagir e perguntar</a><a href="#/certificado"><i>📜</i>Certificado</a><a href="#/edicoes"><i>📷</i>Edições anteriores (2014 a 2025)</a><a href="#/sobre"><i>⚓</i>Sobre o Fórum</a><a href="#/faq"><i>❓</i>Perguntas frequentes</a><a href="#/instalar"><i>📲</i>Instalar o app</a></div>'
-   +'<div class="menu"><a href="#/credenciamento"><i>📷</i>Credenciamento (equipe ACATMAR)</a></div>'
+   +'<div class="menu"><a href="#/credenciamento"><i>📷</i>Credenciamento (equipe ACATMAR)</a><a href="#/controle"><i>📊</i>Controle do app (equipe ACATMAR)</a></div>'
    +'<div class="menu"><a href="#/inscricao"><i>📝</i>Inscrição gratuita</a><a href="https://www.acatmar.org/" target="_blank" rel="noopener"><i>🌐</i>Site da ACATMAR</a><a href="https://www.acatmar.org/privacidade.html" target="_blank" rel="noopener"><i>🔒</i>Política de Privacidade</a></div>'
-   +'<p class="small muted" style="text-align:center">Seus dados de credencial ficam somente neste aparelho.<br>App oficial · ACATMAR · conteúdo '+esc(D.versao)+' · app v30</p>');}
+   +'<p class="small muted" style="text-align:center">Sua credencial fica salva neste aparelho. Nome, empresa e contato também ficam com a organização do Fórum.<br>App oficial · ACATMAR · conteúdo '+esc(D.versao)+' · app v31</p>');}
+
+/* ---------- Controle do app (equipe) ---------- */
+function controle(){
+  var pin=LS.get('painel_pin','');
+  if(!pin){
+    h('<div class="card"><p class="kicker">Equipe ACATMAR</p><h3>Controle do app</h3><p class="small muted">Quantas pessoas instalaram e usam o app do Fórum, e quem são. Digite o PIN do painel.</p><form id="f-cpin"><div class="field"><label>PIN do painel</label><input name="pin" type="password" inputmode="numeric" required></div><button class="btn btn-navy btn-block" type="submit">Entrar</button></form></div>');
+    document.getElementById('f-cpin').onsubmit=function(ev){ev.preventDefault();LS.set('painel_pin',ev.target.pin.value.trim());controle();};
+    return;
+  }
+  h('<div class="card"><p class="small muted" style="margin:0">Carregando os dados...</p></div>');
+  fetch(API+'/resumo?pin='+encodeURIComponent(pin),{cache:'no-store'}).then(function(r){
+    if(r.status===403){LS.set('painel_pin','');toast('PIN incorreto');controle();return null;}
+    return r.json();
+  }).then(function(j){
+    if(!j)return;
+    var l=j.lista||[];
+    var linhas=l.map(function(r){
+      var quando=(r.primeiro||'').slice(0,10).split('-').reverse().join('/');
+      var sub=[r.cargo,r.empresa].filter(Boolean).join(' · ')||r.tipo||'sem identificação';
+      var marcas=[r.instalado?'instalado':'navegador',r.plataforma,r.cidade].filter(Boolean).join(' · ');
+      return '<div class="card" style="padding:12px"><b>'+esc(r.nome||'(não identificado)')+'</b><div class="small muted">'+esc(sub)+'</div><div class="small muted">'+esc(marcas)+' · '+esc(quando)+' · '+r.aberturas+(r.aberturas===1?' abertura':' aberturas')+'</div>'+((r.email||r.fone)?'<div class="small">'+esc([r.email,r.fone].filter(Boolean).join(' · '))+'</div>':'')+'</div>';
+    }).join('');
+    h('<div class="kpis" style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">'
+      +'<div class="card" style="text-align:center;padding:14px 6px"><b style="font-size:1.7rem;display:block">'+j.total+'</b><span class="small muted">aparelhos</span></div>'
+      +'<div class="card" style="text-align:center;padding:14px 6px"><b style="font-size:1.7rem;display:block">'+j.instalados+'</b><span class="small muted">instalados</span></div>'
+      +'<div class="card" style="text-align:center;padding:14px 6px"><b style="font-size:1.7rem;display:block">'+j.identificados+'</b><span class="small muted">identificados</span></div></div>'
+      +'<div class="btn-row" style="margin:12px 0"><a class="btn btn-teal btn-sm" href="'+API+'/csv?pin='+encodeURIComponent(pin)+'" target="_blank" rel="noopener">Baixar planilha</a><button class="btn btn-outline btn-sm" id="c-reload">Atualizar</button><button class="btn btn-outline btn-sm" id="c-sair">Sair</button></div>'
+      +'<div class="section-h"><h2>Quem está no app</h2></div>'
+      +(linhas||'<div class="card"><p class="small muted" style="margin:0">Ninguém registrado ainda.</p></div>')
+      +'<p class="small muted" style="text-align:center;margin-top:14px">"Aparelhos" conta celulares e navegadores diferentes. "Instalados" são os que adicionaram o app à tela inicial. Quem ainda não criou a credencial aparece sem nome.</p>');
+    document.getElementById('c-reload').onclick=function(){controle();};
+    document.getElementById('c-sair').onclick=function(){LS.set('painel_pin','');controle();};
+  }).catch(function(){h('<div class="card"><p class="small">Não foi possível carregar agora. Verifique a conexão e tente de novo.</p><div class="btn-row"><button class="btn btn-navy btn-sm" id="c-retry">Tentar de novo</button></div></div>');var b=document.getElementById('c-retry');if(b)b.onclick=function(){controle();};});
+}
 
 /* ---------- Credenciamento (equipe) ---------- */
 var scan={stream:null,raf:null,last:'',lastT:0};
@@ -408,9 +446,10 @@ document.getElementById('btn-share').addEventListener('click',function(){if(!D)r
 
 /* ---------- service worker ---------- */
 if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(reg){reg.addEventListener('updatefound',function(){var nw=reg.installing;nw.addEventListener('statechange',function(){if(nw.state==='installed'&&navigator.serviceWorker.controller){var t=document.getElementById('toast');t.innerHTML='Nova versão do app disponível. <b style="text-decoration:underline">Atualizar agora</b>';t.hidden=false;t.style.cursor='pointer';t.onclick=function(){location.reload();};clearTimeout(toast._t);}});});}).catch(function(){});});}
-window.addEventListener('appinstalled',function(){toast('App instalado!');document.getElementById('install-banner').hidden=true;});
+window.addEventListener('appinstalled',function(){toast('App instalado!');LS.set('instalado',true);registrar(true,{instalado:true});document.getElementById('install-banner').hidden=true;});
 
 document.addEventListener('visibilitychange',function(){if(!document.hidden&&D)fetch('data/forum.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){if(j.versao!==D.versao){D=j;LS.set('data',j);render();updateBadge();toast('Conteúdo atualizado');}}).catch(function(){});});
 
 load();
+try{setTimeout(function(){registrar(false);},2500);}catch(e){}
 })();
