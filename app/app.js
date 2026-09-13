@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=23;
+var APP_V=24;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
@@ -226,7 +226,7 @@ function maybeBanner(){if(isStandalone()||LS.get('banner_off',false))return;var 
   document.getElementById('ib-install').onclick=function(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt.userChoice.then(function(){b.hidden=true;deferredPrompt=null;});}else{location.hash='#/instalar';b.hidden=true;}};
   document.getElementById('ib-close').onclick=function(){b.hidden=true;LS.set('banner_off',true);};}
 function instalar(){
-  var ios='<div class="steps"><div><span>Abra este endereço no <b>Safari</b> (no iPhone, só o Safari instala apps da web): <b>acatmar.org/app</b></span></div><div><span>Toque no botão <b>Compartilhar</b> (o quadrado com a seta para cima, na barra inferior).</span></div><div><span>Role e toque em <b>"Adicionar à Tela de Início"</b>.</span></div><div><span>Confirme em <b>Adicionar</b>. O ícone do Fórum aparece na sua tela inicial.</span></div></div>';
+  var ios='<div class="steps"><div><span>Abra este endereço no <b>Safari</b> (no iPhone, só o Safari instala apps da web): <b>acatmar.org/app</b></span></div><div><span>Toque no botão <b>Compartilhar do Safari</b>: o quadrado com a seta para cima, na <b>barra de baixo</b> do navegador. Atenção: não é o botão dentro do app, é o do Safari.</span></div><div><span>Role e toque em <b>"Adicionar à Tela de Início"</b>.</span></div><div><span>Confirme em <b>Adicionar</b>. O ícone do Fórum aparece na sua tela inicial.</span></div></div>';
   var and='<div class="steps"><div><span>Abra <b>acatmar.org/app</b> no <b>Chrome</b>.</span></div><div><span>Toque em <b>Instalar</b> no aviso que aparece, ou no menu ⋮ escolha <b>"Instalar app"</b> / <b>"Adicionar à tela inicial"</b>.</span></div><div><span>Confirme. O app do Fórum aparece junto dos seus outros apps.</span></div></div>';
   h((isStandalone()?'<div class="ok-box" style="margin-bottom:14px">✅ O app já está instalado neste aparelho.</div>':'')
    +(deferredPrompt?'<div class="card" style="text-align:center"><h3>Instalar agora</h3><p class="small muted">Seu celular permite instalar em um toque.</p><button class="btn btn-teal btn-block" id="btn-inst">Instalar o app</button></div>':'')
@@ -248,7 +248,7 @@ function mais(){var me=LS.get('me',null);
    +'<div class="menu"><a href="#/palestrantes"><i>🎤</i>Palestrantes</a><a href="#/patrocinadores"><i>🤝</i>Patrocinadores e apoio</a><a href="#/local"><i>📍</i>Local e como chegar</a><a href="#/interagir"><i>💬</i>Interagir e perguntar</a><a href="#/certificado"><i>📜</i>Certificado</a><a href="#/edicoes"><i>📷</i>Edições anteriores (2014 a 2025)</a><a href="#/sobre"><i>⚓</i>Sobre o Fórum</a><a href="#/faq"><i>❓</i>Perguntas frequentes</a><a href="#/instalar"><i>📲</i>Instalar o app</a></div>'
    +'<div class="menu"><a href="#/credenciamento"><i>📷</i>Credenciamento (equipe ACATMAR)</a></div>'
    +'<div class="menu"><a href="'+D.evento.inscricao_url+'" target="_blank" rel="noopener"><i>📝</i>Inscrição gratuita</a><a href="https://www.acatmar.org/" target="_blank" rel="noopener"><i>🌐</i>Site da ACATMAR</a><a href="https://www.acatmar.org/privacidade.html" target="_blank" rel="noopener"><i>🔒</i>Política de Privacidade</a></div>'
-   +'<p class="small muted" style="text-align:center">Seus dados de credencial ficam somente neste aparelho.<br>App oficial · ACATMAR · conteúdo '+esc(D.versao)+' · app v23</p>');}
+   +'<p class="small muted" style="text-align:center">Seus dados de credencial ficam somente neste aparelho.<br>App oficial · ACATMAR · conteúdo '+esc(D.versao)+' · app v24</p>');}
 
 /* ---------- Credenciamento (equipe) ---------- */
 var scan={stream:null,raf:null,last:'',lastT:0};
@@ -360,7 +360,8 @@ function edicoes(){
 /* ---------- compartilhar ---------- */
 function share(title,text,url){if(navigator.share){navigator.share({title:title,text:text,url:url}).catch(function(){});}else{var s=text+(url?'\n'+url:'');(navigator.clipboard?navigator.clipboard.writeText(s):Promise.reject()).then(function(){toast('Copiado');},function(){prompt('Copie:',s);});}}
 function shareApp(){share('App do VI Fórum ACATMAR','Instale o app oficial do VI Fórum de Capacitação Técnica ACATMAR: programação, avisos, credencial com QR Code e certificado.',D.evento.app_url);}
-document.getElementById('btn-share').addEventListener('click',function(){if(D)shareApp();});
+document.getElementById('btn-share').addEventListener('click',function(){if(!D)return;if(!isStandalone()){location.hash='#/instalar';}else shareApp();});
+(function(){if(!isStandalone()){var b=document.getElementById('btn-share');b.innerHTML='<span style="font-family:var(--f-cond);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.8rem;padding:0 4px">Instalar</span>';b.style.width='auto';b.style.padding='0 10px';b.style.background='var(--teal)';b.setAttribute('aria-label','Instalar o app');b.title='Instalar o app';}})();
 
 /* ---------- service worker ---------- */
 if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(reg){reg.addEventListener('updatefound',function(){var nw=reg.installing;nw.addEventListener('statechange',function(){if(nw.state==='installed'&&navigator.serviceWorker.controller){var t=document.getElementById('toast');t.innerHTML='Nova versão do app disponível. <b style="text-decoration:underline">Atualizar agora</b>';t.hidden=false;t.style.cursor='pointer';t.onclick=function(){location.reload();};clearTimeout(toast._t);}});});}).catch(function(){});});}
