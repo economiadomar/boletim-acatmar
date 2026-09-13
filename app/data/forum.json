@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-12-12",
+  "versao": "2026-09-12-13",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -223,7 +223,8 @@
           "texto": "Governo da capital de Santa Catarina, cidade de 42 praias, com mais de 500 mil habitantes e uma das maiores frotas de embarcações de lazer do país. Florianópolis é polo de turismo, tecnologia e inovação, e vem estruturando políticas para a Economia do Mar, com a náutica, a pesca, a maricultura e o turismo náutico entre os eixos de desenvolvimento do município.",
           "site": "https://www.pmf.sc.gov.br",
           "instagram": "https://www.instagram.com/prefflorianopolis/",
-          "institucional": true
+          "institucional": true,
+          "escala": 1
         },
         {
           "nome": "Okean Yachts · Ferretti Group",
@@ -231,7 +232,8 @@
           "largura": 230,
           "texto": "Estaleiro brasileiro de iates de luxo fundado em 2015, com fábrica própria de 26 mil m² em Itajaí (SC). Produz a linha OKEAN, com design de Paolo Ferragni e o conceito pioneiro de side decks abertos, e é o único estaleiro do mundo licenciado a fabricar barcos Ferretti Yachts fora da Itália, com cinco modelos produzidos no Brasil. O Grupo OKEAN também administra a Yachtmax, revenda exclusiva de Ferretti Yachts, Riva, Pershing e OKEAN no país.",
           "site": "https://okeanyachts.com",
-          "instagram": "https://www.instagram.com/okeanyachts/"
+          "instagram": "https://www.instagram.com/okeanyachts/",
+          "escala": 0.8
         }
       ]
     },
@@ -244,7 +246,8 @@
           "largura": 230,
           "texto": "Fundada em 2008 em Florianópolis, a ACATMAR é a entidade que representa a indústria, o comércio, os serviços e o turismo náutico brasileiro. Atua na articulação com governos e o Congresso, na produção de dados sobre a Economia do Mar, em projetos como a Escola do Mar e a Marina Escola, e em eventos técnicos e de negócios para toda a cadeia produtiva.",
           "site": "https://www.acatmar.org",
-          "instagram": "https://www.instagram.com/acatmarassociacao/"
+          "instagram": "https://www.instagram.com/acatmarassociacao/",
+          "escala": 1
         },
         {
           "nome": "Mundo Mar Consulting",
@@ -252,7 +255,8 @@
           "largura": 190,
           "texto": "Consultoria especializada no setor náutico e na Economia do Mar, com experiência prática, rede internacional de contatos e resultados em certificações, infraestrutura e desenvolvimento de negócios ligados ao mar. Faz parte do ecossistema Mundo Mar, que reúne também o Mundo Mar TV Show, hub de conteúdo náutico com programas, notícias e cobertura dos principais eventos do setor.",
           "site": "https://mundomar.tv",
-          "instagram": "https://www.instagram.com/mundomartv/"
+          "instagram": "https://www.instagram.com/mundomartv/",
+          "escala": 0.85
         }
       ]
     },
@@ -265,7 +269,8 @@
           "largura": 150,
           "texto": "Fundado em 1943, o Iate Clube de Santa Catarina Veleiros da Ilha é a maior agremiação náutica catarinense e uma das mais importantes do Brasil, com cerca de 700 sócios e 400 embarcações. Tem sede central na Baía Sul, no centro de Florianópolis, e sede em Jurerê, com atividades de vela oceânica, monotipos, pesca, escola de vela e um calendário de regatas e eventos que revelou gerações de velejadores.",
           "site": "https://icsc.com.br",
-          "instagram": "https://www.instagram.com/icsc_veleirosdailha/"
+          "instagram": "https://www.instagram.com/icsc_veleirosdailha/",
+          "escala": 0.95
         },
         {
           "nome": "Safeboat",
@@ -273,7 +278,8 @@
           "largura": 200,
           "texto": "Sistema de manutenção inteligente para embarcações criado pela NAVALCARE, escritório de engenharia naval fundado em 2016 pelo engenheiro Marcelo Reis. O hardware SAFEBOAT, instalado a bordo, monitora em tempo real os sistemas críticos do barco e se conecta ao app NAVALCARE Connect, pelo qual o proprietário acompanha o estado da embarcação e aciona manutenções preventivas e corretivas por assinatura.",
           "site": "https://www.naval.care",
-          "instagram": "https://www.instagram.com/naval.care/"
+          "instagram": "https://www.instagram.com/naval.care/",
+          "escala": 0.9
         },
         {
           "nome": "Personal Boat",
@@ -281,7 +287,8 @@
           "largura": 170,
           "texto": "Empresa de Palhoça (SC) especializada em vidros para a linha náutica. Fabrica vidros curvos, temperados e laminados e estruturas de alumínio para para-brisas, janelas laterais e escotilhas, atendendo estaleiros de barcos de lazer, esporte e pesca e proprietários que precisam de reposição sob medida.",
           "site": "https://personalboat.ind.br",
-          "instagram": "https://www.instagram.com/personal_boat/"
+          "instagram": "https://www.instagram.com/personal_boat/",
+          "escala": 1
         }
       ]
     },
@@ -294,7 +301,8 @@
           "largura": 200,
           "texto": "Câmpus do Instituto Federal de Santa Catarina localizado em Coqueiros, na parte continental de Florianópolis, referência em cursos de gastronomia, hotelaria, turismo, eventos e panificação. O IFSC é uma rede pública federal com 22 câmpus no estado, ensino gratuito do técnico à pós-graduação, e lidera a Rede de Cultura Oceânica, que aproxima escola, pesquisa e o mar.",
           "site": "https://www.ifsc.edu.br/web/campus-florianopolis-continente",
-          "instagram": "https://www.instagram.com/ifsc.continente/"
+          "instagram": "https://www.instagram.com/ifsc.continente/",
+          "escala": 1
         },
         {
           "nome": "Marina Escola",
@@ -302,7 +310,8 @@
           "largura": 190,
           "texto": "Projeto do IFSC Câmpus Florianópolis-Continente, desenvolvido em parceria com a ACATMAR, sob o título \"Marina-Escola IFSC Florianópolis-Continente: Sabores e Navegação no Litoral Catarinense\". Integra dois eixos: formação náutica em manutenção, operação e serviços de embarcações, e gastronomia com foco em hospitalidade a bordo e experiências ligadas ao turismo náutico, por meio de cursos de extensão, oficinas e parcerias com empresas do setor.",
           "site": "https://www.ifsc.edu.br/web/campus-florianopolis-continente",
-          "instagram": "https://www.instagram.com/ifsc.continente/"
+          "instagram": "https://www.instagram.com/ifsc.continente/",
+          "escala": 0.9
         },
         {
           "nome": "FORTUR · Fórum de Turismo da Grande Florianópolis",
@@ -310,7 +319,8 @@
           "largura": 230,
           "texto": "Fórum que reúne as entidades do trade turístico da Grande Florianópolis, entre hotelaria, eventos, gastronomia, transporte e serviços, para atuar como voz coletiva do setor junto ao poder público. Responsável pelo Plano Integrado de Promoção do Turismo da região e pelo portal Destino Floripa, o FORTUR discute temas como turismo de eventos, financiamento do turismo, novos produtos turísticos e a integração entre iniciativa privada e governos. É presidido por Mané Ferrari, com Hamilton Peluso na vice-presidência.",
           "site": "https://www.destinofloripa.com.br",
-          "instagram": ""
+          "instagram": "",
+          "escala": 1
         },
         {
           "nome": "Capitania dos Portos de Santa Catarina",
@@ -318,7 +328,8 @@
           "largura": 110,
           "texto": "Organização militar da Marinha do Brasil sediada no Estreito, em Florianópolis, com jurisdição sobre as águas que banham todo o litoral catarinense, da divisa com o Paraná à divisa com o Rio Grande do Sul. É a autoridade marítima responsável pela segurança da navegação, pela salvaguarda da vida humana no mar e pela prevenção da poluição hídrica: inscreve e vistoria embarcações, habilita amadores e aquaviários, fiscaliza marinas, clubes e eventos náuticos e orienta o setor sobre as normas da navegação. Fica na mesma rua do IFSC Continente, sede do Fórum.",
           "site": "https://www.marinha.mil.br/cpsc/",
-          "instagram": ""
+          "instagram": "",
+          "escala": 0.85
         }
       ]
     }
