@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-12-16",
+  "versao": "2026-09-12-17",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -24,7 +24,9 @@
         "Chegue com antecedência para o credenciamento, que começa às 8h. Tenha seu QR Code aberto no app.",
         "Há estacionamento nas ruas do entorno e vagas limitadas no câmpus. Combine caronas pelo grupo do Fórum.",
         "Linhas de ônibus que passam pela Beira-Mar Continental atendem a região de Coqueiros."
-      ]
+      ],
+      "foto": "media/ifsc-continente.jpg",
+      "foto_legenda": "IFSC Câmpus Florianópolis-Continente, em Coqueiros, à beira da Baía Sul. Entrada principal pela R. Quatorze de Julho."
     },
     "inscricao_url": "https://www.acatmar.org/vi-forum-2026.html",
     "site_url": "https://www.acatmar.org/projeto.html?id=vi-forum-acatmar-2026",
