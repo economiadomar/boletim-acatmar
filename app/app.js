@@ -53,7 +53,7 @@ function home(){
   else cd='<div class="tag" style="background:var(--teal);color:#fff;margin-top:12px">Edição realizada. Obrigado por participar!</div>';
   var unread=unreadAvisos();
   var av=D.avisos.slice(0,2).map(avisoCard).join('');
-  var spons=D.patrocinadores.map(function(c,i){var modo=i===0?'grande':(i===1?'medio':'lado');return '<div class="strip-cota strip-'+modo+'"><span>'+esc(c.cota)+'</span><div>'+c.empresas.map(function(p){var sc=Math.round((p.escala||1)*100);return '<a href="#/patrocinadores">'+(p.logo?'<img src="'+p.logo+'" alt="'+esc(p.nome)+'" style="max-height:'+sc+'%;max-width:'+sc+'%">':'<span class="logo-txt logo-txt-sm">'+esc(p.nome)+'</span>')+'</a>';}).join('')+'</div></div>';}).join('');
+  var spons=D.patrocinadores.map(function(c,i){var modo=i===0?'grande':(i===1?'medio':(c.cota==='Apoio institucional'?'duplo':'lado'));return '<div class="strip-cota strip-'+modo+'"><span>'+esc(c.cota)+'</span><div>'+c.empresas.map(function(p){var sc=Math.round((p.escala||1)*100);return '<a href="#/patrocinadores">'+(p.logo?'<img src="'+p.logo+'" alt="'+esc(p.nome)+'" style="max-height:'+sc+'%;max-width:'+sc+'%">':'<span class="logo-txt logo-txt-sm">'+esc(p.nome)+'</span>')+'</a>';}).join('')+'</div></div>';}).join('');
   var regBtn=st==='antes'?'<a class="btn btn-teal btn-block" href="'+e.inscricao_url+'" target="_blank" rel="noopener">Inscrição gratuita</a>':'';
   h('<section class="hero"><div class="hero-top"><img src="media/emblema-v2.jpg" alt="VI Fórum ACATMAR"><div><p class="kicker">'+esc(e.edicao)+' · '+esc(e.mote)+'</p><h1>'+esc(e.nome)+'</h1></div></div><div class="hero-in"><p>'+esc(e.data_texto)+' · '+esc(e.horario_texto)+'</p>'+cd+'</div></section>'
    +'<div class="quick"><a href="#/programacao"><i>🗓️</i>Programação</a><a href="#/local"><i>📍</i>Local</a><a href="#/credencial"><i>🎫</i>Credencial</a><a href="#/interagir"><i>💬</i>Interagir</a></div>'
@@ -223,7 +223,7 @@ function mais(){var me=LS.get('me',null);
    +'<div class="menu"><a href="#/palestrantes"><i>🎤</i>Palestrantes</a><a href="#/patrocinadores"><i>🤝</i>Patrocinadores e apoio</a><a href="#/local"><i>📍</i>Local e como chegar</a><a href="#/interagir"><i>💬</i>Interagir e perguntar</a><a href="#/certificado"><i>📜</i>Certificado</a><a href="#/anterior"><i>📷</i>V Fórum (2025)</a><a href="#/sobre"><i>⚓</i>Sobre o Fórum</a><a href="#/faq"><i>❓</i>Perguntas frequentes</a><a href="#/instalar"><i>📲</i>Instalar o app</a></div>'
    +'<div class="menu"><a href="#/credenciamento"><i>📷</i>Credenciamento (equipe ACATMAR)</a></div>'
    +'<div class="menu"><a href="'+D.evento.inscricao_url+'" target="_blank" rel="noopener"><i>📝</i>Inscrição gratuita</a><a href="https://www.acatmar.org/" target="_blank" rel="noopener"><i>🌐</i>Site da ACATMAR</a><a href="https://www.acatmar.org/privacidade.html" target="_blank" rel="noopener"><i>🔒</i>Política de Privacidade</a></div>'
-   +'<p class="small muted" style="text-align:center">Seus dados de credencial ficam somente neste aparelho.<br>App oficial · ACATMAR · conteúdo '+esc(D.versao)+' · app v13</p>');}
+   +'<p class="small muted" style="text-align:center">Seus dados de credencial ficam somente neste aparelho.<br>App oficial · ACATMAR · conteúdo '+esc(D.versao)+' · app v14</p>');}
 
 /* ---------- Credenciamento (equipe) ---------- */
 var scan={stream:null,raf:null,last:'',lastT:0};

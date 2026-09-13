@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-12-14",
+  "versao": "2026-09-12-15",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -311,7 +311,7 @@
           "texto": "Projeto do IFSC Câmpus Florianópolis-Continente, desenvolvido em parceria com a ACATMAR, sob o título \"Marina-Escola IFSC Florianópolis-Continente: Sabores e Navegação no Litoral Catarinense\". Integra dois eixos: formação náutica em manutenção, operação e serviços de embarcações, e gastronomia com foco em hospitalidade a bordo e experiências ligadas ao turismo náutico, por meio de cursos de extensão, oficinas e parcerias com empresas do setor.",
           "site": "https://www.ifsc.edu.br/web/campus-florianopolis-continente",
           "instagram": "https://www.instagram.com/ifsc.continente/",
-          "escala": 0.9
+          "escala": 1
         },
         {
           "nome": "FORTUR · Fórum de Turismo da Grande Florianópolis",
@@ -329,7 +329,7 @@
           "texto": "Organização militar da Marinha do Brasil sediada no Estreito, em Florianópolis, com jurisdição sobre as águas que banham todo o litoral catarinense, da divisa com o Paraná à divisa com o Rio Grande do Sul. É a autoridade marítima responsável pela segurança da navegação, pela salvaguarda da vida humana no mar e pela prevenção da poluição hídrica: inscreve e vistoria embarcações, habilita amadores e aquaviários, fiscaliza marinas, clubes e eventos náuticos e orienta o setor sobre as normas da navegação. Fica na mesma rua do IFSC Continente, sede do Fórum.",
           "site": "https://www.marinha.mil.br/cpsc/",
           "instagram": "",
-          "escala": 0.85
+          "escala": 1
         }
       ]
     }
