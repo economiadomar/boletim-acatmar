@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-13-6",
+  "versao": "2026-09-14-1",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -175,6 +175,16 @@
       "tema": "Estrutura de resgate do CBMSC no litoral de Santa Catarina",
       "hora": "11h30 · Manhã",
       "bio": "Sargento do Corpo de Bombeiros Militar de Santa Catarina, integra o Batalhão de Operações Aéreas, unidade responsável pelas operações com aeronaves do CBMSC em resgates, salvamentos e apoio às guarnições em todo o estado."
+    },
+    {
+      "id": "deivity-rosa",
+      "nome": "Deivity Rosa",
+      "cargo": "Diretor",
+      "empresa": "Personal Boat",
+      "foto": "media/palestrantes/deivity-rosa.jpg",
+      "tema": "Vidro não é tudo igual",
+      "instagram": "https://www.instagram.com/personal_boat/",
+      "bio": "Atua no setor de vidros desde 2011, com experiência em produção, gestão e aplicação de vidros de segurança. Técnico em Edificações pelo IFSC e engenheiro de produção, assumiu em 2015 a gestão da linha náutica e, em 2016, foi um dos criadores da Personal Boat. Hoje, como sócio e diretor da empresa, é especialista em vidros aplicados a embarcações, com foco em especificação, desempenho e conservação."
     }
   ],
   "edicao_anterior": {
@@ -238,6 +248,15 @@
     ]
   },
   "avisos": [
+    {
+      "id": "palestra-deivity",
+      "data": "2026-09-14",
+      "titulo": "Nova palestra: Vidro não é tudo igual",
+      "texto": "Deivity Rosa, diretor da Personal Boat, mostra por que o vidro de uma embarcação não é um vidro qualquer: especificação, desempenho e conservação de vidros de segurança na náutica. Ele está no setor desde 2011 e foi um dos criadores da Personal Boat, em 2016. O horário entra na programação assim que for definido.",
+      "imagem": "media/palestrantes/deivity-rosa.jpg",
+      "link": "#/palestrantes",
+      "link_label": "Ver palestrante"
+    },
     {
       "id": "palestra-gianotti",
       "data": "2026-09-13",
