@@ -26,6 +26,8 @@ def main():
         aviso = aviso.replace('aqui no app', 'no app do Fórum').replace('aqui no aplicativo', 'no app do Fórum')
         out.append('<p class="agenda-aviso" data-en="Preliminary program. Talks and speakers are confirmed first-hand in the Forum app.">'+e(aviso)+'</p>')
 
+    porid = {s.get('id'): s for s in spks if s.get('id')}
+
     periodo = None
     for it in prog:
         p = it.get('periodo')
@@ -34,8 +36,16 @@ def main():
             out.append('<div class="ag-per"><span data-en="'+e(PERIODO_EN.get(p, p))+'">'+e(p)+'</span></div>')
         cls = ' ag-' + e(it.get('tipo') or 'org')
         desc = '<span class="ag-desc">'+e(it['desc'])+'</span>' if it.get('desc') else ''
-        out.append('<div class="ag-item'+cls+'"><div class="ag-hora">'+e(it.get('hora'))+'</div>'
-                   '<div class="ag-txt"><b>'+ICONE.get(it.get('tipo'), '•')+' '+e(it.get('titulo'))+'</b>'
+        # palestra com palestrante confirmado leva a foto redonda no lugar do icone
+        s = porid.get(it.get('palestrante'))
+        if s and s.get('foto'):
+            rosto = ('<img class="ag-item-foto" loading="lazy" src="app/'+e(s['foto'])+'" alt="'+e(s.get('nome'))+'">')
+            marca = ''
+        else:
+            rosto = ''
+            marca = ICONE.get(it.get('tipo'), '•') + ' '
+        out.append('<div class="ag-item'+cls+'"><div class="ag-hora">'+e(it.get('hora'))+'</div>'+rosto+
+                   '<div class="ag-txt"><b>'+marca+e(it.get('titulo'))+'</b>'
                    '<span class="ag-quem">'+e(it.get('quem'))+'</span>'+desc+'</div></div>')
 
     if spks:
