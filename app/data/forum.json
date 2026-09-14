@@ -147,6 +147,16 @@
       "desc": "Ruídos, vibração, fumaça, temperatura e consumo dizem muito sobre a saúde do motor. Como ler esses sinais e agir antes da pane."
     },
     {
+      "id": "deivity",
+      "periodo": "Tarde",
+      "hora": "14:30",
+      "titulo": "Vidro não é tudo igual",
+      "quem": "Deivity Rosa · Personal Boat",
+      "tipo": "palestra",
+      "palestrante": "deivity-rosa",
+      "desc": "Os tipos de vidro aplicados a embarcações, o que muda em segurança, desempenho e durabilidade, e como especificar e conservar o vidro do seu barco."
+    },
+    {
       "id": "encerra",
       "periodo": "Tarde",
       "hora": "18:30",
@@ -184,7 +194,8 @@
       "foto": "media/palestrantes/deivity-rosa.jpg",
       "tema": "Vidro não é tudo igual",
       "instagram": "https://www.instagram.com/personal_boat/",
-      "bio": "Atua no setor de vidros desde 2011, com experiência em produção, gestão e aplicação de vidros de segurança. Técnico em Edificações pelo IFSC e engenheiro de produção, assumiu em 2015 a gestão da linha náutica e, em 2016, foi um dos criadores da Personal Boat. Hoje, como sócio e diretor da empresa, é especialista em vidros aplicados a embarcações, com foco em especificação, desempenho e conservação."
+      "bio": "Atua no setor de vidros desde 2011, com experiência em produção, gestão e aplicação de vidros de segurança. Técnico em Edificações pelo IFSC e engenheiro de produção, assumiu em 2015 a gestão da linha náutica e, em 2016, foi um dos criadores da Personal Boat. Hoje, como sócio e diretor da empresa, é especialista em vidros aplicados a embarcações, com foco em especificação, desempenho e conservação.",
+      "hora": "14h30 · Tarde"
     }
   ],
   "edicao_anterior": {
