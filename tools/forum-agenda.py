@@ -22,6 +22,8 @@ def main():
     out.append('<h2 class="agenda-titulo" data-en="Program">Programação</h2>')
     if d.get('programacao_status') == 'preliminar':
         aviso = d.get('programacao_aviso') or 'Programação preliminar.'
+        # o texto do JSON e escrito para dentro do app; no site vira 'no app do Forum'
+        aviso = aviso.replace('aqui no app', 'no app do Fórum').replace('aqui no aplicativo', 'no app do Fórum')
         out.append('<p class="agenda-aviso" data-en="Preliminary program. Talks and speakers are confirmed first-hand in the Forum app.">'+e(aviso)+'</p>')
 
     periodo = None
