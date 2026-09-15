@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-14-1",
+  "versao": "2026-09-15-1",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -110,6 +110,16 @@
       "desc": "Segurança da navegação, tecnologia embarcada, legislação e manutenção de embarcações."
     },
     {
+      "id": "alexandre",
+      "periodo": "Manhã",
+      "hora": "10:30",
+      "titulo": "Sistema de arrefecimento (mufla)",
+      "quem": "Alexandre Gonzaga · Point Marine",
+      "tipo": "palestra",
+      "palestrante": "alexandre-gonzaga",
+      "desc": "Como funciona o sistema de arrefecimento do motor e o uso correto da mufla na lavagem. Conteúdo técnico e sem marca: vale para qualquer motor."
+    },
+    {
       "id": "gianotti",
       "periodo": "Manhã",
       "hora": "11:30",
@@ -196,6 +206,17 @@
       "instagram": "https://www.instagram.com/personal_boat/",
       "bio": "Atua no setor de vidros desde 2011, com experiência em produção, gestão e aplicação de vidros de segurança. Técnico em Edificações pelo IFSC e engenheiro de produção, assumiu em 2015 a gestão da linha náutica e, em 2016, foi um dos criadores da Personal Boat. Hoje, como sócio e diretor da empresa, é especialista em vidros aplicados a embarcações, com foco em especificação, desempenho e conservação.",
       "hora": "14h30 · Tarde"
+    },
+    {
+      "id": "alexandre-gonzaga",
+      "nome": "Alexandre Gonzaga",
+      "cargo": "Sócio-proprietário",
+      "empresa": "Point Marine",
+      "foto": "media/palestrantes/alexandre-gonzaga.jpg",
+      "tema": "Sistema de arrefecimento (mufla)",
+      "hora": "10h30 · Manhã",
+      "instagram": "https://www.instagram.com/pointmarinebrasil/",
+      "bio": "Apaixonado pela náutica e empresário do setor há mais de 20 anos, é sócio-proprietário da Point Marine, concessionária Mercury há 18 anos. No dia a dia da concessionária e da oficina, acompanha a manutenção e o desempenho de motores de todas as marcas."
     }
   ],
   "edicao_anterior": {
@@ -259,6 +280,15 @@
     ]
   },
   "avisos": [
+    {
+      "id": "palestra-alexandre",
+      "data": "2026-09-15",
+      "titulo": "Nova palestra: sistema de arrefecimento e mufla",
+      "texto": "Alexandre Gonzaga, sócio-proprietário da Point Marine e há mais de 20 anos no setor, apresenta às 10h30 uma aula prática sobre o sistema de arrefecimento do motor e o uso correto da mufla na lavagem. É conteúdo sem marca: serve para qualquer motor, de qualquer fabricante.",
+      "imagem": "media/palestrantes/alexandre-gonzaga.jpg",
+      "link": "#/palestrantes",
+      "link_label": "Ver palestrante"
+    },
     {
       "id": "palestra-deivity",
       "data": "2026-09-14",
