@@ -34,9 +34,7 @@
     "A ACATMAR entende a Economia do Mar como uma cadeia que vai do estaleiro ao turismo, passando por indústria, comércio, serviços, pesca e formação profissional. Preservar o ambiente que sustenta essa cadeia não é ação social isolada, é condição para que ela continue existindo.",
     "Por isso o Limpeza dos Mares não é apenas um projeto ambiental da associação. É parte da mesma agenda que discute regulamentação, qualificação de mão de obra, infraestrutura náutica e competitividade. Mar sujo é prejuízo, e mar limpo é negócio.",
     "<b>Sobre o Limpeza dos Mares</b>",
-    "O Limpeza dos Mares é um projeto socioambiental dedicado à preservação dos ambientes aquáticos. A iniciativa alia ações de retirada de resíduos de rios, praias e do mar a um trabalho permanente de educação e conscientização ambiental. Além dos mutirões, o projeto chama atenção para o chamado \"lixo que ninguém vê\": resíduos submersos e de difícil acesso, que se acumulam sob a água e afetam diretamente os ecossistemas e a vida marinha.",
-    "<b>Patrocínio mantenedor:</b> Fort Atacadista.",
-    "<b>Realização:</b> Mundo Mar Consulting, ACATMAR e Acquanauta Floripa."
+    "O Limpeza dos Mares é um projeto socioambiental dedicado à preservação dos ambientes aquáticos. A iniciativa alia ações de retirada de resíduos de rios, praias e do mar a um trabalho permanente de educação e conscientização ambiental. Além dos mutirões, o projeto chama atenção para o chamado \"lixo que ninguém vê\": resíduos submersos e de difícil acesso, que se acumulam sob a água e afetam diretamente os ecossistemas e a vida marinha."
    ],
    "corpo_en": [
     "Limpeza dos Mares closed another edition of its annual cycle of environmental education talks in September, reaching more than 5,000 students in about 20 public and private schools in Greater Florianópolis. The work was featured in the Santa Catarina press this week and, more than a balance sheet, it opens a busy agenda through the summer.",
@@ -61,10 +59,55 @@
     "ACATMAR sees the Sea Economy as a chain running from the shipyard to tourism, through industry, retail, services, fishing and professional training. Preserving the environment that sustains that chain is not an isolated social action, it is a condition for the chain to keep existing.",
     "That is why Limpeza dos Mares is not only the association's environmental project. It is part of the same agenda that discusses regulation, workforce training, nautical infrastructure and competitiveness. A dirty sea is a loss, and a clean sea is business.",
     "<b>About Limpeza dos Mares</b>",
-    "Limpeza dos Mares is a social and environmental project dedicated to preserving aquatic environments. It combines the removal of waste from rivers, beaches and the sea with permanent environmental education and awareness work. Beyond the cleanup drives, the project highlights the so-called \"litter no one sees\": submerged, hard-to-reach waste that builds up underwater and directly affects ecosystems and marine life.",
-    "<b>Main sponsor:</b> Fort Atacadista.",
-    "<b>Held by:</b> Mundo Mar Consulting, ACATMAR and Acquanauta Floripa."
-   ]
+    "Limpeza dos Mares is a social and environmental project dedicated to preserving aquatic environments. It combines the removal of waste from rivers, beaches and the sea with permanent environmental education and awareness work. Beyond the cleanup drives, the project highlights the so-called \"litter no one sees\": submerged, hard-to-reach waste that builds up underwater and directly affects ecosystems and marine life."
+   ],
+   "apoiadores_titulo": "Realização e apoiadores",
+   "apoiadores_titulo_en": "Organizers and supporters",
+   "apoiadores": [
+    {
+     "grupo": "Patrocínio mantenedor",
+     "grupo_en": "Main sponsor",
+     "itens": [
+      "Fort Atacadista"
+     ]
+    },
+    {
+     "grupo": "Realização",
+     "grupo_en": "Organized by",
+     "itens": [
+      "Mundo Mar Consulting",
+      "ACATMAR",
+      "Acquanauta Floripa"
+     ]
+    },
+    {
+     "grupo": "Apoio oficial da etapa",
+     "grupo_en": "Official support for this stage",
+     "itens": [
+      "Blue Nautical Hub Brasil",
+      "Marina Atlântida",
+      "Blue Fox Marina",
+      "Mano's Comunicação Visual",
+      "Iate Clube de Santa Catarina (Veleiros da Ilha)"
+     ]
+    },
+    {
+     "grupo": "Apoio institucional",
+     "grupo_en": "Institutional support",
+     "itens": [
+      "Prefeitura de Florianópolis",
+      "Polícia Militar Ambiental de Santa Catarina",
+      "Corpo de Bombeiros Militar de Santa Catarina",
+      "Capitania dos Portos de Santa Catarina",
+      "SEMAE",
+      "ICMBio",
+      "Programa Bandeira Azul"
+     ]
+    }
+   ],
+   "link": "https://www.limpezadosmares.com",
+   "link_label": "Conheça o Limpeza dos Mares",
+   "link_label_en": "Learn about Limpeza dos Mares"
   },
   {
    "id": "alerta-golpe-cartao-clonado-lojas-nauticas",
