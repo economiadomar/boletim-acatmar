@@ -55,6 +55,9 @@ def artigo_html(n, en):
     out += f'<h1 class="title">{html.escape(titulo)}</h1>'
     out += f'<div class="meta">{data_fmt(n["data"], en)}</div>'
     out += f'<img class="{hero_cls}" src="/{n["imagem"]}" alt="{html.escape(titulo)}">'
+    if n.get('legenda') or n.get('legenda_en'):
+        leg = (n.get('legenda_en') if en else n.get('legenda')) or n.get('legenda') or ''
+        if leg: out += f'<div class="legenda">{html.escape(leg)}</div>'
     if n.get('credito'): out += f'<div class="credito">{"Photo: " if en else "Foto: "}{html.escape(n["credito"])}</div>'
     if n.get('video'):
         out += (f'<div class="video-embed"><iframe src="https://www.youtube.com/embed/{n["video"]}" '
@@ -72,7 +75,18 @@ def artigo_html(n, en):
     g = n.get('galeria') or []
     if g:
         solo = ' solo' if len(g)==1 else ''
-        out += f'<div class="gallery{solo}">'+''.join(f'<img loading="lazy" src="/{s}" alt="{html.escape(titulo)}">' for s in g)+'</div>'
+        def _figs():
+            parts=[]
+            for s in g:
+                if isinstance(s, dict):
+                    src=s.get('src'); cap=(s.get('legenda_en') if en else s.get('legenda')) or ''
+                else:
+                    src=s; cap=''
+                fig=f'<figure><img loading="lazy" src="/{src}" alt="{html.escape(titulo)}">'
+                if cap: fig+=f'<figcaption>{html.escape(cap)}</figcaption>'
+                parts.append(fig+'</figure>')
+            return ''.join(parts)
+        out += f'<div class="gallery{solo}">'+_figs()+'</div>'
     if n.get('apoiadores'):
         tit = (n.get('apoiadores_titulo_en') if en else n.get('apoiadores_titulo')) or ('Organizers and supporters' if en else 'Realização e apoiadores')
         out += f'<div class="apoiadores"><h2>{html.escape(tit)}</h2>'

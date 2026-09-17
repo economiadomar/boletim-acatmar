@@ -10,7 +10,16 @@
    "imagem": "media/noticias/anb-forum-2026-acatmar-delegacao.jpg",
    "credito": "ACATMAR/Divulgação",
    "galeria": [
-    "media/noticias/anb-forum-2026-painel.jpg"
+    {
+     "src": "media/noticias/anb-forum-2026-painel.jpg",
+     "legenda": "A diretora Michele Castilho na mediação do primeiro debate do Fórum.",
+     "legenda_en": "Director Michele Castilho moderating the Forum's first debate."
+    },
+    {
+     "src": "media/noticias/anb-forum-2026-assinatura.jpg",
+     "legenda": "O presidente da ANB em ato de assinatura durante o Fórum.",
+     "legenda_en": "The ANB president during a signing ceremony at the Forum."
+    }
    ],
    "resumo": "O presidente da ACATMAR, Mané Ferrari, e a diretora de Turismo, Eventos e Sustentabilidade, Michele Castilho, integram a programação do encontro que reúne especialistas do Brasil, Espanha, Portugal e Canadá. O Fórum começou na terça-feira e segue nesta quarta-feira, no Terminal Marítimo de Salvador.",
    "resumo_en": "ACATMAR's president, Mané Ferrari, and the Director of Tourism, Events and Sustainability, Michele Castilho, are part of the program of the event bringing together experts from Brazil, Spain, Portugal and Canada. The Forum began on Tuesday and continues on Wednesday at the Salvador Maritime Terminal.",
@@ -21,7 +30,7 @@
     "Segundo a organização, o Fórum reúne 10 painéis, 38 palestrantes e 10 mediadores, com participação de profissionais do Brasil, da Espanha, de Portugal e do Canadá. A realização é da ANB, com correalização da Confraria Europeia de Vela, da Espanha, e do Cluster Tecnológico Naval da Bahia.",
     "A programação percorre toda a amplitude da Economia do Mar: integração entre porto e cidade, esportes náuticos, turismo, investimentos em marinas e infraestrutura, pesca e aquicultura, gestão costeira, indústria náutica e naval, geração de emprego e renda, e a geopolítica dos oceanos. Em paralelo aos debates, o evento abriga a 1ª Expo Negócios e Turismo Náutico, voltada à aproximação entre empresas, mercado, investidores e instituições.",
     "<b>A presença da ACATMAR</b>",
-    "Michele Castilho participou da mediação de painel na abertura dos trabalhos, tema que discute a relação entre o porto e a cidade, estratégico para centros urbanos que precisam conciliar atividade portuária, turismo, mobilidade e qualidade de vida. Mané Ferrari integra o painel dedicado à indústria náutica e naval e à geração de emprego e renda, levando ao debate a experiência de Santa Catarina, que concentra a maior parte da produção nacional de embarcações de esporte e recreio.",
+    "Michele Castilho participou da mediação de painel na abertura dos trabalhos, tema que discute a relação entre o porto e a cidade, estratégico para centros urbanos que precisam conciliar atividade portuária, turismo, mobilidade e qualidade de vida. Mané Ferrari integra o painel dedicado à indústria náutica e naval e à geração de emprego e renda, levando ao debate a experiência de Santa Catarina, que concentra a maior parte da produção nacional de embarcações de esporte e recreio. No encontro, o presidente da ACATMAR também aproximou-se dos palestrantes da Espanha, um dos países convidados, reforçando a troca entre o setor náutico brasileiro e a experiência europeia.",
     "A presença da ACATMAR em um fórum internacional na Bahia reforça o caráter nacional da associação e a leitura de que a Economia do Mar não é assunto de um único estado. Portos, marinas, estaleiros, turismo náutico, pesca e serviços formam uma mesma cadeia, que ganha força quando os polos brasileiros conversam entre si e com a experiência de outros países.",
     "\"Quando o setor náutico de diferentes estados senta à mesma mesa, todo mundo cresce. A Bahia tem uma vocação enorme para o mar, Santa Catarina tem a indústria, e a troca entre esses polos, somada à experiência de Espanha, Portugal e Canadá, é o que faz a Economia do Mar brasileira amadurecer. A ACATMAR precisa estar onde o setor se articula, e é por isso que estamos aqui\", afirma Mané Ferrari, presidente da ACATMAR.",
     "<b>Bahia como polo da Economia do Mar</b>",
@@ -35,13 +44,15 @@
     "According to the organizers, the Forum gathers 10 panels, 38 speakers and 10 moderators, with professionals from Brazil, Spain, Portugal and Canada. It is organized by ANB, co-organized with Spain's Confraria Europeia de Vela and the Bahia Naval Technology Cluster.",
     "The program covers the full breadth of the Sea Economy: port-city integration, nautical sports, tourism, investment in marinas and infrastructure, fishing and aquaculture, coastal management, the nautical and naval industry, job and income generation, and ocean geopolitics. Alongside the debates, the event hosts the 1st Business and Nautical Tourism Expo, aimed at connecting companies, the market, investors and institutions.",
     "<b>ACATMAR's presence</b>",
-    "Michele Castilho moderated a panel at the opening of the event, on the relationship between port and city, a strategic topic for urban centers that must reconcile port activity, tourism, mobility and quality of life. Mané Ferrari takes part in the panel dedicated to the nautical and naval industry and to job and income generation, bringing to the debate the experience of Santa Catarina, which concentrates most of Brazil's production of sport and recreational boats.",
+    "Michele Castilho moderated a panel at the opening of the event, on the relationship between port and city, a strategic topic for urban centers that must reconcile port activity, tourism, mobility and quality of life. Mané Ferrari takes part in the panel dedicated to the nautical and naval industry and to job and income generation, bringing to the debate the experience of Santa Catarina, which concentrates most of Brazil's production of sport and recreational boats. At the event, ACATMAR's president also connected with the speakers from Spain, one of the guest countries, strengthening the exchange between Brazil's nautical sector and European experience.",
     "ACATMAR's presence at an international forum in Bahia reinforces the association's national scope and the view that the Sea Economy is not a single state's affair. Ports, marinas, shipyards, nautical tourism, fishing and services form one chain, which grows stronger when Brazil's hubs talk to each other and to the experience of other countries.",
     "\"When the nautical sector of different states sits at the same table, everyone grows. Bahia has an enormous vocation for the sea, Santa Catarina has the industry, and the exchange between these hubs, together with the experience of Spain, Portugal and Canada, is what makes Brazil's Sea Economy mature. ACATMAR needs to be where the sector comes together, and that is why we are here,\" says Mané Ferrari, president of ACATMAR.",
     "<b>Bahia as a Sea Economy hub</b>",
     "For the organizers, the Forum seeks to expand international exchange, connect governments, experts and investors, and strengthen Bahia as a development hub for the nautical sector. It is the same agenda ACATMAR pursues in Santa Catarina and nationally: organizing the sector, training the workforce, attracting investment and turning the country's relationship with the sea into industry, services, tourism and jobs.",
     "ACATMAR congratulates the Bahia Nautical Association on the event and reaffirms its commitment to joining efforts with other organizations across the country around the Sea Economy."
-   ]
+   ],
+   "legenda": "O presidente da ACATMAR, Mané Ferrari, com os palestrantes da Espanha no 2º Fórum Náutico Internacional da ANB.",
+   "legenda_en": "ACATMAR's president, Mané Ferrari, with the speakers from Spain at the 2nd ANB International Nautical Forum."
   },
   {
    "id": "limpeza-dos-mares-205-toneladas-agenda-2026",
