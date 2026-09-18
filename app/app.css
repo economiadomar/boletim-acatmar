@@ -139,6 +139,7 @@ h1,h2,h3{font-family:var(--f-head);text-transform:uppercase;letter-spacing:.02em
 .strip-cota img{width:auto;height:auto;object-fit:contain}
 .strip-grande>div{flex-direction:column;gap:18px}
 .strip-grande a{width:80%;height:96px}
+.strip-cota+.strip-cota .strip-grande a,.strip-grande+.strip-grande a{height:86px}
 .strip-medio>div{gap:16px 8%}
 .strip-medio a{flex:0 0 42%;max-width:42%;height:76px}
 .strip-lado a{flex:0 0 30%;max-width:30%;height:70px}
