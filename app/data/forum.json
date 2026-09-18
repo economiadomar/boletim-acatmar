@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-17-1",
+  "versao": "2026-09-18-1",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -217,6 +217,26 @@
       "hora": "10h30 · Manhã",
       "instagram": "https://www.instagram.com/pointmarinebrasil/",
       "bio": "Apaixonado pela náutica e empresário do setor há mais de 20 anos, é sócio-proprietário da Point Marine, concessionária Mercury há 18 anos. No dia a dia da concessionária e da oficina, acompanha a manutenção e o desempenho de motores de todas as marcas."
+    },
+    {
+      "id": "marcelo-reis",
+      "nome": "Marcelo Reis",
+      "cargo": "CEO",
+      "empresa": "Safeboat e Navalcare",
+      "foto": "media/palestrantes/marcelo-reis.jpg",
+      "tema": "Tecnologia e monitoramento inteligente para embarcações",
+      "instagram": "https://www.instagram.com/marcelocesarreis/",
+      "redes": [
+        {
+          "label": "@safeboat.tech",
+          "url": "https://www.instagram.com/safeboat.tech/"
+        },
+        {
+          "label": "@naval.care",
+          "url": "https://www.instagram.com/naval.care/"
+        }
+      ],
+      "bio": "Engenheiro naval, atuou em estaleiros, fundou a Navalcare em 2016 e lançou a Safeboat em 2024. Tem ampla experiência em embarcações de esporte e recreio, com foco em manutenção e monitoramento inteligente a bordo."
     }
   ],
   "edicao_anterior": {
@@ -280,6 +300,15 @@
     ]
   },
   "avisos": [
+    {
+      "id": "palestra-marcelo",
+      "data": "2026-09-18",
+      "titulo": "Nova palestra: tecnologia e monitoramento a bordo",
+      "texto": "Marcelo Reis, CEO da Safeboat e da Navalcare, apresenta \"Tecnologia e monitoramento inteligente para embarcações\". Engenheiro naval, ele fundou a Navalcare em 2016 e lançou a Safeboat em 2024, e traz a prática de quem acompanha a saúde do barco em tempo real. O horário entra na programação assim que for definido.",
+      "imagem": "media/palestrantes/marcelo-reis.jpg",
+      "link": "#/palestrantes",
+      "link_label": "Ver palestrante"
+    },
     {
       "id": "palestra-alexandre",
       "data": "2026-09-15",
