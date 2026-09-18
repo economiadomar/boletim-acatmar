@@ -27,10 +27,13 @@ def txt_c(d, y, s, f, cor, L):
     d.text(((L - x1) // 2, y - y0), s, font=f, fill=cor)
     return y1 - y0
 
+COTA_ESC = {'Patrocínio institucional': 1.95, 'Patrocínio': 1.70, 'Realização': 1.12}
+
 def faixa(L, alt_logo, gap, tam_lab):
     grupos = []
     for c in D['patrocinadores']:
-        ims = [logo(e['logo'], int(alt_logo * (1.2 if e['logo'].endswith(GRANDES) else 1)))
+        ec = COTA_ESC.get(c['cota'], 1.0)
+        ims = [logo(e['logo'], int(alt_logo * ec * (1.2 if e['logo'].endswith(GRANDES) else 1)))
                for e in c['empresas'] if e.get('logo')]
         if ims: grupos.append((c['cota'].upper(), ims))
     fl = F('bar', tam_lab)
@@ -107,5 +110,5 @@ def card(L, A, nome, emb_alt, alt_logo, gap_logo, tam_lab, t_data, t_tit, t_info
     im.save(cam, quality=93)
     print(nome, im.size)
 
-card(1080, 1080, 'vi-forum-feed.jpg', 205, 26, 16, 17, 28, 52, 24, 24)
-card(1080, 1920, 'vi-forum-story.jpg', 520, 44, 28, 25, 40, 80, 35, 29)
+card(1080, 1080, 'vi-forum-feed.jpg', 175, 25, 15, 17, 27, 50, 23, 23)
+card(1080, 1920, 'vi-forum-story.jpg', 470, 40, 26, 24, 38, 76, 34, 28)
