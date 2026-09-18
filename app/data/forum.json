@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-18-1",
+  "versao": "2026-09-18-2",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -108,6 +108,16 @@
       "quem": "Palestrantes a confirmar",
       "tipo": "bloco",
       "desc": "Segurança da navegação, tecnologia embarcada, legislação e manutenção de embarcações."
+    },
+    {
+      "id": "marcelo",
+      "periodo": "Manhã",
+      "hora": "09:30",
+      "titulo": "Tecnologia e monitoramento inteligente para embarcações",
+      "quem": "Marcelo Reis · Safeboat e Navalcare",
+      "tipo": "palestra",
+      "palestrante": "marcelo-reis",
+      "desc": "Como o monitoramento a bordo acompanha a saúde do barco em tempo real e antecipa a manutenção, reduzindo custo e risco."
     },
     {
       "id": "alexandre",
@@ -236,7 +246,8 @@
           "url": "https://www.instagram.com/naval.care/"
         }
       ],
-      "bio": "Engenheiro naval, atuou em estaleiros, fundou a Navalcare em 2016 e lançou a Safeboat em 2024. Tem ampla experiência em embarcações de esporte e recreio, com foco em manutenção e monitoramento inteligente a bordo."
+      "bio": "Engenheiro naval, atuou em estaleiros, fundou a Navalcare em 2016 e lançou a Safeboat em 2024. Tem ampla experiência em embarcações de esporte e recreio, com foco em manutenção e monitoramento inteligente a bordo.",
+      "hora": "09h30 · Manhã"
     }
   ],
   "edicao_anterior": {
@@ -304,7 +315,7 @@
       "id": "palestra-marcelo",
       "data": "2026-09-18",
       "titulo": "Nova palestra: tecnologia e monitoramento a bordo",
-      "texto": "Marcelo Reis, CEO da Safeboat e da Navalcare, apresenta \"Tecnologia e monitoramento inteligente para embarcações\". Engenheiro naval, ele fundou a Navalcare em 2016 e lançou a Safeboat em 2024, e traz a prática de quem acompanha a saúde do barco em tempo real. O horário entra na programação assim que for definido.",
+      "texto": "Marcelo Reis, CEO da Safeboat e da Navalcare, apresenta às 9h30 \"Tecnologia e monitoramento inteligente para embarcações\". Engenheiro naval, ele fundou a Navalcare em 2016 e lançou a Safeboat em 2024, e traz a prática de quem acompanha a saúde do barco em tempo real. A palestra abre a manhã do Fórum, às 9h30.",
       "imagem": "media/palestrantes/marcelo-reis.jpg",
       "link": "#/palestrantes",
       "link_label": "Ver palestrante"
