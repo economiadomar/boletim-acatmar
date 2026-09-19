@@ -14,7 +14,7 @@ D = json.load(open(FJ, encoding='utf-8'))
 ALT = {'Patrocínio institucional': 170, 'Patrocínio': 125, 'Realização': 100}
 ALT_PADRAO = 85           # apoios
 ESCALA_SITE = 0.62        # imagem -> pixels na tela
-LARG_MAX = 640; GAP = 56; PAD = 24
+LARG_MAX = 520; GAP = 56; PAD = 24
 SLUG = {'Patrocínio institucional': 'patrocinio-institucional', 'Patrocínio': 'patrocinio',
         'Realização': 'realizacao', 'Apoio oficial': 'apoio-oficial', 'Apoio institucional': 'apoio-institucional'}
 EN = {'Patrocínio institucional': 'Institutional sponsor', 'Patrocínio': 'Sponsorship', 'Realização': 'Organization',
