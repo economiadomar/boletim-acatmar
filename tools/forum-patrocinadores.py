@@ -11,10 +11,10 @@ FJ = os.path.join(RAIZ, 'app/data/forum.json')
 D = json.load(open(FJ, encoding='utf-8'))
 
 # altura da logo por cota (px no espaco da imagem) = hierarquia
-ALT = {'Patrocínio institucional': 170, 'Patrocínio': 140, 'Realização': 105}
+ALT = {'Patrocínio institucional': 170, 'Patrocínio': 125, 'Realização': 100}
 ALT_PADRAO = 85           # apoios
 ESCALA_SITE = 0.62        # imagem -> pixels na tela
-LARG_MAX = 1000; GAP = 56; PAD = 24
+LARG_MAX = 640; GAP = 56; PAD = 24
 SLUG = {'Patrocínio institucional': 'patrocinio-institucional', 'Patrocínio': 'patrocinio',
         'Realização': 'realizacao', 'Apoio oficial': 'apoio-oficial', 'Apoio institucional': 'apoio-institucional'}
 EN = {'Patrocínio institucional': 'Institutional sponsor', 'Patrocínio': 'Sponsorship', 'Realização': 'Organization',

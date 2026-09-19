@@ -138,12 +138,12 @@ h1,h2,h3{font-family:var(--f-head);text-transform:uppercase;letter-spacing:.02em
 .strip-cota a{display:flex;align-items:center;justify-content:center}
 .strip-cota img{width:auto;height:auto;object-fit:contain}
 .strip-inst>div,.strip-pat>div{flex-direction:column}
-.strip-inst a{width:82%;height:100px}
-.strip-pat a{width:70%;height:84px}
-.strip-real>div{gap:14px 8%}
-.strip-real a{flex:0 0 40%;max-width:40%;height:64px}
-.strip-apoio>div{gap:16px 5%}
-.strip-apoio a{flex:0 0 28%;max-width:28%;height:54px}
+.strip-inst a{width:92%;height:110px}
+.strip-pat a{width:60%;height:80px}
+.strip-real>div,.strip-apoio>div{gap:14px 6%}
+.strip-real a{flex:0 0 44%;max-width:44%;height:56px}
+.strip-apoio a{flex:0 0 44%;max-width:44%;height:50px}
+.strip-cota img{max-width:100%;max-height:100%}
 .spons{text-align:center;padding:18px 16px}
 .spons-logo{display:flex;justify-content:center;margin-bottom:10px}
 .spons-logo img{max-width:100%;height:auto;object-fit:contain}

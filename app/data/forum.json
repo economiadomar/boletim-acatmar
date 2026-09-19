@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-19-1",
+  "versao": "2026-09-19-2",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -405,7 +405,7 @@
       "destaque": true,
       "logo": "../media/logos/vi-forum-patrocinio.png",
       "alt": "Okean Yachts · Ferretti Group",
-      "largura": 116,
+      "largura": 107,
       "empresas": [
         {
           "nome": "Okean Yachts · Ferretti Group",
@@ -414,7 +414,7 @@
           "texto": "Estaleiro brasileiro de iates de luxo fundado em 2015, com fábrica própria de 26 mil m² em Itajaí (SC). Produz a linha OKEAN, com design de Paolo Ferragni e o conceito pioneiro de side decks abertos, e é o único estaleiro do mundo licenciado a fabricar barcos Ferretti Yachts fora da Itália, com cinco modelos produzidos no Brasil. O Grupo OKEAN também administra a Yachtmax, revenda exclusiva de Ferretti Yachts, Riva, Pershing e OKEAN no país.",
           "site": "https://okeanyachts.com",
           "instagram": "https://www.instagram.com/okeanyachts/",
-          "escala": 1.0
+          "escala": 1
         }
       ]
     },
@@ -442,7 +442,7 @@
       ],
       "logo": "../media/logos/vi-forum-realizacao.png",
       "alt": "ACATMAR · Associação Náutica Brasileira, Mundo Mar Consulting",
-      "largura": 343
+      "largura": 330
     },
     {
       "cota": "Apoio oficial",
@@ -454,7 +454,7 @@
           "texto": "Fundado em 1943, o Iate Clube de Santa Catarina Veleiros da Ilha é a maior agremiação náutica catarinense e uma das mais importantes do Brasil, com cerca de 700 sócios e 400 embarcações. Tem sede central na Baía Sul, no centro de Florianópolis, e sede em Jurerê, com atividades de vela oceânica, monotipos, pesca, escola de vela e um calendário de regatas e eventos que revelou gerações de velejadores.",
           "site": "https://icsc.com.br",
           "instagram": "https://www.instagram.com/icsc_veleirosdailha/",
-          "escala": 0.95
+          "escala": 1
         },
         {
           "nome": "Safeboat",
@@ -463,7 +463,7 @@
           "texto": "Sistema de manutenção inteligente para embarcações criado pela NAVALCARE, escritório de engenharia naval fundado em 2016 pelo engenheiro Marcelo Reis. O hardware SAFEBOAT, instalado a bordo, monitora em tempo real os sistemas críticos do barco e se conecta ao app NAVALCARE Connect, pelo qual o proprietário acompanha o estado da embarcação e aciona manutenções preventivas e corretivas por assinatura.",
           "site": "https://www.naval.care",
           "instagram": "https://www.instagram.com/naval.care/",
-          "escala": 0.9
+          "escala": 1
         },
         {
           "nome": "Personal Boat",
@@ -478,7 +478,7 @@
           "nome": "Escunas Pirata",
           "logo": "media/logos/escunas-pirata.png",
           "largura": 120,
-          "escala": 1.15,
+          "escala": 1,
           "texto": "Grupo de empresas de turismo náutico de Florianópolis, conhecido pelo passeio de barco pirata que sai de Canasvieiras e percorre o norte da Ilha, com parada na Fortaleza de Santa Cruz, na Ilha de Anhatomirim. Combina roteiro pelas praias, animação temática a bordo e paradas para banho de mar.",
           "site": "https://escunaspirata.com.br",
           "instagram": ""
@@ -495,7 +495,7 @@
       ],
       "logo": "../media/logos/vi-forum-apoio-oficial.png",
       "alt": "Iate Clube Veleiros da Ilha, Safeboat, Personal Boat, Escunas Pirata, Propspeed",
-      "largura": 543
+      "largura": 388
     },
     {
       "cota": "Apoio institucional",
@@ -545,7 +545,7 @@
       ],
       "logo": "../media/logos/vi-forum-apoio-institucional.png",
       "alt": "IFSC · Câmpus Florianópolis-Continente, Marina Escola, FORTUR · Fórum de Turismo da Grande Florianópolis, Capitania dos Portos de Santa Catarina",
-      "largura": 503
+      "largura": 275
     }
   ],
   "patrocinio_cta": {
@@ -678,5 +678,5 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 32
+  "app_min": 33
 }
