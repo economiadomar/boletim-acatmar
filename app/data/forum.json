@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-19-2",
+  "versao": "2026-09-19-3",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -396,7 +396,7 @@
           "site": "https://www.pmf.sc.gov.br",
           "instagram": "https://www.instagram.com/prefflorianopolis/",
           "institucional": true,
-          "escala": 1
+          "escala": 1.0
         }
       ]
     },
@@ -405,7 +405,7 @@
       "destaque": true,
       "logo": "../media/logos/vi-forum-patrocinio.png",
       "alt": "Okean Yachts · Ferretti Group",
-      "largura": 107,
+      "largura": 127,
       "empresas": [
         {
           "nome": "Okean Yachts · Ferretti Group",
@@ -414,7 +414,7 @@
           "texto": "Estaleiro brasileiro de iates de luxo fundado em 2015, com fábrica própria de 26 mil m² em Itajaí (SC). Produz a linha OKEAN, com design de Paolo Ferragni e o conceito pioneiro de side decks abertos, e é o único estaleiro do mundo licenciado a fabricar barcos Ferretti Yachts fora da Itália, com cinco modelos produzidos no Brasil. O Grupo OKEAN também administra a Yachtmax, revenda exclusiva de Ferretti Yachts, Riva, Pershing e OKEAN no país.",
           "site": "https://okeanyachts.com",
           "instagram": "https://www.instagram.com/okeanyachts/",
-          "escala": 1
+          "escala": 1.17
         }
       ]
     },
@@ -428,7 +428,7 @@
           "texto": "Fundada em 2008 em Florianópolis, a ACATMAR é a entidade que representa a indústria, o comércio, os serviços e o turismo náutico brasileiro. Atua na articulação com governos e o Congresso, na produção de dados sobre a Economia do Mar, em projetos como a Escola do Mar e a Marina Escola, e em eventos técnicos e de negócios para toda a cadeia produtiva.",
           "site": "https://www.acatmar.org",
           "instagram": "https://www.instagram.com/acatmarassociacao/",
-          "escala": 1
+          "escala": 1.01
         },
         {
           "nome": "Mundo Mar Consulting",
@@ -437,12 +437,12 @@
           "texto": "Consultoria especializada no setor náutico e na Economia do Mar, com experiência prática, rede internacional de contatos e resultados em certificações, infraestrutura e desenvolvimento de negócios ligados ao mar. Faz parte do ecossistema Mundo Mar, que reúne também o Mundo Mar TV Show, hub de conteúdo náutico com programas, notícias e cobertura dos principais eventos do setor.",
           "site": "https://mundomar.tv",
           "instagram": "https://www.instagram.com/mundomartv/",
-          "escala": 1
+          "escala": 1.16
         }
       ],
       "logo": "../media/logos/vi-forum-realizacao.png",
       "alt": "ACATMAR · Associação Náutica Brasileira, Mundo Mar Consulting",
-      "largura": 330
+      "largura": 349
     },
     {
       "cota": "Apoio oficial",
@@ -454,7 +454,7 @@
           "texto": "Fundado em 1943, o Iate Clube de Santa Catarina Veleiros da Ilha é a maior agremiação náutica catarinense e uma das mais importantes do Brasil, com cerca de 700 sócios e 400 embarcações. Tem sede central na Baía Sul, no centro de Florianópolis, e sede em Jurerê, com atividades de vela oceânica, monotipos, pesca, escola de vela e um calendário de regatas e eventos que revelou gerações de velejadores.",
           "site": "https://icsc.com.br",
           "instagram": "https://www.instagram.com/icsc_veleirosdailha/",
-          "escala": 1
+          "escala": 1.32
         },
         {
           "nome": "Safeboat",
@@ -463,7 +463,7 @@
           "texto": "Sistema de manutenção inteligente para embarcações criado pela NAVALCARE, escritório de engenharia naval fundado em 2016 pelo engenheiro Marcelo Reis. O hardware SAFEBOAT, instalado a bordo, monitora em tempo real os sistemas críticos do barco e se conecta ao app NAVALCARE Connect, pelo qual o proprietário acompanha o estado da embarcação e aciona manutenções preventivas e corretivas por assinatura.",
           "site": "https://www.naval.care",
           "instagram": "https://www.instagram.com/naval.care/",
-          "escala": 1
+          "escala": 1.32
         },
         {
           "nome": "Personal Boat",
@@ -472,13 +472,13 @@
           "texto": "Empresa de Palhoça (SC) especializada em vidros para a linha náutica. Fabrica vidros curvos, temperados e laminados e estruturas de alumínio para para-brisas, janelas laterais e escotilhas, atendendo estaleiros de barcos de lazer, esporte e pesca e proprietários que precisam de reposição sob medida.",
           "site": "https://personalboat.ind.br",
           "instagram": "https://www.instagram.com/personal_boat/",
-          "escala": 1
+          "escala": 1.32
         },
         {
           "nome": "Escunas Pirata",
           "logo": "media/logos/escunas-pirata.png",
           "largura": 120,
-          "escala": 1,
+          "escala": 1.27,
           "texto": "Grupo de empresas de turismo náutico de Florianópolis, conhecido pelo passeio de barco pirata que sai de Canasvieiras e percorre o norte da Ilha, com parada na Fortaleza de Santa Cruz, na Ilha de Anhatomirim. Combina roteiro pelas praias, animação temática a bordo e paradas para banho de mar.",
           "site": "https://escunaspirata.com.br",
           "instagram": ""
@@ -487,7 +487,7 @@
           "nome": "Propspeed",
           "logo": "media/logos/propspeed.png",
           "largura": 170,
-          "escala": 1,
+          "escala": 1.13,
           "texto": "Revestimento antiincrustante para hélices, rabetas e demais metais abaixo da linha d'água, criado na Nova Zelândia e usado em embarcações de lazer, veleiros e barcos de trabalho no mundo todo. Sem biocidas, mantém a superfície lisa, o que melhora o rendimento do sistema de propulsão e reduz o consumo de combustível. A Propspeed Brasil é a distribuidora oficial na América do Sul.",
           "site": "https://www.propspeed.com.br",
           "instagram": "https://www.instagram.com/propspeedbr/"
@@ -495,7 +495,7 @@
       ],
       "logo": "../media/logos/vi-forum-apoio-oficial.png",
       "alt": "Iate Clube Veleiros da Ilha, Safeboat, Personal Boat, Escunas Pirata, Propspeed",
-      "largura": 306
+      "largura": 230
     },
     {
       "cota": "Apoio institucional",
@@ -507,7 +507,7 @@
           "texto": "Câmpus do Instituto Federal de Santa Catarina localizado em Coqueiros, na parte continental de Florianópolis, referência em cursos de gastronomia, hotelaria, turismo, eventos e panificação. O IFSC é uma rede pública federal com 22 câmpus no estado, ensino gratuito do técnico à pós-graduação, e lidera a Rede de Cultura Oceânica, que aproxima escola, pesquisa e o mar.",
           "site": "https://www.ifsc.edu.br/web/campus-florianopolis-continente",
           "instagram": "https://www.instagram.com/ifsc.continente/",
-          "escala": 1
+          "escala": 1.05
         },
         {
           "nome": "Marina Escola",
@@ -516,7 +516,7 @@
           "texto": "Projeto do IFSC Câmpus Florianópolis-Continente, desenvolvido em parceria com a ACATMAR, sob o título \"Marina-Escola IFSC Florianópolis-Continente: Sabores e Navegação no Litoral Catarinense\". Integra dois eixos: formação náutica em manutenção, operação e serviços de embarcações, e gastronomia com foco em hospitalidade a bordo e experiências ligadas ao turismo náutico, por meio de cursos de extensão, oficinas e parcerias com empresas do setor.",
           "site": "https://www.ifsc.edu.br/web/campus-florianopolis-continente",
           "instagram": "https://www.instagram.com/ifsc.continente/",
-          "escala": 1,
+          "escala": 1.14,
           "materia": {
             "titulo": "IFSC e ACATMAR assinam acordo de cooperação técnica para tirar a Marina Escola do papel",
             "data": "2026-09-12",
@@ -531,7 +531,7 @@
           "texto": "Fórum que reúne as entidades do trade turístico da Grande Florianópolis, entre hotelaria, eventos, gastronomia, transporte e serviços, para atuar como voz coletiva do setor junto ao poder público. Responsável pelo Plano Integrado de Promoção do Turismo da região, o FORTUR discute temas como turismo de eventos, financiamento do turismo, novos produtos turísticos e a integração entre iniciativa privada e governos. É presidido por Mané Ferrari, com Hamilton Peluso na vice-presidência.",
           "site": "",
           "instagram": "",
-          "escala": 1
+          "escala": 1.01
         },
         {
           "nome": "Capitania dos Portos de Santa Catarina",
@@ -540,12 +540,12 @@
           "texto": "Organização militar da Marinha do Brasil sediada no Estreito, em Florianópolis, com jurisdição sobre as águas que banham todo o litoral catarinense, da divisa com o Paraná à divisa com o Rio Grande do Sul. É a autoridade marítima responsável pela segurança da navegação, pela salvaguarda da vida humana no mar e pela prevenção da poluição hídrica: inscreve e vistoria embarcações, habilita amadores e aquaviários, fiscaliza marinas, clubes e eventos náuticos e orienta o setor sobre as normas da navegação. Fica na mesma rua do IFSC Continente, sede do Fórum.",
           "site": "https://www.marinha.mil.br/cpsc/",
           "instagram": "",
-          "escala": 1
+          "escala": 1.32
         }
       ],
       "logo": "../media/logos/vi-forum-apoio-institucional.png",
       "alt": "IFSC · Câmpus Florianópolis-Continente, Marina Escola, FORTUR · Fórum de Turismo da Grande Florianópolis, Capitania dos Portos de Santa Catarina",
-      "largura": 275
+      "largura": 294
     }
   ],
   "patrocinio_cta": {
@@ -678,5 +678,5 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 33
+  "app_min": 34
 }

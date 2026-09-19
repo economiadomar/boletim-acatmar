@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=33;
+var APP_V=34;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -61,7 +61,7 @@ function home(){
   else cd='<div class="tag" style="background:var(--teal);color:#fff;margin-top:12px">Edição realizada. Obrigado por participar!</div>';
   var unread=unreadAvisos();
   var av=D.avisos.slice(0,2).map(avisoCard).join('');
-  var spons=D.patrocinadores.map(function(c,i){var modo={'Patrocínio institucional':'inst','Patrocínio':'pat','Realização':'real'}[c.cota]||'apoio';return '<div class="strip-cota strip-'+modo+'"><span>'+esc(c.cota)+'</span><div>'+c.empresas.map(function(p){return '<a href="#/patrocinadores">'+(p.logo?'<img src="'+p.logo+'" alt="'+esc(p.nome)+'">':'<span class="logo-txt logo-txt-sm">'+esc(p.nome)+'</span>')+'</a>';}).join('')+'</div></div>';}).join('');
+  var spons=D.patrocinadores.map(function(c,i){var modo={'Patrocínio institucional':'inst','Patrocínio':'pat','Realização':'real'}[c.cota]||'apoio';return '<div class="strip-cota strip-'+modo+'"><span>'+esc(c.cota)+'</span><div>'+c.empresas.map(function(p){var hb=({'Patrocínio institucional':100,'Patrocínio':88,'Realização':56}[c.cota]||50);return '<a href="#/patrocinadores">'+(p.logo?'<img src="'+p.logo+'" alt="'+esc(p.nome)+'" style="height:'+Math.round(hb*(p.escala||1))+'px">':'<span class="logo-txt logo-txt-sm">'+esc(p.nome)+'</span>')+'</a>';}).join('')+'</div></div>';}).join('');
   var regBtn=st==='antes'?'<a class="btn btn-teal btn-block" href="#/inscricao">'+(LS.get('inscrito',null)?'✅ Inscrito · ver programação':'Inscrição gratuita')+'</a>':'';
   h('<section class="hero"><div class="hero-top"><img src="media/emblema-v2.jpg" alt="VI Fórum ACATMAR"><div><p class="kicker">'+esc(e.edicao)+' · '+esc(e.mote)+'</p><h1>'+esc(e.nome)+'</h1></div></div><div class="hero-in"><p>'+esc(e.data_texto)+' · '+esc(e.horario_texto)+'</p>'+cd+'</div></section>'
    +'<div class="quick"><a href="#/programacao"><i>🗓️</i>Programação</a><a href="#/local"><i>📍</i>Local</a><a href="#/credencial"><i>🎫</i>Credencial</a><a href="#/interagir"><i>💬</i>Interagir</a></div>'
@@ -155,7 +155,7 @@ function patrocinadores(){
   D.patrocinadores.forEach(function(cota){
     html+='<div class="section-h" style="margin-top:6px"><h2>'+esc(cota.cota)+'</h2></div>';
     cota.empresas.forEach(function(p){
-      var altLogo=Math.round(({'Patrocínio institucional':110,'Patrocínio':96,'Realização':72}[cota.cota]||60)*(p.escala||1));
+      var altLogo=Math.round(({'Patrocínio institucional':110,'Patrocínio':100,'Realização':72}[cota.cota]||60)*(p.escala||1));
       var links=(p.site?'<a class="btn btn-outline btn-sm" href="'+p.site+'" target="_blank" rel="noopener">Site</a>':'')+(p.instagram?'<a class="btn btn-navy btn-sm" href="'+p.instagram+'" target="_blank" rel="noopener">Instagram</a>':'');
       var logo=p.logo?'<img src="'+p.logo+'" alt="'+esc(p.nome)+'" style="height:'+altLogo+'px;width:auto;max-width:100%">':'<div class="logo-txt">'+esc(p.nome)+'</div>';
       html+='<div class="card spons'+(cota.destaque?' spons-destaque':'')+'"><div class="spons-logo">'+logo+'</div>'+(cota.destaque?'<span class="tag" style="background:var(--teal);color:#fff">'+(p.institucional?'Patrocinadora institucional':'Patrocinadora')+'</span>':'')+'<h3>'+esc(p.nome)+'</h3><p class="small">'+esc(p.texto||'')+'</p>'+(p.materia?'<div class="materia"><p class="kicker">Novidade · '+fmtData(p.materia.data)+'</p><b>'+esc(p.materia.titulo)+'</b><p class="small">'+esc(p.materia.resumo)+'</p><a class="btn btn-teal btn-sm" href="'+p.materia.link+'" target="_blank" rel="noopener">Ler a matéria</a></div>':'')+(links?'<div class="btn-row">'+links+'</div>':'')+'</div>';

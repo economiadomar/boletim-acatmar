@@ -33,7 +33,7 @@ def faixa(L, alt_logo, gap, tam_lab):
     grupos = []
     for c in D['patrocinadores']:
         ec = COTA_ESC.get(c['cota'], 1.0)
-        ims = [logo(e['logo'], int(alt_logo * ec * (1.2 if e['logo'].endswith(GRANDES) else 1)))
+        ims = [logo(e['logo'], int(alt_logo * ec * (e.get('escala') or 1)))
                for e in c['empresas'] if e.get('logo')]
         if ims: grupos.append((c['cota'].upper(), ims))
     fl = F('bar', tam_lab)
