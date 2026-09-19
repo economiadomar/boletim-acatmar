@@ -137,17 +137,16 @@ h1,h2,h3{font-family:var(--f-head);text-transform:uppercase;letter-spacing:.02em
 .strip-cota>div{display:flex;flex-wrap:wrap;gap:14px 4%;align-items:center;justify-content:center}
 .strip-cota a{display:flex;align-items:center;justify-content:center}
 .strip-cota img{width:auto;height:auto;object-fit:contain}
-.strip-grande>div{flex-direction:column;gap:18px}
-.strip-grande a{width:80%;height:96px}
-.strip-cota+.strip-cota .strip-grande a,.strip-grande+.strip-grande a{height:86px}
-.strip-medio>div{gap:16px 8%}
-.strip-medio a{flex:0 0 42%;max-width:42%;height:76px}
-.strip-lado a{flex:0 0 30%;max-width:30%;height:70px}
-.strip-duplo>div{gap:18px 8%}
-.strip-duplo a{flex:0 0 42%;max-width:42%;height:72px}
+.strip-inst>div,.strip-pat>div{flex-direction:column}
+.strip-inst a{width:82%;height:100px}
+.strip-pat a{width:70%;height:84px}
+.strip-real>div{gap:14px 8%}
+.strip-real a{flex:0 0 40%;max-width:40%;height:64px}
+.strip-apoio>div{gap:16px 5%}
+.strip-apoio a{flex:0 0 28%;max-width:28%;height:54px}
 .spons{text-align:center;padding:18px 16px}
 .spons-logo{display:flex;justify-content:center;margin-bottom:10px}
-.spons-logo img{max-width:100%;height:auto}
+.spons-logo img{max-width:100%;height:auto;object-fit:contain}
 .spons h3{font-size:1.05rem;margin:8px 0 6px}
 .spons p{text-align:left}
 .spons .btn-row{justify-content:center}

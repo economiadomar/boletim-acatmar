@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-18-2",
+  "versao": "2026-09-19-1",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -386,7 +386,7 @@
       "destaque": true,
       "logo": "../media/logos/vi-forum-patrocinio-institucional.png",
       "alt": "Prefeitura Municipal de Florianópolis",
-      "largura": 300,
+      "largura": 354,
       "empresas": [
         {
           "nome": "Prefeitura Municipal de Florianópolis",
@@ -403,9 +403,9 @@
     {
       "cota": "Patrocínio",
       "destaque": true,
-      "logo": "../media/logos/vi-forum-patrocinio-okean.png",
+      "logo": "../media/logos/vi-forum-patrocinio.png",
       "alt": "Okean Yachts · Ferretti Group",
-      "largura": 200,
+      "largura": 116,
       "empresas": [
         {
           "nome": "Okean Yachts · Ferretti Group",
@@ -442,7 +442,7 @@
       ],
       "logo": "../media/logos/vi-forum-realizacao.png",
       "alt": "ACATMAR · Associação Náutica Brasileira, Mundo Mar Consulting",
-      "largura": 300
+      "largura": 343
     },
     {
       "cota": "Apoio oficial",
@@ -473,11 +473,29 @@
           "site": "https://personalboat.ind.br",
           "instagram": "https://www.instagram.com/personal_boat/",
           "escala": 1
+        },
+        {
+          "nome": "Escunas Pirata",
+          "logo": "media/logos/escunas-pirata.png",
+          "largura": 120,
+          "escala": 1.15,
+          "texto": "Grupo de empresas de turismo náutico de Florianópolis, conhecido pelo passeio de barco pirata que sai de Canasvieiras e percorre o norte da Ilha, com parada na Fortaleza de Santa Cruz, na Ilha de Anhatomirim. Combina roteiro pelas praias, animação temática a bordo e paradas para banho de mar.",
+          "site": "https://escunaspirata.com.br",
+          "instagram": ""
+        },
+        {
+          "nome": "Propspeed",
+          "logo": "media/logos/propspeed.png",
+          "largura": 170,
+          "escala": 1,
+          "texto": "Revestimento antiincrustante para hélices, rabetas e demais metais abaixo da linha d'água, criado na Nova Zelândia e usado em embarcações de lazer, veleiros e barcos de trabalho no mundo todo. Sem biocidas, mantém a superfície lisa, o que melhora o rendimento do sistema de propulsão e reduz o consumo de combustível. A Propspeed Brasil é a distribuidora oficial na América do Sul.",
+          "site": "https://www.propspeed.com.br",
+          "instagram": "https://www.instagram.com/propspeedbr/"
         }
       ],
-      "logo": "../media/logos/vi-forum-apoio.png",
-      "alt": "Iate Clube Veleiros da Ilha, Safeboat, Personal Boat",
-      "largura": 320
+      "logo": "../media/logos/vi-forum-apoio-oficial.png",
+      "alt": "Iate Clube Veleiros da Ilha, Safeboat, Personal Boat, Escunas Pirata, Propspeed",
+      "largura": 543
     },
     {
       "cota": "Apoio institucional",
@@ -527,7 +545,7 @@
       ],
       "logo": "../media/logos/vi-forum-apoio-institucional.png",
       "alt": "IFSC · Câmpus Florianópolis-Continente, Marina Escola, FORTUR · Fórum de Turismo da Grande Florianópolis, Capitania dos Portos de Santa Catarina",
-      "largura": 330
+      "largura": 503
     }
   ],
   "patrocinio_cta": {
@@ -660,5 +678,5 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 30
+  "app_min": 32
 }

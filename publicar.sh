@@ -24,6 +24,8 @@ echo "1/4  Gerando páginas de notícias, versão em inglês e sitemap…"
 python3 build-cards.py | sed 's/^/     /'
 python3 build-noticias.py | sed 's/^/     /'
 python3 tools/forum-agenda.py | sed 's/^/     /'
+python3 tools/forum-patrocinadores.py | sed 's/^/     /'
+python3 tools/bloco-palestrantes.py | sed 's/^/     /'
 python3 build-en.py | sed 's/^/     /'
 
 # valida os arquivos de conteúdo antes de subir
