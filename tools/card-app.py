@@ -72,7 +72,7 @@ def painel_patrocinio(im, y0, alt):
             x += lw + 70
         return y + 34 + h
     y = 26
-    y = linha(y, [('Patrocínio institucional:', grupo('Patrocínio institucional')), ('Patrocínio:', grupo('Patrocínio'))])
+    y = linha(y, [('Patrocínio:', grupo('Patrocínio'))])
     y += 22; d.line([(30, y), (pw - 30, y)], fill=(215, 222, 230), width=2); y += 16
     y = linha(y, [('Realização:', grupo('Realização')), ('Apoio oficial:', grupo('Apoio oficial'))], gap=20)
     y += 22; d.line([(30, y), (pw - 30, y)], fill=(215, 222, 230), width=2); y += 16

@@ -137,8 +137,8 @@ h1,h2,h3{font-family:var(--f-head);text-transform:uppercase;letter-spacing:.02em
 .strip-cota>div{display:flex;flex-wrap:wrap;gap:14px 4%;align-items:center;justify-content:center}
 .strip-cota a{display:flex;align-items:center;justify-content:center}
 .strip-cota img{width:auto;height:auto;object-fit:contain}
-.strip-inst>div{gap:16px 6%}
-.strip-inst a{flex:0 0 46%;max-width:46%;height:120px}
+.strip-inst>div{flex-direction:column;gap:20px}
+.strip-inst a{width:100%;height:auto;display:flex;justify-content:center}
 .strip-real>div,.strip-apoio>div{gap:14px 6%}
 .strip-real a{flex:0 0 44%;max-width:44%;height:74px}
 .strip-apoio a{flex:0 0 44%;max-width:44%;height:66px}

@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-21-1",
+  "versao": "2026-09-21-2",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -402,7 +402,7 @@
           "texto": "Estaleiro brasileiro de iates de luxo fundado em 2015, com fábrica própria de 26 mil m² em Itajaí (SC). Produz a linha OKEAN, com design de Paolo Ferragni e o conceito pioneiro de side decks abertos, e é o único estaleiro do mundo licenciado a fabricar barcos Ferretti Yachts fora da Itália, com cinco modelos produzidos no Brasil. O Grupo OKEAN também administra a Yachtmax, revenda exclusiva de Ferretti Yachts, Riva, Pershing e OKEAN no país.",
           "site": "https://okeanyachts.com",
           "instagram": "https://www.instagram.com/okeanyachts/",
-          "escala": 1.0,
+          "escala": 0.8,
           "escala_fixa": true
         }
       ],
@@ -670,5 +670,5 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 35
+  "app_min": 36
 }
