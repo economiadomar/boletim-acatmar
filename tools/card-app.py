@@ -50,7 +50,7 @@ def centro(d, y, s, f, cor=(255, 255, 255), sombra=True):
     (sombra_txt if sombra else lambda d, xy, s, f, cor: d.text(xy, s, font=f, fill=cor))(d, ((L - w) // 2, y), s, f, cor)
     return d.textbbox((0, 0), s, font=f)[3]
 
-BASE = {'Patrocínio institucional': 92, 'Patrocínio': 76, 'Realização': 50}
+BASE = {'Patrocínio': 92, 'Realização': 50}
 def grupo(cota):
     c = [c for c in D['patrocinadores'] if c['cota'] == cota][0]
     ims = [logo(e['logo'], int(BASE.get(cota, 40) * (e.get('escala') or 1))) for e in c['empresas'] if e.get('logo')]

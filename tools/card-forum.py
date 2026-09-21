@@ -27,7 +27,7 @@ def txt_c(d, y, s, f, cor, L):
     d.text(((L - x1) // 2, y - y0), s, font=f, fill=cor)
     return y1 - y0
 
-COTA_ESC = {'Patrocínio institucional': 1.95, 'Patrocínio': 1.70, 'Realização': 1.12}
+COTA_ESC = {'Patrocínio': 1.85, 'Realização': 1.12}
 
 def faixa(L, alt_logo, gap, tam_lab):
     grupos = []

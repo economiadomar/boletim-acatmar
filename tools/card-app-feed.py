@@ -112,7 +112,7 @@ def celular(im, x, y, h, tela):
     im.paste(scr, (x + 8, y + 8), m); d.rounded_rectangle([x + w // 2 - 28, y + 12, x + w // 2 + 28, y + 20], 4, fill=(16, 18, 24))
 
 # ---------- painel de patrocinadores com onda ----------
-BASEH = {'Patrocínio institucional': 58, 'Patrocínio': 48, 'Realização': 34}
+BASEH = {'Patrocínio': 58, 'Realização': 34}
 def grupo(cota):
     c = [c for c in D['patrocinadores'] if c['cota'] == cota][0]
     return [logo(e['logo'], int(BASEH.get(cota, 29) * (e.get('escala') or 1))) for e in c['empresas'] if e.get('logo')]
@@ -132,7 +132,7 @@ def painel(im, y_top):
             if k < len(grupos) - 1: d.line([(x + lw + 42, y + 2), (x + lw + 42, y + 22 + h)], fill=(190, 205, 218), width=2)
             x += lw + 84
         return y + 22 + h
-    y = linha(y, [('Patrocínio institucional:', grupo('Patrocínio institucional')), ('Patrocínio:', grupo('Patrocínio'))])
+    y = linha(y, [('Patrocínio:', grupo('Patrocínio'))])
     y += 9; d.line([(50, y), (L - 50, y)], fill=(215, 222, 230), width=2); y += 7
     y = linha(y, [('Realização:', grupo('Realização')), ('Apoio oficial:', grupo('Apoio oficial'))], gap=16)
     y += 9; d.line([(50, y), (L - 50, y)], fill=(215, 222, 230), width=2); y += 7

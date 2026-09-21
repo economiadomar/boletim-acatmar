@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-20-1",
+  "versao": "2026-09-21-1",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -382,11 +382,8 @@
   ],
   "patrocinadores": [
     {
-      "cota": "Patrocínio institucional",
+      "cota": "Patrocínio",
       "destaque": true,
-      "logo": "../media/logos/vi-forum-patrocinio-institucional.png",
-      "alt": "Prefeitura Municipal de Florianópolis",
-      "largura": 354,
       "empresas": [
         {
           "nome": "Prefeitura Municipal de Florianópolis",
@@ -395,18 +392,9 @@
           "texto": "Governo da capital de Santa Catarina, cidade de 42 praias, com mais de 500 mil habitantes e uma das maiores frotas de embarcações de lazer do país. Florianópolis é polo de turismo, tecnologia e inovação, e vem estruturando políticas para a Economia do Mar, com a náutica, a pesca, a maricultura e o turismo náutico entre os eixos de desenvolvimento do município.",
           "site": "https://www.pmf.sc.gov.br",
           "instagram": "https://www.instagram.com/prefflorianopolis/",
-          "institucional": true,
-          "escala": 1.0
-        }
-      ]
-    },
-    {
-      "cota": "Patrocínio",
-      "destaque": true,
-      "logo": "../media/logos/vi-forum-patrocinio.png",
-      "alt": "Okean Yachts · Ferretti Group",
-      "largura": 127,
-      "empresas": [
+          "escala": 1.0,
+          "escala_fixa": true
+        },
         {
           "nome": "Okean Yachts · Ferretti Group",
           "logo": "media/logos/okean-world.png",
@@ -414,9 +402,13 @@
           "texto": "Estaleiro brasileiro de iates de luxo fundado em 2015, com fábrica própria de 26 mil m² em Itajaí (SC). Produz a linha OKEAN, com design de Paolo Ferragni e o conceito pioneiro de side decks abertos, e é o único estaleiro do mundo licenciado a fabricar barcos Ferretti Yachts fora da Itália, com cinco modelos produzidos no Brasil. O Grupo OKEAN também administra a Yachtmax, revenda exclusiva de Ferretti Yachts, Riva, Pershing e OKEAN no país.",
           "site": "https://okeanyachts.com",
           "instagram": "https://www.instagram.com/okeanyachts/",
-          "escala": 1.17
+          "escala": 1.0,
+          "escala_fixa": true
         }
-      ]
+      ],
+      "logo": "../media/logos/vi-forum-patrocinio.png",
+      "alt": "Prefeitura Municipal de Florianópolis, Okean Yachts · Ferretti Group",
+      "largura": 354
     },
     {
       "cota": "Realização",
@@ -678,5 +670,5 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 34
+  "app_min": 35
 }

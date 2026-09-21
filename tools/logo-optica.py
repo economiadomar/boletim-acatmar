@@ -9,7 +9,7 @@ import numpy as np
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FJ = os.path.join(RAIZ, 'app/data/forum.json')
 D = json.load(open(FJ, encoding='utf-8'))
-H0 = {'Patrocínio institucional': 100, 'Patrocínio': 88, 'Realização': 56}   # alturas-base no app (px)
+H0 = {'Patrocínio': 100, 'Realização': 56}   # alturas-base no app (px)
 H0_PADRAO = 50
 REF_R, REF_F = 2.5, 0.45      # logo "tipica" (palavra larga) que fica exatamente em H0
 EXP = 0.38                    # forca da correcao otica (0 = altura igual; 0.5 = area de tinta igual)
@@ -33,7 +33,8 @@ for c in D['patrocinadores']:
     for e in c['empresas']:
         if not e.get('logo'): continue
         im, r, f = metrica(e['logo'])
-        e['escala'] = escala(r, f, 1.0 if c['cota'] == 'Patrocínio institucional' else LIM[0])
+        if e.get('escala_fixa'): linhas.append((c['cota'], e['nome'], im, r, f, e['escala'], int(base * e['escala']))); continue
+        e['escala'] = escala(r, f, LIM[0])
         linhas.append((c['cota'], e['nome'], im, r, f, e['escala'], int(base * e['escala'])))
 json.dump(D, open(FJ, 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
 
