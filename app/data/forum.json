@@ -1,5 +1,5 @@
 {
-  "versao": "2026-09-21-3",
+  "versao": "2026-09-23-1",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -177,6 +177,16 @@
       "desc": "Os tipos de vidro aplicados a embarcações, o que muda em segurança, desempenho e durabilidade, e como especificar e conservar o vidro do seu barco."
     },
     {
+      "id": "heros",
+      "periodo": "Tarde",
+      "hora": "15:30",
+      "titulo": "Repare certo! Reparos em fibra, divinycell, gelcoat e fibra de carbono",
+      "quem": "Heros Silverio · Silverio Estaleiro",
+      "tipo": "palestra",
+      "palestrante": "heros-silverio",
+      "desc": "Abordagem prática de reparos em fibra de vidro, divinycell, gelcoat e fibra de carbono, com os materiais certos para cada caso e o que ter a bordo para as emergências."
+    },
+    {
       "id": "encerra",
       "periodo": "Tarde",
       "hora": "18:30",
@@ -248,6 +258,16 @@
       ],
       "bio": "Engenheiro naval, atuou em estaleiros, fundou a Navalcare em 2016 e lançou a Safeboat em 2024. Tem ampla experiência em embarcações de esporte e recreio, com foco em manutenção e monitoramento inteligente a bordo.",
       "hora": "09h30 · Manhã"
+    },
+    {
+      "id": "heros-silverio",
+      "nome": "Heros Silverio",
+      "cargo": "Fundador",
+      "empresa": "Silverio Estaleiro",
+      "foto": "media/palestrantes/heros-silverio.jpg",
+      "tema": "Repare certo! Reparos em fibra, divinycell, gelcoat e fibra de carbono",
+      "bio": "Fundador do Silverio Estaleiro e especialista em técnicas construtivas de barcos de performance, Heros trabalha no dia a dia com fibra de vidro, divinycell, gelcoat e fibra de carbono. Na palestra ele traz uma abordagem prática de reparos nesses materiais e mostra os produtos certos para cada situação, inclusive o que ter a bordo para as emergências.",
+      "hora": "15h30 · Tarde"
     }
   ],
   "edicao_anterior": {
@@ -670,5 +690,5 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 37
+  "app_min": 38
 }
