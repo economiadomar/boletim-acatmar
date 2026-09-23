@@ -86,7 +86,23 @@ def artigo_html(n, en):
                 if cap: fig+=f'<figcaption>{html.escape(cap)}</figcaption>'
                 parts.append(fig+'</figure>')
             return ''.join(parts)
-        out += f'<div class="gallery{solo}">'+_figs()+'</div>'
+        if len(g)==1:
+            out += f'<div class="gallery solo">'+_figs()+'</div>'
+        else:
+            slides=[]
+            for s in g:
+                if isinstance(s, dict):
+                    src=s.get('src'); cap=(s.get('legenda_en') if en else s.get('legenda')) or ''
+                else:
+                    src=s; cap=''
+                sl=f'<figure class="cslide"><img loading="lazy" src="/{src}" alt="{html.escape(titulo)}">'
+                if cap: sl+=f'<figcaption>{html.escape(cap)}</figcaption>'
+                slides.append(sl+'</figure>')
+            prev=('Previous' if en else 'Anterior'); nxt=('Next' if en else 'Próxima')
+            SB="var t=this.parentNode.querySelector(&quot;.carousel-track&quot;);t.scrollBy({left:%s*t.clientWidth,behavior:&quot;smooth&quot;})"
+            out += (f'<div class="carousel"><button class="cbtn cprev" aria-label="{prev}" onclick="{SB%(-1)}">&#8249;</button>'
+                    f'<div class="carousel-track">'+''.join(slides)+'</div>'
+                    f'<button class="cbtn cnext" aria-label="{nxt}" onclick="{SB%1}">&#8250;</button></div>')
     if n.get('apoiadores'):
         tit = (n.get('apoiadores_titulo_en') if en else n.get('apoiadores_titulo')) or ('Organizers and supporters' if en else 'Realização e apoiadores')
         out += f'<div class="apoiadores"><h2>{html.escape(tit)}</h2>'
