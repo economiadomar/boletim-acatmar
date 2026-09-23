@@ -13,6 +13,11 @@
       "legenda_en": "The 5th Governance meeting brought together the public sector, industry, academia and organizations at the Sebrae/SC headquarters in Florianópolis.",
       "galeria": [
         {
+          "src": "media/noticias/gov-economia-azul-discurso.jpg",
+          "legenda": "Mané Ferrari na posse: a proposta é transformar articulação em ação.",
+          "legenda_en": "Mané Ferrari at the inauguration: the goal is to turn coordination into action."
+        },
+        {
           "src": "media/noticias/gov-economia-azul-reconhecimento.jpg",
           "legenda": "Mané Ferrari recebe o reconhecimento à presidência da Governança Estadual da Economia Azul de Santa Catarina.",
           "legenda_en": "Mané Ferrari receives the recognition for the presidency of the State Governance of the Blue Economy of Santa Catarina."
@@ -21,11 +26,6 @@
           "src": "media/noticias/gov-economia-azul-assinatura.jpg",
           "legenda": "A assinatura do Regimento Interno foi um dos marcos do encontro que empossou a nova gestão.",
           "legenda_en": "The signing of the Bylaws was one of the milestones of the meeting that inaugurated the new administration."
-        },
-        {
-          "src": "media/noticias/gov-economia-azul-discurso.jpg",
-          "legenda": "Mané Ferrari na posse: a proposta é transformar articulação em ação.",
-          "legenda_en": "Mané Ferrari at the inauguration: the goal is to turn coordination into action."
         }
       ],
       "resumo": "Leandro \"Mané\" Ferrari, presidente e um dos fundadores da ACATMAR, assumiu em 22 de setembro a presidência da Governança Estadual da Economia Azul de Santa Catarina. O espaço reúne poder público, iniciativa privada, secretarias de governo, municípios costeiros, academia e os setores da defesa, náutica, indústria naval, portos, pesca e maricultura em torno do mar como ativo econômico do estado.",
