@@ -10,7 +10,7 @@
       "imagem": "media/noticias/acatmar-atuacao-nacional-2026.jpg",
       "sem_card": true,
       "imagem_inteira": true,
-      "credito": "ACATMAR",
+      "credito": "Divulgação ACATMAR",
       "resumo": "A ACATMAR percorre o Brasil, do Norte ao extremo Sul, conectando pessoas, empresas e instituições para fortalecer a Economia do Mar e criar oportunidades reais para todo o setor. A associação não para: leva o setor para a mesa dos governos, ajuda a aprovar leis, constrói infraestrutura, forma mão de obra e cuida do ambiente. Ações concretas, resultados consistentes, feitos pela ACATMAR pelo setor.",
       "resumo_en": "ACATMAR travels across Brazil, from North to the far South, connecting people, companies and institutions to strengthen the Sea Economy and create real opportunities for the whole sector. The association does not stop: it brings the sector to the government's table, helps pass laws, builds infrastructure, trains the workforce and protects the environment. Concrete actions, consistent results, made by ACATMAR for the sector.",
       "corpo": [
@@ -52,6 +52,33 @@
         "ACATMAR does not set sustainability aside. Through the Limpeza dos Mares project, it works to show that those who sail do not pollute, quite the opposite: those who sail want clean seas. From diving to beaches, from rivers to rocky shores, the project has already removed more than 205 tonnes of waste from the waters, alongside permanent environmental education work that has reached thousands of students.",
         "<b>Concrete actions, consistent results</b>",
         "Presence at events, coordination with governments, approved laws, infrastructure, workforce training and sustainability. These are different fronts with a single goal: a stronger, better organized and more representative nautical sector. ACATMAR did not stop. It was the association that stepped in, called the responsibility to itself and worked from the ground up, with concrete actions and consistent results, so that Brazil's Sea Economy is recognized for the size it truly has."
+      ],
+      "galeria": [
+        {
+          "src": "media/noticias/acatmar-nac-bahia.jpg",
+          "legenda": "Na Bahia, a ACATMAR palestrou sobre a força da cadeia náutica e naval.",
+          "legenda_en": "In Bahia, ACATMAR gave a talk on the strength of the nautical and naval chain."
+        },
+        {
+          "src": "media/noticias/acatmar-nac-manaus.jpg",
+          "legenda": "Em Manaus, a ACATMAR levou o setor náutico à mesa do comércio e dos empresários locais.",
+          "legenda_en": "In Manaus, ACATMAR brought the nautical sector to the table of local businesses."
+        },
+        {
+          "src": "media/noticias/acatmar-nac-riogrande.jpg",
+          "legenda": "No Rio Grande, a ACATMAR apresentou o turismo náutico como vetor de desenvolvimento.",
+          "legenda_en": "In Rio Grande, ACATMAR presented nautical tourism as a driver of development."
+        },
+        {
+          "src": "media/noticias/acatmar-nac-limpeza.jpg",
+          "legenda": "O Limpeza dos Mares leva educação ambiental e mostra que quem navega quer o mar limpo.",
+          "legenda_en": "Limpeza dos Mares brings environmental education and shows that those who sail want a clean sea."
+        },
+        {
+          "src": "media/noticias/acatmar-nac-governanca.jpg",
+          "legenda": "À frente da Governança Estadual da Economia Azul, reunindo os setores público e privado.",
+          "legenda_en": "Leading the State Governance of the Blue Economy, bringing together the public and private sectors."
+        }
       ]
     },
     {
