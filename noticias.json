@@ -9,18 +9,18 @@
    "data": "2026-09-27",
    "imagem": "media/noticias/ldm-porto-belo-praia.jpg",
    "credito": "Divulgação Limpeza dos Mares",
-   "legenda": "Cerca de 200 voluntários percorreram a praia enquanto equipes de mergulho atuavam na água, em Porto Belo.",
-   "legenda_en": "About 200 volunteers combed the beach while dive teams worked in the water, in Porto Belo.",
+   "legenda": "Cerca de 200 voluntários reuniram-se na praia para a etapa do Limpeza dos Mares em Porto Belo.",
+   "legenda_en": "About 200 volunteers gathered on the beach for the Limpeza dos Mares stage in Porto Belo.",
    "galeria": [
     {
      "src": "media/noticias/ldm-porto-belo-voluntarios.jpg",
-     "legenda": "A etapa reuniu moradores de Porto Belo e voluntários da Grande Florianópolis e de Jaraguá do Sul.",
-     "legenda_en": "The stage gathered Porto Belo residents and volunteers from Greater Florianópolis and Jaraguá do Sul."
+     "legenda": "Na praia, os sacos voltavam cheios poucos minutos após o início da coleta.",
+     "legenda_en": "On the beach, the bags came back full minutes after the collection began."
     },
     {
      "src": "media/noticias/ldm-porto-belo-mergulhadores.jpg",
-     "legenda": "Equipes de mergulho embarcaram para atuar na Caixa d'Aço e em uma ilha.",
-     "legenda_en": "Dive teams boarded to work at Caixa d'Aço and on an island."
+     "legenda": "Da lancha, a equipe recebe o material retirado pelos mergulhadores.",
+     "legenda_en": "From the boat, the team receives the material removed by the divers."
     },
     {
      "src": "media/noticias/ldm-porto-belo-mergulho-lixo.jpg",
@@ -29,13 +29,13 @@
     },
     {
      "src": "media/noticias/ldm-porto-belo-residuos.jpg",
-     "legenda": "Parte dos resíduos retirados do fundo do mar, o chamado lixo que ninguém vê.",
-     "legenda_en": "Part of the waste removed from the seabed, the so-called litter no one sees."
+     "legenda": "Cada mergulho traz à tona o lixo que ninguém vê, submerso e fora da vista.",
+     "legenda_en": "Every dive brings up the litter no one sees, submerged and out of sight."
     },
     {
      "src": "media/noticias/ldm-porto-belo-barco-lixo.jpg",
-     "legenda": "Cerca de 800 kg de resíduos foram recolhidos pelas frentes de trabalho neste domingo.",
-     "legenda_en": "About 800 kg of waste were collected by the work fronts this Sunday."
+     "legenda": "A mobilização reuniu moradores de Porto Belo e voluntários da Grande Florianópolis e de Jaraguá do Sul.",
+     "legenda_en": "The mobilization gathered Porto Belo residents and volunteers from Greater Florianópolis and Jaraguá do Sul."
     }
    ],
    "apoiadores_titulo": "Realização e apoiadores",
