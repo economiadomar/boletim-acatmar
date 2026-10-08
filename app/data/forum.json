@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-08-1",
+  "versao": "2026-10-08-2",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -331,6 +331,15 @@
     ]
   },
   "avisos": [
+    {
+      "id": "palestra-heros",
+      "data": "2026-10-08",
+      "titulo": "Nova palestra: repare certo em fibra e gelcoat",
+      "texto": "Heros Silverio, fundador do Silverio Estaleiro e especialista em barcos de performance, apresenta às 15h30 \"Repare certo!\": uma aula prática de reparos em fibra de vidro, divinycell, gelcoat e fibra de carbono, com os materiais certos para cada caso e o que ter a bordo para as emergências.",
+      "imagem": "media/palestrantes/heros-silverio.jpg",
+      "link": "#/palestrantes",
+      "link_label": "Ver palestrante"
+    },
     {
       "id": "palestra-marcelo",
       "data": "2026-09-18",
@@ -690,5 +699,5 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 39
+  "app_min": 40
 }
