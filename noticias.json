@@ -1,6 +1,73 @@
 {
  "noticias": [
   {
+   "id": "acatmar-salao-nautico-genova-2026",
+   "titulo": "ACATMAR leva 15 empresas associadas ao Salão Náutico de Gênova e amplia conexões internacionais",
+   "titulo_en": "ACATMAR takes 15 member companies to the Genoa Boat Show and expands international connections",
+   "categoria": "Internacionalização",
+   "categoria_en": "Internationalization",
+   "data": "2026-10-08",
+   "imagem": "media/noticias/genova-acatmar-comitiva.jpg",
+   "credito": "Divulgação ACATMAR",
+   "legenda": "A comitiva da ACATMAR no Salão Náutico de Gênova, um dos maiores eventos do setor no mundo.",
+   "legenda_en": "ACATMAR's delegation at the Genoa Boat Show, one of the largest events in the sector worldwide.",
+   "galeria": [
+    {
+     "src": "media/noticias/genova-acatmar-b2b.jpg",
+     "legenda": "Nos encontros B2B, os associados apresentaram projetos e buscaram novos contatos comerciais.",
+     "legenda_en": "At the B2B meetings, members presented projects and sought new business contacts."
+    },
+    {
+     "src": "media/noticias/genova-acatmar-negocios.jpg",
+     "legenda": "As reuniões aproximaram empresas brasileiras de participantes de diferentes países.",
+     "legenda_en": "The meetings connected Brazilian companies with participants from different countries."
+    },
+    {
+     "src": "media/noticias/genova-acatmar-bnhb.jpg",
+     "legenda": "A comitiva apresentou o Blue Nautical Hub Brasil 2027 a potenciais parceiros internacionais.",
+     "legenda_en": "The delegation presented Blue Nautical Hub Brasil 2027 to potential international partners."
+    },
+    {
+     "src": "media/noticias/genova-acatmar-grupo.jpg",
+     "legenda": "Associados de São Paulo, Rio Grande do Sul, Santa Catarina e Ceará integraram a comitiva.",
+     "legenda_en": "Members from São Paulo, Rio Grande do Sul, Santa Catarina and Ceará made up the delegation."
+    }
+   ],
+   "link": "https://www.bluenauticalhubbrasil.com/pt/",
+   "link_label": "Conheça o Blue Nautical Hub Brasil 2027",
+   "link_label_en": "Learn about Blue Nautical Hub Brasil 2027",
+   "resumo": "A ACATMAR levou uma comitiva de 15 empresas associadas ao Salão Náutico de Gênova, na Itália, com os custos subsidiados pelos acordos firmados pela entidade. Vindos de São Paulo, do Rio Grande do Sul, de Santa Catarina e do Ceará, os associados participaram de encontros de negócios, apresentaram o Blue Nautical Hub Brasil 2027 e levaram o projeto Limpeza dos Mares, mostrando a força do setor náutico brasileiro e da própria ACATMAR.",
+   "resumo_en": "ACATMAR took a delegation of 15 member companies to the Genoa Boat Show in Italy, with costs subsidized by agreements signed by the association. Coming from São Paulo, Rio Grande do Sul, Santa Catarina and Ceará, the members took part in business meetings, presented Blue Nautical Hub Brasil 2027 and brought the Limpeza dos Mares project, showing the strength of Brazil's nautical sector and of ACATMAR itself.",
+   "corpo": [
+    "Novas tecnologias, conexões comerciais e oportunidades para a Economia do Mar brasileira marcaram a participação da ACATMAR, Associação Náutica Brasileira, no Salão Náutico de Gênova, na Itália, um dos maiores eventos do setor no mundo, neste mês de outubro. A comitiva foi liderada por Leandro \"Mané\" Ferrari, presidente da entidade, e por Michele Ferrari, diretora de Turismo, Eventos e Sustentabilidade e coordenadora do projeto Limpeza dos Mares, ao lado de um grupo de associados.",
+    "Ao todo, 15 empresas associadas participaram da comitiva, com os custos subsidiados pelos acordos firmados pela ACATMAR. Os associados vieram de diferentes partes do Brasil, de São Paulo, do Rio Grande do Sul, de Santa Catarina e do Ceará, um recorte que mostra a força do setor náutico em todo o país e a capacidade de articulação da associação.",
+    "<b>Negócios e novas tecnologias</b>",
+    "Além de conhecer as novidades do salão, os representantes participaram de encontros B2B, reuniões entre empresas voltadas à aproximação comercial, com participantes de diferentes países, principalmente nas áreas de tecnologia e inovação. Os associados que integraram essa agenda foram selecionados pela organização do evento após uma triagem, com a oportunidade de conhecer novos produtos, estabelecer contatos e trazer novidades para o Brasil.",
+    "\"Mais do que visitar Gênova, nossa expectativa é abrir portas, criar conexões e trazer novas oportunidades para os nossos associados e para o setor náutico brasileiro\", afirma Mané Ferrari.",
+    "<b>Blue Nautical Hub Brasil 2027 apresentado ao mundo</b>",
+    "A agenda internacional também foi uma oportunidade para apresentar o Blue Nautical Hub Brasil 2027, confirmado para abril, em Florianópolis. O evento reunirá simpósio internacional, visitas técnicas, encontros de negócios e uma feira voltada à tecnologia e inovação.",
+    "A proposta apresentada em Gênova busca atrair empresas internacionais interessadas em trazer ao Brasil tecnologias, produtos e soluções para diferentes segmentos da Economia do Mar, entre eles o náutico, o naval, a defesa, a pesca e a maricultura.",
+    "<b>Educação ambiental em italiano</b>",
+    "O projeto Limpeza dos Mares também foi apresentado durante os encontros com empresas internacionais. A iniciativa levou a Gênova uma versão em italiano da revistinha da Turma do Limpeza, com uma história em quadrinhos sobre bitucas de cigarro.",
+    "Com a participação de Michele Ferrari, o material integrou a apresentação das ações de educação ambiental do Limpeza dos Mares, ao lado da agenda de negócios e inovação conduzida pela entidade.",
+    "A presença da comitiva em Gênova aproximou os associados de empresas de diferentes países e colocou os projetos brasileiros em contato com potenciais parceiros internacionais, com foco nas oportunidades para o setor e na realização do Blue Nautical Hub Brasil 2027."
+   ],
+   "corpo_en": [
+    "New technologies, business connections and opportunities for Brazil's Sea Economy marked ACATMAR's participation, the Brazilian Nautical Association, in the Genoa Boat Show in Italy, one of the largest events in the sector worldwide, this month of October. The delegation was led by Leandro \"Mané\" Ferrari, the association's president, and by Michele Ferrari, Director of Tourism, Events and Sustainability and coordinator of the Limpeza dos Mares project, alongside a group of members.",
+    "In all, 15 member companies took part in the delegation, with costs subsidized by agreements signed by ACATMAR. The members came from different parts of Brazil, from São Paulo, Rio Grande do Sul, Santa Catarina and Ceará, a snapshot that shows the strength of the nautical sector across the country and the association's ability to coordinate it.",
+    "<b>Business and new technologies</b>",
+    "Besides seeing the show's novelties, the representatives took part in B2B meetings, business-to-business sessions aimed at commercial approximation, with participants from different countries, mainly in the areas of technology and innovation. The members who joined this agenda were selected by the event's organizers after a screening, with the chance to see new products, make contacts and bring novelties back to Brazil.",
+    "\"More than visiting Genoa, our expectation is to open doors, create connections and bring new opportunities to our members and to Brazil's nautical sector,\" says Mané Ferrari.",
+    "<b>Blue Nautical Hub Brasil 2027 presented to the world</b>",
+    "The international agenda was also a chance to present Blue Nautical Hub Brasil 2027, confirmed for April, in Florianópolis. The event will bring together an international symposium, technical visits, business meetings and a fair focused on technology and innovation.",
+    "The proposal presented in Genoa seeks to attract international companies interested in bringing to Brazil technologies, products and solutions for different segments of the Sea Economy, among them boating, naval, defense, fishing and mariculture.",
+    "<b>Environmental education in Italian</b>",
+    "The Limpeza dos Mares project was also presented during the meetings with international companies. The initiative brought to Genoa an Italian-language version of the Turma do Limpeza comic, with a story about cigarette butts.",
+    "With the participation of Michele Ferrari, the material was part of the presentation of the Limpeza dos Mares environmental education actions, alongside the business and innovation agenda led by the association.",
+    "The delegation's presence in Genoa brought members closer to companies from different countries and put Brazilian projects in contact with potential international partners, focusing on opportunities for the sector and on holding Blue Nautical Hub Brasil 2027."
+   ]
+  },
+  {
    "id": "limpeza-dos-mares-porto-belo-set-2026",
    "titulo": "Bateria de caminhão, vapes e panelas: o que 200 voluntários tiraram do mar e da praia de Porto Belo",
    "titulo_en": "Truck battery, vapes and pots: what 200 volunteers pulled from the sea and beach in Porto Belo",
