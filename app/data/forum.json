@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-08-2",
+  "versao": "2026-10-09-1",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -699,5 +699,213 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 40
+  "app_min": 41,
+  "diario": {
+    "base": "2026-10-09",
+    "titulo": "Fórum todo dia",
+    "quiz": [
+      {
+        "id": "q-mufla",
+        "palestrante": "alexandre-gonzaga",
+        "tema": "Arrefecimento e mufla",
+        "pergunta": "Para que serve a mufla (a \"orelha\") quando você lava o motor depois de usar o barco no mar?",
+        "opcoes": [
+          "Dar água ao motor para ele circular e resfriar fora d'água",
+          "Aumentar a potência do motor",
+          "Trocar o óleo automaticamente",
+          "Limpar o casco por fora"
+        ],
+        "correta": 0,
+        "explicacao": "A mufla leva água doce à bomba enquanto o motor fica fora d'água, resfriando e lavando o sistema de arrefecimento. Sem ela, o motor superaquece em segundos. O Alexandre detalha isso na palestra das 10h30."
+      },
+      {
+        "id": "q-fumaca",
+        "palestrante": "jovan-sampaio",
+        "tema": "O motor fala",
+        "pergunta": "Fumaça azulada saindo do escapamento geralmente é sinal de quê?",
+        "opcoes": [
+          "Queima de óleo lubrificante",
+          "Funcionamento normal do motor",
+          "Falta de combustível",
+          "Excesso de água no tanque"
+        ],
+        "correta": 0,
+        "explicacao": "Fumaça azulada indica que o motor está queimando óleo. A branca costuma ser vapor d'água e a preta, mistura rica em combustível. Ler a cor da fumaça evita pane. Tema do Jovan, às 13h30."
+      },
+      {
+        "id": "q-gelcoat",
+        "palestrante": "heros-silverio",
+        "tema": "Repare certo",
+        "pergunta": "No reparo de gelcoat, qual passo mais garante que o conserto dure e não descole?",
+        "opcoes": [
+          "Preparar e lixar bem a superfície e respeitar o tempo de cura",
+          "Aplicar o mais rápido possível",
+          "Usar sempre a cor branca",
+          "Pintar por cima sem lixar"
+        ],
+        "correta": 0,
+        "explicacao": "A aderência vem da preparação: superfície limpa, lixada e seca, e a cura respeitada. Pular isso é a causa nº1 do reparo soltar. O Heros mostra na prática às 15h30."
+      },
+      {
+        "id": "q-vidro",
+        "palestrante": "deivity-rosa",
+        "tema": "Vidro não é tudo igual",
+        "pergunta": "Por que o vidro de uma embarcação não é um vidro comum de janela?",
+        "opcoes": [
+          "É temperado ou laminado para aguentar impacto, pressão e maresia",
+          "É mais barato que o comum",
+          "É sempre colorido",
+          "Não precisa de manutenção"
+        ],
+        "correta": 0,
+        "explicacao": "Vidros náuticos são temperados ou laminados e especificados para impacto, pressão da água e ambiente salino. Usar o errado é risco de segurança. O Deivity explica às 14h30."
+      },
+      {
+        "id": "q-resgate",
+        "palestrante": "sgt-gianotti",
+        "tema": "Resgate no mar",
+        "pergunta": "Numa emergência no mar em Santa Catarina, além de ligar 193, qual é a informação mais importante a passar?",
+        "opcoes": [
+          "A posição e a localização mais exata possível",
+          "A cor do barco",
+          "O fabricante do motor",
+          "A previsão do tempo"
+        ],
+        "correta": 0,
+        "explicacao": "A posição é o que acelera o resgate: coordenadas do GPS, ponto de referência, distância da costa. O CBMSC usa jet skis, botes e aeronaves. O Sgt. Gianotti fala sobre isso às 11h."
+      },
+      {
+        "id": "q-colete",
+        "palestrante": null,
+        "tema": "Segurança a bordo",
+        "pergunta": "Quantos coletes salva-vidas uma embarcação de lazer precisa levar?",
+        "opcoes": [
+          "Um para cada pessoa a bordo",
+          "Dois, no total",
+          "Só para quem não sabe nadar",
+          "Um por embarcação"
+        ],
+        "correta": 0,
+        "explicacao": "A regra é um colete adequado por pessoa a bordo, acessível e em bom estado de conservação. Segurança é um tema que atravessa todo o Fórum."
+      },
+      {
+        "id": "q-monitoramento",
+        "palestrante": "marcelo-reis",
+        "tema": "Tecnologia a bordo",
+        "pergunta": "Qual a maior vantagem de monitorar o barco em tempo real?",
+        "opcoes": [
+          "Antecipar a manutenção e evitar pane e custo",
+          "Deixar o barco mais rápido",
+          "Dispensar o seguro",
+          "Trocar o motor sozinho"
+        ],
+        "correta": 0,
+        "explicacao": "Sensores a bordo mostram a saúde do barco e avisam antes de o problema aparecer, reduzindo risco e custo. O Marcelo (Safeboat e Navalcare) abre a manhã às 9h30."
+      },
+      {
+        "id": "q-agua-porao",
+        "palestrante": "jovan-sampaio",
+        "tema": "Manutenção preventiva",
+        "pergunta": "Encontrar água no porão do barco com frequência pede o quê?",
+        "opcoes": [
+          "Investigar a origem: vedação, eixo, mangueiras e tomadas d'água",
+          "Ignorar, se for pouca",
+          "Colocar mais peso no barco",
+          "Trocar a cor do casco"
+        ],
+        "correta": 0,
+        "explicacao": "Água recorrente no porão é sintoma, não causa. Vale checar vedações, caixa do eixo, mangueiras e tomadas de água. Manutenção preventiva aparece em várias palestras do dia."
+      },
+      {
+        "id": "q-carbono",
+        "palestrante": "heros-silverio",
+        "tema": "Fibra de carbono",
+        "pergunta": "A fibra de carbono é usada em barcos de performance principalmente porque...",
+        "opcoes": [
+          "É muito leve e, ao mesmo tempo, muito resistente",
+          "É a mais barata do mercado",
+          "Nunca precisa de reparo",
+          "Enferruja menos que o aço"
+        ],
+        "correta": 0,
+        "explicacao": "O carbono une baixo peso e alta rigidez, um ganho direto de performance. Mas o reparo exige técnica específica. O Heros é especialista em construção de barcos de performance (15h30)."
+      },
+      {
+        "id": "q-combustivel",
+        "palestrante": "jovan-sampaio",
+        "tema": "O motor fala",
+        "pergunta": "Um consumo de combustível que sobe de repente, sem mudar o uso, pode indicar...",
+        "opcoes": [
+          "Algo errado no motor ou no casco: incrustação, hélice ou injeção",
+          "Que o barco está mais novo",
+          "Que a maré está baixa",
+          "Nada, isso é normal"
+        ],
+        "correta": 0,
+        "explicacao": "Consumo é um dos sinais que o motor dá. Pode ser incrustação no casco, hélice danificada, injeção ou filtro sujo. Ler esses sinais é o tema do Jovan, às 13h30."
+      }
+    ],
+    "enquetes": [
+      {
+        "id": "e-heros",
+        "palestrante": "heros-silverio",
+        "tema": "Repare certo (Heros Silverio, 15h30)",
+        "pergunta": "O que você mais quer que o Heros ensine sobre reparos?",
+        "opcoes": [
+          "Consertar fibra e casco trincado",
+          "Gelcoat e acabamento",
+          "Fibra de carbono",
+          "O que ter a bordo para emergências"
+        ]
+      },
+      {
+        "id": "e-jovan",
+        "palestrante": "jovan-sampaio",
+        "tema": "O motor fala (Jovan Sampaio, 13h30)",
+        "pergunta": "Qual sinal do motor você mais quer aprender a identificar?",
+        "opcoes": [
+          "Fumaça",
+          "Temperatura e superaquecimento",
+          "Ruído e vibração",
+          "Consumo de combustível"
+        ]
+      },
+      {
+        "id": "e-alexandre",
+        "palestrante": "alexandre-gonzaga",
+        "tema": "Arrefecimento e mufla (Alexandre Gonzaga, 10h30)",
+        "pergunta": "Sobre arrefecimento e mufla, o que mais te interessa?",
+        "opcoes": [
+          "Lavar o motor do jeito certo",
+          "Evitar superaquecimento",
+          "Troca do impelidor",
+          "Manutenção preventiva"
+        ]
+      },
+      {
+        "id": "e-gianotti",
+        "palestrante": "sgt-gianotti",
+        "tema": "Resgate no mar (Sgt. Gianotti, 11h)",
+        "pergunta": "O que você mais quer saber sobre resgate no mar?",
+        "opcoes": [
+          "Como e quando acionar o socorro",
+          "Os recursos do CBMSC",
+          "O que fazer até o socorro chegar",
+          "Como prevenir acidentes"
+        ]
+      },
+      {
+        "id": "e-deivity",
+        "palestrante": "deivity-rosa",
+        "tema": "Vidro não é tudo igual (Deivity Rosa, 14h30)",
+        "pergunta": "Sobre vidros náuticos, qual é a sua maior dúvida?",
+        "opcoes": [
+          "Qual vidro é seguro",
+          "Conservação e limpeza",
+          "Troca e instalação",
+          "Diferença de desempenho"
+        ]
+      }
+    ]
+  }
 }

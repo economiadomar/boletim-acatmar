@@ -2,6 +2,8 @@
 // POST /registro  -> grava/atualiza um aparelho (chave d:<id>)
 // GET  /resumo?pin= -> totais + lista
 // GET  /csv?pin=     -> planilha
+// POST /voto        -> registra voto numa enquete (chave v:<enquete>:<id>, opcao na metadata)
+// GET  /enquete?id= -> contagem de votos de uma enquete (publico)
 const ORIGENS = ['https://www.acatmar.org', 'https://acatmar.org'];
 
 function cors(origin) {
@@ -27,6 +29,21 @@ async function todos(env) {
     cursor = r.list_complete ? null : r.cursor;
   } while (cursor);
   return out;
+}
+
+// Soma os votos de uma enquete usando a metadata das chaves (sem ler valor a valor).
+async function apurar(env, enq) {
+  const contagem = {};
+  let total = 0, cursor;
+  do {
+    const r = await env.FORUM_APP.list({ prefix: 'v:' + enq + ':', limit: 1000, cursor });
+    for (const k of r.keys) {
+      const o = k.metadata && k.metadata.o;
+      if (Number.isInteger(o)) { contagem[o] = (contagem[o] || 0) + 1; total++; }
+    }
+    cursor = r.list_complete ? null : r.cursor;
+  } while (cursor);
+  return { total, contagem };
 }
 
 export default {
@@ -83,6 +100,26 @@ export default {
         identificados: regs.filter(r => r.nome).length,
         lista: regs
       }, origin);
+    }
+
+    if (url.pathname === '/voto' && req.method === 'POST') {
+      let b;
+      try { b = await req.json(); } catch (e) { return json({ erro: 'json' }, origin, 400); }
+      const enq = lim(b.enquete, 40);
+      const id = lim(b.id, 40);
+      const opc = Number(b.opcao);
+      if (!enq || !id) return json({ erro: 'dados' }, origin, 400);
+      if (!Number.isInteger(opc) || opc < 0 || opc > 15) return json({ erro: 'opcao' }, origin, 400);
+      await env.FORUM_APP.put('v:' + enq + ':' + id, '1', { metadata: { o: opc } });
+      const res = await apurar(env, enq);
+      return json({ ok: true, ...res }, origin);
+    }
+
+    if (url.pathname === '/enquete' && req.method === 'GET') {
+      const enq = lim(url.searchParams.get('id') || '', 40);
+      if (!enq) return json({ erro: 'id' }, origin, 400);
+      const res = await apurar(env, enq);
+      return json(res, origin);
     }
 
     return json({ erro: 'rota' }, origin, 404);

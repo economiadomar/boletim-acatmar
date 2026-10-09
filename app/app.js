@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=40;
+var APP_V=41;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -34,8 +34,8 @@ function checkUpdate(){if(D&&D.app_min&&D.app_min>APP_V){var k='forum_reload_'+D
 function boot(){if(booted)return;booted=true;checkUpdate();render();updateBadge();setTimeout(installGate,150);setTimeout(function(){var s=document.getElementById('splash');s.classList.add('off');setTimeout(function(){s.remove();},400);},350);}
 
 /* ---------- roteamento ---------- */
-var routes={'/':home,'/programacao':programacao,'/palestrantes':palestrantes,'/avisos':avisos,'/aviso':aviso,'/credencial':credencial,'/patrocinadores':patrocinadores,'/local':local,'/interagir':interagir,'/certificado':certificado,'/instalar':instalar,'/sobre':sobre,'/mais':mais,'/anterior':anterior,'/faq':faq,'/credenciamento':credenciamento,'/edicoes':edicoes,'/inscricao':inscricao,'/controle':controle};
-var titles={'/programacao':'Programação','/palestrantes':'Palestrantes','/avisos':'Avisos','/aviso':'Aviso','/credencial':'Minha credencial','/patrocinadores':'Patrocinadores','/local':'Local e como chegar','/interagir':'Interagir','/certificado':'Certificado','/instalar':'Instalar o app','/sobre':'Sobre o Fórum','/mais':'Mais','/anterior':'V Fórum (2025)','/faq':'Perguntas frequentes','/credenciamento':'Credenciamento','/edicoes':'Edições anteriores','/inscricao':'Inscrição','/controle':'Controle do app'};
+var routes={'/':home,'/programacao':programacao,'/palestrantes':palestrantes,'/avisos':avisos,'/aviso':aviso,'/credencial':credencial,'/patrocinadores':patrocinadores,'/local':local,'/interagir':interagir,'/certificado':certificado,'/instalar':instalar,'/sobre':sobre,'/mais':mais,'/anterior':anterior,'/faq':faq,'/credenciamento':credenciamento,'/edicoes':edicoes,'/inscricao':inscricao,'/controle':controle,'/diario':diario};
+var titles={'/programacao':'Programação','/palestrantes':'Palestrantes','/avisos':'Avisos','/aviso':'Aviso','/credencial':'Minha credencial','/patrocinadores':'Patrocinadores','/local':'Local e como chegar','/interagir':'Interagir','/certificado':'Certificado','/instalar':'Instalar o app','/sobre':'Sobre o Fórum','/mais':'Mais','/anterior':'V Fórum (2025)','/faq':'Perguntas frequentes','/credenciamento':'Credenciamento','/edicoes':'Edições anteriores','/inscricao':'Inscrição','/controle':'Controle do app','/diario':'Fórum todo dia'};
 var tabsMain=['/','/programacao','/credencial','/avisos','/mais'];
 function route(){var hsh=location.hash.replace(/^#/,'')||'/';var parts=hsh.split('/');var path='/'+(parts[1]||'');var arg=parts[2]||'';return {path:path,arg:arg};}
 function render(){
@@ -65,6 +65,7 @@ function home(){
   var regBtn=st==='antes'?'<a class="btn btn-teal btn-block" href="#/inscricao">'+(LS.get('inscrito',null)?'✅ Inscrito · ver programação':'Inscrição gratuita')+'</a>':'';
   h('<section class="hero"><div class="hero-top"><img src="media/emblema-v2.jpg" alt="VI Fórum ACATMAR"><div><p class="kicker">'+esc(e.edicao)+' · '+esc(e.mote)+'</p><h1>'+esc(e.nome)+'</h1></div></div><div class="hero-in"><p>'+esc(e.data_texto)+' · '+esc(e.horario_texto)+'</p>'+cd+'</div></section>'
    +'<div class="quick"><a href="#/programacao"><i>🗓️</i>Programação</a><a href="#/local"><i>📍</i>Local</a><a href="#/credencial"><i>🎫</i>Credencial</a><a href="#/interagir"><i>💬</i>Interagir</a></div>'
+   +diarioHomeCard(st,d)
    +'<section class="section"><div class="card"><div class="info"><div class="info-row"><div class="ic">📅</div><div><b>Quando</b><span>'+esc(e.data_texto)+'<br>'+esc(e.horario_texto)+'</span></div></div><div class="info-row"><div class="ic">📍</div><div><b>Onde</b><span>'+esc(e.local.nome)+(e.local.sala?' · '+esc(e.local.sala):'')+'<br><small class="muted">'+esc(e.local.endereco)+'</small></span></div></div><div class="info-row"><div class="ic">🅿️</div><div><b>Estacionamento</b><span>Próprio e gratuito no câmpus</span></div></div><div class="info-row"><div class="ic">🎟️</div><div><b>Participação</b><span>Gratuita, vagas limitadas'+(e.certificado?' · com certificado':'')+'</span></div></div></div>'+(regBtn?'<div class="btn-row">'+regBtn+'</div>':'')+'</div></section>'
    +'<section class="section"><div class="section-h"><h2>Avisos'+(unread?' <span class="tag red">'+unread+' novo'+(unread>1?'s':'')+'</span>':'')+'</h2><a href="#/avisos">Ver todos</a></div>'+av+'</section>'
    +'<section class="section"><div class="section-h"><h2>Sobre o Fórum</h2><a href="#/sobre">Mais</a></div><div class="card"><p>'+esc(D.sobre.resumo)+'</p><p class="small muted">'+esc(D.sobre.para_quem)+'</p></div></section>'
@@ -280,10 +281,10 @@ function anterior(){var a=D.edicao_anterior;h('<div class="card"><p>'+esc(a.resu
 function faq(){h(D.faq.map(function(q){return '<details><summary>'+esc(q.p)+'</summary><p>'+esc(q.r)+'</p></details>';}).join(''));}
 function mais(){var me=LS.get('me',null);
   h('<a class="card" href="#/credencial" style="display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit"><div class="spk"><div class="av">'+esc(me?me.nome.split(' ').map(function(w){return w[0];}).slice(0,2).join(''):'?')+'</div><div><b>'+esc(me?me.nome:'Crie sua credencial')+'</b><span>'+esc(me?[me.cargo,me.empresa].filter(Boolean).join(' · ')||(me.tipo||''):'Toque para criar seu QR Code')+'</span></div></div><span style="margin-left:auto;font-size:1.6rem;color:#aab7bf">›</span></a>'
-   +'<div class="menu"><a href="#/palestrantes"><i>🎤</i>Palestrantes</a><a href="#/patrocinadores"><i>🤝</i>Patrocinadores e apoio</a><a href="#/local"><i>📍</i>Local e como chegar</a><a href="#/interagir"><i>💬</i>Interagir e perguntar</a><a href="#/certificado"><i>📜</i>Certificado</a><a href="#/edicoes"><i>📷</i>Edições anteriores (2014 a 2025)</a><a href="#/sobre"><i>⚓</i>Sobre o Fórum</a><a href="#/faq"><i>❓</i>Perguntas frequentes</a><a href="#/instalar"><i>📲</i>Instalar o app</a></div>'
+   +'<div class="menu"><a href="#/diario"><i>🎯</i>Fórum todo dia · quiz e enquete</a><a href="#/palestrantes"><i>🎤</i>Palestrantes</a><a href="#/patrocinadores"><i>🤝</i>Patrocinadores e apoio</a><a href="#/local"><i>📍</i>Local e como chegar</a><a href="#/interagir"><i>💬</i>Interagir e perguntar</a><a href="#/certificado"><i>📜</i>Certificado</a><a href="#/edicoes"><i>📷</i>Edições anteriores (2014 a 2025)</a><a href="#/sobre"><i>⚓</i>Sobre o Fórum</a><a href="#/faq"><i>❓</i>Perguntas frequentes</a><a href="#/instalar"><i>📲</i>Instalar o app</a></div>'
    +'<div class="menu"><a href="#/credenciamento"><i>📷</i>Credenciamento (equipe ACATMAR)</a><a href="#/controle"><i>📊</i>Controle do app (equipe ACATMAR)</a></div>'
    +'<div class="menu"><a href="#/inscricao"><i>📝</i>Inscrição gratuita</a><a href="https://www.acatmar.org/" target="_blank" rel="noopener"><i>🌐</i>Site da ACATMAR</a><a href="https://www.acatmar.org/privacidade.html" target="_blank" rel="noopener"><i>🔒</i>Política de Privacidade</a></div>'
-   +'<p class="small muted" style="text-align:center">Sua credencial fica salva neste aparelho. Nome, empresa e contato também ficam com a organização do Fórum.<br>App oficial · ACATMAR · conteúdo '+esc(D.versao)+' · app v31</p>');}
+   +'<p class="small muted" style="text-align:center">Sua credencial fica salva neste aparelho. Nome, empresa e contato também ficam com a organização do Fórum.<br>App oficial · ACATMAR · conteúdo '+esc(D.versao)+' · app v'+APP_V+'</p>');}
 
 /* ---------- Controle do app (equipe) ---------- */
 function controle(){
@@ -437,6 +438,66 @@ function edicoes(){
   h('<p class="small muted" style="margin:0 0 14px">Cinco edições, de 2014 a 2025. Toque nas fotos para ampliar.</p>'
    +eds.map(function(e){return '<div class="card ed"><img class="ed-capa" src="'+e.capa+'" alt="" loading="lazy"><div class="ed-b"><p class="kicker">'+e.ed+' Fórum · '+e.ano+'</p><h3>'+esc(e.tema)+'</h3><p class="small muted" style="margin:0 0 8px">'+esc(e.data)+' · '+esc(e.onde)+'</p><p class="small">'+esc(e.resumo)+'</p></div><div class="gal gal-sm">'+e.fotos.map(function(f){return '<img src="'+f+'" alt="" loading="lazy" data-zoom="'+f+'">';}).join('')+'</div>'+(e.link?'<div class="btn-row"><a class="btn btn-outline btn-sm" href="'+e.link+'" target="_blank" rel="noopener">Matéria completa no site</a></div>':'')+'</div>';}).join(''));
   view.querySelectorAll('[data-zoom]').forEach(function(im){im.onclick=function(){var ov=document.createElement('div');ov.className='zoom-ov';ov.innerHTML='<img src="'+im.getAttribute('data-zoom')+'" alt="">';ov.onclick=function(){ov.remove();};document.body.appendChild(ov);};});
+}
+
+/* ---------- Fórum todo dia (quiz + enquete + contagem) ---------- */
+function diaDiario(){var base=(D.diario&&D.diario.base)||D.evento.data_iso;var b=new Date(base+'T00:00:00-03:00');var n=Math.floor((Date.now()-b.getTime())/864e5);return n<0?0:n;}
+function diarioHomeCard(st,d){
+  if(st==='depois'||!D.diario||!(D.diario.quiz||D.diario.enquetes))return '';
+  var diasEv=Math.ceil((d.start-new Date())/864e5);
+  var selo=(st==='agora'||diasEv<=0)?'é hoje!':('faltam '+diasEv+' dia'+(diasEv>1?'s':''));
+  var q=D.diario.quiz&&D.diario.quiz.length?D.diario.quiz[diaDiario()%D.diario.quiz.length]:null;
+  return '<section class="section"><a class="card card-dia" href="#/diario"><div class="card-dia-h"><span class="kicker">Fórum todo dia</span><span class="card-dia-cd">'+selo+'</span></div><h3>Quiz do dia, enquete e novidades</h3>'+(q?'<p class="small card-dia-q">Hoje: '+esc(q.pergunta)+'</p>':'<p class="small">Responda o quiz do dia e diga o que quer que os palestrantes abordem.</p>')+'<span class="card-dia-go">Participar ›</span></a></section>';
+}
+function diario(){
+  var dd=D.diario||{};var quiz=dd.quiz||[],enqs=dd.enquetes||[];var di=diaDiario();
+  var ps=D.palestrantes||[];var byId={};ps.forEach(function(p){byId[p.id]=p;});
+  var st=status();var ev=eventDate();var diasEv=Math.ceil((ev.start-new Date())/864e5);
+  var cd=st==='agora'?'<b>Hoje!</b> O Fórum é agora':(st==='depois'?'O Fórum já aconteceu. Obrigado!':(diasEv<=0?'<b>É hoje!</b>':'Faltam <b>'+diasEv+'</b> dia'+(diasEv>1?'s':'')+' para o Fórum'));
+  var pdia=ps.length?ps[di%ps.length]:null;
+  var destaque=pdia?'<div class="dia-spk"><div class="av">'+(pdia.foto?'<img src="'+pdia.foto+'" alt="">':esc((pdia.nome||'?')[0]))+'</div><div><span class="small muted">Palestra em destaque'+(pdia.hora?' · '+esc(pdia.hora):'')+'</span><b>'+esc(pdia.tema||pdia.nome)+'</b><span class="small">'+esc(pdia.nome)+(pdia.empresa?' · '+esc(pdia.empresa):'')+'</span></div></div><div class="btn-row"><a class="btn btn-light btn-sm" href="#/interagir">Enviar pergunta</a><a class="btn btn-light btn-sm" href="#/palestrantes">Ver palestrantes</a></div>':'';
+  var topo='<div class="card card-dia-hero"><div class="dia-cd">📅 '+cd+'</div>'+destaque+'</div>';
+  if(typeof diario._qi!=='number')diario._qi=quiz.length?di%quiz.length:0;
+  var qbloco=quiz.length?quizBloco(quiz,byId):'';
+  if(typeof diario._ei!=='number')diario._ei=enqs.length?di%enqs.length:0;
+  var ebloco=enqs.length?enqueteBloco(enqs):'';
+  h(topo+qbloco+ebloco+'<p class="small muted" style="text-align:center;margin-top:16px">Conteúdo novo todo dia até o Fórum. Volte amanhã para o próximo quiz.</p>');
+  ligarQuiz(quiz,byId);ligarEnquete(enqs);
+}
+function quizBloco(quiz,byId){
+  var qi=((diario._qi%quiz.length)+quiz.length)%quiz.length;var q=quiz[qi];
+  var resp=LS.get('quiz_resp',{});var minha=resp[q.id];var feita=minha!=null;
+  var feitas=0,acertos=0;quiz.forEach(function(x){if(resp[x.id]!=null){feitas++;if(resp[x.id]===x.correta)acertos++;}});
+  var sp=q.palestrante?byId[q.palestrante]:null;
+  var opts=q.opcoes.map(function(o,idx){var cls='quiz-opt';if(feita){if(idx===q.correta)cls+=' ok';else if(idx===minha)cls+=' no';}return '<button class="'+cls+'" data-qopt="'+idx+'"'+(feita?' disabled':'')+'><span class="ql">'+String.fromCharCode(65+idx)+'</span><span class="qt">'+esc(o)+'</span>'+(feita&&idx===q.correta?'<b class="qr">✓</b>':(feita&&idx===minha?'<b class="qr qx">✗</b>':''))+'</button>';}).join('');
+  var exp=feita?'<div class="quiz-exp'+(minha===q.correta?' ok':'')+'"><b>'+(minha===q.correta?'Acertou! ✅':'Quase! A resposta certa é a letra '+String.fromCharCode(65+q.correta)+'.')+'</b><p>'+esc(q.explicacao)+'</p>'+(sp?'<a class="btn btn-outline btn-sm" href="#/palestrantes">Ver '+esc(sp.nome)+'</a>':'')+'</div>':'';
+  var nav='<div class="quiz-nav"><button class="qnav" data-qnav="-1" aria-label="Anterior">‹</button><span class="small muted">Quiz '+(qi+1)+' de '+quiz.length+(feitas?' · você acertou '+acertos+' de '+feitas:'')+'</span><button class="qnav" data-qnav="1" aria-label="Próximo">›</button></div>';
+  return '<div class="section-h" style="margin-top:18px"><h2>Quiz do dia</h2></div><div class="card quiz-card"><p class="kicker">'+esc(q.tema||'Náutica')+'</p><h3 class="quiz-q">'+esc(q.pergunta)+'</h3><div class="quiz-opts">'+opts+'</div>'+exp+nav+'</div>';
+}
+function ligarQuiz(quiz){
+  if(!quiz.length)return;var qi=((diario._qi%quiz.length)+quiz.length)%quiz.length;var q=quiz[qi];
+  view.querySelectorAll('[data-qopt]').forEach(function(b){b.onclick=function(){var resp=LS.get('quiz_resp',{});if(resp[q.id]!=null)return;resp[q.id]=+b.getAttribute('data-qopt');LS.set('quiz_resp',resp);diario();};});
+  view.querySelectorAll('[data-qnav]').forEach(function(b){b.onclick=function(){diario._qi=qi+ +b.getAttribute('data-qnav');diario();};});
+}
+function enqueteBloco(enqs){
+  var ei=((diario._ei%enqs.length)+enqs.length)%enqs.length;var e=enqs[ei];
+  var voto=LS.get('enq_voto',{});var meu=voto[e.id];var votada=meu!=null;
+  var corpo=votada?'<div id="enq-res" class="enq-res"><p class="small muted">Carregando resultados…</p></div>':'<div class="enq-opts">'+e.opcoes.map(function(o,idx){return '<button class="enq-opt" data-evote="'+idx+'"><span>'+esc(o)+'</span></button>';}).join('')+'</div>';
+  var nav=enqs.length>1?'<div class="quiz-nav"><button class="qnav" data-enav="-1" aria-label="Anterior">‹</button><span class="small muted">Enquete '+(ei+1)+' de '+enqs.length+'</span><button class="qnav" data-enav="1" aria-label="Próximo">›</button></div>':'';
+  return '<div class="section-h" style="margin-top:18px"><h2>O que você quer saber</h2></div><div class="card enq-card"><p class="kicker">'+esc(e.tema||'')+'</p><h3 class="quiz-q">'+esc(e.pergunta)+'</h3>'+corpo+'<a class="enq-ask small" href="#/interagir">Tem uma pergunta específica? Mande para o palestrante ›</a>'+nav+'</div>';
+}
+function ligarEnquete(enqs){
+  if(!enqs.length)return;var ei=((diario._ei%enqs.length)+enqs.length)%enqs.length;var e=enqs[ei];
+  var meu=(LS.get('enq_voto',{}))[e.id];
+  view.querySelectorAll('[data-enav]').forEach(function(b){b.onclick=function(){diario._ei=ei+ +b.getAttribute('data-enav');diario();};});
+  if(meu!=null){carregarEnquete(e,meu);return;}
+  view.querySelectorAll('[data-evote]').forEach(function(b){b.onclick=function(){var idx=+b.getAttribute('data-evote');var v=LS.get('enq_voto',{});v[e.id]=idx;LS.set('enq_voto',v);try{sessionStorage.setItem('enqts_'+e.id,String(Date.now()));}catch(x){}fetch(API+'/voto',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({enquete:e.id,opcao:idx,id:devId()})}).catch(function(){});diario();};});
+}
+function enqMesclar(server,meu,recent){var c={};var sc=(server&&server.contagem)||{};for(var k in sc)c[k]=sc[k];var total=(server&&server.total)||0;if(recent&&meu!=null&&!(c[meu]>0)){c[meu]=(c[meu]||0)+1;total+=1;}return {total:total,contagem:c};}
+function enqBarras(e,data,meu){var total=data.total||0;return e.opcoes.map(function(o,idx){var v=(data.contagem&&data.contagem[idx])||0;var pct=total?Math.round(v*100/total):0;return '<div class="enq-row'+(idx===meu?' meu':'')+'"><div class="enq-top"><span>'+esc(o)+(idx===meu?' <b>· seu voto</b>':'')+'</span><span class="enq-pct">'+pct+'%</span></div><div class="enq-bg"><i style="width:'+pct+'%"></i></div></div>';}).join('')+'<p class="small muted" style="margin:10px 0 0">'+total+' voto'+(total===1?'':'s')+' · atualiza em instantes</p>';}
+function carregarEnquete(e,meu){
+  var recent=false;try{var s=+(sessionStorage.getItem('enqts_'+e.id)||0);recent=s&&(Date.now()-s)<120000;}catch(x){}
+  fetch(API+'/enquete?id='+encodeURIComponent(e.id),{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){var box=document.getElementById('enq-res');if(!box)return;box.innerHTML=enqBarras(e,enqMesclar(d,meu,recent),meu);}).catch(function(){var box=document.getElementById('enq-res');if(box)box.innerHTML='<p class="small muted">Não foi possível carregar os resultados agora.</p>';});
 }
 
 /* ---------- compartilhar ---------- */
