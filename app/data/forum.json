@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-11-1",
+  "versao": "2026-10-11-2",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -484,7 +484,7 @@
           "texto": "Sistema de manutenção inteligente para embarcações criado pela NAVALCARE, escritório de engenharia naval fundado em 2016 pelo engenheiro Marcelo Reis. O hardware SAFEBOAT, instalado a bordo, monitora em tempo real os sistemas críticos do barco e se conecta ao app NAVALCARE Connect, pelo qual o proprietário acompanha o estado da embarcação e aciona manutenções preventivas e corretivas por assinatura.",
           "site": "https://www.naval.care",
           "instagram": "https://www.instagram.com/naval.care/",
-          "escala": 1.32
+          "escala": 0.82
         },
         {
           "nome": "Personal Boat",
@@ -508,7 +508,7 @@
           "nome": "Propspeed",
           "logo": "media/logos/propspeed.png",
           "largura": 170,
-          "escala": 1.13,
+          "escala": 1.12,
           "texto": "Revestimento antiincrustante para hélices, rabetas e demais metais abaixo da linha d'água, criado na Nova Zelândia e usado em embarcações de lazer, veleiros e barcos de trabalho no mundo todo. Sem biocidas, mantém a superfície lisa, o que melhora o rendimento do sistema de propulsão e reduz o consumo de combustível. A Propspeed Brasil é a distribuidora oficial na América do Sul.",
           "site": "https://www.propspeed.com.br",
           "instagram": "https://www.instagram.com/propspeedbr/"
@@ -516,7 +516,7 @@
       ],
       "logo": "../media/logos/vi-forum-apoio-oficial.png",
       "alt": "Iate Clube Veleiros da Ilha, Safeboat, Personal Boat, Escunas Pirata, Propspeed",
-      "largura": 230
+      "largura": 290
     },
     {
       "cota": "Apoio institucional",
@@ -552,7 +552,7 @@
           "texto": "Fórum que reúne as entidades do trade turístico da Grande Florianópolis, entre hotelaria, eventos, gastronomia, transporte e serviços, para atuar como voz coletiva do setor junto ao poder público. Responsável pelo Plano Integrado de Promoção do Turismo da região, o FORTUR discute temas como turismo de eventos, financiamento do turismo, novos produtos turísticos e a integração entre iniciativa privada e governos. É presidido por Mané Ferrari, com Hamilton Peluso na vice-presidência.",
           "site": "",
           "instagram": "",
-          "escala": 1.01
+          "escala": 1.0
         },
         {
           "nome": "Capitania dos Portos de Santa Catarina",
@@ -699,7 +699,7 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 42,
+  "app_min": 43,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",

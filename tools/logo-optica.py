@@ -4,7 +4,6 @@ Mede proporcao (largura/altura) e densidade de tinta de cada logo e calcula 'esc
 em app/data/forum.json. Ver preview em media/cards/preview-logos.jpg."""
 import json, os, math
 from PIL import Image, ImageDraw
-import numpy as np
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FJ = os.path.join(RAIZ, 'app/data/forum.json')
@@ -16,12 +15,26 @@ EXP = 0.38                    # forca da correcao otica (0 = altura igual; 0.5 =
 LIM = (0.82, 1.32)            # limites da correcao
 
 def metrica(cam):
-    im = Image.open(os.path.join(RAIZ, 'app', cam)).convert('RGBA'); a = np.array(im)
-    tinta = (a[:, :, 3] > 25) & (a[:, :, :3].astype(int).sum(axis=2) < 700)
-    ys, xs = np.where(tinta)
-    w, h = xs.max() - xs.min() + 1, ys.max() - ys.min() + 1
-    f = tinta.sum() / (w * h)
-    return im.crop((xs.min(), ys.min(), xs.max() + 1, ys.max() + 1)), w / h, f
+    im = Image.open(os.path.join(RAIZ, 'app', cam)).convert('RGBA')
+    m = im
+    if m.width > 500:  # mede numa versao reduzida (proporcao e densidade quase nao mudam)
+        m = m.resize((500, max(1, round(m.height * 500 / m.width))), Image.LANCZOS)
+    px = m.load(); W, H = m.size
+    minx, miny, maxx, maxy, cnt = W, H, -1, -1, 0
+    for y in range(H):
+        for x in range(W):
+            r, g, b, al = px[x, y]
+            if al > 25 and (r + g + b) < 700:  # tinta = opaco e escuro
+                cnt += 1
+                if x < minx: minx = x
+                if x > maxx: maxx = x
+                if y < miny: miny = y
+                if y > maxy: maxy = y
+    w, h = maxx - minx + 1, maxy - miny + 1
+    f = cnt / (w * h)
+    sx, sy = im.width / W, im.height / H  # recorta a original na mesma caixa (para o preview)
+    crop = im.crop((int(minx * sx), int(miny * sy), int((maxx + 1) * sx), int((maxy + 1) * sy)))
+    return crop, w / h, f
 
 def escala(r, f, piso=LIM[0]):
     e = ((REF_R * REF_F) / (r * f)) ** EXP
