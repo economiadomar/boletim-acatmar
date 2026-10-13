@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-13-3",
+  "versao": "2026-10-13-4",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -197,6 +197,16 @@
       "desc": "Limpeza e conservação de embarcações com produtos à base de plantas: práticas sustentáveis, mais saudáveis para quem trabalha a bordo e melhores para o meio ambiente."
     },
     {
+      "id": "janu",
+      "periodo": "Tarde",
+      "hora": "17:30",
+      "titulo": "Menos craca, menos carbono",
+      "quem": "Januario Gagliardi · JRG Trading (Propspeed)",
+      "tipo": "palestra",
+      "palestrante": "janu-gagliardi",
+      "desc": "Como a manutenção certa reduz a incrustação no casco e na hélice, melhora a eficiência das embarcações e corta consumo e emissões. Distribuição oficial Propspeed para a América Latina."
+    },
+    {
       "id": "encerra",
       "periodo": "Tarde",
       "hora": "18:30",
@@ -289,6 +299,23 @@
       "bio": "Pioneiro no Brasil no desenvolvimento de produtos à base de plantas para a limpeza e a conservação de embarcações de esporte e recreio desde 1996. Em 1998 criou o primeiro treinamento para marinheiros de esporte e recreio, para capacitá-los a cuidar dos barcos de forma sustentável e com produtos mais saudáveis; de lá para cá, já passaram pela formação mais de 6 mil marinheiros de todo o Brasil. Para marinas e iate clubes, desenvolveu procedimentos ecoeficientes que preservam o meio ambiente e geram menos lixo e mais reciclagem. Em 2026 criou o primeiro lava-lanchas 100% à base de plantas aprovado pela Anvisa.",
       "instagram": "https://www.instagram.com/nautispecial/",
       "hora": "16h30 · Tarde"
+    },
+    {
+      "id": "janu-gagliardi",
+      "nome": "Januario Gagliardi",
+      "cargo": "CEO",
+      "empresa": "JRG Trading Corporation",
+      "foto": "media/palestrantes/janu-gagliardi.jpg",
+      "tema": "Menos craca, menos carbono",
+      "bio": "Januario dos Reis Gagliardi, o Janu, é CEO da JRG Trading Corporation, empresa com operações no Brasil, Paraguai, Inglaterra e Estados Unidos, especializada em comércio exterior e estruturação de negócios no corredor Brasil e América Latina. À frente da distribuição oficial da Propspeed na região, leva ao mercado náutico soluções de manutenção que aumentam a eficiência das embarcações e reduzem o impacto ambiental. É também CSO da Marine Telematics e recebeu a Medalha Amigo da Marinha, com participação ativa na SOAMAR, na ACATMAR e na ACOBAR.",
+      "instagram": "https://www.instagram.com/janugagliardi/",
+      "redes": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/janugagliardi"
+        }
+      ],
+      "hora": "17h30 · Tarde"
     }
   ],
   "edicao_anterior": {
@@ -352,6 +379,15 @@
     ]
   },
   "avisos": [
+    {
+      "id": "palestra-janu",
+      "data": "2026-10-13",
+      "titulo": "Nova palestra: menos craca, menos carbono",
+      "texto": "Januario Gagliardi, o Janu, CEO da JRG Trading e responsável pela distribuição oficial Propspeed na América Latina, apresenta às 17h30 \"Menos craca, menos carbono\": como a manutenção certa do casco e da hélice aumenta a eficiência das embarcações e reduz consumo e emissões.",
+      "imagem": "media/palestrantes/janu-gagliardi.jpg",
+      "link": "#/palestrantes",
+      "link_label": "Ver palestrante"
+    },
     {
       "id": "palestra-huertas",
       "data": "2026-10-13",
@@ -738,7 +774,7 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 48,
+  "app_min": 49,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",
