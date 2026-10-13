@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-11-4",
+  "versao": "2026-10-13-1",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -411,35 +411,6 @@
   ],
   "patrocinadores": [
     {
-      "cota": "Patrocínio",
-      "destaque": true,
-      "empresas": [
-        {
-          "nome": "Prefeitura Municipal de Florianópolis",
-          "logo": "media/logos/prefeitura-florianopolis.png",
-          "largura": 300,
-          "texto": "Governo da capital de Santa Catarina, cidade de 42 praias, com mais de 500 mil habitantes e uma das maiores frotas de embarcações de lazer do país. Florianópolis é polo de turismo, tecnologia e inovação, e vem estruturando políticas para a Economia do Mar, com a náutica, a pesca, a maricultura e o turismo náutico entre os eixos de desenvolvimento do município.",
-          "site": "https://www.pmf.sc.gov.br",
-          "instagram": "https://www.instagram.com/prefflorianopolis/",
-          "escala": 1.0,
-          "escala_fixa": true
-        },
-        {
-          "nome": "Okean Yachts · Ferretti Group",
-          "logo": "media/logos/okean-world.png",
-          "largura": 185,
-          "texto": "Estaleiro brasileiro de iates de luxo fundado em 2015, com fábrica própria de 26 mil m² em Itajaí (SC). Produz a linha OKEAN, com design de Paolo Ferragni e o conceito pioneiro de side decks abertos, e é o único estaleiro do mundo licenciado a fabricar barcos Ferretti Yachts fora da Itália, com cinco modelos produzidos no Brasil. O Grupo OKEAN também administra a Yachtmax, revenda exclusiva de Ferretti Yachts, Riva, Pershing e OKEAN no país.",
-          "site": "https://okeanyachts.com",
-          "instagram": "https://www.instagram.com/okeanyachts/",
-          "escala": 0.98,
-          "escala_fixa": true
-        }
-      ],
-      "logo": "../media/logos/vi-forum-patrocinio.png",
-      "alt": "Prefeitura Municipal de Florianópolis, Okean Yachts · Ferretti Group",
-      "largura": 354
-    },
-    {
       "cota": "Realização",
       "empresas": [
         {
@@ -466,6 +437,43 @@
       "largura": 349
     },
     {
+      "cota": "Patrocínio",
+      "destaque": true,
+      "empresas": [
+        {
+          "nome": "Prefeitura Municipal de Florianópolis",
+          "logo": "media/logos/prefeitura-florianopolis.png",
+          "largura": 300,
+          "texto": "Governo da capital de Santa Catarina, cidade de 42 praias, com mais de 500 mil habitantes e uma das maiores frotas de embarcações de lazer do país. Florianópolis é polo de turismo, tecnologia e inovação, e vem estruturando políticas para a Economia do Mar, com a náutica, a pesca, a maricultura e o turismo náutico entre os eixos de desenvolvimento do município.",
+          "site": "https://www.pmf.sc.gov.br",
+          "instagram": "https://www.instagram.com/prefflorianopolis/",
+          "escala": 1.0,
+          "escala_fixa": true
+        },
+        {
+          "nome": "Floripa",
+          "logo": "media/logos/floripa.png",
+          "texto": "",
+          "site": "",
+          "instagram": "",
+          "escala": 0.82
+        },
+        {
+          "nome": "Okean Yachts · Ferretti Group",
+          "logo": "media/logos/okean-world.png",
+          "largura": 185,
+          "texto": "Estaleiro brasileiro de iates de luxo fundado em 2015, com fábrica própria de 26 mil m² em Itajaí (SC). Produz a linha OKEAN, com design de Paolo Ferragni e o conceito pioneiro de side decks abertos, e é o único estaleiro do mundo licenciado a fabricar barcos Ferretti Yachts fora da Itália, com cinco modelos produzidos no Brasil. O Grupo OKEAN também administra a Yachtmax, revenda exclusiva de Ferretti Yachts, Riva, Pershing e OKEAN no país.",
+          "site": "https://okeanyachts.com",
+          "instagram": "https://www.instagram.com/okeanyachts/",
+          "escala": 0.98,
+          "escala_fixa": true
+        }
+      ],
+      "logo": "../media/logos/vi-forum-patrocinio.png",
+      "alt": "Prefeitura Municipal de Florianópolis, Floripa, Okean Yachts · Ferretti Group",
+      "largura": 354
+    },
+    {
       "cota": "Apoio oficial",
       "empresas": [
         {
@@ -478,16 +486,6 @@
           "escala": 1.32
         },
         {
-          "nome": "Safeboat",
-          "logo": "media/logos/safeboat.png",
-          "largura": 200,
-          "texto": "Sistema de manutenção inteligente para embarcações criado pela NAVALCARE, escritório de engenharia naval fundado em 2016 pelo engenheiro Marcelo Reis. O hardware SAFEBOAT, instalado a bordo, monitora em tempo real os sistemas críticos do barco e se conecta ao app NAVALCARE Connect, pelo qual o proprietário acompanha o estado da embarcação e aciona manutenções preventivas e corretivas por assinatura.",
-          "site": "https://www.naval.care",
-          "instagram": "https://www.instagram.com/naval.care/",
-          "escala": 0.44,
-          "escala_fixa": true
-        },
-        {
           "nome": "Personal Boat",
           "logo": "media/logos/personal-boat-v2.png",
           "largura": 170,
@@ -495,6 +493,15 @@
           "site": "https://personalboat.ind.br",
           "instagram": "https://www.instagram.com/personal_boat/",
           "escala": 1.32
+        },
+        {
+          "nome": "Propspeed",
+          "logo": "media/logos/propspeed.png",
+          "largura": 170,
+          "escala": 1.12,
+          "texto": "Revestimento antiincrustante para hélices, rabetas e demais metais abaixo da linha d'água, criado na Nova Zelândia e usado em embarcações de lazer, veleiros e barcos de trabalho no mundo todo. Sem biocidas, mantém a superfície lisa, o que melhora o rendimento do sistema de propulsão e reduz o consumo de combustível. A Propspeed Brasil é a distribuidora oficial na América do Sul.",
+          "site": "https://www.propspeed.com.br",
+          "instagram": "https://www.instagram.com/propspeedbr/"
         },
         {
           "nome": "Escunas Pirata",
@@ -506,18 +513,19 @@
           "instagram": ""
         },
         {
-          "nome": "Propspeed",
-          "logo": "media/logos/propspeed.png",
-          "largura": 170,
-          "escala": 1.12,
-          "texto": "Revestimento antiincrustante para hélices, rabetas e demais metais abaixo da linha d'água, criado na Nova Zelândia e usado em embarcações de lazer, veleiros e barcos de trabalho no mundo todo. Sem biocidas, mantém a superfície lisa, o que melhora o rendimento do sistema de propulsão e reduz o consumo de combustível. A Propspeed Brasil é a distribuidora oficial na América do Sul.",
-          "site": "https://www.propspeed.com.br",
-          "instagram": "https://www.instagram.com/propspeedbr/"
+          "nome": "Safeboat",
+          "logo": "media/logos/safeboat.png",
+          "largura": 200,
+          "texto": "Sistema de manutenção inteligente para embarcações criado pela NAVALCARE, escritório de engenharia naval fundado em 2016 pelo engenheiro Marcelo Reis. O hardware SAFEBOAT, instalado a bordo, monitora em tempo real os sistemas críticos do barco e se conecta ao app NAVALCARE Connect, pelo qual o proprietário acompanha o estado da embarcação e aciona manutenções preventivas e corretivas por assinatura.",
+          "site": "https://www.naval.care",
+          "instagram": "https://www.instagram.com/naval.care/",
+          "escala": 0.44,
+          "escala_fixa": true
         }
       ],
       "logo": "../media/logos/vi-forum-apoio-oficial.png",
-      "alt": "Iate Clube Veleiros da Ilha, Safeboat, Personal Boat, Escunas Pirata, Propspeed",
-      "largura": 273
+      "alt": "Iate Clube Veleiros da Ilha, Personal Boat, Propspeed, Escunas Pirata, Safeboat",
+      "largura": 264
     },
     {
       "cota": "Apoio institucional",
@@ -700,7 +708,7 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 45,
+  "app_min": 46,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",
