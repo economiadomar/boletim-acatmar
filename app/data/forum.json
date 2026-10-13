@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-13-2",
+  "versao": "2026-10-13-3",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -187,6 +187,16 @@
       "desc": "Abordagem prática de reparos em fibra de vidro, divinycell, gelcoat e fibra de carbono, com os materiais certos para cada caso e o que ter a bordo para as emergências."
     },
     {
+      "id": "huertas",
+      "periodo": "Tarde",
+      "hora": "16:30",
+      "titulo": "Soluções ecológicas e sustentáveis na limpeza e conservação de embarcações",
+      "quem": "Marcelo Huertas · Nautispecial",
+      "tipo": "palestra",
+      "palestrante": "marcelo-huertas",
+      "desc": "Limpeza e conservação de embarcações com produtos à base de plantas: práticas sustentáveis, mais saudáveis para quem trabalha a bordo e melhores para o meio ambiente."
+    },
+    {
       "id": "encerra",
       "periodo": "Tarde",
       "hora": "18:30",
@@ -268,6 +278,17 @@
       "tema": "Repare certo! Reparos em fibra, divinycell, gelcoat e fibra de carbono",
       "bio": "Fundador do Silverio Estaleiro e especialista em técnicas construtivas de barcos de performance, Heros trabalha no dia a dia com fibra de vidro, divinycell, gelcoat e fibra de carbono. Na palestra ele traz uma abordagem prática de reparos nesses materiais e mostra os produtos certos para cada situação, inclusive o que ter a bordo para as emergências.",
       "hora": "15h30 · Tarde"
+    },
+    {
+      "id": "marcelo-huertas",
+      "nome": "Marcelo Huertas",
+      "cargo": "Fundador",
+      "empresa": "Nautispecial",
+      "foto": "media/palestrantes/marcelo-huertas.jpg",
+      "tema": "Soluções ecológicas e sustentáveis na limpeza e conservação de embarcações",
+      "bio": "Pioneiro no Brasil no desenvolvimento de produtos à base de plantas para a limpeza e a conservação de embarcações de esporte e recreio desde 1996. Em 1998 criou o primeiro treinamento para marinheiros de esporte e recreio, para capacitá-los a cuidar dos barcos de forma sustentável e com produtos mais saudáveis; de lá para cá, já passaram pela formação mais de 6 mil marinheiros de todo o Brasil. Para marinas e iate clubes, desenvolveu procedimentos ecoeficientes que preservam o meio ambiente e geram menos lixo e mais reciclagem. Em 2026 criou o primeiro lava-lanchas 100% à base de plantas aprovado pela Anvisa.",
+      "instagram": "https://www.instagram.com/nautispecial/",
+      "hora": "16h30 · Tarde"
     }
   ],
   "edicao_anterior": {
@@ -331,6 +352,15 @@
     ]
   },
   "avisos": [
+    {
+      "id": "palestra-huertas",
+      "data": "2026-10-13",
+      "titulo": "Nova palestra: limpeza sustentável de embarcações",
+      "texto": "Marcelo Huertas, da Nautispecial, pioneiro no Brasil em produtos à base de plantas para a limpeza e a conservação de barcos, apresenta às 16h30 \"Soluções ecológicas e sustentáveis na limpeza e conservação de embarcações\". São quase três décadas de trabalho e mais de 6 mil marinheiros já treinados em todo o país.",
+      "imagem": "media/palestrantes/marcelo-huertas.jpg",
+      "link": "#/palestrantes",
+      "link_label": "Ver palestrante"
+    },
     {
       "id": "palestra-heros",
       "data": "2026-10-08",
@@ -708,7 +738,7 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 47,
+  "app_min": 48,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",
