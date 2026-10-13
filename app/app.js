@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=46;
+var APP_V=47;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -70,7 +70,7 @@ function home(){
    +'<section class="section"><div class="section-h"><h2>Avisos'+(unread?' <span class="tag red">'+unread+' novo'+(unread>1?'s':'')+'</span>':'')+'</h2><a href="#/avisos">Ver todos</a></div>'+av+'</section>'
    +'<section class="section"><div class="section-h"><h2>Sobre o Fórum</h2><a href="#/sobre">Mais</a></div><div class="card"><p>'+esc(D.sobre.resumo)+'</p><p class="small muted">'+esc(D.sobre.para_quem)+'</p></div></section>'
    +'<section class="section"><div class="section-h"><h2>Cinco edições de história</h2><a href="#/edicoes">Ver fotos</a></div><div class="gal gal-ed">'+(D.edicoes||[]).map(function(e){return '<a href="#/edicoes"><img src="'+e.capa+'" alt="" loading="lazy"><span>'+e.ed+' Fórum · '+e.ano+'</span></a>';}).join('')+'</div></section>'
-   +'<section class="section"><div class="section-h"><h2>Quem faz acontecer</h2><a href="#/patrocinadores">Ver</a></div><div class="spons-strip">'+spons+'</div></section>'
+   +'<section class="section"><div class="section-h"><h2>Quem faz acontecer</h2><a href="#/patrocinadores">Ver</a></div><a href="#/patrocinadores"><img src="media/quem-faz-acontecer.jpg" alt="Quem faz o VI Fórum acontecer: patrocinadores e apoiadores" style="width:100%;border-radius:12px;display:block"></a></section>'
    +'<section class="section"><div class="card" style="background:var(--navy);color:#fff;border:0"><p class="kicker" style="color:var(--teal-b)">Dica</p><h3 style="color:#fff">Instale o app na tela inicial</h3><p class="small" style="opacity:.85">Assim ele abre em um toque, mostra sua credencial rápido no credenciamento e funciona mesmo sem sinal.</p><div class="btn-row"><a class="btn btn-light btn-sm" href="#/instalar">Como instalar</a></div></div></section>');
   if(st==='antes'){clearInterval(home._t);home._t=setInterval(function(){if(route().path==='/')home();else clearInterval(home._t);},60000);}
 }
@@ -152,14 +152,15 @@ function credencial(){
 /* ---------- Patrocinadores ---------- */
 function patrocinadores(){
   var c=D.patrocinio_cta;
-  var html='<p class="small muted" style="margin:0 0 14px">Empresas e instituições que fazem o VI Fórum acontecer. Toque para conhecer cada uma.</p>';
+  var html='<img src="media/quem-faz-acontecer.jpg" alt="Quem faz o VI Fórum acontecer: patrocinadores e apoiadores" style="width:100%;border-radius:14px;display:block;margin:0 0 16px">';
+  html+='<p class="small muted" style="margin:0 0 10px">Conheça um pouco de cada um:</p>';
   D.patrocinadores.forEach(function(cota){
+    var comTexto=cota.empresas.filter(function(p){return (p.texto||'').trim();});
+    if(!comTexto.length)return;
     html+='<div class="section-h" style="margin-top:6px"><h2>'+esc(cota.cota)+'</h2></div>';
-    cota.empresas.forEach(function(p){
-      var altLogo=Math.round(({'Patrocínio':110,'Realização':72}[cota.cota]||60)*(p.escala||1));
+    comTexto.forEach(function(p){
       var links=(p.site?'<a class="btn btn-outline btn-sm" href="'+p.site+'" target="_blank" rel="noopener">Site</a>':'')+(p.instagram?'<a class="btn btn-navy btn-sm" href="'+p.instagram+'" target="_blank" rel="noopener">Instagram</a>':'');
-      var logo=p.logo?'<img src="'+p.logo+'" alt="'+esc(p.nome)+'" style="height:'+altLogo+'px;width:auto;max-width:100%">':'<div class="logo-txt">'+esc(p.nome)+'</div>';
-      html+='<div class="card spons'+(cota.destaque?' spons-destaque':'')+'"><div class="spons-logo">'+logo+'</div>'+(cota.destaque?'<span class="tag" style="background:var(--teal);color:#fff">'+('Patrocinadora')+'</span>':'')+'<h3>'+esc(p.nome)+'</h3><p class="small">'+esc(p.texto||'')+'</p>'+(p.materia?'<div class="materia"><p class="kicker">Novidade · '+fmtData(p.materia.data)+'</p><b>'+esc(p.materia.titulo)+'</b><p class="small">'+esc(p.materia.resumo)+'</p><a class="btn btn-teal btn-sm" href="'+p.materia.link+'" target="_blank" rel="noopener">Ler a matéria</a></div>':'')+(links?'<div class="btn-row">'+links+'</div>':'')+'</div>';
+      html+='<div class="card"><h3 style="text-transform:none;letter-spacing:0;font-family:var(--f-body);font-size:1.02rem">'+esc(p.nome)+'</h3><p class="small">'+esc(p.texto||'')+'</p>'+(p.materia?'<div class="materia"><p class="kicker">Novidade · '+fmtData(p.materia.data)+'</p><b>'+esc(p.materia.titulo)+'</b><p class="small">'+esc(p.materia.resumo)+'</p><a class="btn btn-teal btn-sm" href="'+p.materia.link+'" target="_blank" rel="noopener">Ler a matéria</a></div>':'')+(links?'<div class="btn-row">'+links+'</div>':'')+'</div>';
     });
   });
   html+='<div class="card" style="background:var(--navy);color:#fff;border:0;margin-top:14px"><p class="kicker" style="color:var(--teal-b)">Patrocínio e apoio</p><h3 style="color:#fff">'+esc(c.titulo)+'</h3><p class="small" style="opacity:.9">'+esc(c.texto)+'</p><div class="btn-row"><a class="btn btn-teal btn-sm" href="mailto:'+c.email+'?subject='+encodeURIComponent('Patrocínio '+D.evento.curto)+'">Falar com a ACATMAR</a></div></div>';

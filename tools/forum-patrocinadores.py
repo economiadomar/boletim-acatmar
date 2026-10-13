@@ -54,15 +54,15 @@ for c in D['patrocinadores']:
     saidas.append((c['cota'], nome, larg, alt))
 json.dump(D, open(FJ, 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
 
-# 1) pagina de inscricao
+# 1) pagina de inscricao — arte unica feita pela ACATMAR (media/quem-faz-acontecer.jpg)
+ARTE = 'media/quem-faz-acontecer.jpg'
+ALT_ARTE_PT = 'Quem faz o VI Fórum acontecer: patrocinadores e apoiadores'
+ALT_ARTE_EN = 'Who makes the VI Forum happen: sponsors and supporters'
 h = open(os.path.join(RAIZ, 'vi-forum-2026.html'), encoding='utf-8').read()
-sec = '<!-- creditos:inicio --><section class="creditos-forum"><div class="creditos-inner">\n' \
-      '    <h2 class="creditos-titulo" data-en="Who makes the VI Forum happen">Quem faz o VI Fórum acontecer</h2>\n'
-for cota, nome, larg, alt in saidas:
-    sec += ('    <div class="creditos-bloco"><p class="creditos-rotulo" data-en="%s">%s</p>'
-            '<img class="creditos-logo" loading="lazy" src="media/logos/%s" alt="%s" style="width:%dpx"></div>\n'
-            % (EN[cota], cota, nome, html.escape(alt), larg))
-sec += '  </div></section><!-- creditos:fim -->'
+sec = ('<!-- creditos:inicio --><section class="creditos-forum"><div class="creditos-inner">\n'
+       '    <h2 class="creditos-titulo" data-en="Who makes the VI Forum happen">Quem faz o VI Fórum acontecer</h2>\n'
+       '    <img class="creditos-arte" loading="lazy" src="%s" alt="%s" style="width:100%%;max-width:560px;height:auto;display:block;margin:0 auto">\n'
+       '  </div></section><!-- creditos:fim -->' % (ARTE, html.escape(ALT_ARTE_PT)))
 if '<!-- creditos:inicio -->' in h:
     h = re.sub(r'<!-- creditos:inicio -->.*?<!-- creditos:fim -->', lambda m: sec, h, flags=re.S)
 else:
@@ -72,15 +72,12 @@ open(os.path.join(RAIZ, 'vi-forum-2026.html'), 'w', encoding='utf-8').write(h)
 # 2) bloco para projeto e materia
 def bloco(en):
     tit = 'Who makes the VI Forum happen' if en else 'Quem faz o VI Fórum acontecer'
-    b = ('<div style="background:#fff;border:1px solid #e3e8ee;border-radius:14px;padding:20px 16px 6px;margin:1.8rem 0;'
-         'text-align:center"><div style="font-family:\'Oswald\',sans-serif;font-weight:600;text-transform:uppercase;'
-         'color:#0a2540;font-size:1.05rem;letter-spacing:.03em;margin-bottom:1.3rem">' + tit + '</div>')
-    for cota, nome, larg, alt in saidas:
-        b += ('<div style="margin-bottom:1.5rem"><p style="margin:0 0 .7rem;font-family:\'Barlow Condensed\',sans-serif;'
-              'font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:#5b6f7a">' + (EN[cota] if en else cota) +
-              '</p><img loading="lazy" src="media/logos/' + nome + '" alt="' + html.escape(alt) + '" style="width:' +
-              str(larg) + 'px;max-width:100%;height:auto;display:block;margin:0 auto"></div>')
-    return b + '</div>'
+    alt = ALT_ARTE_EN if en else ALT_ARTE_PT
+    return ('<div style="background:#fff;border:1px solid #e3e8ee;border-radius:14px;padding:20px 16px;margin:1.8rem 0;'
+            'text-align:center"><div style="font-family:\'Oswald\',sans-serif;font-weight:600;text-transform:uppercase;'
+            'color:#0a2540;font-size:1.05rem;letter-spacing:.03em;margin-bottom:1.3rem">' + tit + '</div>'
+            '<img loading="lazy" src="' + ARTE + '" alt="' + html.escape(alt) + '" '
+            'style="width:100%;max-width:520px;height:auto;display:block;margin:0 auto"></div>')
 
 for arq, chave, ident in (('projetos.json', 'projetos', 'vi-forum-acatmar-2026'), ('noticias.json', 'noticias', 'vi-forum-2026')):
     cam = os.path.join(RAIZ, arq); j = json.load(open(cam, encoding='utf-8'))
