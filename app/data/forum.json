@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-13-4",
+  "versao": "2026-10-15-1",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -207,6 +207,16 @@
       "desc": "Como a manutenção certa reduz a incrustação no casco e na hélice, melhora a eficiência das embarcações e corta consumo e emissões. Distribuição oficial Propspeed para a América Latina."
     },
     {
+      "id": "tiago",
+      "periodo": "Tarde",
+      "hora": "18:00",
+      "titulo": "Navegação eletrônica",
+      "quem": "Tiago Carneiro · Navico Group",
+      "tipo": "palestra",
+      "palestrante": "tiago-carneiro",
+      "desc": "A evolução dos equipamentos de navegação eletrônica e o que eles entregam hoje a bordo, com um especialista em Simrad, B&G e Lowrance (Navico)."
+    },
+    {
       "id": "encerra",
       "periodo": "Tarde",
       "hora": "18:30",
@@ -316,6 +326,17 @@
         }
       ],
       "hora": "17h30 · Tarde"
+    },
+    {
+      "id": "tiago-carneiro",
+      "nome": "Tiago Carneiro",
+      "cargo": "Técnico em Eletrônica Marítima",
+      "empresa": "Navico Group",
+      "foto": "media/palestrantes/tiago-carneiro.jpg",
+      "tema": "Navegação eletrônica",
+      "bio": "Com 17 anos de experiência no setor náutico e quase 30 anos como técnico em eletrônica, Tiago acompanhou de perto a evolução dos equipamentos de navegação eletrônica e o crescimento do setor náutico no Brasil. É especialista em equipamentos eletrônicos Navico (Simrad, B&G e Lowrance).",
+      "instagram": "https://www.instagram.com/tiagocarneiro81/",
+      "hora": "18h00 · Tarde"
     }
   ],
   "edicao_anterior": {
@@ -379,6 +400,15 @@
     ]
   },
   "avisos": [
+    {
+      "id": "palestra-tiago",
+      "data": "2026-10-15",
+      "titulo": "Nova palestra: navegação eletrônica",
+      "texto": "Tiago Carneiro, técnico em eletrônica marítima e especialista em equipamentos Navico (Simrad, B&G e Lowrance), apresenta às 18h00 \"Navegação eletrônica\". São quase 30 anos de bancada acompanhando a evolução dos equipamentos de navegação e o crescimento do setor náutico no Brasil.",
+      "imagem": "media/palestrantes/tiago-carneiro.jpg",
+      "link": "#/palestrantes",
+      "link_label": "Ver palestrante"
+    },
     {
       "id": "palestra-janu",
       "data": "2026-10-13",
@@ -774,7 +804,7 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 49,
+  "app_min": 50,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",
