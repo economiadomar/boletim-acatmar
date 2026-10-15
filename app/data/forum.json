@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-15-1",
+  "versao": "2026-10-15-2",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -101,18 +101,9 @@
       "tipo": "org"
     },
     {
-      "id": "manha",
-      "periodo": "Manhã",
-      "hora": "09:00",
-      "titulo": "Palestras técnicas da manhã",
-      "quem": "Palestrantes a confirmar",
-      "tipo": "bloco",
-      "desc": "Segurança da navegação, tecnologia embarcada, legislação e manutenção de embarcações."
-    },
-    {
       "id": "marcelo",
       "periodo": "Manhã",
-      "hora": "09:30",
+      "hora": "09:00",
       "titulo": "Tecnologia e monitoramento inteligente para embarcações",
       "quem": "Marcelo Reis · Safeboat e Navalcare",
       "tipo": "palestra",
@@ -122,7 +113,7 @@
     {
       "id": "alexandre",
       "periodo": "Manhã",
-      "hora": "10:30",
+      "hora": "10:00",
       "titulo": "Sistema de arrefecimento (mufla)",
       "quem": "Alexandre Gonzaga · Point Marine",
       "tipo": "palestra",
@@ -132,7 +123,7 @@
     {
       "id": "gianotti",
       "periodo": "Manhã",
-      "hora": "11:30",
+      "hora": "11:00",
       "titulo": "Estrutura de resgate do CBMSC no litoral de Santa Catarina",
       "quem": "Sgt. Gianotti · Batalhão de Operações Aéreas do CBMSC",
       "tipo": "palestra",
@@ -142,24 +133,15 @@
     {
       "id": "almoco",
       "periodo": "Manhã",
-      "hora": "12:30",
+      "hora": "12:00",
       "titulo": "Intervalo para almoço",
-      "quem": "Retorno às 13h15",
+      "quem": "Retorno às 13h00",
       "tipo": "pausa"
-    },
-    {
-      "id": "tarde",
-      "periodo": "Tarde",
-      "hora": "13:15",
-      "titulo": "Palestras técnicas da tarde",
-      "quem": "Palestrantes a confirmar",
-      "tipo": "bloco",
-      "desc": "Inovação, novas tecnologias, cultura oceânica, marinas e turismo náutico."
     },
     {
       "id": "jovan",
       "periodo": "Tarde",
-      "hora": "13:30",
+      "hora": "13:00",
       "titulo": "O motor fala: saiba entender os sinais",
       "quem": "Jovan Sampaio · Linck Náutica (Volvo Penta)",
       "tipo": "palestra",
@@ -169,7 +151,7 @@
     {
       "id": "deivity",
       "periodo": "Tarde",
-      "hora": "14:30",
+      "hora": "14:00",
       "titulo": "Vidro não é tudo igual",
       "quem": "Deivity Rosa · Personal Boat",
       "tipo": "palestra",
@@ -179,7 +161,7 @@
     {
       "id": "heros",
       "periodo": "Tarde",
-      "hora": "15:30",
+      "hora": "15:00",
       "titulo": "Repare certo! Reparos em fibra, divinycell, gelcoat e fibra de carbono",
       "quem": "Heros Silverio · Silverio Estaleiro",
       "tipo": "palestra",
@@ -189,7 +171,7 @@
     {
       "id": "huertas",
       "periodo": "Tarde",
-      "hora": "16:30",
+      "hora": "16:00",
       "titulo": "Soluções ecológicas e sustentáveis na limpeza e conservação de embarcações",
       "quem": "Marcelo Huertas · Nautispecial",
       "tipo": "palestra",
@@ -199,7 +181,7 @@
     {
       "id": "janu",
       "periodo": "Tarde",
-      "hora": "17:30",
+      "hora": "17:00",
       "titulo": "Menos craca, menos carbono",
       "quem": "Januario Gagliardi · JRG Trading (Propspeed)",
       "tipo": "palestra",
@@ -219,7 +201,7 @@
     {
       "id": "encerra",
       "periodo": "Tarde",
-      "hora": "18:30",
+      "hora": "19:00",
       "titulo": "Encerramento e certificados",
       "quem": "ACATMAR",
       "tipo": "org"
@@ -234,7 +216,7 @@
       "foto": "media/palestrantes/jovan-sampaio.jpg",
       "tema": "O motor fala: saiba entender os sinais",
       "bio": "Profissional com mais de uma década de experiência no setor náutico, atua com motores marítimos Volvo Penta na Linck Náutica, revenda e assistência técnica da marca em Santa Catarina. No dia a dia da oficina e do atendimento a proprietários, acompanha instalação, manutenção e diagnóstico de motores, e é dessa vivência que vem a palestra: ensinar a reconhecer os sinais que o motor dá antes de virar problema.",
-      "hora": "13h30 · Tarde"
+      "hora": "13h00 · Tarde"
     },
     {
       "id": "sgt-gianotti",
@@ -243,7 +225,7 @@
       "empresa": "CBMSC",
       "foto": "media/palestrantes/sgt-gianotti.jpg",
       "tema": "Estrutura de resgate do CBMSC no litoral de Santa Catarina",
-      "hora": "11h30 · Manhã",
+      "hora": "11h00 · Manhã",
       "bio": "Sargento do Corpo de Bombeiros Militar de Santa Catarina, integra o Batalhão de Operações Aéreas, unidade responsável pelas operações com aeronaves do CBMSC em resgates, salvamentos e apoio às guarnições em todo o estado."
     },
     {
@@ -255,7 +237,7 @@
       "tema": "Vidro não é tudo igual",
       "instagram": "https://www.instagram.com/personal_boat/",
       "bio": "Atua no setor de vidros desde 2011, com experiência em produção, gestão e aplicação de vidros de segurança. Técnico em Edificações pelo IFSC e engenheiro de produção, assumiu em 2015 a gestão da linha náutica e, em 2016, foi um dos criadores da Personal Boat. Hoje, como sócio e diretor da empresa, é especialista em vidros aplicados a embarcações, com foco em especificação, desempenho e conservação.",
-      "hora": "14h30 · Tarde"
+      "hora": "14h00 · Tarde"
     },
     {
       "id": "alexandre-gonzaga",
@@ -264,7 +246,7 @@
       "empresa": "Point Marine",
       "foto": "media/palestrantes/alexandre-gonzaga.jpg",
       "tema": "Sistema de arrefecimento (mufla)",
-      "hora": "10h30 · Manhã",
+      "hora": "10h00 · Manhã",
       "instagram": "https://www.instagram.com/pointmarinebrasil/",
       "bio": "Apaixonado pela náutica e empresário do setor há mais de 20 anos, é sócio-proprietário da Point Marine, concessionária Mercury há 18 anos. No dia a dia da concessionária e da oficina, acompanha a manutenção e o desempenho de motores de todas as marcas."
     },
@@ -287,7 +269,7 @@
         }
       ],
       "bio": "Engenheiro naval, atuou em estaleiros, fundou a Navalcare em 2016 e lançou a Safeboat em 2024. Tem ampla experiência em embarcações de esporte e recreio, com foco em manutenção e monitoramento inteligente a bordo.",
-      "hora": "09h30 · Manhã"
+      "hora": "09h00 · Manhã"
     },
     {
       "id": "heros-silverio",
@@ -297,7 +279,7 @@
       "foto": "media/palestrantes/heros-silverio.jpg",
       "tema": "Repare certo! Reparos em fibra, divinycell, gelcoat e fibra de carbono",
       "bio": "Fundador do Silverio Estaleiro e especialista em técnicas construtivas de barcos de performance, Heros trabalha no dia a dia com fibra de vidro, divinycell, gelcoat e fibra de carbono. Na palestra ele traz uma abordagem prática de reparos nesses materiais e mostra os produtos certos para cada situação, inclusive o que ter a bordo para as emergências.",
-      "hora": "15h30 · Tarde"
+      "hora": "15h00 · Tarde"
     },
     {
       "id": "marcelo-huertas",
@@ -308,7 +290,7 @@
       "tema": "Soluções ecológicas e sustentáveis na limpeza e conservação de embarcações",
       "bio": "Pioneiro no Brasil no desenvolvimento de produtos à base de plantas para a limpeza e a conservação de embarcações de esporte e recreio desde 1996. Em 1998 criou o primeiro treinamento para marinheiros de esporte e recreio, para capacitá-los a cuidar dos barcos de forma sustentável e com produtos mais saudáveis; de lá para cá, já passaram pela formação mais de 6 mil marinheiros de todo o Brasil. Para marinas e iate clubes, desenvolveu procedimentos ecoeficientes que preservam o meio ambiente e geram menos lixo e mais reciclagem. Em 2026 criou o primeiro lava-lanchas 100% à base de plantas aprovado pela Anvisa.",
       "instagram": "https://www.instagram.com/nautispecial/",
-      "hora": "16h30 · Tarde"
+      "hora": "16h00 · Tarde"
     },
     {
       "id": "janu-gagliardi",
@@ -325,7 +307,7 @@
           "url": "https://www.linkedin.com/in/janugagliardi"
         }
       ],
-      "hora": "17h30 · Tarde"
+      "hora": "17h00 · Tarde"
     },
     {
       "id": "tiago-carneiro",
@@ -413,7 +395,7 @@
       "id": "palestra-janu",
       "data": "2026-10-13",
       "titulo": "Nova palestra: menos craca, menos carbono",
-      "texto": "Januario Gagliardi, o Janu, CEO da JRG Trading e responsável pela distribuição oficial Propspeed na América Latina, apresenta às 17h30 \"Menos craca, menos carbono\": como a manutenção certa do casco e da hélice aumenta a eficiência das embarcações e reduz consumo e emissões.",
+      "texto": "Januario Gagliardi, o Janu, CEO da JRG Trading e responsável pela distribuição oficial Propspeed na América Latina, apresenta às 17h00 \"Menos craca, menos carbono\": como a manutenção certa do casco e da hélice aumenta a eficiência das embarcações e reduz consumo e emissões.",
       "imagem": "media/palestrantes/janu-gagliardi.jpg",
       "link": "#/palestrantes",
       "link_label": "Ver palestrante"
@@ -422,7 +404,7 @@
       "id": "palestra-huertas",
       "data": "2026-10-13",
       "titulo": "Nova palestra: limpeza sustentável de embarcações",
-      "texto": "Marcelo Huertas, da Nautispecial, pioneiro no Brasil em produtos à base de plantas para a limpeza e a conservação de barcos, apresenta às 16h30 \"Soluções ecológicas e sustentáveis na limpeza e conservação de embarcações\". São quase três décadas de trabalho e mais de 6 mil marinheiros já treinados em todo o país.",
+      "texto": "Marcelo Huertas, da Nautispecial, pioneiro no Brasil em produtos à base de plantas para a limpeza e a conservação de barcos, apresenta às 16h00 \"Soluções ecológicas e sustentáveis na limpeza e conservação de embarcações\". São quase três décadas de trabalho e mais de 6 mil marinheiros já treinados em todo o país.",
       "imagem": "media/palestrantes/marcelo-huertas.jpg",
       "link": "#/palestrantes",
       "link_label": "Ver palestrante"
@@ -431,7 +413,7 @@
       "id": "palestra-heros",
       "data": "2026-10-08",
       "titulo": "Nova palestra: repare certo em fibra e gelcoat",
-      "texto": "Heros Silverio, fundador do Silverio Estaleiro e especialista em barcos de performance, apresenta às 15h30 \"Repare certo!\": uma aula prática de reparos em fibra de vidro, divinycell, gelcoat e fibra de carbono, com os materiais certos para cada caso e o que ter a bordo para as emergências.",
+      "texto": "Heros Silverio, fundador do Silverio Estaleiro e especialista em barcos de performance, apresenta às 15h00 \"Repare certo!\": uma aula prática de reparos em fibra de vidro, divinycell, gelcoat e fibra de carbono, com os materiais certos para cada caso e o que ter a bordo para as emergências.",
       "imagem": "media/palestrantes/heros-silverio.jpg",
       "link": "#/palestrantes",
       "link_label": "Ver palestrante"
@@ -440,7 +422,7 @@
       "id": "palestra-marcelo",
       "data": "2026-09-18",
       "titulo": "Nova palestra: tecnologia e monitoramento a bordo",
-      "texto": "Marcelo Reis, CEO da Safeboat e da Navalcare, apresenta às 9h30 \"Tecnologia e monitoramento inteligente para embarcações\". Engenheiro naval, ele fundou a Navalcare em 2016 e lançou a Safeboat em 2024, e traz a prática de quem acompanha a saúde do barco em tempo real. A palestra abre a manhã do Fórum, às 9h30.",
+      "texto": "Marcelo Reis, CEO da Safeboat e da Navalcare, apresenta às 9h00 \"Tecnologia e monitoramento inteligente para embarcações\". Engenheiro naval, ele fundou a Navalcare em 2016 e lançou a Safeboat em 2024, e traz a prática de quem acompanha a saúde do barco em tempo real. A palestra abre a manhã do Fórum, às 9h00.",
       "imagem": "media/palestrantes/marcelo-reis.jpg",
       "link": "#/palestrantes",
       "link_label": "Ver palestrante"
@@ -449,7 +431,7 @@
       "id": "palestra-alexandre",
       "data": "2026-09-15",
       "titulo": "Nova palestra: sistema de arrefecimento e mufla",
-      "texto": "Alexandre Gonzaga, sócio-proprietário da Point Marine e há mais de 20 anos no setor, apresenta às 10h30 uma aula prática sobre o sistema de arrefecimento do motor e o uso correto da mufla na lavagem. É conteúdo sem marca: serve para qualquer motor, de qualquer fabricante.",
+      "texto": "Alexandre Gonzaga, sócio-proprietário da Point Marine e há mais de 20 anos no setor, apresenta às 10h00 uma aula prática sobre o sistema de arrefecimento do motor e o uso correto da mufla na lavagem. É conteúdo sem marca: serve para qualquer motor, de qualquer fabricante.",
       "imagem": "media/palestrantes/alexandre-gonzaga.jpg",
       "link": "#/palestrantes",
       "link_label": "Ver palestrante"
@@ -476,7 +458,7 @@
       "id": "palestra-jovan",
       "data": "2026-09-12",
       "titulo": "Primeira palestra confirmada: O motor fala",
-      "texto": "Jovan Sampaio, coordenador da Linck Náutica, especialista em motores Volvo Penta, abre a lista de palestrantes do VI Fórum com \"O motor fala: saiba entender os sinais\", às 13h30. Ruídos, vibração, fumaça, temperatura e consumo dizem muito sobre a saúde do motor, e saber ler esses sinais evita pane e prejuízo.",
+      "texto": "Jovan Sampaio, coordenador da Linck Náutica, especialista em motores Volvo Penta, abre a lista de palestrantes do VI Fórum com \"O motor fala: saiba entender os sinais\", às 13h00. Ruídos, vibração, fumaça, temperatura e consumo dizem muito sobre a saúde do motor, e saber ler esses sinais evita pane e prejuízo.",
       "link": "#/palestrantes",
       "link_label": "Ver palestrante",
       "imagem": "media/palestrantes/jovan-sampaio.jpg"
@@ -804,7 +786,7 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 50,
+  "app_min": 51,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",
