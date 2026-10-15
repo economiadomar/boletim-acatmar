@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-15-2",
+  "versao": "2026-10-15-3",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -22,7 +22,7 @@
       "dicas": [
         "O Fórum acontece no auditório principal do câmpus. A entrada é pela R. Quatorze de Julho, 150, em Coqueiros, na parte continental de Florianópolis, a cerca de 10 minutos do centro.",
         "Estacionamento próprio e gratuito dentro do câmpus. As vagas são limitadas, então chegue cedo ou combine carona pelo grupo do Fórum.",
-        "Credenciamento a partir das 8h, na entrada do auditório. Tenha seu QR Code aberto no app.",
+        "Credenciamento a partir das 7h30, na entrada do auditório. Tenha seu QR Code aberto no app.",
         "Linhas de ônibus que passam pela Beira-Mar Continental atendem a região de Coqueiros."
       ],
       "foto": "media/ifsc-continente.jpg",
@@ -87,7 +87,7 @@
     {
       "id": "cred",
       "periodo": "Manhã",
-      "hora": "08:00",
+      "hora": "07:30",
       "titulo": "Credenciamento e boas-vindas",
       "quem": "Apresente seu QR Code do app na entrada",
       "tipo": "org"
@@ -786,7 +786,7 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 51,
+  "app_min": 52,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",

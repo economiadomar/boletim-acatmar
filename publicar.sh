@@ -26,6 +26,7 @@ python3 build-noticias.py | sed 's/^/     /'
 python3 tools/forum-agenda.py | sed 's/^/     /'
 python3 tools/logo-optica.py >/dev/null && python3 tools/forum-patrocinadores.py | sed 's/^/     /'
 python3 tools/bloco-palestrantes.py | sed 's/^/     /'
+python3 tools/flyer-programacao.py | sed 's/^/     /'
 python3 build-en.py | sed 's/^/     /'
 
 # valida os arquivos de conteúdo antes de subir

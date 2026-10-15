@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=51;
+var APP_V=52;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -173,7 +173,7 @@ function local(){
   h((l.foto?'<img src="'+l.foto+'" alt="'+esc(l.nome)+'" style="border-radius:16px;margin:0 0 4px;box-shadow:0 6px 20px rgba(6,23,38,.2)">'+(l.foto_legenda?'<p class="small muted" style="margin:6px 4px 14px">'+esc(l.foto_legenda)+'</p>':''):'')
    +'<div class="card"><p class="kicker">Local do evento</p><h3>'+esc(l.nome)+'</h3>'+(l.sala?'<p><b>'+esc(l.sala)+'</b></p>':'')+'<p>'+esc(l.endereco)+'</p><div class="btn-row"><a class="btn btn-teal btn-sm" href="'+l.maps+'" target="_blank" rel="noopener">Google Maps</a><a class="btn btn-navy btn-sm" href="'+l.waze+'" target="_blank" rel="noopener">Waze</a><a class="btn btn-outline btn-sm" href="'+l.apple+'" target="_blank" rel="noopener">Apple Maps</a></div></div>'
    +'<div class="card"><h3>Como chegar e dicas</h3>'+l.dicas.map(function(d){return '<p class="small">• '+esc(d)+'</p>';}).join('')+'</div>'
-   +'<div class="card"><h3>Horário</h3><p>'+esc(D.evento.data_texto)+'<br>'+esc(D.evento.horario_texto)+'. Credenciamento a partir das 8h.</p></div>');
+   +'<div class="card"><h3>Horário</h3><p>'+esc(D.evento.data_texto)+'<br>'+esc(D.evento.horario_texto)+'. Credenciamento a partir das 7h30.</p></div>');
 }
 
 /* ---------- Interagir ---------- */
