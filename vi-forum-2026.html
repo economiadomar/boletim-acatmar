@@ -131,6 +131,13 @@
           <input type="email" id="email" name="email" required autocomplete="email" placeholder="voce@email.com">
           <label for="whats" data-en="WhatsApp">WhatsApp</label>
           <input type="tel" id="whats" name="WhatsApp" required autocomplete="tel" placeholder="(00) 00000-0000">
+          <label for="cpf" data-en="CPF (Brazilian taxpayer ID)">CPF</label>
+          <input type="text" id="cpf" name="CPF" required inputmode="numeric" maxlength="14" autocomplete="off" placeholder="000.000.000-00">
+          <div style="font-size:.82rem;color:var(--muted);margin:-.6rem 0 1rem" data-en="Used only for your certificate and seat control.">Usado só para o seu certificado e o controle de vagas.</div>
+          <label for="empresa" data-en="Company (optional)">Empresa (opcional)</label>
+          <input type="text" id="empresa" name="Empresa" autocomplete="organization" placeholder="Nome da empresa ou instituição">
+          <label for="cnpj" data-en="Company CNPJ (optional)">CNPJ da empresa (opcional)</label>
+          <input type="text" id="cnpj" name="CNPJ" inputmode="numeric" maxlength="18" autocomplete="off" placeholder="00.000.000/0000-00">
           <div class="consent">
             <input type="checkbox" id="ok" required>
             <label for="ok" style="text-transform:none;letter-spacing:0;font-family:inherit;font-weight:400;color:var(--muted);margin:0;font-size:.9rem">
@@ -216,10 +223,22 @@ var EN=(function(){try{return localStorage.getItem('acatmar_lang')==='en';}catch
 document.documentElement.lang=EN?'en':'pt-BR';
 if(EN){document.querySelectorAll('[data-en]').forEach(function(el){el.textContent=el.getAttribute('data-en');});}
 var form=document.getElementById('form'),btn=document.getElementById('btn'),err=document.getElementById('err');
+/* CPF obrigatorio e CNPJ opcional: mascara enquanto digita e validacao dos digitos */
+function soDig(v){return String(v||'').replace(/\D/g,'');}
+function mCPF(v){v=soDig(v).slice(0,11);return v.replace(/(\d{3})(\d)/,'$1.$2').replace(/(\d{3})(\d)/,'$1.$2').replace(/(\d{3})(\d{1,2})$/,'$1-$2');}
+function mCNPJ(v){v=soDig(v).slice(0,14);return v.replace(/^(\d{2})(\d)/,'$1.$2').replace(/^(\d{2})\.(\d{3})(\d)/,'$1.$2.$3').replace(/\.(\d{3})(\d)/,'.$1/$2').replace(/(\d{4})(\d)/,'$1-$2');}
+function okCPF(c){c=soDig(c);if(c.length!==11||/^(\d)\1+$/.test(c))return false;for(var t=9;t<11;t++){var s=0;for(var i=0;i<t;i++)s+=c[i]*(t+1-i);if(((s*10)%11)%10!=c[t])return false;}return true;}
+function okCNPJ(c){c=soDig(c);if(c.length!==14||/^(\d)\1+$/.test(c))return false;var p=[5,4,3,2,9,8,7,6,5,4,3,2];for(var t=12;t<14;t++){var w=t===12?p:[6].concat(p);var s=0;for(var i=0;i<t;i++)s+=c[i]*w[i];var d=s%11<2?0:11-s%11;if(d!=c[t])return false;}return true;}
+var cpfEl=document.getElementById('cpf'),cnpjEl=document.getElementById('cnpj');
+cpfEl.addEventListener('input',function(){this.value=mCPF(this.value);});
+cnpjEl.addEventListener('input',function(){this.value=mCNPJ(this.value);});
+function mostraErro(t){err.className='msg err';err.style.display='block';err.textContent=t;}
 form.addEventListener('submit',function(e){
   e.preventDefault();
   err.classList.remove('err');err.style.display='none';
   if(document.getElementById('_honey')&&document.getElementById('_honey').value) return;
+  if(!okCPF(cpfEl.value)){mostraErro(EN?'Invalid CPF. Please check the numbers.':'CPF inválido. Confira os números.');cpfEl.focus();return;}
+  if(soDig(cnpjEl.value)&&!okCNPJ(cnpjEl.value)){mostraErro(EN?'Invalid CNPJ. Please check the numbers or leave it blank.':'CNPJ inválido. Confira os números ou deixe em branco.');cnpjEl.focus();return;}
   btn.disabled=true; btn.textContent=EN?'Sending…':'Enviando…';
   var data=new FormData(form);
   fetch('https://formsubmit.co/ajax/dbf5453c958f231720ec8976f1e606ec',{
