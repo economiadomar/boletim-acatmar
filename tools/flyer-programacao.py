@@ -72,9 +72,12 @@ def hora(h): return h.replace(':', 'h')
 def pagina(num, kicker, linhas, arq):
     im = fundo(); d = ImageDraw.Draw(im)
     # --- cabecalho
-    logo = Image.open(os.path.join(RAIZ, 'media/logos/vi-forum-logo.png')).convert('RGBA')
-    lh = 270; logo = logo.resize((int(logo.width * lh / logo.height), lh), Image.LANCZOS)
-    im.paste(logo, (50, 40), logo)
+    selo = 272; bx, by = 50, 36
+    d.rounded_rectangle((bx + 4, by + 6, bx + selo + 4, by + selo + 6), 44, fill=(3, 14, 26))      # sombra
+    d.rounded_rectangle((bx, by, bx + selo, by + selo), 44, fill=WHITE, outline=TEALB, width=3)
+    logo = Image.open(os.path.join(RAIZ, 'media/logos/vi-forum-logo-fundo-branco.png')).convert('RGB')
+    lh = selo - 26; logo = logo.resize((int(logo.width * lh / logo.height), lh), Image.LANCZOS)
+    im.paste(logo, (bx + (selo - logo.width) // 2, by + (selo - logo.height) // 2))
     xt = 350
     espaco(d, (xt, 62), kicker, fonte('bar', 30), TEALB, 5)
     f1 = fonte('osw', 70)
@@ -112,14 +115,16 @@ def pagina(num, kicker, linhas, arq):
             d.text((xl - ft.getlength(t) / 2, cy - 24), t, font=ft, fill=WHITE)
             if p.get('foto'):
                 fo = foto_circular(p['foto'], 66); im.paste(fo, (xf - fo.width // 2, cy - fo.height // 2), fo)
-            ftit = fonte('osw', 40)
+            ftit = fonte('osw', 40); LH = 52
             ls = quebra(s['titulo'], ftit, 900)[:2]
-            ty = cy - (len(ls) * 46 + 34) // 2
-            for l in ls: d.text((xtx, ty), l, font=ftit, fill=WHITE); ty += 46
+            bloco = len(ls) * LH + 16 + 32
+            ty = cy - bloco // 2
+            for l in ls: d.text((xtx, ty), l, font=ftit, fill=WHITE); ty += LH
+            ty += 16
             fn = fonte('ab', 26); fs = fonte('ar', 24)
             nome = p.get('nome', s.get('quem', '')); sub = ' · '.join(x for x in [p.get('cargo'), p.get('empresa')] if x)
-            d.text((xtx, ty + 4), nome, font=fn, fill=TEALB)
-            d.text((xtx + fn.getlength(nome) + 14, ty + 6), sub, font=fs, fill=MUTED)
+            d.text((xtx, ty), nome, font=fn, fill=TEALB)
+            d.text((xtx + fn.getlength(nome) + 14, ty + 2), sub, font=fs, fill=MUTED)
         else:
             _, hh, tit, sub = item
             cy = top + alturas['compact'] // 2
@@ -151,7 +156,7 @@ tarde = [s for s in prog if s['tipo'] == 'palestra' and s['periodo'] == 'Tarde']
 p1 = [('compact', '7h30', 'Credenciamento', 'Apresente o QR Code do app na entrada do auditório'),
       ('compact', '8h30', 'Cerimônia de abertura', 'ACATMAR, Mundo Mar Consulting e IFSC')] + \
      [('talk', s) for s in manha] + \
-     [('compact', '12h00', 'Intervalo para almoço', 'Retorno às 13h00')]
+     [('compact', '12h00', 'Intervalo para almoço', 'Retorno às 12h45')]
 p2 = [('talk', s) for s in tarde] + \
      [('compact', '19h00', 'Encerramento', 'Certificados e agradecimentos')]
 
