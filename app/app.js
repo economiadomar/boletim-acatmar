@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=55;
+var APP_V=56;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -248,7 +248,8 @@ function installGate(){if(isStandalone())return;try{if(sessionStorage.getItem('f
   var body='',arrow=false,title='Instale o app';
   if(ios&&inapp){title='Abra no Safari';body='<a class="btn btn-teal btn-block btn-xl" href="x-safari-https://www.acatmar.org/app/">Abrir no Safari</a><div class="gate-ou">ou toque neste botão do WhatsApp</div><div class="gate-pic">'+I_COMPASS+'</div>';}
   else if(ios){title='Instale o app';body='<div class="gate-big"><div class="gate-num">1</div><div class="gate-where">Na barra do Safari, onde está escrito <b>acatmar.org</b>, toque no botão:</div><div class="gate-pic" id="gate-fake">'+I_SHARE+'</div><div class="gate-txt"><small>Ele fica ao lado do endereço, em cima ou embaixo da tela</small></div></div><div class="gate-big"><div class="gate-num">2</div><div class="gate-where">Na lista que abrir, toque em <b>Ver Mais</b> e arraste para baixo até achar:</div><div class="gate-row">'+I_PLUS+'<span>Adicionar à Tela de Início</span></div><div class="gate-txt"><small>Toque nela e depois em <b>Adicionar</b>, no canto de cima</small></div></div>';}
-  else if(and&&deferredPrompt){body='<button class="btn btn-teal btn-block btn-xl" id="gate-inst">Instalar</button>';}
+  else if(and&&/SamsungBrowser/i.test(navigator.userAgent)){title='Instale pelo Chrome';body='<a class="btn btn-teal btn-block btn-xl" href="'+CHROME_INTENT+'">Abrir no Chrome e instalar</a><p class="small" style="opacity:.85;margin:12px 0 0">No navegador da Samsung a instalação costuma falhar. Pelo Chrome funciona em um toque.</p>';}
+  else if(and&&deferredPrompt){body='<button class="btn btn-teal btn-block btn-xl" id="gate-inst">Instalar</button><p class="small" style="opacity:.75;margin:12px 0 0">Se aparecer "não foi possível instalar", abra <b>acatmar.org/app</b> no Chrome e tente de novo.</p>';}
   else if(and){body='<a class="btn btn-teal btn-block btn-xl" href="'+CHROME_INTENT+'">Instalar</a>';}
   else {body='<p>Abra <b>acatmar.org/app</b> no celular para instalar.</p>';}
   var g=document.createElement('div');g.id='gate';g.className='gate'+(arrow?' gate-arrow':'');
@@ -264,7 +265,7 @@ function maybeBanner(){if(isStandalone())return;installGate();return;if(isIOS())
   document.getElementById('ib-close').onclick=function(){b.hidden=true;LS.set('banner_off',true);};}
 function instalar(){
   var ios='<div class="steps"><div><span>Abra este endereço no <b>Safari</b> (no iPhone, só o Safari instala apps da web): <b>acatmar.org/app</b></span></div><div><span>Toque no botão <b>Compartilhar do Safari</b>: o quadrado com a seta para cima, na <b>barra de baixo</b> do navegador. Atenção: não é o botão dentro do app, é o do Safari.</span></div><div><span>Role e toque em <b>"Adicionar à Tela de Início"</b>.</span></div><div><span>Confirme em <b>Adicionar</b>. O ícone do Fórum aparece na sua tela inicial.</span></div></div>';
-  var and='<div class="steps"><div><span>Abra <b>acatmar.org/app</b> no <b>Chrome</b>.</span></div><div><span>Toque em <b>Instalar</b> no aviso que aparece, ou no menu ⋮ escolha <b>"Instalar app"</b> / <b>"Adicionar à tela inicial"</b>.</span></div><div><span>Confirme. O app do Fórum aparece junto dos seus outros apps.</span></div></div>';
+  var and='<div class="steps"><div><span>Abra <b>acatmar.org/app</b> no <b>Chrome</b>.</span></div><div><span>Toque em <b>Instalar</b> no aviso que aparece, ou no menu ⋮ escolha <b>"Instalar app"</b> / <b>"Adicionar à tela inicial"</b>.</span></div><div><span>Confirme. O app do Fórum aparece junto dos seus outros apps.</span></div><div><span><b>Deu "não foi possível instalar o aplicativo web"?</b> Isso acontece no navegador da Samsung. Abra <b>acatmar.org/app</b> no <b>Chrome</b> e instale por lá.</span></div></div>';
   h((isStandalone()?'<div class="ok-box" style="margin-bottom:14px">✅ O app já está instalado neste aparelho.</div>':'')
    +(deferredPrompt?'<div class="card" style="text-align:center"><h3>Instalar agora</h3><p class="small muted">Seu celular permite instalar em um toque.</p><button class="btn btn-teal btn-block" id="btn-inst">Instalar o app</button></div>':'')
    +(inAppBrowser()&&!isStandalone()?'<div class="notice">⚠️ Você está no navegador interno de um aplicativo (WhatsApp, Instagram…). Ele não instala apps. <b>Abra no '+(isIOS()?'Safari':'Chrome')+'</b> pelo menu do canto da tela, ou copie o link: <button class="btn btn-navy btn-sm" id="copy-link2" style="margin-top:8px">Copiar acatmar.org/app</button></div>':'')
