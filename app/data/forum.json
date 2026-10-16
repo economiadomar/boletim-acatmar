@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-16-1",
+  "versao": "2026-10-16-2",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -817,7 +817,7 @@
           "Excesso de água no tanque"
         ],
         "correta": 0,
-        "explicacao": "Fumaça azulada indica que o motor está queimando óleo. A branca costuma ser vapor d'água e a preta, mistura rica em combustível. Ler a cor da fumaça evita pane. Tema do Jovan, às 13h30."
+        "explicacao": "Fumaça azulada indica que o motor está queimando óleo. A branca costuma ser vapor d'água e a preta, mistura rica em combustível. Ler a cor da fumaça evita pane. Tema do Jovan, às 13h."
       },
       {
         "id": "q-gelcoat",
@@ -831,7 +831,7 @@
           "Pintar por cima sem lixar"
         ],
         "correta": 0,
-        "explicacao": "A aderência vem da preparação: superfície limpa, lixada e seca, e a cura respeitada. Pular isso é a causa nº1 do reparo soltar. O Heros mostra na prática às 15h30."
+        "explicacao": "A aderência vem da preparação: superfície limpa, lixada e seca, e a cura respeitada. Pular isso é a causa nº1 do reparo soltar. O Heros mostra na prática às 15h."
       },
       {
         "id": "q-vidro",
@@ -845,7 +845,7 @@
           "Não precisa de manutenção"
         ],
         "correta": 0,
-        "explicacao": "Vidros náuticos são temperados ou laminados e especificados para impacto, pressão da água e ambiente salino. Usar o errado é risco de segurança. O Deivity explica às 14h30."
+        "explicacao": "Vidros náuticos são temperados ou laminados e especificados para impacto, pressão da água e ambiente salino. Usar o errado é risco de segurança. O Deivity explica às 14h."
       },
       {
         "id": "q-resgate",
@@ -887,7 +887,7 @@
           "Trocar o motor sozinho"
         ],
         "correta": 0,
-        "explicacao": "Sensores a bordo mostram a saúde do barco e avisam antes de o problema aparecer, reduzindo risco e custo. O Marcelo (Safeboat e Navalcare) abre a manhã às 9h30."
+        "explicacao": "Sensores a bordo mostram a saúde do barco e avisam antes de o problema aparecer, reduzindo risco e custo. O Marcelo (Safeboat e Navalcare) abre a manhã às 9h."
       },
       {
         "id": "q-agua-porao",
@@ -915,7 +915,7 @@
           "Enferruja menos que o aço"
         ],
         "correta": 0,
-        "explicacao": "O carbono une baixo peso e alta rigidez, um ganho direto de performance. Mas o reparo exige técnica específica. O Heros é especialista em construção de barcos de performance (15h30)."
+        "explicacao": "O carbono une baixo peso e alta rigidez, um ganho direto de performance. Mas o reparo exige técnica específica. O Heros é especialista em construção de barcos de performance (15h)."
       },
       {
         "id": "q-combustivel",
@@ -929,14 +929,14 @@
           "Nada, isso é normal"
         ],
         "correta": 0,
-        "explicacao": "Consumo é um dos sinais que o motor dá. Pode ser incrustação no casco, hélice danificada, injeção ou filtro sujo. Ler esses sinais é o tema do Jovan, às 13h30."
+        "explicacao": "Consumo é um dos sinais que o motor dá. Pode ser incrustação no casco, hélice danificada, injeção ou filtro sujo. Ler esses sinais é o tema do Jovan, às 13h."
       }
     ],
     "enquetes": [
       {
         "id": "e-heros",
         "palestrante": "heros-silverio",
-        "tema": "Repare certo (Heros Silverio, 15h30)",
+        "tema": "Repare certo (Heros Silverio, 15h)",
         "pergunta": "O que você mais quer que o Heros ensine sobre reparos?",
         "opcoes": [
           "Consertar fibra e casco trincado",
@@ -948,7 +948,7 @@
       {
         "id": "e-jovan",
         "palestrante": "jovan-sampaio",
-        "tema": "O motor fala (Jovan Sampaio, 13h30)",
+        "tema": "O motor fala (Jovan Sampaio, 13h)",
         "pergunta": "Qual sinal do motor você mais quer aprender a identificar?",
         "opcoes": [
           "Fumaça",
@@ -960,7 +960,7 @@
       {
         "id": "e-alexandre",
         "palestrante": "alexandre-gonzaga",
-        "tema": "Arrefecimento e mufla (Alexandre Gonzaga, 10h30)",
+        "tema": "Arrefecimento e mufla (Alexandre Gonzaga, 10h)",
         "pergunta": "Sobre arrefecimento e mufla, o que mais te interessa?",
         "opcoes": [
           "Lavar o motor do jeito certo",
@@ -984,7 +984,7 @@
       {
         "id": "e-deivity",
         "palestrante": "deivity-rosa",
-        "tema": "Vidro não é tudo igual (Deivity Rosa, 14h30)",
+        "tema": "Vidro não é tudo igual (Deivity Rosa, 14h)",
         "pergunta": "Sobre vidros náuticos, qual é a sua maior dúvida?",
         "opcoes": [
           "Qual vidro é seguro",
