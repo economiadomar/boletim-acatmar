@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-19-4",
+  "versao": "2026-10-19-5",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -394,7 +394,7 @@
       "id": "restaurante-coffee",
       "data": "2026-10-19",
       "titulo": "Almoço no dia do Fórum: cardápio e valor especiais",
-      "texto": "O IFSC Continente tem restaurante no próprio câmpus e, amanhã, o cardápio e o valor são especiais para quem está no Fórum: 6 opções de salada, arroz, arroz integral, feijão, macarrão, farofa, strogonoff de frango, moqueca de peixe, bolinho de carne e, para quem é vegano, bolonhesa de soja. O quilo sai a R$ 49,64. A cantina abre das 7h30 às 21h e o restaurante atende a partir das 11h30. Também há restaurantes próximos, na região de Coqueiros.",
+      "texto": "O IFSC Continente tem restaurante no próprio câmpus e, amanhã, o cardápio e o valor são especiais para quem está no Fórum: 6 opções de salada, arroz, arroz integral, feijão, macarrão, farofa, strogonoff de frango, moqueca de peixe, bolinho de carne e, para quem é vegano, bolonhesa de soja. O quilo sai a R$ 49,64. O almoço é servido das 11h30 às 13h30. Fora desse horário a cantina segue aberta, das 7h30 às 21h. Também há restaurantes próximos, na região de Coqueiros.",
       "link": "#/faq",
       "link_label": "Ver dúvidas frequentes"
     },
@@ -698,7 +698,7 @@
     },
     {
       "p": "Haverá almoço?",
-      "r": "O intervalo é das 12h às 12h45. O IFSC tem restaurante no próprio câmpus e, no dia do Fórum, o cardápio e o valor são especiais: 6 opções de salada, arroz, arroz integral, feijão, macarrão, farofa, strogonoff de frango, moqueca de peixe, bolinho de carne e, para quem é vegano, bolonhesa de soja. O quilo sai a R$ 49,64. A cantina funciona das 7h30 às 21h e o restaurante a partir das 11h30. Também há restaurantes próximos, na região de Coqueiros."
+      "r": "O intervalo do Fórum é das 12h às 12h45. O IFSC tem restaurante no próprio câmpus e, no dia do Fórum, o cardápio e o valor são especiais: 6 opções de salada, arroz, arroz integral, feijão, macarrão, farofa, strogonoff de frango, moqueca de peixe, bolinho de carne e, para quem é vegano, bolonhesa de soja. O quilo sai a R$ 49,64. O almoço é servido das 11h30 às 13h30. Fora desse horário a cantina segue aberta, das 7h30 às 21h. Também há restaurantes próximos, na região de Coqueiros."
     },
     {
       "p": "Tem coffee break?",
