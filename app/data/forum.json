@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-19-1",
+  "versao": "2026-10-19-2",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -382,6 +382,14 @@
     ]
   },
   "avisos": [
+    {
+      "id": "chegue-cedo",
+      "data": "2026-10-19",
+      "titulo": "É amanhã: chegue cedo para não perder nada",
+      "texto": "O credenciamento começa às 7h30, e quanto antes você passar por ele, melhor aproveita o dia. Logo cedo servimos um coffee break para todo mundo, e assim conseguimos abrir a cerimônia pontualmente às 8h30. Tenha o QR Code da sua credencial à mão no app, em Meu QR: é com ele que você entra sem fila. Até amanhã, no IFSC Continente.",
+      "link": "#/credencial",
+      "link_label": "Ver meu QR Code"
+    },
     {
       "id": "restaurante-coffee",
       "data": "2026-10-19",
