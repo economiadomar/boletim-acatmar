@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-17-2",
+  "versao": "2026-10-19-1",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -135,7 +135,7 @@
       "periodo": "Manhã",
       "hora": "12:00",
       "titulo": "Intervalo para almoço",
-      "quem": "Retorno às 12h45",
+      "quem": "Retorno às 12h45 · Restaurante no próprio IFSC",
       "tipo": "pausa"
     },
     {
@@ -382,6 +382,14 @@
     ]
   },
   "avisos": [
+    {
+      "id": "restaurante-coffee",
+      "data": "2026-10-19",
+      "titulo": "Almoço e coffee break no dia do Fórum",
+      "texto": "O IFSC Continente tem restaurante no próprio câmpus e, amanhã, o cardápio e o valor são especiais para quem está no Fórum: 6 opções de salada, arroz, arroz integral, feijão, macarrão, farofa, strogonoff de frango, moqueca de peixe, bolinho de carne e, para quem é vegano, bolonhesa de soja. O quilo sai a R$ 49,64. A cantina abre das 7h30 às 21h e o restaurante atende a partir das 11h30. E a ACATMAR serve coffee break logo pela manhã e outro à tarde, gratuito para todos os participantes.",
+      "link": "#/faq",
+      "link_label": "Ver dúvidas frequentes"
+    },
     {
       "id": "palestra-tiago",
       "data": "2026-10-15",
@@ -682,7 +690,11 @@
     },
     {
       "p": "Haverá almoço?",
-      "r": "O intervalo para almoço é livre, com retorno às 13h15. Há restaurante dentro do próprio câmpus do IFSC e outros restaurantes próximos, na região de Coqueiros."
+      "r": "O intervalo é das 12h às 12h45. O IFSC tem restaurante no próprio câmpus e, no dia do Fórum, o cardápio e o valor são especiais: 6 opções de salada, arroz, arroz integral, feijão, macarrão, farofa, strogonoff de frango, moqueca de peixe, bolinho de carne e, para quem é vegano, bolonhesa de soja. O quilo sai a R$ 49,64. A cantina funciona das 7h30 às 21h e o restaurante a partir das 11h30. Também há restaurantes próximos, na região de Coqueiros."
+    },
+    {
+      "p": "Tem coffee break?",
+      "r": "Tem, e é gratuito para todos os participantes. A ACATMAR serve um coffee break logo pela manhã e outro à tarde."
     },
     {
       "p": "Como recebo as novidades?",
