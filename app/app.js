@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=58;
+var APP_V=59;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -76,12 +76,12 @@ function home(){
 }
 
 /* ---------- Programação ---------- */
-var periodoSel=LS.get('periodo','Manhã');
+var periodoSel=LS.get('periodo','Manhã');var periodoManual=false;
 function programacao(){
   var favs=LS.get('favs',[]);var st=status();var n=nowHM();
   var per=[];D.programacao.forEach(function(s){if(per.indexOf(s.periodo)<0)per.push(s.periodo);});
   if(per.indexOf(periodoSel)<0)periodoSel=per[0];
-  if(st==='agora'){var cur=null;D.programacao.forEach(function(s){if(hm(s.hora)<=n)cur=s;});if(cur)periodoSel=cur.periodo;}
+  if(st==='agora'&&!periodoManual){var cur=null;D.programacao.forEach(function(s){if(hm(s.hora)<=n)cur=s;});if(cur)periodoSel=cur.periodo;}
   var list=D.programacao.filter(function(s){return s.periodo===periodoSel;});
   var nowId=null;if(st==='agora'){for(var i=0;i<D.programacao.length;i++){var a=D.programacao[i],b=D.programacao[i+1];if(hm(a.hora)<=n&&(!b||hm(b.hora)>n))nowId=a.id;}}
   var byId={};(D.palestrantes||[]).forEach(function(p){byId[p.id]=p;});
@@ -96,7 +96,7 @@ function programacao(){
    +items
    +'<div class="btn-row"><button class="btn btn-navy btn-sm" id="btn-ics">Adicionar à minha agenda</button>'+(favs.length?'<span class="small muted" style="align-self:center">★ '+favs.length+' favorito'+(favs.length>1?'s':'')+'</span>':'')+'</div>'
    +'<section class="section" style="margin-top:22px"><div class="section-h"><h2>'+esc(D.edicao_anterior.titulo)+'</h2><a href="#/anterior">Ver</a></div><div class="card"><p class="small">'+esc(D.edicao_anterior.resumo)+'</p></div></section>');
-  view.querySelectorAll('[data-per]').forEach(function(b){b.onclick=function(){periodoSel=b.getAttribute('data-per');LS.set('periodo',periodoSel);programacao();};});
+  view.querySelectorAll('[data-per]').forEach(function(b){b.onclick=function(){periodoSel=b.getAttribute('data-per');periodoManual=true;LS.set('periodo',periodoSel);programacao();};});
   view.querySelectorAll('[data-fav]').forEach(function(b){b.onclick=function(){var id=b.getAttribute('data-fav');var fv=LS.get('favs',[]);var i=fv.indexOf(id);if(i>=0)fv.splice(i,1);else fv.push(id);LS.set('favs',fv);b.classList.toggle('on',i<0);toast(i<0?'Adicionado aos favoritos':'Removido dos favoritos');};});
   document.getElementById('btn-ics').onclick=downloadICS;
 }

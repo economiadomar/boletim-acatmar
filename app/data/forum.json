@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-19-5",
+  "versao": "2026-10-20-1",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -806,7 +806,7 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 58,
+  "app_min": 59,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",
