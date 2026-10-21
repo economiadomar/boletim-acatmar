@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=59;
+var APP_V=60;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -193,7 +193,7 @@ function interagir(sessId){
 /* ---------- Certificado ---------- */
 function certificado(){
   var c=D.certificado,me=LS.get('me',{})||{};
-  if(!c.liberado){h('<div class="card"><p class="kicker">Certificado de participação</p><h3>Disponível após o evento</h3><p>'+esc(c.texto)+'</p><p class="small muted">Carga horária: '+esc(c.carga_horaria)+'.</p></div>');return;}
+  if(!c.liberado){h('<div class="card"><p class="kicker">Certificado de participação</p><h3>'+esc(c.titulo||'Disponível após o evento')+'</h3><p>'+esc(c.texto)+'</p><p class="small muted">Carga horária: '+esc(c.carga_horaria)+'.</p></div>');return;}
   h('<div class="card"><p class="kicker">Certificado de participação</p><h3>Emita seu certificado</h3><p class="small muted">Digite seu nome como deve aparecer e o código divulgado no encerramento do Fórum.</p><form id="f-cert"><div class="field"><label>Nome completo</label><input name="nome" required value="'+esc(me.nome||'')+'"></div><div class="field"><label>Código do evento</label><input name="codigo" required autocapitalize="characters"></div><button class="btn btn-teal btn-block" type="submit">Gerar PDF</button></form></div>');
   document.getElementById('f-cert').onsubmit=function(ev){ev.preventDefault();var fd=new FormData(ev.target);var cod=String(fd.get('codigo')).trim().toUpperCase();if(cod!==String(c.codigo).toUpperCase()){toast('Código inválido. Confira com a organização.');return;}
     var s=document.createElement('script');s.src='lib/jspdf.umd.min.js';s.onload=function(){gerarPDF(String(fd.get('nome')).trim());};document.body.appendChild(s);};

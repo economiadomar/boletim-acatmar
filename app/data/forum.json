@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-20-1",
+  "versao": "2026-10-21-1",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -383,6 +383,14 @@
   },
   "avisos": [
     {
+      "id": "certificado-48h",
+      "data": "2026-10-21",
+      "titulo": "Certificado: em validação, sai em até 48 horas",
+      "texto": "Obrigado a quem esteve com a gente no VI Fórum. O certificado de participação está sendo validado com a lista de presença do credenciamento, para que receba quem realmente participou. Ele fica disponível aqui no app em até 48 horas, com o código de emissão. Assim que liberar, avisamos por aqui.",
+      "link": "#/certificado",
+      "link_label": "Ver certificado"
+    },
+    {
       "id": "chegue-cedo",
       "data": "2026-10-19",
       "titulo": "É amanhã: chegue cedo para não perder nada",
@@ -680,8 +688,9 @@
   "certificado": {
     "liberado": false,
     "codigo": "",
-    "texto": "O certificado de participação fica disponível aqui no app após o evento, com o código divulgado no encerramento.",
-    "carga_horaria": "10 horas"
+    "texto": "O VI Fórum foi realizado em 20 de outubro. O certificado está sendo validado com a lista de presença do credenciamento, para que receba quem realmente esteve no evento. Ele fica disponível aqui mesmo no app em até 48 horas, junto com o código de emissão. Avisamos na aba Avisos assim que liberar.",
+    "carga_horaria": "10 horas",
+    "titulo": "Em validação"
   },
   "faq": [
     {
@@ -806,7 +815,7 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 59,
+  "app_min": 60,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",
