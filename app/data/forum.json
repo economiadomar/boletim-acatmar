@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-22-1",
+  "versao": "2026-10-22-2",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -824,7 +824,7 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 61,
+  "app_min": 62,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",
@@ -1039,12 +1039,32 @@
     "chamada": "229 inscritos, o maior número desde que o Fórum começou, em 2014. Um dia inteiro no IFSC Continente falando do que o setor mais precisa agora: gente qualificada.",
     "fotos": [
       {
+        "src": "media/posevento/credenciamento.jpg",
+        "legenda": "O credenciamento começou às 7h30, com o QR Code do app na entrada."
+      },
+      {
         "src": "media/posevento/abertura-autoridades.jpg",
-        "legenda": "Abertura oficial do VI Fórum, no IFSC Câmpus Florianópolis-Continente."
+        "legenda": "Abertura oficial, com ACATMAR, Mundo Mar Consulting, IFSC, Prefeitura de Florianópolis e parceiros."
       },
       {
         "src": "media/posevento/plateia-abertura.jpg",
         "legenda": "Plateia na abertura: profissionais, estudantes, estaleiros e instituições."
+      },
+      {
+        "src": "media/posevento/sala-cheia.jpg",
+        "legenda": "Sala cheia: 229 inscritos, o maior número desde a primeira edição, em 2014."
+      },
+      {
+        "src": "media/posevento/palestra-tecnica.jpg",
+        "legenda": "Conteúdo técnico do começo ao fim, com participação da plateia nas palestras."
+      },
+      {
+        "src": "media/posevento/coffee-break.jpg",
+        "legenda": "Coffee break servido de manhã e à tarde, gratuito para todos os participantes."
+      },
+      {
+        "src": "media/posevento/networking.jpg",
+        "legenda": "Os intervalos viraram networking: quem produz, quem repara e quem opera, no mesmo lugar."
       },
       {
         "src": "media/posevento/homenagem-certificados.jpg",

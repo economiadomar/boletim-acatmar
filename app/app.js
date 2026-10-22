@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=61;
+var APP_V=62;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -284,8 +284,8 @@ function sobre(){var s=D.sobre;h('<div class="card"><p class="kicker">'+esc(D.ev
 function anterior(){var a=D.edicao_anterior;h('<div class="card"><p>'+esc(a.resumo)+'</p></div><div class="gal">'+a.fotos.map(function(f){return '<img src="'+f+'" alt="" loading="lazy">';}).join('')+'</div><section class="section" style="margin-top:16px"><div class="section-h"><h2>Programação de 2025</h2></div>'+a.programacao.map(function(s){return '<div class="card sess"><div class="sess-h" style="flex-basis:60px;font-size:.85rem">'+esc(s.periodo)+'</div><div class="sess-b"><h3>'+esc(s.titulo)+'</h3><div class="quem">'+esc(s.quem)+'</div></div></div>';}).join('')+'</section><div class="btn-row"><a class="btn btn-outline btn-sm" href="'+a.link+'" target="_blank" rel="noopener">Matéria completa no site</a></div>');}
 function posEvento(){var e=D.pos_evento;if(!e){h('<div class="card"><p class="small">Em breve.</p></div>');return;}
   h('<div class="card"><p class="kicker">20 de outubro de 2026 · IFSC Continente</p><h3>'+esc(e.titulo)+'</h3><p>'+esc(e.chamada)+'</p></div>'
-   +'<div class="gal">'+e.fotos.map(function(f){return '<img src="'+f.src+'" alt="'+esc(f.legenda||'')+'" loading="lazy">';}).join('')+'</div>'
-   +'<p class="small muted" style="margin:6px 2px 16px">'+esc(e.fotos[0]&&e.fotos[0].legenda||'')+'</p>'
+   +'<div class="gal">'+e.fotos.map(function(f){return '<figure style="flex:0 0 78%;scroll-snap-align:start;margin:0"><img src="'+f.src+'" alt="'+esc(f.legenda||'')+'" loading="lazy" style="flex:none;width:100%"><figcaption class="small muted" style="margin-top:6px">'+esc(f.legenda||'')+'</figcaption></figure>';}).join('')+'</div>'
+   +'<p class="small muted" style="margin:6px 2px 16px">Arraste para o lado para ver as '+e.fotos.length+' fotos.</p>'
    +e.blocos.map(function(b){return '<section class="section"><div class="section-h"><h2>'+esc(b.h)+'</h2></div><div class="card">'+b.p.map(function(x){return '<p>'+esc(x)+'</p>';}).join('')+'</div></section>';}).join('')
    +'<div class="btn-row"><a class="btn btn-outline btn-sm" href="#/certificado">Meu certificado</a><a class="btn btn-outline btn-sm" href="https://www.acatmar.org/" target="_blank" rel="noopener">Site da ACATMAR</a></div>');}
 function faq(){h(D.faq.map(function(q){return '<details><summary>'+esc(q.p)+'</summary><p>'+esc(q.r)+'</p></details>';}).join(''));}
