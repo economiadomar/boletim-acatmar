@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-21-1",
+  "versao": "2026-10-22-1",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -382,6 +382,15 @@
     ]
   },
   "avisos": [
+    {
+      "id": "como-foi",
+      "data": "2026-10-22",
+      "titulo": "Como foi o VI Fórum: fotos e os melhores momentos",
+      "texto": "229 inscritos, o maior número desde 2014. Reunimos as fotos da abertura, da plateia e da entrega dos certificados, junto com o que ficou de mais importante do dia: o Parque Marina Beira-Mar Norte, a Marina Escola do IFSC, o retrato dos estaleiros e os números da economia do mar em Santa Catarina.",
+      "imagem": "media/posevento/abertura-autoridades.jpg",
+      "link": "#/posevento",
+      "link_label": "Ver como foi"
+    },
     {
       "id": "certificado-48h",
       "data": "2026-10-21",
@@ -815,7 +824,7 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 60,
+  "app_min": 61,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",
@@ -1020,6 +1029,76 @@
           "Conservação e limpeza",
           "Troca e instalação",
           "Diferença de desempenho"
+        ]
+      }
+    ]
+  },
+  "pos_evento": {
+    "titulo": "VI Fórum: como foi",
+    "data": "2026-10-20",
+    "chamada": "229 inscritos, o maior número desde que o Fórum começou, em 2014. Um dia inteiro no IFSC Continente falando do que o setor mais precisa agora: gente qualificada.",
+    "fotos": [
+      {
+        "src": "media/posevento/abertura-autoridades.jpg",
+        "legenda": "Abertura oficial do VI Fórum, no IFSC Câmpus Florianópolis-Continente."
+      },
+      {
+        "src": "media/posevento/plateia-abertura.jpg",
+        "legenda": "Plateia na abertura: profissionais, estudantes, estaleiros e instituições."
+      },
+      {
+        "src": "media/posevento/homenagem-certificados.jpg",
+        "legenda": "Entrega dos certificados de agradecimento a palestrantes, patrocinadores e apoiadores."
+      }
+    ],
+    "blocos": [
+      {
+        "h": "O setor cresce e a conta da mão de obra chegou",
+        "p": [
+          "A indústria náutica cresce, os barcos estão maiores e novos investimentos em infraestrutura chegam a Santa Catarina. Junto com isso vem o desafio que atravessou o dia inteiro: capacitar quem já está no setor e abrir vaga qualificada para quem quer entrar.",
+          "Na abertura, o presidente da ACATMAR, Leandro \"Mané\" Ferrari, lembrou por que o Fórum existe. \"A gente sabe da falta de mão de obra que está no setor, e isso é em todas as instâncias, desde a indústria até o turismo náutico. Capacitar sempre foi um dos grandes lemas da ACATMAR. Quando começamos esse Fórum, em 2014, foi justamente para isso.\""
+        ]
+      },
+      {
+        "h": "Parque Marina Beira-Mar Norte vai pedir gente",
+        "p": [
+          "O secretário municipal de Turismo, Desenvolvimento Econômico e Inovação de Florianópolis, Juliano Richter Pires, falou do Parque Marina Beira-Mar Norte, que deve movimentar cerca de 600 embarcações na capital.",
+          "\"Vamos precisar de manutenção, limpeza, profissionais para motores, marinheiros e uma série de serviços que Florianópolis até então não estava atenta. Esse Fórum serve justamente para capacitar as pessoas que poderão ocupar esses espaços\", destacou. A Prefeitura pretende manter a parceria com a ACATMAR para ampliar a capacitação de moradores de Florianópolis e região."
+        ]
+      },
+      {
+        "h": "Marina Escola do IFSC: a primeira da América Latina",
+        "p": [
+          "O projeto da Marina Escola, tocado com a ACATMAR desde 2025, ganhou espaço no encontro. Segundo Vinícius de Luca, diretor-geral do IFSC Câmpus Florianópolis-Continente, a estrutura está sendo planejada para uma área com quase 300 metros de orla, junto à instituição, com a proposta de ser a primeira da América Latina.",
+          "\"A Marina Escola vai envolver diferentes áreas de formação e contar também com a participação dos câmpus Florianópolis e São José, especialmente nas atividades de manutenção de embarcações, motores, fibra e design. Aqui, no Câmpus Florianópolis-Continente, o foco estará na economia azul e nos serviços ligados ao turismo, à gastronomia e à hotelaria\", explicou."
+        ]
+      },
+      {
+        "h": "Nos estaleiros, barco maior pede técnico melhor",
+        "p": [
+          "Amanda Remor, do marketing do Grupo Okean, patrocinador do Fórum, trouxe o retrato de quem produz. O grupo, com estaleiro em Itajaí, acaba de entregar a centésima embarcação, e a média de tamanho chegou a 61 pés, contra pouco mais de 50 pés há quatro ou cinco anos.",
+          "\"Cada vez que avançamos para embarcações maiores, precisamos de mais tecnologia e de mão de obra especializada. A indústria náutica é extremamente artesanal e depende muito das pessoas. Em Santa Catarina, percebemos que os profissionais acabam circulando entre os mesmos estaleiros. Precisamos capacitar mais jovens para que o setor consiga continuar crescendo\", afirmou."
+        ]
+      },
+      {
+        "h": "Tecnologia brasileira e menos carbono",
+        "p": [
+          "Januario Gagliardi, da JRG Trading, distribuidora oficial da Propspeed na América Latina, apresentou \"Menos craca, menos carbono\": como a manutenção certa de casco e hélice reduz incrustação, consumo de combustível e emissões.",
+          "\"Hoje temos empresas brasileiras exportando tecnologia, design e serviços. O mercado se profissionalizou muito nos últimos anos, mas ainda existem desafios. Compartilhar conhecimento é essencial, principalmente para estudantes e pessoas que nunca imaginaram que poderiam trabalhar nesse segmento\", destacou."
+        ]
+      },
+      {
+        "h": "Por que isso importa em números",
+        "p": [
+          "A economia do mar somou 239.671 empregos formais em Santa Catarina em 2024, 8,5% dos vínculos do estado, segundo a Secretaria de Estado do Planejamento (SEPLAN/SC). Entre 2014 e 2024 o número cresceu 25%, e a Grande Florianópolis sozinha reúne 66.895 trabalhadores formais do setor.",
+          "Santa Catarina também responde por 70% da produção nacional de embarcações de esporte e lazer e reúne 1.028 empresas náuticas, conforme indicadores compilados pela ACATMAR."
+        ]
+      },
+      {
+        "h": "O que teve no dia",
+        "p": [
+          "Ao longo das palestras passaram monitoramento inteligente de embarcações, sistemas de arrefecimento e uso correto da mufla, leitura dos sinais do motor, eletrônica embarcada e navegação, estrutura de resgate do CBMSC no litoral catarinense, vidros náuticos, reparos em fibra, divinycell, gelcoat e fibra de carbono, e soluções sustentáveis de limpeza e conservação.",
+          "O VI Fórum teve realização da ACATMAR e da Mundo Mar Consulting, patrocínio da Prefeitura de Florianópolis e do Grupo Okean, além do apoio de empresas e instituições do setor náutico. Obrigado a quem esteve lá. Até a próxima edição."
         ]
       }
     ]
