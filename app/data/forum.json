@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-22-3",
+  "versao": "2026-10-22-4",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -824,7 +824,7 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 63,
+  "app_min": 64,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",
@@ -1055,8 +1055,8 @@
         "legenda": "Sala cheia: 229 inscritos, o maior número desde a primeira edição, em 2014."
       },
       {
-        "src": "media/posevento/coffee-break.jpg",
-        "legenda": "Coffee break servido de manhã e à tarde, gratuito para todos os participantes."
+        "src": "media/posevento/coffee-break-2.jpg",
+        "legenda": "Coffee break de manhã e de tarde, gratuito para todos, e o café virando conversa."
       },
       {
         "src": "media/posevento/networking.jpg",
