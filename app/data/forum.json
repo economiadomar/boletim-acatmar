@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-22-7",
+  "versao": "2026-10-22-8",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -78,6 +78,12 @@
         "ano": 2025,
         "onde": "IFSC Florianópolis-Continente",
         "tema": "Recorde de público: 227 participantes e 14 palestrantes"
+      },
+      {
+        "ed": "VI",
+        "ano": 2026,
+        "onde": "IFSC Florianópolis-Continente",
+        "tema": "Recorde de inscritos: 229 inscritos e 9 palestras"
       }
     ]
   },
@@ -794,9 +800,28 @@
         "media/edicoes/v-forum-6.jpg"
       ],
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
+    },
+    {
+      "ed": "VI",
+      "ano": 2026,
+      "data": "20 de outubro de 2026",
+      "onde": "IFSC Câmpus Florianópolis-Continente",
+      "tema": "Recorde de inscritos: 229 inscritos e 9 palestras",
+      "resumo": "A maior edição desde 2014. Um dia inteiro sobre o que o setor mais precisa agora: gente qualificada. Passaram pelo palco o Parque Marina Beira-Mar Norte, a Marina Escola do IFSC, o retrato dos estaleiros e muito conteúdo técnico, de motores e eletrônica a fibra e sustentabilidade. Realização da ACATMAR e da Mundo Mar Consulting.",
+      "capa": "media/posevento/grupo-obrigado.jpg",
+      "fotos": [
+        "media/posevento/credenciamento.jpg",
+        "media/posevento/abertura-autoridades.jpg",
+        "media/posevento/plateia-abertura.jpg",
+        "media/posevento/sala-cheia.jpg",
+        "media/posevento/coffee-break-2.jpg",
+        "media/posevento/networking.jpg",
+        "media/posevento/homenagem-certificados.jpg"
+      ],
+      "link": "#/posevento"
     }
   ],
-  "app_min": 67,
+  "app_min": 68,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",

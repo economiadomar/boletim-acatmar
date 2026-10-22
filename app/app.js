@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=67;
+var APP_V=68;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -52,6 +52,9 @@ window.addEventListener('hashchange',render);
 document.getElementById('btn-back').addEventListener('click',function(){if(history.length>1)history.back();else location.hash='#/';});
 
 /* ---------- Início ---------- */
+var NUMED=['zero','Uma','Duas','Três','Quatro','Cinco','Seis','Sete','Oito','Nove','Dez','Onze','Doze'];
+function numEdicoes(){var n=(D.edicoes||[]).length;return (NUMED[n]||n)+' ediç'+(n===1?'ão':'ões');}
+function anosEdicoes(){var e=D.edicoes||[];return e.length?e[0].ano+' a '+e[e.length-1].ano:'';}
 function home(){
   var e=D.evento,st=status();var d=eventDate();
   var cd='';
@@ -69,7 +72,7 @@ function home(){
    +(st==='depois'?'':'<section class="section"><div class="card"><div class="info"><div class="info-row"><div class="ic">📅</div><div><b>Quando</b><span>'+esc(e.data_texto)+'<br>'+esc(e.horario_texto)+'</span></div></div><div class="info-row"><div class="ic">📍</div><div><b>Onde</b><span>'+esc(e.local.nome)+(e.local.sala?' · '+esc(e.local.sala):'')+'<br><small class="muted">'+esc(e.local.endereco)+'</small></span></div></div><div class="info-row"><div class="ic">🅿️</div><div><b>Estacionamento</b><span>Próprio e gratuito no câmpus</span></div></div><div class="info-row"><div class="ic">🎟️</div><div><b>Participação</b><span>Gratuita, vagas limitadas'+(e.certificado?' · com certificado':'')+'</span></div></div></div>'+(regBtn?'<div class="btn-row">'+regBtn+'</div>':'')+'</div></section>')
    +'<section class="section"><div class="section-h"><h2>Avisos'+(unread?' <span class="tag red">'+unread+' novo'+(unread>1?'s':'')+'</span>':'')+'</h2><a href="#/avisos">Ver todos</a></div>'+av+'</section>'
    +'<section class="section"><div class="section-h"><h2>Sobre o Fórum</h2><a href="#/sobre">Mais</a></div><div class="card"><p>'+esc(D.sobre.resumo)+'</p><p class="small muted">'+esc(D.sobre.para_quem)+'</p></div></section>'
-   +'<section class="section"><div class="section-h"><h2>Cinco edições de história</h2><a href="#/edicoes">Ver fotos</a></div><div class="gal gal-ed">'+(D.edicoes||[]).map(function(e){return '<a href="#/edicoes"><img src="'+e.capa+'" alt="" loading="lazy"><span>'+e.ed+' Fórum · '+e.ano+'</span></a>';}).join('')+'</div></section>'
+   +'<section class="section"><div class="section-h"><h2>'+numEdicoes()+' de história</h2><a href="#/edicoes">Ver fotos</a></div><div class="gal gal-ed">'+(D.edicoes||[]).map(function(e){return '<a href="#/edicoes"><img src="'+e.capa+'" alt="" loading="lazy"><span>'+e.ed+' Fórum · '+e.ano+'</span></a>';}).join('')+'</div></section>'
    +'<section class="section"><div class="section-h"><h2>Quem faz acontecer</h2><a href="#/patrocinadores">Ver</a></div><a href="#/patrocinadores"><img src="media/quem-faz-acontecer.jpg" alt="Quem faz o VI Fórum acontecer: patrocinadores e apoiadores" style="width:100%;border-radius:12px;display:block"></a></section>'
    +(st==='depois'?'':'<section class="section"><div class="card" style="background:var(--navy);color:#fff;border:0"><p class="kicker" style="color:var(--teal-b)">Dica</p><h3 style="color:#fff">Instale o app na tela inicial</h3><p class="small" style="opacity:.85">Assim ele abre em um toque, mostra sua credencial rápido no credenciamento e funciona mesmo sem sinal.</p><div class="btn-row"><a class="btn btn-light btn-sm" href="#/instalar">Como instalar</a></div></div></section>'));
   if(st==='antes'){clearInterval(home._t);home._t=setInterval(function(){if(route().path==='/')home();else clearInterval(home._t);},60000);}
@@ -300,7 +303,7 @@ function posEvento(){var e=D.pos_evento;if(!e){h('<div class="card"><p class="sm
 function faq(){h(D.faq.map(function(q){return '<details><summary>'+esc(q.p)+'</summary><p>'+esc(q.r)+'</p></details>';}).join(''));}
 function mais(){var POS=status()==='depois';var me=LS.get('me',null);
   h('<a class="card" href="#/credencial" style="display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit"><div class="spk"><div class="av">'+esc(me?me.nome.split(' ').map(function(w){return w[0];}).slice(0,2).join(''):'?')+'</div><div><b>'+esc(me?me.nome:'Crie sua credencial')+'</b><span>'+esc(me?[me.cargo,me.empresa].filter(Boolean).join(' · ')||(me.tipo||''):'Toque para criar seu QR Code')+'</span></div></div><span style="margin-left:auto;font-size:1.6rem;color:#aab7bf">›</span></a>'
-   +(POS?'<div class="menu"><a href="#/posevento"><i>📸</i>VI Fórum: como foi</a><a href="#/certificado"><i>📜</i>Certificado</a><a href="#/programacao"><i>🗓️</i>O que teve na programação</a><a href="#/palestrantes"><i>🎤</i>Palestrantes</a><a href="#/patrocinadores"><i>🤝</i>Quem fez acontecer</a>':'<div class="menu"><a href="#/posevento"><i>📸</i>VI Fórum: como foi</a><a href="#/diario"><i>🎯</i>Fórum todo dia · quiz e enquete</a><a href="#/palestrantes"><i>🎤</i>Palestrantes</a><a href="#/patrocinadores"><i>🤝</i>Patrocinadores e apoio</a><a href="#/local"><i>📍</i>Local e como chegar</a><a href="#/interagir"><i>💬</i>Interagir e perguntar</a><a href="#/certificado"><i>📜</i>Certificado</a>')+'<a href="#/edicoes"><i>📷</i>Edições anteriores (2014 a 2025)</a><a href="#/sobre"><i>⚓</i>Sobre o Fórum</a><a href="#/faq"><i>❓</i>Perguntas frequentes</a><a href="#/instalar"><i>📲</i>Instalar o app</a></div>'
+   +(POS?'<div class="menu"><a href="#/posevento"><i>📸</i>VI Fórum: como foi</a><a href="#/certificado"><i>📜</i>Certificado</a><a href="#/programacao"><i>🗓️</i>O que teve na programação</a><a href="#/palestrantes"><i>🎤</i>Palestrantes</a><a href="#/patrocinadores"><i>🤝</i>Quem fez acontecer</a>':'<div class="menu"><a href="#/posevento"><i>📸</i>VI Fórum: como foi</a><a href="#/diario"><i>🎯</i>Fórum todo dia · quiz e enquete</a><a href="#/palestrantes"><i>🎤</i>Palestrantes</a><a href="#/patrocinadores"><i>🤝</i>Patrocinadores e apoio</a><a href="#/local"><i>📍</i>Local e como chegar</a><a href="#/interagir"><i>💬</i>Interagir e perguntar</a><a href="#/certificado"><i>📜</i>Certificado</a>')+'<a href="#/edicoes"><i>📷</i>Todas as edições ('+anosEdicoes()+')</a><a href="#/sobre"><i>⚓</i>Sobre o Fórum</a><a href="#/faq"><i>❓</i>Perguntas frequentes</a><a href="#/instalar"><i>📲</i>Instalar o app</a></div>'
    +(POS?'':'<div class="menu"><a href="#/credenciamento"><i>📷</i>Credenciamento (equipe ACATMAR)</a><a href="#/controle"><i>📊</i>Controle do app (equipe ACATMAR)</a></div>')
    +'<div class="menu">'+(POS?'':'<a href="#/inscricao"><i>📝</i>Inscrição gratuita</a>')+'<a href="https://www.acatmar.org/" target="_blank" rel="noopener"><i>🌐</i>Site da ACATMAR</a><a href="https://www.acatmar.org/privacidade.html" target="_blank" rel="noopener"><i>🔒</i>Política de Privacidade</a></div>'
    +'<p class="small muted" style="text-align:center">Sua credencial fica salva neste aparelho. Nome, empresa e contato também ficam com a organização do Fórum.<br>App oficial · ACATMAR · conteúdo '+esc(D.versao)+' · app v'+APP_V+'</p>');}
@@ -465,7 +468,7 @@ function inscricao(){
 /* ---------- Edições anteriores ---------- */
 function edicoes(){
   var eds=(D.edicoes||[]).slice().reverse();
-  h('<p class="small muted" style="margin:0 0 14px">Cinco edições, de 2014 a 2025. Toque nas fotos para ampliar.</p>'
+  h('<p class="small muted" style="margin:0 0 14px">'+numEdicoes()+', de '+anosEdicoes()+'. Toque nas fotos para ampliar.</p>'
    +eds.map(function(e){return '<div class="card ed"><img class="ed-capa" src="'+e.capa+'" alt="" loading="lazy"><div class="ed-b"><p class="kicker">'+e.ed+' Fórum · '+e.ano+'</p><h3>'+esc(e.tema)+'</h3><p class="small muted" style="margin:0 0 8px">'+esc(e.data)+' · '+esc(e.onde)+'</p><p class="small">'+esc(e.resumo)+'</p></div><div class="gal gal-sm">'+e.fotos.map(function(f){return '<img src="'+f+'" alt="" loading="lazy" data-zoom="'+f+'">';}).join('')+'</div>'+(e.link?'<div class="btn-row"><a class="btn btn-outline btn-sm" href="'+e.link+'" target="_blank" rel="noopener">Matéria completa no site</a></div>':'')+'</div>';}).join(''));
   view.querySelectorAll('[data-zoom]').forEach(function(im){im.onclick=function(){var ov=document.createElement('div');ov.className='zoom-ov';ov.innerHTML='<img src="'+im.getAttribute('data-zoom')+'" alt="">';ov.onclick=function(){ov.remove();};document.body.appendChild(ov);};});
 }
