@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=66;
+var APP_V=67;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -283,10 +283,10 @@ function instalar(){
 function sobre(){var s=D.sobre;h('<div class="card"><p class="kicker">'+esc(D.evento.edicao)+'</p><h3>'+esc(D.evento.nome)+'</h3><p>'+esc(s.resumo)+'</p><p>'+esc(s.para_quem)+'</p></div><div class="card"><h3>Por que participar</h3>'+s.motivos.map(function(m){return '<p class="small">✔ '+esc(m)+'</p>';}).join('')+'</div><section class="section"><div class="section-h"><h2>Edições anteriores</h2><a href="#/edicoes">Fotos e histórico</a></div><div class="hist">'+s.historia.map(function(x){return '<a href="#/edicoes" style="text-decoration:none;color:inherit"><b>'+x.ed+'</b><span>'+esc(x.tema)+'<small>'+x.ano+' · '+esc(x.onde)+'</small></span></a>';}).join('')+'</div></section><div class="btn-row"><a class="btn btn-outline btn-sm" href="'+D.evento.site_url+'" target="_blank" rel="noopener">Ver no site da ACATMAR</a></div>');}
 function anterior(){var a=D.edicao_anterior;h('<div class="card"><p>'+esc(a.resumo)+'</p></div><div class="gal">'+a.fotos.map(function(f){return '<img src="'+f+'" alt="" loading="lazy">';}).join('')+'</div><section class="section" style="margin-top:16px"><div class="section-h"><h2>Programação de 2025</h2></div>'+a.programacao.map(function(s){return '<div class="card sess"><div class="sess-h" style="flex-basis:60px;font-size:.85rem">'+esc(s.periodo)+'</div><div class="sess-b"><h3>'+esc(s.titulo)+'</h3><div class="quem">'+esc(s.quem)+'</div></div></div>';}).join('')+'</section><div class="btn-row"><a class="btn btn-outline btn-sm" href="'+a.link+'" target="_blank" rel="noopener">Matéria completa no site</a></div>');}
 function retroHomeCard(){var e=D.pos_evento;if(!e)return '';
-  var f=e.fotos&&(e.fotos[1]||e.fotos[0]);
+  var f=e.destaque?{src:e.destaque}:(e.fotos&&(e.fotos[1]||e.fotos[0]));
   var nums=(e.numeros||[]).map(function(x){return '<div class="cd"><b>'+esc(x.n)+'</b><span>'+esc(x.t)+'</span></div>';}).join('');
   return '<section class="section"><a class="card" href="#/posevento" style="display:block;padding:0;overflow:hidden;text-decoration:none;color:inherit">'
-   +(f?'<img src="'+f.src+'" alt="" style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">':'')
+   +(f?'<img src="'+f.src+'" alt="" style="width:100%;display:block">':'')
    +'<div style="padding:14px 16px 16px"><p class="kicker">20 de outubro de 2026 · IFSC Continente</p>'
    +'<h3 style="margin:2px 0 6px">'+esc(e.titulo)+'</h3><p class="small">'+esc(e.chamada)+'</p>'
    +(nums?'<div class="countdown" style="margin-top:12px">'+nums+'</div>':'')

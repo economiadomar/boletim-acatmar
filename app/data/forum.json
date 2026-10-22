@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-22-6",
+  "versao": "2026-10-22-7",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -796,7 +796,7 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 66,
+  "app_min": 67,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",
@@ -1037,6 +1037,10 @@
       {
         "src": "media/posevento/homenagem-certificados.jpg",
         "legenda": "Entrega dos certificados de agradecimento a palestrantes, patrocinadores e apoiadores."
+      },
+      {
+        "src": "media/posevento/grupo-obrigado.jpg",
+        "legenda": "A foto de todo mundo no fim do dia, com o obrigado e o convite para o VII Fórum."
       }
     ],
     "blocos": [
@@ -1107,6 +1111,7 @@
         "n": "6ª",
         "t": "edição desde 2014"
       }
-    ]
+    ],
+    "destaque": "media/posevento/grupo-obrigado.jpg"
   }
 }
