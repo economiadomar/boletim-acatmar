@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-22-4",
+  "versao": "2026-10-22-5",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -703,28 +703,24 @@
   },
   "faq": [
     {
-      "p": "O evento é gratuito?",
-      "r": "Sim. A inscrição é gratuita e as vagas são limitadas. Inscreva-se aqui mesmo no app, em Mais > Inscrição gratuita, ou pelo botão na tela Início."
+      "p": "Quando sai o certificado?",
+      "r": "O certificado está sendo validado com a lista de presença do credenciamento, para que receba quem realmente participou. Ele fica disponível aqui no app, em Mais > Certificado, com o código de emissão. Avisamos na aba Avisos assim que liberar."
     },
     {
-      "p": "Tem certificado?",
-      "r": "Sim. O certificado de participação é liberado no app após o evento, com o código divulgado no encerramento."
+      "p": "Onde vejo as fotos e o resumo do dia?",
+      "r": "Em Mais > VI Fórum: como foi. Tem a galeria de fotos do credenciamento ao encerramento e o resumo do que foi discutido, com os números da economia do mar em Santa Catarina."
     },
     {
-      "p": "Preciso levar algo?",
-      "r": "Só o celular com o app instalado e o QR Code da sua credencial. Traga também cartões ou seu QR de contato para o networking."
+      "p": "Minha credencial ainda serve para alguma coisa?",
+      "r": "Serve. O QR Code da sua credencial é um cartão de visita digital: quem escanear salva seu contato na hora. Ele continua em Mais > Minha credencial."
     },
     {
-      "p": "Haverá almoço?",
-      "r": "O intervalo do Fórum é das 12h às 12h45. O IFSC tem restaurante no próprio câmpus e, no dia do Fórum, o cardápio e o valor são especiais: 6 opções de salada, arroz, arroz integral, feijão, macarrão, farofa, strogonoff de frango, moqueca de peixe, bolinho de carne e, para quem é vegano, bolonhesa de soja. O quilo sai a R$ 49,64. O almoço é servido das 11h30 às 13h30. Fora desse horário a cantina segue aberta, das 7h30 às 21h. Também há restaurantes próximos, na região de Coqueiros."
+      "p": "Quando será o próximo Fórum?",
+      "r": "O Fórum acontece desde 2014 e a próxima edição está em planejamento. Deixe o app instalado: avisamos por aqui, em primeira mão, assim que a data for definida."
     },
     {
-      "p": "Tem coffee break?",
-      "r": "Tem, e é gratuito para todos os participantes. A ACATMAR serve um coffee break logo pela manhã e outro à tarde, dentro do evento, sem precisar sair do local."
-    },
-    {
-      "p": "Como recebo as novidades?",
-      "r": "Pelo app, na aba Avisos, e por e-mail e WhatsApp para quem se inscreveu."
+      "p": "Como recebo as novidades da ACATMAR?",
+      "r": "Pelo app, na aba Avisos, e pelo site acatmar.org. Quem se inscreveu no Fórum também recebe por e-mail e WhatsApp."
     }
   ],
   "credenciamento_pin": "2026",
@@ -824,7 +820,7 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 64,
+  "app_min": 65,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",
@@ -1116,6 +1112,24 @@
           "Ao longo das palestras passaram monitoramento inteligente de embarcações, sistemas de arrefecimento e uso correto da mufla, leitura dos sinais do motor, eletrônica embarcada e navegação, estrutura de resgate do CBMSC no litoral catarinense, vidros náuticos, reparos em fibra, divinycell, gelcoat e fibra de carbono, e soluções sustentáveis de limpeza e conservação.",
           "O VI Fórum teve realização da ACATMAR e da Mundo Mar Consulting, patrocínio da Prefeitura de Florianópolis e do Grupo Okean, além do apoio de empresas e instituições do setor náutico. Obrigado a quem esteve lá. Até a próxima edição."
         ]
+      }
+    ],
+    "numeros": [
+      {
+        "n": "229",
+        "t": "inscritos"
+      },
+      {
+        "n": "9",
+        "t": "palestras"
+      },
+      {
+        "n": "8h às 19h",
+        "t": "um dia inteiro"
+      },
+      {
+        "n": "6ª",
+        "t": "edição desde 2014"
       }
     ]
   }
