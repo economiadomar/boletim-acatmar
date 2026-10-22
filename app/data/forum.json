@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-22-2",
+  "versao": "2026-10-22-3",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -824,7 +824,7 @@
       "link": "https://www.acatmar.org/projeto.html?id=v-forum-acatmar-2025"
     }
   ],
-  "app_min": 62,
+  "app_min": 63,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",
@@ -1053,10 +1053,6 @@
       {
         "src": "media/posevento/sala-cheia.jpg",
         "legenda": "Sala cheia: 229 inscritos, o maior número desde a primeira edição, em 2014."
-      },
-      {
-        "src": "media/posevento/palestra-tecnica.jpg",
-        "legenda": "Conteúdo técnico do começo ao fim, com participação da plateia nas palestras."
       },
       {
         "src": "media/posevento/coffee-break.jpg",
