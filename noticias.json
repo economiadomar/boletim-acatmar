@@ -7,11 +7,21 @@
       "categoria": "Capacitação",
       "categoria_en": "Training",
       "data": "2026-10-20",
-      "imagem": "media/noticias/forum6-reconhecimento.jpg",
+      "imagem": "media/noticias/forum6-capa.jpg",
       "credito": "Divulgação ACATMAR",
-      "legenda": "Reconhecimento durante o VI Fórum de Capacitação Técnica da ACATMAR, no IFSC Florianópolis-Continente.",
-      "legenda_en": "A moment of recognition during ACATMAR's 6th Technical Training Forum, at IFSC Florianópolis-Continente.",
+      "legenda": "Participantes do VI Fórum de Capacitação Técnica da ACATMAR no encerramento, no IFSC Florianópolis-Continente.",
+      "legenda_en": "Participants of ACATMAR's 6th Technical Training Forum at the closing, at IFSC Florianópolis-Continente.",
       "galeria": [
+        {
+          "src": "media/noticias/forum6-abertura.jpg",
+          "legenda": "A solenidade de abertura reuniu organizadores, autoridades e parceiros do Fórum.",
+          "legenda_en": "The opening ceremony gathered organizers, authorities and partners of the Forum."
+        },
+        {
+          "src": "media/noticias/forum6-discurso.jpg",
+          "legenda": "Ao longo do dia, o Fórum debateu tecnologia, manutenção, segurança, inovação e sustentabilidade.",
+          "legenda_en": "Throughout the day, the Forum discussed technology, maintenance, safety, innovation and sustainability."
+        },
         {
           "src": "media/noticias/forum6-credenciamento.jpg",
           "legenda": "O credenciamento recebeu os 229 inscritos, número recorde na história do Fórum.",
@@ -23,19 +33,9 @@
           "legenda_en": "The breaks became a space for networking among professionals, companies and institutions."
         },
         {
-          "src": "media/noticias/forum6-mane.jpg",
-          "legenda": "O presidente da ACATMAR, Leandro \"Mané\" Ferrari, troca ideias com participantes ao longo do dia.",
-          "legenda_en": "ACATMAR's president, Leandro \"Mané\" Ferrari, exchanges ideas with participants throughout the day."
-        },
-        {
           "src": "media/noticias/forum6-grupo.jpg",
           "legenda": "Representantes de empresas e instituições reunidos no painel do VI Fórum.",
           "legenda_en": "Representatives of companies and institutions gathered at the 6th Forum's backdrop."
-        },
-        {
-          "src": "media/noticias/forum6-tecnologia.jpg",
-          "legenda": "Os participantes conheceram de perto tecnologias e serviços do setor náutico.",
-          "legenda_en": "Participants got a close look at nautical sector technologies and services."
         }
       ],
       "apoiadores_titulo": "Realização e patrocínio",
