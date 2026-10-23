@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=77;
+var APP_V=79;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -233,19 +233,41 @@ function certificado(){
     return;
   }
   h('<div class="card"><p class="kicker">Certificado de conclusão</p><h3>'+esc(c.titulo||'Emita seu certificado')+'</h3><p class="small">'+esc(c.texto)+'</p>'
-   +'<form id="f-cert"><div class="field"><label>Nome completo</label><input name="nome" required autocomplete="name" value="'+esc(me.nome||'')+'"></div>'
+   +'<form id="f-cert"><div class="field"><label>Nome completo *</label><input name="nome" required autocomplete="name" value="'+esc(me.nome||'')+'"></div>'
+   +'<div class="field"><label>CPF *</label><input name="cpf" id="c-cpf" inputmode="numeric" placeholder="000.000.000-00" required></div>'
+   +'<div class="field"><label>Empresa <span class="small muted">(se você representa uma)</span></label><input name="empresa" autocomplete="organization" value="'+esc(me.empresa||'')+'"></div>'
+   +'<div class="field"><label>CNPJ da empresa <span class="small muted">(se tiver)</span></label><input name="cnpj" id="c-cnpj" inputmode="numeric" placeholder="00.000.000/0000-00"></div>'
    +'<button class="btn btn-teal btn-block" type="submit">Gerar meu certificado</button></form>'
+   +'<div class="notice" style="margin-top:12px;background:#f3f7fb;border-color:#cfdae8"><p class="small" style="margin:0">'
+   +'<b>Por que pedimos esses dados.</b> O nome vai impresso no certificado, e o CPF serve para registrar '
+   +'a emissão e permitir que a ACATMAR confirme o documento se alguém pedir comprovação. '
+   +'Guardamos só isso, não repassamos a terceiros e você pode pedir a exclusão quando quiser pelo e-mail '
+   +'<a href="mailto:acatmarpresidencia@gmail.com">acatmarpresidencia@gmail.com</a>. '
+   +'Detalhes na <a href="https://www.acatmar.org/privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.</p></div>'
    +'<div id="cert-msg"></div>'
    +'<p class="small muted" style="margin-top:12px">Carga horária: '+esc(c.carga_horaria)+'. O arquivo é gerado no seu aparelho, em PDF.</p></div>');
+  var xc=document.getElementById('c-cpf'), xn=document.getElementById('c-cnpj');
+  if(xc)xc.oninput=function(){xc.value=mascaraCPF(xc.value);};
+  if(xn)xn.oninput=function(){xn.value=mascaraCNPJ(xn.value);};
   document.getElementById('f-cert').onsubmit=function(ev){
     ev.preventDefault();
-    var nome=String(new FormData(ev.target).get('nome')).replace(/\s+/g,' ').trim();
+    var fd=new FormData(ev.target);
+    var nome=String(fd.get('nome')).replace(/\s+/g,' ').trim();
+    var cpf=String(fd.get('cpf')||'').trim();
+    var empresa=String(fd.get('empresa')||'').trim();
+    var cnpj=String(fd.get('cnpj')||'').trim();
     var m=document.getElementById('cert-msg');
-    if(nome.split(' ').length<2){m.innerHTML='<div class="notice">Digite o nome completo, com sobrenome.</div>';return;}
+    function ec(t,el){m.innerHTML='<div class="notice">'+t+'</div>';if(el){el.focus();el.scrollIntoView({block:'center',behavior:'smooth'});}}
+    if(nome.split(' ').length<2) return ec('Digite o nome completo, com sobrenome.');
+    if(!validaCPF(cpf)) return ec('Confira o CPF: parece que falta um número ou algum dígito está errado.',xc);
+    if(cnpj && !validaCNPJ(cnpj)) return ec('Confira o CNPJ. Se a empresa não tiver, deixe em branco.',xn);
     m.innerHTML='<p class="small muted">Conferindo a lista de presença…</p>';
     esteve(nome).then(function(ok){
       if(!ok){m.innerHTML='<div class="notice" style="border-color:#f2b54a;background:#fff3d6">Não encontramos esse nome na lista de presença do dia 20. Confira se escreveu igual ao da inscrição. Se achar que é engano, fale com a gente pelo WhatsApp '+esc(D.evento.whatsapp_acatmar||D.evento.whatsapp||'')+' que verificamos.</div>';return;}
       m.innerHTML='<p class="small muted">Gerando o PDF…</p>';
+      try{ LS.set('me',Object.assign(LS.get('me',{})||{},{nome:nome,empresa:empresa})); }catch(e2){}
+      fetch(API+'/certificado',{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({id:devId(),nome:nome,cpf:cpf,empresa:empresa,cnpj:cnpj})}).catch(function(){});
       var s=document.createElement('script');s.src='lib/jspdf.umd.min.js';
       s.onload=function(){gerarPDF(nome,m);};
       s.onerror=function(){m.innerHTML='<div class="notice">Não foi possível carregar o gerador. Verifique a conexão e tente de novo.</div>';};
@@ -402,18 +424,11 @@ function avaliacao(){
 
   h('<div class="card"><p class="kicker">VI Fórum · 20 de outubro de 2026</p><h3>'+esc(A.titulo)+'</h3>'
    +'<p class="small">'+esc(A.intro)+'</p>'
-   +'<p class="small muted" style="margin-top:6px">Escala: <b>1</b> muito insatisfeito · <b>5</b> muito satisfeito.</p></div>'
+   +'<p class="small muted" style="margin-top:6px">Escala: <b>1</b> muito insatisfeito · <b>5</b> muito satisfeito.</p>'
+   +'<div class="notice" style="margin-top:10px;border-color:#9fd3dc;background:#eef9fb">🔒 <b>Esta avaliação é anônima.</b> Não pedimos seu nome nem o CPF, e não temos como saber quem escreveu o quê. Pode ser sincero: é assim que a gente melhora.</div></div>'
    +corpo
    +'<section class="section"><div class="section-h"><h2>'+esc(A.comentario)+'</h2></div>'
    +'<div class="card"><div class="field"><textarea id="av-txt" rows="5" placeholder="'+esc(A.comentario_ph||'')+'"></textarea></div>'
-   +'</div></section>'
-   +'<section class="section"><div class="section-h"><h2>Seus dados</h2></div>'
-   +'<div class="card">'
-   +'<p class="small muted" style="margin:0 0 10px">Precisamos identificar quem respondeu para registrar a participação no Fórum.</p>'
-   +'<div class="field"><label>Nome completo *</label><input id="av-nome" autocomplete="name" required value="'+esc((LS.get('me',{})||{}).nome||'')+'"></div>'
-   +'<div class="field"><label>CPF *</label><input id="av-cpf" inputmode="numeric" placeholder="000.000.000-00" required></div>'
-   +'<div class="field"><label>Empresa <span class="small muted">(se você representa uma)</span></label><input id="av-emp" autocomplete="organization" value="'+esc((LS.get('me',{})||{}).empresa||'')+'"></div>'
-   +'<div class="field"><label>CNPJ da empresa <span class="small muted">(se tiver)</span></label><input id="av-cnpj" inputmode="numeric" placeholder="00.000.000/0000-00"></div>'
    +'<button class="btn btn-teal btn-block btn-xl" id="av-env">Enviar minha avaliação</button>'
    +'<div id="av-msg"></div></div></section>');
 
@@ -432,10 +447,6 @@ function avaliacao(){
     };
   });
 
-  var ec=document.getElementById('av-cpf'), en=document.getElementById('av-cnpj');
-  if(ec)ec.oninput=function(){ec.value=mascaraCPF(ec.value);};
-  if(en)en.oninput=function(){en.value=mascaraCNPJ(en.value);};
-
   document.getElementById('av-env').onclick=function(){
     var notas={}, escolhas={};
     view.querySelectorAll('.nts').forEach(function(g){
@@ -447,21 +458,13 @@ function avaliacao(){
       if(sel.length) escolhas[g.getAttribute('data-op')]= g.getAttribute('data-multi')==='1'?sel:sel[0];
     });
     var txt=(document.getElementById('av-txt').value||'').trim();
-    var nome=(document.getElementById('av-nome').value||'').trim();
-    var cpf=(document.getElementById('av-cpf').value||'').trim();
-    var emp=(document.getElementById('av-emp').value||'').trim();
-    var cnpj=(document.getElementById('av-cnpj').value||'').trim();
     var m=document.getElementById('av-msg');
-    function erro(msg,el){m.innerHTML='<div class="notice">'+msg+'</div>';if(el){el.focus();el.scrollIntoView({block:'center',behavior:'smooth'});}}
-    if(nome.split(/\s+/).length<2) return erro('Digite seu nome completo, com sobrenome.',document.getElementById('av-nome'));
-    if(!validaCPF(cpf)) return erro('Confira o CPF: parece que falta um número ou algum dígito está errado.',document.getElementById('av-cpf'));
-    if(cnpj && !validaCNPJ(cnpj)) return erro('Confira o CNPJ. Se a empresa não tiver, deixe em branco.',document.getElementById('av-cnpj'));
     if(!Object.keys(notas).length && !Object.keys(escolhas).length && !txt){
-      return erro('Responda ao menos uma pergunta antes de enviar.');
+      m.innerHTML='<div class="notice">Responda ao menos uma pergunta antes de enviar.</div>';return;
     }
     m.innerHTML='<p class="small muted">Enviando…</p>';
     fetch(API+'/avaliacao',{method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({id:devId(),notas:notas,escolhas:escolhas,comentario:txt,nome:nome,cpf:cpf,empresa:emp,cnpj:cnpj})})
+      body:JSON.stringify({id:devId(),notas:notas,escolhas:escolhas,comentario:txt})})
       .then(function(r){return r.json();})
       .then(function(){LS.set('avaliou',true);toast('Avaliação enviada. Obrigado!');avaliacao();window.scrollTo(0,0);})
       .catch(function(){m.innerHTML='<div class="notice">Não deu para enviar agora. Verifique a conexão e tente de novo.</div>';});

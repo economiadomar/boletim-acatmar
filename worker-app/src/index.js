@@ -5,7 +5,9 @@
 // POST /voto        -> registra voto numa enquete (chave v:<enquete>:<id>, opcao na metadata)
 // GET  /enquete?id= -> contagem de votos de uma enquete (publico)
 // POST /avaliacao   -> grava a avaliacao do evento (chave av:<id>)
-// GET  /avaliacoes?pin= -> respostas + medias (equipe)
+// GET  /avaliacoes?pin= -> respostas + medias (equipe) - avaliacao e ANONIMA
+// POST /certificado  -> registra quem emitiu o certificado (chave c:<cpf>)
+// GET  /certificados?pin=[&csv=1] -> lista de emissoes (equipe)
 const ORIGENS = ['https://www.acatmar.org', 'https://acatmar.org'];
 
 function cors(origin) {
@@ -146,10 +148,6 @@ export default {
       const reg = {
         id, notas, escolhas,
         comentario: lim(b.comentario, 1200),
-        nome: lim(b.nome, 90),
-        cpf: lim(b.cpf, 14).replace(/\D/g, ''),
-        empresa: lim(b.empresa, 90),
-        cnpj: lim(b.cnpj, 18).replace(/\D/g, ''),
         quando: new Date().toISOString(),
         cidade: (req.cf && req.cf.city) || ''
       };
@@ -186,8 +184,43 @@ export default {
       const medias = {};
       for (const k of Object.keys(soma)) medias[k] = { media: soma[k] / qtd[k], respostas: qtd[k] };
       return json({ total: regs.length, medias, contagens: cont,
-                    comentarios: regs.filter(r => r.comentario).map(r => ({ nome: r.nome, empresa: r.empresa, texto: r.comentario, quando: r.quando })),
-                    pessoas: regs.map(r => ({ nome: r.nome, cpf: r.cpf, empresa: r.empresa, cnpj: r.cnpj, quando: r.quando })) }, origin);
+                    comentarios: regs.filter(r => r.comentario).map(r => ({ texto: r.comentario, quando: r.quando })) }, origin);
+    }
+
+    if (url.pathname === '/certificado' && req.method === 'POST') {
+      let b;
+      try { b = await req.json(); } catch (e) { return json({ erro: 'json' }, origin, 400); }
+      const id = lim(b.id, 40);
+      const nome = lim(b.nome, 90);
+      const cpf = lim(b.cpf, 14).replace(/\D/g, '');
+      if (!id || !nome || cpf.length !== 11) return json({ erro: 'dados' }, origin, 400);
+      await env.FORUM_APP.put('c:' + cpf, JSON.stringify({
+        nome, cpf, id,
+        empresa: lim(b.empresa, 90),
+        cnpj: lim(b.cnpj, 18).replace(/\D/g, ''),
+        quando: new Date().toISOString()
+      }));
+      return json({ ok: true }, origin);
+    }
+
+    if (url.pathname === '/certificados' && req.method === 'GET') {
+      if ((url.searchParams.get('pin') || '') !== (env.PAINEL_PIN || '')) return json({ erro: 'pin' }, origin, 401);
+      const nomes = [];
+      let cursor;
+      do {
+        const r = await env.FORUM_APP.list({ prefix: 'c:', limit: 1000, cursor });
+        for (const k of r.keys) nomes.push(k.name);
+        cursor = r.list_complete ? null : r.cursor;
+      } while (cursor);
+      const regs = [];
+      for (const n of nomes) { const v = await env.FORUM_APP.get(n, 'json'); if (v) regs.push(v); }
+      regs.sort((a, b2) => (a.quando < b2.quando ? 1 : -1));
+      if (url.searchParams.get('csv')) {
+        const linhas = ['nome;cpf;empresa;cnpj;quando'].concat(
+          regs.map(r => [r.nome, r.cpf, r.empresa || '', r.cnpj || '', r.quando].map(x => String(x).replace(/;/g, ',')).join(';')));
+        return new Response('\ufeff' + linhas.join('\n'), { headers: { 'Content-Type': 'text/csv; charset=utf-8', ...cors(origin) } });
+      }
+      return json({ total: regs.length, lista: regs }, origin);
     }
 
     return json({ erro: 'rota' }, origin, 404);
