@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=83;
+var APP_V=84;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -28,9 +28,37 @@ function load(){
   }).catch(function(){ if(!D){h('<div class="card"><h3>Sem conexão</h3><p>Abra o app com internet uma vez para baixar o conteúdo do Fórum.</p></div>');} });
 }
 var booted=false;
-function checkUpdate(){if(D&&D.app_min&&D.app_min>APP_V){var k='forum_reload_'+D.app_min;try{if(sessionStorage.getItem(k))return;sessionStorage.setItem(k,'1');}catch(e){}
-  var p=('serviceWorker' in navigator)?navigator.serviceWorker.getRegistrations().then(function(rs){return Promise.all(rs.map(function(r){return r.update().catch(function(){});}));}):Promise.resolve();
-  p.then(function(){return caches&&caches.keys?caches.keys().then(function(ks){return Promise.all(ks.map(function(x){return caches.delete(x);}));}):null;}).catch(function(){}).then(function(){location.reload();});}}
+function forcarAtualizacao(){
+  var p=('serviceWorker' in navigator)
+    ? navigator.serviceWorker.getRegistrations().then(function(rs){
+        return Promise.all(rs.map(function(r){return r.unregister().catch(function(){});}));
+      })
+    : Promise.resolve();
+  return p.then(function(){
+    return (window.caches&&caches.keys)
+      ? caches.keys().then(function(ks){return Promise.all(ks.map(function(x){return caches.delete(x);}));})
+      : null;
+  }).catch(function(){}).then(function(){
+    location.replace(location.pathname+'?v='+Date.now()+location.hash);
+  });
+}
+function checkUpdate(){
+  if(!(D&&D.app_min&&D.app_min>APP_V))return;
+  var k='forum_reload_'+D.app_min;
+  try{ if(sessionStorage.getItem(k))return; sessionStorage.setItem(k,'1'); }catch(e){}
+  forcarAtualizacao();
+}
+/* o app instalado no iPhone volta suspenso, sem reiniciar: checa de novo ao voltar pra tela */
+var ultimaChecagem=Date.now();
+document.addEventListener('visibilitychange',function(){
+  if(document.visibilityState!=='visible')return;
+  if(Date.now()-ultimaChecagem<30000)return;
+  ultimaChecagem=Date.now();
+  fetch('data/forum.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){
+    if(j&&j.app_min&&j.app_min>APP_V){forcarAtualizacao();return;}
+    if(j&&D&&j.versao!==D.versao){D=j;render();updateBadge();}
+  }).catch(function(){});
+});
 function boot(){if(booted)return;booted=true;checkUpdate();render();updateBadge();setTimeout(installGate,150);setTimeout(function(){var s=document.getElementById('splash');s.classList.add('off');setTimeout(function(){s.remove();},400);},350);}
 
 /* ---------- roteamento ---------- */
