@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=68;
+var APP_V=69;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -194,27 +194,71 @@ function interagir(sessId){
 }
 
 /* ---------- Certificado ---------- */
+function normNome(v){
+  var s=String(v||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+  return s.replace(/\(.*?\)/g,'').replace(/[^a-z ]/g,' ').replace(/\s+/g,' ').trim();
+}
+function sha12(txt){
+  if(!(window.crypto&&crypto.subtle))return Promise.resolve(null);
+  return crypto.subtle.digest('SHA-256',new TextEncoder().encode('acatmar6:'+txt)).then(function(b){
+    return Array.prototype.map.call(new Uint8Array(b),function(x){return ('0'+x.toString(16)).slice(-2);}).join('').slice(0,12);
+  });
+}
+function esteve(nome){
+  var lista=(D.certificado&&D.certificado.presenca)||[];
+  var k=normNome(nome); if(!k)return Promise.resolve(false);
+  var ps=k.split(' '), alt=ps.length>1?ps[0]+' '+ps[ps.length-1]:k;
+  return Promise.all([sha12(k),sha12(alt)]).then(function(h){
+    if(h[0]===null)return true;
+    return lista.indexOf(h[0])>=0||lista.indexOf(h[1])>=0;
+  });
+}
 function certificado(){
   var c=D.certificado,me=LS.get('me',{})||{};
-  if(!c.liberado){h('<div class="card"><p class="kicker">Certificado de participação</p><h3>'+esc(c.titulo||'Disponível após o evento')+'</h3><p>'+esc(c.texto)+'</p><p class="small muted">Carga horária: '+esc(c.carga_horaria)+'.</p></div>');return;}
-  h('<div class="card"><p class="kicker">Certificado de participação</p><h3>Emita seu certificado</h3><p class="small muted">Digite seu nome como deve aparecer e o código divulgado no encerramento do Fórum.</p><form id="f-cert"><div class="field"><label>Nome completo</label><input name="nome" required value="'+esc(me.nome||'')+'"></div><div class="field"><label>Código do evento</label><input name="codigo" required autocapitalize="characters"></div><button class="btn btn-teal btn-block" type="submit">Gerar PDF</button></form></div>');
-  document.getElementById('f-cert').onsubmit=function(ev){ev.preventDefault();var fd=new FormData(ev.target);var cod=String(fd.get('codigo')).trim().toUpperCase();if(cod!==String(c.codigo).toUpperCase()){toast('Código inválido. Confira com a organização.');return;}
-    var s=document.createElement('script');s.src='lib/jspdf.umd.min.js';s.onload=function(){gerarPDF(String(fd.get('nome')).trim());};document.body.appendChild(s);};
+  if(!c.liberado){h('<div class="card"><p class="kicker">Certificado de conclusão</p><h3>'+esc(c.titulo||'Disponível após o evento')+'</h3><p>'+esc(c.texto)+'</p><p class="small muted">Carga horária: '+esc(c.carga_horaria)+'.</p></div>');return;}
+  h('<div class="card"><p class="kicker">Certificado de conclusão</p><h3>'+esc(c.titulo||'Emita seu certificado')+'</h3><p class="small">'+esc(c.texto)+'</p>'
+   +'<form id="f-cert"><div class="field"><label>Nome completo</label><input name="nome" required autocomplete="name" value="'+esc(me.nome||'')+'"></div>'
+   +'<button class="btn btn-teal btn-block" type="submit">Gerar meu certificado</button></form>'
+   +'<div id="cert-msg"></div>'
+   +'<p class="small muted" style="margin-top:12px">Carga horária: '+esc(c.carga_horaria)+'. O arquivo é gerado no seu aparelho, em PDF.</p></div>');
+  document.getElementById('f-cert').onsubmit=function(ev){
+    ev.preventDefault();
+    var nome=String(new FormData(ev.target).get('nome')).replace(/\s+/g,' ').trim();
+    var m=document.getElementById('cert-msg');
+    if(nome.split(' ').length<2){m.innerHTML='<div class="notice">Digite o nome completo, com sobrenome.</div>';return;}
+    m.innerHTML='<p class="small muted">Conferindo a lista de presença…</p>';
+    esteve(nome).then(function(ok){
+      if(!ok){m.innerHTML='<div class="notice" style="border-color:#f2b54a;background:#fff3d6">Não encontramos esse nome na lista de presença do dia 20. Confira se escreveu igual ao da inscrição. Se achar que é engano, fale com a gente pelo WhatsApp '+esc(D.evento.whatsapp_acatmar||D.evento.whatsapp||'')+' que verificamos.</div>';return;}
+      m.innerHTML='<p class="small muted">Gerando o PDF…</p>';
+      var s=document.createElement('script');s.src='lib/jspdf.umd.min.js';
+      s.onload=function(){gerarPDF(nome,m);};
+      s.onerror=function(){m.innerHTML='<div class="notice">Não foi possível carregar o gerador. Verifique a conexão e tente de novo.</div>';};
+      document.body.appendChild(s);
+    });
+  };
 }
-function gerarPDF(nome){
-  var e=D.evento;var doc=new window.jspdf.jsPDF({orientation:'landscape',unit:'mm',format:'a4'});
-  doc.setFillColor(10,37,64);doc.rect(0,0,297,210,'F');doc.setFillColor(0,163,180);doc.rect(0,0,297,6,'F');doc.rect(0,204,297,6,'F');
-  doc.setTextColor(53,201,218);doc.setFont('helvetica','bold');doc.setFontSize(12);doc.text('ACATMAR · ASSOCIAÇÃO NÁUTICA BRASILEIRA',148.5,28,{align:'center'});
-  doc.setTextColor(255,255,255);doc.setFontSize(30);doc.text('CERTIFICADO DE PARTICIPAÇÃO',148.5,52,{align:'center'});
-  doc.setFont('helvetica','normal');doc.setFontSize(13);doc.text('Certificamos que',148.5,78,{align:'center'});
-  doc.setFont('helvetica','bold');doc.setFontSize(26);doc.text(nome.toUpperCase(),148.5,96,{align:'center',maxWidth:250});
-  doc.setFont('helvetica','normal');doc.setFontSize(13);
-  var txt='participou do '+e.nome+', realizado em '+e.data_texto.replace(/^[^,]+, /,'')+', no '+e.local.nome+', em Florianópolis/SC, com carga horária de '+D.certificado.carga_horaria+'.';
-  doc.text(doc.splitTextToSize(txt,230),148.5,114,{align:'center'});
-  doc.setFontSize(11);doc.setTextColor(53,201,218);doc.text('Leandro "Mané" Ferrari · Presidente da ACATMAR',148.5,160,{align:'center'});
-  doc.setDrawColor(53,201,218);doc.line(98,152,199,152);
-  doc.setTextColor(200,210,220);doc.setFontSize(9);doc.text('Emitido pelo app oficial do Fórum · www.acatmar.org/app · Código '+D.certificado.codigo,148.5,190,{align:'center'});
-  doc.save('certificado-vi-forum-acatmar.pdf');toast('Certificado gerado');
+function gerarPDF(nome,m){
+  var c=D.certificado;
+  var img=new Image();img.crossOrigin='anonymous';
+  img.onload=function(){
+    try{
+      var cv=document.createElement('canvas');cv.width=img.naturalWidth;cv.height=img.naturalHeight;
+      cv.getContext('2d').drawImage(img,0,0);
+      var dados=cv.toDataURL('image/jpeg',0.9);
+      var doc=new window.jspdf.jsPDF({orientation:'landscape',unit:'mm',format:'a4',compress:true});
+      doc.addImage(dados,'JPEG',0,0,297,210);
+      doc.setTextColor(15,47,87);doc.setFont('times','bold');
+      var t=26;doc.setFontSize(t);
+      while(doc.getTextWidth(nome)>215&&t>13){t-=1;doc.setFontSize(t);}
+      doc.text(nome,148.5,108,{align:'center'});
+      var arq='certificado-vi-forum-'+normNome(nome).replace(/ /g,'-')+'.pdf';
+      doc.save(arq);
+      if(m)m.innerHTML='<div class="ok-box">✅ Certificado gerado. Procure o arquivo <b>'+esc(arq)+'</b> nos seus downloads.</div>';
+      toast('Certificado gerado');
+    }catch(e){ if(m)m.innerHTML='<div class="notice">Não foi possível gerar aqui. Tente pelo navegador, em acatmar.org/app.</div>'; }
+  };
+  img.onerror=function(){ if(m)m.innerHTML='<div class="notice">Não foi possível carregar a arte do certificado. Verifique a conexão.</div>'; };
+  img.src=(c.fundo||'media/certificado-fundo.jpg')+'?v='+encodeURIComponent(D.versao);
 }
 
 /* ---------- Instalar ---------- */
