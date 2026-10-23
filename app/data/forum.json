@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-23-3",
+  "versao": "2026-10-23-4",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -392,7 +392,7 @@
       "id": "avaliacao",
       "data": "2026-10-23",
       "titulo": "Conta pra gente: como foi o VI Fórum para você?",
-      "texto": "Abrimos a avaliação do Fórum aqui no app. São notas de 1 a 5 sobre cada palestra, a organização, o local, o coffee break, o almoço e o próprio app, além de perguntas sobre o que você quer ver no VII Fórum. Leva uns 3 minutos e nenhuma pergunta é obrigatória. É com essa resposta que a gente monta a próxima edição.",
+      "texto": "Abrimos a avaliação do Fórum aqui no app. São uns 3 minutos, nenhuma pergunta é obrigatória, e é com essa resposta que a gente monta o VII Fórum. Conta pra gente o que funcionou e o que dá para melhorar.",
       "link": "#/avaliacao",
       "link_label": "Avaliar o Fórum"
     },
@@ -1025,7 +1025,7 @@
       "link": "#/posevento"
     }
   ],
-  "app_min": 75,
+  "app_min": 76,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",
