@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=69;
+var APP_V=70;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -207,10 +207,12 @@ function sha12(txt){
 function esteve(nome){
   var lista=(D.certificado&&D.certificado.presenca)||[];
   var k=normNome(nome); if(!k)return Promise.resolve(false);
-  var ps=k.split(' '), alt=ps.length>1?ps[0]+' '+ps[ps.length-1]:k;
-  return Promise.all([sha12(k),sha12(alt)]).then(function(h){
+  var ps=k.split(' '), tent=[k];
+  if(ps.length>1){tent.push(ps[0]+' '+ps[ps.length-1]);tent.push(ps[0]+' '+ps[1]);tent.push(ps.slice(0,3).join(' '));}
+  return Promise.all(tent.map(sha12)).then(function(h){
     if(h[0]===null)return true;
-    return lista.indexOf(h[0])>=0||lista.indexOf(h[1])>=0;
+    for(var i=0;i<h.length;i++){ if(h[i]&&lista.indexOf(h[i])>=0) return true; }
+    return false;
   });
 }
 function certificado(){
