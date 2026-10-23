@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-23-11",
+  "versao": "2026-10-23-12",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -741,6 +741,7 @@
       "3317ff4982c4",
       "3368a832983c",
       "33bae4d9e544",
+      "343685d6780c",
       "343d341b6946",
       "34e5a4e0d510",
       "355702b13f94",
@@ -809,8 +810,9 @@
       "6acc90134d56",
       "6f0b5a999f9a",
       "6f2c889aeb5f",
+      "6ff3586e01fd",
       "715087e21763",
-      "721dc0a49f3e",
+      "71e9664346d0",
       "722602bbf76c",
       "75ab512b1684",
       "75e3d986a858",
@@ -836,7 +838,6 @@
       "8bb4605229d4",
       "8c43b9f7af8f",
       "8d289861c47e",
-      "8f0214586643",
       "8fb19890a086",
       "8fce99cdf69a",
       "9132a8311e4f",
@@ -908,6 +909,7 @@
       "d8bafcd129b9",
       "d9a6339325dc",
       "da5c33ed9e1b",
+      "dbe5a5257a89",
       "de363ef67a59",
       "e0330a5bdbfb",
       "e0889f6e40f0",
@@ -922,6 +924,7 @@
       "e75b6713d2b1",
       "e93a6aeb71db",
       "e9ca66388bec",
+      "ebcbdc3b36b2",
       "ec3c3d31d84f",
       "ecd0ad9fac80",
       "eecaa8e3abcf",
@@ -1077,7 +1080,7 @@
       "link": "#/posevento"
     }
   ],
-  "app_min": 84,
+  "app_min": 85,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",
