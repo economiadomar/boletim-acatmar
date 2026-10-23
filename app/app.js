@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=79;
+var APP_V=80;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -208,7 +208,14 @@ function esteve(nome){
   var lista=(D.certificado&&D.certificado.presenca)||[];
   var k=normNome(nome); if(!k)return Promise.resolve(false);
   var ps=k.split(' '), tent=[k];
-  if(ps.length>1){tent.push(ps[0]+' '+ps[ps.length-1]);tent.push(ps[0]+' '+ps[1]);tent.push(ps.slice(0,3).join(' '));}
+  if(ps.length>1){
+    tent.push(ps[0]+' '+ps[ps.length-1]);
+    tent.push(ps[0]+' '+ps[1]);
+    tent.push(ps.slice(0,3).join(' '));
+    for(var j=1;j<ps.length;j++) tent.push(ps[0]+' '+ps[j]);
+    if(ps.length>=3) tent.push(ps[0]+' '+ps[1]+' '+ps[ps.length-1]);
+  }
+  tent=tent.filter(function(x,i,a2){return x&&a2.indexOf(x)===i;});
   return Promise.all(tent.map(sha12)).then(function(h){
     if(h[0]===null)return true;
     for(var i=0;i<h.length;i++){ if(h[i]&&lista.indexOf(h[i])>=0) return true; }
@@ -263,7 +270,17 @@ function certificado(){
     if(cnpj && !validaCNPJ(cnpj)) return ec('Confira o CNPJ. Se a empresa não tiver, deixe em branco.',xn);
     m.innerHTML='<p class="small muted">Conferindo a lista de presença…</p>';
     esteve(nome).then(function(ok){
-      if(!ok){m.innerHTML='<div class="notice" style="border-color:#f2b54a;background:#fff3d6">Não encontramos esse nome na lista de presença do dia 20. Confira se escreveu igual ao da inscrição. Se achar que é engano, fale com a gente pelo WhatsApp '+esc(D.evento.whatsapp_acatmar||D.evento.whatsapp||'')+' que verificamos.</div>';return;}
+      if(!ok){
+        var wa=soDigitos(D.evento.whatsapp_acatmar||D.evento.whatsapp||'');
+        var txt=encodeURIComponent('Oi! Sou '+nome+' e participei do VI Fórum, mas o app não encontrou meu nome na lista para emitir o certificado.');
+        m.innerHTML='<div class="notice" style="border-color:#f2b54a;background:#fff3d6">'
+          +'<p class="small" style="margin:0 0 8px"><b>Não achamos esse nome na lista de presença.</b> '
+          +'Tente escrever como está na sua inscrição, ou só o primeiro nome e o sobrenome.</p>'
+          +'<p class="small" style="margin:0 0 10px">Se você esteve no Fórum, foi engano nosso e a gente libera na hora.</p>'
+          +(wa?'<a class="btn btn-navy btn-block btn-sm" target="_blank" rel="noopener" href="https://wa.me/'+esc(wa)+'?text='+txt+'">Falar com a ACATMAR no WhatsApp</a>':'')
+          +'</div>';
+        return;
+      }
       m.innerHTML='<p class="small muted">Gerando o PDF…</p>';
       try{ LS.set('me',Object.assign(LS.get('me',{})||{},{nome:nome,empresa:empresa})); }catch(e2){}
       fetch(API+'/certificado',{method:'POST',headers:{'Content-Type':'application/json'},
