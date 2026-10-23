@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=80;
+var APP_V=81;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -207,7 +207,7 @@ function sha12(txt){
 function esteve(nome){
   var lista=(D.certificado&&D.certificado.presenca)||[];
   var k=normNome(nome); if(!k)return Promise.resolve(false);
-  var ps=k.split(' '), tent=[k];
+  var ps=k.split(' '), tent=[k, ps[0]];
   if(ps.length>1){
     tent.push(ps[0]+' '+ps[ps.length-1]);
     tent.push(ps[0]+' '+ps[1]);
