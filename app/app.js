@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=72;
+var APP_V=73;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -34,8 +34,8 @@ function checkUpdate(){if(D&&D.app_min&&D.app_min>APP_V){var k='forum_reload_'+D
 function boot(){if(booted)return;booted=true;checkUpdate();render();updateBadge();setTimeout(installGate,150);setTimeout(function(){var s=document.getElementById('splash');s.classList.add('off');setTimeout(function(){s.remove();},400);},350);}
 
 /* ---------- roteamento ---------- */
-var routes={'/':home,'/programacao':programacao,'/palestrantes':palestrantes,'/avisos':avisos,'/aviso':aviso,'/credencial':credencial,'/patrocinadores':patrocinadores,'/local':local,'/interagir':interagir,'/certificado':certificado,'/instalar':instalar,'/sobre':sobre,'/mais':mais,'/anterior':anterior,'/faq':faq,'/credenciamento':credenciamento,'/edicoes':edicoes,'/inscricao':inscricao,'/controle':controle,'/diario':diario,'/posevento':posEvento};
-var titles={'/programacao':'Programação','/palestrantes':'Palestrantes','/avisos':'Avisos','/aviso':'Aviso','/credencial':'Minha credencial','/patrocinadores':'Patrocinadores','/local':'Local e como chegar','/interagir':'Interagir','/certificado':'Certificado','/instalar':'Instalar o app','/sobre':'Sobre o Fórum','/mais':'Mais','/anterior':'V Fórum (2025)','/faq':'Perguntas frequentes','/credenciamento':'Credenciamento','/edicoes':'Edições anteriores','/inscricao':'Inscrição','/controle':'Controle do app','/diario':'Fórum todo dia','/posevento':'VI Fórum: como foi'};
+var routes={'/':home,'/programacao':programacao,'/palestrantes':palestrantes,'/avisos':avisos,'/aviso':aviso,'/credencial':credencial,'/patrocinadores':patrocinadores,'/local':local,'/interagir':interagir,'/certificado':certificado,'/instalar':instalar,'/sobre':sobre,'/mais':mais,'/anterior':anterior,'/faq':faq,'/credenciamento':credenciamento,'/edicoes':edicoes,'/inscricao':inscricao,'/controle':controle,'/diario':diario,'/posevento':posEvento,'/avaliacao':avaliacao};
+var titles={'/programacao':'Programação','/palestrantes':'Palestrantes','/avisos':'Avisos','/aviso':'Aviso','/credencial':'Minha credencial','/patrocinadores':'Patrocinadores','/local':'Local e como chegar','/interagir':'Interagir','/certificado':'Certificado','/instalar':'Instalar o app','/sobre':'Sobre o Fórum','/mais':'Mais','/anterior':'V Fórum (2025)','/faq':'Perguntas frequentes','/credenciamento':'Credenciamento','/edicoes':'Edições anteriores','/inscricao':'Inscrição','/controle':'Controle do app','/diario':'Fórum todo dia','/posevento':'VI Fórum: como foi','/avaliacao':'Avaliação do Fórum'};
 var tabsMain=['/','/programacao','/credencial','/avisos','/mais'];
 function route(){var hsh=location.hash.replace(/^#/,'')||'/';var parts=hsh.split('/');var path='/'+(parts[1]||'');var arg=parts[2]||'';return {path:path,arg:arg};}
 function render(){
@@ -67,7 +67,7 @@ function home(){
   var spons=D.patrocinadores.map(function(c,i){var modo={'Patrocínio':'inst','Realização':'real'}[c.cota]||'apoio';return '<div class="strip-cota strip-'+modo+'"><span>'+esc(c.cota)+'</span><div>'+c.empresas.map(function(p){var hb=({'Patrocínio':100,'Realização':56}[c.cota]||50);return '<a href="#/patrocinadores">'+(p.logo?'<img src="'+p.logo+'" alt="'+esc(p.nome)+'" style="height:'+Math.round(hb*(p.escala||1))+'px">':'<span class="logo-txt logo-txt-sm">'+esc(p.nome)+'</span>')+'</a>';}).join('')+'</div></div>';}).join('');
   var regBtn=st==='antes'?'<a class="btn btn-teal btn-block" href="#/inscricao">'+(LS.get('inscrito',null)?'✅ Inscrito · ver programação':'Inscrição gratuita')+'</a>':'';
   h('<section class="hero"><div class="hero-top"><img src="media/emblema-v2.jpg" alt="VI Fórum ACATMAR"><div><p class="kicker">'+esc(e.edicao)+' · '+esc(e.mote)+'</p><h1>'+esc(e.nome)+'</h1></div></div><div class="hero-in"><p>'+esc(e.data_texto)+' · '+esc(e.horario_texto)+'</p>'+cd+'</div></section>'
-   +(st==='depois'?'<div class="quick"><a href="#/posevento"><i>📸</i>Como foi</a><a href="#/certificado"><i>📜</i>Certificado</a><a href="#/programacao"><i>🗓️</i>Programação</a><a href="#/edicoes"><i>📷</i>Edições</a></div>':'<div class="quick"><a href="#/programacao"><i>🗓️</i>Programação</a><a href="#/local"><i>📍</i>Local</a><a href="#/credencial"><i>🎫</i>Credencial</a><a href="#/interagir"><i>💬</i>Interagir</a></div>')
+   +(st==='depois'?'<div class="quick"><a href="#/certificado"><i>📜</i>Certificado</a><a href="#/avaliacao"><i>⭐</i>Avaliar</a><a href="#/posevento"><i>📸</i>Como foi</a><a href="#/edicoes"><i>📷</i>Edições</a></div>':'<div class="quick"><a href="#/programacao"><i>🗓️</i>Programação</a><a href="#/local"><i>📍</i>Local</a><a href="#/credencial"><i>🎫</i>Credencial</a><a href="#/interagir"><i>💬</i>Interagir</a></div>')
    +(st==='depois'?retroHomeCard():diarioHomeCard(st,d))
    +(st==='depois'?'':'<section class="section"><div class="card"><div class="info"><div class="info-row"><div class="ic">📅</div><div><b>Quando</b><span>'+esc(e.data_texto)+'<br>'+esc(e.horario_texto)+'</span></div></div><div class="info-row"><div class="ic">📍</div><div><b>Onde</b><span>'+esc(e.local.nome)+(e.local.sala?' · '+esc(e.local.sala):'')+'<br><small class="muted">'+esc(e.local.endereco)+'</small></span></div></div><div class="info-row"><div class="ic">🅿️</div><div><b>Estacionamento</b><span>Próprio e gratuito no câmpus</span></div></div><div class="info-row"><div class="ic">🎟️</div><div><b>Participação</b><span>Gratuita, vagas limitadas'+(e.certificado?' · com certificado':'')+'</span></div></div></div>'+(regBtn?'<div class="btn-row">'+regBtn+'</div>':'')+'</div></section>')
    +'<section class="section"><div class="section-h"><h2>Avisos'+(unread?' <span class="tag red">'+unread+' novo'+(unread>1?'s':'')+'</span>':'')+'</h2><a href="#/avisos">Ver todos</a></div>'+av+'</section>'
@@ -346,10 +346,99 @@ function posEvento(){var e=D.pos_evento;if(!e){h('<div class="card"><p class="sm
    +'<p class="small muted" style="margin:6px 2px 16px">Arraste para o lado para ver as '+e.fotos.length+' fotos.</p>'
    +e.blocos.map(function(b){return '<section class="section"><div class="section-h"><h2>'+esc(b.h)+'</h2></div><div class="card">'+b.p.map(function(x){return '<p>'+esc(x)+'</p>';}).join('')+'</div></section>';}).join('')
    +'<div class="btn-row"><a class="btn btn-outline btn-sm" href="#/certificado">Meu certificado</a><a class="btn btn-outline btn-sm" href="https://www.acatmar.org/" target="_blank" rel="noopener">Site da ACATMAR</a></div>');}
+function avaliacao(){
+  var A=D.avaliacao;
+  if(!A||!A.ativa){h('<div class="card"><p class="small">A avaliação ainda não está aberta.</p></div>');return;}
+  if(LS.get('avaliou',false)){
+    h('<div class="card"><p class="kicker">Avaliação do VI Fórum</p><h3>Obrigado!</h3>'
+     +'<p>Sua avaliação já foi registrada. Ela vai direto para quem monta o próximo Fórum.</p>'
+     +'<div class="btn-row"><a class="btn btn-outline btn-sm" href="#/posevento">Ver como foi</a>'
+     +'<button class="btn btn-light btn-sm" id="av-de-novo">Responder de novo</button></div></div>');
+    document.getElementById('av-de-novo').onclick=function(){LS.set('avaliou',false);avaliacao();};
+    return;
+  }
+  var rot=A.rotulos||['1','2','3','4','5'];
+  function nota(it,max,rotulos){
+    var o='';
+    for(var i=1;i<=max;i++) o+='<button type="button" class="nt" data-q="'+esc(it.id)+'" data-v="'+i+'">'+i+'</button>';
+    return '<div class="qa"><div class="qt">'+esc(it.q)+(it.sub?'<span>'+esc(it.sub)+'</span>':'')+'</div>'
+          +'<div class="nts" data-grupo="'+esc(it.id)+'">'+o+'</div></div>';
+  }
+  function nps(it){
+    var o='';
+    for(var i=0;i<=10;i++) o+='<button type="button" class="nt nt-s" data-q="'+esc(it.id)+'" data-v="'+i+'">'+i+'</button>';
+    return '<div class="qa"><div class="qt">'+esc(it.q)+'</div><div class="nts nts-w" data-grupo="'+esc(it.id)+'">'+o+'</div>'
+          +'<div class="small muted" style="display:flex;justify-content:space-between;margin-top:4px"><span>0 · de jeito nenhum</span><span>10 · com certeza</span></div></div>';
+  }
+  function ops(b){
+    var multi=b.tipo==='multi';
+    return '<div class="ops" data-op="'+esc(b.id)+'" data-multi="'+(multi?1:0)+'">'
+      +b.opcoes.map(function(o){return '<button type="button" class="op" data-v="'+esc(o)+'">'+esc(o)+'</button>';}).join('')+'</div>';
+  }
+  var corpo=A.blocos.map(function(b){
+    var dentro='';
+    if(b.tipo==='nota')      dentro=b.itens.map(function(it){return nota(it,5,rot);}).join('');
+    else if(b.tipo==='nps')  dentro=b.itens.map(nps).join('');
+    else                     dentro=ops(b);
+    return '<section class="section"><div class="section-h"><h2>'+esc(b.t)+'</h2></div>'
+      +(b.obs?'<p class="small muted" style="margin:-4px 2px 8px">'+esc(b.obs)+'</p>':'')
+      +'<div class="card">'+dentro+'</div></section>';
+  }).join('');
+
+  h('<div class="card"><p class="kicker">VI Fórum · 20 de outubro de 2026</p><h3>'+esc(A.titulo)+'</h3>'
+   +'<p class="small">'+esc(A.intro)+'</p>'
+   +'<p class="small muted" style="margin-top:6px">Escala: <b>1</b> muito insatisfeito · <b>5</b> muito satisfeito.</p></div>'
+   +corpo
+   +'<section class="section"><div class="section-h"><h2>'+esc(A.comentario)+'</h2></div>'
+   +'<div class="card"><div class="field"><textarea id="av-txt" rows="5" placeholder="'+esc(A.comentario_ph||'')+'"></textarea></div>'
+   +'<div class="field"><label>Seu nome (opcional)</label><input id="av-nome" autocomplete="name" value="'+esc((LS.get('me',{})||{}).nome||'')+'"></div>'
+   +'<button class="btn btn-teal btn-block btn-xl" id="av-env">Enviar minha avaliação</button>'
+   +'<div id="av-msg"></div></div></section>');
+
+  view.querySelectorAll('.nts .nt').forEach(function(b){
+    b.onclick=function(){
+      var g=b.parentNode;
+      g.querySelectorAll('.nt').forEach(function(x){x.classList.remove('on');});
+      b.classList.add('on');
+    };
+  });
+  view.querySelectorAll('.ops .op').forEach(function(b){
+    b.onclick=function(){
+      var g=b.parentNode, multi=g.getAttribute('data-multi')==='1';
+      if(!multi) g.querySelectorAll('.op').forEach(function(x){x.classList.remove('on');});
+      b.classList.toggle('on');
+    };
+  });
+
+  document.getElementById('av-env').onclick=function(){
+    var notas={}, escolhas={};
+    view.querySelectorAll('.nts').forEach(function(g){
+      var on=g.querySelector('.nt.on');
+      if(on) notas[g.getAttribute('data-grupo')]=parseInt(on.getAttribute('data-v'),10);
+    });
+    view.querySelectorAll('.ops').forEach(function(g){
+      var sel=[].map.call(g.querySelectorAll('.op.on'),function(x){return x.getAttribute('data-v');});
+      if(sel.length) escolhas[g.getAttribute('data-op')]= g.getAttribute('data-multi')==='1'?sel:sel[0];
+    });
+    var txt=(document.getElementById('av-txt').value||'').trim();
+    var nome=(document.getElementById('av-nome').value||'').trim();
+    var m=document.getElementById('av-msg');
+    if(!Object.keys(notas).length && !Object.keys(escolhas).length && !txt){
+      m.innerHTML='<div class="notice">Responda ao menos uma pergunta antes de enviar.</div>';return;
+    }
+    m.innerHTML='<p class="small muted">Enviando…</p>';
+    fetch(API+'/avaliacao',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({id:devId(),notas:notas,escolhas:escolhas,comentario:txt,nome:nome})})
+      .then(function(r){return r.json();})
+      .then(function(){LS.set('avaliou',true);toast('Avaliação enviada. Obrigado!');avaliacao();window.scrollTo(0,0);})
+      .catch(function(){m.innerHTML='<div class="notice">Não deu para enviar agora. Verifique a conexão e tente de novo.</div>';});
+  };
+}
+
 function faq(){h(D.faq.map(function(q){return '<details><summary>'+esc(q.p)+'</summary><p>'+esc(q.r)+'</p></details>';}).join(''));}
 function mais(){var POS=status()==='depois';var me=LS.get('me',null);
   h('<a class="card" href="#/credencial" style="display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit"><div class="spk"><div class="av">'+esc(me?me.nome.split(' ').map(function(w){return w[0];}).slice(0,2).join(''):'?')+'</div><div><b>'+esc(me?me.nome:'Crie sua credencial')+'</b><span>'+esc(me?[me.cargo,me.empresa].filter(Boolean).join(' · ')||(me.tipo||''):'Toque para criar seu QR Code')+'</span></div></div><span style="margin-left:auto;font-size:1.6rem;color:#aab7bf">›</span></a>'
-   +(POS?'<div class="menu"><a href="#/posevento"><i>📸</i>VI Fórum: como foi</a><a href="#/certificado"><i>📜</i>Certificado</a><a href="#/programacao"><i>🗓️</i>O que teve na programação</a><a href="#/palestrantes"><i>🎤</i>Palestrantes</a><a href="#/patrocinadores"><i>🤝</i>Quem fez acontecer</a>':'<div class="menu"><a href="#/posevento"><i>📸</i>VI Fórum: como foi</a><a href="#/diario"><i>🎯</i>Fórum todo dia · quiz e enquete</a><a href="#/palestrantes"><i>🎤</i>Palestrantes</a><a href="#/patrocinadores"><i>🤝</i>Patrocinadores e apoio</a><a href="#/local"><i>📍</i>Local e como chegar</a><a href="#/interagir"><i>💬</i>Interagir e perguntar</a><a href="#/certificado"><i>📜</i>Certificado</a>')+'<a href="#/edicoes"><i>📷</i>Todas as edições ('+anosEdicoes()+')</a><a href="#/sobre"><i>⚓</i>Sobre o Fórum</a><a href="#/faq"><i>❓</i>Perguntas frequentes</a><a href="#/instalar"><i>📲</i>Instalar o app</a></div>'
+   +(POS?'<div class="menu"><a href="#/posevento"><i>📸</i>VI Fórum: como foi</a><a href="#/certificado"><i>📜</i>Certificado</a><a href="#/avaliacao"><i>⭐</i>Avaliar o Fórum</a><a href="#/programacao"><i>🗓️</i>O que teve na programação</a><a href="#/palestrantes"><i>🎤</i>Palestrantes</a><a href="#/patrocinadores"><i>🤝</i>Quem fez acontecer</a>':'<div class="menu"><a href="#/posevento"><i>📸</i>VI Fórum: como foi</a><a href="#/diario"><i>🎯</i>Fórum todo dia · quiz e enquete</a><a href="#/palestrantes"><i>🎤</i>Palestrantes</a><a href="#/patrocinadores"><i>🤝</i>Patrocinadores e apoio</a><a href="#/local"><i>📍</i>Local e como chegar</a><a href="#/interagir"><i>💬</i>Interagir e perguntar</a><a href="#/certificado"><i>📜</i>Certificado</a>')+'<a href="#/edicoes"><i>📷</i>Todas as edições ('+anosEdicoes()+')</a><a href="#/sobre"><i>⚓</i>Sobre o Fórum</a><a href="#/faq"><i>❓</i>Perguntas frequentes</a><a href="#/instalar"><i>📲</i>Instalar o app</a></div>'
    +(POS?'':'<div class="menu"><a href="#/credenciamento"><i>📷</i>Credenciamento (equipe ACATMAR)</a><a href="#/controle"><i>📊</i>Controle do app (equipe ACATMAR)</a></div>')
    +'<div class="menu">'+(POS?'':'<a href="#/inscricao"><i>📝</i>Inscrição gratuita</a>')+'<a href="https://www.acatmar.org/" target="_blank" rel="noopener"><i>🌐</i>Site da ACATMAR</a><a href="https://www.acatmar.org/privacidade.html" target="_blank" rel="noopener"><i>🔒</i>Política de Privacidade</a></div>'
    +'<p class="small muted" style="text-align:center">Sua credencial fica salva neste aparelho. Nome, empresa e contato também ficam com a organização do Fórum.<br>App oficial · ACATMAR · conteúdo '+esc(D.versao)+' · app v'+APP_V+'</p>');}

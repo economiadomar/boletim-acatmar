@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-22-13",
+  "versao": "2026-10-23-1",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -388,6 +388,14 @@
     ]
   },
   "avisos": [
+    {
+      "id": "avaliacao",
+      "data": "2026-10-23",
+      "titulo": "Conta pra gente: como foi o VI Fórum para você?",
+      "texto": "Abrimos a avaliação do Fórum aqui no app. São notas de 1 a 5 sobre cada palestra, a organização, o local, o coffee break, o almoço e o próprio app, além de perguntas sobre o que você quer ver no VII Fórum. Leva uns 3 minutos e nenhuma pergunta é obrigatória. É com essa resposta que a gente monta a próxima edição.",
+      "link": "#/avaliacao",
+      "link_label": "Avaliar o Fórum"
+    },
     {
       "id": "certificado-liberado",
       "data": "2026-10-22",
@@ -1017,7 +1025,7 @@
       "link": "#/posevento"
     }
   ],
-  "app_min": 72,
+  "app_min": 73,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",
@@ -1334,5 +1342,240 @@
       }
     ],
     "destaque": "media/posevento/grupo-obrigado.jpg"
+  },
+  "avaliacao": {
+    "ativa": true,
+    "titulo": "Avaliação do VI Fórum",
+    "intro": "Leva uns 3 minutos e ajuda demais a montar o VII Fórum. Responda só o que quiser: nenhuma pergunta é obrigatória.",
+    "rotulos": [
+      "1 · Muito insatisfeito",
+      "2 · Insatisfeito",
+      "3 · Regular",
+      "4 · Satisfeito",
+      "5 · Muito satisfeito"
+    ],
+    "blocos": [
+      {
+        "t": "No geral",
+        "tipo": "nota",
+        "itens": [
+          {
+            "id": "geral",
+            "q": "Como você avalia o VI Fórum no conjunto?"
+          }
+        ]
+      },
+      {
+        "t": "Recomendaria?",
+        "tipo": "nps",
+        "itens": [
+          {
+            "id": "nps",
+            "q": "De 0 a 10, o quanto você recomendaria o Fórum a um colega do setor?"
+          }
+        ]
+      },
+      {
+        "t": "As palestras",
+        "obs": "Avalie só as que você assistiu. Pule as outras.",
+        "tipo": "nota",
+        "itens": [
+          {
+            "id": "p-marcelo-reis",
+            "q": "Tecnologia e monitoramento inteligente",
+            "sub": "Marcelo Reis · Safeboat e Navalcare"
+          },
+          {
+            "id": "p-gonzaga",
+            "q": "Sistema de arrefecimento (mufla)",
+            "sub": "Alexandre Gonzaga · Point Marine"
+          },
+          {
+            "id": "p-gianotti",
+            "q": "Estrutura de resgate do CBMSC",
+            "sub": "Sgt. Gianotti · CBMSC"
+          },
+          {
+            "id": "p-jovan",
+            "q": "O motor fala: entenda os sinais",
+            "sub": "Jovan Sampaio · Linck Náutica"
+          },
+          {
+            "id": "p-deivity",
+            "q": "Vidro não é tudo igual",
+            "sub": "Deivity Rosa · Personal Boat"
+          },
+          {
+            "id": "p-heros",
+            "q": "Repare certo! Fibra, divinycell e gelcoat",
+            "sub": "Heros Silverio · Silverio Estaleiro"
+          },
+          {
+            "id": "p-huertas",
+            "q": "Limpeza e conservação sustentáveis",
+            "sub": "Marcelo Huertas · Nautispecial"
+          },
+          {
+            "id": "p-janu",
+            "q": "Menos craca, menos carbono",
+            "sub": "Januario Gagliardi · JRG Trading"
+          },
+          {
+            "id": "p-tiago",
+            "q": "Navegação eletrônica",
+            "sub": "Tiago Carneiro · Navico Group"
+          }
+        ]
+      },
+      {
+        "t": "Estrutura e organização",
+        "tipo": "nota",
+        "itens": [
+          {
+            "id": "organizacao",
+            "q": "Organização do Fórum"
+          },
+          {
+            "id": "credenciamento",
+            "q": "Credenciamento na entrada",
+            "sub": "Rapidez e atendimento"
+          },
+          {
+            "id": "local",
+            "q": "Local: IFSC Câmpus Florianópolis-Continente"
+          },
+          {
+            "id": "sala",
+            "q": "Sala, som e projeção"
+          },
+          {
+            "id": "coffee",
+            "q": "Coffee break"
+          },
+          {
+            "id": "almoco",
+            "q": "Almoço no restaurante do IFSC"
+          },
+          {
+            "id": "dinamica",
+            "q": "Dinâmica e ritmo do dia"
+          },
+          {
+            "id": "duracao",
+            "q": "Carga horária",
+            "sub": "O dia foi curto, certo ou longo demais?"
+          },
+          {
+            "id": "horario",
+            "q": "Horário das 8h às 19h"
+          },
+          {
+            "id": "app",
+            "q": "O app do Fórum",
+            "sub": "Programação, credencial, avisos e certificado"
+          },
+          {
+            "id": "divulgacao_nota",
+            "q": "Divulgação do evento",
+            "sub": "Você recebeu as informações a tempo?"
+          }
+        ]
+      },
+      {
+        "t": "Como você ficou sabendo do Fórum?",
+        "tipo": "multi",
+        "id": "canais",
+        "obs": "Pode marcar mais de um.",
+        "opcoes": [
+          "Instagram",
+          "WhatsApp",
+          "E-mail da ACATMAR",
+          "Site da ACATMAR",
+          "Imprensa ou notícia",
+          "Indicação de amigo ou colega",
+          "Empresa onde trabalho",
+          "IFSC",
+          "Já participo sempre",
+          "Outro"
+        ]
+      },
+      {
+        "t": "Qual palestra foi mais útil para você?",
+        "tipo": "unica",
+        "id": "melhor_palestra",
+        "opcoes": [
+          "Tecnologia e monitoramento inteligente",
+          "Sistema de arrefecimento (mufla)",
+          "Estrutura de resgate do CBMSC",
+          "O motor fala: entenda os sinais",
+          "Vidro não é tudo igual",
+          "Repare certo! Fibra, divinycell e gelcoat",
+          "Limpeza e conservação sustentáveis",
+          "Menos craca, menos carbono",
+          "Navegação eletrônica"
+        ]
+      },
+      {
+        "t": "O que você quer ver no VII Fórum?",
+        "tipo": "multi",
+        "id": "temas",
+        "obs": "Marque quantos quiser.",
+        "opcoes": [
+          "Motores de popa",
+          "Motores de centro e diesel",
+          "Elétrica e eletrônica embarcada",
+          "Fibra, gelcoat e pintura",
+          "Mecânica hidráulica",
+          "Segurança e salvatagem",
+          "Meio ambiente e sustentabilidade",
+          "Gestão de marina e garagem náutica",
+          "Atendimento, vendas e pós-venda",
+          "Documentação e regularização",
+          "Carreira e primeiro emprego no setor",
+          "Inteligência artificial aplicada ao setor",
+          "Vistoria e perícia",
+          "Turismo náutico"
+        ]
+      },
+      {
+        "t": "Você pretende participar do VII Fórum?",
+        "tipo": "unica",
+        "id": "voltar",
+        "opcoes": [
+          "Com certeza",
+          "Provavelmente sim",
+          "Ainda não sei",
+          "Provavelmente não"
+        ]
+      },
+      {
+        "t": "Foi a sua primeira vez no Fórum?",
+        "tipo": "unica",
+        "id": "primeira",
+        "opcoes": [
+          "Sim, primeira vez",
+          "Não, já participei antes"
+        ]
+      },
+      {
+        "t": "Em que você atua?",
+        "tipo": "unica",
+        "id": "area",
+        "opcoes": [
+          "Estaleiro ou indústria",
+          "Marina ou garagem náutica",
+          "Oficina e manutenção",
+          "Marinheiro ou tripulação",
+          "Comércio e revenda",
+          "Serviços (seguro, despachante, advocacia)",
+          "Turismo náutico",
+          "Estudante",
+          "Poder público ou instituição de ensino",
+          "Outro"
+        ]
+      }
+    ],
+    "comentario": "O que a gente pode melhorar no VII Fórum?",
+    "comentario_ph": "Escreva à vontade. Elogio, crítica, sugestão de tema ou de palestrante."
   }
 }

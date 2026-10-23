@@ -4,6 +4,8 @@
 // GET  /csv?pin=     -> planilha
 // POST /voto        -> registra voto numa enquete (chave v:<enquete>:<id>, opcao na metadata)
 // GET  /enquete?id= -> contagem de votos de uma enquete (publico)
+// POST /avaliacao   -> grava a avaliacao do evento (chave av:<id>)
+// GET  /avaliacoes?pin= -> respostas + medias (equipe)
 const ORIGENS = ['https://www.acatmar.org', 'https://acatmar.org'];
 
 function cors(origin) {
@@ -120,6 +122,68 @@ export default {
       if (!enq) return json({ erro: 'id' }, origin, 400);
       const res = await apurar(env, enq);
       return json(res, origin);
+    }
+
+    if (url.pathname === '/avaliacao' && req.method === 'POST') {
+      let b;
+      try { b = await req.json(); } catch (e) { return json({ erro: 'json' }, origin, 400); }
+      const id = lim(b.id, 40);
+      if (!id) return json({ erro: 'id' }, origin, 400);
+      const notas = {}, escolhas = {};
+      if (b.notas && typeof b.notas === 'object') {
+        for (const k of Object.keys(b.notas).slice(0, 60)) {
+          const n = Number(b.notas[k]);
+          if (Number.isInteger(n) && n >= 0 && n <= 10) notas[lim(k, 40)] = n;
+        }
+      }
+      if (b.escolhas && typeof b.escolhas === 'object') {
+        for (const k of Object.keys(b.escolhas).slice(0, 30)) {
+          const v = b.escolhas[k];
+          if (Array.isArray(v)) escolhas[lim(k, 40)] = v.slice(0, 12).map(x => lim(String(x), 60));
+          else escolhas[lim(k, 40)] = lim(String(v), 60);
+        }
+      }
+      const reg = {
+        id, notas, escolhas,
+        comentario: lim(b.comentario, 1200),
+        nome: lim(b.nome, 90),
+        quando: new Date().toISOString(),
+        cidade: (req.cf && req.cf.city) || ''
+      };
+      await env.FORUM_APP.put('av:' + id, JSON.stringify(reg));
+      return json({ ok: true }, origin);
+    }
+
+    if (url.pathname === '/avaliacoes' && req.method === 'GET') {
+      if ((url.searchParams.get('pin') || '') !== (env.PAINEL_PIN || '')) return json({ erro: 'pin' }, origin, 401);
+      const nomes = [];
+      let cursor;
+      do {
+        const r = await env.FORUM_APP.list({ prefix: 'av:', limit: 1000, cursor });
+        for (const k of r.keys) nomes.push(k.name);
+        cursor = r.list_complete ? null : r.cursor;
+      } while (cursor);
+      const regs = [];
+      for (const n of nomes) {
+        const v = await env.FORUM_APP.get(n, 'json');
+        if (v) regs.push(v);
+      }
+      const soma = {}, qtd = {}, cont = {};
+      for (const r of regs) {
+        for (const k of Object.keys(r.notas || {})) {
+          soma[k] = (soma[k] || 0) + r.notas[k]; qtd[k] = (qtd[k] || 0) + 1;
+        }
+        for (const k of Object.keys(r.escolhas || {})) {
+          const v = r.escolhas[k];
+          const arr = Array.isArray(v) ? v : [v];
+          cont[k] = cont[k] || {};
+          for (const x of arr) if (x) cont[k][x] = (cont[k][x] || 0) + 1;
+        }
+      }
+      const medias = {};
+      for (const k of Object.keys(soma)) medias[k] = { media: soma[k] / qtd[k], respostas: qtd[k] };
+      return json({ total: regs.length, medias, contagens: cont,
+                    comentarios: regs.filter(r => r.comentario).map(r => ({ nome: r.nome, texto: r.comentario, quando: r.quando })) }, origin);
     }
 
     return json({ erro: 'rota' }, origin, 404);

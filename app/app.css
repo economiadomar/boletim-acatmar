@@ -382,3 +382,23 @@ details p{margin:0 0 12px;font-size:.92rem;line-height:1.5;color:var(--ink)}
 .enq-bg i{display:block;height:100%;background:linear-gradient(90deg,var(--teal),var(--teal-b));border-radius:999px;transition:width .5s ease}
 .enq-row.meu .enq-bg i{background:linear-gradient(90deg,var(--navy),var(--teal-d))}
 .enq-ask{display:block;margin-top:12px;color:var(--teal-d);text-decoration:none;font-weight:600}
+
+/* ---------- Avaliação do Fórum ---------- */
+.qa{padding:12px 0;border-bottom:1px solid var(--linha,#e6ecf2)}
+.qa:first-child{padding-top:2px}
+.qa:last-child{border-bottom:0;padding-bottom:2px}
+.qt{font-weight:600;font-size:.95rem;line-height:1.3;margin-bottom:9px}
+.qt span{display:block;font-weight:400;font-size:.82rem;color:#6b7f96;margin-top:2px}
+.nts{display:flex;gap:6px}
+.nts .nt{flex:1;min-width:0;height:42px;border:1.5px solid #cfdae8;background:#fff;border-radius:10px;
+  font-size:1rem;font-weight:700;color:#4a6a92;cursor:pointer;transition:.12s}
+.nts .nt:active{transform:scale(.95)}
+.nts .nt.on{background:var(--teal,#00727e);border-color:var(--teal,#00727e);color:#fff}
+.nts-w{flex-wrap:wrap}
+.nts-w .nt{flex:0 0 calc(100%/6 - 5px);height:38px;font-size:.9rem}
+.ops{display:flex;flex-wrap:wrap;gap:7px}
+.ops .op{border:1.5px solid #cfdae8;background:#fff;border-radius:999px;padding:8px 14px;
+  font-size:.88rem;color:#2a4766;cursor:pointer;text-align:left;transition:.12s}
+.ops .op:active{transform:scale(.97)}
+.ops .op.on{background:var(--navy,#0a2540);border-color:var(--navy,#0a2540);color:#fff}
+#av-txt{width:100%;font:inherit;padding:10px 12px;border:1.5px solid #cfdae8;border-radius:10px;resize:vertical}
