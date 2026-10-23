@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=74;
+var APP_V=75;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -218,6 +218,20 @@ function esteve(nome){
 function certificado(){
   var c=D.certificado,me=LS.get('me',{})||{};
   if(!c.liberado){h('<div class="card"><p class="kicker">Certificado de conclusão</p><h3>'+esc(c.titulo||'Disponível após o evento')+'</h3><p>'+esc(c.texto)+'</p><p class="small muted">Carga horária: '+esc(c.carga_horaria)+'.</p></div>');return;}
+  var A=D.avaliacao||{};
+  var pede = A.ativa && !LS.get('avaliou',false) && !LS.get('pulou_aval',false);
+  if(pede){
+    h('<section class="section"><div class="card" style="background:var(--navy,#0a2540);color:#fff;border:0">'
+     +'<p class="kicker" style="color:var(--teal-b,#35c9da)">Antes de baixar</p>'
+     +'<h3 style="color:#fff">Podemos contar com você?</h3>'
+     +'<p class="small" style="opacity:.9">Sua avaliação do VI Fórum leva uns 3 minutos e é com ela que a gente monta o VII. '
+     +'Notas para cada palestra, para a organização, o local, o coffee break e o app, e o que você quer ver na próxima edição.</p>'
+     +'<div class="btn-row"><a class="btn btn-teal btn-block btn-xl" href="#/avaliacao">Responder agora · 3 minutos</a></div>'
+     +'<p style="text-align:center;margin-top:10px"><a href="#" id="pular-aval" class="small" style="color:#9fc7d8">Prefiro baixar o certificado agora</a></p>'
+     +'</div></section>');
+    document.getElementById('pular-aval').onclick=function(ev){ev.preventDefault();LS.set('pulou_aval',true);certificado();};
+    return;
+  }
   h('<div class="card"><p class="kicker">Certificado de conclusão</p><h3>'+esc(c.titulo||'Emita seu certificado')+'</h3><p class="small">'+esc(c.texto)+'</p>'
    +'<form id="f-cert"><div class="field"><label>Nome completo</label><input name="nome" required autocomplete="name" value="'+esc(me.nome||'')+'"></div>'
    +'<button class="btn btn-teal btn-block" type="submit">Gerar meu certificado</button></form>'
@@ -352,6 +366,7 @@ function avaliacao(){
   if(LS.get('avaliou',false)){
     h('<div class="card"><p class="kicker">Avaliação do VI Fórum</p><h3>Obrigado!</h3>'
      +'<p>Sua avaliação já foi registrada. Ela vai direto para quem monta o próximo Fórum.</p>'
+     +((D.certificado&&D.certificado.liberado)?'<div class="btn-row"><a class="btn btn-teal btn-block btn-xl" href="#/certificado">Baixar meu certificado</a></div>':'')
      +'<div class="btn-row"><a class="btn btn-outline btn-sm" href="#/posevento">Ver como foi</a>'
      +'<button class="btn btn-light btn-sm" id="av-de-novo">Responder de novo</button></div></div>');
     document.getElementById('av-de-novo').onclick=function(){LS.set('avaliou',false);avaliacao();};
