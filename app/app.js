@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=76;
+var APP_V=77;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -406,7 +406,14 @@ function avaliacao(){
    +corpo
    +'<section class="section"><div class="section-h"><h2>'+esc(A.comentario)+'</h2></div>'
    +'<div class="card"><div class="field"><textarea id="av-txt" rows="5" placeholder="'+esc(A.comentario_ph||'')+'"></textarea></div>'
-   +'<div class="field"><label>Seu nome (opcional)</label><input id="av-nome" autocomplete="name" value="'+esc((LS.get('me',{})||{}).nome||'')+'"></div>'
+   +'</div></section>'
+   +'<section class="section"><div class="section-h"><h2>Seus dados</h2></div>'
+   +'<div class="card">'
+   +'<p class="small muted" style="margin:0 0 10px">Precisamos identificar quem respondeu para registrar a participação no Fórum.</p>'
+   +'<div class="field"><label>Nome completo *</label><input id="av-nome" autocomplete="name" required value="'+esc((LS.get('me',{})||{}).nome||'')+'"></div>'
+   +'<div class="field"><label>CPF *</label><input id="av-cpf" inputmode="numeric" placeholder="000.000.000-00" required></div>'
+   +'<div class="field"><label>Empresa <span class="small muted">(se você representa uma)</span></label><input id="av-emp" autocomplete="organization" value="'+esc((LS.get('me',{})||{}).empresa||'')+'"></div>'
+   +'<div class="field"><label>CNPJ da empresa <span class="small muted">(se tiver)</span></label><input id="av-cnpj" inputmode="numeric" placeholder="00.000.000/0000-00"></div>'
    +'<button class="btn btn-teal btn-block btn-xl" id="av-env">Enviar minha avaliação</button>'
    +'<div id="av-msg"></div></div></section>');
 
@@ -425,6 +432,10 @@ function avaliacao(){
     };
   });
 
+  var ec=document.getElementById('av-cpf'), en=document.getElementById('av-cnpj');
+  if(ec)ec.oninput=function(){ec.value=mascaraCPF(ec.value);};
+  if(en)en.oninput=function(){en.value=mascaraCNPJ(en.value);};
+
   document.getElementById('av-env').onclick=function(){
     var notas={}, escolhas={};
     view.querySelectorAll('.nts').forEach(function(g){
@@ -437,13 +448,20 @@ function avaliacao(){
     });
     var txt=(document.getElementById('av-txt').value||'').trim();
     var nome=(document.getElementById('av-nome').value||'').trim();
+    var cpf=(document.getElementById('av-cpf').value||'').trim();
+    var emp=(document.getElementById('av-emp').value||'').trim();
+    var cnpj=(document.getElementById('av-cnpj').value||'').trim();
     var m=document.getElementById('av-msg');
+    function erro(msg,el){m.innerHTML='<div class="notice">'+msg+'</div>';if(el){el.focus();el.scrollIntoView({block:'center',behavior:'smooth'});}}
+    if(nome.split(/\s+/).length<2) return erro('Digite seu nome completo, com sobrenome.',document.getElementById('av-nome'));
+    if(!validaCPF(cpf)) return erro('Confira o CPF: parece que falta um número ou algum dígito está errado.',document.getElementById('av-cpf'));
+    if(cnpj && !validaCNPJ(cnpj)) return erro('Confira o CNPJ. Se a empresa não tiver, deixe em branco.',document.getElementById('av-cnpj'));
     if(!Object.keys(notas).length && !Object.keys(escolhas).length && !txt){
-      m.innerHTML='<div class="notice">Responda ao menos uma pergunta antes de enviar.</div>';return;
+      return erro('Responda ao menos uma pergunta antes de enviar.');
     }
     m.innerHTML='<p class="small muted">Enviando…</p>';
     fetch(API+'/avaliacao',{method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({id:devId(),notas:notas,escolhas:escolhas,comentario:txt,nome:nome})})
+      body:JSON.stringify({id:devId(),notas:notas,escolhas:escolhas,comentario:txt,nome:nome,cpf:cpf,empresa:emp,cnpj:cnpj})})
       .then(function(r){return r.json();})
       .then(function(){LS.set('avaliou',true);toast('Avaliação enviada. Obrigado!');avaliacao();window.scrollTo(0,0);})
       .catch(function(){m.innerHTML='<div class="notice">Não deu para enviar agora. Verifique a conexão e tente de novo.</div>';});

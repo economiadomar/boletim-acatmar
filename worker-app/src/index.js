@@ -147,6 +147,9 @@ export default {
         id, notas, escolhas,
         comentario: lim(b.comentario, 1200),
         nome: lim(b.nome, 90),
+        cpf: lim(b.cpf, 14).replace(/\D/g, ''),
+        empresa: lim(b.empresa, 90),
+        cnpj: lim(b.cnpj, 18).replace(/\D/g, ''),
         quando: new Date().toISOString(),
         cidade: (req.cf && req.cf.city) || ''
       };
@@ -183,7 +186,8 @@ export default {
       const medias = {};
       for (const k of Object.keys(soma)) medias[k] = { media: soma[k] / qtd[k], respostas: qtd[k] };
       return json({ total: regs.length, medias, contagens: cont,
-                    comentarios: regs.filter(r => r.comentario).map(r => ({ nome: r.nome, texto: r.comentario, quando: r.quando })) }, origin);
+                    comentarios: regs.filter(r => r.comentario).map(r => ({ nome: r.nome, empresa: r.empresa, texto: r.comentario, quando: r.quando })),
+                    pessoas: regs.map(r => ({ nome: r.nome, cpf: r.cpf, empresa: r.empresa, cnpj: r.cnpj, quando: r.quando })) }, origin);
     }
 
     return json({ erro: 'rota' }, origin, 404);

@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-23-4",
+  "versao": "2026-10-23-5",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -1025,7 +1025,7 @@
       "link": "#/posevento"
     }
   ],
-  "app_min": 76,
+  "app_min": 77,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",
@@ -1346,7 +1346,7 @@
   "avaliacao": {
     "ativa": true,
     "titulo": "Avaliação do VI Fórum",
-    "intro": "Leva uns 3 minutos e ajuda demais a montar o VII Fórum. Responda só o que quiser: nenhuma pergunta é obrigatória.",
+    "intro": "Leva uns 3 minutos e ajuda demais a montar o VII Fórum. As perguntas de nota você responde só se quiser; no fim pedimos nome e CPF para registrar sua participação.",
     "rotulos": [
       "1 · Muito insatisfeito",
       "2 · Insatisfeito",
