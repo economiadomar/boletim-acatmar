@@ -79,7 +79,7 @@ def bloco(en):
             '<img loading="lazy" src="' + ARTE + '" alt="' + html.escape(alt) + '" '
             'style="width:100%;max-width:520px;height:auto;display:block;margin:0 auto"></div>')
 
-for arq, chave, ident in (('projetos.json', 'projetos', 'vi-forum-acatmar-2026'), ('noticias.json', 'noticias', 'vi-forum-2026')):
+for arq, chave, ident in (('projetos.json', 'projetos', 'vi-forum-acatmar-2026'), ('noticias.json', 'noticias', 'vi-forum-2026'), ('noticias.json', 'noticias', 'vi-forum-acatmar-recorde-229-inscritos-2026')):
     cam = os.path.join(RAIZ, arq); j = json.load(open(cam, encoding='utf-8'))
     for x in j[chave]:
         if x['id'] != ident: continue
