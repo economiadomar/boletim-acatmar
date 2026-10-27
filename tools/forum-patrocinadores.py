@@ -68,6 +68,13 @@ def bloco_inst(en, inline=False):
     return ('<div class="creditos-bloco"><p class="creditos-rotulo" data-en="Sponsorship">Patrocínio</p>'
             '<a href="' + INST['site'] + '" target="_blank" rel="noopener" style="display:block">' + logos + '</a></div>')
 
+def topo_logos(en):
+    return ('<!-- topo-patrocinio --><a href="' + INST['site'] + '" target="_blank" rel="noopener" style="background:#fff;border:1px solid #e3e8ee;border-radius:14px;padding:18px 16px;margin:0 0 1.6rem;display:flex;justify-content:center;align-items:center;gap:32px;flex-wrap:wrap">'
+            + ''.join(_img(p, 46 if p['nome'] == 'Floripa' else 78) for p in TOPO) + '</a>')
+def fim_projetos(en):
+    return ('<!-- fim-projetos --><p style="margin:2.2rem 0 0;text-align:center"><a href="projetos.html" style="font-family:\'Barlow Condensed\',sans-serif;text-transform:uppercase;letter-spacing:.12em;font-weight:700;color:#0a2540;text-decoration:none;border:2px solid #0a2540;border-radius:999px;padding:.6rem 1.3rem;display:inline-block">'
+            + ('← All projects' if en else '← Todos os projetos') + '</a></p>')
+
 # 1) pagina de inscricao — arte unica feita pela ACATMAR (media/quem-faz-acontecer.jpg)
 ARTE = 'media/quem-faz-acontecer.jpg'
 ALT_ARTE_PT = 'Quem faz o VI Fórum acontecer: patrocinadores e apoiadores'
@@ -85,13 +92,13 @@ else:
 open(os.path.join(RAIZ, 'vi-forum-2026.html'), 'w', encoding='utf-8').write(h)
 
 # 2) bloco para projeto e materia
-def bloco(en):
+def bloco(en, inst=True):
     tit = 'Who makes the VI Forum happen' if en else 'Quem faz o VI Fórum acontecer'
     alt = ALT_ARTE_EN if en else ALT_ARTE_PT
     return ('<div style="background:#fff;border:1px solid #e3e8ee;border-radius:14px;padding:20px 16px;margin:1.8rem 0;'
             'text-align:center"><div style="font-family:\'Oswald\',sans-serif;font-weight:600;text-transform:uppercase;'
             'color:#0a2540;font-size:1.05rem;letter-spacing:.03em;margin-bottom:1.3rem">' + tit + '</div>'
-            + bloco_inst(en, inline=True) +
+            + (bloco_inst(en, inline=True) if inst else '') +
             '<img loading="lazy" src="' + ARTE + '" alt="' + html.escape(alt) + '" '
             'style="width:100%;max-width:520px;height:auto;display:block;margin:0 auto"></div>')
 
@@ -103,8 +110,11 @@ for arq, chave, ident in (('projetos.json', 'projetos', 'vi-forum-acatmar-2026')
             if campo not in x: continue
             marca = 'Who makes the VI' if en else 'Quem faz o VI'
             idx = [i for i, t in enumerate(x[campo]) if marca in t]
-            if idx: x[campo][idx[0]] = bloco(en)
-            else: x[campo].append(bloco(en))
+            if idx: x[campo][idx[0]] = bloco(en, inst=(chave != 'projetos'))
+            else: x[campo].append(bloco(en, inst=(chave != 'projetos')))
+            if chave == 'projetos':   # pagina da edicao: logos no topo (sem rotulo), arte embaixo, link para todos os projetos no fim
+                x[campo] = [t for t in x[campo] if 'topo-patrocinio' not in t and 'fim-projetos' not in t]
+                x[campo].insert(0, topo_logos(en)); x[campo].append(fim_projetos(en))
     json.dump(j, open(cam, 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
 
 print('patrocinadores do Fórum no site: ' + ', '.join('%s (%d)' % (c, len([e for e in D['patrocinadores'] if e['cota'] == c][0]['empresas'])) for c, _, _, _ in saidas))
