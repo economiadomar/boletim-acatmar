@@ -54,20 +54,19 @@ for c in D['patrocinadores']:
     saidas.append((c['cota'], nome, larg, alt))
 json.dump(D, open(FJ, 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
 
-# 0) Prefeitura isolada, em 1o lugar, como patrocinio institucional (termo 125.001/SMLCP/2026)
-INST = next(p for c in D['patrocinadores'] for p in c['empresas'] if p.get('institucional'))
-_li = logo(INST['logo'], ALT['Patrocínio']); _bg = Image.new('RGB', (_li.width + PAD * 2, _li.height + PAD * 2), (255, 255, 255)); _bg.paste(_li, (PAD, PAD))
-_bg.save(os.path.join(RAIZ, 'media/logos/vi-forum-patrocinio-institucional.png'), optimize=True)
-INST_IMG = 'media/logos/vi-forum-patrocinio-institucional.png'; INST_LARG = int(_bg.width * ESCALA_SITE)
-INST_ALT_PT = INST['nome'] + ' · Patrocinadora Institucional do VI Fórum'; INST_ALT_EN = INST['nome'] + ' · Institutional Sponsor of the VI Forum'
-def bloco_inst(en, rotulo_cls=None, inline=False):
-    rot = 'Institutional sponsorship' if en else 'Patrocínio institucional'
-    alt = INST_ALT_EN if en else INST_ALT_PT
+# 0) Patrocinio em 1o lugar: Prefeitura e Floripa lado a lado, logos ORIGINAIS (copiadas de app/media/logos), acima da arte
+TOPO = [p for c in D['patrocinadores'] for p in c['empresas'] if p.get('topo')]
+INST = next(p for p in TOPO if p.get('institucional'))
+def _img(p, alt_h):
+    return '<img loading="lazy" src="' + p['logo'] + '" alt="' + html.escape(p['nome']) + '" style="height:%dpx;width:auto;max-width:46%%;display:block">' % alt_h
+def bloco_inst(en, inline=False):
+    rot = 'Sponsorship' if en else 'Patrocínio'
+    logos = '<div style="display:flex;justify-content:center;align-items:center;gap:30px;flex-wrap:wrap">' + ''.join(_img(p, 46 if p['nome'] == 'Floripa' else 54) for p in TOPO) + '</div>'
     if inline:
-        return ('<div style="margin-bottom:1.6rem"><p style="margin:0 0 .8rem;font-family:\'Barlow Condensed\',sans-serif;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:#5b6b7c">' + rot + '</p>'
-                '<a href="' + INST['site'] + '" target="_blank" rel="noopener"><img loading="lazy" src="' + INST_IMG + '" alt="' + html.escape(alt) + '" style="width:%dpx;max-width:100%%;height:auto;display:block;margin:0 auto"></a></div>' % INST_LARG)
-    return ('<div class="creditos-bloco"><p class="creditos-rotulo" data-en="Institutional sponsorship">Patrocínio institucional</p>'
-            '<a href="' + INST['site'] + '" target="_blank" rel="noopener"><img class="creditos-logo creditos-patrocinio" loading="lazy" src="' + INST_IMG + '" alt="' + html.escape(INST_ALT_PT) + '" style="width:%dpx"></a></div>' % INST_LARG)
+        return ('<div style="margin-bottom:1.6rem"><p style="margin:0 0 .9rem;font-family:\'Barlow Condensed\',sans-serif;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:#5b6b7c">' + rot + '</p>'
+                '<a href="' + INST['site'] + '" target="_blank" rel="noopener" style="display:block">' + logos + '</a></div>')
+    return ('<div class="creditos-bloco"><p class="creditos-rotulo" data-en="Sponsorship">Patrocínio</p>'
+            '<a href="' + INST['site'] + '" target="_blank" rel="noopener" style="display:block">' + logos + '</a></div>')
 
 # 1) pagina de inscricao — arte unica feita pela ACATMAR (media/quem-faz-acontecer.jpg)
 ARTE = 'media/quem-faz-acontecer.jpg'

@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-27-1",
+  "versao": "2026-10-27-2",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -551,7 +551,7 @@
           "escala": 1.0,
           "escala_fixa": true,
           "institucional": true,
-          "selo": "Patrocinadora Institucional"
+          "topo": true
         },
         {
           "nome": "Floripa",
@@ -559,7 +559,8 @@
           "texto": "",
           "site": "",
           "instagram": "",
-          "escala": 0.82
+          "escala": 0.82,
+          "topo": true
         },
         {
           "nome": "Okean Yachts · Ferretti Group",
@@ -1082,7 +1083,7 @@
       "link": "#/posevento"
     }
   ],
-  "app_min": 86,
+  "app_min": 87,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",

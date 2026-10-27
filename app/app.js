@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=86;
+var APP_V=87;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -181,14 +181,15 @@ function credencial(){
 }
 
 /* ---------- Patrocinadores ---------- */
-/* Prefeitura: patrocinio institucional, marca isolada e em 1o lugar (exigencia do termo de patrocinio) */
-function patroInst(){var r=null;(D.patrocinadores||[]).forEach(function(c){(c.empresas||[]).forEach(function(p){if(p.institucional&&!r)r=p;});});return r;}
+/* Patrocinio em 1o lugar: Prefeitura e Floripa lado a lado, logos originais, acima da arte (termo 125.001/SMLCP/2026) */
+function patroTopo(){var r=[];(D.patrocinadores||[]).forEach(function(c){(c.empresas||[]).forEach(function(p){if(p.topo)r.push(p);});});return r;}
 function instCard(compacto){
-  var p=patroInst();if(!p)return '';
-  var logo='<img src="'+p.logo+'" alt="'+esc(p.nome)+'" style="width:min(280px,82%);height:auto;display:block;margin:0 auto">';
-  if(compacto)return '<a href="#/patrocinadores" class="card" style="display:block;text-align:center;margin-bottom:12px"><p class="kicker">Patrocínio institucional</p>'+logo+'</a>';
+  var ps=patroTopo();if(!ps.length)return '';
+  var p=null;ps.forEach(function(x){if(x.institucional&&!p)p=x;});p=p||ps[0];
+  var logos='<div style="display:flex;justify-content:center;align-items:center;gap:22px;flex-wrap:wrap">'+ps.map(function(x){return '<img src="'+x.logo+'" alt="'+esc(x.nome)+'" style="height:'+(x.nome==='Floripa'?44:50)+'px;width:auto;max-width:46%;display:block">';}).join('')+'</div>';
+  if(compacto)return '<a href="#/patrocinadores" class="card" style="display:block;text-align:center;margin-bottom:12px"><p class="kicker">Patrocínio</p>'+logos+'</a>';
   var links=(p.site?'<a class="btn btn-outline btn-sm" href="'+p.site+'" target="_blank" rel="noopener">Site</a>':'')+(p.instagram?'<a class="btn btn-navy btn-sm" href="'+p.instagram+'" target="_blank" rel="noopener">Instagram</a>':'');
-  return '<div class="card" style="text-align:center;margin-bottom:16px"><span class="tag" style="margin:0 0 12px">'+esc(p.selo||'Patrocinadora Institucional')+'</span>'+logo+'<h3 style="margin-top:12px;text-transform:none;letter-spacing:0;font-family:var(--f-body);font-size:1.02rem">'+esc(p.nome)+'</h3><p class="small" style="text-align:left">'+esc(p.texto||'')+'</p>'+(links?'<div class="btn-row" style="justify-content:center">'+links+'</div>':'')+'</div>';
+  return '<div class="card" style="text-align:center;margin-bottom:16px"><span class="tag" style="margin:0 0 14px">Patrocínio</span>'+logos+'<h3 style="margin-top:14px;text-transform:none;letter-spacing:0;font-family:var(--f-body);font-size:1.02rem">'+esc(p.nome)+'</h3><p class="small" style="text-align:left">'+esc(p.texto||'')+'</p>'+(links?'<div class="btn-row" style="justify-content:center">'+links+'</div>':'')+'</div>';
 }
 function patrocinadores(){
   var c=D.patrocinio_cta;
