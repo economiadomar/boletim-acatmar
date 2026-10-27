@@ -54,6 +54,21 @@ for c in D['patrocinadores']:
     saidas.append((c['cota'], nome, larg, alt))
 json.dump(D, open(FJ, 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
 
+# 0) Prefeitura isolada, em 1o lugar, como patrocinio institucional (termo 125.001/SMLCP/2026)
+INST = next(p for c in D['patrocinadores'] for p in c['empresas'] if p.get('institucional'))
+_li = logo(INST['logo'], ALT['Patrocínio']); _bg = Image.new('RGB', (_li.width + PAD * 2, _li.height + PAD * 2), (255, 255, 255)); _bg.paste(_li, (PAD, PAD))
+_bg.save(os.path.join(RAIZ, 'media/logos/vi-forum-patrocinio-institucional.png'), optimize=True)
+INST_IMG = 'media/logos/vi-forum-patrocinio-institucional.png'; INST_LARG = int(_bg.width * ESCALA_SITE)
+INST_ALT_PT = INST['nome'] + ' · Patrocinadora Institucional do VI Fórum'; INST_ALT_EN = INST['nome'] + ' · Institutional Sponsor of the VI Forum'
+def bloco_inst(en, rotulo_cls=None, inline=False):
+    rot = 'Institutional sponsorship' if en else 'Patrocínio institucional'
+    alt = INST_ALT_EN if en else INST_ALT_PT
+    if inline:
+        return ('<div style="margin-bottom:1.6rem"><p style="margin:0 0 .8rem;font-family:\'Barlow Condensed\',sans-serif;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:#5b6b7c">' + rot + '</p>'
+                '<a href="' + INST['site'] + '" target="_blank" rel="noopener"><img loading="lazy" src="' + INST_IMG + '" alt="' + html.escape(alt) + '" style="width:%dpx;max-width:100%%;height:auto;display:block;margin:0 auto"></a></div>' % INST_LARG)
+    return ('<div class="creditos-bloco"><p class="creditos-rotulo" data-en="Institutional sponsorship">Patrocínio institucional</p>'
+            '<a href="' + INST['site'] + '" target="_blank" rel="noopener"><img class="creditos-logo creditos-patrocinio" loading="lazy" src="' + INST_IMG + '" alt="' + html.escape(INST_ALT_PT) + '" style="width:%dpx"></a></div>' % INST_LARG)
+
 # 1) pagina de inscricao — arte unica feita pela ACATMAR (media/quem-faz-acontecer.jpg)
 ARTE = 'media/quem-faz-acontecer.jpg'
 ALT_ARTE_PT = 'Quem faz o VI Fórum acontecer: patrocinadores e apoiadores'
@@ -61,6 +76,7 @@ ALT_ARTE_EN = 'Who makes the VI Forum happen: sponsors and supporters'
 h = open(os.path.join(RAIZ, 'vi-forum-2026.html'), encoding='utf-8').read()
 sec = ('<!-- creditos:inicio --><section class="creditos-forum"><div class="creditos-inner">\n'
        '    <h2 class="creditos-titulo" data-en="Who makes the VI Forum happen">Quem faz o VI Fórum acontecer</h2>\n'
+       '    ' + bloco_inst(False) + '\n'
        '    <img class="creditos-arte" loading="lazy" src="%s" alt="%s" style="width:100%%;max-width:560px;height:auto;display:block;margin:0 auto">\n'
        '  </div></section><!-- creditos:fim -->' % (ARTE, html.escape(ALT_ARTE_PT)))
 if '<!-- creditos:inicio -->' in h:
@@ -76,6 +92,7 @@ def bloco(en):
     return ('<div style="background:#fff;border:1px solid #e3e8ee;border-radius:14px;padding:20px 16px;margin:1.8rem 0;'
             'text-align:center"><div style="font-family:\'Oswald\',sans-serif;font-weight:600;text-transform:uppercase;'
             'color:#0a2540;font-size:1.05rem;letter-spacing:.03em;margin-bottom:1.3rem">' + tit + '</div>'
+            + bloco_inst(en, inline=True) +
             '<img loading="lazy" src="' + ARTE + '" alt="' + html.escape(alt) + '" '
             'style="width:100%;max-width:520px;height:auto;display:block;margin:0 auto"></div>')
 

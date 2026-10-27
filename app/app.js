@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=85;
+var APP_V=86;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -101,7 +101,7 @@ function home(){
    +'<section class="section"><div class="section-h"><h2>Avisos'+(unread?' <span class="tag red">'+unread+' novo'+(unread>1?'s':'')+'</span>':'')+'</h2><a href="#/avisos">Ver todos</a></div>'+av+'</section>'
    +'<section class="section"><div class="section-h"><h2>Sobre o Fórum</h2><a href="#/sobre">Mais</a></div><div class="card"><p>'+esc(D.sobre.resumo)+'</p><p class="small muted">'+esc(D.sobre.para_quem)+'</p></div></section>'
    +'<section class="section"><div class="section-h"><h2>'+numEdicoes()+' de história</h2><a href="#/edicoes">Ver fotos</a></div><div class="gal gal-ed">'+(D.edicoes||[]).map(function(e){return '<a href="#/edicoes"><img src="'+e.capa+'" alt="" loading="lazy"><span>'+e.ed+' Fórum · '+e.ano+'</span></a>';}).join('')+'</div></section>'
-   +'<section class="section"><div class="section-h"><h2>Quem faz acontecer</h2><a href="#/patrocinadores">Ver</a></div><a href="#/patrocinadores"><img src="media/quem-faz-acontecer.jpg" alt="Quem faz o VI Fórum acontecer: patrocinadores e apoiadores" style="width:100%;border-radius:12px;display:block"></a></section>'
+   +'<section class="section"><div class="section-h"><h2>Quem faz acontecer</h2><a href="#/patrocinadores">Ver</a></div>'+instCard(true)+'<a href="#/patrocinadores"><img src="media/quem-faz-acontecer.jpg" alt="Quem faz o VI Fórum acontecer: patrocinadores e apoiadores" style="width:100%;border-radius:12px;display:block"></a></section>'
    +(st==='depois'?'':'<section class="section"><div class="card" style="background:var(--navy);color:#fff;border:0"><p class="kicker" style="color:var(--teal-b)">Dica</p><h3 style="color:#fff">Instale o app na tela inicial</h3><p class="small" style="opacity:.85">Assim ele abre em um toque, mostra sua credencial rápido no credenciamento e funciona mesmo sem sinal.</p><div class="btn-row"><a class="btn btn-light btn-sm" href="#/instalar">Como instalar</a></div></div></section>'));
   if(st==='antes'){clearInterval(home._t);home._t=setInterval(function(){if(route().path==='/')home();else clearInterval(home._t);},60000);}
 }
@@ -181,12 +181,21 @@ function credencial(){
 }
 
 /* ---------- Patrocinadores ---------- */
+/* Prefeitura: patrocinio institucional, marca isolada e em 1o lugar (exigencia do termo de patrocinio) */
+function patroInst(){var r=null;(D.patrocinadores||[]).forEach(function(c){(c.empresas||[]).forEach(function(p){if(p.institucional&&!r)r=p;});});return r;}
+function instCard(compacto){
+  var p=patroInst();if(!p)return '';
+  var logo='<img src="'+p.logo+'" alt="'+esc(p.nome)+'" style="width:min(280px,82%);height:auto;display:block;margin:0 auto">';
+  if(compacto)return '<a href="#/patrocinadores" class="card" style="display:block;text-align:center;margin-bottom:12px"><p class="kicker">Patrocínio institucional</p>'+logo+'</a>';
+  var links=(p.site?'<a class="btn btn-outline btn-sm" href="'+p.site+'" target="_blank" rel="noopener">Site</a>':'')+(p.instagram?'<a class="btn btn-navy btn-sm" href="'+p.instagram+'" target="_blank" rel="noopener">Instagram</a>':'');
+  return '<div class="card" style="text-align:center;margin-bottom:16px"><span class="tag" style="margin:0 0 12px">'+esc(p.selo||'Patrocinadora Institucional')+'</span>'+logo+'<h3 style="margin-top:12px;text-transform:none;letter-spacing:0;font-family:var(--f-body);font-size:1.02rem">'+esc(p.nome)+'</h3><p class="small" style="text-align:left">'+esc(p.texto||'')+'</p>'+(links?'<div class="btn-row" style="justify-content:center">'+links+'</div>':'')+'</div>';
+}
 function patrocinadores(){
   var c=D.patrocinio_cta;
-  var html='<img src="media/quem-faz-acontecer.jpg" alt="Quem faz o VI Fórum acontecer: patrocinadores e apoiadores" style="width:100%;border-radius:14px;display:block;margin:0 0 16px">';
+  var html=instCard(false)+'<img src="media/quem-faz-acontecer.jpg" alt="Quem faz o VI Fórum acontecer: patrocinadores e apoiadores" style="width:100%;border-radius:14px;display:block;margin:0 0 16px">';
   html+='<p class="small muted" style="margin:0 0 10px">Conheça um pouco de cada um:</p>';
   D.patrocinadores.forEach(function(cota){
-    var comTexto=cota.empresas.filter(function(p){return (p.texto||'').trim();});
+    var comTexto=cota.empresas.filter(function(p){return !p.institucional&&(p.texto||'').trim();});
     if(!comTexto.length)return;
     html+='<div class="section-h" style="margin-top:6px"><h2>'+esc(cota.cota)+'</h2></div>';
     comTexto.forEach(function(p){

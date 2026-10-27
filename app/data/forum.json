@@ -1,5 +1,5 @@
 {
-  "versao": "2026-10-23-12",
+  "versao": "2026-10-27-1",
   "evento": {
     "nome": "VI Fórum de Capacitação Técnica ACATMAR",
     "curto": "VI Fórum ACATMAR",
@@ -549,7 +549,9 @@
           "site": "https://www.pmf.sc.gov.br",
           "instagram": "https://www.instagram.com/prefflorianopolis/",
           "escala": 1.0,
-          "escala_fixa": true
+          "escala_fixa": true,
+          "institucional": true,
+          "selo": "Patrocinadora Institucional"
         },
         {
           "nome": "Floripa",
@@ -1080,7 +1082,7 @@
       "link": "#/posevento"
     }
   ],
-  "app_min": 85,
+  "app_min": 86,
   "diario": {
     "base": "2026-10-09",
     "titulo": "Fórum todo dia",
