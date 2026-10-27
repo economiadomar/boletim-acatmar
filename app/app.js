@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=88;
+var APP_V=89;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -95,13 +95,14 @@ function home(){
   var spons=D.patrocinadores.map(function(c,i){var modo={'Patrocínio':'inst','Realização':'real'}[c.cota]||'apoio';return '<div class="strip-cota strip-'+modo+'"><span>'+esc(c.cota)+'</span><div>'+c.empresas.map(function(p){var hb=({'Patrocínio':100,'Realização':56}[c.cota]||50);return '<a href="#/patrocinadores">'+(p.logo?'<img src="'+p.logo+'" alt="'+esc(p.nome)+'" style="height:'+Math.round(hb*(p.escala||1))+'px">':'<span class="logo-txt logo-txt-sm">'+esc(p.nome)+'</span>')+'</a>';}).join('')+'</div></div>';}).join('');
   var regBtn=st==='antes'?'<a class="btn btn-teal btn-block" href="#/inscricao">'+(LS.get('inscrito',null)?'✅ Inscrito · ver programação':'Inscrição gratuita')+'</a>':'';
   h('<section class="hero"><div class="hero-top"><img src="media/emblema-v2.jpg" alt="VI Fórum ACATMAR"><div><p class="kicker">'+esc(e.edicao)+' · '+esc(e.mote)+'</p><h1>'+esc(e.nome)+'</h1></div></div><div class="hero-in"><p>'+esc(e.data_texto)+' · '+esc(e.horario_texto)+'</p>'+cd+'</div></section>'
+   +instCard(true)
    +(st==='depois'?'<div class="quick"><a href="#/certificado"><i>📜</i>Certificado</a><a href="#/avaliacao"><i>⭐</i>Avaliar</a><a href="#/posevento"><i>📸</i>Como foi</a><a href="#/edicoes"><i>📷</i>Edições</a></div>':'<div class="quick"><a href="#/programacao"><i>🗓️</i>Programação</a><a href="#/local"><i>📍</i>Local</a><a href="#/credencial"><i>🎫</i>Credencial</a><a href="#/interagir"><i>💬</i>Interagir</a></div>')
    +(st==='depois'?retroHomeCard():diarioHomeCard(st,d))
    +(st==='depois'?'':'<section class="section"><div class="card"><div class="info"><div class="info-row"><div class="ic">📅</div><div><b>Quando</b><span>'+esc(e.data_texto)+'<br>'+esc(e.horario_texto)+'</span></div></div><div class="info-row"><div class="ic">📍</div><div><b>Onde</b><span>'+esc(e.local.nome)+(e.local.sala?' · '+esc(e.local.sala):'')+'<br><small class="muted">'+esc(e.local.endereco)+'</small></span></div></div><div class="info-row"><div class="ic">🅿️</div><div><b>Estacionamento</b><span>Próprio e gratuito no câmpus</span></div></div><div class="info-row"><div class="ic">🎟️</div><div><b>Participação</b><span>Gratuita, vagas limitadas'+(e.certificado?' · com certificado':'')+'</span></div></div></div>'+(regBtn?'<div class="btn-row">'+regBtn+'</div>':'')+'</div></section>')
    +'<section class="section"><div class="section-h"><h2>Avisos'+(unread?' <span class="tag red">'+unread+' novo'+(unread>1?'s':'')+'</span>':'')+'</h2><a href="#/avisos">Ver todos</a></div>'+av+'</section>'
    +'<section class="section"><div class="section-h"><h2>Sobre o Fórum</h2><a href="#/sobre">Mais</a></div><div class="card"><p>'+esc(D.sobre.resumo)+'</p><p class="small muted">'+esc(D.sobre.para_quem)+'</p></div></section>'
    +'<section class="section"><div class="section-h"><h2>'+numEdicoes()+' de história</h2><a href="#/edicoes">Ver fotos</a></div><div class="gal gal-ed">'+(D.edicoes||[]).map(function(e){return '<a href="#/edicoes"><img src="'+e.capa+'" alt="" loading="lazy"><span>'+e.ed+' Fórum · '+e.ano+'</span></a>';}).join('')+'</div></section>'
-   +'<section class="section"><div class="section-h"><h2>Quem faz acontecer</h2><a href="#/patrocinadores">Ver</a></div>'+instCard(true)+'<a href="#/patrocinadores"><img src="media/quem-faz-acontecer.jpg" alt="Quem faz o VI Fórum acontecer: patrocinadores e apoiadores" style="width:100%;border-radius:12px;display:block"></a></section>'
+   +'<section class="section"><div class="section-h"><h2>Quem faz acontecer</h2><a href="#/patrocinadores">Ver</a></div><a href="#/patrocinadores"><img src="media/quem-faz-acontecer.jpg" alt="Quem faz o VI Fórum acontecer: patrocinadores e apoiadores" style="width:100%;border-radius:12px;display:block"></a></section>'
    +(st==='depois'?'':'<section class="section"><div class="card" style="background:var(--navy);color:#fff;border:0"><p class="kicker" style="color:var(--teal-b)">Dica</p><h3 style="color:#fff">Instale o app na tela inicial</h3><p class="small" style="opacity:.85">Assim ele abre em um toque, mostra sua credencial rápido no credenciamento e funciona mesmo sem sinal.</p><div class="btn-row"><a class="btn btn-light btn-sm" href="#/instalar">Como instalar</a></div></div></section>'));
   if(st==='antes'){clearInterval(home._t);home._t=setInterval(function(){if(route().path==='/')home();else clearInterval(home._t);},60000);}
 }
