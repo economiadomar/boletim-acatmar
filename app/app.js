@@ -1,7 +1,7 @@
 /* App do VI Fórum ACATMAR — PWA sem framework. Conteúdo vem de data/forum.json */
 (function(){
 'use strict';
-var APP_V=87;
+var APP_V=88;
 var D=null, view=document.getElementById('view');
 var LS={get:function(k,d){try{var v=localStorage.getItem('forum_'+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem('forum_'+k,JSON.stringify(v));}catch(e){}}};
 var API='https://acatmar-app.programamundomar.workers.dev';
@@ -186,7 +186,7 @@ function patroTopo(){var r=[];(D.patrocinadores||[]).forEach(function(c){(c.empr
 function instCard(compacto){
   var ps=patroTopo();if(!ps.length)return '';
   var p=null;ps.forEach(function(x){if(x.institucional&&!p)p=x;});p=p||ps[0];
-  var logos='<div style="display:flex;justify-content:center;align-items:center;gap:22px;flex-wrap:wrap">'+ps.map(function(x){return '<img src="'+x.logo+'" alt="'+esc(x.nome)+'" style="height:'+(x.nome==='Floripa'?44:50)+'px;width:auto;max-width:46%;display:block">';}).join('')+'</div>';
+  var logos='<div style="display:flex;justify-content:center;align-items:center;gap:22px;flex-wrap:wrap">'+ps.map(function(x){return '<img src="'+x.logo+'" alt="'+esc(x.nome)+'" style="height:'+(x.nome==='Floripa'?42:70)+'px;width:auto;max-width:46%;display:block">';}).join('')+'</div>';
   if(compacto)return '<a href="#/patrocinadores" class="card" style="display:block;text-align:center;margin-bottom:12px"><p class="kicker">Patrocínio</p>'+logos+'</a>';
   var links=(p.site?'<a class="btn btn-outline btn-sm" href="'+p.site+'" target="_blank" rel="noopener">Site</a>':'')+(p.instagram?'<a class="btn btn-navy btn-sm" href="'+p.instagram+'" target="_blank" rel="noopener">Instagram</a>':'');
   return '<div class="card" style="text-align:center;margin-bottom:16px"><span class="tag" style="margin:0 0 14px">Patrocínio</span>'+logos+'<h3 style="margin-top:14px;text-transform:none;letter-spacing:0;font-family:var(--f-body);font-size:1.02rem">'+esc(p.nome)+'</h3><p class="small" style="text-align:left">'+esc(p.texto||'')+'</p>'+(links?'<div class="btn-row" style="justify-content:center">'+links+'</div>':'')+'</div>';

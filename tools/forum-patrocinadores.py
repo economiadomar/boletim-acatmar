@@ -61,7 +61,7 @@ def _img(p, alt_h):
     return '<img loading="lazy" src="' + p['logo'] + '" alt="' + html.escape(p['nome']) + '" style="height:%dpx;width:auto;max-width:46%%;display:block">' % alt_h
 def bloco_inst(en, inline=False):
     rot = 'Sponsorship' if en else 'Patrocínio'
-    logos = '<div style="display:flex;justify-content:center;align-items:center;gap:30px;flex-wrap:wrap">' + ''.join(_img(p, 46 if p['nome'] == 'Floripa' else 54) for p in TOPO) + '</div>'
+    logos = '<div style="display:flex;justify-content:center;align-items:center;gap:30px;flex-wrap:wrap">' + ''.join(_img(p, 51 if p['nome'] == 'Floripa' else 86) for p in TOPO) + '</div>'
     if inline:
         return ('<div style="margin-bottom:1.6rem"><p style="margin:0 0 .9rem;font-family:\'Barlow Condensed\',sans-serif;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:#5b6b7c">' + rot + '</p>'
                 '<a href="' + INST['site'] + '" target="_blank" rel="noopener" style="display:block">' + logos + '</a></div>')
