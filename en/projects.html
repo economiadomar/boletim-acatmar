@@ -130,7 +130,13 @@
   .edicoes a:hover{color:var(--teal-d)}
   .edicoes a b{font-family:'Oswald';font-weight:600}
   .edicoes svg{width:13px;height:13px;flex-shrink:0}
+  .edicoes .eds{display:flex;flex-wrap:wrap;gap:.45rem}
+  .edicoes a.ed-chip{display:inline-flex;align-items:baseline;gap:.3rem;padding:.3rem .65rem;border:1.5px solid rgba(10,37,64,.18);border-radius:999px;background:#fff;font-size:.86rem;line-height:1;border-bottom:1.5px solid rgba(10,37,64,.18)}
+  .edicoes a.ed-chip b{font-family:'Oswald';font-weight:600;font-size:.95rem}
+  .edicoes a.ed-chip span{color:var(--muted);font-family:'Barlow Condensed';font-weight:600;letter-spacing:.04em}
+  .edicoes a.ed-chip:hover{border-color:var(--teal-d);color:var(--teal-d)}
 </style>
+
 
 
 
@@ -513,11 +519,13 @@ var seta='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-widt
         '<div class="d">'+(fld(p,'resumo')||fld(p,'tagline')||'')+'</div>'+
         '<div class="ext">'+(EN?'Learn more':'Saiba mais')+' '+seta+'</div></div></a>';
       if(filhos.length){
-        html+='<div class="edicoes"><div class="lbl">'+(EN?'Editions':'Edições')+'</div>';
+        html+='<div class="edicoes"><div class="lbl">'+(EN?'Editions':'Edições')+'</div><div class="eds">';
         filhos.forEach(function(f){
-          html+='<a href="project.html?id='+f.id+'">'+seta+'<span><b>'+fld(f,'nome')+'</b></span></a>';
+          /* "VI Forum ... (2026)" vira chip "VI · 2026"; sem padrao, mostra o nome inteiro */
+          var n=fld(f,'nome'), m=n.match(/^([IVXLC]+)\b.*\((\d{4})\)\s*$/);
+          html+='<a class="ed-chip" href="project.html?id='+f.id+'" title="'+n.replace(/"/g,'&quot;')+'">'+(m?'<b>'+m[1]+'</b><span>'+m[2]+'</span>':'<b>'+n+'</b>')+'</a>';
         });
-        html+='</div>';
+        html+='</div></div>';
       }
       html+='</div>';
     });
