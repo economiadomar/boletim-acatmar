@@ -48,7 +48,7 @@ def artigo_html(n, en):
     titulo = n.get('titulo_en' if en else 'titulo') or n['titulo']
     categoria = n.get('categoria_en' if en else 'categoria') or n.get('categoria','')
     corpo = n.get('corpo_en' if en else 'corpo') or n.get('corpo',[])
-    body = ''.join('<p>'+p+'</p>' for p in corpo)
+    body = raiz(''.join('<p>'+p+'</p>' for p in corpo))   # imagens do corpo tambem precisam de caminho a partir da raiz (pagina fica em /n/)
     hero_cls = 'hero-img inteira' if n.get('imagem_inteira') else 'hero-img'
     out  = f'<a class="back" href="{"/en/news.html" if en else "/noticias.html"}">{"← All news" if en else "← Todas as notícias"}</a>'
     if categoria: out += f'<div><span class="cat">{html.escape(categoria)}</span></div>'
