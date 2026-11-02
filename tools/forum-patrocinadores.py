@@ -60,20 +60,22 @@ INST = next(p for p in TOPO if p.get('institucional'))
 def _img(p, alt_h):
     return '<img loading="lazy" src="' + p['logo'] + '" alt="' + html.escape(p['nome']) + '" style="height:%dpx;width:auto;max-width:46%%;display:block">' % alt_h
 def bloco_inst(en, inline=False):
-    # Termo 125.001/SMLCP/2026: marca da Prefeitura ISOLADA e em 1o lugar na cota institucional
+    # Termo 125.001/SMLCP/2026: cota institucional em 1o lugar. Logos originais da Prefeitura e da Floripa lado a lado (como o Mane quer), rotulo "Patrocinio institucional"
     rot = 'Institutional sponsorship' if en else 'Patrocínio institucional'
-    logo = '<div style="display:flex;justify-content:center;align-items:center">' + _img(INST, 96) + '</div>'
+    logos = '<span style="display:flex;justify-content:center;align-items:center;gap:30px;flex-wrap:wrap">' + ''.join(_img(p, 51 if p['nome'] == 'Floripa' else 86) for p in TOPO) + '</span>'
     if inline:
-        return ('<div style="margin-bottom:1.6rem"><p style="margin:0 0 .9rem;font-family:\'Barlow Condensed\',sans-serif;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:#5b6b7c">' + rot + '</p>'
-                '<a href="' + INST['site'] + '" target="_blank" rel="noopener" style="display:block">' + logo + '</a></div>')
+        return ('<div style="margin-bottom:1.6rem"><span style="display:block;margin:0 0 .9rem;font-family:\'Barlow Condensed\',sans-serif;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:#5b6b7c">' + rot + '</span>'
+                '<a href="' + INST['site'] + '" target="_blank" rel="noopener" style="display:block">' + logos + '</a></div>')
     return ('<div class="creditos-bloco"><p class="creditos-rotulo" data-en="Institutional sponsorship">Patrocínio institucional</p>'
-            '<a href="' + INST['site'] + '" target="_blank" rel="noopener" style="display:block">' + logo + '</a></div>')
+            '<a href="' + INST['site'] + '" target="_blank" rel="noopener" style="display:block">' + logos + '</a></div>')
 
 def topo_logos(en):
+    # so <div>/<span>/<a>/<img>: nada de <p> ou <a> em volta de bloco, senao o navegador parte o card em varias caixas
     rot = 'Institutional sponsorship' if en else 'Patrocínio institucional'
-    return ('<!-- topo-patrocinio --><a href="' + INST['site'] + '" target="_blank" rel="noopener" style="background:#fff;border:1px solid #e3e8ee;border-radius:14px;padding:18px 16px 20px;margin:0 0 1.6rem;display:block;text-align:center;text-decoration:none">'
-            '<p style="margin:0 0 .8rem;font-family:\'Barlow Condensed\',sans-serif;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:#5b6b7c">' + rot + '</p>'
-            '<div style="display:flex;justify-content:center;align-items:center">' + _img(INST, 96) + '</div></a>')
+    return ('<div style="background:#fff;border:1px solid #e3e8ee;border-radius:14px;padding:18px 16px 20px;margin:0 0 1.6rem;text-align:center"><!-- topo-patrocinio -->'
+            '<span style="display:block;margin:0 0 .9rem;font-family:\'Barlow Condensed\',sans-serif;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:#5b6b7c">' + rot + '</span>'
+            '<a href="' + INST['site'] + '" target="_blank" rel="noopener" style="display:flex;justify-content:center;align-items:center;gap:32px;flex-wrap:wrap">'
+            + ''.join(_img(p, 46 if p['nome'] == 'Floripa' else 78) for p in TOPO) + '</a></div>')
 def fim_projetos(en):
     return ('<!-- fim-projetos --><p style="margin:2.2rem 0 0;text-align:center"><a href="projetos.html" style="font-family:\'Barlow Condensed\',sans-serif;text-transform:uppercase;letter-spacing:.12em;font-weight:700;color:#0a2540;text-decoration:none;border:2px solid #0a2540;border-radius:999px;padding:.6rem 1.3rem;display:inline-block">'
             + ('← All projects' if en else '← Todos os projetos') + '</a></p>')
