@@ -87,13 +87,18 @@ ALT_ARTE_EN = 'Who makes the VI Forum happen: sponsors and supporters'
 h = open(os.path.join(RAIZ, 'vi-forum-2026.html'), encoding='utf-8').read()
 sec = ('<!-- creditos:inicio --><section class="creditos-forum"><div class="creditos-inner">\n'
        '    <h2 class="creditos-titulo" data-en="Who makes the VI Forum happen">Quem faz o VI Fórum acontecer</h2>\n'
-       '    ' + bloco_inst(False) + '\n'
        '    <img class="creditos-arte" loading="lazy" src="%s" alt="%s" style="width:100%%;max-width:560px;height:auto;display:block;margin:0 auto">\n'
        '  </div></section><!-- creditos:fim -->' % (ARTE, html.escape(ALT_ARTE_PT)))
 if '<!-- creditos:inicio -->' in h:
     h = re.sub(r'<!-- creditos:inicio -->.*?<!-- creditos:fim -->', lambda m: sec, h, flags=re.S)
 else:
     h = re.sub(r'<section class="creditos-forum">.*?</section>', lambda m: sec, h, count=1, flags=re.S)
+topo = '<!-- inst-topo:inicio --><section style="background:#fff;border-bottom:1px solid #e3e8ee;padding:1.4rem 1.2rem 1.6rem;text-align:center">' + bloco_inst(False).replace('class="creditos-bloco"', 'class="creditos-bloco" style="margin:0"') + '</section><!-- inst-topo:fim -->'
+if '<!-- inst-topo:inicio -->' in h:
+    h = re.sub(r'<!-- inst-topo:inicio -->.*?<!-- inst-topo:fim -->', lambda m: topo, h, flags=re.S)
+else:
+    assert h.count('<div class="hero">') == 1
+    h = re.sub(r'(<div class="hero">.*?</div>)', lambda m: m.group(1) + '\n  ' + topo, h, count=1, flags=re.S)
 open(os.path.join(RAIZ, 'vi-forum-2026.html'), 'w', encoding='utf-8').write(h)
 
 # 2) bloco para projeto e materia
@@ -115,11 +120,12 @@ for arq, chave, ident in (('projetos.json', 'projetos', 'vi-forum-acatmar-2026')
             if campo not in x: continue
             marca = 'Who makes the VI' if en else 'Quem faz o VI'
             idx = [i for i, t in enumerate(x[campo]) if marca in t]
-            if idx: x[campo][idx[0]] = bloco(en, inst=(chave != 'projetos'))
-            else: x[campo].append(bloco(en, inst=(chave != 'projetos')))
-            if chave == 'projetos':   # pagina da edicao: logos no topo (sem rotulo), arte embaixo, link para todos os projetos no fim
-                x[campo] = [t for t in x[campo] if 'topo-patrocinio' not in t and 'fim-projetos' not in t]
-                x[campo].insert(0, topo_logos(en)); x[campo].append(fim_projetos(en))
+            if idx: x[campo][idx[0]] = bloco(en, inst=False)
+            else: x[campo].append(bloco(en, inst=False))
+            # padrao unico: Prefeitura e Floripa em destaque no topo, junto da capa; embaixo so a arte
+            x[campo] = [t for t in x[campo] if 'topo-patrocinio' not in t and 'fim-projetos' not in t]
+            x[campo].insert(0, topo_logos(en))
+            if chave == 'projetos': x[campo].append(fim_projetos(en))
     json.dump(j, open(cam, 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
 
 print('patrocinadores do Fórum no site: ' + ', '.join('%s (%d)' % (c, len([e for e in D['patrocinadores'] if e['cota'] == c][0]['empresas'])) for c, _, _, _ in saidas))
