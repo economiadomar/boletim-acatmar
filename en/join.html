@@ -464,6 +464,7 @@
 
 
 
+
 <link rel="alternate" hreflang="pt-BR" href="https://www.acatmar.org/associe-se.html">
 <link rel="alternate" hreflang="en" href="https://www.acatmar.org/en/join.html">
 <link rel="alternate" hreflang="x-default" href="https://www.acatmar.org/associe-se.html">
@@ -504,8 +505,7 @@
 </div></header>
 
 <main>
-  <form id="form" action="https://formsubmit.co/dbf5453c958f231720ec8976f1e606ec" method="POST" enctype="multipart/form-data">
-    <input type="file" name="attachment" id="pdfFile" class="hp" tabindex="-1" aria-hidden="true">
+  <form id="form" action="https://formsubmit.co/dbf5453c958f231720ec8976f1e606ec" method="POST">
     <input type="hidden" name="_subject" value="Novo cadastro de associado — site ACATMAR">
     <input type="hidden" name="_template" value="table">
     <input type="hidden" name="_cc" value="micheleacatmar@gmail.com">
@@ -879,12 +879,14 @@ applyLang();
 
     btn.disabled=true; btn.textContent = EN?'Sending…':'Enviando…';
 
+    // a ficha em PDF e baixada pelo proprio declarante; o FormSubmit nao aceita anexo no plano atual,
+    // e o e-mail ja leva todos os campos e o carimbo da assinatura eletronica
     try{
       var blob=gerarPDF(dados(),carimbo);
       var emp=((document.getElementById('razao')||{}).value||'ficha').replace(/[^\w\s-]/g,'').trim().replace(/\s+/g,'-').slice(0,40);
-      var arquivo=new File([blob],'ficha-acatmar-'+emp+'.pdf',{type:'application/pdf'});
-      var dt=new DataTransfer(); dt.items.add(arquivo);
-      document.getElementById('pdfFile').files=dt.files;
+      var a=document.createElement('a');
+      a.href=URL.createObjectURL(blob); a.download='ficha-acatmar-'+emp+'.pdf';
+      document.body.appendChild(a); a.click(); a.remove();
     }catch(err){ /* sem PDF, envia mesmo assim */ }
 
     form.dataset.pronto='1';
