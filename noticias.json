@@ -1,6 +1,79 @@
 {
   "noticias": [
     {
+      "id": "blue-nautical-hub-brasil-2027-feira-tecnologia",
+      "titulo": "Com correalização da ACATMAR, Blue Nautical Hub Brasil 2027 ganha feira de tecnologia da Economia do Mar",
+      "titulo_en": "Co-organized by ACATMAR, Blue Nautical Hub Brasil 2027 gains a sea economy technology fair",
+      "categoria": "Eventos",
+      "categoria_en": "Events",
+      "data": "2026-11-27",
+      "imagem": "media/noticias/bnhb-2027-feira.jpg",
+      "credito": "Divulgação Blue Nautical Hub Brasil",
+      "legenda": "Imagem ilustrativa da feira de tecnologia que estreia na edição de 2027, no CentroSul, em Florianópolis.",
+      "legenda_en": "Illustration of the technology fair debuting in the 2027 edition, at CentroSul, in Florianópolis.",
+      "galeria": [
+        {
+          "src": "media/noticias/bnhb-2026-b2b.jpg",
+          "legenda": "Na primeira edição, o Encontro de Negócios B2B a bordo de um catamarã reuniu 70 empresas em 171 reuniões ao longo de seis horas.",
+          "legenda_en": "In the first edition, the B2B Business Meeting aboard a catamaran brought together 70 companies in 171 meetings over six hours."
+        },
+        {
+          "src": "media/noticias/blue-nautical-hub.jpg",
+          "legenda": "As visitas técnicas levam empresários e delegações a estaleiros, marinas, portos e áreas de maricultura de Santa Catarina.",
+          "legenda_en": "The technical visits take entrepreneurs and delegations to shipyards, marinas, ports and mariculture areas in Santa Catarina."
+        }
+      ],
+      "resumo": "A segunda edição do Blue Nautical Hub Brasil acontece de 26 a 30 de abril de 2027, no CentroSul, em Florianópolis, e estreia uma feira profissional de tecnologia, produtos, insumos e serviços para os setores naval, pesqueiro, náutico e de defesa. São 81 estandes, o IV Simpósio Internacional Economia Azul, encontros de negócios B2B e visitas técnicas. A ACATMAR assina a correalização do evento.",
+      "resumo_en": "The second edition of Blue Nautical Hub Brasil takes place from 26 to 30 April 2027, at CentroSul, in Florianópolis, and debuts a professional fair of technology, products, supplies and services for the shipbuilding, fishing, nautical and defense sectors. There will be 81 stands, the 4th International Blue Economy Symposium, B2B business meetings and technical visits. ACATMAR is a co-organizer of the event.",
+      "link": "https://www.bluenauticalhubbrasil.com/pt/",
+      "link_label": "Conheça o Blue Nautical Hub Brasil",
+      "link_label_en": "Visit Blue Nautical Hub Brasil",
+      "corpo": [
+        "O Blue Nautical Hub Brasil chega à segunda edição com uma novidade que muda o tamanho do evento: uma feira profissional de tecnologia, produtos, insumos e serviços para os setores naval, pesqueiro, náutico e de defesa. A edição de 2027 acontece de 26 a 30 de abril, no CentroSul, em Florianópolis, com cinco frentes na mesma semana. A realização é da Mundo Mar Consulting e a correalização é da ACATMAR, Associação Náutica Brasileira.",
+        "A primeira edição reuniu mais de 400 empresas. A de 2027 coloca essa cadeia dentro de um pavilhão, no formato que o setor pedia: quem fabrica, quem compra e quem especifica tecnologia para o mar no mesmo lugar, com o produto na mão.",
+        "<b>A feira: 81 estandes e dez eixos</b>",
+        "A feira funciona de 28 a 30 de abril, com 81 estandes distribuídos em dez eixos: tecnologia e inovação; motores, propulsão e energia; eletrônica e software; acessórios e equipamentos; pesca e aquicultura; defesa e segurança marítima; marinas e infraestrutura; serviços e capacitação; sustentabilidade e economia azul; e gastronomia do mar e turismo náutico.",
+        "O primeiro dia é exclusivo para profissionais credenciados. Dentro da feira ficam seis espaços temáticos, entre eles o Hub de Inovação, voltado a startups, o Espaço Internacional, para delegações estrangeiras, e o Selo e Prêmio de Sustentabilidade.",
+        "Para o presidente da ACATMAR e do Blue Nautical Hub Brasil, Leandro \"Mané\" Ferrari, a feira é o passo natural depois do que foi construído em 2026.",
+        "\"Em 2026 mostramos que a Economia do Mar precisava de um ponto de encontro. Em 2027 damos o passo seguinte: um lugar onde quem fabrica, quem compra e quem especifica tecnologia para o mar se encontra, demonstra e fecha negócios\", afirma.",
+        "<b>Uma semana inteira de negócios</b>",
+        "A feira é uma das cinco frentes da semana. Nos dias 26 e 27 de abril acontecem as visitas técnicas a estaleiros, marinas, portos e áreas de maricultura de Santa Catarina. No dia 28 é a abertura oficial, com autoridades e delegações internacionais.",
+        "No dia 29 acontece o IV Simpósio Internacional Economia Azul, com cerca de 300 lugares e painéis sobre economia azul, transição energética, offshore e indústria naval, refit de embarcações, Reforma Tributária e pesca industrial. No dia 30, os Encontros de Negócios B2B Internacionais, com agenda marcada entre compradores e fornecedores.",
+        "Ao longo dos três dias de feira funcionam ainda as Salas Temáticas de Trabalho, reuniões técnicas fechadas sobre indústria, questões tributárias, pesca industrial, offshore e políticas públicas.",
+        "<b>Santa Catarina no centro da Economia do Mar</b>",
+        "O estado é o maior polo náutico do país e concentra uma cadeia completa. A Economia do Mar catarinense reúne cerca de 240 mil trabalhadores formais em mais de 23 mil estabelecimentos. Entre março de 2025 e fevereiro de 2026, o setor respondeu por 13% do saldo de empregos formais do estado, segundo levantamento feito pela ACATMAR em conjunto com o Governo de Santa Catarina.",
+        "\"Santa Catarina tem estaleiros de referência mundial, o maior polo pesqueiro do país, portos e uma cadeia de fornecedores completa. O Hub existe para conectar tudo isso, e a feira é a forma mais direta de transformar essa força em negócios\", diz Ferrari.",
+        "<b>O que a primeira edição entregou</b>",
+        "A edição de estreia aconteceu de 26 de abril a 1º de maio de 2026 e reuniu cinco eventos. Foram 11 visitas técnicas, o III Simpósio Internacional Economia Azul, um Encontro de Negócios B2B realizado a bordo de um catamarã, um encontro com a Frente Parlamentar da Economia do Mar e a programação internacional da Cofradía Europea de la Vela.",
+        "O B2B a bordo virou o símbolo daquela edição: 70 empresas, 171 reuniões em seis horas e estimativa de mais de R$ 20 milhões em negócios gerados.",
+        "<b>Reservas abertas</b>",
+        "A comercialização já começou, com estandes de 9 a 36 metros quadrados e cotas de patrocínio. Contratos assinados até 31 de dezembro de 2026 entram nas condições especiais de primeiro lote. Profissionais que pretendem visitar podem fazer o pré-cadastro no site do evento.",
+        "Para associados da ACATMAR, o Hub funciona como vitrine e como porta de entrada em novos mercados, no mesmo movimento de internacionalização que a associação vem construindo com missões, rodadas de negócios e acordos de cooperação. Empresas interessadas em expor ou patrocinar falam diretamente com a organização pelo e-mail info@bluenauticalhubbrasil.com ou pelo telefone +55 48 99147-5761."
+      ],
+      "corpo_en": [
+        "Blue Nautical Hub Brasil reaches its second edition with a change that redefines the event's scale: a professional fair of technology, products, supplies and services for the shipbuilding, fishing, nautical and defense sectors. The 2027 edition runs from 26 to 30 April, at CentroSul, in Florianópolis, with five fronts in the same week. It is organized by Mundo Mar Consulting and co-organized by ACATMAR, the Brazilian Nautical Association.",
+        "The first edition brought together more than 400 companies. The 2027 edition puts that chain inside an exhibition hall, in the format the sector was asking for: those who manufacture, those who buy and those who specify technology for the sea in the same place, with the product at hand.",
+        "<b>The fair: 81 stands and ten themes</b>",
+        "The fair runs from 28 to 30 April, with 81 stands across ten themes: technology and innovation; engines, propulsion and energy; electronics and software; accessories and equipment; fishing and aquaculture; defense and maritime security; marinas and infrastructure; services and training; sustainability and blue economy; and sea gastronomy and nautical tourism.",
+        "The first day is exclusive to accredited professionals. Inside the fair there are six thematic spaces, among them the Innovation Hub, aimed at startups, the International Space, for foreign delegations, and the Sustainability Seal and Award.",
+        "For the president of ACATMAR and of Blue Nautical Hub Brasil, Leandro \"Mané\" Ferrari, the fair is the natural step after what was built in 2026.",
+        "\"In 2026 we showed that the sea economy needed a meeting point. In 2027 we take the next step: a place where those who manufacture, those who buy and those who specify technology for the sea meet, demonstrate and close deals,\" he says.",
+        "<b>A full week of business</b>",
+        "The fair is one of five fronts of the week. On 26 and 27 April there are technical visits to shipyards, marinas, ports and mariculture areas in Santa Catarina. On the 28th comes the official opening, with authorities and international delegations.",
+        "On the 29th, the 4th International Blue Economy Symposium takes place, with around 300 seats and panels on the blue economy, energy transition, offshore and shipbuilding, vessel refit, Tax Reform and industrial fishing. On the 30th, the International B2B Business Meetings, with scheduled agendas between buyers and suppliers.",
+        "Throughout the three days of the fair, the Thematic Working Rooms also operate, hosting closed technical meetings on industry, tax matters, industrial fishing, offshore and public policy.",
+        "<b>Santa Catarina at the center of the sea economy</b>",
+        "The state is the country's largest nautical hub and concentrates a complete chain. Santa Catarina's sea economy brings together around 240,000 formal workers in more than 23,000 establishments. Between March 2025 and February 2026, the sector accounted for 13% of the state's net formal job creation, according to a survey carried out by ACATMAR together with the Government of Santa Catarina.",
+        "\"Santa Catarina has world-class shipyards, the country's largest fishing hub, ports and a complete supplier chain. The Hub exists to connect all of that, and the fair is the most direct way to turn this strength into business,\" says Ferrari.",
+        "<b>What the first edition delivered</b>",
+        "The debut edition ran from 26 April to 1 May 2026 and gathered five events. There were 11 technical visits, the 3rd International Blue Economy Symposium, a B2B Business Meeting held aboard a catamaran, a meeting with the Parliamentary Front for the Sea Economy and the international program of the Cofradía Europea de la Vela.",
+        "The B2B aboard became the symbol of that edition: 70 companies, 171 meetings in six hours and an estimated R$ 20 million in business generated.",
+        "<b>Bookings open</b>",
+        "Sales have already started, with stands from 9 to 36 square meters and sponsorship packages. Contracts signed by 31 December 2026 qualify for first-batch conditions. Professionals planning to visit can pre-register on the event's website.",
+        "For ACATMAR members, the Hub works as a showcase and as a gateway to new markets, in the same internationalization movement the association has been building with missions, business rounds and cooperation agreements. Companies interested in exhibiting or sponsoring can contact the organizers directly at info@bluenauticalhubbrasil.com or +55 48 99147-5761."
+      ]
+    },
+    {
       "id": "acatmar-18-anos-posse-diretoria-2026-2030",
       "titulo": "ACATMAR completa 18 anos, reelege Mané Ferrari e fortalece atuação nacional na economia do mar",
       "titulo_en": "ACATMAR turns 18, re-elects Mané Ferrari and strengthens its national role in the sea economy",
